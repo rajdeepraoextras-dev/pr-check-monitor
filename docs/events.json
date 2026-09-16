@@ -1,36 +1,6 @@
 [
  {
   "ts": "2026-09-16T15:33:03.648543+00:00",
-  "pr": "dynamo-ddae169-debugging-and-repair#8",
-  "type": "started",
-  "msg": "Check started: validation"
- },
- {
-  "ts": "2026-09-16T15:33:03.648543+00:00",
-  "pr": "dynamo-ddae169-debugging-and-repair#8",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
-  "ts": "2026-09-16T15:33:03.648543+00:00",
-  "pr": "dynamo-ddae169-debugging-and-repair#8",
-  "type": "passed",
-  "msg": "Check passed: similarity"
- },
- {
-  "ts": "2026-09-16T15:33:03.648543+00:00",
-  "pr": "dynamo-0183436-machine-learning-and-ai#8",
-  "type": "started",
-  "msg": "Check started: similarity"
- },
- {
-  "ts": "2026-09-16T15:33:03.648543+00:00",
-  "pr": "dynamo-0183436-machine-learning-and-ai#8",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
-  "ts": "2026-09-16T15:33:03.648543+00:00",
   "pr": "dynamo-24667f6-security#7",
   "type": "passed",
   "msg": "Check passed: claude-cost-report"
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-e079d63-hardware-embedded-and-low-level-systems#7",
   "type": "passed",
   "msg": "Check passed: tier1"
+ },
+ {
+  "ts": "2026-09-16T18:48:10.572063+00:00",
+  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-16T18:48:10.572063+00:00",
+  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
+  "type": "started",
+  "msg": "Check started: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-16T18:48:10.572063+00:00",
+  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
+  "type": "started",
+  "msg": "Check started: gate"
+ },
+ {
+  "ts": "2026-09-16T18:48:10.572063+00:00",
+  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
+  "type": "started",
+  "msg": "Check started: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-16T18:48:10.572063+00:00",
+  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
+  "type": "failing",
+  "msg": "Check failed: pass2"
  }
 ]
