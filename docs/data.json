@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T09:44:49.208361+00:00",
+  "snapshot_time": "2026-09-16T09:47:06.242148+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -216,7 +216,7 @@
       "title": "Rework: publish the provenance layer and move the crux to the degenerate rings",
       "url": "https://github.com/handshake-project-dynamo/dynamo-147c2c0-mathematics-and-formal-reasoning/pull/8",
       "createdAt": "2026-09-15T17:59:44Z",
-      "updatedAt": "2026-09-16T08:53:11Z",
+      "updatedAt": "2026-09-16T09:47:33Z",
       "sha": "c40011eb63ec1a6da05533e33a2cf204c08e56b1",
       "draft": false,
       "mergeable": "MERGEABLE",
@@ -227,29 +227,55 @@
       "head": "rework/147c2c0-orillon-degenerate",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
+      "overall": "failing",
       "passed": 13,
-      "total": 15,
+      "total": 17,
       "skipped": 1,
-      "failed": [],
+      "failed": [
+        "trials"
+      ],
       "running": [
         {
-          "name": "trials",
-          "started_at": "2026-09-16T08:53:02Z"
+          "name": "claude-cost-report",
+          "started_at": "2026-09-16T09:47:27Z"
+        },
+        {
+          "name": "gate",
+          "started_at": "2026-09-16T09:47:27Z"
         }
       ],
       "queued": [],
       "checks": [
         {
           "name": "trials",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-16T08:53:02Z",
+          "completed_at": "2026-09-16T09:47:24Z",
+          "duration_sec": 3262,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-147c2c0-mathematics-and-formal-reasoning/actions/runs/35068964914/job/104729225816",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T08:53:02Z",
+          "started_at": "2026-09-16T09:47:27Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-147c2c0-mathematics-and-formal-reasoning/actions/runs/35068964914/job/104729225816",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-147c2c0-mathematics-and-formal-reasoning/actions/runs/35068964914/job/104745965653",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-16T09:47:27Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-147c2c0-mathematics-and-formal-reasoning/actions/runs/35068964914/job/104745965484",
           "app": "github-actions"
         },
         {
@@ -395,7 +421,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T07:16:24.656336+00:00",
-      "last_change": "2026-09-16T08:53:17.024765+00:00"
+      "last_change": "2026-09-16T09:47:06.242148+00:00"
     },
     {
       "repo": "dynamo-84d5250-build-dependency-and-release-management",
