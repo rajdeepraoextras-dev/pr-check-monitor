@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T18:52:56.445209+00:00",
+  "snapshot_time": "2026-09-16T18:53:42.887903+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -27,26 +27,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 11,
-      "total": 13,
+      "passed": 12,
+      "total": 14,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_eval",
-          "started_at": "2026-09-16T18:42:05Z"
+          "name": "qc_gate",
+          "started_at": "2026-09-16T18:53:43Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
+          "name": "qc_gate",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T18:42:05Z",
+          "started_at": "2026-09-16T18:53:43Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35126361089/job/104928490730",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35126361089/job/104932527586",
           "app": "github-actions"
         },
         {
@@ -97,6 +97,16 @@
           "completed_at": "2026-09-16T18:28:45Z",
           "duration_sec": 4014,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35126361089/job/104900741274",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T18:42:05Z",
+          "completed_at": "2026-09-16T18:53:40Z",
+          "duration_sec": 695,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35126361089/job/104928490730",
           "app": "github-actions"
         },
         {
@@ -172,7 +182,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T14:32:48.666305+00:00",
-      "last_change": "2026-09-16T18:50:52.341472+00:00"
+      "last_change": "2026-09-16T18:53:42.887903+00:00"
     },
     {
       "repo": "dynamo-1d01028-scientific-computing-and-domain-science",
