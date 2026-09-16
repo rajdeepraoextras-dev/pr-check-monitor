@@ -271,11 +271,17 @@ def main():
         "config": {"org": org, "author": author, "window_hours": window_hours},
         "prs": out,
     }
+    # Atomic write (temp file + rename): the fast and full jobs both write
+    # this file directly and can genuinely overlap in time, since only the
+    # short git-commit step is lock-serialized between them (see run.sh) —
+    # this guarantees whichever one finishes second fully replaces the file
+    # in one step rather than the two writes ever interleaving.
     os.makedirs(os.path.dirname(OUT_FILE), exist_ok=True)
-    with open(OUT_FILE, "w") as f:
-        json.dump(payload, f, indent=2)
-    with open(EVENTS_FILE, "w") as f:
-        json.dump(events, f, indent=1)
+    for path, data, kw in ((OUT_FILE, payload, {"indent": 2}), (EVENTS_FILE, events, {"indent": 1})):
+        tmp = path + ".tmp"
+        with open(tmp, "w") as f:
+            json.dump(data, f, **kw)
+        os.replace(tmp, path)
 
     print(f"[{'fast' if fast else 'full'}] Wrote {OUT_FILE} ({len(out)} PRs, {len(events)} events) at {ts}")
 

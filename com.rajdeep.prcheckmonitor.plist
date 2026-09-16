@@ -8,7 +8,7 @@
   <array>
     <string>/bin/bash</string>
     <string>-lc</string>
-    <string>cd __REPO_PATH__ && python3 fetch.py && git add docs/data.json docs/events.json && git commit -m "update pr status" --quiet || true; (git pull --rebase --autostash --quiet || true) && (git push --quiet || true)</string>
+    <string>__REPO_PATH__/run.sh</string>
   </array>
   <key>StartInterval</key>
   <integer>30</integer>
