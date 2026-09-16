@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T15:30:31.506618+00:00",
+  "snapshot_time": "2026-09-16T15:31:19.177927+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -757,7 +757,7 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 6,
+      "passed": 7,
       "total": 17,
       "skipped": 7,
       "failed": [
@@ -765,10 +765,6 @@
         "pass2"
       ],
       "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-16T15:30:38Z"
-        },
         {
           "name": "pass2_suggestion",
           "started_at": "2026-09-16T15:30:37Z"
@@ -797,16 +793,6 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-16T15:30:38Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35107312649/job/104860824291",
-          "app": "github-actions"
-        },
-        {
           "name": "pass2_suggestion",
           "state": "running",
           "conclusion": null,
@@ -824,6 +810,16 @@
           "completed_at": "2026-09-16T14:16:15Z",
           "duration_sec": 27,
           "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35107312649/job/104831771653",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T15:30:38Z",
+          "completed_at": "2026-09-16T15:30:55Z",
+          "duration_sec": 17,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35107312649/job/104860824291",
           "app": "github-actions"
         },
         {
@@ -949,7 +945,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:31:07.881961+00:00",
-      "last_change": "2026-09-16T15:30:31.506618+00:00"
+      "last_change": "2026-09-16T15:31:19.177927+00:00"
     },
     {
       "repo": "dynamo-ed639d6-systems-infrastructure-and-operations",
