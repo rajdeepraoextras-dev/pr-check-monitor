@@ -1830,13 +1830,61 @@
   "msg": "Check passed: validation"
  },
  {
-  "ts": "2026-09-16T14:52:39.208328+00:00",
+  "ts": "2026-09-16T14:53:10.726133+00:00",
+  "pr": "dynamo-ddae169-debugging-and-repair#8",
+  "type": "started",
+  "msg": "Check started: ava_review"
+ },
+ {
+  "ts": "2026-09-16T14:53:10.726133+00:00",
+  "pr": "dynamo-ddae169-debugging-and-repair#8",
+  "type": "started",
+  "msg": "Check started: deep_review"
+ },
+ {
+  "ts": "2026-09-16T14:53:10.726133+00:00",
+  "pr": "dynamo-ddae169-debugging-and-repair#8",
+  "type": "passed",
+  "msg": "Check passed: pass2"
+ },
+ {
+  "ts": "2026-09-16T14:53:10.726133+00:00",
+  "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-16T14:53:10.726133+00:00",
+  "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "started",
+  "msg": "Check started: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-16T14:53:10.726133+00:00",
+  "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "started",
+  "msg": "Check started: gate"
+ },
+ {
+  "ts": "2026-09-16T14:53:10.726133+00:00",
+  "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "started",
+  "msg": "Check started: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-16T14:53:10.726133+00:00",
+  "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-16T14:53:10.726133+00:00",
   "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
   "type": "push",
   "msg": "New commit pushed (9796aea)"
  },
  {
-  "ts": "2026-09-16T14:52:39.208328+00:00",
+  "ts": "2026-09-16T14:53:10.726133+00:00",
   "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
   "type": "passed",
   "msg": "Status running \u2192 passed"
