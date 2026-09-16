@@ -294,6 +294,7 @@ kbd{font-size:10px;font-weight:500;color:var(--dim2);border:1px solid var(--bord
       <option value="created_asc">Oldest first</option>
       <option value="status">Status: fail → run → pass</option>
       <option value="progress">Least progress</option>
+      <option value="furthest">Checks moved farthest</option>
       <option value="changed">Recently changed</option>
       <option value="repo">Repo A → Z</option>
       <option value="size">Largest diff</option>
@@ -547,6 +548,15 @@ function visible(){
     created_asc:(a,b)=> (a.createdAt||"").localeCompare(b.createdAt||""),
     status:(a,b)=> (rank[a.overall]-rank[b.overall]) || (b.createdAt||"").localeCompare(a.createdAt||""),
     progress:(a,b)=> ((a.total?a.passed/a.total:0) - (b.total?b.passed/b.total:0)),
+    // "Farthest along" = most checks no longer queued/running (passed, failed
+    // or skipped all count as "moved") — not the same as passed-only progress,
+    // since a PR deep into its pipeline with one failure is still further
+    // along than one that's barely started.
+    furthest:(a,b)=> {
+      const doneA = a.total ? (a.total-(a.running||[]).length-(a.queued||[]).length)/a.total : 0;
+      const doneB = b.total ? (b.total-(b.running||[]).length-(b.queued||[]).length)/b.total : 0;
+      return doneB - doneA || (b.total||0) - (a.total||0);
+    },
     changed:(a,b)=> (b.last_change||"").localeCompare(a.last_change||""),
     repo:(a,b)=> a.repo.localeCompare(b.repo) || (+a.num - +b.num),
     size:(a,b)=> ((b.additions||0)+(b.deletions||0)) - ((a.additions||0)+(a.deletions||0)),
