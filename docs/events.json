@@ -1,29 +1,5 @@
 [
  {
-  "ts": "2026-09-16T16:07:50.858366+00:00",
-  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
-  "type": "passed",
-  "msg": "Check passed: claude-cost-report"
- },
- {
-  "ts": "2026-09-16T16:07:50.858366+00:00",
-  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
-  "type": "passed",
-  "msg": "Check passed: pass2_suggestion"
- },
- {
-  "ts": "2026-09-16T16:08:52.974372+00:00",
-  "pr": "dynamo-e079d63-hardware-embedded-and-low-level-systems#7",
-  "type": "started",
-  "msg": "Check started: ratelimit"
- },
- {
-  "ts": "2026-09-16T16:08:52.974372+00:00",
-  "pr": "dynamo-e079d63-hardware-embedded-and-low-level-systems#7",
-  "type": "passed",
-  "msg": "Check passed: validation"
- },
- {
   "ts": "2026-09-16T16:08:52.974372+00:00",
   "pr": "dynamo-ddae169-debugging-and-repair#8",
   "type": "passed",
@@ -2398,5 +2374,29 @@
   "pr": "dynamo-0183436-machine-learning-and-ai#8",
   "type": "passed",
   "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-16T21:11:30.244188+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-16T21:11:30.244188+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "started",
+  "msg": "Check started: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-16T21:11:30.244188+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-16T21:11:30.244188+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "failing",
+  "msg": "Check failed: trials"
  }
 ]

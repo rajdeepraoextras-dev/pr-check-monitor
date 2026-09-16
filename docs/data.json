@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T21:11:03.069938+00:00",
+  "snapshot_time": "2026-09-16T21:11:30.244188+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1142,7 +1142,7 @@
       "title": "Rework: state the vendor-wide substitution-table invariant and redraw the corpus around it",
       "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/pull/7",
       "createdAt": "2026-09-16T12:29:39Z",
-      "updatedAt": "2026-09-16T20:04:17Z",
+      "updatedAt": "2026-09-16T21:11:44Z",
       "sha": "7a3b931796b9f12f6f862c4b3af1b26865db7ef1",
       "draft": false,
       "mergeable": true,
@@ -1153,29 +1153,52 @@
       "head": "rework/24667f6-vendor-invariant",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
+      "overall": "failing",
       "passed": 13,
-      "total": 15,
+      "total": 17,
       "skipped": 1,
-      "failed": [],
+      "failed": [
+        "gate",
+        "trials"
+      ],
       "running": [
         {
-          "name": "trials",
-          "started_at": "2026-09-16T20:04:09Z"
+          "name": "claude-cost-report",
+          "started_at": "2026-09-16T21:11:38Z"
         }
       ],
       "queued": [],
       "checks": [
         {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-16T21:11:38Z",
+          "completed_at": "2026-09-16T21:11:48Z",
+          "duration_sec": 10,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35133112326/job/104978918811",
+          "app": "github-actions"
+        },
+        {
           "name": "trials",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-16T20:04:09Z",
+          "completed_at": "2026-09-16T21:11:36Z",
+          "duration_sec": 4047,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35133112326/job/104956341737",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T20:04:09Z",
+          "started_at": "2026-09-16T21:11:38Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35133112326/job/104956341737",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35133112326/job/104978918762",
           "app": "github-actions"
         },
         {
@@ -1321,7 +1344,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:31:07.881961+00:00",
-      "last_change": "2026-09-16T20:04:25.267406+00:00"
+      "last_change": "2026-09-16T21:11:30.244188+00:00"
     }
   ]
 }
