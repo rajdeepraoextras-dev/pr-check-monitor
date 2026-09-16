@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T14:54:04.032576+00:00",
+  "snapshot_time": "2026-09-16T14:54:52.097679+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -479,7 +479,7 @@
       "title": "Rework: grade the speculative compute bounds per request",
       "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/pull/8",
       "createdAt": "2026-09-16T13:25:01Z",
-      "updatedAt": "2026-09-16T14:53:18Z",
+      "updatedAt": "2026-09-16T14:54:48Z",
       "sha": "c72becff7a01a293036c5e6751d1c91b2288a997",
       "draft": false,
       "mergeable": true,
@@ -493,19 +493,14 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 7,
+      "passed": 8,
       "total": 17,
       "skipped": 7,
       "failed": [
         "gate",
         "pass2"
       ],
-      "running": [
-        {
-          "name": "pass2_suggestion",
-          "started_at": "2026-09-16T14:53:10Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -526,16 +521,6 @@
           "completed_at": "2026-09-16T14:53:06Z",
           "duration_sec": 3435,
           "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35103602078/job/104824118695",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-16T14:53:10Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35103602078/job/104846330595",
           "app": "github-actions"
         },
         {
@@ -566,6 +551,16 @@
           "completed_at": "2026-09-16T13:45:09Z",
           "duration_sec": 153,
           "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35103602078/job/104819160193",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T14:53:10Z",
+          "completed_at": "2026-09-16T14:54:53Z",
+          "duration_sec": 103,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35103602078/job/104846330595",
           "app": "github-actions"
         },
         {
@@ -681,7 +676,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T13:27:28.400072+00:00",
-      "last_change": "2026-09-16T14:54:04.032576+00:00"
+      "last_change": "2026-09-16T14:54:52.097679+00:00"
     },
     {
       "repo": "dynamo-314a3c9-model-training-and-ml-infrastructure",
@@ -690,7 +685,7 @@
       "title": "Rework 314a3c9: state the epoch LR policy family, ground the oracle, harden the verifier",
       "url": "https://github.com/handshake-project-dynamo/dynamo-314a3c9-model-training-and-ml-infrastructure/pull/6",
       "createdAt": "2026-09-16T12:32:09Z",
-      "updatedAt": "2026-09-16T14:54:08Z",
+      "updatedAt": "2026-09-16T14:54:39Z",
       "sha": "9796aea8ddce069b69fa483111cbd6d3a4c9f215",
       "draft": false,
       "mergeable": true,
@@ -701,19 +696,45 @@
       "head": "rework/314a3c9-policy-family-disclosure",
       "base": "main",
       "labels": [
-        "needs-revision"
+        "in-progress"
       ],
-      "overall": "passed",
-      "passed": 0,
-      "total": 0,
+      "overall": "running",
+      "passed": 1,
+      "total": 2,
       "skipped": 0,
       "failed": [],
-      "running": [],
+      "running": [
+        {
+          "name": "cosine_similarity",
+          "started_at": "2026-09-16T14:54:49Z"
+        }
+      ],
       "queued": [],
-      "checks": [],
+      "checks": [
+        {
+          "name": "cosine_similarity",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-16T14:54:49Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-314a3c9-model-training-and-ml-infrastructure/actions/runs/35111542760/job/104846969561",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T14:54:21Z",
+          "completed_at": "2026-09-16T14:54:45Z",
+          "duration_sec": 24,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-314a3c9-model-training-and-ml-infrastructure/actions/runs/35111542760/job/104846787063",
+          "app": "github-actions"
+        }
+      ],
       "submitted": false,
       "first_seen": "2026-09-16T12:33:08.162652+00:00",
-      "last_change": "2026-09-16T14:53:10.726133+00:00"
+      "last_change": "2026-09-16T14:54:52.097679+00:00"
     },
     {
       "repo": "dynamo-24667f6-security",
