@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T15:28:04.338680+00:00",
+  "snapshot_time": "2026-09-16T15:28:57.301704+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -121,7 +121,7 @@
       "title": "Rework: enforce retraining from /app/data/train in the verifier",
       "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/pull/6",
       "createdAt": "2026-09-16T14:27:55Z",
-      "updatedAt": "2026-09-16T15:18:55Z",
+      "updatedAt": "2026-09-16T15:28:58Z",
       "sha": "4e7ae0e4472025a472046bef98b685500a048f9c",
       "draft": false,
       "mergeable": true,
@@ -135,40 +135,36 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
-      "total": 10,
+      "passed": 9,
+      "total": 11,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "ava_review",
-          "started_at": "2026-09-16T15:18:47Z"
-        },
-        {
-          "name": "deep_review",
-          "started_at": "2026-09-16T15:18:48Z"
+          "name": "tier1",
+          "started_at": "2026-09-16T15:28:36Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "ava_review",
+          "name": "tier1",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T15:18:47Z",
+          "started_at": "2026-09-16T15:28:36Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104856235371",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104860043393",
           "app": "github-actions"
         },
         {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-16T15:18:48Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104856235575",
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T15:18:47Z",
+          "completed_at": "2026-09-16T15:28:34Z",
+          "duration_sec": 587,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104856235371",
           "app": "github-actions"
         },
         {
@@ -189,6 +185,16 @@
           "completed_at": "2026-09-16T14:30:18Z",
           "duration_sec": 103,
           "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104836727222",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T15:18:48Z",
+          "completed_at": "2026-09-16T15:28:24Z",
+          "duration_sec": 576,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104856235575",
           "app": "github-actions"
         },
         {
@@ -254,7 +260,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T14:30:10.410008+00:00",
-      "last_change": "2026-09-16T15:19:45.584315+00:00"
+      "last_change": "2026-09-16T15:28:57.301704+00:00"
     },
     {
       "repo": "dynamo-e1db7d0-data-science-and-reporting",
@@ -371,7 +377,7 @@
       "title": "Rework: grade raw frame normalisation and the default registry",
       "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/pull/8",
       "createdAt": "2026-09-16T14:15:42Z",
-      "updatedAt": "2026-09-16T15:28:01Z",
+      "updatedAt": "2026-09-16T15:28:21Z",
       "sha": "29c0d93df90b5a56dd62382341e9b194220d62d2",
       "draft": false,
       "mergeable": true,
