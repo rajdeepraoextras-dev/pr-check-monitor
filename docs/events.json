@@ -1,29 +1,5 @@
 [
  {
-  "ts": "2026-09-16T13:53:04.031912+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "started",
-  "msg": "Check started: qc_eval"
- },
- {
-  "ts": "2026-09-16T13:53:04.031912+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "started",
-  "msg": "Check started: qc_exec"
- },
- {
-  "ts": "2026-09-16T13:53:04.031912+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "passed",
-  "msg": "Check passed: tier1"
- },
- {
-  "ts": "2026-09-16T13:55:24.605879+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "passed",
-  "msg": "Check passed: qc_eval"
- },
- {
   "ts": "2026-09-16T13:55:52.227582+00:00",
   "pr": "dynamo-0183436-machine-learning-and-ai#8",
   "type": "started",
@@ -2376,25 +2352,49 @@
   "msg": "Check passed: qc_exec"
  },
  {
-  "ts": "2026-09-16T16:09:45.498481+00:00",
+  "ts": "2026-09-16T16:09:55.658035+00:00",
+  "pr": "dynamo-ddae169-debugging-and-repair#8",
+  "type": "passed",
+  "msg": "Check passed: qc_exec"
+ },
+ {
+  "ts": "2026-09-16T16:09:55.658035+00:00",
   "pr": "dynamo-e079d63-hardware-embedded-and-low-level-systems#7",
   "type": "started",
   "msg": "Check started: pass2"
  },
  {
-  "ts": "2026-09-16T16:09:45.498481+00:00",
+  "ts": "2026-09-16T16:09:55.658035+00:00",
   "pr": "dynamo-e079d63-hardware-embedded-and-low-level-systems#7",
   "type": "passed",
   "msg": "Check passed: ratelimit"
  },
  {
-  "ts": "2026-09-16T16:09:45.498481+00:00",
+  "ts": "2026-09-16T16:09:55.658035+00:00",
+  "pr": "dynamo-e079d63-hardware-embedded-and-low-level-systems#7",
+  "type": "passed",
+  "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-16T16:09:55.658035+00:00",
+  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-16T16:09:55.658035+00:00",
+  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
+  "type": "passed",
+  "msg": "Check passed: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-16T16:09:55.658035+00:00",
   "pr": "dynamo-e1db7d0-data-science-and-reporting#5",
   "type": "started",
   "msg": "Check started: review"
  },
  {
-  "ts": "2026-09-16T16:09:45.498481+00:00",
+  "ts": "2026-09-16T16:09:55.658035+00:00",
   "pr": "dynamo-e1db7d0-data-science-and-reporting#5",
   "type": "passed",
   "msg": "Check passed: cosine_similarity"
