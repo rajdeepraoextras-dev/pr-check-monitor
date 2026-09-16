@@ -1,77 +1,5 @@
 [
  {
-  "ts": "2026-09-16T14:26:30.724753+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-16T14:26:30.724753+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "passed",
-  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-24667f6-security/pulls/7 --jq '{title, url: .` failed: /bin/sh: gh: command not found"
- },
- {
-  "ts": "2026-09-16T14:26:30.724753+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "passed",
-  "msg": "6 checks passed"
- },
- {
-  "ts": "2026-09-16T14:26:30.724753+00:00",
-  "pr": "dynamo-ed639d6-systems-infrastructure-and-operations#5",
-  "type": "passed",
-  "msg": "Status error \u2192 passed"
- },
- {
-  "ts": "2026-09-16T14:26:30.724753+00:00",
-  "pr": "dynamo-ed639d6-systems-infrastructure-and-operations#5",
-  "type": "passed",
-  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-ed639d6-systems-infrastructure-and-operations` failed: /bin/sh: gh: command not found"
- },
- {
-  "ts": "2026-09-16T14:26:30.724753+00:00",
-  "pr": "dynamo-ed639d6-systems-infrastructure-and-operations#5",
-  "type": "passed",
-  "msg": "16 checks passed"
- },
- {
-  "ts": "2026-09-16T14:26:30.724753+00:00",
-  "pr": "dynamo-84d5250-build-dependency-and-release-management#6",
-  "type": "passed",
-  "msg": "Status error \u2192 passed"
- },
- {
-  "ts": "2026-09-16T14:26:30.724753+00:00",
-  "pr": "dynamo-84d5250-build-dependency-and-release-management#6",
-  "type": "passed",
-  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-manageme` failed: /bin/sh: gh: command not found"
- },
- {
-  "ts": "2026-09-16T14:26:30.724753+00:00",
-  "pr": "dynamo-84d5250-build-dependency-and-release-management#6",
-  "type": "passed",
-  "msg": "16 checks passed"
- },
- {
-  "ts": "2026-09-16T14:26:30.724753+00:00",
-  "pr": "dynamo-2b778c3-systems-infrastructure-and-operations#5",
-  "type": "passed",
-  "msg": "Status error \u2192 passed"
- },
- {
-  "ts": "2026-09-16T14:26:30.724753+00:00",
-  "pr": "dynamo-2b778c3-systems-infrastructure-and-operations#5",
-  "type": "passed",
-  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-2b778c3-systems-infrastructure-and-operations` failed: /bin/sh: gh: command not found"
- },
- {
-  "ts": "2026-09-16T14:26:30.724753+00:00",
-  "pr": "dynamo-2b778c3-systems-infrastructure-and-operations#5",
-  "type": "passed",
-  "msg": "16 checks passed"
- },
- {
   "ts": "2026-09-16T14:27:45.241865+00:00",
   "pr": "dynamo-ddae169-debugging-and-repair#8",
   "type": "running",
@@ -2398,5 +2326,77 @@
   "pr": "dynamo-e1db7d0-data-science-and-reporting#5",
   "type": "passed",
   "msg": "Check passed: tier1"
+ },
+ {
+  "ts": "2026-09-16T16:56:22.231716+00:00",
+  "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "running",
+  "msg": "Status passed \u2192 running"
+ },
+ {
+  "ts": "2026-09-16T16:56:22.231716+00:00",
+  "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "started",
+  "msg": "Check started: review"
+ },
+ {
+  "ts": "2026-09-16T16:56:22.231716+00:00",
+  "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "passed",
+  "msg": "Check passed: changes"
+ },
+ {
+  "ts": "2026-09-16T16:56:22.231716+00:00",
+  "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "passed",
+  "msg": "Check passed: cosine_similarity"
+ },
+ {
+  "ts": "2026-09-16T16:56:22.231716+00:00",
+  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
+  "type": "started",
+  "msg": "Check started: cosine_similarity"
+ },
+ {
+  "ts": "2026-09-16T16:56:22.231716+00:00",
+  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
+  "type": "passed",
+  "msg": "Check passed: changes"
+ },
+ {
+  "ts": "2026-09-16T16:56:22.231716+00:00",
+  "pr": "dynamo-e1db7d0-data-science-and-reporting#5",
+  "type": "started",
+  "msg": "Check started: qc_eval"
+ },
+ {
+  "ts": "2026-09-16T16:56:22.231716+00:00",
+  "pr": "dynamo-e1db7d0-data-science-and-reporting#5",
+  "type": "started",
+  "msg": "Check started: qc_exec"
+ },
+ {
+  "ts": "2026-09-16T16:56:22.231716+00:00",
+  "pr": "dynamo-e1db7d0-data-science-and-reporting#5",
+  "type": "passed",
+  "msg": "Check passed: ava_review"
+ },
+ {
+  "ts": "2026-09-16T16:56:22.231716+00:00",
+  "pr": "dynamo-e1db7d0-data-science-and-reporting#5",
+  "type": "passed",
+  "msg": "Check passed: tier1"
+ },
+ {
+  "ts": "2026-09-16T16:56:22.231716+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "started",
+  "msg": "Check started: cosine_similarity"
+ },
+ {
+  "ts": "2026-09-16T16:56:22.231716+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "passed",
+  "msg": "Check passed: changes"
  }
 ]
