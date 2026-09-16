@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T15:18:04.662555+00:00",
+  "snapshot_time": "2026-09-16T15:18:53.519332+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -121,7 +121,7 @@
       "title": "Rework: enforce retraining from /app/data/train in the verifier",
       "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/pull/6",
       "createdAt": "2026-09-16T14:27:55Z",
-      "updatedAt": "2026-09-16T14:35:18Z",
+      "updatedAt": "2026-09-16T15:18:55Z",
       "sha": "4e7ae0e4472025a472046bef98b685500a048f9c",
       "draft": false,
       "mergeable": true,
@@ -135,26 +135,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-16T14:35:11Z"
+          "name": "ava_review",
+          "started_at": "2026-09-16T15:18:47Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-16T15:18:48Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "pass2",
+          "name": "ava_review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T14:35:11Z",
+          "started_at": "2026-09-16T15:18:47Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104839303632",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104856235371",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-16T15:18:48Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104856235575",
           "app": "github-actions"
         },
         {
@@ -175,6 +189,16 @@
           "completed_at": "2026-09-16T14:30:18Z",
           "duration_sec": 103,
           "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104836727222",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T14:35:11Z",
+          "completed_at": "2026-09-16T15:18:45Z",
+          "duration_sec": 2614,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104839303632",
           "app": "github-actions"
         },
         {
@@ -216,11 +240,21 @@
           "duration_sec": 77,
           "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104838720008",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-16T15:18:45Z",
+          "completed_at": "2026-09-16T15:18:45Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104856237720",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-16T14:30:10.410008+00:00",
-      "last_change": "2026-09-16T14:35:30.961191+00:00"
+      "last_change": "2026-09-16T15:18:53.519332+00:00"
     },
     {
       "repo": "dynamo-e1db7d0-data-science-and-reporting",
