@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T15:45:19.379784+00:00",
+  "snapshot_time": "2026-09-16T15:45:29.097259+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -309,7 +309,7 @@
       "title": "Rework: grade metric_table.csv line endings and carry the empty-arm and exact-alpha fixes",
       "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/pull/5",
       "createdAt": "2026-09-16T14:25:27Z",
-      "updatedAt": "2026-09-16T15:41:06Z",
+      "updatedAt": "2026-09-16T15:45:32Z",
       "sha": "e5eff6d39da65d8ecdf66a41f67a16c0f9645493",
       "draft": false,
       "mergeable": true,
@@ -323,17 +323,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "ava_review",
-          "started_at": "2026-09-16T15:40:58Z"
-        },
-        {
-          "name": "deep_review",
           "started_at": "2026-09-16T15:40:58Z"
         }
       ],
@@ -347,16 +343,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/actions/runs/35108431493/job/104864759090",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-16T15:40:58Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/actions/runs/35108431493/job/104864759127",
           "app": "github-actions"
         },
         {
@@ -377,6 +363,16 @@
           "completed_at": "2026-09-16T14:28:01Z",
           "duration_sec": 116,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/actions/runs/35108431493/job/104835757097",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T15:40:58Z",
+          "completed_at": "2026-09-16T15:45:38Z",
+          "duration_sec": 280,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/actions/runs/35108431493/job/104864759127",
           "app": "github-actions"
         },
         {
@@ -442,7 +438,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T14:28:01.508548+00:00",
-      "last_change": "2026-09-16T15:41:19.951280+00:00"
+      "last_change": "2026-09-16T15:45:29.097259+00:00"
     },
     {
       "repo": "dynamo-ddae169-debugging-and-repair",
@@ -667,7 +663,7 @@
       "title": "Rework 314a3c9: state the epoch LR policy family, ground the oracle, harden the verifier",
       "url": "https://github.com/handshake-project-dynamo/dynamo-314a3c9-model-training-and-ml-infrastructure/pull/6",
       "createdAt": "2026-09-16T12:32:09Z",
-      "updatedAt": "2026-09-16T15:45:09Z",
+      "updatedAt": "2026-09-16T15:45:35Z",
       "sha": "f4cf8216739392fa0b11481bea43fefdaf452bd7",
       "draft": false,
       "mergeable": true,
@@ -766,7 +762,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:33:08.162652+00:00",
-      "last_change": "2026-09-16T15:45:19.379784+00:00"
+      "last_change": "2026-09-16T15:45:29.097259+00:00"
     },
     {
       "repo": "dynamo-24667f6-security",
@@ -854,7 +850,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:31:07.881961+00:00",
-      "last_change": "2026-09-16T15:44:33.144089+00:00"
+      "last_change": "2026-09-16T15:45:29.097259+00:00"
     },
     {
       "repo": "dynamo-ed639d6-systems-infrastructure-and-operations",
