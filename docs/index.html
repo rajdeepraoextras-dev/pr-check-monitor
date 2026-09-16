@@ -1,208 +1,605 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PR Check Monitor</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;650;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#f7f7f5; --card:#ffffff; --border:#e5e3de; --text:#1f1e1c; --text-dim:#6b6963;
-  --pass:#1a7f4f; --pass-bg:#e7f6ee; --run:#b5750a; --run-bg:#fdf1de; --fail:#c0362c; --fail-bg:#fbe9e7;
-  --accent:#5a4fcf; --track:#eceae4;
+  --bg:#0b0d12; --bg2:#0f1219; --panel:#131720; --panel2:#181d28; --border:#222838; --border2:#2c3446;
+  --text:#e7eaf1; --dim:#8b93a7; --dim2:#5d6578;
+  --pass:#3ddc84; --pass-bg:rgba(61,220,132,.12); --pass-br:rgba(61,220,132,.35);
+  --run:#ffb547; --run-bg:rgba(255,181,71,.12); --run-br:rgba(255,181,71,.35);
+  --fail:#ff5c6c; --fail-bg:rgba(255,92,108,.12); --fail-br:rgba(255,92,108,.35);
+  --queue:#7c86a2; --queue-bg:rgba(124,134,162,.14);
+  --skip:#5d6578;
+  --accent:#7c6cff; --accent2:#4fd1ff; --accent-bg:rgba(124,108,255,.14);
+  --track:#1c2230; --glow:0 0 0 1px rgba(124,108,255,.25), 0 0 24px rgba(124,108,255,.12);
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --sans:"Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --r:12px;
 }
-@media (prefers-color-scheme: dark){
-  :root{
-    --bg:#171614; --card:#201f1c; --border:#312f2b; --text:#eeece7; --text-dim:#9c9a93;
-    --pass:#4fd393; --pass-bg:#173226; --run:#f0ac4c; --run-bg:#332711; --fail:#f2857c; --fail-bg:#3a1f1c;
-    --accent:#a69bff; --track:#2a2823;
-  }
+:root[data-theme="light"]{
+  --bg:#f4f5f8; --bg2:#eef0f5; --panel:#ffffff; --panel2:#f7f8fb; --border:#e1e4ec; --border2:#cfd4e0;
+  --text:#161a24; --dim:#5f6779; --dim2:#8f97a9;
+  --pass:#12945a; --pass-bg:rgba(18,148,90,.10); --pass-br:rgba(18,148,90,.3);
+  --run:#b76e00; --run-bg:rgba(183,110,0,.10); --run-br:rgba(183,110,0,.3);
+  --fail:#d1323f; --fail-bg:rgba(209,50,63,.10); --fail-br:rgba(209,50,63,.3);
+  --queue:#6b7387; --queue-bg:rgba(107,115,135,.12);
+  --skip:#9aa1b2;
+  --accent:#5b4bff; --accent2:#0ea5e9; --accent-bg:rgba(91,75,255,.10);
+  --track:#e6e9f0; --glow:0 0 0 1px rgba(91,75,255,.25), 0 0 20px rgba(91,75,255,.10);
 }
-*{box-sizing:border-box;}
-body{background:var(--bg);color:var(--text);font-family:"Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;margin:0;padding:0;}
-.wrap{max-width:1000px;margin:0 auto;padding:24px 16px 40px;}
-.header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:20px;}
-h1{font-size:20px;font-weight:650;margin:0 0 4px;letter-spacing:-.01em;}
-.sub{color:var(--text-dim);font-size:13px;}
-.stats{display:flex;gap:10px;flex-wrap:wrap;}
-.stat{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:8px 14px;min-width:64px;text-align:center;}
-.stat .n{font-size:18px;font-weight:700;line-height:1.1;}
-.stat .l{font-size:10.5px;color:var(--text-dim);text-transform:uppercase;letter-spacing:.04em;margin-top:2px;}
-.stat.pass .n{color:var(--pass);} .stat.run .n{color:var(--run);} .stat.fail .n{color:var(--fail);}
-.live{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--text-dim);margin-top:6px;}
-.dot{width:7px;height:7px;border-radius:50%;background:var(--pass);animation:pulse 1.6s ease-in-out infinite;}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.8);}}
-.cards{display:flex;flex-direction:column;gap:10px;}
-.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 16px;}
-.row1{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;}
-.left{min-width:0;flex:1;}
-.repo{font-size:11.5px;color:var(--text-dim);font-weight:600;letter-spacing:.01em;}
-.title{font-size:13.5px;margin-top:2px;color:var(--text);text-decoration:none;display:block;}
-.title:hover{color:var(--accent);}
-.badge{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:650;padding:4px 10px;border-radius:20px;white-space:nowrap;flex-shrink:0;}
-.badge.passed{color:var(--pass);background:var(--pass-bg);}
-.badge.running{color:var(--run);background:var(--run-bg);}
-.badge.failing{color:var(--fail);background:var(--fail-bg);}
-.badge.error{color:var(--fail);background:var(--fail-bg);}
-.bdot{width:6px;height:6px;border-radius:50%;background:currentColor;}
-.bdot.running{animation:pulse 1.4s ease-in-out infinite;}
-.meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px;gap:12px;flex-wrap:wrap;}
-.progress-wrap{flex:1;min-width:120px;display:flex;align-items:center;gap:8px;}
-.progress{flex:1;height:6px;border-radius:4px;background:var(--track);overflow:hidden;}
-.progress-fill{height:100%;border-radius:4px;background:var(--pass);transition:width .4s ease;}
-.progress-fill.has-fail{background:var(--fail);}
-.pct{font-size:11px;color:var(--text-dim);font-variant-numeric:tabular-nums;white-space:nowrap;}
-.running-list{display:flex;gap:6px;flex-wrap:wrap;}
-.chip{display:inline-flex;align-items:center;gap:5px;font-size:11px;background:var(--run-bg);color:var(--run);padding:3px 8px 3px 6px;border-radius:20px;font-variant-numeric:tabular-nums;}
-.chip .cdot{width:5px;height:5px;border-radius:50%;background:currentColor;animation:pulse 1.4s ease-in-out infinite;}
-.failed-list{display:flex;gap:6px;flex-wrap:wrap;}
-.fchip{font-size:11px;background:var(--fail-bg);color:var(--fail);padding:3px 8px;border-radius:20px;font-weight:600;}
-.footer{text-align:center;color:var(--text-dim);font-size:11.5px;margin-top:22px;}
-.submitted-badge{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:650;padding:3px 9px;border-radius:20px;background:var(--accent);color:#fff;cursor:pointer;border:none;white-space:nowrap;flex-shrink:0;}
-.mark-btn{font-size:11px;font-weight:600;padding:3px 9px;border-radius:20px;background:transparent;color:var(--text-dim);border:1px solid var(--border);cursor:pointer;white-space:nowrap;flex-shrink:0;}
-.mark-btn:hover{border-color:var(--accent);color:var(--accent);}
-.badges{display:flex;align-items:center;gap:6px;flex-shrink:0;}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:13.5px;line-height:1.45;
+  background-image:
+    radial-gradient(1200px 600px at 10% -10%, rgba(124,108,255,.10), transparent 60%),
+    radial-gradient(900px 500px at 100% 0%, rgba(79,209,255,.07), transparent 60%);
+  background-attachment:fixed;}
+a{color:inherit}
+button{font-family:inherit;color:inherit}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.wrap{max-width:1440px;margin:0 auto;padding:18px 20px 60px}
+
+/* ---------- top bar ---------- */
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:14px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;box-shadow:var(--glow);position:relative;overflow:hidden}
+.logo::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);transform:translateX(-100%);animation:shine 4s ease-in-out infinite}
+@keyframes shine{0%,60%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+.logo span{width:14px;height:14px;border:2.5px solid #fff;border-radius:50%;border-right-color:transparent;animation:spin 1.6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+h1{font-size:17px;font-weight:600;margin:0;letter-spacing:-.01em}
+.scope{display:flex;gap:6px;flex-wrap:wrap;margin-top:2px}
+.tag{font-family:var(--mono);font-size:10.5px;color:var(--dim);background:var(--panel2);border:1px solid var(--border);padding:2px 7px;border-radius:6px}
+.tag b{color:var(--text);font-weight:500}
+.topright{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.live{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11.5px;color:var(--dim);background:var(--panel);border:1px solid var(--border);padding:6px 10px;border-radius:8px}
+.live .dot{width:8px;height:8px;border-radius:50%;background:var(--pass);box-shadow:0 0 0 0 rgba(61,220,132,.6);animation:ping 1.8s ease-out infinite}
+.live.stale .dot{background:var(--run);animation:none}
+.live.dead .dot{background:var(--fail);animation:none}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(61,220,132,.55)}100%{box-shadow:0 0 0 9px rgba(61,220,132,0)}}
+.live .ring{width:14px;height:14px;border-radius:50%;background:conic-gradient(var(--accent) var(--p,0%), var(--track) 0);position:relative}
+.live .ring::after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--panel)}
+.ibtn{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:6px 10px;font-size:12px;cursor:pointer;color:var(--dim);display:inline-flex;align-items:center;gap:6px;transition:.15s}
+.ibtn:hover{border-color:var(--border2);color:var(--text)}
+.ibtn.on{color:var(--accent);border-color:var(--accent);background:var(--accent-bg)}
+kbd{font-family:var(--mono);font-size:10px;color:var(--dim2);border:1px solid var(--border);border-bottom-width:2px;border-radius:4px;padding:0 4px;margin-left:2px}
+
+/* ---------- stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:14px}
+.stat{background:var(--panel);border:1px solid var(--border);border-radius:var(--r);padding:12px 14px;cursor:pointer;position:relative;overflow:hidden;transition:.15s}
+.stat:hover{border-color:var(--border2);transform:translateY(-1px)}
+.stat.on{box-shadow:var(--glow);border-color:var(--accent)}
+.stat .n{font-family:var(--mono);font-size:24px;font-weight:600;line-height:1;letter-spacing:-.02em}
+.stat .l{font-size:10.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;margin-top:6px;font-weight:500}
+.stat .s{font-family:var(--mono);font-size:10.5px;color:var(--dim2);margin-top:3px}
+.stat.pass .n{color:var(--pass)} .stat.run .n{color:var(--run)} .stat.fail .n{color:var(--fail)} .stat.sub .n{color:var(--accent)} .stat.rate .n{color:var(--accent2)}
+.stat .bar{position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--track)}
+.stat .bar i{display:block;height:100%;width:var(--w,0%);background:currentColor;transition:width .5s}
+.stat.pass .bar i{background:var(--pass)} .stat.run .bar i{background:var(--run)} .stat.fail .bar i{background:var(--fail)} .stat.sub .bar i{background:var(--accent)} .stat.rate .bar i{background:var(--accent2)}
+
+/* ---------- filter bar ---------- */
+.filters{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--panel);border:1px solid var(--border);border-radius:var(--r);padding:10px 12px;margin-bottom:14px;position:sticky;top:8px;z-index:5;backdrop-filter:blur(10px)}
+.search{display:flex;align-items:center;gap:8px;background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:6px 10px;flex:1;min-width:200px}
+.search input{background:transparent;border:0;outline:0;color:var(--text);font-family:var(--mono);font-size:12px;width:100%}
+.search input::placeholder{color:var(--dim2)}
+.seg{display:inline-flex;background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:2px;gap:2px}
+.seg button{border:0;background:transparent;padding:5px 10px;border-radius:6px;font-size:11.5px;font-weight:500;cursor:pointer;color:var(--dim);display:inline-flex;align-items:center;gap:6px;transition:.12s;white-space:nowrap}
+.seg button:hover{color:var(--text)}
+.seg button.on{background:var(--panel);color:var(--text);box-shadow:0 1px 2px rgba(0,0,0,.25)}
+.seg button .c{font-family:var(--mono);font-size:10px;color:var(--dim2);background:var(--track);padding:0 5px;border-radius:4px}
+.seg button.on.pass{color:var(--pass)} .seg button.on.run{color:var(--run)} .seg button.on.fail{color:var(--fail)} .seg button.on.sub{color:var(--accent)}
+select.sel{background:var(--bg2);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:6px 8px;font-family:var(--mono);font-size:11.5px;outline:0;cursor:pointer}
+.spacer{flex:1}
+.fcount{font-family:var(--mono);font-size:11px;color:var(--dim)}
+
+/* ---------- layout ---------- */
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:14px;align-items:start}
+@media (max-width:1080px){.grid{grid-template-columns:1fr}.side{order:-1}}
+.side{display:flex;flex-direction:column;gap:12px;position:sticky;top:76px}
+@media (max-width:1080px){.side{position:static}}
+.panel{background:var(--panel);border:1px solid var(--border);border-radius:var(--r);overflow:hidden}
+.ph{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;border-bottom:1px solid var(--border);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+.ph .mono{font-weight:400;text-transform:none;letter-spacing:0;color:var(--dim2)}
+.pb{padding:8px 10px;max-height:380px;overflow:auto}
+.pb::-webkit-scrollbar{width:8px}.pb::-webkit-scrollbar-thumb{background:var(--border2);border-radius:8px}
+
+/* ---------- attention panel ---------- */
+.att{display:flex;flex-direction:column;gap:6px}
+.att a{display:flex;align-items:center;gap:8px;text-decoration:none;padding:7px 8px;border-radius:8px;border:1px solid transparent;background:var(--bg2);font-size:12px;transition:.12s}
+.att a:hover{border-color:var(--border2)}
+.att .d{width:7px;height:7px;border-radius:50%;flex-shrink:0}
+.att .d.fail{background:var(--fail);box-shadow:0 0 8px var(--fail)} .att .d.run{background:var(--run);animation:pulse 1.4s infinite}
+.att .t{min-width:0;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.att .t small{display:block;color:var(--dim);font-family:var(--mono);font-size:10px}
+.att .v{font-family:var(--mono);font-size:10.5px;color:var(--dim);white-space:nowrap}
+.empty{color:var(--dim2);font-size:12px;padding:10px 8px;text-align:center;font-family:var(--mono)}
+
+/* ---------- feed ---------- */
+.feed{display:flex;flex-direction:column}
+.ev{display:grid;grid-template-columns:8px 1fr;gap:10px;padding:7px 6px;border-left:2px solid transparent;position:relative}
+.ev+.ev{border-top:1px dashed var(--border)}
+.ev .d{width:8px;height:8px;border-radius:50%;margin-top:5px;background:var(--queue)}
+.ev.passed .d{background:var(--pass)} .ev.failing .d{background:var(--fail)} .ev.running .d{background:var(--run)} .ev.push .d{background:var(--accent2)} .ev.discovered .d{background:var(--accent)} .ev.review .d{background:var(--accent)}
+.ev .m{font-size:12px}
+.ev .k{font-family:var(--mono);font-size:10px;color:var(--dim);display:flex;justify-content:space-between;gap:8px;margin-top:1px}
+.ev .k span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* ---------- durations panel ---------- */
+.dur{display:flex;flex-direction:column;gap:5px}
+.dur .r{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;font-size:11.5px}
+.dur .r .nm{font-family:var(--mono);font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dur .r .bar{grid-column:1/3;height:4px;background:var(--track);border-radius:3px;overflow:hidden}
+.dur .r .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));width:var(--w)}
+.dur .r .v{font-family:var(--mono);font-size:10.5px;color:var(--dim)}
+
+/* ---------- cards ---------- */
+.list{display:flex;flex-direction:column;gap:10px;min-width:0}
+.group{font-family:var(--mono);font-size:11px;color:var(--dim);padding:8px 2px 0;display:flex;align-items:center;gap:8px}
+.group::after{content:"";flex:1;height:1px;background:var(--border)}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:var(--r);padding:14px 16px;transition:border-color .15s, box-shadow .15s;position:relative;overflow:hidden;min-width:0}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--queue)}
+.card.passed::before{background:var(--pass)} .card.running::before{background:var(--run)} .card.failing::before,.card.error::before{background:var(--fail)}
+.card:hover{border-color:var(--border2)}
+.card.changed{animation:flash 1.8s ease-out}
+@keyframes flash{0%{box-shadow:0 0 0 2px var(--accent),0 0 30px rgba(124,108,255,.35)}100%{box-shadow:none}}
+.r1{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.l{min-width:0;flex:1}
+.repo{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;color:var(--dim);flex-wrap:wrap}
+.repo .num{color:var(--accent);font-weight:600}
+.repo .lbl{font-size:9.5px;padding:1px 6px;border-radius:5px;border:1px solid var(--border);color:var(--dim);text-transform:lowercase}
+.repo .lbl.draft{color:var(--run);border-color:var(--run-br)}
+.repo .lbl.review{color:var(--pass);border-color:var(--pass-br)}
+.repo .lbl.review.changes{color:var(--fail);border-color:var(--fail-br)}
+.repo .lbl.conflict{color:var(--fail);border-color:var(--fail-br)}
+.title{font-size:14px;font-weight:500;margin-top:3px;text-decoration:none;display:block;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.title:hover{color:var(--accent)}
+.badges{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:600;padding:4px 10px;border-radius:20px;white-space:nowrap;border:1px solid transparent;letter-spacing:.02em}
+.badge.passed{color:var(--pass);background:var(--pass-bg);border-color:var(--pass-br)}
+.badge.running{color:var(--run);background:var(--run-bg);border-color:var(--run-br)}
+.badge.failing,.badge.error{color:var(--fail);background:var(--fail-bg);border-color:var(--fail-br)}
+.bdot{width:6px;height:6px;border-radius:50%;background:currentColor}
+.bdot.running{animation:pulse 1.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.7)}}
+.sub-btn{font-size:11px;font-weight:600;padding:4px 10px;border-radius:20px;cursor:pointer;white-space:nowrap;border:1px solid var(--border);background:transparent;color:var(--dim);transition:.12s}
+.sub-btn:hover{border-color:var(--accent);color:var(--accent)}
+.sub-btn.on{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 0 14px rgba(124,108,255,.35)}
+.meta{display:flex;align-items:center;gap:6px 14px;flex-wrap:wrap;margin-top:8px;font-family:var(--mono);font-size:10.5px;color:var(--dim)}
+.meta .add{color:var(--pass)} .meta .del{color:var(--fail)}
+.meta .br{display:inline-flex;align-items:center;gap:5px;max-width:100%}
+.meta .br code{background:var(--bg2);border:1px solid var(--border);padding:1px 6px;border-radius:5px;color:var(--text);max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block;vertical-align:middle}
+.meta .arrow{color:var(--dim2)}
+.prog{display:flex;align-items:center;gap:10px;margin-top:10px}
+.segbar{flex:1;height:7px;border-radius:5px;background:var(--track);overflow:hidden;display:flex}
+.segbar i{display:block;height:100%;transition:width .4s}
+.segbar .p{background:var(--pass)} .segbar .f{background:var(--fail)} .segbar .r{background:var(--run);background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.18) 0 4px,transparent 4px 8px);animation:stripes 1s linear infinite} .segbar .q{background:var(--queue)}
+@keyframes stripes{to{background-position:16px 0}}
+.pct{font-family:var(--mono);font-size:11px;color:var(--dim);white-space:nowrap}
+.pct b{color:var(--text);font-weight:600}
+.checks{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.chk{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10.5px;padding:3px 8px 3px 7px;border-radius:7px;border:1px solid var(--border);background:var(--bg2);color:var(--dim);text-decoration:none;transition:.12s;max-width:100%}
+.chk:hover{border-color:var(--border2);color:var(--text)}
+.chk .d{width:6px;height:6px;border-radius:50%;flex-shrink:0;background:var(--queue)}
+.chk.passed .d{background:var(--pass)} .chk.failed .d{background:var(--fail);box-shadow:0 0 6px var(--fail)} .chk.running .d{background:var(--run);animation:pulse 1.2s infinite} .chk.skipped .d{background:var(--skip)}
+.chk.failed{color:var(--fail);border-color:var(--fail-br);background:var(--fail-bg)}
+.chk.running{color:var(--run);border-color:var(--run-br);background:var(--run-bg)}
+.chk .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.chk .t{color:var(--dim2);font-size:10px}
+.chk.running .t,.chk.failed .t{color:inherit;opacity:.8}
+.card.collapsed .checks{display:none}
+.tog{background:transparent;border:0;color:var(--dim2);font-family:var(--mono);font-size:10.5px;cursor:pointer;padding:0;margin-top:8px}
+.tog:hover{color:var(--accent)}
+
+/* ---------- table view ---------- */
+.tbl{width:100%;border-collapse:collapse;font-size:12px}
+.tbl th{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);text-align:left;padding:8px 10px;border-bottom:1px solid var(--border);font-weight:600;white-space:nowrap}
+.tbl td{padding:9px 10px;border-bottom:1px solid var(--border);vertical-align:middle}
+.tbl tr:hover td{background:var(--panel2)}
+.tbl .mini{height:5px;width:110px;border-radius:4px;background:var(--track);overflow:hidden;display:flex}
+.tbl .mini i{display:block;height:100%}
+.tbl .t{max-width:380px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block;text-decoration:none}
+.tbl .t:hover{color:var(--accent)}
+.tblwrap{overflow-x:auto}
+
+.foot{margin-top:24px;text-align:center;color:var(--dim2);font-family:var(--mono);font-size:10.5px}
+.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--panel);border:1px solid var(--accent);color:var(--text);padding:8px 14px;border-radius:8px;font-size:12px;opacity:0;transition:.2s;pointer-events:none;box-shadow:var(--glow)}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="header">
-    <div>
-      <h1>PR Check Monitor</h1>
-      <div class="sub" id="prSub">Loading…</div>
-      <div class="live"><span class="dot"></span><span id="liveText">watching</span></div>
+
+  <div class="top">
+    <div class="brand">
+      <div class="logo"><span></span></div>
+      <div>
+        <h1>PR Check Monitor</h1>
+        <div class="scope" id="scope"></div>
+      </div>
     </div>
-    <div class="stats">
-      <div class="stat pass"><div class="n" id="statPass">0</div><div class="l">Passed</div></div>
-      <div class="stat run"><div class="n" id="statRun">0</div><div class="l">Running</div></div>
-      <div class="stat fail"><div class="n" id="statFail">0</div><div class="l">Failing</div></div>
+    <div class="topright">
+      <div class="live" id="live"><span class="dot"></span><span id="liveText">connecting</span><span class="ring" id="ring" title="next refresh"></span></div>
+      <button class="ibtn" id="btnCopy" title="Copy markdown summary of visible PRs">copy summary</button>
+      <button class="ibtn" id="btnView" title="Toggle cards / table">table <kbd>v</kbd></button>
+      <button class="ibtn" id="btnTheme" title="Toggle theme">light <kbd>t</kbd></button>
     </div>
   </div>
-  <div class="cards" id="cards"></div>
-  <div class="footer" id="asOf"></div>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="filters">
+    <div class="search"><span class="mono" style="color:var(--dim2)">/</span><input id="q" placeholder="search repo, title, branch, check, #num…" autocomplete="off"></div>
+    <div class="seg" id="segStatus">
+      <button data-v="all" class="on">All <span class="c" id="cAll">0</span></button>
+      <button data-v="failing" class="fail">Failing <span class="c" id="cFail">0</span></button>
+      <button data-v="running" class="run">Running <span class="c" id="cRun">0</span></button>
+      <button data-v="passed" class="pass">Passed <span class="c" id="cPass">0</span></button>
+    </div>
+    <div class="seg" id="segSub">
+      <button data-v="all" class="on">Any</button>
+      <button data-v="yes" class="sub">Submitted</button>
+      <button data-v="no">Not submitted</button>
+    </div>
+    <select class="sel" id="sort">
+      <option value="created_desc">newest first</option>
+      <option value="created_asc">oldest first</option>
+      <option value="status">status (fail → run → pass)</option>
+      <option value="progress">least progress</option>
+      <option value="changed">recently changed</option>
+      <option value="repo">repo a→z</option>
+      <option value="size">largest diff</option>
+    </select>
+    <select class="sel" id="repoSel"><option value="">all repos</option></select>
+    <button class="ibtn" id="btnGroup">group by repo</button>
+    <button class="ibtn" id="btnExpand">collapse all <kbd>e</kbd></button>
+    <span class="spacer"></span>
+    <span class="fcount" id="fcount"></span>
+    <button class="ibtn" id="btnReset">reset</button>
+  </div>
+
+  <div class="grid">
+    <div class="list" id="list"></div>
+    <div class="side">
+      <div class="panel">
+        <div class="ph"><span>Needs attention</span><span class="mono" id="attCount"></span></div>
+        <div class="pb"><div class="att" id="att"></div></div>
+      </div>
+      <div class="panel">
+        <div class="ph"><span>Activity</span><span class="mono" id="feedCount"></span></div>
+        <div class="pb"><div class="feed" id="feed"></div></div>
+      </div>
+      <div class="panel">
+        <div class="ph"><span>Check durations</span><span class="mono">avg · completed</span></div>
+        <div class="pb"><div class="dur" id="dur"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot" id="foot"></div>
 </div>
+<div class="toast" id="toast"></div>
 
 <script>
-let DATA = [];
-let SNAPSHOT_TIME = null;
+/* ================= state ================= */
+let DATA = [], EVENTS = [], SNAP = null, CFG = {}, lastFetch = 0, prevOverall = {};
+const REFRESH_MS = 60000;
+const LS = {
+  get(k, d){ try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch(e){ return d; } },
+  set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
+};
+const F = Object.assign({ q:"", status:"all", sub:"all", sort:"created_desc", repo:"", group:false, view:"cards", collapsed:{} }, LS.get("prmon_filters", {}));
+let THEME = LS.get("prmon_theme", "dark");
+let allCollapsed = false;
 
-function fmtElapsed(sec){
+/* ================= utils ================= */
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function fmtDur(sec){
+  if(sec == null) return "";
+  sec = Math.max(0, Math.floor(sec));
   if(sec < 60) return sec + "s";
   const m = Math.floor(sec/60), s = sec%60;
-  if(m < 60) return m + "m " + s + "s";
+  if(m < 60) return m + "m " + (s<10?"0":"") + s + "s";
   const h = Math.floor(m/60), mm = m%60;
-  return h + "h " + mm + "m";
+  return h + "h " + (mm<10?"0":"") + mm + "m";
+}
+function ago(ts){ if(!ts) return ""; return fmtDur((Date.now() - new Date(ts).getTime())/1000) + " ago"; }
+function key(pr){ return pr.repo + "#" + pr.num; }
+function shortRepo(r){ return r.replace(/^dynamo-[0-9a-f]{7}-/, ""); }
+function repoId(r){ const m = r.match(/^dynamo-([0-9a-f]{7})/); return m ? m[1] : ""; }
+function getMarks(){ return LS.get("pr_submitted_marks", {}); }
+function isSub(pr){ return !!pr.submitted || !!getMarks()[key(pr)]; }
+function toast(msg){ const t=$("toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove("show"),1600); }
+
+/* ================= filtering ================= */
+function visible(){
+  const marks = getMarks();
+  const q = F.q.trim().toLowerCase();
+  let rows = DATA.filter(pr => {
+    if(F.status === "failing" && !(pr.overall === "failing" || pr.overall === "error")) return false;
+    if(F.status === "running" && pr.overall !== "running") return false;
+    if(F.status === "passed" && pr.overall !== "passed") return false;
+    const sub = !!pr.submitted || !!marks[key(pr)];
+    if(F.sub === "yes" && !sub) return false;
+    if(F.sub === "no" && sub) return false;
+    if(F.repo && pr.repo !== F.repo) return false;
+    if(q){
+      const hay = [pr.repo, pr.title, pr.head, "#"+pr.num, ...(pr.labels||[]), ...(pr.checks||[]).map(c=>c.name)].join(" ").toLowerCase();
+      if(!hay.includes(q)) return false;
+    }
+    return true;
+  });
+  const rank = {failing:0, error:0, running:1, passed:2};
+  const sorters = {
+    created_desc:(a,b)=> (b.createdAt||"").localeCompare(a.createdAt||""),
+    created_asc:(a,b)=> (a.createdAt||"").localeCompare(b.createdAt||""),
+    status:(a,b)=> (rank[a.overall]-rank[b.overall]) || (b.createdAt||"").localeCompare(a.createdAt||""),
+    progress:(a,b)=> ((a.total?a.passed/a.total:0) - (b.total?b.passed/b.total:0)),
+    changed:(a,b)=> (b.last_change||"").localeCompare(a.last_change||""),
+    repo:(a,b)=> a.repo.localeCompare(b.repo) || (+a.num - +b.num),
+    size:(a,b)=> ((b.additions||0)+(b.deletions||0)) - ((a.additions||0)+(a.deletions||0)),
+  };
+  rows.sort(sorters[F.sort] || sorters.created_desc);
+  return rows;
 }
 
-function getMarks(){
-  try { return JSON.parse(localStorage.getItem("pr_submitted_marks") || "{}"); } catch(e) { return {}; }
-}
-function setMark(key, val){
-  try {
-    const m = getMarks();
-    if(val) m[key] = true; else delete m[key];
-    localStorage.setItem("pr_submitted_marks", JSON.stringify(m));
-  } catch(e) {}
+/* ================= render: stats ================= */
+function renderStats(){
+  let pass=0, run=0, fail=0, sub=0, cp=0, ct=0, cr=0;
+  DATA.forEach(pr=>{
+    if(pr.overall==="passed") pass++; else if(pr.overall==="failing"||pr.overall==="error") fail++; else run++;
+    if(isSub(pr)) sub++;
+    cp += pr.passed||0; ct += pr.total||0; cr += (pr.running||[]).length + (pr.queued||[]).length;
+  });
+  const n = DATA.length || 1;
+  const rate = ct ? Math.round(cp/ct*100) : 0;
+  const cards = [
+    {cls:"", v:DATA.length, l:"open PRs", s:`${CFG.window_hours||24}h window`, w:100, f:{status:"all"}},
+    {cls:"fail", v:fail, l:"failing", s:`${DATA.reduce((a,p)=>a+(p.failed||[]).length,0)} failed checks`, w:fail/n*100, f:{status:"failing"}},
+    {cls:"run", v:run, l:"running", s:`${cr} checks in flight`, w:run/n*100, f:{status:"running"}},
+    {cls:"pass", v:pass, l:"all green", s:`${Math.round(pass/n*100)}% of PRs`, w:pass/n*100, f:{status:"passed"}},
+    {cls:"sub", v:sub, l:"submitted", s:`${DATA.length-sub} remaining`, w:sub/n*100, f:{sub:"yes"}},
+    {cls:"rate", v:rate+"%", l:"check pass rate", s:`${cp}/${ct} checks`, w:rate, f:null},
+  ];
+  $("stats").innerHTML = cards.map((c,i)=>{
+    const on = c.f && Object.entries(c.f).every(([k,v])=>F[k]===v) && (c.f.status ? F.status!=="all" : F.sub!=="all");
+    return `<div class="stat ${c.cls} ${on?'on':''}" data-i="${i}"><div class="n">${c.v}</div><div class="l">${c.l}</div><div class="s">${c.s}</div><div class="bar"><i style="--w:${c.w}%"></i></div></div>`;
+  }).join("");
+  $("stats").querySelectorAll(".stat").forEach(el=>el.addEventListener("click",()=>{
+    const c = cards[+el.dataset.i]; if(!c.f) return;
+    if(c.f.status){ F.status = (F.status===c.f.status && c.f.status!=="all") ? "all" : c.f.status; }
+    if(c.f.sub){ F.sub = F.sub==="yes" ? "all" : "yes"; }
+    save(); render();
+  }));
+  $("cAll").textContent = DATA.length; $("cFail").textContent = fail; $("cRun").textContent = run; $("cPass").textContent = pass;
 }
 
+/* ================= render: card ================= */
+function segbar(pr){
+  const t = pr.total || 1;
+  const f=(pr.failed||[]).length, r=(pr.running||[]).length, q=(pr.queued||[]).length, p=pr.passed||0;
+  return `<div class="segbar"><i class="p" style="width:${p/t*100}%"></i><i class="f" style="width:${f/t*100}%"></i><i class="r" style="width:${r/t*100}%"></i><i class="q" style="width:${q/t*100}%"></i></div>`;
+}
+function card(pr, now){
+  const k = key(pr);
+  const sub = isSub(pr);
+  const label = pr.overall==="passed"?"All passed":pr.overall==="failing"?"Failing":pr.overall==="error"?"Error":"Running";
+  const rd = pr.reviewDecision || "";
+  const tags = [];
+  if(pr.draft) tags.push(`<span class="lbl draft">draft</span>`);
+  if(rd==="APPROVED") tags.push(`<span class="lbl review">approved</span>`);
+  if(rd==="CHANGES_REQUESTED") tags.push(`<span class="lbl review changes">changes requested</span>`);
+  if(rd==="REVIEW_REQUIRED") tags.push(`<span class="lbl">review required</span>`);
+  if(pr.mergeable==="CONFLICTING") tags.push(`<span class="lbl conflict">conflicts</span>`);
+  (pr.labels||[]).forEach(l=>tags.push(`<span class="lbl">${esc(l)}</span>`));
+
+  const checks = (pr.checks||[]).map(c=>{
+    let t = "";
+    if(c.state==="running" && c.started_at) t = fmtDur((now - new Date(c.started_at).getTime())/1000);
+    else if(c.duration_sec!=null) t = fmtDur(c.duration_sec);
+    else if(c.state==="queued") t = "queued";
+    return `<a class="chk ${c.state}" href="${esc(c.url||pr.url)}" target="_blank" rel="noopener" title="${esc(c.name)} · ${c.state}${c.conclusion?' · '+c.conclusion:''}"><span class="d"></span><span class="nm">${esc(c.name)}</span>${t?`<span class="t">${t}</span>`:""}</a>`;
+  }).join("");
+
+  const collapsed = F.collapsed[k] ?? allCollapsed;
+  const changed = prevOverall[k] && prevOverall[k] !== pr.overall;
+  return `<div class="card ${pr.overall} ${collapsed?'collapsed':''} ${changed?'changed':''}" data-k="${esc(k)}">
+    <div class="r1">
+      <div class="l">
+        <div class="repo"><span class="num">#${pr.num}</span><span>${esc(pr.repo)}</span>${tags.join("")}</div>
+        <a class="title" href="${esc(pr.url)}" target="_blank" rel="noopener" title="${esc(pr.title)}">${esc(pr.title)}</a>
+      </div>
+      <div class="badges">
+        <span class="badge ${pr.overall}"><span class="bdot ${pr.overall==='running'?'running':''}"></span>${label}</span>
+        <button class="sub-btn ${sub?'on':''}" data-sub="${esc(k)}" title="${sub?'Unmark':'Mark as submitted'}">${sub?'Submitted':'Mark submitted'}</button>
+      </div>
+    </div>
+    <div class="meta">
+      ${pr.head?`<span class="br"><code title="${esc(pr.head)}">${esc(pr.head)}</code><span class="arrow">→</span><code>${esc(pr.base||"main")}</code></span>`:""}
+      <span><span class="add">+${pr.additions??0}</span> <span class="del">−${pr.deletions??0}</span> · ${pr.changedFiles??0} files</span>
+      <span title="${esc(pr.createdAt||"")}">opened ${ago(pr.createdAt)}</span>
+      ${pr.sha?`<span title="head sha">${pr.sha.slice(0,7)}</span>`:""}
+      ${pr.last_change?`<span title="last status change">changed ${ago(pr.last_change)}</span>`:""}
+    </div>
+    <div class="prog">${segbar(pr)}<span class="pct"><b>${pr.passed}</b>/${pr.total}${(pr.failed||[]).length?` · <span style="color:var(--fail)">${(pr.failed||[]).length} failed</span>`:""}${(pr.running||[]).length?` · <span style="color:var(--run)">${(pr.running||[]).length} running</span>`:""}${(pr.queued||[]).length?` · ${(pr.queued||[]).length} queued`:""}</span></div>
+    <div class="checks">${checks || `<span class="empty">no checks reported yet</span>`}</div>
+    <button class="tog" data-tog="${esc(k)}">${collapsed?`show ${pr.total} checks ▾`:"hide checks ▴"}</button>
+  </div>`;
+}
+
+/* ================= render: table ================= */
+function table(rows, now){
+  const tr = rows.map(pr=>{
+    const t = pr.total||1, f=(pr.failed||[]).length, r=(pr.running||[]).length, q=(pr.queued||[]).length, p=pr.passed||0;
+    const runTxt = (pr.running||[]).map(x=>`${esc(x.name)} ${fmtDur((now-new Date(x.started_at).getTime())/1000)}`).join(", ");
+    const label = pr.overall==="passed"?"passed":pr.overall==="failing"?"failing":pr.overall==="error"?"error":"running";
+    return `<tr>
+      <td class="mono" style="color:var(--dim);white-space:nowrap" title="${esc(pr.repo)}">${esc(pr.repo.length>34?pr.repo.slice(0,32)+"…":pr.repo)}</td>
+      <td class="mono" style="color:var(--accent);font-weight:600">#${pr.num}</td>
+      <td><a class="t" href="${esc(pr.url)}" target="_blank" rel="noopener">${esc(pr.title)}</a></td>
+      <td><span class="badge ${pr.overall}"><span class="bdot ${pr.overall==='running'?'running':''}"></span>${label}</span></td>
+      <td><div style="display:flex;align-items:center;gap:8px"><div class="mini"><i style="width:${p/t*100}%;background:var(--pass)"></i><i style="width:${f/t*100}%;background:var(--fail)"></i><i style="width:${r/t*100}%;background:var(--run)"></i><i style="width:${q/t*100}%;background:var(--queue)"></i></div><span class="mono" style="font-size:11px;color:var(--dim)">${p}/${pr.total}</span></div></td>
+      <td class="mono" style="font-size:11px;color:var(--fail)">${(pr.failed||[]).map(esc).join(", ")||"—"}</td>
+      <td class="mono" style="font-size:11px;color:var(--run)">${runTxt||"—"}</td>
+      <td class="mono" style="font-size:11px;color:var(--dim)">${ago(pr.createdAt)}</td>
+      <td><button class="sub-btn ${isSub(pr)?'on':''}" data-sub="${esc(key(pr))}">${isSub(pr)?'Submitted':'Mark'}</button></td>
+    </tr>`;
+  }).join("");
+  return `<div class="panel tblwrap"><table class="tbl"><thead><tr><th>repo</th><th>#</th><th>title</th><th>status</th><th>checks</th><th>failing</th><th>running</th><th>opened</th><th></th></tr></thead><tbody>${tr}</tbody></table></div>`;
+}
+
+/* ================= render: side panels ================= */
+function renderSide(now){
+  // attention
+  const items = [];
+  DATA.forEach(pr=>{
+    (pr.checks||[]).filter(c=>c.state==="failed").forEach(c=>items.push({k:0,cls:"fail",pr,c,v:c.duration_sec!=null?fmtDur(c.duration_sec):"failed"}));
+  });
+  DATA.forEach(pr=>{
+    (pr.checks||[]).filter(c=>c.state==="running").forEach(c=>items.push({k:1,cls:"run",pr,c,v:c.started_at?fmtDur((now-new Date(c.started_at).getTime())/1000):"running"}));
+  });
+  $("attCount").textContent = items.length ? `${items.filter(i=>i.k===0).length} failed · ${items.filter(i=>i.k===1).length} running` : "";
+  $("att").innerHTML = items.length ? items.map(i=>`<a href="${esc(i.c.url||i.pr.url)}" target="_blank" rel="noopener"${i.k===1&&i.c.started_at?` data-start="${esc(i.c.started_at)}"`:""}><span class="d ${i.cls}"></span><span class="t">${esc(i.c.name)}<small>#${i.pr.num} ${esc(i.pr.repo)}</small></span><span class="v">${i.v}</span></a>`).join("") : `<div class="empty">everything is green</div>`;
+
+  // feed
+  const evs = [...EVENTS].reverse().slice(0,80);
+  $("feedCount").textContent = EVENTS.length ? `${EVENTS.length} events` : "";
+  $("feed").innerHTML = evs.length ? evs.map(e=>`<div class="ev ${esc(e.type)}"><span class="d"></span><div><div class="m">${esc(e.msg)}</div><div class="k"><span>${esc(e.pr)}</span><span>${ago(e.ts)}</span></div></div></div>`).join("") : `<div class="empty">no state changes recorded yet</div>`;
+
+  // durations
+  const agg = {};
+  DATA.forEach(pr=>(pr.checks||[]).forEach(c=>{ if(c.duration_sec!=null && c.state!=="skipped"){ (agg[c.name] ||= []).push(c.duration_sec); } }));
+  const rows = Object.entries(agg).map(([n,a])=>({n,avg:a.reduce((x,y)=>x+y,0)/a.length,cnt:a.length})).sort((a,b)=>b.avg-a.avg).slice(0,12);
+  const max = rows[0]?.avg || 1;
+  $("dur").innerHTML = rows.length ? rows.map(r=>`<div class="r"><span class="nm" title="${esc(r.n)}">${esc(r.n)}</span><span class="v">${fmtDur(r.avg)} · ×${r.cnt}</span><div class="bar"><i style="--w:${r.avg/max*100}%"></i></div></div>`).join("") : `<div class="empty">no completed checks yet</div>`;
+}
+
+/* ================= render: main ================= */
 function render(){
   const now = Date.now();
-  const cardsEl = document.getElementById("cards");
-  cardsEl.innerHTML = "";
-  let pass=0, run=0, fail=0;
-  const marks = getMarks();
-
-  DATA.forEach(pr=>{
-    if(pr.overall === "passed") pass++;
-    else if(pr.overall === "failing" || pr.overall === "error") fail++;
-    else run++;
-
-    const card = document.createElement("div");
-    card.className = "card";
-
-    const pct = pr.total ? Math.round((pr.passed/pr.total)*100) : 0;
-    const badgeLabel = pr.overall === "passed" ? "All passed" : pr.overall === "failing" ? "Failing" : pr.overall === "error" ? "Error" : "Running";
-
-    let runningChips = "";
-    (pr.running||[]).forEach(r=>{
-      const started = new Date(r.started_at).getTime();
-      const elapsed = Math.max(0, Math.floor((now - started)/1000));
-      runningChips += `<span class="chip"><span class="cdot"></span>${r.name} · ${fmtElapsed(elapsed)}</span>`;
-    });
-
-    let failedChips = "";
-    (pr.failed||[]).forEach(f=>{
-      failedChips += `<span class="fchip">${f}</span>`;
-    });
-
-    const key = pr.repo + "#" + pr.num;
-    const isSubmitted = !!pr.submitted || !!marks[key];
-
-    card.innerHTML = `
-      <div class="row1">
-        <div class="left">
-          <div class="repo">${pr.repo} · #${pr.num}</div>
-          <a class="title" href="${pr.url}" target="_blank" rel="noopener">${pr.title}</a>
-        </div>
-        <div class="badges">
-          <span class="badge ${pr.overall}"><span class="bdot ${pr.overall==='running'?'running':''}"></span>${badgeLabel}</span>
-          ${isSubmitted
-            ? `<button class="submitted-badge" data-key="${key}" title="Click to unmark">Submitted</button>`
-            : `<button class="mark-btn" data-key="${key}" title="Mark as submitted">Mark submitted</button>`}
-        </div>
-      </div>
-      <div class="meta">
-        <div class="progress-wrap">
-          <div class="progress"><div class="progress-fill ${(pr.failed||[]).length?'has-fail':''}" style="width:${pct}%"></div></div>
-          <span class="pct">${pr.passed}/${pr.total}</span>
-        </div>
-        ${failedChips ? `<div class="failed-list">${failedChips}</div>` : ""}
-        ${runningChips ? `<div class="running-list">${runningChips}</div>` : ""}
-      </div>
-    `;
-    cardsEl.appendChild(card);
-  });
-
-  cardsEl.querySelectorAll("[data-key]").forEach(btn=>{
-    btn.addEventListener("click", ()=>{
-      const key = btn.getAttribute("data-key");
-      const marks = getMarks();
-      const pr = DATA.find(p => (p.repo+"#"+p.num) === key);
-      const currentlyOn = (pr && pr.submitted) || marks[key];
-      setMark(key, !currentlyOn);
-      render();
-    });
-  });
-
-  document.getElementById("statPass").textContent = pass;
-  document.getElementById("statRun").textContent = run;
-  document.getElementById("statFail").textContent = fail;
-  document.getElementById("prSub").textContent = `${DATA.length} PRs opened in the last 24h`;
-
-  if(SNAPSHOT_TIME){
-    const secAgo = Math.floor((now - new Date(SNAPSHOT_TIME).getTime())/1000);
-    document.getElementById("liveText").textContent = `data as of ${fmtElapsed(Math.max(0,secAgo))} ago`;
-    document.getElementById("asOf").textContent = "Snapshot fetched " + new Date(SNAPSHOT_TIME).toLocaleTimeString() + " — refreshed from data.json every minute by a local script.";
+  renderStats();
+  const rows = visible();
+  $("fcount").textContent = `${rows.length} / ${DATA.length} shown`;
+  const list = $("list");
+  if(F.view === "table"){
+    list.innerHTML = rows.length ? table(rows, now) : `<div class="panel"><div class="empty">nothing matches these filters</div></div>`;
+  } else if(F.group){
+    const byRepo = {};
+    rows.forEach(pr=>(byRepo[pr.repo] ||= []).push(pr));
+    list.innerHTML = Object.entries(byRepo).map(([r,ps])=>`<div class="group">${esc(r)} · ${ps.length}</div>` + ps.map(p=>card(p,now)).join("")).join("") || `<div class="panel"><div class="empty">nothing matches these filters</div></div>`;
+  } else {
+    list.innerHTML = rows.length ? rows.map(p=>card(p,now)).join("") : `<div class="panel"><div class="empty">nothing matches these filters</div></div>`;
   }
+  list.querySelectorAll("[data-sub]").forEach(b=>b.addEventListener("click",()=>{
+    const k = b.dataset.sub; const pr = DATA.find(p=>key(p)===k); const m = getMarks();
+    const on = (pr && pr.submitted) || m[k];
+    if(on) delete m[k]; else m[k] = true;
+    LS.set("pr_submitted_marks", m); toast(on ? "Unmarked" : "Marked submitted"); render();
+  }));
+  list.querySelectorAll("[data-tog]").forEach(b=>b.addEventListener("click",()=>{
+    const k = b.dataset.tog; F.collapsed[k] = !(F.collapsed[k] ?? allCollapsed); save(); render();
+  }));
+  renderSide(now);
+  syncControls();
+  $("scope").innerHTML = CFG.org ? `<span class="tag">org <b>${esc(CFG.org)}</b></span><span class="tag">author <b>${esc(CFG.author)}</b></span><span class="tag">window <b>${CFG.window_hours}h</b></span>` : "";
+  if(SNAP){
+    const secAgo = Math.max(0, (now - new Date(SNAP).getTime())/1000);
+    const live = $("live"); live.classList.toggle("stale", secAgo > 180 && secAgo <= 600); live.classList.toggle("dead", secAgo > 600);
+    $("liveText").textContent = `data ${fmtDur(secAgo)} old`;
+    $("foot").textContent = `snapshot ${new Date(SNAP).toLocaleString()} · fetched every 60s by launchd on your Mac · page re-polls data.json every 60s`;
+  }
+  const p = Math.min(100, ((now - lastFetch)/REFRESH_MS)*100);
+  $("ring").style.setProperty("--p", p + "%");
+}
+function tick(){ // cheap per-second update: timers + ring, no full re-render
+  const now = Date.now();
+  document.querySelectorAll(".chk.running").forEach(el=>{
+    const k = el.closest(".card")?.dataset.k; const pr = DATA.find(p=>key(p)===k); if(!pr) return;
+    const c = (pr.checks||[]).find(c=>c.name===el.querySelector(".nm").textContent && c.state==="running"); if(!c||!c.started_at) return;
+    const t = el.querySelector(".t"); if(t) t.textContent = fmtDur((now-new Date(c.started_at).getTime())/1000);
+  });
+  if(F.view==="table") { render(); return; }
+  document.querySelectorAll("#att a[data-start]").forEach(el=>{ el.querySelector(".v").textContent = fmtDur((now-new Date(el.dataset.start).getTime())/1000); });
+  if(SNAP){ const secAgo = Math.max(0,(now-new Date(SNAP).getTime())/1000); $("liveText").textContent = `data ${fmtDur(secAgo)} old`; }
+  $("ring").style.setProperty("--p", Math.min(100,((now-lastFetch)/REFRESH_MS)*100)+"%");
 }
 
+/* ================= controls ================= */
+function save(){ LS.set("prmon_filters", F); }
+function syncControls(){
+  $("q").value = F.q;
+  $("segStatus").querySelectorAll("button").forEach(b=>b.classList.toggle("on", b.dataset.v===F.status));
+  $("segSub").querySelectorAll("button").forEach(b=>b.classList.toggle("on", b.dataset.v===F.sub));
+  $("sort").value = F.sort;
+  const rs = $("repoSel"); const cur = F.repo;
+  const repos = [...new Set(DATA.map(p=>p.repo))].sort();
+  if(rs.options.length !== repos.length+1){ rs.innerHTML = `<option value="">all repos</option>` + repos.map(r=>`<option value="${esc(r)}">${esc(r)}</option>`).join(""); }
+  rs.value = cur;
+  $("btnGroup").classList.toggle("on", F.group);
+  $("btnView").innerHTML = (F.view==="table" ? "cards" : "table") + " <kbd>v</kbd>";
+  $("btnTheme").innerHTML = (THEME==="dark" ? "light" : "dark") + " <kbd>t</kbd>";
+  $("btnExpand").innerHTML = (allCollapsed ? "expand all" : "collapse all") + " <kbd>e</kbd>";
+}
+$("q").addEventListener("input", e=>{ F.q = e.target.value; save(); render(); });
+$("segStatus").addEventListener("click", e=>{ const b=e.target.closest("button"); if(!b) return; F.status=b.dataset.v; save(); render(); });
+$("segSub").addEventListener("click", e=>{ const b=e.target.closest("button"); if(!b) return; F.sub=b.dataset.v; save(); render(); });
+$("sort").addEventListener("change", e=>{ F.sort=e.target.value; save(); render(); });
+$("repoSel").addEventListener("change", e=>{ F.repo=e.target.value; save(); render(); });
+$("btnGroup").addEventListener("click", ()=>{ F.group=!F.group; save(); render(); });
+$("btnView").addEventListener("click", ()=>{ F.view = F.view==="table"?"cards":"table"; save(); render(); });
+$("btnExpand").addEventListener("click", ()=>{ allCollapsed=!allCollapsed; F.collapsed={}; save(); render(); });
+$("btnReset").addEventListener("click", ()=>{ Object.assign(F,{q:"",status:"all",sub:"all",sort:"created_desc",repo:"",group:false,collapsed:{}}); allCollapsed=false; save(); render(); toast("Filters reset"); });
+$("btnTheme").addEventListener("click", ()=>{ THEME = THEME==="dark"?"light":"dark"; applyTheme(); render(); });
+$("btnCopy").addEventListener("click", ()=>{
+  const rows = visible();
+  const md = ["| PR | Repo | Status | Checks | Failing | Running | Submitted |","|---|---|---|---|---|---|---|",
+    ...rows.map(p=>`| [#${p.num}](${p.url}) | ${p.repo} | ${p.overall} | ${p.passed}/${p.total} | ${(p.failed||[]).join(", ")||"—"} | ${(p.running||[]).map(r=>r.name).join(", ")||"—"} | ${isSub(p)?"yes":"no"} |`)].join("\n");
+  navigator.clipboard?.writeText(md).then(()=>toast(`Copied ${rows.length} rows as markdown`)).catch(()=>toast("Clipboard blocked"));
+});
+document.addEventListener("keydown", e=>{
+  if(e.target.tagName==="INPUT" || e.target.tagName==="SELECT"){ if(e.key==="Escape"){ e.target.blur(); } return; }
+  if(e.key==="/"){ e.preventDefault(); $("q").focus(); }
+  else if(e.key==="1"){ F.status="all"; save(); render(); }
+  else if(e.key==="2"){ F.status="failing"; save(); render(); }
+  else if(e.key==="3"){ F.status="running"; save(); render(); }
+  else if(e.key==="4"){ F.status="passed"; save(); render(); }
+  else if(e.key==="t"){ $("btnTheme").click(); }
+  else if(e.key==="v"){ $("btnView").click(); }
+  else if(e.key==="e"){ $("btnExpand").click(); }
+  else if(e.key==="g"){ $("btnGroup").click(); }
+  else if(e.key==="r"){ loadData(); toast("Refreshing"); }
+});
+function applyTheme(){ document.documentElement.setAttribute("data-theme", THEME); LS.set("prmon_theme", THEME); }
+
+/* ================= data ================= */
 async function loadData(){
   try {
-    const res = await fetch("data.json?_=" + Date.now());
-    const json = await res.json();
-    DATA = json.prs || [];
-    SNAPSHOT_TIME = json.snapshot_time;
+    const [d, ev] = await Promise.all([
+      fetch("data.json?_="+Date.now()).then(r=>r.json()),
+      fetch("events.json?_="+Date.now()).then(r=>r.ok?r.json():[]).catch(()=>[]),
+    ]);
+    prevOverall = Object.fromEntries(DATA.map(p=>[key(p), p.overall]));
+    DATA = d.prs || []; SNAP = d.snapshot_time; CFG = d.config || {}; EVENTS = Array.isArray(ev)?ev:[];
+    lastFetch = Date.now();
+    const changed = DATA.filter(p=>prevOverall[key(p)] && prevOverall[key(p)]!==p.overall);
+    if(changed.length) toast(`${changed.length} PR${changed.length>1?"s":""} changed status`);
+    document.title = `${DATA.filter(p=>p.overall==="failing").length?"● ":""}PR Check Monitor · ${DATA.length} PRs`;
   } catch(e) {
-    document.getElementById("prSub").textContent = "Failed to load data.json";
+    $("liveText").textContent = "failed to load data.json";
+    $("live").classList.add("dead");
   }
   render();
 }
-
+applyTheme();
 loadData();
-setInterval(loadData, 60000);   // re-fetch data.json every 60s
-setInterval(render, 1000);      // tick timers every 1s
+setInterval(loadData, REFRESH_MS);
+setInterval(tick, 1000);
 </script>
 </body>
 </html>

@@ -8,8 +8,21 @@ Pages and kept up to date by a local script (`fetch.py`) running every minute vi
 - `fetch.py` lists all repos in `org`, finds open PRs authored by `author` created within
   `window_hours`, plus anything manually pinned in `prs.json`, fetches each PR's check
   status via `gh api .../check-runs`, and writes `docs/data.json`.
-- `docs/index.html` (served by GitHub Pages) fetches `docs/data.json` client-side
-  and renders the dashboard, refreshing every minute in the browser.
+- `docs/index.html` (served by GitHub Pages) fetches `docs/data.json` + `docs/events.json`
+  client-side and renders the dashboard, refreshing every minute in the browser.
+- `fetch.py` also diffs each run against the previous snapshot and appends state-change
+  events (status flips, new failures, recoveries, new pushes, review decisions) to
+  `docs/events.json` (capped at 400) — this powers the Activity feed.
+
+## Dashboard features
+- Stats strip (click any stat to filter), status/submitted filters, free-text search
+  (repo, title, branch, check name, #num), repo dropdown, 7 sort modes, group-by-repo.
+- Cards view: segmented progress bar, every check as a chip (click → job log) with
+  duration / live elapsed timer, branch, diff size, labels, review/mergeable state.
+- Table view for dense scanning. "Needs attention" panel lists all failed/running checks.
+- Check-duration insights (avg per check name). Dark/light theme. Filters persist.
+- Keyboard: `/` search · `1-4` status · `v` view · `t` theme · `e` expand · `g` group · `r` refresh.
+- "copy summary" copies the visible PRs as a markdown table.
 - `launchd` runs `fetch.py`, then commits and pushes `docs/data.json` every 60s.
 
 ## Setup (already done for you)
