@@ -1,35 +1,5 @@
 [
  {
-  "ts": "2026-09-16T15:57:12.238982+00:00",
-  "pr": "dynamo-ddae169-debugging-and-repair#8",
-  "type": "passed",
-  "msg": "Check passed: deep_review"
- },
- {
-  "ts": "2026-09-16T15:57:12.238982+00:00",
-  "pr": "dynamo-e079d63-hardware-embedded-and-low-level-systems#7",
-  "type": "push",
-  "msg": "New commit pushed (ec0c606)"
- },
- {
-  "ts": "2026-09-16T15:57:12.238982+00:00",
-  "pr": "dynamo-e079d63-hardware-embedded-and-low-level-systems#7",
-  "type": "running",
-  "msg": "Status failing \u2192 running"
- },
- {
-  "ts": "2026-09-16T15:57:12.238982+00:00",
-  "pr": "dynamo-e079d63-hardware-embedded-and-low-level-systems#7",
-  "type": "passed",
-  "msg": "Check recovered: gate"
- },
- {
-  "ts": "2026-09-16T15:57:12.238982+00:00",
-  "pr": "dynamo-e079d63-hardware-embedded-and-low-level-systems#7",
-  "type": "passed",
-  "msg": "Check recovered: pass2"
- },
- {
   "ts": "2026-09-16T15:58:00.250289+00:00",
   "pr": "dynamo-e079d63-hardware-embedded-and-low-level-systems#7",
   "type": "started",
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-24667f6-security#7",
   "type": "passed",
   "msg": "Check passed: qc_gate"
+ },
+ {
+  "ts": "2026-09-16T20:07:15.945509+00:00",
+  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-16T20:07:15.945509+00:00",
+  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-16T20:07:15.945509+00:00",
+  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-16T20:07:15.945509+00:00",
+  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-16T20:07:15.945509+00:00",
+  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
+  "type": "passed",
+  "msg": "Check passed: pass2_suggestion"
  }
 ]
