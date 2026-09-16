@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T23:39:32.185824+00:00",
+  "snapshot_time": "2026-09-16T23:40:13.413037+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1160,16 +1160,19 @@
       "total": 2,
       "skipped": 0,
       "failed": [],
-      "running": [],
-      "queued": [
-        "cosine_similarity"
+      "running": [
+        {
+          "name": "cosine_similarity",
+          "started_at": "2026-09-16T23:39:49Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
           "name": "cosine_similarity",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T23:39:47Z",
+          "started_at": "2026-09-16T23:39:49Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35163242227/job/105018619970",
@@ -1188,7 +1191,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:31:07.881961+00:00",
-      "last_change": "2026-09-16T23:39:32.185824+00:00"
+      "last_change": "2026-09-16T23:40:13.413037+00:00"
     }
   ]
 }
