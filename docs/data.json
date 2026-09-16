@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T16:01:21.110734+00:00",
+  "snapshot_time": "2026-09-16T16:02:09.077012+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -437,7 +437,7 @@
       "title": "Rework: grade raw frame normalisation and the default registry",
       "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/pull/8",
       "createdAt": "2026-09-16T14:15:42Z",
-      "updatedAt": "2026-09-16T16:01:12Z",
+      "updatedAt": "2026-09-16T16:02:11Z",
       "sha": "29c0d93df90b5a56dd62382341e9b194220d62d2",
       "draft": false,
       "mergeable": true,
@@ -451,26 +451,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 9,
-      "total": 11,
+      "passed": 10,
+      "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "tier1",
-          "started_at": "2026-09-16T16:01:21Z"
+          "name": "qc_eval",
+          "started_at": "2026-09-16T16:02:04Z"
+        },
+        {
+          "name": "qc_exec",
+          "started_at": "2026-09-16T16:02:04Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "tier1",
+          "name": "qc_eval",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T16:01:21Z",
+          "started_at": "2026-09-16T16:02:04Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/actions/runs/35115245270/job/104872295408",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/actions/runs/35115245270/job/104872557086",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-16T16:02:04Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/actions/runs/35115245270/job/104872557325",
           "app": "github-actions"
         },
         {
@@ -554,6 +568,16 @@
           "app": "github-actions"
         },
         {
+          "name": "tier1",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T16:01:21Z",
+          "completed_at": "2026-09-16T16:02:01Z",
+          "duration_sec": 40,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/actions/runs/35115245270/job/104872295408",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -576,7 +600,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T14:19:08.869069+00:00",
-      "last_change": "2026-09-16T16:01:21.110734+00:00"
+      "last_change": "2026-09-16T16:02:09.077012+00:00"
     },
     {
       "repo": "dynamo-0183436-machine-learning-and-ai",
