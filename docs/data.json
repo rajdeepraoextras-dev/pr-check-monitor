@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T20:26:12.318138+00:00",
+  "snapshot_time": "2026-09-16T20:26:51.933152+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -842,15 +842,11 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
-        {
-          "name": "qc_eval",
-          "started_at": "2026-09-16T20:11:08Z"
-        },
         {
           "name": "qc_exec",
           "started_at": "2026-09-16T20:11:08Z"
@@ -858,16 +854,6 @@
       ],
       "queued": [],
       "checks": [
-        {
-          "name": "qc_eval",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-16T20:11:08Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35134177030/job/104958689475",
-          "app": "github-actions"
-        },
         {
           "name": "qc_exec",
           "state": "running",
@@ -926,6 +912,16 @@
           "completed_at": "2026-09-16T19:58:54Z",
           "duration_sec": 4873,
           "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35134177030/job/104926967155",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T20:11:08Z",
+          "completed_at": "2026-09-16T20:26:34Z",
+          "duration_sec": 926,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35134177030/job/104958689475",
           "app": "github-actions"
         },
         {
@@ -991,7 +987,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T13:27:28.400072+00:00",
-      "last_change": "2026-09-16T20:12:04.477970+00:00"
+      "last_change": "2026-09-16T20:26:51.933152+00:00"
     },
     {
       "repo": "dynamo-314a3c9-model-training-and-ml-infrastructure",
