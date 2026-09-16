@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T18:37:02.601749+00:00",
+  "snapshot_time": "2026-09-16T18:37:44.991569+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: verify partial-trim reclamation and record the seven-run performance measurement",
       "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/pull/7",
       "createdAt": "2026-09-16T14:29:39Z",
-      "updatedAt": "2026-09-16T18:28:55Z",
+      "updatedAt": "2026-09-16T18:37:03Z",
       "sha": "10bb09fc5a06d58525d07f92a6dcc3f9100ba6ab",
       "draft": false,
       "mergeable": true,
@@ -27,15 +27,11 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
-        {
-          "name": "ava_review",
-          "started_at": "2026-09-16T18:28:48Z"
-        },
         {
           "name": "deep_review",
           "started_at": "2026-09-16T18:28:48Z"
@@ -44,16 +40,6 @@
       "queued": [],
       "checks": [
         {
-          "name": "ava_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-16T18:28:48Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35126361089/job/104923858959",
-          "app": "github-actions"
-        },
-        {
           "name": "deep_review",
           "state": "running",
           "conclusion": null,
@@ -61,6 +47,16 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35126361089/job/104923858766",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T18:28:48Z",
+          "completed_at": "2026-09-16T18:37:10Z",
+          "duration_sec": 502,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35126361089/job/104923858959",
           "app": "github-actions"
         },
         {
@@ -146,7 +142,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T14:32:48.666305+00:00",
-      "last_change": "2026-09-16T18:29:12.143783+00:00"
+      "last_change": "2026-09-16T18:37:44.991569+00:00"
     },
     {
       "repo": "dynamo-1d01028-scientific-computing-and-domain-science",
@@ -764,7 +760,7 @@
       "title": "Rework: grade the speculative compute bounds per request",
       "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/pull/8",
       "createdAt": "2026-09-16T13:25:01Z",
-      "updatedAt": "2026-09-16T18:32:10Z",
+      "updatedAt": "2026-09-16T18:37:48Z",
       "sha": "8be8153a5fac3c0c5f6990274ac984e9ab054902",
       "draft": false,
       "mergeable": true,
@@ -778,26 +774,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 4,
-      "total": 5,
+      "passed": 6,
+      "total": 7,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "validation",
-          "started_at": "2026-09-16T18:32:04Z"
+          "name": "pass2",
+          "started_at": "2026-09-16T18:37:41Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "validation",
+          "name": "pass2",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T18:32:04Z",
+          "started_at": "2026-09-16T18:37:41Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35134177030/job/104925019924",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35134177030/job/104926967155",
           "app": "github-actions"
         },
         {
@@ -821,6 +817,16 @@
           "app": "github-actions"
         },
         {
+          "name": "ratelimit",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T18:37:31Z",
+          "completed_at": "2026-09-16T18:37:38Z",
+          "duration_sec": 7,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35134177030/job/104926909520",
+          "app": "github-actions"
+        },
+        {
           "name": "review",
           "state": "passed",
           "conclusion": "success",
@@ -839,11 +845,21 @@
           "duration_sec": 28,
           "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35134177030/job/104924837199",
           "app": "github-actions"
+        },
+        {
+          "name": "validation",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T18:32:04Z",
+          "completed_at": "2026-09-16T18:37:28Z",
+          "duration_sec": 324,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35134177030/job/104925019924",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-16T13:27:28.400072+00:00",
-      "last_change": "2026-09-16T18:33:28.982907+00:00"
+      "last_change": "2026-09-16T18:37:44.991569+00:00"
     },
     {
       "repo": "dynamo-314a3c9-model-training-and-ml-infrastructure",
