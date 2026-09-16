@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T19:49:22.840776+00:00",
+  "snapshot_time": "2026-09-16T19:50:01.552061+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1040,17 +1040,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "qc_eval",
-          "started_at": "2026-09-16T19:44:00Z"
-        },
-        {
-          "name": "qc_exec",
           "started_at": "2026-09-16T19:44:00Z"
         }
       ],
@@ -1064,16 +1060,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35133112326/job/104949621294",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-16T19:44:00Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35133112326/job/104949621393",
           "app": "github-actions"
         },
         {
@@ -1124,6 +1110,16 @@
           "completed_at": "2026-09-16T19:31:36Z",
           "duration_sec": 4004,
           "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35133112326/job/104922487988",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T19:44:00Z",
+          "completed_at": "2026-09-16T19:49:55Z",
+          "duration_sec": 355,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35133112326/job/104949621393",
           "app": "github-actions"
         },
         {
@@ -1189,7 +1185,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:31:07.881961+00:00",
-      "last_change": "2026-09-16T19:44:55.332951+00:00"
+      "last_change": "2026-09-16T19:50:01.552061+00:00"
     }
   ]
 }
