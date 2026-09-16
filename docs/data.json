@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T18:57:52.278747+00:00",
+  "snapshot_time": "2026-09-16T18:58:49.786529+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -918,7 +918,7 @@
       "title": "Rework 314a3c9: state the epoch LR policy family, ground the oracle, harden the verifier",
       "url": "https://github.com/handshake-project-dynamo/dynamo-314a3c9-model-training-and-ml-infrastructure/pull/6",
       "createdAt": "2026-09-16T12:32:09Z",
-      "updatedAt": "2026-09-16T18:57:49Z",
+      "updatedAt": "2026-09-16T18:58:55Z",
       "sha": "ee1877123e959826dbf36044ea40778e9b95e246",
       "draft": false,
       "mergeable": true,
@@ -932,26 +932,23 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 4,
-      "total": 5,
+      "passed": 5,
+      "total": 6,
       "skipped": 0,
       "failed": [],
-      "running": [
-        {
-          "name": "validation",
-          "started_at": "2026-09-16T18:57:42Z"
-        }
+      "running": [],
+      "queued": [
+        "ratelimit"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "validation",
-          "state": "running",
+          "name": "ratelimit",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-16T18:57:42Z",
+          "started_at": "2026-09-16T18:59:02Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-314a3c9-model-training-and-ml-infrastructure/actions/runs/35136866610/job/104933887482",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-314a3c9-model-training-and-ml-infrastructure/actions/runs/35136866610/job/104934350150",
           "app": "github-actions"
         },
         {
@@ -993,11 +990,21 @@
           "duration_sec": 34,
           "url": "https://github.com/handshake-project-dynamo/dynamo-314a3c9-model-training-and-ml-infrastructure/actions/runs/35136866610/job/104933682057",
           "app": "github-actions"
+        },
+        {
+          "name": "validation",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T18:57:42Z",
+          "completed_at": "2026-09-16T18:59:02Z",
+          "duration_sec": 80,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-314a3c9-model-training-and-ml-infrastructure/actions/runs/35136866610/job/104933887482",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:33:08.162652+00:00",
-      "last_change": "2026-09-16T18:57:52.278747+00:00"
+      "last_change": "2026-09-16T18:58:49.786529+00:00"
     },
     {
       "repo": "dynamo-24667f6-security",
