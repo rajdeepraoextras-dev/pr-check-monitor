@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T08:50:50.170062+00:00",
+  "snapshot_time": "2026-09-16T08:53:17.024765+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -216,7 +216,7 @@
       "title": "Rework: publish the provenance layer and move the crux to the degenerate rings",
       "url": "https://github.com/handshake-project-dynamo/dynamo-147c2c0-mathematics-and-formal-reasoning/pull/8",
       "createdAt": "2026-09-15T17:59:44Z",
-      "updatedAt": "2026-09-16T08:30:31Z",
+      "updatedAt": "2026-09-16T08:53:11Z",
       "sha": "c40011eb63ec1a6da05533e33a2cf204c08e56b1",
       "draft": false,
       "mergeable": "MERGEABLE",
@@ -230,26 +230,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 11,
-      "total": 13,
+      "passed": 13,
+      "total": 15,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_eval",
-          "started_at": "2026-09-16T08:30:24Z"
+          "name": "trials",
+          "started_at": "2026-09-16T08:53:02Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
+          "name": "trials",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T08:30:24Z",
+          "started_at": "2026-09-16T08:53:02Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-147c2c0-mathematics-and-formal-reasoning/actions/runs/35068964914/job/104722375899",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-147c2c0-mathematics-and-formal-reasoning/actions/runs/35068964914/job/104729225816",
           "app": "github-actions"
         },
         {
@@ -303,6 +303,16 @@
           "app": "github-actions"
         },
         {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T08:30:24Z",
+          "completed_at": "2026-09-16T08:52:42Z",
+          "duration_sec": 1338,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-147c2c0-mathematics-and-formal-reasoning/actions/runs/35068964914/job/104722375899",
+          "app": "github-actions"
+        },
+        {
           "name": "qc_exec",
           "state": "passed",
           "conclusion": "success",
@@ -310,6 +320,16 @@
           "completed_at": "2026-09-16T08:36:35Z",
           "duration_sec": 371,
           "url": "https://github.com/handshake-project-dynamo/dynamo-147c2c0-mathematics-and-formal-reasoning/actions/runs/35068964914/job/104722375858",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T08:52:45Z",
+          "completed_at": "2026-09-16T08:53:00Z",
+          "duration_sec": 15,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-147c2c0-mathematics-and-formal-reasoning/actions/runs/35068964914/job/104729136395",
           "app": "github-actions"
         },
         {
@@ -375,7 +395,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T07:16:24.656336+00:00",
-      "last_change": "2026-09-16T08:38:05.049749+00:00"
+      "last_change": "2026-09-16T08:53:17.024765+00:00"
     },
     {
       "repo": "dynamo-84d5250-build-dependency-and-release-management",
@@ -790,7 +810,7 @@
       "title": "Rework: grade a capture past the 262144 byte boundary and restore the routine spec fixes",
       "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/pull/9",
       "createdAt": "2026-09-15T17:41:24Z",
-      "updatedAt": "2026-09-16T08:01:03Z",
+      "updatedAt": "2026-09-16T08:52:41Z",
       "sha": "da506fbab08e454ac5ac645cee614578a08bfbea",
       "draft": false,
       "mergeable": "MERGEABLE",
@@ -804,26 +824,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 11,
-      "total": 13,
+      "passed": 13,
+      "total": 15,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_exec",
-          "started_at": "2026-09-16T08:00:57Z"
+          "name": "trials",
+          "started_at": "2026-09-16T08:52:34Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_exec",
+          "name": "trials",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T08:00:57Z",
+          "started_at": "2026-09-16T08:52:34Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104713797279",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104729085246",
           "app": "github-actions"
         },
         {
@@ -884,6 +904,26 @@
           "completed_at": "2026-09-16T08:21:22Z",
           "duration_sec": 1225,
           "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104713797225",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T08:00:57Z",
+          "completed_at": "2026-09-16T08:52:15Z",
+          "duration_sec": 3078,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104713797279",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T08:52:18Z",
+          "completed_at": "2026-09-16T08:52:32Z",
+          "duration_sec": 14,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104729006597",
           "app": "github-actions"
         },
         {
@@ -949,7 +989,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T07:16:27.708702+00:00",
-      "last_change": "2026-09-16T08:22:33.892515+00:00"
+      "last_change": "2026-09-16T08:53:17.024765+00:00"
     },
     {
       "repo": "dynamo-cbe7974-regulated-knowledge-work-and-business-operations",
