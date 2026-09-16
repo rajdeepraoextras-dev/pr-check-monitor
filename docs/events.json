@@ -1,29 +1,5 @@
 [
  {
-  "ts": "2026-09-16T15:20:32.837693+00:00",
-  "pr": "dynamo-ddae169-debugging-and-repair#8",
-  "type": "failing",
-  "msg": "Check failed: gate"
- },
- {
-  "ts": "2026-09-16T15:20:32.837693+00:00",
-  "pr": "dynamo-ddae169-debugging-and-repair#8",
-  "type": "failing",
-  "msg": "Check failed: qc_gate"
- },
- {
-  "ts": "2026-09-16T15:20:32.837693+00:00",
-  "pr": "dynamo-ddae169-debugging-and-repair#8",
-  "type": "passed",
-  "msg": "Check passed: qc_eval"
- },
- {
-  "ts": "2026-09-16T15:21:19.144009+00:00",
-  "pr": "dynamo-ddae169-debugging-and-repair#8",
-  "type": "passed",
-  "msg": "Check passed: claude-cost-report"
- },
- {
   "ts": "2026-09-16T15:22:11.982957+00:00",
   "pr": "dynamo-ddae169-debugging-and-repair#8",
   "type": "failing",
@@ -2398,5 +2374,29 @@
   "pr": "dynamo-24667f6-security#7",
   "type": "passed",
   "msg": "Check passed: deep_review"
+ },
+ {
+  "ts": "2026-09-16T18:08:24.779999+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-16T18:08:24.779999+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-16T18:08:24.779999+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "failing",
+  "msg": "Check failed: tier1"
+ },
+ {
+  "ts": "2026-09-16T18:08:24.779999+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
  }
 ]
