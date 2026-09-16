@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T16:07:18.044723+00:00",
+  "snapshot_time": "2026-09-16T16:07:50.858366+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -92,7 +92,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T14:32:48.666305+00:00",
-      "last_change": "2026-09-16T16:07:18.044723+00:00"
+      "last_change": "2026-09-16T16:07:03.528492+00:00"
     },
     {
       "repo": "dynamo-1d01028-scientific-computing-and-domain-science",
@@ -338,7 +338,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T14:28:01.508548+00:00",
-      "last_change": "2026-09-16T16:07:18.044723+00:00"
+      "last_change": "2026-09-16T16:07:03.528492+00:00"
     },
     {
       "repo": "dynamo-ddae169-debugging-and-repair",
@@ -641,23 +641,14 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 6,
+      "passed": 8,
       "total": 17,
       "skipped": 7,
       "failed": [
         "gate",
         "pass2"
       ],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-16T16:07:21Z"
-        },
-        {
-          "name": "pass2_suggestion",
-          "started_at": "2026-09-16T16:07:20Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -681,26 +672,6 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-16T16:07:21Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-314a3c9-model-training-and-ml-infrastructure/actions/runs/35116232900/job/104874522656",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-16T16:07:20Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-314a3c9-model-training-and-ml-infrastructure/actions/runs/35116232900/job/104874520059",
-          "app": "github-actions"
-        },
-        {
           "name": "changes",
           "state": "passed",
           "conclusion": "success",
@@ -711,6 +682,16 @@
           "app": "github-actions"
         },
         {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T16:07:21Z",
+          "completed_at": "2026-09-16T16:07:38Z",
+          "duration_sec": 17,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-314a3c9-model-training-and-ml-infrastructure/actions/runs/35116232900/job/104874522656",
+          "app": "github-actions"
+        },
+        {
           "name": "cosine_similarity",
           "state": "passed",
           "conclusion": "success",
@@ -718,6 +699,16 @@
           "completed_at": "2026-09-16T15:36:37Z",
           "duration_sec": 114,
           "url": "https://github.com/handshake-project-dynamo/dynamo-314a3c9-model-training-and-ml-infrastructure/actions/runs/35116232900/job/104862403022",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T16:07:20Z",
+          "completed_at": "2026-09-16T16:07:36Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-314a3c9-model-training-and-ml-infrastructure/actions/runs/35116232900/job/104874520059",
           "app": "github-actions"
         },
         {
@@ -833,7 +824,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:33:08.162652+00:00",
-      "last_change": "2026-09-16T16:07:18.044723+00:00"
+      "last_change": "2026-09-16T16:07:50.858366+00:00"
     },
     {
       "repo": "dynamo-24667f6-security",
