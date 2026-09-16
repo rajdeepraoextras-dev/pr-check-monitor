@@ -1,30 +1,6 @@
 [
  {
   "ts": "2026-09-16T15:51:32.792955+00:00",
-  "pr": "dynamo-e1db7d0-data-science-and-reporting#5",
-  "type": "started",
-  "msg": "Check started: qc_eval"
- },
- {
-  "ts": "2026-09-16T15:51:32.792955+00:00",
-  "pr": "dynamo-e1db7d0-data-science-and-reporting#5",
-  "type": "started",
-  "msg": "Check started: qc_exec"
- },
- {
-  "ts": "2026-09-16T15:51:32.792955+00:00",
-  "pr": "dynamo-e1db7d0-data-science-and-reporting#5",
-  "type": "passed",
-  "msg": "Check passed: tier1"
- },
- {
-  "ts": "2026-09-16T15:51:32.792955+00:00",
-  "pr": "dynamo-ddae169-debugging-and-repair#8",
-  "type": "started",
-  "msg": "Check started: ava_review"
- },
- {
-  "ts": "2026-09-16T15:51:32.792955+00:00",
   "pr": "dynamo-ddae169-debugging-and-repair#8",
   "type": "started",
   "msg": "Check started: deep_review"
@@ -2398,5 +2374,29 @@
   "pr": "dynamo-0183436-machine-learning-and-ai#8",
   "type": "passed",
   "msg": "Check passed: pass2"
+ },
+ {
+  "ts": "2026-09-16T19:59:47.080124+00:00",
+  "pr": "dynamo-e079d63-hardware-embedded-and-low-level-systems#7",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-16T19:59:47.080124+00:00",
+  "pr": "dynamo-e079d63-hardware-embedded-and-low-level-systems#7",
+  "type": "started",
+  "msg": "Check started: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-16T19:59:47.080124+00:00",
+  "pr": "dynamo-e079d63-hardware-embedded-and-low-level-systems#7",
+  "type": "started",
+  "msg": "Check started: gate"
+ },
+ {
+  "ts": "2026-09-16T19:59:47.080124+00:00",
+  "pr": "dynamo-e079d63-hardware-embedded-and-low-level-systems#7",
+  "type": "failing",
+  "msg": "Check failed: trials"
  }
 ]
