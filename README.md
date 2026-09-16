@@ -2,14 +2,14 @@
 
 Live CI status dashboard, auto-discovering every open PR you (`config.json` → `author`)
 have opened in the last `window_hours` across `config.json` → `org`. Served via GitHub
-Pages and kept up to date by a local script (`fetch.py`) running every minute via `launchd`.
+Pages and kept up to date by a local script (`fetch.py`) running every 30s via `launchd`.
 
 ## How it works
 - `fetch.py` lists all repos in `org`, finds open PRs authored by `author` created within
   `window_hours`, plus anything manually pinned in `prs.json`, fetches each PR's check
   status via `gh api .../check-runs`, and writes `docs/data.json`.
 - `docs/index.html` (served by GitHub Pages) fetches `docs/data.json` + `docs/events.json`
-  client-side and renders the dashboard, refreshing every minute in the browser.
+  client-side and renders the dashboard, refreshing every 30s in the browser.
 - `fetch.py` also diffs each run against the previous snapshot and appends state-change
   events (status flips, new failures, recoveries, new pushes, review decisions) to
   `docs/events.json` (capped at 400) — this powers the Activity feed.
@@ -23,7 +23,7 @@ Pages and kept up to date by a local script (`fetch.py`) running every minute vi
 - Check-duration insights (avg per check name). Dark/light theme. Filters persist.
 - Keyboard: `/` search · `1-4` status · `v` view · `t` theme · `e` expand · `g` group · `r` refresh.
 - "copy summary" copies the visible PRs as a markdown table.
-- `launchd` runs `fetch.py`, then commits and pushes `docs/data.json` every 60s.
+- `launchd` runs `fetch.py`, then commits and pushes `docs/data.json` every 30s.
 
 ## Setup (already done for you)
 1. `gh repo create ... --public` — created this repo.

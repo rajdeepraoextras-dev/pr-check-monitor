@@ -302,7 +302,7 @@ kbd{font-size:10px;font-weight:500;color:var(--dim2);border:1px solid var(--bord
 <script>
 /* ================= state ================= */
 let DATA = [], EVENTS = [], SNAP = null, CFG = {}, lastFetch = 0, prevOverall = {};
-const REFRESH_MS = 60000;
+const REFRESH_MS = 30000;
 const LS = {
   get(k, d){ try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch(e){ return d; } },
   set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
@@ -518,7 +518,7 @@ function render(){
     const secAgo = Math.max(0, (now - new Date(SNAP).getTime())/1000);
     const live = $("live"); live.classList.toggle("stale", secAgo > 180 && secAgo <= 600); live.classList.toggle("dead", secAgo > 600);
     $("liveText").textContent = `Updated ${fmtDur(secAgo)} ago`;
-    $("foot").textContent = `Snapshot ${new Date(SNAP).toLocaleString()} · refreshed every minute by a local job on your Mac`;
+    $("foot").textContent = `Snapshot ${new Date(SNAP).toLocaleString()} · refreshed every 30s by a local job on your Mac`;
   }
   $("ring").style.setProperty("--p", Math.min(100,((now-lastFetch)/REFRESH_MS)*100)+"%");
 }

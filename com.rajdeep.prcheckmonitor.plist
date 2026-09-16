@@ -11,7 +11,7 @@
     <string>cd __REPO_PATH__ && python3 fetch.py && git add docs/data.json docs/events.json && git commit -m "update pr status" --quiet || true; git push --quiet || true</string>
   </array>
   <key>StartInterval</key>
-  <integer>60</integer>
+  <integer>30</integer>
   <key>RunAtLoad</key>
   <true/>
   <key>StandardOutPath</key>
