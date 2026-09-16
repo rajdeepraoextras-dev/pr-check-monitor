@@ -1,13 +1,24 @@
 #!/usr/bin/env python3
 """
-Discover open PRs authored by config.author in config.org opened within
-config.window_hours, fetch their check status, and write docs/data.json
-(for GitHub Pages). Also appends state-change events to docs/events.json.
+Two modes, run by two separate launchd jobs:
 
-Any PRs listed in prs.json are always included too (manual pins), regardless
-of age.
+  python3 fetch.py            (slow/full — ~every 2 min)
+    Scans every repo in config.org for open PRs by config.author opened
+    within config.window_hours (the expensive part: ~1 GraphQL call per
+    repo), refreshes full metadata + reviewDecision, and rebuilds the
+    tracked-PR list. Also merges in any manual pins from prs.json.
+
+  python3 fetch.py --fast     (fast/refresh — ~every 20-25s)
+    Skips discovery entirely and just re-fetches check-run status for the
+    PRs already in the last docs/data.json snapshot, using REST calls only
+    (kept out of the GraphQL budget the slow scan uses) so it can run much
+    more often without tripping GitHub's rate limits. reviewDecision is
+    carried forward unchanged between slow runs.
+
+Both write docs/data.json + docs/events.json (state-change log, capped at
+MAX_EVENTS) for GitHub Pages.
 """
-import json, subprocess, datetime, os
+import json, subprocess, datetime, os, sys
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 CONFIG_FILE = os.path.join(ROOT, "config.json")
@@ -60,12 +71,23 @@ def clean_name(n):
     return (n or "").replace("review / ", "")
 
 
-def fetch_pr(repo, num, prev):
+def fetch_pr(repo, num, prev, refresh_review=True):
+    # Pure REST (GET /repos/{repo}/pulls/{num}) — separate rate-limit budget
+    # from the GraphQL calls discovery uses, so the fast loop never competes
+    # with the slow scan for the same 5000/hr quota.
     info = json.loads(run(
-        f'gh pr view {num} -R {repo} --json '
-        f'headRefOid,title,url,createdAt,updatedAt,isDraft,mergeable,reviewDecision,'
-        f'additions,deletions,changedFiles,headRefName,baseRefName,labels'
+        f'gh api repos/{repo}/pulls/{num} --jq '
+        '\'{title, url: .html_url, createdAt: .created_at, updatedAt: .updated_at, '
+        'headRefOid: .head.sha, isDraft: .draft, mergeable, '
+        'additions, deletions, changedFiles: .changed_files, '
+        'headRefName: .head.ref, baseRefName: .base.ref, labels: [.labels[].name]}\''
     ))
+    review_decision = prev.get("reviewDecision", "")
+    if refresh_review:
+        try:
+            review_decision = run(f'gh pr view {num} -R {repo} --json reviewDecision --jq .reviewDecision').strip()
+        except Exception:
+            pass
     sha = info["headRefOid"]
     raw = run(f'gh api "repos/{repo}/commits/{sha}/check-runs" --paginate')
     checkruns = []
@@ -178,29 +200,35 @@ def diff_events(prev, cur, ts):
 
 
 def main():
+    fast = "--fast" in sys.argv
+
     config = json.load(open(CONFIG_FILE)) if os.path.exists(CONFIG_FILE) else {}
     org = config.get("org")
     author = config.get("author")
     window_hours = config.get("window_hours", 24)
 
-    prs = []
-    if org and author:
-        prs = discover_prs(org, author, window_hours)
-
-    pinned = json.load(open(PRS_FILE)) if os.path.exists(PRS_FILE) else []
-    seen = {(p["repo"], p["num"]) for p in prs}
-    for p in pinned:
-        if (p["repo"], p["num"]) not in seen:
-            prs.append(p)
-            seen.add((p["repo"], p["num"]))
-
-    prev_by_key = {}
+    prev_snapshot = {}
     if os.path.exists(OUT_FILE):
         try:
-            for p in json.load(open(OUT_FILE)).get("prs", []):
-                prev_by_key[p["repo"] + "#" + p["num"]] = p
+            prev_snapshot = json.load(open(OUT_FILE))
         except Exception:
-            pass
+            prev_snapshot = {}
+    prev_by_key = {p["repo"] + "#" + p["num"]: p for p in prev_snapshot.get("prs", [])}
+
+    if fast:
+        # No discovery scan — just re-check the PRs already being tracked.
+        prs = [
+            {"repo": p.get("full_repo") or f'{org}/{p["repo"]}', "num": p["num"]}
+            for p in prev_snapshot.get("prs", [])
+        ]
+    else:
+        prs = discover_prs(org, author, window_hours) if org and author else []
+        pinned = json.load(open(PRS_FILE)) if os.path.exists(PRS_FILE) else []
+        seen = {(p["repo"], p["num"]) for p in prs}
+        for p in pinned:
+            if (p["repo"], p["num"]) not in seen:
+                prs.append(p)
+                seen.add((p["repo"], p["num"]))
 
     events = []
     if os.path.exists(EVENTS_FILE):
@@ -216,7 +244,7 @@ def main():
         key = repo.split("/")[-1] + "#" + num
         prev = prev_by_key.get(key, {})
         try:
-            cur = fetch_pr(repo, num, prev)
+            cur = fetch_pr(repo, num, prev, refresh_review=not fast)
             new_ev = diff_events(prev, cur, ts)
             if new_ev:
                 cur["last_change"] = ts
@@ -249,7 +277,7 @@ def main():
     with open(EVENTS_FILE, "w") as f:
         json.dump(events, f, indent=1)
 
-    print(f"Wrote {OUT_FILE} ({len(out)} PRs, {len(events)} events) at {ts}")
+    print(f"[{'fast' if fast else 'full'}] Wrote {OUT_FILE} ({len(out)} PRs, {len(events)} events) at {ts}")
 
 
 if __name__ == "__main__":

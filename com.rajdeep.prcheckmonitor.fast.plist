@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>com.rajdeep.prcheckmonitor</string>
+  <string>com.rajdeep.prcheckmonitor.fast</string>
   <key>ProgramArguments</key>
   <array>
     <string>/bin/bash</string>
     <string>-lc</string>
-    <string>cd __REPO_PATH__ && python3 fetch.py && git add docs/data.json docs/events.json && git commit -m "update pr status" --quiet || true; (git pull --rebase --autostash --quiet || true) && (git push --quiet || true)</string>
+    <string>cd __REPO_PATH__ && python3 fetch.py --fast && git add docs/data.json docs/events.json && git commit -m "fast refresh" --quiet || true; (git pull --rebase --autostash --quiet || true) && (git push --quiet || true)</string>
   </array>
   <key>StartInterval</key>
-  <integer>30</integer>
+  <integer>20</integer>
   <key>RunAtLoad</key>
   <true/>
   <key>StandardOutPath</key>
-  <string>__REPO_PATH__/launchd.out.log</string>
+  <string>__REPO_PATH__/launchd.fast.out.log</string>
   <key>StandardErrorPath</key>
-  <string>__REPO_PATH__/launchd.err.log</string>
+  <string>__REPO_PATH__/launchd.fast.err.log</string>
 </dict>
 </plist>

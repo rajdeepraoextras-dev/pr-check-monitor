@@ -310,7 +310,7 @@ kbd{font-size:10px;font-weight:500;color:var(--dim2);border:1px solid var(--bord
 <script>
 /* ================= state ================= */
 let DATA = [], EVENTS = [], SNAP = null, CFG = {}, lastFetch = 0, prevOverall = {};
-const REFRESH_MS = 30000;
+const REFRESH_MS = 3000;
 const LS = {
   get(k, d){ try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch(e){ return d; } },
   set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
@@ -387,13 +387,14 @@ function ensureAudioCtx(){
   if(alarmCtx.state === "suspended") alarmCtx.resume();
   return alarmCtx;
 }
-function playAlarm(beeps){
+function playAlarm(durationSec){
   try{
     const ctx = ensureAudioCtx();
     const now = ctx.currentTime;
-    const n = beeps || 4;
-    for(let i=0;i<n;i++){
-      const t0 = now + i*0.3;
+    const stepDur = 0.3;
+    const steps = Math.max(1, Math.round((durationSec ?? 10) / stepDur));
+    for(let i=0;i<steps;i++){
+      const t0 = now + i*stepDur;
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
       osc.type = "square";
@@ -405,28 +406,34 @@ function playAlarm(beeps){
       osc.connect(gain); gain.connect(ctx.destination);
       osc.start(t0); osc.stop(t0+0.22);
     }
-    flashAlarmDot(n*300 + 400);
+    flashAlarmDot(steps*stepDur*1000 + 300);
   }catch(e){}
 }
-function playChime(){
+function playChime(durationSec){
   try{
     const ctx = ensureAudioCtx();
     const now = ctx.currentTime;
     const notes = [523.25, 659.25, 783.99]; // C5, E5, G5 — bright ascending triad
-    notes.forEach((freq,i)=>{
-      const t0 = now + i*0.13;
-      const osc = ctx.createOscillator();
-      const gain = ctx.createGain();
-      osc.type = "sine";
-      osc.frequency.setValueAtTime(freq, t0);
-      gain.gain.setValueAtTime(0, t0);
-      gain.gain.linearRampToValueAtTime(0.6, t0+0.02);
-      gain.gain.setValueAtTime(0.6, t0+0.22);
-      gain.gain.linearRampToValueAtTime(0, t0+0.32);
-      osc.connect(gain); gain.connect(ctx.destination);
-      osc.start(t0); osc.stop(t0+0.34);
-    });
-    flashAlarmDot(notes.length*130 + 400);
+    const noteGap = 0.13, tail = 0.15;
+    const patternDur = notes.length*noteGap + tail;
+    const reps = Math.max(1, Math.round((durationSec ?? 10) / patternDur));
+    for(let r=0;r<reps;r++){
+      const base = now + r*patternDur;
+      notes.forEach((freq,i)=>{
+        const t0 = base + i*noteGap;
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = "sine";
+        osc.frequency.setValueAtTime(freq, t0);
+        gain.gain.setValueAtTime(0, t0);
+        gain.gain.linearRampToValueAtTime(0.6, t0+0.02);
+        gain.gain.setValueAtTime(0.6, t0+0.1);
+        gain.gain.linearRampToValueAtTime(0, t0+0.14);
+        osc.connect(gain); gain.connect(ctx.destination);
+        osc.start(t0); osc.stop(t0+0.16);
+      });
+    }
+    flashAlarmDot(reps*patternDur*1000 + 300);
   }catch(e){}
 }
 function flashAlarmDot(ms){
@@ -441,8 +448,8 @@ function checkAlarm(){
   if(!fresh.length) return;
   const hasFail = fresh.some(e => e.type === "failing" || e.type === "error");
   const hasPass = fresh.some(e => e.type === "passed");
-  if(hasPass) playChime();
-  if(hasFail) setTimeout(()=>playAlarm(4), hasPass ? 750 : 0);
+  if(hasPass) playChime(10);
+  if(hasFail) setTimeout(()=>playAlarm(10), hasPass ? 10500 : 0);
   alarmWatermark = Math.max(...fresh.map(e=>new Date(e.ts).getTime()));
   LS.set("prmon_alarm_watermark", alarmWatermark);
 }
@@ -451,8 +458,8 @@ function setAlarm(on){
   if(ALARM){
     alarmWatermark = Date.now();
     LS.set("prmon_alarm_watermark", alarmWatermark);
-    playChime();
-    setTimeout(()=>playAlarm(2), 750);
+    playChime(1.5);
+    setTimeout(()=>playAlarm(1.5), 1800);
   }
   syncControls();
 }
@@ -646,7 +653,7 @@ function render(){
     const secAgo = Math.max(0, (now - new Date(SNAP).getTime())/1000);
     const live = $("live"); live.classList.toggle("stale", secAgo > 180 && secAgo <= 600); live.classList.toggle("dead", secAgo > 600);
     $("liveText").textContent = `Updated ${fmtDur(secAgo)} ago`;
-    $("foot").textContent = `Snapshot ${new Date(SNAP).toLocaleString()} · refreshed every 30s by a local job on your Mac`;
+    $("foot").textContent = `Snapshot ${new Date(SNAP).toLocaleString()} · known PRs refreshed every ~20s, new PRs discovered every ~2min, by a local job on your Mac`;
   }
   $("ring").style.setProperty("--p", Math.min(100,((now-lastFetch)/REFRESH_MS)*100)+"%");
 }
@@ -726,11 +733,27 @@ document.addEventListener("keydown", e=>{
 function applyTheme(){ document.documentElement.setAttribute("data-theme", THEME); LS.set("prmon_theme2", THEME); }
 
 /* ================= data ================= */
+// Read straight from the raw git blob (Fastly CDN, updates within ~seconds of
+// a push) instead of the GitHub Pages build (Jekyll rebuild + CDN publish can
+// lag a minute or more) — this is what actually removes the "why is it lagging"
+// delay. Falls back to the same-origin copy if that ever fails.
+const RAW_BASE = "https://raw.githubusercontent.com/rajdeepraoextras-dev/pr-check-monitor/main/docs/";
+async function fetchJSON(name, fallback){
+  try {
+    const r = await fetch(RAW_BASE+name+"?_="+Date.now(), {cache:"no-store"});
+    if(!r.ok) throw new Error(r.status);
+    return await r.json();
+  } catch(e) {
+    const r = await fetch(name+"?_="+Date.now(), {cache:"no-store"});
+    if(!r.ok) throw new Error(r.status);
+    return await r.json();
+  }
+}
 async function loadData(){
   try {
     const [d, ev] = await Promise.all([
-      fetch("data.json?_="+Date.now()).then(r=>r.json()),
-      fetch("events.json?_="+Date.now()).then(r=>r.ok?r.json():[]).catch(()=>[]),
+      fetchJSON("data.json"),
+      fetchJSON("events.json").catch(()=>[]),
     ]);
     prevOverall = Object.fromEntries(DATA.map(p=>[key(p), p.overall]));
     DATA = d.prs || []; SNAP = d.snapshot_time; CFG = d.config || {}; EVENTS = Array.isArray(ev)?ev:[];
