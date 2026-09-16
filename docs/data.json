@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T11:09:19.303267+00:00",
+  "snapshot_time": "2026-09-16T11:11:20.960266+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -622,204 +622,46 @@
       "title": "Rework: grade a capture past the 262144 byte boundary and restore the routine spec fixes",
       "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/pull/9",
       "createdAt": "2026-09-15T17:41:24Z",
-      "updatedAt": "2026-09-16T11:03:58Z",
-      "sha": "da506fbab08e454ac5ac645cee614578a08bfbea",
+      "updatedAt": "2026-09-16T11:11:25Z",
+      "sha": "9280c06ce189f3b1dad23c8d7394111c03af7c67",
       "draft": false,
       "mergeable": "MERGEABLE",
       "reviewDecision": "",
-      "additions": 970,
+      "additions": 1056,
       "deletions": 182,
-      "changedFiles": 11,
+      "changedFiles": 12,
       "head": "rework/46ecc32-large-payload-coverage",
       "base": "main",
       "labels": [
         "needs-revision"
       ],
-      "overall": "failing",
-      "passed": 14,
-      "total": 17,
-      "skipped": 1,
-      "failed": [
-        "gate",
-        "trials"
+      "overall": "running",
+      "passed": 0,
+      "total": 1,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "changes",
+          "started_at": "2026-09-16T11:11:31Z"
+        }
       ],
-      "running": [],
       "queued": [],
       "checks": [
         {
-          "name": "gate",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-16T11:03:51Z",
-          "completed_at": "2026-09-16T11:04:02Z",
-          "duration_sec": 11,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104768285527",
-          "app": "github-actions"
-        },
-        {
-          "name": "trials",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-16T08:52:34Z",
-          "completed_at": "2026-09-16T11:03:48Z",
-          "duration_sec": 7874,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104729085246",
-          "app": "github-actions"
-        },
-        {
-          "name": "ava_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-16T07:51:38Z",
-          "completed_at": "2026-09-16T08:00:18Z",
-          "duration_sec": 520,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104711225028",
-          "app": "github-actions"
-        },
-        {
           "name": "changes",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-16T06:31:40Z",
-          "completed_at": "2026-09-16T06:32:09Z",
-          "duration_sec": 29,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104690520593",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-16T11:03:51Z",
-          "completed_at": "2026-09-16T11:04:08Z",
-          "duration_sec": 17,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104768285599",
-          "app": "github-actions"
-        },
-        {
-          "name": "cosine_similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-16T06:32:12Z",
-          "completed_at": "2026-09-16T06:33:28Z",
-          "duration_sec": 76,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104690643476",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-16T07:51:38Z",
-          "completed_at": "2026-09-16T07:59:38Z",
-          "duration_sec": 480,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104711225078",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-16T06:43:00Z",
-          "completed_at": "2026-09-16T07:51:35Z",
-          "duration_sec": 4115,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104693175005",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_eval",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-16T08:00:57Z",
-          "completed_at": "2026-09-16T08:21:22Z",
-          "duration_sec": 1225,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104713797225",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-16T08:00:57Z",
-          "completed_at": "2026-09-16T08:52:15Z",
-          "duration_sec": 3078,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104713797279",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_gate",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-16T08:52:18Z",
-          "completed_at": "2026-09-16T08:52:32Z",
-          "duration_sec": 14,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104729006597",
-          "app": "github-actions"
-        },
-        {
-          "name": "ratelimit",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-16T06:42:50Z",
-          "completed_at": "2026-09-16T06:42:58Z",
-          "duration_sec": 8,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104693134434",
-          "app": "github-actions"
-        },
-        {
-          "name": "review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-16T06:33:31Z",
-          "completed_at": "2026-09-16T06:36:24Z",
-          "duration_sec": 173,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104690952013",
-          "app": "github-actions"
-        },
-        {
-          "name": "similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-16T06:36:26Z",
-          "completed_at": "2026-09-16T06:37:01Z",
-          "duration_sec": 35,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104691638535",
-          "app": "github-actions"
-        },
-        {
-          "name": "tier1",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-16T08:00:21Z",
-          "completed_at": "2026-09-16T08:00:55Z",
-          "duration_sec": 34,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104713619445",
-          "app": "github-actions"
-        },
-        {
-          "name": "validation",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-16T06:37:03Z",
-          "completed_at": "2026-09-16T06:42:48Z",
-          "duration_sec": 345,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104691783194",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-16T07:51:36Z",
-          "completed_at": "2026-09-16T07:51:36Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104711226131",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-16T11:11:31Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35088980780/job/104770493859",
           "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-16T07:16:27.708702+00:00",
-      "last_change": "2026-09-16T11:05:12.163179+00:00"
+      "last_change": "2026-09-16T11:11:20.960266+00:00"
     },
     {
       "repo": "dynamo-cbe7974-regulated-knowledge-work-and-business-operations",
