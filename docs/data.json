@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T22:23:23.036607+00:00",
+  "snapshot_time": "2026-09-16T22:23:59.511240+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1116,32 +1116,42 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 0,
-      "total": 1,
+      "passed": 1,
+      "total": 2,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "changes",
-          "started_at": "2026-09-16T22:23:11Z"
+          "name": "cosine_similarity",
+          "started_at": "2026-09-16T22:23:42Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "changes",
+          "name": "cosine_similarity",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T22:23:11Z",
+          "started_at": "2026-09-16T22:23:42Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35157410723/job/105000165549",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T22:23:11Z",
+          "completed_at": "2026-09-16T22:23:39Z",
+          "duration_sec": 28,
           "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35157410723/job/105000029107",
           "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:31:07.881961+00:00",
-      "last_change": "2026-09-16T22:23:23.036607+00:00"
+      "last_change": "2026-09-16T22:23:59.511240+00:00"
     }
   ]
 }
