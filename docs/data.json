@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T14:33:41.670083+00:00",
+  "snapshot_time": "2026-09-16T14:34:29.800142+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -81,7 +81,7 @@
       "title": "Rework: enforce retraining from /app/data/train in the verifier",
       "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/pull/6",
       "createdAt": "2026-09-16T14:27:55Z",
-      "updatedAt": "2026-09-16T14:33:32Z",
+      "updatedAt": "2026-09-16T14:33:48Z",
       "sha": "4e7ae0e4472025a472046bef98b685500a048f9c",
       "draft": false,
       "mergeable": true,
@@ -169,7 +169,7 @@
       "title": "Rework: grade metric_table.csv line endings and carry the empty-arm and exact-alpha fixes",
       "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/pull/5",
       "createdAt": "2026-09-16T14:25:27Z",
-      "updatedAt": "2026-09-16T14:33:44Z",
+      "updatedAt": "2026-09-16T14:34:18Z",
       "sha": "e5eff6d39da65d8ecdf66a41f67a16c0f9645493",
       "draft": false,
       "mergeable": true,
@@ -183,26 +183,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 2,
-      "total": 3,
+      "passed": 4,
+      "total": 5,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "review",
-          "started_at": "2026-09-16T14:28:05Z"
+          "name": "validation",
+          "started_at": "2026-09-16T14:34:30Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "review",
+          "name": "validation",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T14:28:05Z",
+          "started_at": "2026-09-16T14:34:30Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/actions/runs/35108431493/job/104836532900",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/actions/runs/35108431493/job/104839034675",
           "app": "github-actions"
         },
         {
@@ -224,11 +224,31 @@
           "duration_sec": 116,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/actions/runs/35108431493/job/104835757097",
           "app": "github-actions"
+        },
+        {
+          "name": "review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T14:28:05Z",
+          "completed_at": "2026-09-16T14:33:52Z",
+          "duration_sec": 347,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/actions/runs/35108431493/job/104836532900",
+          "app": "github-actions"
+        },
+        {
+          "name": "similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T14:33:56Z",
+          "completed_at": "2026-09-16T14:34:27Z",
+          "duration_sec": 31,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/actions/runs/35108431493/job/104838813042",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-16T14:28:01.508548+00:00",
-      "last_change": "2026-09-16T14:30:04.257263+00:00"
+      "last_change": "2026-09-16T14:34:29.800142+00:00"
     },
     {
       "repo": "dynamo-ddae169-debugging-and-repair",
@@ -237,7 +257,7 @@
       "title": "Rework: grade raw frame normalisation and the default registry",
       "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/pull/8",
       "createdAt": "2026-09-16T14:15:42Z",
-      "updatedAt": "2026-09-16T14:33:44Z",
+      "updatedAt": "2026-09-16T14:34:10Z",
       "sha": "edea257087270971b0d902c69d570b9e73fd82f8",
       "draft": false,
       "mergeable": true,
@@ -251,26 +271,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 4,
-      "total": 5,
+      "passed": 6,
+      "total": 7,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "validation",
-          "started_at": "2026-09-16T14:32:51Z"
+          "name": "pass2",
+          "started_at": "2026-09-16T14:34:03Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "validation",
+          "name": "pass2",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T14:32:51Z",
+          "started_at": "2026-09-16T14:34:03Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/actions/runs/35108335746/job/104838395128",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/actions/runs/35108335746/job/104838855755",
           "app": "github-actions"
         },
         {
@@ -294,6 +314,16 @@
           "app": "github-actions"
         },
         {
+          "name": "ratelimit",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T14:33:52Z",
+          "completed_at": "2026-09-16T14:34:00Z",
+          "duration_sec": 8,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/actions/runs/35108335746/job/104838789413",
+          "app": "github-actions"
+        },
+        {
           "name": "review",
           "state": "passed",
           "conclusion": "success",
@@ -312,11 +342,21 @@
           "duration_sec": 34,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/actions/runs/35108335746/job/104838156036",
           "app": "github-actions"
+        },
+        {
+          "name": "validation",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T14:32:51Z",
+          "completed_at": "2026-09-16T14:33:49Z",
+          "duration_sec": 58,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/actions/runs/35108335746/job/104838395128",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-16T14:19:08.869069+00:00",
-      "last_change": "2026-09-16T14:33:41.670083+00:00"
+      "last_change": "2026-09-16T14:34:29.800142+00:00"
     },
     {
       "repo": "dynamo-0183436-machine-learning-and-ai",
