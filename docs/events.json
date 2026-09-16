@@ -1,42 +1,6 @@
 [
  {
   "ts": "2026-09-16T14:27:45.241865+00:00",
-  "pr": "dynamo-ed639d6-systems-infrastructure-and-operations#5",
-  "type": "passed",
-  "msg": "Status error \u2192 passed"
- },
- {
-  "ts": "2026-09-16T14:27:45.241865+00:00",
-  "pr": "dynamo-ed639d6-systems-infrastructure-and-operations#5",
-  "type": "passed",
-  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-ed639d6-systems-infrastructure-and-operations` failed: /bin/sh: gh: command not found"
- },
- {
-  "ts": "2026-09-16T14:27:45.241865+00:00",
-  "pr": "dynamo-ed639d6-systems-infrastructure-and-operations#5",
-  "type": "passed",
-  "msg": "16 checks passed"
- },
- {
-  "ts": "2026-09-16T14:27:45.241865+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "running",
-  "msg": "Status error \u2192 running"
- },
- {
-  "ts": "2026-09-16T14:27:45.241865+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-16T14:27:45.241865+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "passed",
-  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-24667f6-security/pulls/7 --jq '{title, url: .` failed: /bin/sh: gh: command not found"
- },
- {
-  "ts": "2026-09-16T14:27:45.241865+00:00",
   "pr": "dynamo-24667f6-security#7",
   "type": "passed",
   "msg": "6 checks passed"
@@ -2398,5 +2362,41 @@
   "pr": "dynamo-e1db7d0-data-science-and-reporting#5",
   "type": "passed",
   "msg": "Check passed: qc_exec"
+ },
+ {
+  "ts": "2026-09-16T17:02:21.556726+00:00",
+  "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "started",
+  "msg": "Check started: validation"
+ },
+ {
+  "ts": "2026-09-16T17:02:21.556726+00:00",
+  "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "passed",
+  "msg": "Check passed: similarity"
+ },
+ {
+  "ts": "2026-09-16T17:02:21.556726+00:00",
+  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
+  "type": "started",
+  "msg": "Check started: validation"
+ },
+ {
+  "ts": "2026-09-16T17:02:21.556726+00:00",
+  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
+  "type": "passed",
+  "msg": "Check passed: similarity"
+ },
+ {
+  "ts": "2026-09-16T17:02:21.556726+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "started",
+  "msg": "Check started: similarity"
+ },
+ {
+  "ts": "2026-09-16T17:02:21.556726+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "passed",
+  "msg": "Check passed: review"
  }
 ]
