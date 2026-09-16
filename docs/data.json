@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T23:48:36.457351+00:00",
+  "snapshot_time": "2026-09-16T23:49:07.910467+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1176,7 +1176,7 @@
       "title": "Rework: state the vendor-wide substitution-table invariant and redraw the corpus around it",
       "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/pull/7",
       "createdAt": "2026-09-16T12:29:39Z",
-      "updatedAt": "2026-09-16T23:48:37Z",
+      "updatedAt": "2026-09-16T23:49:01Z",
       "sha": "b179b2c914e31d6e924d20d6a211db579bee8578",
       "draft": false,
       "mergeable": true,
@@ -1194,16 +1194,19 @@
       "total": 7,
       "skipped": 0,
       "failed": [],
-      "running": [],
-      "queued": [
-        "pass2"
+      "running": [
+        {
+          "name": "pass2",
+          "started_at": "2026-09-16T23:48:55Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
           "name": "pass2",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T23:48:53Z",
+          "started_at": "2026-09-16T23:48:55Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35163242227/job/105020639574",
@@ -1272,7 +1275,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:31:07.881961+00:00",
-      "last_change": "2026-09-16T23:48:36.457351+00:00"
+      "last_change": "2026-09-16T23:49:07.910467+00:00"
     }
   ]
 }
