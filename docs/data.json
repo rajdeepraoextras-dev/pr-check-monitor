@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T17:59:45.495225+00:00",
+  "snapshot_time": "2026-09-16T17:59:59.486257+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -891,7 +891,7 @@
       "title": "Rework: state the vendor-wide substitution-table invariant and redraw the corpus around it",
       "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/pull/7",
       "createdAt": "2026-09-16T12:29:39Z",
-      "updatedAt": "2026-09-16T17:04:54Z",
+      "updatedAt": "2026-09-16T18:00:15Z",
       "sha": "76b43cc9d2f2581036785d74182695351ac56e33",
       "draft": false,
       "mergeable": true,
@@ -905,26 +905,34 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "pass2",
-          "started_at": "2026-09-16T17:04:45Z"
-        }
+      "running": [],
+      "queued": [
+        "ava_review",
+        "deep_review"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "pass2",
-          "state": "running",
+          "name": "ava_review",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-16T17:04:45Z",
+          "started_at": "2026-09-16T18:00:25Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35124828626/job/104894795629",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35124828626/job/104913934429",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "queued",
+          "conclusion": null,
+          "started_at": "2026-09-16T18:00:25Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35124828626/job/104913934403",
           "app": "github-actions"
         },
         {
@@ -945,6 +953,16 @@
           "completed_at": "2026-09-16T16:57:51Z",
           "duration_sec": 191,
           "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35124828626/job/104891316283",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T17:04:45Z",
+          "completed_at": "2026-09-16T18:00:25Z",
+          "duration_sec": 3340,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35124828626/job/104894795629",
           "app": "github-actions"
         },
         {
@@ -986,11 +1004,21 @@
           "duration_sec": 96,
           "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35124828626/job/104894160438",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-16T18:00:26Z",
+          "completed_at": "2026-09-16T18:00:25Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35124828626/job/104913936220",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:31:07.881961+00:00",
-      "last_change": "2026-09-16T17:06:23.741914+00:00"
+      "last_change": "2026-09-16T17:59:59.486257+00:00"
     },
     {
       "repo": "dynamo-ed639d6-systems-infrastructure-and-operations",
@@ -1193,209 +1221,6 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T07:16:29.346364+00:00",
-      "last_change": "2026-09-16T14:27:45.241865+00:00"
-    },
-    {
-      "repo": "dynamo-84d5250-build-dependency-and-release-management",
-      "full_repo": "handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management",
-      "num": "6",
-      "title": "Find the shortest cycle, grade archives against protected sources, and add concurrent build waves (Fixes #4)",
-      "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/pull/6",
-      "createdAt": "2026-09-15T17:57:12Z",
-      "updatedAt": "2026-09-15T20:51:11Z",
-      "sha": "4abf88ad153ad42bfa115382b131e6ea73c75eda",
-      "draft": false,
-      "mergeable": true,
-      "reviewDecision": "",
-      "additions": 694,
-      "deletions": 67,
-      "changedFiles": 8,
-      "head": "rework/84d5250-monorepo-release",
-      "base": "main",
-      "labels": [
-        "accepted"
-      ],
-      "overall": "passed",
-      "passed": 16,
-      "total": 17,
-      "skipped": 1,
-      "failed": [],
-      "running": [],
-      "queued": [],
-      "checks": [
-        {
-          "name": "ava_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-15T19:14:44Z",
-          "completed_at": "2026-09-15T19:24:57Z",
-          "duration_sec": 613,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35004444077/job/104527510413",
-          "app": "github-actions"
-        },
-        {
-          "name": "changes",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-15T17:57:20Z",
-          "completed_at": "2026-09-15T17:57:40Z",
-          "duration_sec": 20,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35004444077/job/104500581392",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-15T20:51:04Z",
-          "completed_at": "2026-09-15T20:51:21Z",
-          "duration_sec": 17,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35004444077/job/104560158580",
-          "app": "github-actions"
-        },
-        {
-          "name": "cosine_similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-15T17:57:43Z",
-          "completed_at": "2026-09-15T18:00:14Z",
-          "duration_sec": 151,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35004444077/job/104500710898",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-15T19:14:44Z",
-          "completed_at": "2026-09-15T19:20:31Z",
-          "duration_sec": 347,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35004444077/job/104527510362",
-          "app": "github-actions"
-        },
-        {
-          "name": "gate",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-15T20:51:04Z",
-          "completed_at": "2026-09-15T20:51:15Z",
-          "duration_sec": 11,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35004444077/job/104560158587",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-15T18:07:31Z",
-          "completed_at": "2026-09-15T19:14:41Z",
-          "duration_sec": 4030,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35004444077/job/104504123537",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_eval",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-15T19:25:34Z",
-          "completed_at": "2026-09-15T19:43:32Z",
-          "duration_sec": 1078,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35004444077/job/104531168497",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-15T19:25:34Z",
-          "completed_at": "2026-09-15T19:31:41Z",
-          "duration_sec": 367,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35004444077/job/104531168428",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_gate",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-15T19:43:35Z",
-          "completed_at": "2026-09-15T19:43:48Z",
-          "duration_sec": 13,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35004444077/job/104537194582",
-          "app": "github-actions"
-        },
-        {
-          "name": "ratelimit",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-15T18:07:22Z",
-          "completed_at": "2026-09-15T18:07:29Z",
-          "duration_sec": 7,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35004444077/job/104504067133",
-          "app": "github-actions"
-        },
-        {
-          "name": "review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-15T18:00:17Z",
-          "completed_at": "2026-09-15T18:05:40Z",
-          "duration_sec": 323,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35004444077/job/104501574070",
-          "app": "github-actions"
-        },
-        {
-          "name": "similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-15T18:05:43Z",
-          "completed_at": "2026-09-15T18:06:05Z",
-          "duration_sec": 22,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35004444077/job/104503491053",
-          "app": "github-actions"
-        },
-        {
-          "name": "tier1",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-15T19:25:00Z",
-          "completed_at": "2026-09-15T19:25:31Z",
-          "duration_sec": 31,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35004444077/job/104530973732",
-          "app": "github-actions"
-        },
-        {
-          "name": "trials",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-15T19:43:51Z",
-          "completed_at": "2026-09-15T20:51:01Z",
-          "duration_sec": 4030,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35004444077/job/104537282278",
-          "app": "github-actions"
-        },
-        {
-          "name": "validation",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-15T18:06:08Z",
-          "completed_at": "2026-09-15T18:07:19Z",
-          "duration_sec": 71,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35004444077/job/104503637925",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-15T19:14:41Z",
-          "completed_at": "2026-09-15T19:14:41Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35004444077/job/104527511776",
-          "app": "github-actions"
-        }
-      ],
-      "submitted": false,
-      "first_seen": "2026-09-16T07:16:23.078230+00:00",
       "last_change": "2026-09-16T14:27:45.241865+00:00"
     }
   ]
