@@ -18,7 +18,7 @@ Two modes, run by two separate launchd jobs:
 Both write docs/data.json + docs/events.json (state-change log, capped at
 MAX_EVENTS) for GitHub Pages.
 """
-import json, subprocess, datetime, os, sys
+import json, subprocess, datetime, os, sys, time
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 CONFIG_FILE = os.path.join(ROOT, "config.json")
@@ -28,9 +28,23 @@ EVENTS_FILE = os.path.join(ROOT, "docs", "events.json")
 MAX_EVENTS = 400
 
 
-def run(cmd):
-    r = subprocess.run(cmd, shell=True, capture_output=True, text=True)
-    return r.stdout
+def run(cmd, retries=2, delay=1.2):
+    # The fast and full jobs now run their `gh` calls fully in parallel
+    # (see run.sh), and `gh` occasionally fails transiently under that
+    # concurrency (network blip, brief auth/keychain contention). Silently
+    # returning empty stdout on failure — the old behavior — meant every PR
+    # in that run crashed with a cryptic 'Expecting value' JSON error instead
+    # of the real reason. Now: retry a couple times, and if it still fails,
+    # raise with the actual stderr so it's diagnosable.
+    last_err = ""
+    for attempt in range(retries + 1):
+        r = subprocess.run(cmd, shell=True, capture_output=True, text=True)
+        if r.returncode == 0:
+            return r.stdout
+        last_err = (r.stderr or r.stdout or "").strip() or f"exit code {r.returncode}"
+        if attempt < retries:
+            time.sleep(delay)
+    raise RuntimeError(f"`{cmd[:90]}` failed: {last_err[:300]}")
 
 
 def now_iso():
