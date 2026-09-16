@@ -1,11 +1,69 @@
 {
-  "snapshot_time": "2026-09-16T14:27:23.765023+00:00",
+  "snapshot_time": "2026-09-16T14:27:45.241865+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-e1db7d0-data-science-and-reporting",
+      "full_repo": "handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting",
+      "num": "5",
+      "title": "Rework: grade metric_table.csv line endings and carry the empty-arm and exact-alpha fixes",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/pull/5",
+      "createdAt": "2026-09-16T14:25:27Z",
+      "updatedAt": "2026-09-16T14:27:55Z",
+      "sha": "e5eff6d39da65d8ecdf66a41f67a16c0f9645493",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 303,
+      "deletions": 71,
+      "changedFiles": 8,
+      "head": "rework/e1db7d0-csv-line-endings",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 1,
+      "total": 2,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "cosine_similarity",
+          "started_at": "2026-09-16T14:26:05Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "cosine_similarity",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-16T14:26:05Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/actions/runs/35108431493/job/104835757097",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T14:25:36Z",
+          "completed_at": "2026-09-16T14:26:02Z",
+          "duration_sec": 26,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/actions/runs/35108431493/job/104835572097",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-16T14:28:01.508548+00:00",
+      "last_change": "2026-09-16T14:27:45.241865+00:00"
+    },
     {
       "repo": "dynamo-ddae169-debugging-and-repair",
       "full_repo": "handshake-project-dynamo/dynamo-ddae169-debugging-and-repair",
@@ -62,7 +120,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T14:19:08.869069+00:00",
-      "last_change": "2026-09-16T14:26:30.724753+00:00"
+      "last_change": "2026-09-16T14:27:45.241865+00:00"
     },
     {
       "repo": "dynamo-0183436-machine-learning-and-ai",
@@ -170,7 +228,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T13:27:28.400072+00:00",
-      "last_change": "2026-09-16T14:26:30.724753+00:00"
+      "last_change": "2026-09-16T14:27:45.241865+00:00"
     },
     {
       "repo": "dynamo-314a3c9-model-training-and-ml-infrastructure",
@@ -228,7 +286,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:33:08.162652+00:00",
-      "last_change": "2026-09-16T14:26:30.724753+00:00"
+      "last_change": "2026-09-16T14:27:45.241865+00:00"
     },
     {
       "repo": "dynamo-24667f6-security",
@@ -336,7 +394,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:31:07.881961+00:00",
-      "last_change": "2026-09-16T14:26:30.724753+00:00"
+      "last_change": "2026-09-16T14:27:45.241865+00:00"
     },
     {
       "repo": "dynamo-ed639d6-systems-infrastructure-and-operations",
@@ -539,7 +597,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T07:16:29.346364+00:00",
-      "last_change": "2026-09-16T14:26:30.724753+00:00"
+      "last_change": "2026-09-16T14:27:45.241865+00:00"
     },
     {
       "repo": "dynamo-84d5250-build-dependency-and-release-management",
@@ -742,7 +800,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T07:16:23.078230+00:00",
-      "last_change": "2026-09-16T14:26:30.724753+00:00"
+      "last_change": "2026-09-16T14:27:45.241865+00:00"
     },
     {
       "repo": "dynamo-2b778c3-systems-infrastructure-and-operations",
@@ -945,7 +1003,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T07:16:26.186266+00:00",
-      "last_change": "2026-09-16T14:26:30.724753+00:00"
+      "last_change": "2026-09-16T14:27:45.241865+00:00"
     }
   ]
 }

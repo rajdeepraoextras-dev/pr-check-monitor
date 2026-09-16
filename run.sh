@@ -13,6 +13,13 @@
 set -e
 cd "$(dirname "$0")"
 
+# launchd runs this script directly (no login shell), so PATH is whatever
+# launchd's own minimal default is — it does NOT include Homebrew or
+# ~/.local/bin, where gh/git usually live. That silently broke every run:
+# `gh: command not found` on every call, which fetch.py's old error
+# handling swallowed into a generic JSON parse error on every PR at once.
+export PATH="$HOME/.local/bin:/opt/homebrew/bin:/usr/local/bin:$PATH"
+
 python3 fetch.py "$@"
 
 LOCKDIR="/tmp/prcheckmonitor.lock"
