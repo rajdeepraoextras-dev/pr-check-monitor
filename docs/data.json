@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T15:34:43.456679+00:00",
+  "snapshot_time": "2026-09-16T15:35:32.950523+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -669,32 +669,42 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 0,
-      "total": 1,
+      "passed": 1,
+      "total": 2,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "changes",
-          "started_at": "2026-09-16T15:34:33Z"
+          "name": "cosine_similarity",
+          "started_at": "2026-09-16T15:35:03Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "changes",
+          "name": "cosine_similarity",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T15:34:33Z",
+          "started_at": "2026-09-16T15:35:03Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35116264009/job/104862525612",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T15:34:33Z",
+          "completed_at": "2026-09-16T15:35:00Z",
+          "duration_sec": 27,
           "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35116264009/job/104862339344",
           "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:31:07.881961+00:00",
-      "last_change": "2026-09-16T15:34:43.456679+00:00"
+      "last_change": "2026-09-16T15:35:32.950523+00:00"
     },
     {
       "repo": "dynamo-ed639d6-systems-infrastructure-and-operations",
