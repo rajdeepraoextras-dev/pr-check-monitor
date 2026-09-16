@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T19:42:28.051396+00:00",
+  "snapshot_time": "2026-09-16T19:42:54.596274+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1026,7 +1026,7 @@
       "title": "Rework: state the vendor-wide substitution-table invariant and redraw the corpus around it",
       "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/pull/7",
       "createdAt": "2026-09-16T12:29:39Z",
-      "updatedAt": "2026-09-16T19:40:21Z",
+      "updatedAt": "2026-09-16T19:43:00Z",
       "sha": "7a3b931796b9f12f6f862c4b3af1b26865db7ef1",
       "draft": false,
       "mergeable": true,
@@ -1040,26 +1040,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 9,
+      "total": 11,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "deep_review",
-          "started_at": "2026-09-16T19:31:39Z"
+          "name": "tier1",
+          "started_at": "2026-09-16T19:43:09Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "deep_review",
+          "name": "tier1",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T19:31:39Z",
+          "started_at": "2026-09-16T19:43:09Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35133112326/job/104945465659",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35133112326/job/104949327381",
           "app": "github-actions"
         },
         {
@@ -1090,6 +1090,16 @@
           "completed_at": "2026-09-16T18:17:12Z",
           "duration_sec": 154,
           "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35133112326/job/104918889651",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T19:31:39Z",
+          "completed_at": "2026-09-16T19:43:06Z",
+          "duration_sec": 687,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35133112326/job/104945465659",
           "app": "github-actions"
         },
         {
@@ -1155,7 +1165,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:31:07.881961+00:00",
-      "last_change": "2026-09-16T19:40:36.124940+00:00"
+      "last_change": "2026-09-16T19:42:54.596274+00:00"
     }
   ]
 }
