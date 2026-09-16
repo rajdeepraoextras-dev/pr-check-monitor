@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T15:19:45.584315+00:00",
+  "snapshot_time": "2026-09-16T15:20:32.837693+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -371,7 +371,7 @@
       "title": "Rework: grade raw frame normalisation and the default registry",
       "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/pull/8",
       "createdAt": "2026-09-16T14:15:42Z",
-      "updatedAt": "2026-09-16T15:02:47Z",
+      "updatedAt": "2026-09-16T15:20:36Z",
       "sha": "edea257087270971b0d902c69d570b9e73fd82f8",
       "draft": false,
       "mergeable": true,
@@ -382,29 +382,52 @@
       "head": "rework/ddae169-normalisation-defaults",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
-      "passed": 11,
-      "total": 13,
-      "skipped": 1,
-      "failed": [],
+      "overall": "failing",
+      "passed": 12,
+      "total": 17,
+      "skipped": 2,
+      "failed": [
+        "gate",
+        "qc_gate"
+      ],
       "running": [
         {
-          "name": "qc_eval",
-          "started_at": "2026-09-16T15:02:41Z"
+          "name": "claude-cost-report",
+          "started_at": "2026-09-16T15:20:30Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-16T15:20:30Z",
+          "completed_at": "2026-09-16T15:20:39Z",
+          "duration_sec": 9,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/actions/runs/35108335746/job/104856900804",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-16T15:20:11Z",
+          "completed_at": "2026-09-16T15:20:27Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/actions/runs/35108335746/job/104856770253",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T15:02:41Z",
+          "started_at": "2026-09-16T15:20:30Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/actions/runs/35108335746/job/104850003749",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/actions/runs/35108335746/job/104856901196",
           "app": "github-actions"
         },
         {
@@ -455,6 +478,16 @@
           "completed_at": "2026-09-16T14:52:49Z",
           "duration_sec": 1126,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/actions/runs/35108335746/job/104838855755",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T15:02:41Z",
+          "completed_at": "2026-09-16T15:20:08Z",
+          "duration_sec": 1047,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/actions/runs/35108335746/job/104850003749",
           "app": "github-actions"
         },
         {
@@ -526,11 +559,21 @@
           "duration_sec": -1,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/actions/runs/35108335746/job/104846216542",
           "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-16T15:20:28Z",
+          "completed_at": "2026-09-16T15:20:27Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ddae169-debugging-and-repair/actions/runs/35108335746/job/104856902124",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-16T14:19:08.869069+00:00",
-      "last_change": "2026-09-16T15:08:13.371684+00:00"
+      "last_change": "2026-09-16T15:20:32.837693+00:00"
     },
     {
       "repo": "dynamo-0183436-machine-learning-and-ai",
