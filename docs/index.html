@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PR Check Monitor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;650;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f7f5; --card:#ffffff; --border:#e5e3de; --text:#1f1e1c; --text-dim:#6b6963;
+  --pass:#1a7f4f; --pass-bg:#e7f6ee; --run:#b5750a; --run-bg:#fdf1de; --fail:#c0362c; --fail-bg:#fbe9e7;
+  --accent:#5a4fcf; --track:#eceae4;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#171614; --card:#201f1c; --border:#312f2b; --text:#eeece7; --text-dim:#9c9a93;
+    --pass:#4fd393; --pass-bg:#173226; --run:#f0ac4c; --run-bg:#332711; --fail:#f2857c; --fail-bg:#3a1f1c;
+    --accent:#a69bff; --track:#2a2823;
+  }
+}
+*{box-sizing:border-box;}
+body{background:var(--bg);color:var(--text);font-family:"Poppins",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;margin:0;padding:0;}
+.wrap{max-width:1000px;margin:0 auto;padding:24px 16px 40px;}
+.header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:20px;}
+h1{font-size:20px;font-weight:650;margin:0 0 4px;letter-spacing:-.01em;}
+.sub{color:var(--text-dim);font-size:13px;}
+.stats{display:flex;gap:10px;flex-wrap:wrap;}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:8px 14px;min-width:64px;text-align:center;}
+.stat .n{font-size:18px;font-weight:700;line-height:1.1;}
+.stat .l{font-size:10.5px;color:var(--text-dim);text-transform:uppercase;letter-spacing:.04em;margin-top:2px;}
+.stat.pass .n{color:var(--pass);} .stat.run .n{color:var(--run);} .stat.fail .n{color:var(--fail);}
+.live{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--text-dim);margin-top:6px;}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--pass);animation:pulse 1.6s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.8);}}
+.cards{display:flex;flex-direction:column;gap:10px;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 16px;}
+.row1{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;}
+.left{min-width:0;flex:1;}
+.repo{font-size:11.5px;color:var(--text-dim);font-weight:600;letter-spacing:.01em;}
+.title{font-size:13.5px;margin-top:2px;color:var(--text);text-decoration:none;display:block;}
+.title:hover{color:var(--accent);}
+.badge{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:650;padding:4px 10px;border-radius:20px;white-space:nowrap;flex-shrink:0;}
+.badge.passed{color:var(--pass);background:var(--pass-bg);}
+.badge.running{color:var(--run);background:var(--run-bg);}
+.badge.failing{color:var(--fail);background:var(--fail-bg);}
+.badge.error{color:var(--fail);background:var(--fail-bg);}
+.bdot{width:6px;height:6px;border-radius:50%;background:currentColor;}
+.bdot.running{animation:pulse 1.4s ease-in-out infinite;}
+.meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px;gap:12px;flex-wrap:wrap;}
+.progress-wrap{flex:1;min-width:120px;display:flex;align-items:center;gap:8px;}
+.progress{flex:1;height:6px;border-radius:4px;background:var(--track);overflow:hidden;}
+.progress-fill{height:100%;border-radius:4px;background:var(--pass);transition:width .4s ease;}
+.progress-fill.has-fail{background:var(--fail);}
+.pct{font-size:11px;color:var(--text-dim);font-variant-numeric:tabular-nums;white-space:nowrap;}
+.running-list{display:flex;gap:6px;flex-wrap:wrap;}
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:11px;background:var(--run-bg);color:var(--run);padding:3px 8px 3px 6px;border-radius:20px;font-variant-numeric:tabular-nums;}
+.chip .cdot{width:5px;height:5px;border-radius:50%;background:currentColor;animation:pulse 1.4s ease-in-out infinite;}
+.failed-list{display:flex;gap:6px;flex-wrap:wrap;}
+.fchip{font-size:11px;background:var(--fail-bg);color:var(--fail);padding:3px 8px;border-radius:20px;font-weight:600;}
+.footer{text-align:center;color:var(--text-dim);font-size:11.5px;margin-top:22px;}
+.submitted-badge{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:650;padding:3px 9px;border-radius:20px;background:var(--accent);color:#fff;cursor:pointer;border:none;white-space:nowrap;flex-shrink:0;}
+.mark-btn{font-size:11px;font-weight:600;padding:3px 9px;border-radius:20px;background:transparent;color:var(--text-dim);border:1px solid var(--border);cursor:pointer;white-space:nowrap;flex-shrink:0;}
+.mark-btn:hover{border-color:var(--accent);color:var(--accent);}
+.badges{display:flex;align-items:center;gap:6px;flex-shrink:0;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header">
+    <div>
+      <h1>PR Check Monitor</h1>
+      <div class="sub" id="prSub">Loading…</div>
+      <div class="live"><span class="dot"></span><span id="liveText">watching</span></div>
+    </div>
+    <div class="stats">
+      <div class="stat pass"><div class="n" id="statPass">0</div><div class="l">Passed</div></div>
+      <div class="stat run"><div class="n" id="statRun">0</div><div class="l">Running</div></div>
+      <div class="stat fail"><div class="n" id="statFail">0</div><div class="l">Failing</div></div>
+    </div>
+  </div>
+  <div class="cards" id="cards"></div>
+  <div class="footer" id="asOf"></div>
+</div>
+
+<script>
+let DATA = [];
+let SNAPSHOT_TIME = null;
+
+function fmtElapsed(sec){
+  if(sec < 60) return sec + "s";
+  const m = Math.floor(sec/60), s = sec%60;
+  if(m < 60) return m + "m " + s + "s";
+  const h = Math.floor(m/60), mm = m%60;
+  return h + "h " + mm + "m";
+}
+
+function getMarks(){
+  try { return JSON.parse(localStorage.getItem("pr_submitted_marks") || "{}"); } catch(e) { return {}; }
+}
+function setMark(key, val){
+  try {
+    const m = getMarks();
+    if(val) m[key] = true; else delete m[key];
+    localStorage.setItem("pr_submitted_marks", JSON.stringify(m));
+  } catch(e) {}
+}
+
+function render(){
+  const now = Date.now();
+  const cardsEl = document.getElementById("cards");
+  cardsEl.innerHTML = "";
+  let pass=0, run=0, fail=0;
+  const marks = getMarks();
+
+  DATA.forEach(pr=>{
+    if(pr.overall === "passed") pass++;
+    else if(pr.overall === "failing" || pr.overall === "error") fail++;
+    else run++;
+
+    const card = document.createElement("div");
+    card.className = "card";
+
+    const pct = pr.total ? Math.round((pr.passed/pr.total)*100) : 0;
+    const badgeLabel = pr.overall === "passed" ? "All passed" : pr.overall === "failing" ? "Failing" : pr.overall === "error" ? "Error" : "Running";
+
+    let runningChips = "";
+    (pr.running||[]).forEach(r=>{
+      const started = new Date(r.started_at).getTime();
+      const elapsed = Math.max(0, Math.floor((now - started)/1000));
+      runningChips += `<span class="chip"><span class="cdot"></span>${r.name} · ${fmtElapsed(elapsed)}</span>`;
+    });
+
+    let failedChips = "";
+    (pr.failed||[]).forEach(f=>{
+      failedChips += `<span class="fchip">${f}</span>`;
+    });
+
+    const key = pr.repo + "#" + pr.num;
+    const isSubmitted = !!pr.submitted || !!marks[key];
+
+    card.innerHTML = `
+      <div class="row1">
+        <div class="left">
+          <div class="repo">${pr.repo} · #${pr.num}</div>
+          <a class="title" href="${pr.url}" target="_blank" rel="noopener">${pr.title}</a>
+        </div>
+        <div class="badges">
+          <span class="badge ${pr.overall}"><span class="bdot ${pr.overall==='running'?'running':''}"></span>${badgeLabel}</span>
+          ${isSubmitted
+            ? `<button class="submitted-badge" data-key="${key}" title="Click to unmark">Submitted</button>`
+            : `<button class="mark-btn" data-key="${key}" title="Mark as submitted">Mark submitted</button>`}
+        </div>
+      </div>
+      <div class="meta">
+        <div class="progress-wrap">
+          <div class="progress"><div class="progress-fill ${(pr.failed||[]).length?'has-fail':''}" style="width:${pct}%"></div></div>
+          <span class="pct">${pr.passed}/${pr.total}</span>
+        </div>
+        ${failedChips ? `<div class="failed-list">${failedChips}</div>` : ""}
+        ${runningChips ? `<div class="running-list">${runningChips}</div>` : ""}
+      </div>
+    `;
+    cardsEl.appendChild(card);
+  });
+
+  cardsEl.querySelectorAll("[data-key]").forEach(btn=>{
+    btn.addEventListener("click", ()=>{
+      const key = btn.getAttribute("data-key");
+      const marks = getMarks();
+      const pr = DATA.find(p => (p.repo+"#"+p.num) === key);
+      const currentlyOn = (pr && pr.submitted) || marks[key];
+      setMark(key, !currentlyOn);
+      render();
+    });
+  });
+
+  document.getElementById("statPass").textContent = pass;
+  document.getElementById("statRun").textContent = run;
+  document.getElementById("statFail").textContent = fail;
+  document.getElementById("prSub").textContent = `${DATA.length} PRs tracked`;
+
+  if(SNAPSHOT_TIME){
+    const secAgo = Math.floor((now - new Date(SNAPSHOT_TIME).getTime())/1000);
+    document.getElementById("liveText").textContent = `data as of ${fmtElapsed(Math.max(0,secAgo))} ago`;
+    document.getElementById("asOf").textContent = "Snapshot fetched " + new Date(SNAPSHOT_TIME).toLocaleTimeString() + " — refreshed from data.json every minute by a local script.";
+  }
+}
+
+async function loadData(){
+  try {
+    const res = await fetch("data.json?_=" + Date.now());
+    const json = await res.json();
+    DATA = json.prs || [];
+    SNAPSHOT_TIME = json.snapshot_time;
+  } catch(e) {
+    document.getElementById("prSub").textContent = "Failed to load data.json";
+  }
+  render();
+}
+
+loadData();
+setInterval(loadData, 60000);   // re-fetch data.json every 60s
+setInterval(render, 1000);      // tick timers every 1s
+</script>
+</body>
+</html>
