@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T14:53:10.726133+00:00",
+  "snapshot_time": "2026-09-16T14:54:04.032576+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -493,21 +493,14 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 6,
+      "passed": 7,
       "total": 17,
       "skipped": 7,
       "failed": [
+        "gate",
         "pass2"
       ],
       "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-16T14:53:12Z"
-        },
-        {
-          "name": "gate",
-          "started_at": "2026-09-16T14:53:12Z"
-        },
         {
           "name": "pass2_suggestion",
           "started_at": "2026-09-16T14:53:10Z"
@@ -516,6 +509,16 @@
       "queued": [],
       "checks": [
         {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-16T14:53:12Z",
+          "completed_at": "2026-09-16T14:53:22Z",
+          "duration_sec": 10,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35103602078/job/104846340805",
+          "app": "github-actions"
+        },
+        {
           "name": "pass2",
           "state": "failed",
           "conclusion": "failure",
@@ -523,26 +526,6 @@
           "completed_at": "2026-09-16T14:53:06Z",
           "duration_sec": 3435,
           "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35103602078/job/104824118695",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-16T14:53:12Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35103602078/job/104846340592",
-          "app": "github-actions"
-        },
-        {
-          "name": "gate",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-16T14:53:12Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35103602078/job/104846340805",
           "app": "github-actions"
         },
         {
@@ -563,6 +546,16 @@
           "completed_at": "2026-09-16T13:42:33Z",
           "duration_sec": 26,
           "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35103602078/job/104818977442",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T14:53:12Z",
+          "completed_at": "2026-09-16T14:53:29Z",
+          "duration_sec": 17,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35103602078/job/104846340592",
           "app": "github-actions"
         },
         {
@@ -688,7 +681,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T13:27:28.400072+00:00",
-      "last_change": "2026-09-16T14:53:10.726133+00:00"
+      "last_change": "2026-09-16T14:54:04.032576+00:00"
     },
     {
       "repo": "dynamo-314a3c9-model-training-and-ml-infrastructure",
@@ -697,7 +690,7 @@
       "title": "Rework 314a3c9: state the epoch LR policy family, ground the oracle, harden the verifier",
       "url": "https://github.com/handshake-project-dynamo/dynamo-314a3c9-model-training-and-ml-infrastructure/pull/6",
       "createdAt": "2026-09-16T12:32:09Z",
-      "updatedAt": "2026-09-16T14:52:43Z",
+      "updatedAt": "2026-09-16T14:54:08Z",
       "sha": "9796aea8ddce069b69fa483111cbd6d3a4c9f215",
       "draft": false,
       "mergeable": true,
@@ -708,7 +701,7 @@
       "head": "rework/314a3c9-policy-family-disclosure",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
       "overall": "passed",
       "passed": 0,
