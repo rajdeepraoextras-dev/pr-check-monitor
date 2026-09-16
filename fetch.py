@@ -155,6 +155,10 @@ def diff_events(prev, cur, ts):
         ev.append({"ts": ts, "pr": key, "type": "push", "msg": f'New commit pushed ({cur["sha"][:7]})'})
     if prev.get("overall") != cur.get("overall"):
         ev.append({"ts": ts, "pr": key, "type": cur["overall"], "msg": f'Status {prev.get("overall")} → {cur["overall"]}'})
+    pr_running = {c["name"] for c in (prev.get("checks") or []) if c["state"] == "running"}
+    cr_running = {c["name"] for c in (cur.get("checks") or []) if c["state"] == "running"}
+    for n in sorted(cr_running - pr_running):
+        ev.append({"ts": ts, "pr": key, "type": "started", "msg": f'Check started: {n}'})
     pf = set(prev.get("failed") or []); cf = set(cur.get("failed") or [])
     for n in sorted(cf - pf):
         ev.append({"ts": ts, "pr": key, "type": "failing", "msg": f'Check failed: {n}'})

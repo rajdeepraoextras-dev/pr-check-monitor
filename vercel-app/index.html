@@ -70,9 +70,6 @@ kbd{font-size:10px;font-weight:500;color:var(--dim2);border:1px solid var(--bord
 .live.dead .dot{background:var(--fail);animation:none}
 .live .ring{width:16px;height:16px;border-radius:50%;background:conic-gradient(var(--accent) var(--p,0%),var(--track) 0);position:relative;flex-shrink:0}
 .live .ring::after{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--panel)}
-.btn.voice-on{color:var(--pass);border-color:var(--pass-br);background:var(--pass-bg)}
-.voicedot{width:6px;height:6px;border-radius:50%;background:var(--pass);display:none;flex-shrink:0}
-.voicedot.speaking{display:inline-block;animation:pulse 1s ease-in-out infinite}
 
 /* ============ stats ============ */
 .stats{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;margin-bottom:14px}
@@ -139,7 +136,7 @@ kbd{font-size:10px;font-weight:500;color:var(--dim2);border:1px solid var(--bord
 .ev{display:grid;grid-template-columns:10px 1fr;gap:10px;padding:8px 10px;border-radius:9px}
 .ev:hover{background:var(--panel2)}
 .ev .d{width:8px;height:8px;border-radius:50%;margin-top:6px;background:var(--queue)}
-.ev.passed .d{background:var(--pass)} .ev.failing .d{background:var(--fail)} .ev.running .d{background:var(--run)} .ev.started .d{background:var(--run)} .ev.push .d,.ev.discovered .d,.ev.review .d{background:var(--accent)}
+.ev.passed .d{background:var(--pass)} .ev.failing .d{background:var(--fail)} .ev.running .d{background:var(--run)} .ev.push .d,.ev.discovered .d,.ev.review .d{background:var(--accent)}
 .ev .m{font-size:12.5px;font-weight:500}
 .ev .k{font-size:11px;color:var(--dim);display:flex;justify-content:space-between;gap:8px;margin-top:1px}
 .ev .k span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -240,7 +237,6 @@ kbd{font-size:10px;font-weight:500;color:var(--dim2);border:1px solid var(--bord
     <div class="actions">
       <div class="live" id="live"><span class="dot"></span><span id="liveText">connecting</span><span class="ring" id="ring" title="next refresh"></span></div>
       <button class="btn" id="btnCopy" title="Copy visible PRs as a markdown table">Copy summary</button>
-      <button class="btn" id="btnVoice" title="Read check status changes out loud as they happen"><span class="voicedot" id="voiceDot"></span><span id="voiceLabel">Announcements</span> <kbd>A</kbd></button>
       <button class="btn" id="btnTheme" title="Toggle theme">Dark <kbd>T</kbd></button>
     </div>
   </div>
@@ -314,8 +310,6 @@ const LS = {
 const F = Object.assign({ q:"", status:"all", sub:"all", sort:"created_desc", repo:"", group:false, view:"cards", collapsed:{} }, LS.get("prmon_filters", {}));
 let THEME = LS.get("prmon_theme2", null) || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
 let allCollapsed = false;
-let VOICE = LS.get("prmon_voice", false);
-let voiceWatermark = LS.get("prmon_voice_watermark", null);
 
 /* ================= utils ================= */
 const $ = id => document.getElementById(id);
@@ -334,45 +328,6 @@ function key(pr){ return pr.repo + "#" + pr.num; }
 function getMarks(){ return LS.get("pr_submitted_marks", {}); }
 function isSub(pr){ return !!pr.submitted || !!getMarks()[key(pr)]; }
 function toast(msg){ const t=$("toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove("show"),1600); }
-
-/* ================= voice announcements ================= */
-function speak(text){
-  if(!('speechSynthesis' in window)) return;
-  const u = new SpeechSynthesisUtterance(text);
-  u.rate = 1.05;
-  speechSynthesis.speak(u);
-}
-function phraseFor(e){
-  const m = e.pr.match(/#(\d+)$/); const num = m ? m[1] : "";
-  const repo = e.pr.replace(/#\d+$/, "").replace(/^dynamo-[0-9a-f]{6,8}-/, "").replace(/-/g, " ");
-  const prefix = `PR ${num} in ${repo}`;
-  if(e.type === "discovered") return `${prefix}: new pull request discovered.`;
-  return `${prefix}: ${e.msg.replace(/→/g, "to")}.`;
-}
-function announceNewEvents(){
-  if(!VOICE || voiceWatermark == null || !EVENTS.length) return;
-  const fresh = EVENTS.filter(e => new Date(e.ts).getTime() > voiceWatermark);
-  if(!fresh.length) return;
-  if(fresh.length > 12){
-    const prs = new Set(fresh.map(e=>e.pr));
-    speak(`${fresh.length} updates across ${prs.size} pull requests. Check the activity panel for details.`);
-  } else {
-    fresh.forEach(e=>speak(phraseFor(e)));
-  }
-  voiceWatermark = Math.max(...fresh.map(e=>new Date(e.ts).getTime()));
-  LS.set("prmon_voice_watermark", voiceWatermark);
-}
-function setVoice(on){
-  VOICE = on; LS.set("prmon_voice", VOICE);
-  if(VOICE){
-    voiceWatermark = Date.now();
-    LS.set("prmon_voice_watermark", voiceWatermark);
-    speak("Voice announcements on. I'll call out check status changes as they happen.");
-  } else {
-    speechSynthesis.cancel();
-  }
-  syncControls();
-}
 
 /* ================= filtering ================= */
 function visible(){
@@ -578,7 +533,6 @@ function tick(){
   document.querySelectorAll("#att a[data-start]").forEach(el=>{ el.querySelector(".v").textContent = fmtDur((now-new Date(el.dataset.start).getTime())/1000); });
   if(SNAP){ const secAgo = Math.max(0,(now-new Date(SNAP).getTime())/1000); $("liveText").textContent = `Updated ${fmtDur(secAgo)} ago`; }
   $("ring").style.setProperty("--p", Math.min(100,((now-lastFetch)/REFRESH_MS)*100)+"%");
-  $("voiceDot").classList.toggle("speaking", VOICE && 'speechSynthesis' in window && speechSynthesis.speaking);
 }
 
 /* ================= controls ================= */
@@ -596,10 +550,6 @@ function syncControls(){
   $("btnGroup").classList.toggle("on", F.group);
   $("btnTheme").innerHTML = (THEME==="dark" ? "Light" : "Dark") + " <kbd>T</kbd>";
   $("btnExpand").innerHTML = (allCollapsed ? "Expand all" : "Collapse all") + " <kbd>E</kbd>";
-  const bv = $("btnVoice");
-  bv.classList.toggle("voice-on", VOICE);
-  bv.title = VOICE ? "Voice announcements on — click to mute" : "Read check status changes out loud as they happen";
-  $("voiceLabel").textContent = VOICE ? "Announcements: On" : "Announcements";
 }
 $("q").addEventListener("input", e=>{ F.q = e.target.value; save(); render(); });
 $("segStatus").addEventListener("click", e=>{ const b=e.target.closest("button"); if(!b) return; F.status=b.dataset.v; save(); render(); });
@@ -611,7 +561,6 @@ $("btnGroup").addEventListener("click", ()=>{ F.group=!F.group; save(); render()
 $("btnExpand").addEventListener("click", ()=>{ allCollapsed=!allCollapsed; F.collapsed={}; save(); render(); });
 $("btnReset").addEventListener("click", ()=>{ Object.assign(F,{q:"",status:"all",sub:"all",sort:"created_desc",repo:"",group:false,collapsed:{}}); allCollapsed=false; save(); render(); toast("Filters reset"); });
 $("btnTheme").addEventListener("click", ()=>{ THEME = THEME==="dark"?"light":"dark"; applyTheme(); render(); });
-$("btnVoice").addEventListener("click", ()=>{ setVoice(!VOICE); });
 $("btnCopy").addEventListener("click", ()=>{
   const rows = visible();
   const md = ["| PR | Repo | Status | Checks | Failing | Running | Submitted |","|---|---|---|---|---|---|---|",
@@ -631,24 +580,25 @@ document.addEventListener("keydown", e=>{
   else if(k==="v"){ F.view = F.view==="table"?"cards":"table"; save(); render(); }
   else if(k==="e"){ $("btnExpand").click(); }
   else if(k==="g"){ $("btnGroup").click(); }
-  else if(k==="a"){ $("btnVoice").click(); }
   else if(k==="r"){ loadData(); toast("Refreshing"); }
 });
 function applyTheme(){ document.documentElement.setAttribute("data-theme", THEME); LS.set("prmon_theme2", THEME); }
 
 /* ================= data ================= */
+// This deployment has no backend of its own — it reads the live JSON that the
+// local launchd job on the author's Mac pushes to GitHub every 30s.
+const DATA_BASE = "https://raw.githubusercontent.com/rajdeepraoextras-dev/pr-check-monitor/main/docs/";
 async function loadData(){
   try {
     const [d, ev] = await Promise.all([
-      fetch("data.json?_="+Date.now()).then(r=>r.json()),
-      fetch("events.json?_="+Date.now()).then(r=>r.ok?r.json():[]).catch(()=>[]),
+      fetch(DATA_BASE+"data.json?_="+Date.now(), {cache:"no-store"}).then(r=>r.json()),
+      fetch(DATA_BASE+"events.json?_="+Date.now(), {cache:"no-store"}).then(r=>r.ok?r.json():[]).catch(()=>[]),
     ]);
     prevOverall = Object.fromEntries(DATA.map(p=>[key(p), p.overall]));
     DATA = d.prs || []; SNAP = d.snapshot_time; CFG = d.config || {}; EVENTS = Array.isArray(ev)?ev:[];
     lastFetch = Date.now();
     const changed = DATA.filter(p=>prevOverall[key(p)] && prevOverall[key(p)]!==p.overall);
     if(changed.length) toast(`${changed.length} PR${changed.length>1?"s":""} changed status`);
-    announceNewEvents();
     const nf = DATA.filter(p=>p.overall==="failing").length;
     document.title = `${nf?"("+nf+") ":""}PR Check Monitor`;
   } catch(e) {
