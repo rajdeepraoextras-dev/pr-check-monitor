@@ -531,12 +531,19 @@ function visible(){
 }
 
 /* ================= render: stats ================= */
+// Check names to give their own "how many PRs are at this step right now"
+// card, e.g. a slow/expensive step worth watching in flight. Add more names
+// here to get more cards — no other wiring needed.
+const WATCH_CHECKS = ["pass2"];
+
 function renderStats(){
   let pass=0, run=0, fail=0, sub=0, cp=0, ct=0, cr=0, cf=0;
+  const watchCounts = Object.fromEntries(WATCH_CHECKS.map(n=>[n,0]));
   DATA.forEach(pr=>{
     if(pr.overall==="passed") pass++; else if(pr.overall==="failing"||pr.overall==="error") fail++; else run++;
     if(isSub(pr)) sub++;
     cp += pr.passed||0; ct += pr.total||0; cr += (pr.running||[]).length + (pr.queued||[]).length; cf += (pr.failed||[]).length;
+    (pr.running||[]).forEach(r=>{ if(r.name in watchCounts) watchCounts[r.name]++; });
   });
   const n = DATA.length || 1;
   const rate = ct ? Math.round(cp/ct*100) : 0;
@@ -547,15 +554,20 @@ function renderStats(){
     {cls:"pass", v:pass, l:"All green", s:`${Math.round(pass/n*100)}% of PRs`, w:pass/n*100, f:{status:"passed"}},
     {cls:"sub", v:sub, l:"Submitted", s:`${DATA.length-sub} remaining`, w:sub/n*100, f:{sub:"yes"}},
     {cls:"rate", v:rate+"%", l:"Check pass rate", s:`${cp} of ${ct} checks`, w:rate, f:null},
+    ...WATCH_CHECKS.map(name=>({
+      cls:"run", v:watchCounts[name], l:name, s:`PR${watchCounts[name]===1?"":"s"} running ${name}`,
+      w:watchCounts[name]/n*100, f:{q:name},
+    })),
   ];
   $("stats").innerHTML = cards.map((c,i)=>{
-    const on = c.f && ((c.f.status && c.f.status!=="all" && F.status===c.f.status) || (c.f.sub && F.sub==="yes"));
-    return `<div class="stat ${c.cls} ${on?'on':''}" data-i="${i}" role="button" tabindex="0"><div class="l"><i></i>${c.l}</div><div class="n num">${c.v}</div><div class="s">${c.s}</div><div class="bar"><i style="--w:${c.w}%"></i></div></div>`;
+    const on = c.f && ((c.f.status && c.f.status!=="all" && F.status===c.f.status) || (c.f.sub && F.sub==="yes") || (c.f.q && F.q===c.f.q));
+    return `<div class="stat ${c.cls} ${on?'on':''}" data-i="${i}" role="button" tabindex="0"><div class="l"><i></i>${esc(c.l)}</div><div class="n num">${c.v}</div><div class="s">${esc(c.s)}</div><div class="bar"><i style="--w:${c.w}%"></i></div></div>`;
   }).join("");
   $("stats").querySelectorAll(".stat").forEach(el=>el.addEventListener("click",()=>{
     const c = cards[+el.dataset.i]; if(!c.f) return;
     if(c.f.status){ F.status = (F.status===c.f.status && c.f.status!=="all") ? "all" : c.f.status; }
     if(c.f.sub){ F.sub = F.sub==="yes" ? "all" : "yes"; }
+    if(c.f.q){ F.q = (F.q===c.f.q) ? "" : c.f.q; }
     save(); render();
   }));
   $("cAll").textContent = DATA.length; $("cFail").textContent = fail; $("cRun").textContent = run; $("cPass").textContent = pass;
