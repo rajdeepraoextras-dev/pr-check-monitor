@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T21:11:30.244188+00:00",
+  "snapshot_time": "2026-09-16T21:11:47.960743+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1156,19 +1156,14 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 13,
+      "passed": 14,
       "total": 17,
       "skipped": 1,
       "failed": [
         "gate",
         "trials"
       ],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-16T21:11:38Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -1192,16 +1187,6 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-16T21:11:38Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35133112326/job/104978918762",
-          "app": "github-actions"
-        },
-        {
           "name": "ava_review",
           "state": "passed",
           "conclusion": "success",
@@ -1219,6 +1204,16 @@
           "completed_at": "2026-09-16T18:14:35Z",
           "duration_sec": 28,
           "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35133112326/job/104918707001",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T21:11:38Z",
+          "completed_at": "2026-09-16T21:11:54Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35133112326/job/104978918762",
           "app": "github-actions"
         },
         {
@@ -1344,7 +1339,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:31:07.881961+00:00",
-      "last_change": "2026-09-16T21:11:30.244188+00:00"
+      "last_change": "2026-09-16T21:11:47.960743+00:00"
     }
   ]
 }
