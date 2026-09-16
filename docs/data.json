@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T15:23:49.759754+00:00",
+  "snapshot_time": "2026-09-16T15:24:42.291506+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -577,7 +577,7 @@
       "title": "Rework: grade the speculative compute bounds per request",
       "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/pull/8",
       "createdAt": "2026-09-16T13:25:01Z",
-      "updatedAt": "2026-09-16T15:23:46Z",
+      "updatedAt": "2026-09-16T15:24:08Z",
       "sha": "70ed9882e2ed20031804f7662ba0e1337437cee1",
       "draft": false,
       "mergeable": true,
@@ -588,35 +588,45 @@
       "head": "rework/0183436-per-request-budget",
       "base": "main",
       "labels": [
-        "needs-revision"
+        "in-progress"
       ],
       "overall": "running",
-      "passed": 0,
-      "total": 1,
+      "passed": 1,
+      "total": 2,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "changes",
-          "started_at": "2026-09-16T15:23:46Z"
+          "name": "cosine_similarity",
+          "started_at": "2026-09-16T15:24:17Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "changes",
+          "name": "cosine_similarity",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T15:23:46Z",
+          "started_at": "2026-09-16T15:24:17Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35115039328/job/104858384534",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T15:23:46Z",
+          "completed_at": "2026-09-16T15:24:14Z",
+          "duration_sec": 28,
           "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35115039328/job/104858186679",
           "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-16T13:27:28.400072+00:00",
-      "last_change": "2026-09-16T15:23:49.759754+00:00"
+      "last_change": "2026-09-16T15:24:42.291506+00:00"
     },
     {
       "repo": "dynamo-314a3c9-model-training-and-ml-infrastructure",
