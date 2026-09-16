@@ -179,7 +179,7 @@ function render(){
   document.getElementById("statPass").textContent = pass;
   document.getElementById("statRun").textContent = run;
   document.getElementById("statFail").textContent = fail;
-  document.getElementById("prSub").textContent = `${DATA.length} PRs tracked`;
+  document.getElementById("prSub").textContent = `${DATA.length} PRs opened in the last 24h`;
 
   if(SNAPSHOT_TIME){
     const secAgo = Math.floor((now - new Date(SNAPSHOT_TIME).getTime())/1000);

@@ -1,11 +1,18 @@
 #!/usr/bin/env python3
-"""Fetch gh pr checks for tracked PRs and write docs/data.json (for GitHub Pages)."""
-import json, subprocess, datetime, os, sys
+"""
+Discover open PRs authored by config.author in config.org opened within
+config.window_hours, fetch their check status, and write docs/data.json
+(for GitHub Pages).
+
+Any PRs listed in prs.json are always included too (manual pins), regardless
+of age.
+"""
+import json, subprocess, datetime, os
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
+CONFIG_FILE = os.path.join(ROOT, "config.json")
 PRS_FILE = os.path.join(ROOT, "prs.json")
 OUT_FILE = os.path.join(ROOT, "docs", "data.json")
-PREV_FILE = os.path.join(ROOT, "docs", "data.json")  # read prior submitted flags from same file
 
 
 def run(cmd):
@@ -13,13 +20,48 @@ def run(cmd):
     return r.stdout
 
 
+def discover_prs(org, author, window_hours):
+    cutoff = datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(hours=window_hours)
+    repos = run(f'gh repo list {org} --limit 200 --json name --jq ".[].name"').strip().splitlines()
+    found = []
+    for repo_name in repos:
+        repo = f"{org}/{repo_name}"
+        raw = run(
+            f'gh pr list -R {repo} --author {author} --state open '
+            f'--json number,createdAt --jq "."'
+        )
+        try:
+            prs = json.loads(raw) if raw.strip() else []
+        except Exception:
+            prs = []
+        for p in prs:
+            created = datetime.datetime.fromisoformat(p["createdAt"].replace("Z", "+00:00"))
+            if created >= cutoff:
+                found.append({"repo": repo, "num": str(p["number"])})
+    return found
+
+
 def main():
-    prs = json.load(open(PRS_FILE))
+    config = json.load(open(CONFIG_FILE)) if os.path.exists(CONFIG_FILE) else {}
+    org = config.get("org")
+    author = config.get("author")
+    window_hours = config.get("window_hours", 24)
+
+    prs = []
+    if org and author:
+        prs = discover_prs(org, author, window_hours)
+
+    pinned = json.load(open(PRS_FILE)) if os.path.exists(PRS_FILE) else []
+    seen = {(p["repo"], p["num"]) for p in prs}
+    for p in pinned:
+        if (p["repo"], p["num"]) not in seen:
+            prs.append(p)
+            seen.add((p["repo"], p["num"]))
 
     prev_by_key = {}
-    if os.path.exists(PREV_FILE):
+    if os.path.exists(OUT_FILE):
         try:
-            for p in json.load(open(PREV_FILE)).get("prs", []):
+            for p in json.load(open(OUT_FILE)).get("prs", []):
                 prev_by_key[p["repo"] + p["num"]] = p
         except Exception:
             pass
@@ -28,7 +70,7 @@ def main():
     for entry in prs:
         repo, num = entry["repo"], entry["num"]
         try:
-            info = json.loads(run(f'gh pr view {num} -R {repo} --json headRefOid,title,url'))
+            info = json.loads(run(f'gh pr view {num} -R {repo} --json headRefOid,title,url,createdAt'))
             sha = info["headRefOid"]
             raw = run(f'gh api "repos/{repo}/commits/{sha}/check-runs" --paginate')
             checkruns = []
@@ -58,6 +100,7 @@ def main():
                 "num": num,
                 "title": info["title"],
                 "url": info["url"],
+                "createdAt": info.get("createdAt"),
                 "overall": overall,
                 "passed": passed,
                 "total": total,
@@ -66,12 +109,16 @@ def main():
                 "submitted": submitted,
             })
         except Exception as e:
+            key = repo.split("/")[-1] + num
             out.append({
                 "repo": repo.split("/")[-1], "num": num, "title": "(error fetching)",
                 "url": f"https://github.com/{repo}/pull/{num}",
                 "overall": "error", "passed": 0, "total": 0, "failed": [str(e)], "running": [],
-                "submitted": prev_by_key.get(repo.split("/")[-1] + num, {}).get("submitted", False),
+                "submitted": prev_by_key.get(key, {}).get("submitted", False),
             })
+
+    # newest first
+    out.sort(key=lambda p: p.get("createdAt") or "", reverse=True)
 
     payload = {
         "snapshot_time": datetime.datetime.now(datetime.timezone.utc).isoformat(),
@@ -81,7 +128,7 @@ def main():
     with open(OUT_FILE, "w") as f:
         json.dump(payload, f, indent=2)
 
-    print(f"Wrote {OUT_FILE} at {payload['snapshot_time']}")
+    print(f"Wrote {OUT_FILE} ({len(out)} PRs) at {payload['snapshot_time']}")
 
 
 if __name__ == "__main__":
