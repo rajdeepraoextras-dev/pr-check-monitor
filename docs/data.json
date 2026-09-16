@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T16:45:25.648022+00:00",
+  "snapshot_time": "2026-09-16T16:45:51.914548+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -309,7 +309,7 @@
       "title": "Rework: grade metric_table.csv line endings and carry the empty-arm and exact-alpha fixes",
       "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/pull/5",
       "createdAt": "2026-09-16T14:25:27Z",
-      "updatedAt": "2026-09-16T16:14:29Z",
+      "updatedAt": "2026-09-16T16:45:59Z",
       "sha": "534cb702d596ff6b290f3eee47193d290e6b4d0f",
       "draft": false,
       "mergeable": true,
@@ -323,26 +323,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-16T16:14:22Z"
+          "name": "ava_review",
+          "started_at": "2026-09-16T16:45:52Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-16T16:45:52Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "pass2",
+          "name": "ava_review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T16:14:22Z",
+          "started_at": "2026-09-16T16:45:52Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/actions/runs/35119719427/job/104877096319",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/actions/runs/35119719427/job/104888287175",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-16T16:45:52Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/actions/runs/35119719427/job/104888287156",
           "app": "github-actions"
         },
         {
@@ -363,6 +377,16 @@
           "completed_at": "2026-09-16T16:09:03Z",
           "duration_sec": 142,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/actions/runs/35119719427/job/104874285907",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T16:14:22Z",
+          "completed_at": "2026-09-16T16:45:49Z",
+          "duration_sec": 1887,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/actions/runs/35119719427/job/104877096319",
           "app": "github-actions"
         },
         {
@@ -404,11 +428,21 @@
           "duration_sec": 67,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/actions/runs/35119719427/job/104876602781",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-16T16:45:50Z",
+          "completed_at": "2026-09-16T16:45:49Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e1db7d0-data-science-and-reporting/actions/runs/35119719427/job/104888288883",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-16T14:28:01.508548+00:00",
-      "last_change": "2026-09-16T16:14:35.745410+00:00"
+      "last_change": "2026-09-16T16:45:51.914548+00:00"
     },
     {
       "repo": "dynamo-ddae169-debugging-and-repair",
