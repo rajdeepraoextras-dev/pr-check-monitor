@@ -244,7 +244,7 @@ kbd{font-size:10px;font-weight:500;color:var(--dim2);border:1px solid var(--bord
       <div class="live" id="live"><span class="dot"></span><span id="liveText">connecting</span><span class="ring" id="ring" title="next refresh"></span></div>
       <button class="btn" id="btnCopy" title="Copy visible PRs as a markdown table">Copy summary</button>
       <button class="btn" id="btnVoice" title="Read check status changes out loud as they happen"><span class="voicedot" id="voiceDot"></span><span id="voiceLabel">Announcements</span> <kbd>A</kbd></button>
-      <button class="btn" id="btnAlarm" title="Chime when a check passes, alarm when a check fails"><span class="alarmdot" id="alarmDot"></span><span id="alarmLabel">Sound alerts</span> <kbd>L</kbd></button>
+      <button class="btn" id="btnAlarm" title="Tick as checks progress, chime when one passes, alarm when one fails"><span class="alarmdot" id="alarmDot"></span><span id="alarmLabel">Sound alerts</span> <kbd>L</kbd></button>
       <button class="btn" id="btnTheme" title="Toggle theme">Dark <kbd>T</kbd></button>
     </div>
   </div>
@@ -384,8 +384,36 @@ function setVoice(on){
 let alarmCtx = null;
 function ensureAudioCtx(){
   if(!alarmCtx) alarmCtx = new (window.AudioContext || window.webkitAudioContext)();
-  if(alarmCtx.state === "suspended") alarmCtx.resume();
+  if(alarmCtx.state === "suspended") alarmCtx.resume().catch(()=>{});
   return alarmCtx;
+}
+// Browsers only let audio actually play after a real user gesture in THIS
+// page load. The "Sound alerts" toggle state persists in localStorage, so on
+// a reload it can read as "on" with no fresh click to unlock audio — sound
+// would then silently fail to play with no visible error. Unlock on the
+// very first interaction anywhere on the page, not just the toggle itself.
+["click", "keydown", "touchstart"].forEach(evt =>
+  document.addEventListener(evt, () => { try{ ensureAudioCtx(); }catch(e){} }, {once:true})
+);
+function playTick(count){
+  try{
+    const ctx = ensureAudioCtx();
+    const now = ctx.currentTime;
+    const n = Math.min(count || 1, 6);
+    for(let i=0;i<n;i++){
+      const t0 = now + i*0.18;
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = "sine";
+      osc.frequency.setValueAtTime(1200, t0);
+      gain.gain.setValueAtTime(0, t0);
+      gain.gain.linearRampToValueAtTime(0.4, t0+0.01);
+      gain.gain.linearRampToValueAtTime(0, t0+0.09);
+      osc.connect(gain); gain.connect(ctx.destination);
+      osc.start(t0); osc.stop(t0+0.1);
+    }
+    flashAlarmDot(n*180 + 300);
+  }catch(e){}
 }
 function playAlarm(durationSec){
   try{
@@ -446,20 +474,26 @@ function checkAlarm(){
   if(!ALARM || alarmWatermark == null || !EVENTS.length) return;
   const fresh = EVENTS.filter(e => new Date(e.ts).getTime() > alarmWatermark);
   if(!fresh.length) return;
+  const startedCount = fresh.filter(e => e.type === "started").length;
   const hasFail = fresh.some(e => e.type === "failing" || e.type === "error");
   const hasPass = fresh.some(e => e.type === "passed");
-  if(hasPass) playChime(10);
-  if(hasFail) setTimeout(()=>playAlarm(10), hasPass ? 10500 : 0);
+  let delay = 0;
+  if(startedCount){ playTick(startedCount); delay += Math.min(startedCount,6)*180 + 300; }
+  if(hasPass){ setTimeout(()=>playChime(10), delay); delay += 10500; }
+  if(hasFail){ setTimeout(()=>playAlarm(10), delay); }
   alarmWatermark = Math.max(...fresh.map(e=>new Date(e.ts).getTime()));
   LS.set("prmon_alarm_watermark", alarmWatermark);
 }
 function setAlarm(on){
   ALARM = on; LS.set("prmon_alarm", ALARM);
   if(ALARM){
+    // Start from now, not whatever was last saved — otherwise reopening the
+    // tab after a while replays a backlog of old events all at once.
     alarmWatermark = Date.now();
     LS.set("prmon_alarm_watermark", alarmWatermark);
-    playChime(1.5);
-    setTimeout(()=>playAlarm(1.5), 1800);
+    playTick(2);
+    setTimeout(()=>playChime(1.5), 700);
+    setTimeout(()=>playAlarm(1.5), 2500);
   }
   syncControls();
 }
@@ -692,7 +726,7 @@ function syncControls(){
   $("voiceLabel").textContent = VOICE ? "Announcements: On" : "Announcements";
   const ba = $("btnAlarm");
   ba.classList.toggle("alarm-on", ALARM);
-  ba.title = ALARM ? "Sound alerts on — click to silence" : "Chime when a check passes, alarm when a check fails";
+  ba.title = ALARM ? "Sound alerts on — click to silence" : "Tick as checks progress, chime when one passes, alarm when one fails";
   $("alarmLabel").textContent = ALARM ? "Sound alerts: On" : "Sound alerts";
 }
 $("q").addEventListener("input", e=>{ F.q = e.target.value; save(); render(); });
