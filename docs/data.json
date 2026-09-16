@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T07:59:55.413968+00:00",
+  "snapshot_time": "2026-09-16T08:02:13.540225+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -730,7 +730,7 @@
       "title": "Rework: grade a capture past the 262144 byte boundary and restore the routine spec fixes",
       "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/pull/9",
       "createdAt": "2026-09-15T17:41:24Z",
-      "updatedAt": "2026-09-16T08:00:12Z",
+      "updatedAt": "2026-09-16T08:01:03Z",
       "sha": "da506fbab08e454ac5ac645cee614578a08bfbea",
       "draft": false,
       "mergeable": "MERGEABLE",
@@ -744,26 +744,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 9,
-      "total": 11,
+      "passed": 10,
+      "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "tier1",
-          "started_at": "2026-09-16T08:00:21Z"
+          "name": "qc_eval",
+          "started_at": "2026-09-16T08:00:57Z"
+        },
+        {
+          "name": "qc_exec",
+          "started_at": "2026-09-16T08:00:57Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "tier1",
+          "name": "qc_eval",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T08:00:21Z",
+          "started_at": "2026-09-16T08:00:57Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104713619445",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104713797225",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-16T08:00:57Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104713797279",
           "app": "github-actions"
         },
         {
@@ -847,6 +861,16 @@
           "app": "github-actions"
         },
         {
+          "name": "tier1",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T08:00:21Z",
+          "completed_at": "2026-09-16T08:00:55Z",
+          "duration_sec": 34,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-46ecc32-file-and-media-operations/actions/runs/35064112493/job/104713619445",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -869,7 +893,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T07:16:27.708702+00:00",
-      "last_change": "2026-09-16T07:59:55.413968+00:00"
+      "last_change": "2026-09-16T08:02:13.540225+00:00"
     },
     {
       "repo": "dynamo-cbe7974-regulated-knowledge-work-and-business-operations",
