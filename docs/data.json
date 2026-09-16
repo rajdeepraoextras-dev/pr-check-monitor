@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T20:10:01.736036+00:00",
+  "snapshot_time": "2026-09-16T20:10:42.181162+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -828,7 +828,7 @@
       "title": "Rework: grade the speculative compute bounds per request",
       "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/pull/8",
       "createdAt": "2026-09-16T13:25:01Z",
-      "updatedAt": "2026-09-16T20:03:04Z",
+      "updatedAt": "2026-09-16T20:10:27Z",
       "sha": "8be8153a5fac3c0c5f6990274ac984e9ab054902",
       "draft": false,
       "mergeable": true,
@@ -842,25 +842,35 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 9,
+      "total": 11,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "ava_review",
-          "started_at": "2026-09-16T19:58:57Z"
+          "name": "tier1",
+          "started_at": "2026-09-16T20:10:36Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "ava_review",
+          "name": "tier1",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T19:58:57Z",
+          "started_at": "2026-09-16T20:10:36Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35134177030/job/104958506518",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T19:58:57Z",
+          "completed_at": "2026-09-16T20:10:33Z",
+          "duration_sec": 696,
           "url": "https://github.com/handshake-project-dynamo/dynamo-0183436-machine-learning-and-ai/actions/runs/35134177030/job/104954578147",
           "app": "github-actions"
         },
@@ -957,7 +967,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T13:27:28.400072+00:00",
-      "last_change": "2026-09-16T20:03:06.722159+00:00"
+      "last_change": "2026-09-16T20:10:42.181162+00:00"
     },
     {
       "repo": "dynamo-314a3c9-model-training-and-ml-infrastructure",
