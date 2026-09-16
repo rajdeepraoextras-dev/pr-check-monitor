@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T16:59:48.975479+00:00",
+  "snapshot_time": "2026-09-16T17:00:41.211082+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: verify partial-trim reclamation and record the seven-run performance measurement",
       "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/pull/7",
       "createdAt": "2026-09-16T14:29:39Z",
-      "updatedAt": "2026-09-16T16:59:49Z",
+      "updatedAt": "2026-09-16T16:59:51Z",
       "sha": "ec0c6065b4f4344777390d11b4968e2a0aca4add",
       "draft": false,
       "mergeable": true,
@@ -24,25 +24,17 @@
       "head": "rework/e079d63-trim-and-measurement",
       "base": "main",
       "labels": [
-        "in-progress",
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 6,
+      "passed": 7,
       "total": 17,
       "skipped": 7,
       "failed": [
+        "gate",
         "pass2"
       ],
       "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-16T16:59:45Z"
-        },
-        {
-          "name": "gate",
-          "started_at": "2026-09-16T16:59:45Z"
-        },
         {
           "name": "pass2_suggestion",
           "started_at": "2026-09-16T16:59:44Z"
@@ -51,6 +43,16 @@
       "queued": [],
       "checks": [
         {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-16T16:59:45Z",
+          "completed_at": "2026-09-16T16:59:56Z",
+          "duration_sec": 11,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104893047919",
+          "app": "github-actions"
+        },
+        {
           "name": "pass2",
           "state": "failed",
           "conclusion": "failure",
@@ -58,26 +60,6 @@
           "completed_at": "2026-09-16T16:59:41Z",
           "duration_sec": 3043,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104875113270",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-16T16:59:45Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104893047959",
-          "app": "github-actions"
-        },
-        {
-          "name": "gate",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-16T16:59:45Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104893047919",
           "app": "github-actions"
         },
         {
@@ -98,6 +80,16 @@
           "completed_at": "2026-09-16T15:57:49Z",
           "duration_sec": 30,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104870816579",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T16:59:45Z",
+          "completed_at": "2026-09-16T17:00:01Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104893047959",
           "app": "github-actions"
         },
         {
@@ -223,7 +215,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T14:32:48.666305+00:00",
-      "last_change": "2026-09-16T16:59:48.975479+00:00"
+      "last_change": "2026-09-16T17:00:41.211082+00:00"
     },
     {
       "repo": "dynamo-1d01028-scientific-computing-and-domain-science",
@@ -232,7 +224,7 @@
       "title": "Rework: enforce retraining from /app/data/train in the verifier",
       "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/pull/6",
       "createdAt": "2026-09-16T14:27:55Z",
-      "updatedAt": "2026-09-16T15:38:05Z",
+      "updatedAt": "2026-09-16T17:00:14Z",
       "sha": "4e7ae0e4472025a472046bef98b685500a048f9c",
       "draft": false,
       "mergeable": true,
@@ -243,31 +235,16 @@
       "head": "rework/1d01028-enforce-retraining",
       "base": "main",
       "labels": [
-        "in-progress"
+        "accepted"
       ],
-      "overall": "running",
-      "passed": 13,
-      "total": 15,
+      "overall": "passed",
+      "passed": 16,
+      "total": 17,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "trials",
-          "started_at": "2026-09-16T15:37:57Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
-        {
-          "name": "trials",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-16T15:37:57Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104863618058",
-          "app": "github-actions"
-        },
         {
           "name": "ava_review",
           "state": "passed",
@@ -289,6 +266,16 @@
           "app": "github-actions"
         },
         {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T17:00:06Z",
+          "completed_at": "2026-09-16T17:00:23Z",
+          "duration_sec": 17,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104893165629",
+          "app": "github-actions"
+        },
+        {
           "name": "cosine_similarity",
           "state": "passed",
           "conclusion": "success",
@@ -306,6 +293,16 @@
           "completed_at": "2026-09-16T15:28:24Z",
           "duration_sec": 576,
           "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104856235575",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T17:00:06Z",
+          "completed_at": "2026-09-16T17:00:18Z",
+          "duration_sec": 12,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104893165471",
           "app": "github-actions"
         },
         {
@@ -389,6 +386,16 @@
           "app": "github-actions"
         },
         {
+          "name": "trials",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T15:37:57Z",
+          "completed_at": "2026-09-16T17:00:03Z",
+          "duration_sec": 4926,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104863618058",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -411,7 +418,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T14:30:10.410008+00:00",
-      "last_change": "2026-09-16T15:38:03.098641+00:00"
+      "last_change": "2026-09-16T17:00:41.211082+00:00"
     },
     {
       "repo": "dynamo-e1db7d0-data-science-and-reporting",
