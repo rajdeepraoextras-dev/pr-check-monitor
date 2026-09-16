@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T13:54:31.427547+00:00",
+  "snapshot_time": "2026-09-16T13:55:12.755513+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -223,15 +223,11 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
-        {
-          "name": "qc_eval",
-          "started_at": "2026-09-16T13:52:57Z"
-        },
         {
           "name": "qc_exec",
           "started_at": "2026-09-16T13:52:57Z"
@@ -239,16 +235,6 @@
       ],
       "queued": [],
       "checks": [
-        {
-          "name": "qc_eval",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-16T13:52:57Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35096148438/job/104823034671",
-          "app": "github-actions"
-        },
         {
           "name": "qc_exec",
           "state": "running",
@@ -307,6 +293,16 @@
           "completed_at": "2026-09-16T13:43:58Z",
           "duration_sec": 3923,
           "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35096148438/job/104796765632",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T13:52:57Z",
+          "completed_at": "2026-09-16T13:54:42Z",
+          "duration_sec": 105,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35096148438/job/104823034671",
           "app": "github-actions"
         },
         {
@@ -372,7 +368,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:31:07.881961+00:00",
-      "last_change": "2026-09-16T13:53:04.031912+00:00"
+      "last_change": "2026-09-16T13:55:12.755513+00:00"
     },
     {
       "repo": "dynamo-ed639d6-systems-infrastructure-and-operations",
