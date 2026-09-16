@@ -244,7 +244,7 @@ kbd{font-size:10px;font-weight:500;color:var(--dim2);border:1px solid var(--bord
       <div class="live" id="live"><span class="dot"></span><span id="liveText">connecting</span><span class="ring" id="ring" title="next refresh"></span></div>
       <button class="btn" id="btnCopy" title="Copy visible PRs as a markdown table">Copy summary</button>
       <button class="btn" id="btnVoice" title="Read check status changes out loud as they happen"><span class="voicedot" id="voiceDot"></span><span id="voiceLabel">Announcements</span> <kbd>A</kbd></button>
-      <button class="btn" id="btnAlarm" title="Play a loud alarm sound on any new activity"><span class="alarmdot" id="alarmDot"></span><span id="alarmLabel">Alarm</span> <kbd>L</kbd></button>
+      <button class="btn" id="btnAlarm" title="Chime when a check passes, alarm when a check fails"><span class="alarmdot" id="alarmDot"></span><span id="alarmLabel">Sound alerts</span> <kbd>L</kbd></button>
       <button class="btn" id="btnTheme" title="Toggle theme">Dark <kbd>T</kbd></button>
     </div>
   </div>
@@ -405,17 +405,44 @@ function playAlarm(beeps){
       osc.connect(gain); gain.connect(ctx.destination);
       osc.start(t0); osc.stop(t0+0.22);
     }
-    const dot = $("alarmDot");
-    dot.classList.add("ringing");
-    clearTimeout(dot._h);
-    dot._h = setTimeout(()=>dot.classList.remove("ringing"), n*300 + 400);
+    flashAlarmDot(n*300 + 400);
   }catch(e){}
+}
+function playChime(){
+  try{
+    const ctx = ensureAudioCtx();
+    const now = ctx.currentTime;
+    const notes = [523.25, 659.25, 783.99]; // C5, E5, G5 — bright ascending triad
+    notes.forEach((freq,i)=>{
+      const t0 = now + i*0.13;
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = "sine";
+      osc.frequency.setValueAtTime(freq, t0);
+      gain.gain.setValueAtTime(0, t0);
+      gain.gain.linearRampToValueAtTime(0.6, t0+0.02);
+      gain.gain.setValueAtTime(0.6, t0+0.22);
+      gain.gain.linearRampToValueAtTime(0, t0+0.32);
+      osc.connect(gain); gain.connect(ctx.destination);
+      osc.start(t0); osc.stop(t0+0.34);
+    });
+    flashAlarmDot(notes.length*130 + 400);
+  }catch(e){}
+}
+function flashAlarmDot(ms){
+  const dot = $("alarmDot");
+  dot.classList.add("ringing");
+  clearTimeout(dot._h);
+  dot._h = setTimeout(()=>dot.classList.remove("ringing"), ms);
 }
 function checkAlarm(){
   if(!ALARM || alarmWatermark == null || !EVENTS.length) return;
   const fresh = EVENTS.filter(e => new Date(e.ts).getTime() > alarmWatermark);
   if(!fresh.length) return;
-  playAlarm(4);
+  const hasFail = fresh.some(e => e.type === "failing" || e.type === "error");
+  const hasPass = fresh.some(e => e.type === "passed");
+  if(hasPass) playChime();
+  if(hasFail) setTimeout(()=>playAlarm(4), hasPass ? 750 : 0);
   alarmWatermark = Math.max(...fresh.map(e=>new Date(e.ts).getTime()));
   LS.set("prmon_alarm_watermark", alarmWatermark);
 }
@@ -424,7 +451,8 @@ function setAlarm(on){
   if(ALARM){
     alarmWatermark = Date.now();
     LS.set("prmon_alarm_watermark", alarmWatermark);
-    playAlarm(2);
+    playChime();
+    setTimeout(()=>playAlarm(2), 750);
   }
   syncControls();
 }
@@ -657,8 +685,8 @@ function syncControls(){
   $("voiceLabel").textContent = VOICE ? "Announcements: On" : "Announcements";
   const ba = $("btnAlarm");
   ba.classList.toggle("alarm-on", ALARM);
-  ba.title = ALARM ? "Alarm on — click to silence" : "Play a loud alarm sound on any new activity";
-  $("alarmLabel").textContent = ALARM ? "Alarm: On" : "Alarm";
+  ba.title = ALARM ? "Sound alerts on — click to silence" : "Chime when a check passes, alarm when a check fails";
+  $("alarmLabel").textContent = ALARM ? "Sound alerts: On" : "Sound alerts";
 }
 $("q").addEventListener("input", e=>{ F.q = e.target.value; save(); render(); });
 $("segStatus").addEventListener("click", e=>{ const b=e.target.closest("button"); if(!b) return; F.status=b.dataset.v; save(); render(); });
