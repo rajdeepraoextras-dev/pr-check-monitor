@@ -531,22 +531,31 @@ function visible(){
 }
 
 /* ================= render: stats ================= */
-// Check names to give their own "how many PRs are at this step right now"
-// card, e.g. a slow/expensive step worth watching in flight. Add more names
-// here to get more cards — no other wiring needed.
-const WATCH_CHECKS = ["pass2"];
-
 function renderStats(){
   let pass=0, run=0, fail=0, sub=0, cp=0, ct=0, cr=0, cf=0;
-  const watchCounts = Object.fromEntries(WATCH_CHECKS.map(n=>[n,0]));
+  const runningByCheck = {}; // check name -> count of PRs currently running it
   DATA.forEach(pr=>{
     if(pr.overall==="passed") pass++; else if(pr.overall==="failing"||pr.overall==="error") fail++; else run++;
     if(isSub(pr)) sub++;
     cp += pr.passed||0; ct += pr.total||0; cr += (pr.running||[]).length + (pr.queued||[]).length; cf += (pr.failed||[]).length;
-    (pr.running||[]).forEach(r=>{ if(r.name in watchCounts) watchCounts[r.name]++; });
+    const seenOnThisPr = new Set();
+    (pr.running||[]).forEach(r=>{
+      if(seenOnThisPr.has(r.name)) return; // one PR only counts once per check name
+      seenOnThisPr.add(r.name);
+      runningByCheck[r.name] = (runningByCheck[r.name]||0) + 1;
+    });
   });
   const n = DATA.length || 1;
   const rate = ct ? Math.round(cp/ct*100) : 0;
+  // One card per distinct check name currently in flight, e.g. 2 PRs on
+  // "pass2" + 1 on "tier1" -> two cards, "pass2: 2" and "tier1: 1". Updates
+  // every poll — cards appear/disappear as checks start/finish.
+  const checkCards = Object.entries(runningByCheck)
+    .sort((a,b)=> b[1]-a[1] || a[0].localeCompare(b[0]))
+    .map(([name,count])=>({
+      cls:"run", v:count, l:name, s:`PR${count===1?"":"s"} running ${name}`,
+      w:count/n*100, f:{q:name},
+    }));
   const cards = [
     {cls:"", v:DATA.length, l:"Open PRs", s:`last ${CFG.window_hours||24}h`, w:100, f:{status:"all"}},
     {cls:"fail", v:fail, l:"Failing", s:`${cf} failed check${cf===1?"":"s"}`, w:fail/n*100, f:{status:"failing"}},
@@ -554,10 +563,7 @@ function renderStats(){
     {cls:"pass", v:pass, l:"All green", s:`${Math.round(pass/n*100)}% of PRs`, w:pass/n*100, f:{status:"passed"}},
     {cls:"sub", v:sub, l:"Submitted", s:`${DATA.length-sub} remaining`, w:sub/n*100, f:{sub:"yes"}},
     {cls:"rate", v:rate+"%", l:"Check pass rate", s:`${cp} of ${ct} checks`, w:rate, f:null},
-    ...WATCH_CHECKS.map(name=>({
-      cls:"run", v:watchCounts[name], l:name, s:`PR${watchCounts[name]===1?"":"s"} running ${name}`,
-      w:watchCounts[name]/n*100, f:{q:name},
-    })),
+    ...checkCards,
   ];
   $("stats").innerHTML = cards.map((c,i)=>{
     const on = c.f && ((c.f.status && c.f.status!=="all" && F.status===c.f.status) || (c.f.sub && F.sub==="yes") || (c.f.q && F.q===c.f.q));
