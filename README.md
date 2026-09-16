@@ -18,12 +18,25 @@ Pages and kept up to date by two local `launchd` jobs.
   events (status flips, checks starting/passing/failing, pushes, review decisions) to
   `docs/events.json` (capped at 400) — this powers the Activity feed and the voice/sound
   alerts.
-- `docs/index.html` (served by GitHub Pages) reads `data.json`/`events.json` straight from
-  `raw.githubusercontent.com` (falls back to the same-origin copy) instead of through the
-  Pages build — that build+CDN-publish step is what caused most of the old "why is this
-  lagging" delay. The browser polls every 3s; since that's just a small CDN read (not a
-  GitHub API call), there's no cost to polling that often even though the *data* itself
-  only changes as fast as the fast job commits it (~20s).
+- `docs/index.html` (served by GitHub Pages) reads `data.json`/`events.json` from, in
+  order: **1)** `prmon-live-data` — a small Vercel Edge Function (source in `proxy/`,
+  deployed separately from this repo) that proxies GitHub's Contents API with its own
+  in-memory cache; with a `GITHUB_TOKEN` env var set on that Vercel project it caches for
+  only 3s (GitHub's authenticated budget is 5000/hr), otherwise 75s (to stay under the
+  60/hr unauthenticated limit). No GitHub CDN in this path at all, so this is the
+  freshest source. **2)** `raw.githubusercontent.com` (~5min worst case — its Fastly CDN
+  caches by path and ignores cache-busting query params entirely). **3)** the same-origin
+  Pages copy. The browser polls every 3s; each tier is only a fallback for when the
+  faster one is unreachable.
+
+### Redeploying the live-data proxy
+The `prmon-live-data` Vercel project's two files (`proxy/api/data.js`,
+`proxy/api/events.js`) aren't git-linked — they were deployed directly via `vercel deploy`
+(or the Vercel dashboard) targeting production, project name `prmon-live-data`. Its
+`GITHUB_TOKEN` env var (Settings → Environment Variables) is a fine-grained PAT scoped to
+read-only Contents access on this one repo. Redeploy after editing either file by running
+a Vercel deploy from the `proxy/` directory, or pasting the updated file content into a
+new deployment the same way this one was created.
 
 ## Dashboard features
 - Stats strip (click any stat to filter), status/submitted filters, free-text search
