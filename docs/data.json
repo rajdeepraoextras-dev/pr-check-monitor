@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T20:03:06.722159+00:00",
+  "snapshot_time": "2026-09-16T20:03:28.095940+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -957,7 +957,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T13:27:28.400072+00:00",
-      "last_change": "2026-09-16T20:03:06.722159+00:00"
+      "last_change": "2026-09-16T20:03:28.095940+00:00"
     },
     {
       "repo": "dynamo-314a3c9-model-training-and-ml-infrastructure",
@@ -1088,26 +1088,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 11,
-      "total": 13,
+      "passed": 12,
+      "total": 14,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_eval",
-          "started_at": "2026-09-16T19:44:00Z"
+          "name": "qc_gate",
+          "started_at": "2026-09-16T20:03:52Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
+          "name": "qc_gate",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T19:44:00Z",
+          "started_at": "2026-09-16T20:03:52Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35133112326/job/104949621294",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35133112326/job/104956242349",
           "app": "github-actions"
         },
         {
@@ -1158,6 +1158,16 @@
           "completed_at": "2026-09-16T19:31:36Z",
           "duration_sec": 4004,
           "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35133112326/job/104922487988",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T19:44:00Z",
+          "completed_at": "2026-09-16T20:03:50Z",
+          "duration_sec": 1190,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35133112326/job/104949621294",
           "app": "github-actions"
         },
         {
@@ -1233,7 +1243,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:31:07.881961+00:00",
-      "last_change": "2026-09-16T19:50:50.136678+00:00"
+      "last_change": "2026-09-16T20:03:28.095940+00:00"
     }
   ]
 }
