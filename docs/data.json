@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T15:57:12.238982+00:00",
+  "snapshot_time": "2026-09-16T15:58:00.250289+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,10 +13,10 @@
       "title": "Rework: verify partial-trim reclamation and record the seven-run performance measurement",
       "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/pull/7",
       "createdAt": "2026-09-16T14:29:39Z",
-      "updatedAt": "2026-09-16T15:57:13Z",
+      "updatedAt": "2026-09-16T15:57:42Z",
       "sha": "ec0c6065b4f4344777390d11b4968e2a0aca4add",
       "draft": false,
-      "mergeable": null,
+      "mergeable": true,
       "reviewDecision": "",
       "additions": 565,
       "deletions": 21,
@@ -24,32 +24,45 @@
       "head": "rework/e079d63-trim-and-measurement",
       "base": "main",
       "labels": [
-        "needs-revision"
+        "in-progress"
       ],
       "overall": "running",
-      "passed": 0,
-      "total": 1,
+      "passed": 1,
+      "total": 2,
       "skipped": 0,
       "failed": [],
-      "running": [],
-      "queued": [
-        "changes"
+      "running": [
+        {
+          "name": "cosine_similarity",
+          "started_at": "2026-09-16T15:57:52Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
-          "name": "changes",
-          "state": "queued",
+          "name": "cosine_similarity",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T15:57:17Z",
+          "started_at": "2026-09-16T15:57:52Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104871012303",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T15:57:19Z",
+          "completed_at": "2026-09-16T15:57:49Z",
+          "duration_sec": 30,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104870816579",
           "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-16T14:32:48.666305+00:00",
-      "last_change": "2026-09-16T15:57:12.238982+00:00"
+      "last_change": "2026-09-16T15:58:00.250289+00:00"
     },
     {
       "repo": "dynamo-1d01028-scientific-computing-and-domain-science",
