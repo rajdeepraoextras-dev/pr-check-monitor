@@ -785,21 +785,36 @@ document.addEventListener("keydown", e=>{
 function applyTheme(){ document.documentElement.setAttribute("data-theme", THEME); LS.set("prmon_theme2", THEME); }
 
 /* ================= data ================= */
-// Read straight from the raw git blob (Fastly CDN, updates within ~seconds of
-// a push) instead of the GitHub Pages build (Jekyll rebuild + CDN publish can
-// lag a minute or more) — this is what actually removes the "why is it lagging"
-// delay. Falls back to the same-origin copy if that ever fails.
-const RAW_BASE = "https://raw.githubusercontent.com/rajdeepraoextras-dev/pr-check-monitor/main/docs/";
-async function fetchJSON(name, fallback){
-  try {
-    const r = await fetch(RAW_BASE+name+"?_="+Date.now(), {cache:"no-store"});
-    if(!r.ok) throw new Error(r.status);
-    return await r.json();
-  } catch(e) {
-    const r = await fetch(name+"?_="+Date.now(), {cache:"no-store"});
-    if(!r.ok) throw new Error(r.status);
-    return await r.json();
+// Primary: a tiny Vercel edge function that proxies GitHub's Contents API
+// with its own ~75s server-side cache — no GitHub CDN involved, so this is
+// the freshest source (worst case ~75s stale, not ~5min).
+// Fallback 1: raw.githubusercontent.com (Fastly CDN, ~5min worst case, but
+// still typically fresher than the Pages build).
+// Fallback 2: the same-origin GitHub Pages copy.
+// Each tier is tried in order; a name resolves to /data.json or /events.json.
+const SOURCES = {
+  "data.json": [
+    "https://prmon-live-data-khanagos-projects.vercel.app/api/data",
+    "https://raw.githubusercontent.com/rajdeepraoextras-dev/pr-check-monitor/main/docs/data.json",
+    "data.json",
+  ],
+  "events.json": [
+    "https://prmon-live-data-khanagos-projects.vercel.app/api/events",
+    "https://raw.githubusercontent.com/rajdeepraoextras-dev/pr-check-monitor/main/docs/events.json",
+    "events.json",
+  ],
+};
+async function fetchJSON(name){
+  let lastErr;
+  for(const base of SOURCES[name]){
+    try {
+      const sep = base.includes("?") ? "&" : "?";
+      const r = await fetch(base+sep+"_="+Date.now(), {cache:"no-store"});
+      if(!r.ok) throw new Error(r.status);
+      return await r.json();
+    } catch(e) { lastErr = e; }
   }
+  throw lastErr;
 }
 async function loadData(){
   try {
