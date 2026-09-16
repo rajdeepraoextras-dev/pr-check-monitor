@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T13:51:33.524962+00:00",
+  "snapshot_time": "2026-09-16T13:52:16.709341+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -209,7 +209,7 @@
       "title": "Rework: state the vendor-wide substitution-table invariant and redraw the corpus around it",
       "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/pull/7",
       "createdAt": "2026-09-16T12:29:39Z",
-      "updatedAt": "2026-09-16T13:50:18Z",
+      "updatedAt": "2026-09-16T13:52:14Z",
       "sha": "751a8e1a6294cb4512f6acaf0e9b03d032da2f01",
       "draft": false,
       "mergeable": true,
@@ -223,25 +223,35 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 9,
+      "total": 11,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "ava_review",
-          "started_at": "2026-09-16T13:44:01Z"
+          "name": "tier1",
+          "started_at": "2026-09-16T13:52:23Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "ava_review",
+          "name": "tier1",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T13:44:01Z",
+          "started_at": "2026-09-16T13:52:23Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35096148438/job/104822823329",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T13:44:01Z",
+          "completed_at": "2026-09-16T13:52:21Z",
+          "duration_sec": 500,
           "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35096148438/job/104819696382",
           "app": "github-actions"
         },
@@ -338,7 +348,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:31:07.881961+00:00",
-      "last_change": "2026-09-16T13:50:06.263566+00:00"
+      "last_change": "2026-09-16T13:52:16.709341+00:00"
     },
     {
       "repo": "dynamo-ed639d6-systems-infrastructure-and-operations",
