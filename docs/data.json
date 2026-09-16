@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T22:18:53.589923+00:00",
+  "snapshot_time": "2026-09-16T22:19:23.368448+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1106,28 +1106,26 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 6,
+      "passed": 8,
       "total": 17,
       "skipped": 7,
       "failed": [
+        "gate",
         "pass2"
       ],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-16T22:19:08Z"
-        },
-        {
-          "name": "gate",
-          "started_at": "2026-09-16T22:19:08Z"
-        },
-        {
-          "name": "pass2_suggestion",
-          "started_at": "2026-09-16T22:19:07Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
+        {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-16T22:19:08Z",
+          "completed_at": "2026-09-16T22:19:17Z",
+          "duration_sec": 9,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35151353987/job/104998935714",
+          "app": "github-actions"
+        },
         {
           "name": "pass2",
           "state": "failed",
@@ -1136,36 +1134,6 @@
           "completed_at": "2026-09-16T22:19:03Z",
           "duration_sec": 3368,
           "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35151353987/job/104982514108",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-16T22:19:08Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35151353987/job/104998935645",
-          "app": "github-actions"
-        },
-        {
-          "name": "gate",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-16T22:19:08Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35151353987/job/104998935714",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-16T22:19:07Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35151353987/job/104998932257",
           "app": "github-actions"
         },
         {
@@ -1179,6 +1147,16 @@
           "app": "github-actions"
         },
         {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T22:19:08Z",
+          "completed_at": "2026-09-16T22:19:24Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35151353987/job/104998935645",
+          "app": "github-actions"
+        },
+        {
           "name": "cosine_similarity",
           "state": "passed",
           "conclusion": "success",
@@ -1186,6 +1164,16 @@
           "completed_at": "2026-09-16T21:17:40Z",
           "duration_sec": 97,
           "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35151353987/job/104980324550",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T22:19:07Z",
+          "completed_at": "2026-09-16T22:19:24Z",
+          "duration_sec": 17,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35151353987/job/104998932257",
           "app": "github-actions"
         },
         {
@@ -1301,7 +1289,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:31:07.881961+00:00",
-      "last_change": "2026-09-16T22:18:53.589923+00:00"
+      "last_change": "2026-09-16T22:19:23.368448+00:00"
     }
   ]
 }
