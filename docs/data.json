@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T14:01:51.416250+00:00",
+  "snapshot_time": "2026-09-16T14:02:41.201599+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -229,7 +229,7 @@
       "title": "Rework: state the vendor-wide substitution-table invariant and redraw the corpus around it",
       "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/pull/7",
       "createdAt": "2026-09-16T12:29:39Z",
-      "updatedAt": "2026-09-16T13:53:03Z",
+      "updatedAt": "2026-09-16T14:02:15Z",
       "sha": "751a8e1a6294cb4512f6acaf0e9b03d032da2f01",
       "draft": false,
       "mergeable": true,
@@ -240,28 +240,36 @@
       "head": "rework/24667f6-vendor-invariant",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
-      "passed": 12,
-      "total": 14,
-      "skipped": 1,
-      "failed": [],
-      "running": [
-        {
-          "name": "qc_gate",
-          "started_at": "2026-09-16T14:01:51Z"
-        }
+      "overall": "failing",
+      "passed": 13,
+      "total": 17,
+      "skipped": 2,
+      "failed": [
+        "gate",
+        "qc_gate"
       ],
+      "running": [],
       "queued": [],
       "checks": [
         {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-16T14:02:09Z",
+          "completed_at": "2026-09-16T14:02:18Z",
+          "duration_sec": 9,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35096148438/job/104826516783",
+          "app": "github-actions"
+        },
+        {
           "name": "qc_gate",
-          "state": "running",
-          "conclusion": null,
+          "state": "failed",
+          "conclusion": "failure",
           "started_at": "2026-09-16T14:01:51Z",
-          "completed_at": null,
-          "duration_sec": null,
+          "completed_at": "2026-09-16T14:02:06Z",
+          "duration_sec": 15,
           "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35096148438/job/104826400907",
           "app": "github-actions"
         },
@@ -283,6 +291,16 @@
           "completed_at": "2026-09-16T12:30:14Z",
           "duration_sec": 28,
           "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35096148438/job/104793882227",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T14:02:09Z",
+          "completed_at": "2026-09-16T14:02:25Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35096148438/job/104826516821",
           "app": "github-actions"
         },
         {
@@ -394,11 +412,21 @@
           "duration_sec": -1,
           "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35096148438/job/104819698433",
           "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-16T14:02:07Z",
+          "completed_at": "2026-09-16T14:02:06Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35096148438/job/104826518630",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:31:07.881961+00:00",
-      "last_change": "2026-09-16T14:01:51.416250+00:00"
+      "last_change": "2026-09-16T14:02:41.201599+00:00"
     },
     {
       "repo": "dynamo-ed639d6-systems-infrastructure-and-operations",
