@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T15:28:57.301704+00:00",
+  "snapshot_time": "2026-09-16T15:29:41.705183+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -121,7 +121,7 @@
       "title": "Rework: enforce retraining from /app/data/train in the verifier",
       "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/pull/6",
       "createdAt": "2026-09-16T14:27:55Z",
-      "updatedAt": "2026-09-16T15:28:58Z",
+      "updatedAt": "2026-09-16T15:29:14Z",
       "sha": "4e7ae0e4472025a472046bef98b685500a048f9c",
       "draft": false,
       "mergeable": true,
@@ -135,26 +135,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 9,
-      "total": 11,
+      "passed": 10,
+      "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "tier1",
-          "started_at": "2026-09-16T15:28:36Z"
+          "name": "qc_eval",
+          "started_at": "2026-09-16T15:29:07Z"
+        },
+        {
+          "name": "qc_exec",
+          "started_at": "2026-09-16T15:29:07Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "tier1",
+          "name": "qc_eval",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T15:28:36Z",
+          "started_at": "2026-09-16T15:29:07Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104860043393",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104860232937",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-16T15:29:07Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104860232733",
           "app": "github-actions"
         },
         {
@@ -238,6 +252,16 @@
           "app": "github-actions"
         },
         {
+          "name": "tier1",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-16T15:28:36Z",
+          "completed_at": "2026-09-16T15:29:04Z",
+          "duration_sec": 28,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science/actions/runs/35108715759/job/104860043393",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -260,7 +284,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-16T14:30:10.410008+00:00",
-      "last_change": "2026-09-16T15:28:57.301704+00:00"
+      "last_change": "2026-09-16T15:29:41.705183+00:00"
     },
     {
       "repo": "dynamo-e1db7d0-data-science-and-reporting",
