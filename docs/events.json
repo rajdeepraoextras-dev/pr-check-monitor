@@ -1,35 +1,5 @@
 [
  {
-  "ts": "2026-09-16T16:56:45.495876+00:00",
-  "pr": "dynamo-0183436-machine-learning-and-ai#8",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
-  "ts": "2026-09-16T16:56:45.495876+00:00",
-  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
-  "type": "started",
-  "msg": "Check started: review"
- },
- {
-  "ts": "2026-09-16T16:56:45.495876+00:00",
-  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
-  "ts": "2026-09-16T16:57:39.372906+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "started",
-  "msg": "Check started: review"
- },
- {
-  "ts": "2026-09-16T16:57:39.372906+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
   "ts": "2026-09-16T16:59:10.579984+00:00",
   "pr": "dynamo-24667f6-security#7",
   "type": "started",
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-0183436-machine-learning-and-ai#8",
   "type": "passed",
   "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-16T23:35:03.821385+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-16T23:35:03.821385+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "started",
+  "msg": "Check started: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-16T23:35:03.821385+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "started",
+  "msg": "Check started: gate"
+ },
+ {
+  "ts": "2026-09-16T23:35:03.821385+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "started",
+  "msg": "Check started: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-16T23:35:03.821385+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "failing",
+  "msg": "Check failed: pass2"
  }
 ]

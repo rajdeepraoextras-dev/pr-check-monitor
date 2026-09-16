@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T23:34:25.372880+00:00",
+  "snapshot_time": "2026-09-16T23:35:03.821385+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1142,7 +1142,7 @@
       "title": "Rework: state the vendor-wide substitution-table invariant and redraw the corpus around it",
       "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/pull/7",
       "createdAt": "2026-09-16T12:29:39Z",
-      "updatedAt": "2026-09-16T22:30:47Z",
+      "updatedAt": "2026-09-16T23:35:05Z",
       "sha": "32293ab448e98508fdf121132c36671b9a289729",
       "draft": false,
       "mergeable": true,
@@ -1155,27 +1155,67 @@
       "labels": [
         "in-progress"
       ],
-      "overall": "running",
+      "overall": "failing",
       "passed": 6,
-      "total": 7,
-      "skipped": 0,
-      "failed": [],
+      "total": 17,
+      "skipped": 7,
+      "failed": [
+        "pass2"
+      ],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-16T22:30:40Z"
+          "name": "claude-cost-report",
+          "started_at": "2026-09-16T23:35:16Z"
+        },
+        {
+          "name": "gate",
+          "started_at": "2026-09-16T23:35:16Z"
+        },
+        {
+          "name": "pass2_suggestion",
+          "started_at": "2026-09-16T23:35:16Z"
         }
       ],
       "queued": [],
       "checks": [
         {
           "name": "pass2",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-16T22:30:40Z",
+          "completed_at": "2026-09-16T23:35:13Z",
+          "duration_sec": 3873,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35157410723/job/105001999736",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T22:30:40Z",
+          "started_at": "2026-09-16T23:35:16Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35157410723/job/105001999736",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35157410723/job/105017592697",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-16T23:35:16Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35157410723/job/105017592678",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-16T23:35:16Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35157410723/job/105017589995",
           "app": "github-actions"
         },
         {
@@ -1237,11 +1277,81 @@
           "duration_sec": 81,
           "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35157410723/job/105001583970",
           "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-16T23:35:14Z",
+          "completed_at": "2026-09-16T23:35:13Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35157410723/job/105017591418",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-16T23:35:14Z",
+          "completed_at": "2026-09-16T23:35:13Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35157410723/job/105017591694",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-16T23:35:14Z",
+          "completed_at": "2026-09-16T23:35:14Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35157410723/job/105017592600",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-16T23:35:14Z",
+          "completed_at": "2026-09-16T23:35:14Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35157410723/job/105017592130",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-16T23:35:14Z",
+          "completed_at": "2026-09-16T23:35:14Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35157410723/job/105017593060",
+          "app": "github-actions"
+        },
+        {
+          "name": "tier1",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-16T23:35:14Z",
+          "completed_at": "2026-09-16T23:35:13Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35157410723/job/105017592173",
+          "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-16T23:35:14Z",
+          "completed_at": "2026-09-16T23:35:14Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-24667f6-security/actions/runs/35157410723/job/105017593140",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-16T12:31:07.881961+00:00",
-      "last_change": "2026-09-16T22:30:29.240841+00:00"
+      "last_change": "2026-09-16T23:35:03.821385+00:00"
     }
   ]
 }
