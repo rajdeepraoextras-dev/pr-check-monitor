@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-16T16:59:10.579984+00:00",
+  "snapshot_time": "2026-09-16T16:59:48.975479+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: verify partial-trim reclamation and record the seven-run performance measurement",
       "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/pull/7",
       "createdAt": "2026-09-16T14:29:39Z",
-      "updatedAt": "2026-09-16T16:09:05Z",
+      "updatedAt": "2026-09-16T16:59:49Z",
       "sha": "ec0c6065b4f4344777390d11b4968e2a0aca4add",
       "draft": false,
       "mergeable": true,
@@ -24,29 +24,70 @@
       "head": "rework/e079d63-trim-and-measurement",
       "base": "main",
       "labels": [
-        "in-progress"
+        "in-progress",
+        "needs-revision"
       ],
-      "overall": "running",
+      "overall": "failing",
       "passed": 6,
-      "total": 7,
-      "skipped": 0,
-      "failed": [],
+      "total": 17,
+      "skipped": 7,
+      "failed": [
+        "pass2"
+      ],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-16T16:08:58Z"
+          "name": "claude-cost-report",
+          "started_at": "2026-09-16T16:59:45Z"
+        },
+        {
+          "name": "gate",
+          "started_at": "2026-09-16T16:59:45Z"
+        },
+        {
+          "name": "pass2_suggestion",
+          "started_at": "2026-09-16T16:59:44Z"
         }
       ],
       "queued": [],
       "checks": [
         {
           "name": "pass2",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-16T16:08:58Z",
+          "completed_at": "2026-09-16T16:59:41Z",
+          "duration_sec": 3043,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104875113270",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-16T16:08:58Z",
+          "started_at": "2026-09-16T16:59:45Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104875113270",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104893047959",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-16T16:59:45Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104893047919",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-16T16:59:44Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104893040743",
           "app": "github-actions"
         },
         {
@@ -108,11 +149,81 @@
           "duration_sec": 106,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104874385839",
           "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-16T16:59:41Z",
+          "completed_at": "2026-09-16T16:59:41Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104893042258",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-16T16:59:42Z",
+          "completed_at": "2026-09-16T16:59:41Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104893043029",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-16T16:59:42Z",
+          "completed_at": "2026-09-16T16:59:42Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104893044429",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-16T16:59:42Z",
+          "completed_at": "2026-09-16T16:59:42Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104893045586",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-16T16:59:42Z",
+          "completed_at": "2026-09-16T16:59:42Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104893046309",
+          "app": "github-actions"
+        },
+        {
+          "name": "tier1",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-16T16:59:42Z",
+          "completed_at": "2026-09-16T16:59:41Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104893044559",
+          "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-16T16:59:43Z",
+          "completed_at": "2026-09-16T16:59:42Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e079d63-hardware-embedded-and-low-level-systems/actions/runs/35118751978/job/104893048379",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-16T14:32:48.666305+00:00",
-      "last_change": "2026-09-16T16:09:55.658035+00:00"
+      "last_change": "2026-09-16T16:59:48.975479+00:00"
     },
     {
       "repo": "dynamo-1d01028-scientific-computing-and-domain-science",
