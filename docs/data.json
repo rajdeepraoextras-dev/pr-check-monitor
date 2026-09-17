@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-17T01:40:55.116087+00:00",
+  "snapshot_time": "2026-09-17T01:43:12.128251+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -121,7 +121,7 @@
       "title": "Rework: honour destination writability and detect export spooling to disk",
       "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/pull/64",
       "createdAt": "2026-09-17T01:23:30Z",
-      "updatedAt": "2026-09-17T01:38:08Z",
+      "updatedAt": "2026-09-17T01:41:52Z",
       "sha": "6d8bc87f14b738dddefe33165f405e85d5664825",
       "draft": false,
       "mergeable": true,
@@ -135,26 +135,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 2,
-      "total": 3,
+      "passed": 4,
+      "total": 5,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "review",
-          "started_at": "2026-09-17T01:37:59Z"
+          "name": "validation",
+          "started_at": "2026-09-17T01:41:45Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "review",
+          "name": "validation",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-17T01:37:59Z",
+          "started_at": "2026-09-17T01:41:45Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35171193896/job/105043349453",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35171193896/job/105044074341",
           "app": "github-actions"
         },
         {
@@ -176,11 +176,31 @@
           "duration_sec": 75,
           "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35171193896/job/105043104771",
           "app": "github-actions"
+        },
+        {
+          "name": "review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T01:37:59Z",
+          "completed_at": "2026-09-17T01:41:15Z",
+          "duration_sec": 196,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35171193896/job/105043349453",
+          "app": "github-actions"
+        },
+        {
+          "name": "similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T01:41:17Z",
+          "completed_at": "2026-09-17T01:41:42Z",
+          "duration_sec": 25,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35171193896/job/105043987081",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-17T01:26:22.813609+00:00",
-      "last_change": "2026-09-17T01:38:32.389723+00:00"
+      "last_change": "2026-09-17T01:43:12.128251+00:00"
     },
     {
       "repo": "dynamo-f357766-software-engineering",
@@ -297,7 +317,7 @@
       "title": "Fix leased-buffer race, seven-file census and per-record ground truth",
       "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/pull/9",
       "createdAt": "2026-09-17T01:12:22Z",
-      "updatedAt": "2026-09-17T01:23:39Z",
+      "updatedAt": "2026-09-17T01:42:08Z",
       "sha": "2d14ac2de12d072530bcec5403e790b88b95e84a",
       "draft": false,
       "mergeable": true,
@@ -308,28 +328,36 @@
       "head": "rework/6612141-lease-and-census",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
-      "failed": [],
-      "running": [
-        {
-          "name": "pass2",
-          "started_at": "2026-09-17T01:23:32Z"
-        }
+      "overall": "failing",
+      "passed": 8,
+      "total": 17,
+      "skipped": 7,
+      "failed": [
+        "gate",
+        "pass2"
       ],
+      "running": [],
       "queued": [],
       "checks": [
         {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-17T01:41:22Z",
+          "completed_at": "2026-09-17T01:41:32Z",
+          "duration_sec": 10,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35169645966/job/105044000303",
+          "app": "github-actions"
+        },
+        {
           "name": "pass2",
-          "state": "running",
-          "conclusion": null,
+          "state": "failed",
+          "conclusion": "failure",
           "started_at": "2026-09-17T01:23:32Z",
-          "completed_at": null,
-          "duration_sec": null,
+          "completed_at": "2026-09-17T01:41:19Z",
+          "duration_sec": 1067,
           "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35169645966/job/105040532186",
           "app": "github-actions"
         },
@@ -344,6 +372,16 @@
           "app": "github-actions"
         },
         {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T01:41:22Z",
+          "completed_at": "2026-09-17T01:41:37Z",
+          "duration_sec": 15,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35169645966/job/105044000283",
+          "app": "github-actions"
+        },
+        {
           "name": "cosine_similarity",
           "state": "passed",
           "conclusion": "success",
@@ -351,6 +389,16 @@
           "completed_at": "2026-09-17T01:14:30Z",
           "duration_sec": 93,
           "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35169645966/job/105038426119",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T01:41:21Z",
+          "completed_at": "2026-09-17T01:42:13Z",
+          "duration_sec": 52,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35169645966/job/105043998484",
           "app": "github-actions"
         },
         {
@@ -392,11 +440,81 @@
           "duration_sec": 94,
           "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35169645966/job/105040184703",
           "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T01:41:19Z",
+          "completed_at": "2026-09-17T01:41:19Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35169645966/job/105043999377",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T01:41:19Z",
+          "completed_at": "2026-09-17T01:41:19Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35169645966/job/105043999714",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T01:41:20Z",
+          "completed_at": "2026-09-17T01:41:19Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35169645966/job/105044000377",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T01:41:20Z",
+          "completed_at": "2026-09-17T01:41:19Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35169645966/job/105044000417",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T01:41:20Z",
+          "completed_at": "2026-09-17T01:41:19Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35169645966/job/105044000502",
+          "app": "github-actions"
+        },
+        {
+          "name": "tier1",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T01:41:19Z",
+          "completed_at": "2026-09-17T01:41:19Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35169645966/job/105044000190",
+          "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T01:41:20Z",
+          "completed_at": "2026-09-17T01:41:19Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35169645966/job/105044001608",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-17T01:14:26.443120+00:00",
-      "last_change": "2026-09-17T01:23:51.869466+00:00"
+      "last_change": "2026-09-17T01:43:12.128251+00:00"
     },
     {
       "repo": "dynamo-1d01028-scientific-computing-and-domain-science",
