@@ -1,29 +1,5 @@
 [
  {
-  "ts": "2026-09-16T20:58:55.803905+00:00",
-  "pr": "dynamo-0183436-machine-learning-and-ai#8",
-  "type": "started",
-  "msg": "Check started: review"
- },
- {
-  "ts": "2026-09-16T20:58:55.803905+00:00",
-  "pr": "dynamo-0183436-machine-learning-and-ai#8",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
-  "ts": "2026-09-16T21:04:24.827849+00:00",
-  "pr": "dynamo-0183436-machine-learning-and-ai#8",
-  "type": "started",
-  "msg": "Check started: similarity"
- },
- {
-  "ts": "2026-09-16T21:04:24.827849+00:00",
-  "pr": "dynamo-0183436-machine-learning-and-ai#8",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
   "ts": "2026-09-16T21:05:11.945944+00:00",
   "pr": "dynamo-0183436-machine-learning-and-ai#8",
   "type": "started",
@@ -2398,5 +2374,29 @@
   "pr": "dynamo-f357766-software-engineering#6",
   "type": "passed",
   "msg": "Check passed: deep_review"
+ },
+ {
+  "ts": "2026-09-17T20:11:55.437118+00:00",
+  "pr": "dynamo-f357766-software-engineering#6",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-17T20:11:55.437118+00:00",
+  "pr": "dynamo-f357766-software-engineering#6",
+  "type": "failing",
+  "msg": "Check failed: ava_review"
+ },
+ {
+  "ts": "2026-09-17T20:11:55.437118+00:00",
+  "pr": "dynamo-f357766-software-engineering#6",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-17T20:11:55.437118+00:00",
+  "pr": "dynamo-f357766-software-engineering#6",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
  }
 ]
