@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-17T22:29:09.460237+00:00",
+  "snapshot_time": "2026-09-17T22:31:06.774723+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -419,7 +419,7 @@
       "title": "Rework: grade the refreshed continuation bytes, the required reconcile helpers, and long journals",
       "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/pull/6",
       "createdAt": "2026-09-17T01:23:22Z",
-      "updatedAt": "2026-09-17T22:24:53Z",
+      "updatedAt": "2026-09-17T22:29:34Z",
       "sha": "a52d91f404218d006a3418016a036e902ca456a1",
       "draft": false,
       "mergeable": true,
@@ -433,17 +433,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "ava_review",
-          "started_at": "2026-09-17T22:24:46Z"
-        },
-        {
-          "name": "deep_review",
           "started_at": "2026-09-17T22:24:46Z"
         }
       ],
@@ -457,16 +453,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35277657394/job/105405455759",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-17T22:24:46Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35277657394/job/105405455801",
           "app": "github-actions"
         },
         {
@@ -487,6 +473,16 @@
           "completed_at": "2026-09-17T21:39:00Z",
           "duration_sec": 97,
           "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35277657394/job/105392168589",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T22:24:46Z",
+          "completed_at": "2026-09-17T22:29:40Z",
+          "duration_sec": 294,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35277657394/job/105405455801",
           "app": "github-actions"
         },
         {
@@ -552,7 +548,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-17T01:26:26.296133+00:00",
-      "last_change": "2026-09-17T22:25:18.937558+00:00"
+      "last_change": "2026-09-17T22:31:06.774723+00:00"
     },
     {
       "repo": "dynamo-6612141-software-engineering",
