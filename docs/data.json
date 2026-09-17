@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-17T21:28:13.507389+00:00",
+  "snapshot_time": "2026-09-17T21:29:57.132984+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: document the enforced conform contract and verify CFR and audio content from the protected input",
       "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/pull/6",
       "createdAt": "2026-09-17T01:27:30Z",
-      "updatedAt": "2026-09-17T20:27:48Z",
+      "updatedAt": "2026-09-17T21:29:52Z",
       "sha": "58c35bd5d748392fb51b884443668ce372a60560",
       "draft": false,
       "mergeable": true,
@@ -24,29 +24,29 @@
       "head": "rework/4342043-vfr-conform-sync",
       "base": "main",
       "labels": [
-        "in-progress"
+        "accepted"
       ],
       "overall": "running",
-      "passed": 13,
-      "total": 15,
+      "passed": 15,
+      "total": 17,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "trials",
-          "started_at": "2026-09-17T20:27:41Z"
+          "name": "claude-cost-report",
+          "started_at": "2026-09-17T21:29:45Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "trials",
+          "name": "claude-cost-report",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-17T20:27:41Z",
+          "started_at": "2026-09-17T21:29:45Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35259129278/job/105369776871",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35259129278/job/105389843615",
           "app": "github-actions"
         },
         {
@@ -87,6 +87,16 @@
           "completed_at": "2026-09-17T20:00:19Z",
           "duration_sec": 471,
           "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35259129278/job/105358020686",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T21:29:45Z",
+          "completed_at": "2026-09-17T21:29:55Z",
+          "duration_sec": 10,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35259129278/job/105389843580",
           "app": "github-actions"
         },
         {
@@ -170,6 +180,16 @@
           "app": "github-actions"
         },
         {
+          "name": "trials",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T20:27:41Z",
+          "completed_at": "2026-09-17T21:29:42Z",
+          "duration_sec": 3721,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35259129278/job/105369776871",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -192,7 +212,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-17T01:28:27.637787+00:00",
-      "last_change": "2026-09-17T20:28:09.495579+00:00"
+      "last_change": "2026-09-17T21:29:57.132984+00:00"
     },
     {
       "repo": "dynamo-34b43ef-debugging-and-repair",
