@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-17T02:30:22.043154+00:00",
+  "snapshot_time": "2026-09-17T02:32:30.330087+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: document the enforced conform contract and verify CFR and audio content from the protected input",
       "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/pull/6",
       "createdAt": "2026-09-17T01:27:30Z",
-      "updatedAt": "2026-09-17T02:24:34Z",
+      "updatedAt": "2026-09-17T02:32:34Z",
       "sha": "34b7760c38ec83ab8fd81612d1ed16bd54598066",
       "draft": false,
       "mergeable": true,
@@ -26,41 +26,53 @@
       "labels": [
         "in-progress"
       ],
-      "overall": "running",
-      "passed": 7,
-      "total": 10,
-      "skipped": 1,
-      "failed": [],
+      "overall": "failing",
+      "passed": 8,
+      "total": 17,
+      "skipped": 6,
+      "failed": [
+        "ava_review"
+      ],
       "running": [
         {
-          "name": "ava_review",
-          "started_at": "2026-09-17T02:24:27Z"
+          "name": "claude-cost-report",
+          "started_at": "2026-09-17T02:32:43Z"
         },
         {
-          "name": "deep_review",
-          "started_at": "2026-09-17T02:24:27Z"
+          "name": "gate",
+          "started_at": "2026-09-17T02:32:43Z"
         }
       ],
       "queued": [],
       "checks": [
         {
           "name": "ava_review",
-          "state": "running",
-          "conclusion": null,
+          "state": "failed",
+          "conclusion": "failure",
           "started_at": "2026-09-17T02:24:27Z",
-          "completed_at": null,
-          "duration_sec": null,
+          "completed_at": "2026-09-17T02:31:37Z",
+          "duration_sec": 430,
           "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35170632737/job/105052450599",
           "app": "github-actions"
         },
         {
-          "name": "deep_review",
+          "name": "claude-cost-report",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-17T02:24:27Z",
+          "started_at": "2026-09-17T02:32:43Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35170632737/job/105052450602",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35170632737/job/105054073085",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-17T02:32:43Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35170632737/job/105054073111",
           "app": "github-actions"
         },
         {
@@ -81,6 +93,16 @@
           "completed_at": "2026-09-17T01:29:25Z",
           "duration_sec": 82,
           "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35170632737/job/105041412513",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T02:24:27Z",
+          "completed_at": "2026-09-17T02:32:40Z",
+          "duration_sec": 493,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35170632737/job/105052450602",
           "app": "github-actions"
         },
         {
@@ -142,11 +164,61 @@
           "duration_sec": 0,
           "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35170632737/job/105052451615",
           "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T02:32:40Z",
+          "completed_at": "2026-09-17T02:32:40Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35170632737/job/105054072688",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T02:32:41Z",
+          "completed_at": "2026-09-17T02:32:40Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35170632737/job/105054073343",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T02:32:41Z",
+          "completed_at": "2026-09-17T02:32:40Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35170632737/job/105054073515",
+          "app": "github-actions"
+        },
+        {
+          "name": "tier1",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T02:32:40Z",
+          "completed_at": "2026-09-17T02:32:40Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35170632737/job/105054072639",
+          "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T02:32:41Z",
+          "completed_at": "2026-09-17T02:32:40Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35170632737/job/105054073473",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-17T01:28:27.637787+00:00",
-      "last_change": "2026-09-17T02:26:17.556357+00:00"
+      "last_change": "2026-09-17T02:32:30.330087+00:00"
     },
     {
       "repo": "dynamo-34b43ef-debugging-and-repair",
@@ -343,7 +415,7 @@
       "title": "Rework: grade the refreshed continuation bytes, the required reconcile helpers, and long journals",
       "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/pull/6",
       "createdAt": "2026-09-17T01:23:22Z",
-      "updatedAt": "2026-09-17T01:31:39Z",
+      "updatedAt": "2026-09-17T02:32:15Z",
       "sha": "8878741795613b82822ada316b344d0edda89c08",
       "draft": false,
       "mergeable": true,
@@ -357,26 +429,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-17T01:31:32Z"
+          "name": "ava_review",
+          "started_at": "2026-09-17T02:32:08Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-17T02:32:08Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "pass2",
+          "name": "ava_review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-17T01:31:32Z",
+          "started_at": "2026-09-17T02:32:08Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35170361121/job/105042101273",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35170361121/job/105053959543",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-17T02:32:08Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35170361121/job/105053959534",
           "app": "github-actions"
         },
         {
@@ -397,6 +483,16 @@
           "completed_at": "2026-09-17T01:25:25Z",
           "duration_sec": 89,
           "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35170361121/job/105040610552",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T01:31:32Z",
+          "completed_at": "2026-09-17T02:32:05Z",
+          "duration_sec": 3633,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35170361121/job/105042101273",
           "app": "github-actions"
         },
         {
@@ -438,11 +534,21 @@
           "duration_sec": 63,
           "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35170361121/job/105041844272",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T02:32:06Z",
+          "completed_at": "2026-09-17T02:32:06Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35170361121/job/105053960743",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-17T01:26:26.296133+00:00",
-      "last_change": "2026-09-17T01:32:57.184552+00:00"
+      "last_change": "2026-09-17T02:32:30.330087+00:00"
     },
     {
       "repo": "dynamo-6612141-software-engineering",
