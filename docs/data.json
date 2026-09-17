@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-17T18:22:20.730820+00:00",
+  "snapshot_time": "2026-09-17T18:24:17.734003+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: document the enforced conform contract and verify CFR and audio content from the protected input",
       "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/pull/6",
       "createdAt": "2026-09-17T01:27:30Z",
-      "updatedAt": "2026-09-17T18:22:07Z",
+      "updatedAt": "2026-09-17T18:23:09Z",
       "sha": "593be0676cae2da2bb5290ab89cc0477571a2820",
       "draft": false,
       "mergeable": true,
@@ -26,27 +26,47 @@
       "labels": [
         "in-progress"
       ],
-      "overall": "running",
+      "overall": "failing",
       "passed": 8,
-      "total": 10,
-      "skipped": 1,
-      "failed": [],
-      "running": [
-        {
-          "name": "ava_review",
-          "started_at": "2026-09-17T18:13:50Z"
-        }
+      "total": 17,
+      "skipped": 6,
+      "failed": [
+        "ava_review"
       ],
-      "queued": [],
+      "running": [],
+      "queued": [
+        "claude-cost-report",
+        "gate"
+      ],
       "checks": [
         {
           "name": "ava_review",
-          "state": "running",
-          "conclusion": null,
+          "state": "failed",
+          "conclusion": "failure",
           "started_at": "2026-09-17T18:13:50Z",
+          "completed_at": "2026-09-17T18:23:15Z",
+          "duration_sec": 565,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35250062047/job/105324764056",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "queued",
+          "conclusion": null,
+          "started_at": "2026-09-17T18:23:16Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35250062047/job/105324764056",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35250062047/job/105328053970",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "queued",
+          "conclusion": null,
+          "started_at": "2026-09-17T18:23:16Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35250062047/job/105328053962",
           "app": "github-actions"
         },
         {
@@ -138,11 +158,61 @@
           "duration_sec": -1,
           "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35250062047/job/105324766117",
           "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T18:23:16Z",
+          "completed_at": "2026-09-17T18:23:16Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35250062047/job/105328053500",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T18:23:16Z",
+          "completed_at": "2026-09-17T18:23:16Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35250062047/job/105328053395",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T18:23:16Z",
+          "completed_at": "2026-09-17T18:23:16Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35250062047/job/105328053343",
+          "app": "github-actions"
+        },
+        {
+          "name": "tier1",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T18:23:16Z",
+          "completed_at": "2026-09-17T18:23:16Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35250062047/job/105328052881",
+          "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T18:23:16Z",
+          "completed_at": "2026-09-17T18:23:16Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35250062047/job/105328054365",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-17T01:28:27.637787+00:00",
-      "last_change": "2026-09-17T18:22:20.730820+00:00"
+      "last_change": "2026-09-17T18:24:17.734003+00:00"
     },
     {
       "repo": "dynamo-34b43ef-debugging-and-repair",
