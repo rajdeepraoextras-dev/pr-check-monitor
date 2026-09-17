@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-17T02:28:20.958937+00:00",
+  "snapshot_time": "2026-09-17T02:30:22.043154+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -465,17 +465,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "qc_eval",
-          "started_at": "2026-09-17T02:22:28Z"
-        },
-        {
-          "name": "qc_exec",
           "started_at": "2026-09-17T02:22:28Z"
         }
       ],
@@ -489,16 +485,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35172033984/job/105052063855",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-17T02:22:28Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35172033984/job/105052063901",
           "app": "github-actions"
         },
         {
@@ -549,6 +535,16 @@
           "completed_at": "2026-09-17T02:10:06Z",
           "duration_sec": 745,
           "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35172033984/job/105047106926",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T02:22:28Z",
+          "completed_at": "2026-09-17T02:28:38Z",
+          "duration_sec": 370,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35172033984/job/105052063901",
           "app": "github-actions"
         },
         {
@@ -614,7 +610,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-17T01:14:26.443120+00:00",
-      "last_change": "2026-09-17T02:24:09.391111+00:00"
+      "last_change": "2026-09-17T02:30:22.043154+00:00"
     },
     {
       "repo": "dynamo-1d01028-scientific-computing-and-domain-science",
