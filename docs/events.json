@@ -1,83 +1,5 @@
 [
  {
-  "ts": "2026-09-16T17:56:32.963861+00:00",
-  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
-  "type": "started",
-  "msg": "Check started: review"
- },
- {
-  "ts": "2026-09-16T17:56:32.963861+00:00",
-  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
-  "ts": "2026-09-16T17:57:37.076061+00:00",
-  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
-  "type": "started",
-  "msg": "Check started: review"
- },
- {
-  "ts": "2026-09-16T17:57:37.076061+00:00",
-  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
-  "ts": "2026-09-16T17:59:59.486257+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "passed",
-  "msg": "Check passed: pass2"
- },
- {
-  "ts": "2026-09-16T18:00:34.784752+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "started",
-  "msg": "Check started: ava_review"
- },
- {
-  "ts": "2026-09-16T18:00:34.784752+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "started",
-  "msg": "Check started: deep_review"
- },
- {
-  "ts": "2026-09-16T18:01:19.881759+00:00",
-  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
-  "type": "started",
-  "msg": "Check started: similarity"
- },
- {
-  "ts": "2026-09-16T18:01:19.881759+00:00",
-  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
-  "ts": "2026-09-16T18:02:18.820085+00:00",
-  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
-  "type": "started",
-  "msg": "Check started: validation"
- },
- {
-  "ts": "2026-09-16T18:02:18.820085+00:00",
-  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
-  "ts": "2026-09-16T18:02:18.820085+00:00",
-  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
-  "type": "passed",
-  "msg": "Check passed: similarity"
- },
- {
-  "ts": "2026-09-16T18:02:49.419818+00:00",
-  "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
   "ts": "2026-09-16T18:02:49.419818+00:00",
   "pr": "dynamo-314a3c9-model-training-and-ml-infrastructure#6",
   "type": "passed",
@@ -2398,5 +2320,83 @@
   "pr": "dynamo-4342043-file-and-media-operations#6",
   "type": "passed",
   "msg": "Check passed: similarity"
+ },
+ {
+  "ts": "2026-09-17T01:38:32.389723+00:00",
+  "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-17T01:38:32.389723+00:00",
+  "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "failing",
+  "msg": "Check failed: ava_review"
+ },
+ {
+  "ts": "2026-09-17T01:38:32.389723+00:00",
+  "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-17T01:38:32.389723+00:00",
+  "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-17T01:38:32.389723+00:00",
+  "pr": "dynamo-34b43ef-debugging-and-repair#64",
+  "type": "push",
+  "msg": "New commit pushed (6d8bc87)"
+ },
+ {
+  "ts": "2026-09-17T01:38:32.389723+00:00",
+  "pr": "dynamo-34b43ef-debugging-and-repair#64",
+  "type": "running",
+  "msg": "Status failing \u2192 running"
+ },
+ {
+  "ts": "2026-09-17T01:38:32.389723+00:00",
+  "pr": "dynamo-34b43ef-debugging-and-repair#64",
+  "type": "started",
+  "msg": "Check started: review"
+ },
+ {
+  "ts": "2026-09-17T01:38:32.389723+00:00",
+  "pr": "dynamo-34b43ef-debugging-and-repair#64",
+  "type": "passed",
+  "msg": "Check recovered: cosine_similarity"
+ },
+ {
+  "ts": "2026-09-17T01:38:32.389723+00:00",
+  "pr": "dynamo-34b43ef-debugging-and-repair#64",
+  "type": "passed",
+  "msg": "Check recovered: gate"
+ },
+ {
+  "ts": "2026-09-17T01:38:32.389723+00:00",
+  "pr": "dynamo-34b43ef-debugging-and-repair#64",
+  "type": "passed",
+  "msg": "Check passed: cosine_similarity"
+ },
+ {
+  "ts": "2026-09-17T01:38:32.389723+00:00",
+  "pr": "dynamo-4342043-file-and-media-operations#6",
+  "type": "started",
+  "msg": "Check started: pass2"
+ },
+ {
+  "ts": "2026-09-17T01:38:32.389723+00:00",
+  "pr": "dynamo-4342043-file-and-media-operations#6",
+  "type": "passed",
+  "msg": "Check passed: ratelimit"
+ },
+ {
+  "ts": "2026-09-17T01:38:32.389723+00:00",
+  "pr": "dynamo-4342043-file-and-media-operations#6",
+  "type": "passed",
+  "msg": "Check passed: validation"
  }
 ]
