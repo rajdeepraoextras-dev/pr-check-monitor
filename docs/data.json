@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-17T23:50:25.068006+00:00",
+  "snapshot_time": "2026-09-17T23:52:20.311829+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -433,15 +433,11 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
-        {
-          "name": "qc_eval",
-          "started_at": "2026-09-17T23:44:11Z"
-        },
         {
           "name": "qc_exec",
           "started_at": "2026-09-17T23:44:11Z"
@@ -449,16 +445,6 @@
       ],
       "queued": [],
       "checks": [
-        {
-          "name": "qc_eval",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-17T23:44:11Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35283244624/job/105424952547",
-          "app": "github-actions"
-        },
         {
           "name": "qc_exec",
           "state": "running",
@@ -517,6 +503,16 @@
           "completed_at": "2026-09-17T23:30:54Z",
           "duration_sec": 2073,
           "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35283244624/job/105413647862",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T23:44:11Z",
+          "completed_at": "2026-09-17T23:50:27Z",
+          "duration_sec": 376,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35283244624/job/105424952547",
           "app": "github-actions"
         },
         {
@@ -582,7 +578,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-17T01:26:26.296133+00:00",
-      "last_change": "2026-09-17T23:45:01.182634+00:00"
+      "last_change": "2026-09-17T23:52:20.311829+00:00"
     },
     {
       "repo": "dynamo-6612141-software-engineering",
