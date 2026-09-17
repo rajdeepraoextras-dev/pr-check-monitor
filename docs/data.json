@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-17T02:32:30.330087+00:00",
+  "snapshot_time": "2026-09-17T02:34:42.060306+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: document the enforced conform contract and verify CFR and audio content from the protected input",
       "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/pull/6",
       "createdAt": "2026-09-17T01:27:30Z",
-      "updatedAt": "2026-09-17T02:32:34Z",
+      "updatedAt": "2026-09-17T02:32:48Z",
       "sha": "34b7760c38ec83ab8fd81612d1ed16bd54598066",
       "draft": false,
       "mergeable": true,
@@ -24,25 +24,17 @@
       "head": "rework/4342043-vfr-conform-sync",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
       "overall": "failing",
-      "passed": 8,
+      "passed": 9,
       "total": 17,
       "skipped": 6,
       "failed": [
-        "ava_review"
+        "ava_review",
+        "gate"
       ],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-17T02:32:43Z"
-        },
-        {
-          "name": "gate",
-          "started_at": "2026-09-17T02:32:43Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -56,22 +48,12 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-17T02:32:43Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35170632737/job/105054073085",
-          "app": "github-actions"
-        },
-        {
           "name": "gate",
-          "state": "running",
-          "conclusion": null,
+          "state": "failed",
+          "conclusion": "failure",
           "started_at": "2026-09-17T02:32:43Z",
-          "completed_at": null,
-          "duration_sec": null,
+          "completed_at": "2026-09-17T02:32:52Z",
+          "duration_sec": 9,
           "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35170632737/job/105054073111",
           "app": "github-actions"
         },
@@ -83,6 +65,16 @@
           "completed_at": "2026-09-17T01:28:01Z",
           "duration_sec": 23,
           "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35170632737/job/105041333196",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T02:32:43Z",
+          "completed_at": "2026-09-17T02:32:58Z",
+          "duration_sec": 15,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35170632737/job/105054073085",
           "app": "github-actions"
         },
         {
@@ -218,7 +210,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-17T01:28:27.637787+00:00",
-      "last_change": "2026-09-17T02:32:30.330087+00:00"
+      "last_change": "2026-09-17T02:34:42.060306+00:00"
     },
     {
       "repo": "dynamo-34b43ef-debugging-and-repair",
