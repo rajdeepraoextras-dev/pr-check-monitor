@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-17T02:36:53.216121+00:00",
+  "snapshot_time": "2026-09-17T02:39:08.135269+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -549,7 +549,7 @@
       "title": "Fix leased-buffer race, seven-file census and per-record ground truth",
       "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/pull/9",
       "createdAt": "2026-09-17T01:12:22Z",
-      "updatedAt": "2026-09-17T02:22:34Z",
+      "updatedAt": "2026-09-17T02:38:17Z",
       "sha": "c416d1b67339d7125ccf6285167136de7b80861b",
       "draft": false,
       "mergeable": true,
@@ -563,26 +563,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 11,
-      "total": 13,
+      "passed": 13,
+      "total": 15,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_eval",
-          "started_at": "2026-09-17T02:22:28Z"
+          "name": "trials",
+          "started_at": "2026-09-17T02:38:10Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
+          "name": "trials",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-17T02:22:28Z",
+          "started_at": "2026-09-17T02:38:10Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35172033984/job/105052063855",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35172033984/job/105055155582",
           "app": "github-actions"
         },
         {
@@ -636,6 +636,16 @@
           "app": "github-actions"
         },
         {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T02:22:28Z",
+          "completed_at": "2026-09-17T02:37:51Z",
+          "duration_sec": 923,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35172033984/job/105052063855",
+          "app": "github-actions"
+        },
+        {
           "name": "qc_exec",
           "state": "passed",
           "conclusion": "success",
@@ -643,6 +653,16 @@
           "completed_at": "2026-09-17T02:28:38Z",
           "duration_sec": 370,
           "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35172033984/job/105052063901",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T02:37:53Z",
+          "completed_at": "2026-09-17T02:38:08Z",
+          "duration_sec": 15,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35172033984/job/105055103230",
           "app": "github-actions"
         },
         {
@@ -708,7 +728,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-17T01:14:26.443120+00:00",
-      "last_change": "2026-09-17T02:30:22.043154+00:00"
+      "last_change": "2026-09-17T02:39:08.135269+00:00"
     },
     {
       "repo": "dynamo-1d01028-scientific-computing-and-domain-science",
