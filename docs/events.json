@@ -1,65 +1,5 @@
 [
  {
-  "ts": "2026-09-16T17:04:02.757498+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "passed",
-  "msg": "Check passed: validation"
- },
- {
-  "ts": "2026-09-16T17:04:53.060759+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-16T17:04:53.060759+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-16T17:06:23.741914+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-16T17:06:23.741914+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-16T17:08:03.564701+00:00",
-  "pr": "dynamo-0183436-machine-learning-and-ai#8",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-16T17:08:03.564701+00:00",
-  "pr": "dynamo-0183436-machine-learning-and-ai#8",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-16T17:08:03.564701+00:00",
-  "pr": "dynamo-0183436-machine-learning-and-ai#8",
-  "type": "passed",
-  "msg": "Check passed: validation"
- },
- {
-  "ts": "2026-09-16T17:09:37.106024+00:00",
-  "pr": "dynamo-e079d63-hardware-embedded-and-low-level-systems#7",
-  "type": "push",
-  "msg": "New commit pushed (10bb09f)"
- },
- {
-  "ts": "2026-09-16T17:09:37.106024+00:00",
-  "pr": "dynamo-e079d63-hardware-embedded-and-low-level-systems#7",
-  "type": "running",
-  "msg": "Status failing \u2192 running"
- },
- {
   "ts": "2026-09-16T17:09:37.106024+00:00",
   "pr": "dynamo-e079d63-hardware-embedded-and-low-level-systems#7",
   "type": "started",
@@ -2396,6 +2336,66 @@
  {
   "ts": "2026-09-17T00:16:02.330163+00:00",
   "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-17T00:20:01.932886+00:00",
+  "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "push",
+  "msg": "New commit pushed (9165033)"
+ },
+ {
+  "ts": "2026-09-17T00:20:01.932886+00:00",
+  "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "running",
+  "msg": "Status failing \u2192 running"
+ },
+ {
+  "ts": "2026-09-17T00:20:01.932886+00:00",
+  "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "started",
+  "msg": "Check started: cosine_similarity"
+ },
+ {
+  "ts": "2026-09-17T00:20:01.932886+00:00",
+  "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "passed",
+  "msg": "Check recovered: gate"
+ },
+ {
+  "ts": "2026-09-17T00:20:01.932886+00:00",
+  "pr": "dynamo-0183436-machine-learning-and-ai#8",
+  "type": "passed",
+  "msg": "Check recovered: qc_gate"
+ },
+ {
+  "ts": "2026-09-17T00:20:01.932886+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-17T00:20:01.932886+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "started",
+  "msg": "Check started: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-17T00:20:01.932886+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-17T00:20:01.932886+00:00",
+  "pr": "dynamo-24667f6-security#7",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-17T00:20:01.932886+00:00",
+  "pr": "dynamo-24667f6-security#7",
   "type": "passed",
   "msg": "Check passed: claude-cost-report"
  }
