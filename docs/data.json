@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-17T22:36:57.647233+00:00",
+  "snapshot_time": "2026-09-17T22:39:06.565934+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -419,7 +419,7 @@
       "title": "Rework: grade the refreshed continuation bytes, the required reconcile helpers, and long journals",
       "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/pull/6",
       "createdAt": "2026-09-17T01:23:22Z",
-      "updatedAt": "2026-09-17T22:29:34Z",
+      "updatedAt": "2026-09-17T22:37:55Z",
       "sha": "a52d91f404218d006a3418016a036e902ca456a1",
       "draft": false,
       "mergeable": true,
@@ -430,29 +430,37 @@
       "head": "rework/f357766-reconcile-helpers",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
-      "passed": 8,
-      "total": 10,
-      "skipped": 1,
-      "failed": [],
-      "running": [
-        {
-          "name": "ava_review",
-          "started_at": "2026-09-17T22:24:46Z"
-        }
+      "overall": "failing",
+      "passed": 9,
+      "total": 17,
+      "skipped": 6,
+      "failed": [
+        "ava_review",
+        "gate"
       ],
+      "running": [],
       "queued": [],
       "checks": [
         {
           "name": "ava_review",
-          "state": "running",
-          "conclusion": null,
+          "state": "failed",
+          "conclusion": "failure",
           "started_at": "2026-09-17T22:24:46Z",
-          "completed_at": null,
-          "duration_sec": null,
+          "completed_at": "2026-09-17T22:37:46Z",
+          "duration_sec": 780,
           "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35277657394/job/105405455759",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-17T22:37:49Z",
+          "completed_at": "2026-09-17T22:37:58Z",
+          "duration_sec": 9,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35277657394/job/105408888715",
           "app": "github-actions"
         },
         {
@@ -463,6 +471,16 @@
           "completed_at": "2026-09-17T21:37:21Z",
           "duration_sec": 25,
           "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35277657394/job/105392032877",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T22:37:49Z",
+          "completed_at": "2026-09-17T22:38:04Z",
+          "duration_sec": 15,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35277657394/job/105408888665",
           "app": "github-actions"
         },
         {
@@ -544,11 +562,61 @@
           "duration_sec": 0,
           "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35277657394/job/105405457169",
           "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T22:37:47Z",
+          "completed_at": "2026-09-17T22:37:47Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35277657394/job/105408888333",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T22:37:47Z",
+          "completed_at": "2026-09-17T22:37:47Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35277657394/job/105408888298",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T22:37:47Z",
+          "completed_at": "2026-09-17T22:37:47Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35277657394/job/105408889203",
+          "app": "github-actions"
+        },
+        {
+          "name": "tier1",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T22:37:47Z",
+          "completed_at": "2026-09-17T22:37:46Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35277657394/job/105408888163",
+          "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T22:37:47Z",
+          "completed_at": "2026-09-17T22:37:47Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35277657394/job/105408889345",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-17T01:26:26.296133+00:00",
-      "last_change": "2026-09-17T22:31:06.774723+00:00"
+      "last_change": "2026-09-17T22:39:06.565934+00:00"
     },
     {
       "repo": "dynamo-6612141-software-engineering",
