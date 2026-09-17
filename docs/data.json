@@ -1,11 +1,69 @@
 {
-  "snapshot_time": "2026-09-17T01:26:06.745852+00:00",
+  "snapshot_time": "2026-09-17T01:28:05.219883+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-4342043-file-and-media-operations",
+      "full_repo": "handshake-project-dynamo/dynamo-4342043-file-and-media-operations",
+      "num": "6",
+      "title": "Rework: document the enforced conform contract and verify CFR and audio content from the protected input",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/pull/6",
+      "createdAt": "2026-09-17T01:27:30Z",
+      "updatedAt": "2026-09-17T01:27:54Z",
+      "sha": "34b7760c38ec83ab8fd81612d1ed16bd54598066",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 721,
+      "deletions": 214,
+      "changedFiles": 5,
+      "head": "rework/4342043-vfr-conform-sync",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 1,
+      "total": 2,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "cosine_similarity",
+          "started_at": "2026-09-17T01:28:03Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "cosine_similarity",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-17T01:28:03Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35170632737/job/105041412513",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T01:27:38Z",
+          "completed_at": "2026-09-17T01:28:01Z",
+          "duration_sec": 23,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35170632737/job/105041333196",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-17T01:28:27.637787+00:00",
+      "last_change": "2026-09-17T01:28:05.219883+00:00"
+    },
     {
       "repo": "dynamo-34b43ef-debugging-and-repair",
       "full_repo": "handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair",
