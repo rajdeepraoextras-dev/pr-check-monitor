@@ -1,11 +1,285 @@
 {
-  "snapshot_time": "2026-09-17T01:23:51.869466+00:00",
+  "snapshot_time": "2026-09-17T01:26:06.745852+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-34b43ef-debugging-and-repair",
+      "full_repo": "handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair",
+      "num": "64",
+      "title": "Rework: honour destination writability in writeExport and isolate it in the verifier",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/pull/64",
+      "createdAt": "2026-09-17T01:23:30Z",
+      "updatedAt": "2026-09-17T01:25:43Z",
+      "sha": "df9bfa6fa98eea5b6b0bf1ed656f505c73eb8aef",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 123,
+      "deletions": 5,
+      "changedFiles": 3,
+      "head": "rework/34b43ef-writable-lifecycle",
+      "base": "main",
+      "labels": [
+        "needs-revision"
+      ],
+      "overall": "failing",
+      "passed": 2,
+      "total": 17,
+      "skipped": 13,
+      "failed": [
+        "cosine_similarity",
+        "gate"
+      ],
+      "running": [],
+      "queued": [],
+      "checks": [
+        {
+          "name": "cosine_similarity",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-17T01:24:03Z",
+          "completed_at": "2026-09-17T01:25:34Z",
+          "duration_sec": 91,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35170369825/job/105040631235",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-17T01:25:37Z",
+          "completed_at": "2026-09-17T01:25:46Z",
+          "duration_sec": 9,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35170369825/job/105040942445",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T01:23:37Z",
+          "completed_at": "2026-09-17T01:24:00Z",
+          "duration_sec": 23,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35170369825/job/105040546511",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T01:25:38Z",
+          "completed_at": "2026-09-17T01:25:52Z",
+          "duration_sec": 14,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35170369825/job/105040942510",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T01:25:35Z",
+          "completed_at": "2026-09-17T01:25:35Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35170369825/job/105040941713",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T01:25:35Z",
+          "completed_at": "2026-09-17T01:25:35Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35170369825/job/105040941441",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T01:25:35Z",
+          "completed_at": "2026-09-17T01:25:35Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35170369825/job/105040941554",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T01:25:35Z",
+          "completed_at": "2026-09-17T01:25:35Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35170369825/job/105040941933",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T01:25:35Z",
+          "completed_at": "2026-09-17T01:25:35Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35170369825/job/105040942362",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T01:25:36Z",
+          "completed_at": "2026-09-17T01:25:35Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35170369825/job/105040942764",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T01:25:35Z",
+          "completed_at": "2026-09-17T01:25:35Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35170369825/job/105040942658",
+          "app": "github-actions"
+        },
+        {
+          "name": "ratelimit",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T01:25:35Z",
+          "completed_at": "2026-09-17T01:25:35Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35170369825/job/105040941160",
+          "app": "github-actions"
+        },
+        {
+          "name": "review",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T01:25:35Z",
+          "completed_at": "2026-09-17T01:25:34Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35170369825/job/105040939918",
+          "app": "github-actions"
+        },
+        {
+          "name": "similarity",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T01:25:35Z",
+          "completed_at": "2026-09-17T01:25:34Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35170369825/job/105040940165",
+          "app": "github-actions"
+        },
+        {
+          "name": "tier1",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T01:25:35Z",
+          "completed_at": "2026-09-17T01:25:35Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35170369825/job/105040942211",
+          "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T01:25:36Z",
+          "completed_at": "2026-09-17T01:25:35Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35170369825/job/105040942796",
+          "app": "github-actions"
+        },
+        {
+          "name": "validation",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-17T01:25:35Z",
+          "completed_at": "2026-09-17T01:25:34Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-34b43ef-debugging-and-repair/actions/runs/35170369825/job/105040940873",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-17T01:26:22.813609+00:00",
+      "last_change": "2026-09-17T01:26:06.745852+00:00"
+    },
+    {
+      "repo": "dynamo-f357766-software-engineering",
+      "full_repo": "handshake-project-dynamo/dynamo-f357766-software-engineering",
+      "num": "6",
+      "title": "Rework: grade the refreshed continuation bytes, the required reconcile helpers, and long journals",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/pull/6",
+      "createdAt": "2026-09-17T01:23:22Z",
+      "updatedAt": "2026-09-17T01:25:36Z",
+      "sha": "8878741795613b82822ada316b344d0edda89c08",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 2094,
+      "deletions": 235,
+      "changedFiles": 6,
+      "head": "rework/f357766-reconcile-helpers",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 2,
+      "total": 3,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "review",
+          "started_at": "2026-09-17T01:25:27Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-17T01:25:27Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35170361121/job/105040907704",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T01:23:29Z",
+          "completed_at": "2026-09-17T01:23:54Z",
+          "duration_sec": 25,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35170361121/job/105040521699",
+          "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T01:23:56Z",
+          "completed_at": "2026-09-17T01:25:25Z",
+          "duration_sec": 89,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f357766-software-engineering/actions/runs/35170361121/job/105040610552",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-17T01:26:26.296133+00:00",
+      "last_change": "2026-09-17T01:26:06.745852+00:00"
+    },
     {
       "repo": "dynamo-6612141-software-engineering",
       "full_repo": "handshake-project-dynamo/dynamo-6612141-software-engineering",
