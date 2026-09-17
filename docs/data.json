@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-17T21:29:57.132984+00:00",
+  "snapshot_time": "2026-09-17T21:31:42.469300+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -26,29 +26,14 @@
       "labels": [
         "accepted"
       ],
-      "overall": "running",
-      "passed": 15,
+      "overall": "passed",
+      "passed": 16,
       "total": 17,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-17T21:29:45Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
-        {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-17T21:29:45Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35259129278/job/105389843615",
-          "app": "github-actions"
-        },
         {
           "name": "ava_review",
           "state": "passed",
@@ -67,6 +52,16 @@
           "completed_at": "2026-09-17T18:45:20Z",
           "duration_sec": 26,
           "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35259129278/job/105335199700",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T21:29:45Z",
+          "completed_at": "2026-09-17T21:30:02Z",
+          "duration_sec": 17,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4342043-file-and-media-operations/actions/runs/35259129278/job/105389843615",
           "app": "github-actions"
         },
         {
@@ -212,7 +207,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-17T01:28:27.637787+00:00",
-      "last_change": "2026-09-17T21:29:57.132984+00:00"
+      "last_change": "2026-09-17T21:31:42.469300+00:00"
     },
     {
       "repo": "dynamo-34b43ef-debugging-and-repair",
