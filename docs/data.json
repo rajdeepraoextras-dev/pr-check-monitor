@@ -1,11 +1,69 @@
 {
-  "snapshot_time": "2026-09-17T01:11:51.899125+00:00",
+  "snapshot_time": "2026-09-17T01:14:20.993884+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-6612141-software-engineering",
+      "full_repo": "handshake-project-dynamo/dynamo-6612141-software-engineering",
+      "num": "9",
+      "title": "Fix leased-buffer race, seven-file census and per-record ground truth",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/pull/9",
+      "createdAt": "2026-09-17T01:12:22Z",
+      "updatedAt": "2026-09-17T01:12:47Z",
+      "sha": "2d14ac2de12d072530bcec5403e790b88b95e84a",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 644,
+      "deletions": 54,
+      "changedFiles": 8,
+      "head": "rework/6612141-lease-and-census",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 1,
+      "total": 2,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "cosine_similarity",
+          "started_at": "2026-09-17T01:12:57Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "cosine_similarity",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-17T01:12:57Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35169645966/job/105038426119",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-17T01:12:31Z",
+          "completed_at": "2026-09-17T01:12:54Z",
+          "duration_sec": 23,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6612141-software-engineering/actions/runs/35169645966/job/105038329392",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-17T01:14:26.443120+00:00",
+      "last_change": "2026-09-17T01:14:20.993884+00:00"
+    },
     {
       "repo": "dynamo-1d01028-scientific-computing-and-domain-science",
       "full_repo": "handshake-project-dynamo/dynamo-1d01028-scientific-computing-and-domain-science",
