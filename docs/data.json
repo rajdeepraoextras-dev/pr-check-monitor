@@ -1,11 +1,69 @@
 {
-  "snapshot_time": "2026-09-18T04:40:29.507728+00:00",
+  "snapshot_time": "2026-09-18T04:42:06.069482+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-73d0ec4-debugging-and-repair",
+      "full_repo": "handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair",
+      "num": "10",
+      "title": "Rework: make seal validation decide the answer and parse long dependency lists",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/pull/10",
+      "createdAt": "2026-09-18T04:40:36Z",
+      "updatedAt": "2026-09-18T04:41:02Z",
+      "sha": "26c289286c51c8611b08719841446c9e19f6f922",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 694,
+      "deletions": 66,
+      "changedFiles": 17,
+      "head": "rework-73d0ec4-seal-and-long-deps",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 1,
+      "total": 2,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "cosine_similarity",
+          "started_at": "2026-09-18T04:41:12Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "cosine_similarity",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-18T04:41:12Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35307870375/job/105483769500",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T04:40:44Z",
+          "completed_at": "2026-09-18T04:41:10Z",
+          "duration_sec": 26,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35307870375/job/105483679382",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-18T04:42:11.356227+00:00",
+      "last_change": "2026-09-18T04:42:06.069482+00:00"
+    },
     {
       "repo": "dynamo-84d5250-build-dependency-and-release-management",
       "full_repo": "handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management",
