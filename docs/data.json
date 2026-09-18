@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-18T08:11:19.475124+00:00",
+  "snapshot_time": "2026-09-18T08:13:08.786482+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: enforce the exact batch closing triggers in the verifier",
       "url": "https://github.com/handshake-project-dynamo/dynamo-cd443f7-machine-learning-and-ai/pull/8",
       "createdAt": "2026-09-18T07:02:54Z",
-      "updatedAt": "2026-09-18T08:07:48Z",
+      "updatedAt": "2026-09-18T08:12:47Z",
       "sha": "059507aaa03c346691a728f193e632f3b9dbcedf",
       "draft": false,
       "mergeable": true,
@@ -27,25 +27,32 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 9,
+      "total": 11,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "ava_review",
-          "started_at": "2026-09-18T07:59:16Z"
-        }
+      "running": [],
+      "queued": [
+        "tier1"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "ava_review",
-          "state": "running",
+          "name": "tier1",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-18T07:59:16Z",
+          "started_at": "2026-09-18T08:12:53Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-cd443f7-machine-learning-and-ai/actions/runs/35317596172/job/105530271852",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T07:59:16Z",
+          "completed_at": "2026-09-18T08:12:53Z",
+          "duration_sec": 817,
           "url": "https://github.com/handshake-project-dynamo/dynamo-cd443f7-machine-learning-and-ai/actions/runs/35317596172/job/105526608822",
           "app": "github-actions"
         },
@@ -142,7 +149,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-18T07:05:19.718409+00:00",
-      "last_change": "2026-09-18T08:09:29.720361+00:00"
+      "last_change": "2026-09-18T08:13:08.786482+00:00"
     },
     {
       "repo": "dynamo-73d0ec4-debugging-and-repair",
