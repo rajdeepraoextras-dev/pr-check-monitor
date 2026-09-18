@@ -1,11 +1,79 @@
 {
-  "snapshot_time": "2026-09-18T07:03:21.491844+00:00",
+  "snapshot_time": "2026-09-18T07:05:10.965450+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-cd443f7-machine-learning-and-ai",
+      "full_repo": "handshake-project-dynamo/dynamo-cd443f7-machine-learning-and-ai",
+      "num": "8",
+      "title": "Rework: enforce the exact batch closing triggers in the verifier",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-cd443f7-machine-learning-and-ai/pull/8",
+      "createdAt": "2026-09-18T07:02:54Z",
+      "updatedAt": "2026-09-18T07:05:04Z",
+      "sha": "059507aaa03c346691a728f193e632f3b9dbcedf",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 703,
+      "deletions": 114,
+      "changedFiles": 5,
+      "head": "rework/cd443f7-batch-close-triggers",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 2,
+      "total": 3,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "review",
+          "started_at": "2026-09-18T07:04:55Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-18T07:04:55Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-cd443f7-machine-learning-and-ai/actions/runs/35317596172/job/105513023700",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T07:03:02Z",
+          "completed_at": "2026-09-18T07:03:32Z",
+          "duration_sec": 30,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-cd443f7-machine-learning-and-ai/actions/runs/35317596172/job/105512571944",
+          "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T07:03:34Z",
+          "completed_at": "2026-09-18T07:04:53Z",
+          "duration_sec": 79,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-cd443f7-machine-learning-and-ai/actions/runs/35317596172/job/105512698997",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-18T07:05:19.718409+00:00",
+      "last_change": "2026-09-18T07:05:10.965450+00:00"
+    },
     {
       "repo": "dynamo-73d0ec4-debugging-and-repair",
       "full_repo": "handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair",
@@ -121,7 +189,7 @@
       "title": "Rework: grade versions as strict SemVer 2.0.0 instead of PEP 440 (Fixes #7)",
       "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/pull/8",
       "createdAt": "2026-09-18T04:17:49Z",
-      "updatedAt": "2026-09-18T05:58:14Z",
+      "updatedAt": "2026-09-18T07:04:54Z",
       "sha": "cc371fc1261f633d6f0b51c829cbbaffce241a56",
       "draft": false,
       "mergeable": true,
@@ -132,28 +200,36 @@
       "head": "rework/84d5250-semver-prerelease",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
-      "passed": 13,
-      "total": 15,
+      "overall": "failing",
+      "passed": 14,
+      "total": 17,
       "skipped": 1,
-      "failed": [],
-      "running": [
-        {
-          "name": "trials",
-          "started_at": "2026-09-18T05:58:07Z"
-        }
+      "failed": [
+        "gate",
+        "trials"
       ],
+      "running": [],
       "queued": [],
       "checks": [
         {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-18T07:04:47Z",
+          "completed_at": "2026-09-18T07:04:58Z",
+          "duration_sec": 11,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35306426221/job/105512988741",
+          "app": "github-actions"
+        },
+        {
           "name": "trials",
-          "state": "running",
-          "conclusion": null,
+          "state": "failed",
+          "conclusion": "failure",
           "started_at": "2026-09-18T05:58:07Z",
-          "completed_at": null,
-          "duration_sec": null,
+          "completed_at": "2026-09-18T07:04:45Z",
+          "duration_sec": 3998,
           "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35306426221/job/105498389453",
           "app": "github-actions"
         },
@@ -175,6 +251,16 @@
           "completed_at": "2026-09-18T04:18:22Z",
           "duration_sec": 26,
           "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35306426221/job/105479445430",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T07:04:47Z",
+          "completed_at": "2026-09-18T07:05:06Z",
+          "duration_sec": 19,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35306426221/job/105512988679",
           "app": "github-actions"
         },
         {
@@ -300,7 +386,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-18T04:18:54.258460+00:00",
-      "last_change": "2026-09-18T05:58:05.333525+00:00"
+      "last_change": "2026-09-18T07:05:10.965450+00:00"
     },
     {
       "repo": "dynamo-ec0883c-data-processing-and-etl",

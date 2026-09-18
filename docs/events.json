@@ -1,36 +1,6 @@
 [
  {
   "ts": "2026-09-17T01:38:32.389723+00:00",
-  "pr": "dynamo-34b43ef-debugging-and-repair#64",
-  "type": "started",
-  "msg": "Check started: review"
- },
- {
-  "ts": "2026-09-17T01:38:32.389723+00:00",
-  "pr": "dynamo-34b43ef-debugging-and-repair#64",
-  "type": "passed",
-  "msg": "Check recovered: cosine_similarity"
- },
- {
-  "ts": "2026-09-17T01:38:32.389723+00:00",
-  "pr": "dynamo-34b43ef-debugging-and-repair#64",
-  "type": "passed",
-  "msg": "Check recovered: gate"
- },
- {
-  "ts": "2026-09-17T01:38:32.389723+00:00",
-  "pr": "dynamo-34b43ef-debugging-and-repair#64",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
-  "ts": "2026-09-17T01:38:32.389723+00:00",
-  "pr": "dynamo-4342043-file-and-media-operations#6",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-17T01:38:32.389723+00:00",
   "pr": "dynamo-4342043-file-and-media-operations#6",
   "type": "passed",
   "msg": "Check passed: ratelimit"
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-73d0ec4-debugging-and-repair#10",
   "type": "passed",
   "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-18T07:05:10.965450+00:00",
+  "pr": "dynamo-cd443f7-machine-learning-and-ai#8",
+  "type": "discovered",
+  "msg": "PR discovered: Rework: enforce the exact batch closing triggers in the verifier"
+ },
+ {
+  "ts": "2026-09-18T07:05:10.965450+00:00",
+  "pr": "dynamo-84d5250-build-dependency-and-release-management#8",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-18T07:05:10.965450+00:00",
+  "pr": "dynamo-84d5250-build-dependency-and-release-management#8",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-18T07:05:10.965450+00:00",
+  "pr": "dynamo-84d5250-build-dependency-and-release-management#8",
+  "type": "failing",
+  "msg": "Check failed: trials"
+ },
+ {
+  "ts": "2026-09-18T07:05:10.965450+00:00",
+  "pr": "dynamo-84d5250-build-dependency-and-release-management#8",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
  }
 ]
