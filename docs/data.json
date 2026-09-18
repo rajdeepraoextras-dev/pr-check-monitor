@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-18T08:07:38.044585+00:00",
+  "snapshot_time": "2026-09-18T08:09:29.720361+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: enforce the exact batch closing triggers in the verifier",
       "url": "https://github.com/handshake-project-dynamo/dynamo-cd443f7-machine-learning-and-ai/pull/8",
       "createdAt": "2026-09-18T07:02:54Z",
-      "updatedAt": "2026-09-18T07:59:25Z",
+      "updatedAt": "2026-09-18T08:07:48Z",
       "sha": "059507aaa03c346691a728f193e632f3b9dbcedf",
       "draft": false,
       "mergeable": true,
@@ -27,17 +27,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "ava_review",
-          "started_at": "2026-09-18T07:59:16Z"
-        },
-        {
-          "name": "deep_review",
           "started_at": "2026-09-18T07:59:16Z"
         }
       ],
@@ -51,16 +47,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-cd443f7-machine-learning-and-ai/actions/runs/35317596172/job/105526608822",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-18T07:59:16Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-cd443f7-machine-learning-and-ai/actions/runs/35317596172/job/105526608753",
           "app": "github-actions"
         },
         {
@@ -81,6 +67,16 @@
           "completed_at": "2026-09-18T07:04:53Z",
           "duration_sec": 79,
           "url": "https://github.com/handshake-project-dynamo/dynamo-cd443f7-machine-learning-and-ai/actions/runs/35317596172/job/105512698997",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T07:59:16Z",
+          "completed_at": "2026-09-18T08:07:54Z",
+          "duration_sec": 518,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-cd443f7-machine-learning-and-ai/actions/runs/35317596172/job/105526608753",
           "app": "github-actions"
         },
         {
@@ -146,7 +142,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-18T07:05:19.718409+00:00",
-      "last_change": "2026-09-18T07:59:12.651916+00:00"
+      "last_change": "2026-09-18T08:09:29.720361+00:00"
     },
     {
       "repo": "dynamo-73d0ec4-debugging-and-repair",
@@ -435,7 +431,7 @@
       "title": "Rework: grade the output-parent rule the shipped image and the held-out harness both hid",
       "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/pull/11",
       "createdAt": "2026-09-18T04:03:48Z",
-      "updatedAt": "2026-09-18T08:04:30Z",
+      "updatedAt": "2026-09-18T08:08:30Z",
       "sha": "f1335c5aa8760940a8811cdb83a112df52d46ddd",
       "draft": false,
       "mergeable": true,
@@ -449,26 +445,23 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 2,
-      "total": 3,
+      "passed": 3,
+      "total": 4,
       "skipped": 0,
       "failed": [],
-      "running": [
-        {
-          "name": "review",
-          "started_at": "2026-09-18T08:04:20Z"
-        }
+      "running": [],
+      "queued": [
+        "similarity"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "review",
-          "state": "running",
+          "name": "similarity",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-18T08:04:20Z",
+          "started_at": "2026-09-18T08:08:38Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35322352079/job/105527954236",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35322352079/job/105529126866",
           "app": "github-actions"
         },
         {
@@ -490,11 +483,21 @@
           "duration_sec": 79,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35322352079/job/105527586275",
           "app": "github-actions"
+        },
+        {
+          "name": "review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T08:04:20Z",
+          "completed_at": "2026-09-18T08:08:37Z",
+          "duration_sec": 257,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35322352079/job/105527954236",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-18T04:05:08.571879+00:00",
-      "last_change": "2026-09-18T08:05:44.868922+00:00"
+      "last_change": "2026-09-18T08:09:29.720361+00:00"
     }
   ]
 }
