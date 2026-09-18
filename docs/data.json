@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-18T08:37:32.659790+00:00",
+  "snapshot_time": "2026-09-18T08:39:43.708407+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: enforce the exact batch closing triggers in the verifier",
       "url": "https://github.com/handshake-project-dynamo/dynamo-cd443f7-machine-learning-and-ai/pull/8",
       "createdAt": "2026-09-18T07:02:54Z",
-      "updatedAt": "2026-09-18T08:18:23Z",
+      "updatedAt": "2026-09-18T08:39:15Z",
       "sha": "059507aaa03c346691a728f193e632f3b9dbcedf",
       "draft": false,
       "mergeable": true,
@@ -27,26 +27,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 11,
-      "total": 13,
+      "passed": 13,
+      "total": 15,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_eval",
-          "started_at": "2026-09-18T08:18:17Z"
+          "name": "trials",
+          "started_at": "2026-09-18T08:39:07Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
+          "name": "trials",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-18T08:18:17Z",
+          "started_at": "2026-09-18T08:39:07Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-cd443f7-machine-learning-and-ai/actions/runs/35317596172/job/105531720622",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-cd443f7-machine-learning-and-ai/actions/runs/35317596172/job/105537317196",
           "app": "github-actions"
         },
         {
@@ -100,6 +100,16 @@
           "app": "github-actions"
         },
         {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T08:18:17Z",
+          "completed_at": "2026-09-18T08:38:47Z",
+          "duration_sec": 1230,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-cd443f7-machine-learning-and-ai/actions/runs/35317596172/job/105531720622",
+          "app": "github-actions"
+        },
+        {
           "name": "qc_exec",
           "state": "passed",
           "conclusion": "success",
@@ -107,6 +117,16 @@
           "completed_at": "2026-09-18T08:24:30Z",
           "duration_sec": 373,
           "url": "https://github.com/handshake-project-dynamo/dynamo-cd443f7-machine-learning-and-ai/actions/runs/35317596172/job/105531720589",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T08:38:50Z",
+          "completed_at": "2026-09-18T08:39:04Z",
+          "duration_sec": 14,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-cd443f7-machine-learning-and-ai/actions/runs/35317596172/job/105537243281",
           "app": "github-actions"
         },
         {
@@ -172,7 +192,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-18T07:05:19.718409+00:00",
-      "last_change": "2026-09-18T08:25:48.664725+00:00"
+      "last_change": "2026-09-18T08:39:43.708407+00:00"
     },
     {
       "repo": "dynamo-73d0ec4-debugging-and-repair",
