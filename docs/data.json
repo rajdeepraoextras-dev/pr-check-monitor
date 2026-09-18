@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-18T20:08:47.759128+00:00",
+  "snapshot_time": "2026-09-18T20:10:50.489744+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Fix correct_reference_solution and sound_verifier findings from #10 (validation residency) and clear the QC capacity block",
       "url": "https://github.com/handshake-project-dynamo/dynamo-ed0506b-model-training-and-ml-infrastructure/pull/13",
       "createdAt": "2026-09-18T18:20:53Z",
-      "updatedAt": "2026-09-18T19:40:47Z",
+      "updatedAt": "2026-09-18T20:09:42Z",
       "sha": "b331e1690b3b1f5a52ebe80c9448d2eca0109fd2",
       "draft": false,
       "mergeable": true,
@@ -24,31 +24,16 @@
       "head": "rework/ed0506b-trainloop-conformance-repair",
       "base": "main",
       "labels": [
-        "in-progress"
+        "accepted"
       ],
-      "overall": "running",
-      "passed": 13,
-      "total": 15,
+      "overall": "passed",
+      "passed": 16,
+      "total": 17,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "trials",
-          "started_at": "2026-09-18T19:40:40Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
-        {
-          "name": "trials",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-18T19:40:40Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ed0506b-model-training-and-ml-infrastructure/actions/runs/35379652878/job/105736973451",
-          "app": "github-actions"
-        },
         {
           "name": "ava_review",
           "state": "passed",
@@ -70,6 +55,16 @@
           "app": "github-actions"
         },
         {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T20:09:34Z",
+          "completed_at": "2026-09-18T20:09:51Z",
+          "duration_sec": 17,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ed0506b-model-training-and-ml-infrastructure/actions/runs/35379652878/job/105745587745",
+          "app": "github-actions"
+        },
+        {
           "name": "cosine_similarity",
           "state": "passed",
           "conclusion": "success",
@@ -87,6 +82,16 @@
           "completed_at": "2026-09-18T19:14:13Z",
           "duration_sec": 1091,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ed0506b-model-training-and-ml-infrastructure/actions/runs/35379652878/job/105723470257",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T20:09:34Z",
+          "completed_at": "2026-09-18T20:09:46Z",
+          "duration_sec": 12,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ed0506b-model-training-and-ml-infrastructure/actions/runs/35379652878/job/105745587843",
           "app": "github-actions"
         },
         {
@@ -170,6 +175,16 @@
           "app": "github-actions"
         },
         {
+          "name": "trials",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T19:40:40Z",
+          "completed_at": "2026-09-18T20:09:31Z",
+          "duration_sec": 1731,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ed0506b-model-training-and-ml-infrastructure/actions/runs/35379652878/job/105736973451",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -192,7 +207,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-18T18:22:50.220127+00:00",
-      "last_change": "2026-09-18T19:42:30.386625+00:00"
+      "last_change": "2026-09-18T20:10:50.489744+00:00"
     },
     {
       "repo": "dynamo-cd443f7-machine-learning-and-ai",
