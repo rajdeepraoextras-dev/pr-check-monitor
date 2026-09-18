@@ -2,24 +2,6 @@
  {
   "ts": "2026-09-17T02:09:21.805724+00:00",
   "pr": "dynamo-34b43ef-debugging-and-repair#64",
-  "type": "started",
-  "msg": "Check started: qc_eval"
- },
- {
-  "ts": "2026-09-17T02:09:21.805724+00:00",
-  "pr": "dynamo-34b43ef-debugging-and-repair#64",
-  "type": "started",
-  "msg": "Check started: qc_exec"
- },
- {
-  "ts": "2026-09-17T02:09:21.805724+00:00",
-  "pr": "dynamo-34b43ef-debugging-and-repair#64",
-  "type": "passed",
-  "msg": "Check passed: ava_review"
- },
- {
-  "ts": "2026-09-17T02:09:21.805724+00:00",
-  "pr": "dynamo-34b43ef-debugging-and-repair#64",
   "type": "passed",
   "msg": "Check passed: tier1"
  },
@@ -2398,5 +2380,23 @@
   "pr": "dynamo-ec0883c-data-processing-and-etl#11",
   "type": "passed",
   "msg": "Check passed: cosine_similarity"
+ },
+ {
+  "ts": "2026-09-18T07:29:27.907449+00:00",
+  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
+  "type": "started",
+  "msg": "Check started: validation"
+ },
+ {
+  "ts": "2026-09-18T07:29:27.907449+00:00",
+  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
+  "type": "passed",
+  "msg": "Check passed: review"
+ },
+ {
+  "ts": "2026-09-18T07:29:27.907449+00:00",
+  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
+  "type": "passed",
+  "msg": "Check passed: similarity"
  }
 ]
