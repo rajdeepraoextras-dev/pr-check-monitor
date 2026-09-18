@@ -1,41 +1,5 @@
 [
  {
-  "ts": "2026-09-17T20:13:41.326791+00:00",
-  "pr": "dynamo-f357766-software-engineering#6",
-  "type": "passed",
-  "msg": "Check recovered: gate"
- },
- {
-  "ts": "2026-09-17T20:15:29.604061+00:00",
-  "pr": "dynamo-f357766-software-engineering#6",
-  "type": "started",
-  "msg": "Check started: review"
- },
- {
-  "ts": "2026-09-17T20:15:29.604061+00:00",
-  "pr": "dynamo-f357766-software-engineering#6",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
-  "ts": "2026-09-17T20:21:00.280926+00:00",
-  "pr": "dynamo-f357766-software-engineering#6",
-  "type": "started",
-  "msg": "Check started: validation"
- },
- {
-  "ts": "2026-09-17T20:21:00.280926+00:00",
-  "pr": "dynamo-f357766-software-engineering#6",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
-  "ts": "2026-09-17T20:21:00.280926+00:00",
-  "pr": "dynamo-f357766-software-engineering#6",
-  "type": "passed",
-  "msg": "Check passed: similarity"
- },
- {
   "ts": "2026-09-17T20:21:00.280926+00:00",
   "pr": "dynamo-4342043-file-and-media-operations#6",
   "type": "passed",
@@ -2398,5 +2362,41 @@
   "pr": "dynamo-73d0ec4-debugging-and-repair#10",
   "type": "passed",
   "msg": "Check passed: pass2"
+ },
+ {
+  "ts": "2026-09-18T11:25:50.876562+00:00",
+  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-18T11:25:50.876562+00:00",
+  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
+  "type": "started",
+  "msg": "Check started: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-18T11:25:50.876562+00:00",
+  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-18T11:25:50.876562+00:00",
+  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
+  "type": "failing",
+  "msg": "Check failed: qc_gate"
+ },
+ {
+  "ts": "2026-09-18T11:25:50.876562+00:00",
+  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
+  "type": "passed",
+  "msg": "Check passed: qc_eval"
+ },
+ {
+  "ts": "2026-09-18T11:25:50.876562+00:00",
+  "pr": "dynamo-84d5250-build-dependency-and-release-management#8",
+  "type": "passed",
+  "msg": "Check passed: deep_review"
  }
 ]
