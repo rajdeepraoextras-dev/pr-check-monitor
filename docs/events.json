@@ -1,29 +1,5 @@
 [
  {
-  "ts": "2026-09-17T18:06:40.369142+00:00",
-  "pr": "dynamo-f357766-software-engineering#6",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-17T18:06:40.369142+00:00",
-  "pr": "dynamo-f357766-software-engineering#6",
-  "type": "passed",
-  "msg": "Check passed: validation"
- },
- {
-  "ts": "2026-09-17T18:14:44.293994+00:00",
-  "pr": "dynamo-4342043-file-and-media-operations#6",
-  "type": "started",
-  "msg": "Check started: ava_review"
- },
- {
-  "ts": "2026-09-17T18:14:44.293994+00:00",
-  "pr": "dynamo-4342043-file-and-media-operations#6",
-  "type": "started",
-  "msg": "Check started: deep_review"
- },
- {
   "ts": "2026-09-17T18:14:44.293994+00:00",
   "pr": "dynamo-4342043-file-and-media-operations#6",
   "type": "passed",
@@ -2398,5 +2374,29 @@
   "pr": "dynamo-73d0ec4-debugging-and-repair#10",
   "type": "passed",
   "msg": "Check passed: qc_eval"
+ },
+ {
+  "ts": "2026-09-18T10:05:51.644065+00:00",
+  "pr": "dynamo-73d0ec4-debugging-and-repair#10",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-18T10:05:51.644065+00:00",
+  "pr": "dynamo-73d0ec4-debugging-and-repair#10",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-18T10:05:51.644065+00:00",
+  "pr": "dynamo-73d0ec4-debugging-and-repair#10",
+  "type": "failing",
+  "msg": "Check failed: qc_gate"
+ },
+ {
+  "ts": "2026-09-18T10:05:51.644065+00:00",
+  "pr": "dynamo-73d0ec4-debugging-and-repair#10",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
  }
 ]
