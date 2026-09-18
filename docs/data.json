@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-18T19:12:34.375364+00:00",
+  "snapshot_time": "2026-09-18T19:14:46.761595+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Fix correct_reference_solution and sound_verifier findings from #10 (validation residency) and clear the QC capacity block",
       "url": "https://github.com/handshake-project-dynamo/dynamo-ed0506b-model-training-and-ml-infrastructure/pull/13",
       "createdAt": "2026-09-18T18:20:53Z",
-      "updatedAt": "2026-09-18T19:06:42Z",
+      "updatedAt": "2026-09-18T19:14:48Z",
       "sha": "b331e1690b3b1f5a52ebe80c9448d2eca0109fd2",
       "draft": false,
       "mergeable": true,
@@ -27,26 +27,34 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 10,
+      "total": 13,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "deep_review",
-          "started_at": "2026-09-18T18:56:02Z"
-        }
+      "running": [],
+      "queued": [
+        "qc_eval",
+        "qc_exec"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "deep_review",
-          "state": "running",
+          "name": "qc_eval",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-18T18:56:02Z",
+          "started_at": "2026-09-18T19:14:55Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ed0506b-model-training-and-ml-infrastructure/actions/runs/35379652878/job/105723470257",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ed0506b-model-training-and-ml-infrastructure/actions/runs/35379652878/job/105729267260",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "queued",
+          "conclusion": null,
+          "started_at": "2026-09-18T19:14:55Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ed0506b-model-training-and-ml-infrastructure/actions/runs/35379652878/job/105729267338",
           "app": "github-actions"
         },
         {
@@ -77,6 +85,16 @@
           "completed_at": "2026-09-18T18:23:11Z",
           "duration_sec": 102,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ed0506b-model-training-and-ml-infrastructure/actions/runs/35379652878/job/105712690794",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T18:56:02Z",
+          "completed_at": "2026-09-18T19:14:13Z",
+          "duration_sec": 1091,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ed0506b-model-training-and-ml-infrastructure/actions/runs/35379652878/job/105723470257",
           "app": "github-actions"
         },
         {
@@ -120,6 +138,16 @@
           "app": "github-actions"
         },
         {
+          "name": "tier1",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T19:14:16Z",
+          "completed_at": "2026-09-18T19:14:54Z",
+          "duration_sec": 38,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ed0506b-model-training-and-ml-infrastructure/actions/runs/35379652878/job/105729058989",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -142,7 +170,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-18T18:22:50.220127+00:00",
-      "last_change": "2026-09-18T19:08:15.924134+00:00"
+      "last_change": "2026-09-18T19:14:46.761595+00:00"
     },
     {
       "repo": "dynamo-cd443f7-machine-learning-and-ai",
