@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-18T09:56:29.768279+00:00",
+  "snapshot_time": "2026-09-18T09:58:19.853300+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -230,17 +230,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "qc_eval",
-          "started_at": "2026-09-18T09:54:56Z"
-        },
-        {
-          "name": "qc_exec",
           "started_at": "2026-09-18T09:54:56Z"
         }
       ],
@@ -254,16 +250,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35324617427/job/105558224063",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-18T09:54:56Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35324617427/job/105558224087",
           "app": "github-actions"
         },
         {
@@ -314,6 +300,16 @@
           "completed_at": "2026-09-18T09:45:05Z",
           "duration_sec": 4065,
           "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35324617427/job/105536840640",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T09:54:56Z",
+          "completed_at": "2026-09-18T09:58:24Z",
+          "duration_sec": 208,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35324617427/job/105558224087",
           "app": "github-actions"
         },
         {
@@ -379,7 +375,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-18T04:42:11.356227+00:00",
-      "last_change": "2026-09-18T09:56:29.768279+00:00"
+      "last_change": "2026-09-18T09:58:19.853300+00:00"
     },
     {
       "repo": "dynamo-84d5250-build-dependency-and-release-management",
