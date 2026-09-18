@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-18T12:06:48.989029+00:00",
+  "snapshot_time": "2026-09-18T12:08:38.130664+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -592,7 +592,7 @@
       "title": "Rework: grade the output-parent rule the shipped image and the held-out harness both hid",
       "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/pull/11",
       "createdAt": "2026-09-18T04:03:48Z",
-      "updatedAt": "2026-09-18T11:41:13Z",
+      "updatedAt": "2026-09-18T12:08:19Z",
       "sha": "47bd1164910a131c1931c0c79f6adfffd0fd1700",
       "draft": false,
       "mergeable": true,
@@ -606,26 +606,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-18T11:41:05Z"
+          "name": "ava_review",
+          "started_at": "2026-09-18T12:08:13Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-18T12:08:13Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "pass2",
+          "name": "ava_review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-18T11:41:05Z",
+          "started_at": "2026-09-18T12:08:13Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35340134150/job/105586133709",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35340134150/job/105593249791",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-18T12:08:13Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35340134150/job/105593249785",
           "app": "github-actions"
         },
         {
@@ -646,6 +660,16 @@
           "completed_at": "2026-09-18T11:34:32Z",
           "duration_sec": 95,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35340134150/job/105584023542",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T11:41:05Z",
+          "completed_at": "2026-09-18T12:08:10Z",
+          "duration_sec": 1625,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35340134150/job/105586133709",
           "app": "github-actions"
         },
         {
@@ -687,11 +711,21 @@
           "duration_sec": 60,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35340134150/job/105585815006",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-18T12:08:11Z",
+          "completed_at": "2026-09-18T12:08:10Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35340134150/job/105593251337",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-18T04:05:08.571879+00:00",
-      "last_change": "2026-09-18T11:41:07.032095+00:00"
+      "last_change": "2026-09-18T12:08:38.130664+00:00"
     }
   ]
 }
