@@ -1,29 +1,5 @@
 [
  {
-  "ts": "2026-09-17T00:24:13.986854+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "running",
-  "msg": "Status failing \u2192 running"
- },
- {
-  "ts": "2026-09-17T00:24:13.986854+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "started",
-  "msg": "Check started: cosine_similarity"
- },
- {
-  "ts": "2026-09-17T00:24:13.986854+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "passed",
-  "msg": "Check recovered: gate"
- },
- {
-  "ts": "2026-09-17T00:24:13.986854+00:00",
-  "pr": "dynamo-24667f6-security#7",
-  "type": "passed",
-  "msg": "Check recovered: pass2"
- },
- {
   "ts": "2026-09-17T00:26:14.323238+00:00",
   "pr": "dynamo-24667f6-security#7",
   "type": "started",
@@ -2398,5 +2374,29 @@
   "pr": "dynamo-73d0ec4-debugging-and-repair#10",
   "type": "passed",
   "msg": "Check passed: deep_review"
+ },
+ {
+  "ts": "2026-09-18T05:56:25.261188+00:00",
+  "pr": "dynamo-73d0ec4-debugging-and-repair#10",
+  "type": "started",
+  "msg": "Check started: qc_eval"
+ },
+ {
+  "ts": "2026-09-18T05:56:25.261188+00:00",
+  "pr": "dynamo-73d0ec4-debugging-and-repair#10",
+  "type": "started",
+  "msg": "Check started: qc_exec"
+ },
+ {
+  "ts": "2026-09-18T05:56:25.261188+00:00",
+  "pr": "dynamo-73d0ec4-debugging-and-repair#10",
+  "type": "passed",
+  "msg": "Check passed: ava_review"
+ },
+ {
+  "ts": "2026-09-18T05:56:25.261188+00:00",
+  "pr": "dynamo-73d0ec4-debugging-and-repair#10",
+  "type": "passed",
+  "msg": "Check passed: tier1"
  }
 ]
