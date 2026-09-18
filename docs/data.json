@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-18T12:21:54.266083+00:00",
+  "snapshot_time": "2026-09-18T12:23:49.905971+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -606,17 +606,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "qc_eval",
-          "started_at": "2026-09-18T12:17:54Z"
-        },
-        {
-          "name": "qc_exec",
           "started_at": "2026-09-18T12:17:54Z"
         }
       ],
@@ -630,16 +626,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35340134150/job/105595916027",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-18T12:17:54Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35340134150/job/105595916015",
           "app": "github-actions"
         },
         {
@@ -690,6 +676,16 @@
           "completed_at": "2026-09-18T12:08:10Z",
           "duration_sec": 1625,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35340134150/job/105586133709",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T12:17:54Z",
+          "completed_at": "2026-09-18T12:23:12Z",
+          "duration_sec": 318,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35340134150/job/105595916015",
           "app": "github-actions"
         },
         {
@@ -755,7 +751,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-18T04:05:08.571879+00:00",
-      "last_change": "2026-09-18T12:18:03.188606+00:00"
+      "last_change": "2026-09-18T12:23:49.905971+00:00"
     }
   ]
 }
