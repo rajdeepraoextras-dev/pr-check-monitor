@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-18T06:36:51.275498+00:00",
+  "snapshot_time": "2026-09-18T06:38:51.591776+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,204 +13,56 @@
       "title": "Rework: make seal validation decide the answer and parse long dependency lists",
       "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/pull/10",
       "createdAt": "2026-09-18T04:40:36Z",
-      "updatedAt": "2026-09-18T06:03:08Z",
-      "sha": "26c289286c51c8611b08719841446c9e19f6f922",
+      "updatedAt": "2026-09-18T06:38:04Z",
+      "sha": "e814a99528a981a5823659137adaf9e7fc27c71f",
       "draft": false,
       "mergeable": true,
       "reviewDecision": "",
-      "additions": 694,
+      "additions": 800,
       "deletions": 66,
       "changedFiles": 17,
       "head": "rework-73d0ec4-seal-and-long-deps",
       "base": "main",
       "labels": [
-        "needs-revision"
+        "in-progress"
       ],
-      "overall": "failing",
-      "passed": 13,
-      "total": 17,
-      "skipped": 2,
-      "failed": [
-        "gate",
-        "qc_gate"
+      "overall": "running",
+      "passed": 1,
+      "total": 2,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "cosine_similarity",
+          "started_at": "2026-09-18T06:38:12Z"
+        }
       ],
-      "running": [],
       "queued": [],
       "checks": [
         {
-          "name": "gate",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-18T06:03:02Z",
-          "completed_at": "2026-09-18T06:03:11Z",
-          "duration_sec": 9,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35307870375/job/105499381270",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_gate",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-18T06:02:45Z",
-          "completed_at": "2026-09-18T06:03:00Z",
-          "duration_sec": 15,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35307870375/job/105499323173",
-          "app": "github-actions"
-        },
-        {
-          "name": "ava_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-18T05:45:12Z",
-          "completed_at": "2026-09-18T05:55:38Z",
-          "duration_sec": 626,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35307870375/job/105495887126",
+          "name": "cosine_similarity",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-18T06:38:12Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35315698083/job/105506858736",
           "app": "github-actions"
         },
         {
           "name": "changes",
           "state": "passed",
           "conclusion": "success",
-          "started_at": "2026-09-18T04:40:44Z",
-          "completed_at": "2026-09-18T04:41:10Z",
-          "duration_sec": 26,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35307870375/job/105483679382",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-18T06:03:03Z",
-          "completed_at": "2026-09-18T06:03:19Z",
-          "duration_sec": 16,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35307870375/job/105499381318",
-          "app": "github-actions"
-        },
-        {
-          "name": "cosine_similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-18T04:41:12Z",
-          "completed_at": "2026-09-18T04:42:18Z",
-          "duration_sec": 66,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35307870375/job/105483769500",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-18T05:45:12Z",
-          "completed_at": "2026-09-18T05:51:50Z",
-          "duration_sec": 398,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35307870375/job/105495887171",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-18T04:48:30Z",
-          "completed_at": "2026-09-18T05:45:10Z",
-          "duration_sec": 3400,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35307870375/job/105485110028",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_eval",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-18T05:56:16Z",
-          "completed_at": "2026-09-18T06:02:43Z",
-          "duration_sec": 387,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35307870375/job/105498031504",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-18T05:56:16Z",
-          "completed_at": "2026-09-18T06:00:30Z",
-          "duration_sec": 254,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35307870375/job/105498031571",
-          "app": "github-actions"
-        },
-        {
-          "name": "ratelimit",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-18T04:48:20Z",
-          "completed_at": "2026-09-18T04:48:28Z",
-          "duration_sec": 8,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35307870375/job/105485079911",
-          "app": "github-actions"
-        },
-        {
-          "name": "review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-18T04:42:20Z",
-          "completed_at": "2026-09-18T04:46:22Z",
-          "duration_sec": 242,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35307870375/job/105483975159",
-          "app": "github-actions"
-        },
-        {
-          "name": "similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-18T04:46:24Z",
-          "completed_at": "2026-09-18T04:46:55Z",
-          "duration_sec": 31,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35307870375/job/105484728453",
-          "app": "github-actions"
-        },
-        {
-          "name": "tier1",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-18T05:55:41Z",
-          "completed_at": "2026-09-18T05:56:14Z",
-          "duration_sec": 33,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35307870375/job/105497919709",
-          "app": "github-actions"
-        },
-        {
-          "name": "validation",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-18T04:47:05Z",
-          "completed_at": "2026-09-18T04:48:18Z",
-          "duration_sec": 73,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35307870375/job/105484832716",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-18T05:45:10Z",
-          "completed_at": "2026-09-18T05:45:10Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35307870375/job/105495888387",
-          "app": "github-actions"
-        },
-        {
-          "name": "trials",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-18T06:03:00Z",
-          "completed_at": "2026-09-18T06:03:00Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35307870375/job/105499381790",
+          "started_at": "2026-09-18T06:37:43Z",
+          "completed_at": "2026-09-18T06:38:10Z",
+          "duration_sec": 27,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35315698083/job/105506748777",
           "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-18T04:42:11.356227+00:00",
-      "last_change": "2026-09-18T06:04:56.177933+00:00"
+      "last_change": "2026-09-18T06:38:51.591776+00:00"
     },
     {
       "repo": "dynamo-84d5250-build-dependency-and-release-management",
@@ -407,7 +259,7 @@
       "title": "Rework: grade the output-parent rule the shipped image and the held-out harness both hid",
       "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/pull/11",
       "createdAt": "2026-09-18T04:03:48Z",
-      "updatedAt": "2026-09-18T06:33:51Z",
+      "updatedAt": "2026-09-18T06:38:43Z",
       "sha": "9f0b26ef969b91d5b5c55fe874f1f24c83db9904",
       "draft": false,
       "mergeable": true,
@@ -421,26 +273,23 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 2,
-      "total": 3,
+      "passed": 4,
+      "total": 5,
       "skipped": 0,
       "failed": [],
-      "running": [
-        {
-          "name": "review",
-          "started_at": "2026-09-18T06:33:41Z"
-        }
+      "running": [],
+      "queued": [
+        "validation"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "review",
-          "state": "running",
+          "name": "validation",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-18T06:33:41Z",
+          "started_at": "2026-09-18T06:38:52Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35315290620/job/105505863948",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35315290620/job/105507008516",
           "app": "github-actions"
         },
         {
@@ -462,11 +311,31 @@
           "duration_sec": 65,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35315290620/job/105505615447",
           "app": "github-actions"
+        },
+        {
+          "name": "review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T06:33:41Z",
+          "completed_at": "2026-09-18T06:38:15Z",
+          "duration_sec": 274,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35315290620/job/105505863948",
+          "app": "github-actions"
+        },
+        {
+          "name": "similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T06:38:18Z",
+          "completed_at": "2026-09-18T06:38:52Z",
+          "duration_sec": 34,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35315290620/job/105506877285",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-18T04:05:08.571879+00:00",
-      "last_change": "2026-09-18T06:34:48.618156+00:00"
+      "last_change": "2026-09-18T06:38:51.591776+00:00"
     }
   ]
 }
