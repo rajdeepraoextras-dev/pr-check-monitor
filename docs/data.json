@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-18T05:45:56.636818+00:00",
+  "snapshot_time": "2026-09-18T05:47:37.100096+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -169,17 +169,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "qc_eval",
-          "started_at": "2026-09-18T05:40:57Z"
-        },
-        {
-          "name": "qc_exec",
           "started_at": "2026-09-18T05:40:57Z"
         }
       ],
@@ -193,16 +189,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35306426221/job/105495069777",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-18T05:40:57Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35306426221/job/105495069740",
           "app": "github-actions"
         },
         {
@@ -253,6 +239,16 @@
           "completed_at": "2026-09-18T05:30:57Z",
           "duration_sec": 3942,
           "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35306426221/job/105480814884",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T05:40:57Z",
+          "completed_at": "2026-09-18T05:47:33Z",
+          "duration_sec": 396,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35306426221/job/105495069740",
           "app": "github-actions"
         },
         {
@@ -318,7 +314,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-18T04:18:54.258460+00:00",
-      "last_change": "2026-09-18T05:40:58.796867+00:00"
+      "last_change": "2026-09-18T05:47:37.100096+00:00"
     },
     {
       "repo": "dynamo-ec0883c-data-processing-and-etl",
