@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-18T12:53:22.464038+00:00",
+  "snapshot_time": "2026-09-18T12:55:12.130988+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -404,7 +404,7 @@
       "title": "Rework: grade versions as strict SemVer 2.0.0 instead of PEP 440 (Fixes #7)",
       "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/pull/8",
       "createdAt": "2026-09-18T04:17:49Z",
-      "updatedAt": "2026-09-18T11:46:56Z",
+      "updatedAt": "2026-09-18T12:55:01Z",
       "sha": "3566556e152eba00e44594de966f18cd809258d5",
       "draft": false,
       "mergeable": true,
@@ -415,28 +415,36 @@
       "head": "rework/84d5250-semver-prerelease",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
-      "passed": 13,
-      "total": 15,
+      "overall": "failing",
+      "passed": 14,
+      "total": 17,
       "skipped": 1,
-      "failed": [],
-      "running": [
-        {
-          "name": "trials",
-          "started_at": "2026-09-18T11:46:49Z"
-        }
+      "failed": [
+        "gate",
+        "trials"
       ],
+      "running": [],
       "queued": [],
       "checks": [
         {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-18T12:54:54Z",
+          "completed_at": "2026-09-18T12:55:05Z",
+          "duration_sec": 11,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35332969877/job/105606450773",
+          "app": "github-actions"
+        },
+        {
           "name": "trials",
-          "state": "running",
-          "conclusion": null,
+          "state": "failed",
+          "conclusion": "failure",
           "started_at": "2026-09-18T11:46:49Z",
-          "completed_at": null,
-          "duration_sec": null,
+          "completed_at": "2026-09-18T12:54:52Z",
+          "duration_sec": 4083,
           "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35332969877/job/105587585537",
           "app": "github-actions"
         },
@@ -458,6 +466,16 @@
           "completed_at": "2026-09-18T10:06:40Z",
           "duration_sec": 28,
           "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35332969877/job/105561261089",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T12:54:54Z",
+          "completed_at": "2026-09-18T12:55:12Z",
+          "duration_sec": 18,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-84d5250-build-dependency-and-release-management/actions/runs/35332969877/job/105606450895",
           "app": "github-actions"
         },
         {
@@ -583,7 +601,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-18T04:18:54.258460+00:00",
-      "last_change": "2026-09-18T11:48:22.840544+00:00"
+      "last_change": "2026-09-18T12:55:12.130988+00:00"
     },
     {
       "repo": "dynamo-ec0883c-data-processing-and-etl",

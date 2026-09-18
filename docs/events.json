@@ -1,29 +1,5 @@
 [
  {
-  "ts": "2026-09-17T22:42:55.229297+00:00",
-  "pr": "dynamo-f357766-software-engineering#6",
-  "type": "passed",
-  "msg": "Check recovered: ava_review"
- },
- {
-  "ts": "2026-09-17T22:42:55.229297+00:00",
-  "pr": "dynamo-f357766-software-engineering#6",
-  "type": "passed",
-  "msg": "Check recovered: gate"
- },
- {
-  "ts": "2026-09-17T22:44:47.860217+00:00",
-  "pr": "dynamo-f357766-software-engineering#6",
-  "type": "started",
-  "msg": "Check started: review"
- },
- {
-  "ts": "2026-09-17T22:44:47.860217+00:00",
-  "pr": "dynamo-f357766-software-engineering#6",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
   "ts": "2026-09-17T22:55:43.645553+00:00",
   "pr": "dynamo-f357766-software-engineering#6",
   "type": "started",
@@ -2398,5 +2374,29 @@
   "pr": "dynamo-ec0883c-data-processing-and-etl#11",
   "type": "passed",
   "msg": "Check passed: qc_gate"
+ },
+ {
+  "ts": "2026-09-18T12:55:12.130988+00:00",
+  "pr": "dynamo-84d5250-build-dependency-and-release-management#8",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-18T12:55:12.130988+00:00",
+  "pr": "dynamo-84d5250-build-dependency-and-release-management#8",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-18T12:55:12.130988+00:00",
+  "pr": "dynamo-84d5250-build-dependency-and-release-management#8",
+  "type": "failing",
+  "msg": "Check failed: trials"
+ },
+ {
+  "ts": "2026-09-18T12:55:12.130988+00:00",
+  "pr": "dynamo-84d5250-build-dependency-and-release-management#8",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
  }
 ]
