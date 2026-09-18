@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-18T09:43:23.371804+00:00",
+  "snapshot_time": "2026-09-18T09:45:10.198781+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -216,7 +216,7 @@
       "title": "Rework: make seal validation decide the answer and parse long dependency lists",
       "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/pull/10",
       "createdAt": "2026-09-18T04:40:36Z",
-      "updatedAt": "2026-09-18T08:37:27Z",
+      "updatedAt": "2026-09-18T09:44:57Z",
       "sha": "e4d7662841b6add6f83b9f20cce45f2e2268e349",
       "draft": false,
       "mergeable": true,
@@ -230,26 +230,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-18T08:37:20Z"
+          "name": "ava_review",
+          "started_at": "2026-09-18T09:45:08Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-18T09:45:08Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "pass2",
+          "name": "ava_review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-18T08:37:20Z",
+          "started_at": "2026-09-18T09:45:08Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35324617427/job/105536840640",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35324617427/job/105555575958",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-18T09:45:08Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35324617427/job/105555575893",
           "app": "github-actions"
         },
         {
@@ -270,6 +284,16 @@
           "completed_at": "2026-09-18T08:31:22Z",
           "duration_sec": 90,
           "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35324617427/job/105534829618",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T08:37:20Z",
+          "completed_at": "2026-09-18T09:45:05Z",
+          "duration_sec": 4065,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35324617427/job/105536840640",
           "app": "github-actions"
         },
         {
@@ -311,11 +335,21 @@
           "duration_sec": 81,
           "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35324617427/job/105536417436",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-18T09:45:05Z",
+          "completed_at": "2026-09-18T09:45:05Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35324617427/job/105555577448",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-18T04:42:11.356227+00:00",
-      "last_change": "2026-09-18T08:37:32.659790+00:00"
+      "last_change": "2026-09-18T09:45:10.198781+00:00"
     },
     {
       "repo": "dynamo-84d5250-build-dependency-and-release-management",
