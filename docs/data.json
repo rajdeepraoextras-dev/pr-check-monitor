@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-18T12:38:33.636727+00:00",
+  "snapshot_time": "2026-09-18T12:40:30.477666+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -606,26 +606,23 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 11,
-      "total": 13,
+      "passed": 12,
+      "total": 14,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "qc_eval",
-          "started_at": "2026-09-18T12:17:54Z"
-        }
+      "running": [],
+      "queued": [
+        "qc_gate"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
-          "state": "running",
+          "name": "qc_gate",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-18T12:17:54Z",
+          "started_at": "2026-09-18T12:40:34Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35340134150/job/105595916027",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35340134150/job/105602369252",
           "app": "github-actions"
         },
         {
@@ -676,6 +673,16 @@
           "completed_at": "2026-09-18T12:08:10Z",
           "duration_sec": 1625,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35340134150/job/105586133709",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T12:17:54Z",
+          "completed_at": "2026-09-18T12:40:34Z",
+          "duration_sec": 1360,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35340134150/job/105595916027",
           "app": "github-actions"
         },
         {
@@ -751,7 +758,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-18T04:05:08.571879+00:00",
-      "last_change": "2026-09-18T12:23:49.905971+00:00"
+      "last_change": "2026-09-18T12:40:30.477666+00:00"
     }
   ]
 }
