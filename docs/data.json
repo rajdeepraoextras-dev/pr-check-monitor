@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-18T19:14:46.761595+00:00",
+  "snapshot_time": "2026-09-18T19:16:48.744080+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Fix correct_reference_solution and sound_verifier findings from #10 (validation residency) and clear the QC capacity block",
       "url": "https://github.com/handshake-project-dynamo/dynamo-ed0506b-model-training-and-ml-infrastructure/pull/13",
       "createdAt": "2026-09-18T18:20:53Z",
-      "updatedAt": "2026-09-18T19:14:48Z",
+      "updatedAt": "2026-09-18T19:15:05Z",
       "sha": "b331e1690b3b1f5a52ebe80c9448d2eca0109fd2",
       "draft": false,
       "mergeable": true,
@@ -31,17 +31,23 @@
       "total": 13,
       "skipped": 1,
       "failed": [],
-      "running": [],
-      "queued": [
-        "qc_eval",
-        "qc_exec"
+      "running": [
+        {
+          "name": "qc_eval",
+          "started_at": "2026-09-18T19:14:58Z"
+        },
+        {
+          "name": "qc_exec",
+          "started_at": "2026-09-18T19:14:58Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
           "name": "qc_eval",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-18T19:14:55Z",
+          "started_at": "2026-09-18T19:14:58Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ed0506b-model-training-and-ml-infrastructure/actions/runs/35379652878/job/105729267260",
@@ -49,9 +55,9 @@
         },
         {
           "name": "qc_exec",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-18T19:14:55Z",
+          "started_at": "2026-09-18T19:14:58Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ed0506b-model-training-and-ml-infrastructure/actions/runs/35379652878/job/105729267338",
@@ -170,7 +176,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-18T18:22:50.220127+00:00",
-      "last_change": "2026-09-18T19:14:46.761595+00:00"
+      "last_change": "2026-09-18T19:16:48.744080+00:00"
     },
     {
       "repo": "dynamo-cd443f7-machine-learning-and-ai",
