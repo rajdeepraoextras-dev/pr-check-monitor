@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-18T08:03:46.813188+00:00",
+  "snapshot_time": "2026-09-18T08:05:44.868922+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -155,7 +155,7 @@
       "title": "Rework: make seal validation decide the answer and parse long dependency lists",
       "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/pull/10",
       "createdAt": "2026-09-18T04:40:36Z",
-      "updatedAt": "2026-09-18T08:03:02Z",
+      "updatedAt": "2026-09-18T08:05:39Z",
       "sha": "e814a99528a981a5823659137adaf9e7fc27c71f",
       "draft": false,
       "mergeable": true,
@@ -169,26 +169,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 10,
+      "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "deep_review",
-          "started_at": "2026-09-18T07:53:54Z"
+          "name": "qc_eval",
+          "started_at": "2026-09-18T08:05:33Z"
+        },
+        {
+          "name": "qc_exec",
+          "started_at": "2026-09-18T08:05:33Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "deep_review",
+          "name": "qc_eval",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-18T07:53:54Z",
+          "started_at": "2026-09-18T08:05:33Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35315698083/job/105525273475",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35315698083/job/105528287975",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-18T08:05:33Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35315698083/job/105528288016",
           "app": "github-actions"
         },
         {
@@ -219,6 +233,16 @@
           "completed_at": "2026-09-18T06:39:44Z",
           "duration_sec": 92,
           "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35315698083/job/105506858736",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T07:53:54Z",
+          "completed_at": "2026-09-18T08:04:48Z",
+          "duration_sec": 654,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35315698083/job/105525273475",
           "app": "github-actions"
         },
         {
@@ -262,6 +286,16 @@
           "app": "github-actions"
         },
         {
+          "name": "tier1",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T08:04:51Z",
+          "completed_at": "2026-09-18T08:05:30Z",
+          "duration_sec": 39,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-73d0ec4-debugging-and-repair/actions/runs/35315698083/job/105528089860",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -284,7 +318,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-18T04:42:11.356227+00:00",
-      "last_change": "2026-09-18T08:03:46.813188+00:00"
+      "last_change": "2026-09-18T08:05:44.868922+00:00"
     },
     {
       "repo": "dynamo-84d5250-build-dependency-and-release-management",
@@ -401,7 +435,7 @@
       "title": "Rework: grade the output-parent rule the shipped image and the held-out harness both hid",
       "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/pull/11",
       "createdAt": "2026-09-18T04:03:48Z",
-      "updatedAt": "2026-09-18T08:02:49Z",
+      "updatedAt": "2026-09-18T08:04:30Z",
       "sha": "f1335c5aa8760940a8811cdb83a112df52d46ddd",
       "draft": false,
       "mergeable": true,
@@ -415,26 +449,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 1,
-      "total": 2,
+      "passed": 2,
+      "total": 3,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "cosine_similarity",
-          "started_at": "2026-09-18T08:02:58Z"
+          "name": "review",
+          "started_at": "2026-09-18T08:04:20Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "cosine_similarity",
+          "name": "review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-18T08:02:58Z",
+          "started_at": "2026-09-18T08:04:20Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35322352079/job/105527586275",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35322352079/job/105527954236",
           "app": "github-actions"
         },
         {
@@ -446,11 +480,21 @@
           "duration_sec": 25,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35322352079/job/105527466554",
           "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-18T08:02:58Z",
+          "completed_at": "2026-09-18T08:04:17Z",
+          "duration_sec": 79,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ec0883c-data-processing-and-etl/actions/runs/35322352079/job/105527586275",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-18T04:05:08.571879+00:00",
-      "last_change": "2026-09-18T08:03:46.813188+00:00"
+      "last_change": "2026-09-18T08:05:44.868922+00:00"
     }
   ]
 }
