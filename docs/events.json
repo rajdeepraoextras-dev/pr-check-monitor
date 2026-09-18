@@ -1,35 +1,5 @@
 [
  {
-  "ts": "2026-09-17T02:11:33.952370+00:00",
-  "pr": "dynamo-6612141-software-engineering#9",
-  "type": "passed",
-  "msg": "Check passed: pass2"
- },
- {
-  "ts": "2026-09-17T02:15:52.595573+00:00",
-  "pr": "dynamo-6612141-software-engineering#9",
-  "type": "passed",
-  "msg": "Check passed: deep_review"
- },
- {
-  "ts": "2026-09-17T02:18:00.075334+00:00",
-  "pr": "dynamo-34b43ef-debugging-and-repair#64",
-  "type": "passed",
-  "msg": "Check passed: qc_eval"
- },
- {
-  "ts": "2026-09-17T02:22:09.835843+00:00",
-  "pr": "dynamo-6612141-software-engineering#9",
-  "type": "started",
-  "msg": "Check started: tier1"
- },
- {
-  "ts": "2026-09-17T02:22:09.835843+00:00",
-  "pr": "dynamo-6612141-software-engineering#9",
-  "type": "passed",
-  "msg": "Check passed: ava_review"
- },
- {
   "ts": "2026-09-17T02:24:09.391111+00:00",
   "pr": "dynamo-6612141-software-engineering#9",
   "type": "started",
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-ec0883c-data-processing-and-etl#11",
   "type": "passed",
   "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-18T07:53:28.621373+00:00",
+  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-18T07:53:28.621373+00:00",
+  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-18T07:53:28.621373+00:00",
+  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-18T07:53:28.621373+00:00",
+  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-18T07:53:28.621373+00:00",
+  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
+  "type": "passed",
+  "msg": "Check passed: pass2_suggestion"
  }
 ]
