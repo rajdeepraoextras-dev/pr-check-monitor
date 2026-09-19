@@ -1,11 +1,79 @@
 {
-  "snapshot_time": "2026-09-19T12:55:41.361660+00:00",
+  "snapshot_time": "2026-09-19T12:57:53.213673+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-1f505a6-model-training-and-ml-infrastructure",
+      "full_repo": "handshake-project-dynamo/dynamo-1f505a6-model-training-and-ml-infrastructure",
+      "num": "7",
+      "title": "Rework: derive the oracle parameters by search and enforce the tuning split in the probe",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-1f505a6-model-training-and-ml-infrastructure/pull/7",
+      "createdAt": "2026-09-19T12:55:07Z",
+      "updatedAt": "2026-09-19T12:57:08Z",
+      "sha": "e70e4b352709dc8ddb4215ad87a388aae5bfa684",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 497,
+      "deletions": 271,
+      "changedFiles": 6,
+      "head": "rework/1f505a6-tuning-trap",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 2,
+      "total": 3,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "review",
+          "started_at": "2026-09-19T12:57:00Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-19T12:57:00Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1f505a6-model-training-and-ml-infrastructure/actions/runs/35444241424/job/105900541230",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T12:55:13Z",
+          "completed_at": "2026-09-19T12:55:40Z",
+          "duration_sec": 27,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1f505a6-model-training-and-ml-infrastructure/actions/runs/35444241424/job/105900319092",
+          "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T12:55:42Z",
+          "completed_at": "2026-09-19T12:56:57Z",
+          "duration_sec": 75,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1f505a6-model-training-and-ml-infrastructure/actions/runs/35444241424/job/105900382102",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-19T12:58:13.872343+00:00",
+      "last_change": "2026-09-19T12:57:53.213673+00:00"
+    },
     {
       "repo": "dynamo-46484b8-mathematics-and-formal-reasoning",
       "full_repo": "handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning",
