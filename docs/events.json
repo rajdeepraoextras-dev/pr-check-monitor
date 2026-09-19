@@ -1,35 +1,5 @@
 [
  {
-  "ts": "2026-09-19T11:58:41.540321+00:00",
-  "pr": "dynamo-2f11980-software-engineering#9",
-  "type": "passed",
-  "msg": "Check passed: similarity"
- },
- {
-  "ts": "2026-09-19T12:00:48.985880+00:00",
-  "pr": "dynamo-2f11980-software-engineering#9",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-19T12:00:48.985880+00:00",
-  "pr": "dynamo-2f11980-software-engineering#9",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-19T12:00:48.985880+00:00",
-  "pr": "dynamo-2f11980-software-engineering#9",
-  "type": "passed",
-  "msg": "Check passed: validation"
- },
- {
-  "ts": "2026-09-19T12:03:03.363722+00:00",
-  "pr": "dynamo-46484b8-mathematics-and-formal-reasoning#8",
-  "type": "started",
-  "msg": "Check started: validation"
- },
- {
   "ts": "2026-09-19T12:03:03.363722+00:00",
   "pr": "dynamo-46484b8-mathematics-and-formal-reasoning#8",
   "type": "passed",
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-3def1d8-data-processing-and-etl#14",
   "type": "passed",
   "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-19T22:57:18.301573+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#14",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-19T22:57:18.301573+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#14",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-19T22:57:18.301573+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#14",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-19T22:57:18.301573+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#14",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-19T22:57:18.301573+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#14",
+  "type": "passed",
+  "msg": "Check passed: pass2_suggestion"
  }
 ]
