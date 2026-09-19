@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T13:10:49.678103+00:00",
+  "snapshot_time": "2026-09-19T13:13:07.958856+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -441,7 +441,7 @@
       "title": "Rework: separate requires from after in graded coverage and stop probe-only activation fabrication",
       "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/pull/7",
       "createdAt": "2026-09-19T11:46:41Z",
-      "updatedAt": "2026-09-19T13:10:10Z",
+      "updatedAt": "2026-09-19T13:12:52Z",
       "sha": "fa143cd349c75f563f03ab441ffeb9a845339336",
       "draft": false,
       "mergeable": true,
@@ -455,26 +455,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 1,
-      "total": 2,
+      "passed": 2,
+      "total": 3,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "cosine_similarity",
-          "started_at": "2026-09-19T13:10:18Z"
+          "name": "review",
+          "started_at": "2026-09-19T13:12:42Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "cosine_similarity",
+          "name": "review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-19T13:10:18Z",
+          "started_at": "2026-09-19T13:12:42Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35444942176/job/105902201440",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35444942176/job/105902508352",
           "app": "github-actions"
         },
         {
@@ -486,11 +486,21 @@
           "duration_sec": 25,
           "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35444942176/job/105902143588",
           "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T13:10:18Z",
+          "completed_at": "2026-09-19T13:12:39Z",
+          "duration_sec": 141,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35444942176/job/105902201440",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:49:55.522659+00:00",
-      "last_change": "2026-09-19T13:10:49.678103+00:00"
+      "last_change": "2026-09-19T13:13:07.958856+00:00"
     },
     {
       "repo": "dynamo-0ca12b7-software-engineering",
@@ -1154,7 +1164,7 @@
       "updatedAt": "2026-09-19T12:51:22Z",
       "sha": "7d2d2fc16b83fc7bc696c357a6bbe6b9759a0936",
       "draft": false,
-      "mergeable": null,
+      "mergeable": true,
       "reviewDecision": "",
       "additions": 977,
       "deletions": 32,
