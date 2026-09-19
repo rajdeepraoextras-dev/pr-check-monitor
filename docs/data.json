@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T19:05:30.665549+00:00",
+  "snapshot_time": "2026-09-19T19:07:37.902554+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -810,7 +810,7 @@
       "title": "Rework: separate requires from after in graded coverage and stop probe-only activation fabrication",
       "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/pull/7",
       "createdAt": "2026-09-19T11:46:41Z",
-      "updatedAt": "2026-09-19T18:35:26Z",
+      "updatedAt": "2026-09-19T19:07:34Z",
       "sha": "b8f6f80c335196dad2cbafab63a4ca0059ebf58c",
       "draft": false,
       "mergeable": true,
@@ -824,26 +824,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-19T18:35:17Z"
+          "name": "ava_review",
+          "started_at": "2026-09-19T19:07:27Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-19T19:07:27Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "pass2",
+          "name": "ava_review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-19T18:35:17Z",
+          "started_at": "2026-09-19T19:07:27Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35461066206/job/105946520710",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35461066206/job/105951037460",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-19T19:07:27Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35461066206/job/105951037385",
           "app": "github-actions"
         },
         {
@@ -864,6 +878,16 @@
           "completed_at": "2026-09-19T18:27:06Z",
           "duration_sec": 157,
           "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35461066206/job/105944972497",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T18:35:17Z",
+          "completed_at": "2026-09-19T19:07:24Z",
+          "duration_sec": 1927,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35461066206/job/105946520710",
           "app": "github-actions"
         },
         {
@@ -905,11 +929,21 @@
           "duration_sec": 77,
           "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35461066206/job/105946302040",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-19T19:07:25Z",
+          "completed_at": "2026-09-19T19:07:25Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35461066206/job/105951038270",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:49:55.522659+00:00",
-      "last_change": "2026-09-19T18:36:51.623024+00:00"
+      "last_change": "2026-09-19T19:07:37.902554+00:00"
     },
     {
       "repo": "dynamo-0ca12b7-software-engineering",
