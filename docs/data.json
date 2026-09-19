@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T20:52:03.197384+00:00",
+  "snapshot_time": "2026-09-19T20:54:06.072347+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: state the caption correction, and grade reading the log and the sidecars",
       "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/pull/13",
       "createdAt": "2026-09-19T19:34:57Z",
-      "updatedAt": "2026-09-19T20:45:37Z",
+      "updatedAt": "2026-09-19T20:54:09Z",
       "sha": "57bbd5765c79e776ab768b20a79a9c28e3a8c1e9",
       "draft": false,
       "mergeable": true,
@@ -27,15 +27,11 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
-        {
-          "name": "ava_review",
-          "started_at": "2026-09-19T20:45:30Z"
-        },
         {
           "name": "deep_review",
           "started_at": "2026-09-19T20:45:30Z"
@@ -44,16 +40,6 @@
       "queued": [],
       "checks": [
         {
-          "name": "ava_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-19T20:45:30Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35464787516/job/105964726687",
-          "app": "github-actions"
-        },
-        {
           "name": "deep_review",
           "state": "running",
           "conclusion": null,
@@ -61,6 +47,16 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35464787516/job/105964726711",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T20:45:30Z",
+          "completed_at": "2026-09-19T20:54:16Z",
+          "duration_sec": 526,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35464787516/job/105964726687",
           "app": "github-actions"
         },
         {
@@ -146,7 +142,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-19T19:36:30.783963+00:00",
-      "last_change": "2026-09-19T20:45:57.037166+00:00"
+      "last_change": "2026-09-19T20:54:06.072347+00:00"
     },
     {
       "repo": "dynamo-1f505a6-model-training-and-ml-infrastructure",
