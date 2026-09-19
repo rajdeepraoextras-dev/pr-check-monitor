@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T19:48:27.382163+00:00",
+  "snapshot_time": "2026-09-19T19:50:30.678145+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -936,7 +936,7 @@
       "title": "Rework: rule out name capture in the fold pass, and grade a shadowed form of every held-out program",
       "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/pull/11",
       "createdAt": "2026-09-19T11:43:11Z",
-      "updatedAt": "2026-09-19T19:45:44Z",
+      "updatedAt": "2026-09-19T19:50:50Z",
       "sha": "8a55c002472514afaaec443d07072920f95f9166",
       "draft": false,
       "mergeable": true,
@@ -950,25 +950,35 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 9,
+      "total": 11,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "ava_review",
-          "started_at": "2026-09-19T19:41:10Z"
+          "name": "tier1",
+          "started_at": "2026-09-19T19:50:24Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "ava_review",
+          "name": "tier1",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-19T19:41:10Z",
+          "started_at": "2026-09-19T19:50:24Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35461034441/job/105957141834",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T19:41:10Z",
+          "completed_at": "2026-09-19T19:50:22Z",
+          "duration_sec": 552,
           "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35461034441/job/105955876908",
           "app": "github-actions"
         },
@@ -1065,7 +1075,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:45:06.640054+00:00",
-      "last_change": "2026-09-19T19:46:28.245238+00:00"
+      "last_change": "2026-09-19T19:50:30.678145+00:00"
     },
     {
       "repo": "dynamo-8230e74-systems-infrastructure-and-operations",
