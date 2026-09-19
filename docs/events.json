@@ -1,47 +1,5 @@
 [
  {
-  "ts": "2026-09-18T07:29:27.907449+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "started",
-  "msg": "Check started: validation"
- },
- {
-  "ts": "2026-09-18T07:29:27.907449+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
-  "ts": "2026-09-18T07:29:27.907449+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: similarity"
- },
- {
-  "ts": "2026-09-18T07:31:22.777146+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-18T07:31:22.777146+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-18T07:31:22.777146+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: validation"
- },
- {
-  "ts": "2026-09-18T07:53:28.621373+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "failing",
-  "msg": "Status running \u2192 failing"
- },
- {
   "ts": "2026-09-18T07:53:28.621373+00:00",
   "pr": "dynamo-ec0883c-data-processing-and-etl#11",
   "type": "failing",
@@ -2398,5 +2356,47 @@
   "pr": "dynamo-1f505a6-model-training-and-ml-infrastructure#7",
   "type": "passed",
   "msg": "Check passed: similarity"
+ },
+ {
+  "ts": "2026-09-19T13:04:14.883779+00:00",
+  "pr": "dynamo-46484b8-mathematics-and-formal-reasoning#8",
+  "type": "started",
+  "msg": "Check started: qc_eval"
+ },
+ {
+  "ts": "2026-09-19T13:04:14.883779+00:00",
+  "pr": "dynamo-46484b8-mathematics-and-formal-reasoning#8",
+  "type": "started",
+  "msg": "Check started: qc_exec"
+ },
+ {
+  "ts": "2026-09-19T13:04:14.883779+00:00",
+  "pr": "dynamo-46484b8-mathematics-and-formal-reasoning#8",
+  "type": "passed",
+  "msg": "Check passed: tier1"
+ },
+ {
+  "ts": "2026-09-19T13:04:14.883779+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#11",
+  "type": "started",
+  "msg": "Check started: tier1"
+ },
+ {
+  "ts": "2026-09-19T13:04:14.883779+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#11",
+  "type": "passed",
+  "msg": "Check passed: ava_review"
+ },
+ {
+  "ts": "2026-09-19T13:04:14.883779+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#11",
+  "type": "passed",
+  "msg": "Check passed: deep_review"
+ },
+ {
+  "ts": "2026-09-19T13:04:14.883779+00:00",
+  "pr": "dynamo-2f11980-software-engineering#9",
+  "type": "passed",
+  "msg": "Check passed: deep_review"
  }
 ]
