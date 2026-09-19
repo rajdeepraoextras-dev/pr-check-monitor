@@ -1,11 +1,215 @@
 {
-  "snapshot_time": "2026-09-19T11:41:23.225913+00:00",
+  "snapshot_time": "2026-09-19T11:44:56.319258+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-0ca12b7-software-engineering",
+      "full_repo": "handshake-project-dynamo/dynamo-0ca12b7-software-engineering",
+      "num": "11",
+      "title": "Rework: rule out name capture in the fold pass, and grade a shadowed form of every held-out program",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/pull/11",
+      "createdAt": "2026-09-19T11:43:11Z",
+      "updatedAt": "2026-09-19T11:44:50Z",
+      "sha": "9fca52e62a85c8d48683c581b45a7e953f5da29d",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 692,
+      "deletions": 289,
+      "changedFiles": 20,
+      "head": "rework/0ca12b7-capture-safe-renaming",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 2,
+      "total": 3,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "review",
+          "started_at": "2026-09-19T11:44:59Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-19T11:44:59Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35440879170/job/105891519528",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T11:43:18Z",
+          "completed_at": "2026-09-19T11:43:43Z",
+          "duration_sec": 25,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35440879170/job/105891324137",
+          "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T11:43:46Z",
+          "completed_at": "2026-09-19T11:44:56Z",
+          "duration_sec": 70,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35440879170/job/105891377537",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-19T11:45:06.640054+00:00",
+      "last_change": "2026-09-19T11:44:56.319258+00:00"
+    },
+    {
+      "repo": "dynamo-8230e74-systems-infrastructure-and-operations",
+      "full_repo": "handshake-project-dynamo/dynamo-8230e74-systems-infrastructure-and-operations",
+      "num": "6",
+      "title": "Rework: root the ext4 volume at its own mount point",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-8230e74-systems-infrastructure-and-operations/pull/6",
+      "createdAt": "2026-09-19T11:41:39Z",
+      "updatedAt": "2026-09-19T11:43:54Z",
+      "sha": "e3b0412ba28e751f2e5da9dd6cf4c0466db5cd11",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 672,
+      "deletions": 197,
+      "changedFiles": 7,
+      "head": "rework/8230e74-volume-root-layout",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 2,
+      "total": 3,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "review",
+          "started_at": "2026-09-19T11:43:45Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-19T11:43:45Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8230e74-systems-infrastructure-and-operations/actions/runs/35440810896/job/105891377331",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T11:41:45Z",
+          "completed_at": "2026-09-19T11:42:11Z",
+          "duration_sec": 26,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8230e74-systems-infrastructure-and-operations/actions/runs/35440810896/job/105891143416",
+          "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T11:42:13Z",
+          "completed_at": "2026-09-19T11:43:43Z",
+          "duration_sec": 90,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8230e74-systems-infrastructure-and-operations/actions/runs/35440810896/job/105891197116",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-19T11:45:16.554860+00:00",
+      "last_change": "2026-09-19T11:44:56.319258+00:00"
+    },
+    {
+      "repo": "dynamo-47fcd6a-mathematics-and-formal-reasoning",
+      "full_repo": "handshake-project-dynamo/dynamo-47fcd6a-mathematics-and-formal-reasoning",
+      "num": "7",
+      "title": "Grade computed constant root degrees and exponents",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-47fcd6a-mathematics-and-formal-reasoning/pull/7",
+      "createdAt": "2026-09-19T11:40:06Z",
+      "updatedAt": "2026-09-19T11:42:02Z",
+      "sha": "062d2760dcfb3e1f4b176ac5ef698cbe9c6aa416",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 275,
+      "deletions": 18,
+      "changedFiles": 5,
+      "head": "submission",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 2,
+      "total": 3,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "review",
+          "started_at": "2026-09-19T11:41:53Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-19T11:41:53Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-47fcd6a-mathematics-and-formal-reasoning/actions/runs/35440740267/job/105891157571",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T11:40:13Z",
+          "completed_at": "2026-09-19T11:40:37Z",
+          "duration_sec": 24,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-47fcd6a-mathematics-and-formal-reasoning/actions/runs/35440740267/job/105890958052",
+          "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T11:40:39Z",
+          "completed_at": "2026-09-19T11:41:51Z",
+          "duration_sec": 72,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-47fcd6a-mathematics-and-formal-reasoning/actions/runs/35440740267/job/105891013256",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-19T11:45:00.322230+00:00",
+      "last_change": "2026-09-19T11:44:56.319258+00:00"
+    },
     {
       "repo": "dynamo-3def1d8-data-processing-and-etl",
       "full_repo": "handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl",
