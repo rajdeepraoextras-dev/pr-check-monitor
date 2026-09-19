@@ -1,18 +1,6 @@
 [
  {
   "ts": "2026-09-19T11:49:45.518017+00:00",
-  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
-  "type": "discovered",
-  "msg": "PR discovered: Rework: separate requires from after in graded coverage and stop probe-only activation fabrication"
- },
- {
-  "ts": "2026-09-19T11:49:45.518017+00:00",
-  "pr": "dynamo-0ca12b7-software-engineering#11",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-19T11:49:45.518017+00:00",
   "pr": "dynamo-0ca12b7-software-engineering#11",
   "type": "passed",
   "msg": "Check passed: ratelimit"
@@ -2398,5 +2386,17 @@
   "pr": "dynamo-3def1d8-data-processing-and-etl#13",
   "type": "passed",
   "msg": "Check passed: tier1"
+ },
+ {
+  "ts": "2026-09-19T20:58:13.938305+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#13",
+  "type": "started",
+  "msg": "Check started: qc_eval"
+ },
+ {
+  "ts": "2026-09-19T20:58:13.938305+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#13",
+  "type": "started",
+  "msg": "Check started: qc_exec"
  }
 ]
