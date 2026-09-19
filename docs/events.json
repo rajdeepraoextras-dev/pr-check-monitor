@@ -1,29 +1,5 @@
 [
  {
-  "ts": "2026-09-18T11:33:38.429246+00:00",
-  "pr": "dynamo-73d0ec4-debugging-and-repair#10",
-  "type": "started",
-  "msg": "Check started: qc_exec"
- },
- {
-  "ts": "2026-09-18T11:33:38.429246+00:00",
-  "pr": "dynamo-73d0ec4-debugging-and-repair#10",
-  "type": "passed",
-  "msg": "Check passed: tier1"
- },
- {
-  "ts": "2026-09-18T11:35:34.414943+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "started",
-  "msg": "Check started: review"
- },
- {
-  "ts": "2026-09-18T11:35:34.414943+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
   "ts": "2026-09-18T11:35:34.414943+00:00",
   "pr": "dynamo-73d0ec4-debugging-and-repair#10",
   "type": "passed",
@@ -2396,6 +2372,30 @@
  {
   "ts": "2026-09-19T18:11:59.458507+00:00",
   "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
+  "type": "passed",
+  "msg": "Check passed: deep_review"
+ },
+ {
+  "ts": "2026-09-19T18:14:04.937270+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#12",
+  "type": "started",
+  "msg": "Check started: ava_review"
+ },
+ {
+  "ts": "2026-09-19T18:14:04.937270+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#12",
+  "type": "started",
+  "msg": "Check started: deep_review"
+ },
+ {
+  "ts": "2026-09-19T18:14:04.937270+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#12",
+  "type": "passed",
+  "msg": "Check passed: pass2"
+ },
+ {
+  "ts": "2026-09-19T18:14:04.937270+00:00",
+  "pr": "dynamo-0ca12b7-software-engineering#11",
   "type": "passed",
   "msg": "Check passed: deep_review"
  }
