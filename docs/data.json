@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T11:56:25.876615+00:00",
+  "snapshot_time": "2026-09-19T11:58:41.540321+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -7,13 +7,81 @@
   },
   "prs": [
     {
+      "repo": "dynamo-46484b8-mathematics-and-formal-reasoning",
+      "full_repo": "handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning",
+      "num": "8",
+      "title": "Rework: make the dihedral transform set a group and grade every winning rule family",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/pull/8",
+      "createdAt": "2026-09-19T11:56:12Z",
+      "updatedAt": "2026-09-19T11:58:03Z",
+      "sha": "4ce0b9f00c7e46bba455a9e8558dc7ba6e0c1dcd",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 775,
+      "deletions": 46,
+      "changedFiles": 5,
+      "head": "rework/46484b8-profile-orbits",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 2,
+      "total": 3,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "review",
+          "started_at": "2026-09-19T11:57:55Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-19T11:57:55Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35441457124/job/105893028780",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T11:56:18Z",
+          "completed_at": "2026-09-19T11:56:44Z",
+          "duration_sec": 26,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35441457124/job/105892843359",
+          "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T11:56:47Z",
+          "completed_at": "2026-09-19T11:57:52Z",
+          "duration_sec": 65,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35441457124/job/105892901043",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-19T11:58:49.134255+00:00",
+      "last_change": "2026-09-19T11:58:41.540321+00:00"
+    },
+    {
       "repo": "dynamo-2f11980-software-engineering",
       "full_repo": "handshake-project-dynamo/dynamo-2f11980-software-engineering",
       "num": "9",
       "title": "Rework: fall back to the last qualifying rolling VWAP instead of dropping the ticker",
       "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/pull/9",
       "createdAt": "2026-09-19T11:50:57Z",
-      "updatedAt": "2026-09-19T11:52:48Z",
+      "updatedAt": "2026-09-19T11:57:28Z",
       "sha": "ae55ddc8f1b4c4741e7888e49e058c2e86040013",
       "draft": false,
       "mergeable": true,
@@ -27,26 +95,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 2,
-      "total": 3,
+      "passed": 4,
+      "total": 5,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "review",
-          "started_at": "2026-09-19T11:52:39Z"
+          "name": "validation",
+          "started_at": "2026-09-19T11:57:22Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "review",
+          "name": "validation",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-19T11:52:39Z",
+          "started_at": "2026-09-19T11:57:22Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35441231168/job/105892427757",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35441231168/job/105892962983",
           "app": "github-actions"
         },
         {
@@ -68,11 +136,31 @@
           "duration_sec": 69,
           "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35441231168/job/105892293098",
           "app": "github-actions"
+        },
+        {
+          "name": "review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T11:52:39Z",
+          "completed_at": "2026-09-19T11:56:51Z",
+          "duration_sec": 252,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35441231168/job/105892427757",
+          "app": "github-actions"
+        },
+        {
+          "name": "similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T11:56:54Z",
+          "completed_at": "2026-09-19T11:57:19Z",
+          "duration_sec": 25,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35441231168/job/105892913509",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:52:06.791044+00:00",
-      "last_change": "2026-09-19T11:54:09.962871+00:00"
+      "last_change": "2026-09-19T11:58:41.540321+00:00"
     },
     {
       "repo": "dynamo-22e7dff-systems-infrastructure-and-operations",
@@ -81,7 +169,7 @@
       "title": "Rework: separate requires from after in graded coverage and stop probe-only activation fabrication",
       "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/pull/7",
       "createdAt": "2026-09-19T11:46:41Z",
-      "updatedAt": "2026-09-19T11:56:11Z",
+      "updatedAt": "2026-09-19T11:56:39Z",
       "sha": "bcb55835d6be0d0119bf22b6f82fcc2fb0bb389e",
       "draft": false,
       "mergeable": true,
