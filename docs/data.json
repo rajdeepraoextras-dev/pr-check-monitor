@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T13:48:34.265605+00:00",
+  "snapshot_time": "2026-09-19T13:50:54.265895+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: derive the oracle parameters by search and enforce the tuning split in the probe",
       "url": "https://github.com/handshake-project-dynamo/dynamo-1f505a6-model-training-and-ml-infrastructure/pull/7",
       "createdAt": "2026-09-19T12:55:07Z",
-      "updatedAt": "2026-09-19T13:17:08Z",
+      "updatedAt": "2026-09-19T13:50:48Z",
       "sha": "e70e4b352709dc8ddb4215ad87a388aae5bfa684",
       "draft": false,
       "mergeable": true,
@@ -27,26 +27,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-19T13:16:59Z"
+          "name": "ava_review",
+          "started_at": "2026-09-19T13:50:41Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-19T13:50:41Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "pass2",
+          "name": "ava_review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-19T13:16:59Z",
+          "started_at": "2026-09-19T13:50:41Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-1f505a6-model-training-and-ml-infrastructure/actions/runs/35444241424/job/105903066070",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1f505a6-model-training-and-ml-infrastructure/actions/runs/35444241424/job/105907424960",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-19T13:50:41Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1f505a6-model-training-and-ml-infrastructure/actions/runs/35444241424/job/105907425029",
           "app": "github-actions"
         },
         {
@@ -67,6 +81,16 @@
           "completed_at": "2026-09-19T12:56:57Z",
           "duration_sec": 75,
           "url": "https://github.com/handshake-project-dynamo/dynamo-1f505a6-model-training-and-ml-infrastructure/actions/runs/35444241424/job/105900382102",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T13:16:59Z",
+          "completed_at": "2026-09-19T13:50:39Z",
+          "duration_sec": 2020,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1f505a6-model-training-and-ml-infrastructure/actions/runs/35444241424/job/105903066070",
           "app": "github-actions"
         },
         {
@@ -108,11 +132,21 @@
           "duration_sec": 883,
           "url": "https://github.com/handshake-project-dynamo/dynamo-1f505a6-model-training-and-ml-infrastructure/actions/runs/35444241424/job/105901175171",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-19T13:50:39Z",
+          "completed_at": "2026-09-19T13:50:39Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1f505a6-model-training-and-ml-infrastructure/actions/runs/35444241424/job/105907425629",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-19T12:58:13.872343+00:00",
-      "last_change": "2026-09-19T13:17:31.910683+00:00"
+      "last_change": "2026-09-19T13:50:54.265895+00:00"
     },
     {
       "repo": "dynamo-46484b8-mathematics-and-formal-reasoning",
@@ -121,7 +155,7 @@
       "title": "Rework: make the dihedral transform set a group and grade every winning rule family",
       "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/pull/8",
       "createdAt": "2026-09-19T11:56:12Z",
-      "updatedAt": "2026-09-19T13:48:16Z",
+      "updatedAt": "2026-09-19T13:48:44Z",
       "sha": "9e22b717bf8c9b8193618b1a4cc2b7a98f48fb28",
       "draft": false,
       "mergeable": true,
