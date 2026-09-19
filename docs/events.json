@@ -3,24 +3,6 @@
   "ts": "2026-09-18T11:25:50.876562+00:00",
   "pr": "dynamo-ec0883c-data-processing-and-etl#11",
   "type": "failing",
-  "msg": "Status running \u2192 failing"
- },
- {
-  "ts": "2026-09-18T11:25:50.876562+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "started",
-  "msg": "Check started: claude-cost-report"
- },
- {
-  "ts": "2026-09-18T11:25:50.876562+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "failing",
-  "msg": "Check failed: gate"
- },
- {
-  "ts": "2026-09-18T11:25:50.876562+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "failing",
   "msg": "Check failed: qc_gate"
  },
  {
@@ -2398,5 +2380,23 @@
   "pr": "dynamo-0ca12b7-software-engineering#11",
   "type": "passed",
   "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-19T17:22:22.849382+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#12",
+  "type": "started",
+  "msg": "Check started: similarity"
+ },
+ {
+  "ts": "2026-09-19T17:22:22.849382+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#12",
+  "type": "passed",
+  "msg": "Check passed: review"
+ },
+ {
+  "ts": "2026-09-19T17:22:22.849382+00:00",
+  "pr": "dynamo-0ca12b7-software-engineering#11",
+  "type": "started",
+  "msg": "Check started: pass2"
  }
 ]
