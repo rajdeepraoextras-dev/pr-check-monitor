@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T14:14:49.287669+00:00",
+  "snapshot_time": "2026-09-19T14:17:00.594493+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -634,7 +634,7 @@
       "title": "Rework: rule out name capture in the fold pass, and grade a shadowed form of every held-out program",
       "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/pull/11",
       "createdAt": "2026-09-19T11:43:11Z",
-      "updatedAt": "2026-09-19T14:14:55Z",
+      "updatedAt": "2026-09-19T14:17:09Z",
       "sha": "e9c3798c5429ddaf3329bd00769b2704d48a4d26",
       "draft": false,
       "mergeable": true,
@@ -648,26 +648,38 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 3,
-      "total": 4,
+      "passed": 5,
+      "total": 7,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "similarity",
-          "started_at": "2026-09-19T14:15:04Z"
+          "name": "ratelimit",
+          "started_at": "2026-09-19T14:17:18Z"
         }
       ],
-      "queued": [],
+      "queued": [
+        "pass2"
+      ],
       "checks": [
         {
-          "name": "similarity",
+          "name": "ratelimit",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-19T14:15:04Z",
+          "started_at": "2026-09-19T14:17:18Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35447866150/job/105910583146",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35447866150/job/105910891133",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "queued",
+          "conclusion": null,
+          "started_at": "2026-09-19T14:17:26Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35447866150/job/105910913568",
           "app": "github-actions"
         },
         {
@@ -699,11 +711,31 @@
           "duration_sec": 238,
           "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35447866150/job/105910052526",
           "app": "github-actions"
+        },
+        {
+          "name": "similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T14:15:04Z",
+          "completed_at": "2026-09-19T14:15:34Z",
+          "duration_sec": 30,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35447866150/job/105910583146",
+          "app": "github-actions"
+        },
+        {
+          "name": "validation",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T14:15:37Z",
+          "completed_at": "2026-09-19T14:17:16Z",
+          "duration_sec": 99,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35447866150/job/105910664567",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:45:06.640054+00:00",
-      "last_change": "2026-09-19T14:14:49.287669+00:00"
+      "last_change": "2026-09-19T14:17:00.594493+00:00"
     },
     {
       "repo": "dynamo-8230e74-systems-infrastructure-and-operations",
