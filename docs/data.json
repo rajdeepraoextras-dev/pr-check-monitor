@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T14:21:51.851206+00:00",
+  "snapshot_time": "2026-09-19T14:24:09.328360+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -540,19 +540,14 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 8,
+      "passed": 9,
       "total": 17,
       "skipped": 6,
       "failed": [
         "ava_review",
         "gate"
       ],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-19T14:21:55Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -576,16 +571,6 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-19T14:21:55Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35444942176/job/105911500079",
-          "app": "github-actions"
-        },
-        {
           "name": "changes",
           "state": "passed",
           "conclusion": "success",
@@ -593,6 +578,16 @@
           "completed_at": "2026-09-19T13:10:15Z",
           "duration_sec": 25,
           "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35444942176/job/105902143588",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T14:21:55Z",
+          "completed_at": "2026-09-19T14:22:12Z",
+          "duration_sec": 17,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35444942176/job/105911500079",
           "app": "github-actions"
         },
         {
@@ -728,7 +723,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:49:55.522659+00:00",
-      "last_change": "2026-09-19T14:21:51.851206+00:00"
+      "last_change": "2026-09-19T14:24:09.328360+00:00"
     },
     {
       "repo": "dynamo-0ca12b7-software-engineering",
