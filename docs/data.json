@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T13:30:49.374358+00:00",
+  "snapshot_time": "2026-09-19T13:33:02.176114+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -919,7 +919,7 @@
       "title": "Grade computed constant root degrees and exponents",
       "url": "https://github.com/handshake-project-dynamo/dynamo-47fcd6a-mathematics-and-formal-reasoning/pull/7",
       "createdAt": "2026-09-19T11:40:06Z",
-      "updatedAt": "2026-09-19T12:51:57Z",
+      "updatedAt": "2026-09-19T13:31:37Z",
       "sha": "062d2760dcfb3e1f4b176ac5ef698cbe9c6aa416",
       "draft": false,
       "mergeable": true,
@@ -930,31 +930,16 @@
       "head": "submission",
       "base": "main",
       "labels": [
-        "in-progress"
+        "accepted"
       ],
-      "overall": "running",
-      "passed": 13,
-      "total": 15,
+      "overall": "passed",
+      "passed": 16,
+      "total": 17,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "trials",
-          "started_at": "2026-09-19T12:51:48Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
-        {
-          "name": "trials",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-19T12:51:48Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-47fcd6a-mathematics-and-formal-reasoning/actions/runs/35440740267/job/105899894741",
-          "app": "github-actions"
-        },
         {
           "name": "ava_review",
           "state": "passed",
@@ -976,6 +961,16 @@
           "app": "github-actions"
         },
         {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T13:31:29Z",
+          "completed_at": "2026-09-19T13:31:46Z",
+          "duration_sec": 17,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-47fcd6a-mathematics-and-formal-reasoning/actions/runs/35440740267/job/105904954432",
+          "app": "github-actions"
+        },
+        {
           "name": "cosine_similarity",
           "state": "passed",
           "conclusion": "success",
@@ -993,6 +988,16 @@
           "completed_at": "2026-09-19T12:30:23Z",
           "duration_sec": 716,
           "url": "https://github.com/handshake-project-dynamo/dynamo-47fcd6a-mathematics-and-formal-reasoning/actions/runs/35440740267/job/105895596129",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T13:31:29Z",
+          "completed_at": "2026-09-19T13:31:40Z",
+          "duration_sec": 11,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-47fcd6a-mathematics-and-formal-reasoning/actions/runs/35440740267/job/105904954425",
           "app": "github-actions"
         },
         {
@@ -1076,6 +1081,16 @@
           "app": "github-actions"
         },
         {
+          "name": "trials",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T12:51:48Z",
+          "completed_at": "2026-09-19T13:31:27Z",
+          "duration_sec": 2379,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-47fcd6a-mathematics-and-formal-reasoning/actions/runs/35440740267/job/105899894741",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -1098,7 +1113,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:45:00.322230+00:00",
-      "last_change": "2026-09-19T12:53:25.045031+00:00"
+      "last_change": "2026-09-19T13:33:02.176114+00:00"
     },
     {
       "repo": "dynamo-3def1d8-data-processing-and-etl",
