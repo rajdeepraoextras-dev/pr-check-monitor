@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T18:24:33.771552+00:00",
+  "snapshot_time": "2026-09-19T18:26:35.584706+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: state the caption correction, and declare the house clock where a parser will not look",
       "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/pull/12",
       "createdAt": "2026-09-19T17:14:02Z",
-      "updatedAt": "2026-09-19T18:24:22Z",
+      "updatedAt": "2026-09-19T18:25:18Z",
       "sha": "b86087f6f561d068867aaac90385b35ff6307574",
       "draft": false,
       "mergeable": true,
@@ -27,26 +27,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 9,
-      "total": 11,
+      "passed": 10,
+      "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "tier1",
-          "started_at": "2026-09-19T18:24:31Z"
+          "name": "qc_eval",
+          "started_at": "2026-09-19T18:25:12Z"
+        },
+        {
+          "name": "qc_exec",
+          "started_at": "2026-09-19T18:25:12Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "tier1",
+          "name": "qc_eval",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-19T18:24:31Z",
+          "started_at": "2026-09-19T18:25:12Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35457442952/job/105944977489",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35457442952/job/105945077002",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-19T18:25:12Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35457442952/job/105945077057",
           "app": "github-actions"
         },
         {
@@ -130,6 +144,16 @@
           "app": "github-actions"
         },
         {
+          "name": "tier1",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T18:24:31Z",
+          "completed_at": "2026-09-19T18:25:10Z",
+          "duration_sec": 39,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35457442952/job/105944977489",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -152,7 +176,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-19T17:15:45.745107+00:00",
-      "last_change": "2026-09-19T18:24:33.771552+00:00"
+      "last_change": "2026-09-19T18:26:35.584706+00:00"
     },
     {
       "repo": "dynamo-1f505a6-model-training-and-ml-infrastructure",
@@ -828,7 +852,7 @@
       "title": "Rework: rule out name capture in the fold pass, and grade a shadowed form of every held-out program",
       "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/pull/11",
       "createdAt": "2026-09-19T11:43:11Z",
-      "updatedAt": "2026-09-19T18:23:43Z",
+      "updatedAt": "2026-09-19T18:25:14Z",
       "sha": "8a55c002472514afaaec443d07072920f95f9166",
       "draft": false,
       "mergeable": true,
@@ -842,26 +866,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 1,
-      "total": 2,
+      "passed": 2,
+      "total": 3,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "cosine_similarity",
-          "started_at": "2026-09-19T18:23:51Z"
+          "name": "review",
+          "started_at": "2026-09-19T18:25:04Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "cosine_similarity",
+          "name": "review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-19T18:23:51Z",
+          "started_at": "2026-09-19T18:25:04Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35461034441/job/105944878856",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35461034441/job/105945056622",
           "app": "github-actions"
         },
         {
@@ -873,11 +897,21 @@
           "duration_sec": 24,
           "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35461034441/job/105944816618",
           "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T18:23:51Z",
+          "completed_at": "2026-09-19T18:25:02Z",
+          "duration_sec": 71,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35461034441/job/105944878856",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:45:06.640054+00:00",
-      "last_change": "2026-09-19T18:24:33.771552+00:00"
+      "last_change": "2026-09-19T18:26:35.584706+00:00"
     },
     {
       "repo": "dynamo-8230e74-systems-infrastructure-and-operations",
