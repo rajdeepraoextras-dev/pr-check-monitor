@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T13:44:13.585877+00:00",
+  "snapshot_time": "2026-09-19T13:46:26.503337+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -121,7 +121,7 @@
       "title": "Rework: make the dihedral transform set a group and grade every winning rule family",
       "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/pull/8",
       "createdAt": "2026-09-19T11:56:12Z",
-      "updatedAt": "2026-09-19T13:41:15Z",
+      "updatedAt": "2026-09-19T13:46:12Z",
       "sha": "9e22b717bf8c9b8193618b1a4cc2b7a98f48fb28",
       "draft": false,
       "mergeable": true,
@@ -135,26 +135,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 2,
-      "total": 3,
+      "passed": 4,
+      "total": 5,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "review",
-          "started_at": "2026-09-19T13:41:06Z"
+          "name": "validation",
+          "started_at": "2026-09-19T13:46:07Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "review",
+          "name": "validation",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-19T13:41:06Z",
+          "started_at": "2026-09-19T13:46:07Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35446404571/job/105906201690",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35446404571/job/105906832685",
           "app": "github-actions"
         },
         {
@@ -176,11 +176,31 @@
           "duration_sec": 74,
           "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35446404571/job/105906035770",
           "app": "github-actions"
+        },
+        {
+          "name": "review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T13:41:06Z",
+          "completed_at": "2026-09-19T13:45:31Z",
+          "duration_sec": 265,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35446404571/job/105906201690",
+          "app": "github-actions"
+        },
+        {
+          "name": "similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T13:45:34Z",
+          "completed_at": "2026-09-19T13:46:04Z",
+          "duration_sec": 30,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35446404571/job/105906757990",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:58:49.134255+00:00",
-      "last_change": "2026-09-19T13:42:06.695426+00:00"
+      "last_change": "2026-09-19T13:46:26.503337+00:00"
     },
     {
       "repo": "dynamo-2f11980-software-engineering",
@@ -189,7 +209,7 @@
       "title": "Rework: fall back to the last qualifying rolling VWAP instead of dropping the ticker",
       "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/pull/9",
       "createdAt": "2026-09-19T11:50:57Z",
-      "updatedAt": "2026-09-19T13:28:55Z",
+      "updatedAt": "2026-09-19T13:46:21Z",
       "sha": "c4b0196f2813dde045b1a9a99146490a456bda1e",
       "draft": false,
       "mergeable": true,
@@ -200,31 +220,16 @@
       "head": "rework/2f11980-vwap-fallback",
       "base": "main",
       "labels": [
-        "in-progress"
+        "accepted"
       ],
-      "overall": "running",
-      "passed": 13,
-      "total": 15,
+      "overall": "passed",
+      "passed": 16,
+      "total": 17,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "trials",
-          "started_at": "2026-09-19T13:28:46Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
-        {
-          "name": "trials",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-19T13:28:46Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35443146994/job/105904593852",
-          "app": "github-actions"
-        },
         {
           "name": "ava_review",
           "state": "passed",
@@ -246,6 +251,16 @@
           "app": "github-actions"
         },
         {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T13:46:15Z",
+          "completed_at": "2026-09-19T13:46:33Z",
+          "duration_sec": 18,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35443146994/job/105906849115",
+          "app": "github-actions"
+        },
+        {
           "name": "cosine_similarity",
           "state": "passed",
           "conclusion": "success",
@@ -263,6 +278,16 @@
           "completed_at": "2026-09-19T13:04:29Z",
           "duration_sec": 681,
           "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35443146994/job/105900060183",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T13:46:15Z",
+          "completed_at": "2026-09-19T13:46:25Z",
+          "duration_sec": 10,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35443146994/job/105906849113",
           "app": "github-actions"
         },
         {
@@ -346,6 +371,16 @@
           "app": "github-actions"
         },
         {
+          "name": "trials",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T13:28:46Z",
+          "completed_at": "2026-09-19T13:46:13Z",
+          "duration_sec": 1047,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35443146994/job/105904593852",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -368,7 +403,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:52:06.791044+00:00",
-      "last_change": "2026-09-19T13:28:36.168720+00:00"
+      "last_change": "2026-09-19T13:46:26.503337+00:00"
     },
     {
       "repo": "dynamo-22e7dff-systems-infrastructure-and-operations",
