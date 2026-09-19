@@ -1,47 +1,5 @@
 [
  {
-  "ts": "2026-09-18T06:03:13.919438+00:00",
-  "pr": "dynamo-73d0ec4-debugging-and-repair#10",
-  "type": "passed",
-  "msg": "Check passed: qc_eval"
- },
- {
-  "ts": "2026-09-18T06:04:56.177933+00:00",
-  "pr": "dynamo-73d0ec4-debugging-and-repair#10",
-  "type": "passed",
-  "msg": "Check passed: claude-cost-report"
- },
- {
-  "ts": "2026-09-18T06:27:12.276213+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "failing",
-  "msg": "Status running \u2192 failing"
- },
- {
-  "ts": "2026-09-18T06:27:12.276213+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "failing",
-  "msg": "Check failed: gate"
- },
- {
-  "ts": "2026-09-18T06:27:12.276213+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "failing",
-  "msg": "Check failed: trials"
- },
- {
-  "ts": "2026-09-18T06:27:12.276213+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: claude-cost-report"
- },
- {
-  "ts": "2026-09-18T06:32:39.367079+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "push",
-  "msg": "New commit pushed (9f0b26e)"
- },
- {
   "ts": "2026-09-18T06:32:39.367079+00:00",
   "pr": "dynamo-ec0883c-data-processing-and-etl#11",
   "type": "running",
@@ -2398,5 +2356,47 @@
   "pr": "dynamo-47fcd6a-mathematics-and-formal-reasoning#7",
   "type": "passed",
   "msg": "Check passed: tier1"
+ },
+ {
+  "ts": "2026-09-19T12:33:53.504461+00:00",
+  "pr": "dynamo-2f11980-software-engineering#9",
+  "type": "push",
+  "msg": "New commit pushed (c4b0196)"
+ },
+ {
+  "ts": "2026-09-19T12:33:53.504461+00:00",
+  "pr": "dynamo-2f11980-software-engineering#9",
+  "type": "running",
+  "msg": "Status failing \u2192 running"
+ },
+ {
+  "ts": "2026-09-19T12:33:53.504461+00:00",
+  "pr": "dynamo-2f11980-software-engineering#9",
+  "type": "started",
+  "msg": "Check started: review"
+ },
+ {
+  "ts": "2026-09-19T12:33:53.504461+00:00",
+  "pr": "dynamo-2f11980-software-engineering#9",
+  "type": "passed",
+  "msg": "Check recovered: ava_review"
+ },
+ {
+  "ts": "2026-09-19T12:33:53.504461+00:00",
+  "pr": "dynamo-2f11980-software-engineering#9",
+  "type": "passed",
+  "msg": "Check recovered: gate"
+ },
+ {
+  "ts": "2026-09-19T12:33:53.504461+00:00",
+  "pr": "dynamo-0ca12b7-software-engineering#11",
+  "type": "passed",
+  "msg": "Check passed: deep_review"
+ },
+ {
+  "ts": "2026-09-19T12:33:53.504461+00:00",
+  "pr": "dynamo-a6e6445-data-querying-and-databases#10",
+  "type": "passed",
+  "msg": "Check passed: qc_exec"
  }
 ]
