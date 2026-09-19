@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T17:15:27.582093+00:00",
+  "snapshot_time": "2026-09-19T17:17:53.484516+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: state the caption correction, and declare the house clock where a parser will not look",
       "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/pull/12",
       "createdAt": "2026-09-19T17:14:02Z",
-      "updatedAt": "2026-09-19T17:14:24Z",
+      "updatedAt": "2026-09-19T17:16:06Z",
       "sha": "b86087f6f561d068867aaac90385b35ff6307574",
       "draft": false,
       "mergeable": true,
@@ -27,26 +27,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 1,
-      "total": 2,
+      "passed": 2,
+      "total": 3,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "cosine_similarity",
-          "started_at": "2026-09-19T17:14:35Z"
+          "name": "review",
+          "started_at": "2026-09-19T17:15:57Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "cosine_similarity",
+          "name": "review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-19T17:14:35Z",
+          "started_at": "2026-09-19T17:15:57Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35457442952/job/105935198548",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35457442952/job/105935393935",
           "app": "github-actions"
         },
         {
@@ -58,11 +58,21 @@
           "duration_sec": 24,
           "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35457442952/job/105935133460",
           "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T17:14:35Z",
+          "completed_at": "2026-09-19T17:15:54Z",
+          "duration_sec": 79,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35457442952/job/105935198548",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-19T17:15:45.745107+00:00",
-      "last_change": "2026-09-19T17:15:27.582093+00:00"
+      "last_change": "2026-09-19T17:17:53.484516+00:00"
     },
     {
       "repo": "dynamo-1f505a6-model-training-and-ml-infrastructure",
@@ -680,204 +690,66 @@
       "title": "Rework: separate requires from after in graded coverage and stop probe-only activation fabrication",
       "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/pull/7",
       "createdAt": "2026-09-19T11:46:41Z",
-      "updatedAt": "2026-09-19T16:56:35Z",
-      "sha": "7a47048ad409392fd4b0209eac5b103aaba445ed",
+      "updatedAt": "2026-09-19T17:18:05Z",
+      "sha": "4de270fa7a8b6f67a3237fe2c660c5df3f2288d4",
       "draft": false,
       "mergeable": true,
       "reviewDecision": "",
-      "additions": 1244,
+      "additions": 1434,
       "deletions": 29,
       "changedFiles": 9,
       "head": "rework/22e7dff-drain-recovery",
       "base": "main",
       "labels": [
-        "needs-revision"
+        "in-progress"
       ],
-      "overall": "failing",
-      "passed": 9,
-      "total": 17,
-      "skipped": 6,
-      "failed": [
-        "ava_review",
-        "gate"
+      "overall": "running",
+      "passed": 2,
+      "total": 3,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "review",
+          "started_at": "2026-09-19T17:17:56Z"
+        }
       ],
-      "running": [],
       "queued": [],
       "checks": [
         {
-          "name": "ava_review",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-19T15:16:13Z",
-          "completed_at": "2026-09-19T15:35:49Z",
-          "duration_sec": 1176,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35448978373/job/105918754555",
-          "app": "github-actions"
-        },
-        {
-          "name": "gate",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-19T15:35:52Z",
-          "completed_at": "2026-09-19T15:36:02Z",
-          "duration_sec": 10,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35448978373/job/105921465480",
+          "name": "review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-19T17:17:56Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35457547235/job/105935670237",
           "app": "github-actions"
         },
         {
           "name": "changes",
           "state": "passed",
           "conclusion": "success",
-          "started_at": "2026-09-19T14:31:02Z",
-          "completed_at": "2026-09-19T14:31:26Z",
-          "duration_sec": 24,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35448978373/job/105912709871",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-19T15:35:53Z",
-          "completed_at": "2026-09-19T15:36:08Z",
-          "duration_sec": 15,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35448978373/job/105921465450",
+          "started_at": "2026-09-19T17:16:03Z",
+          "completed_at": "2026-09-19T17:16:28Z",
+          "duration_sec": 25,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35457547235/job/105935409401",
           "app": "github-actions"
         },
         {
           "name": "cosine_similarity",
           "state": "passed",
           "conclusion": "success",
-          "started_at": "2026-09-19T14:31:29Z",
-          "completed_at": "2026-09-19T14:32:53Z",
-          "duration_sec": 84,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35448978373/job/105912766742",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-19T15:16:13Z",
-          "completed_at": "2026-09-19T15:22:27Z",
-          "duration_sec": 374,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35448978373/job/105918754581",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-19T14:40:44Z",
-          "completed_at": "2026-09-19T15:16:10Z",
-          "duration_sec": 2126,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35448978373/job/105913999915",
-          "app": "github-actions"
-        },
-        {
-          "name": "ratelimit",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-19T14:40:32Z",
-          "completed_at": "2026-09-19T14:40:41Z",
-          "duration_sec": 9,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35448978373/job/105913975212",
-          "app": "github-actions"
-        },
-        {
-          "name": "review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-19T14:32:56Z",
-          "completed_at": "2026-09-19T14:38:42Z",
-          "duration_sec": 346,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35448978373/job/105912966045",
-          "app": "github-actions"
-        },
-        {
-          "name": "similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-19T14:38:45Z",
-          "completed_at": "2026-09-19T14:39:10Z",
-          "duration_sec": 25,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35448978373/job/105913739087",
-          "app": "github-actions"
-        },
-        {
-          "name": "validation",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-19T14:39:13Z",
-          "completed_at": "2026-09-19T14:40:29Z",
-          "duration_sec": 76,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35448978373/job/105913796986",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-19T15:16:11Z",
-          "completed_at": "2026-09-19T15:16:11Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35448978373/job/105918755363",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_eval",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-19T15:35:50Z",
-          "completed_at": "2026-09-19T15:35:50Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35448978373/job/105921465757",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-19T15:35:50Z",
-          "completed_at": "2026-09-19T15:35:50Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35448978373/job/105921465661",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_gate",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-19T15:35:50Z",
-          "completed_at": "2026-09-19T15:35:50Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35448978373/job/105921465941",
-          "app": "github-actions"
-        },
-        {
-          "name": "tier1",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-19T15:35:50Z",
-          "completed_at": "2026-09-19T15:35:50Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35448978373/job/105921465383",
-          "app": "github-actions"
-        },
-        {
-          "name": "trials",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-19T15:35:50Z",
-          "completed_at": "2026-09-19T15:35:50Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35448978373/job/105921465807",
+          "started_at": "2026-09-19T17:16:31Z",
+          "completed_at": "2026-09-19T17:17:53Z",
+          "duration_sec": 82,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35457547235/job/105935477925",
           "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:49:55.522659+00:00",
-      "last_change": "2026-09-19T14:31:16.533923+00:00"
+      "last_change": "2026-09-19T17:17:53.484516+00:00"
     },
     {
       "repo": "dynamo-0ca12b7-software-engineering",
@@ -886,7 +758,7 @@
       "title": "Rework: rule out name capture in the fold pass, and grade a shadowed form of every held-out program",
       "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/pull/11",
       "createdAt": "2026-09-19T11:43:11Z",
-      "updatedAt": "2026-09-19T17:14:44Z",
+      "updatedAt": "2026-09-19T17:18:08Z",
       "sha": "a518ed8b77e7e77338f202c159c887bbf03d91ed",
       "draft": false,
       "mergeable": true,
@@ -900,26 +772,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 2,
-      "total": 3,
+      "passed": 3,
+      "total": 4,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "review",
-          "started_at": "2026-09-19T17:14:36Z"
+          "name": "similarity",
+          "started_at": "2026-09-19T17:18:16Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "review",
+          "name": "similarity",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-19T17:14:36Z",
+          "started_at": "2026-09-19T17:18:16Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35457387961/job/105935201062",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35457387961/job/105935720046",
           "app": "github-actions"
         },
         {
@@ -941,11 +813,21 @@
           "duration_sec": 63,
           "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35457387961/job/105935047139",
           "app": "github-actions"
+        },
+        {
+          "name": "review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T17:14:36Z",
+          "completed_at": "2026-09-19T17:18:14Z",
+          "duration_sec": 218,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35457387961/job/105935201062",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:45:06.640054+00:00",
-      "last_change": "2026-09-19T17:15:27.582093+00:00"
+      "last_change": "2026-09-19T17:17:53.484516+00:00"
     },
     {
       "repo": "dynamo-8230e74-systems-infrastructure-and-operations",
