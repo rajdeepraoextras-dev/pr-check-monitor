@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T19:56:35.405542+00:00",
+  "snapshot_time": "2026-09-19T19:58:36.697863+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -950,17 +950,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "qc_eval",
-          "started_at": "2026-09-19T19:50:58Z"
-        },
-        {
-          "name": "qc_exec",
           "started_at": "2026-09-19T19:50:58Z"
         }
       ],
@@ -974,16 +970,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35461034441/job/105957217400",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-19T19:50:58Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35461034441/job/105957217298",
           "app": "github-actions"
         },
         {
@@ -1034,6 +1020,16 @@
           "completed_at": "2026-09-19T19:41:08Z",
           "duration_sec": 4011,
           "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35461034441/job/105946380457",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T19:50:58Z",
+          "completed_at": "2026-09-19T19:57:05Z",
+          "duration_sec": 367,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35461034441/job/105957217298",
           "app": "github-actions"
         },
         {
@@ -1099,7 +1095,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:45:06.640054+00:00",
-      "last_change": "2026-09-19T19:52:30.719976+00:00"
+      "last_change": "2026-09-19T19:58:36.697863+00:00"
     },
     {
       "repo": "dynamo-8230e74-systems-infrastructure-and-operations",
