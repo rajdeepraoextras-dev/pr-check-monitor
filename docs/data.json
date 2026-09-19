@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T21:16:51.206685+00:00",
+  "snapshot_time": "2026-09-19T21:18:52.360174+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -28,7 +28,7 @@
       ],
       "overall": "running",
       "passed": 11,
-      "total": 13,
+      "total": 14,
       "skipped": 1,
       "failed": [],
       "running": [
@@ -37,7 +37,9 @@
           "started_at": "2026-09-19T20:56:26Z"
         }
       ],
-      "queued": [],
+      "queued": [
+        "qc_gate"
+      ],
       "checks": [
         {
           "name": "qc_eval",
@@ -47,6 +49,16 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35464787516/job/105966172193",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "queued",
+          "conclusion": null,
+          "started_at": "2026-09-19T21:19:06Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35464787516/job/105969217381",
           "app": "github-actions"
         },
         {
