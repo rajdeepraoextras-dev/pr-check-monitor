@@ -1,23 +1,5 @@
 [
  {
-  "ts": "2026-09-18T11:07:28.742198+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "started",
-  "msg": "Check started: ava_review"
- },
- {
-  "ts": "2026-09-18T11:07:28.742198+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "started",
-  "msg": "Check started: deep_review"
- },
- {
-  "ts": "2026-09-18T11:07:28.742198+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: pass2"
- },
- {
   "ts": "2026-09-18T11:16:50.264415+00:00",
   "pr": "dynamo-ec0883c-data-processing-and-etl#11",
   "type": "passed",
@@ -2398,5 +2380,23 @@
   "pr": "dynamo-0ca12b7-software-engineering#11",
   "type": "passed",
   "msg": "Check recovered: qc_gate"
+ },
+ {
+  "ts": "2026-09-19T17:15:27.582093+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#12",
+  "type": "discovered",
+  "msg": "PR discovered: Rework: state the caption correction, and declare the house clock where a parser will not look"
+ },
+ {
+  "ts": "2026-09-19T17:15:27.582093+00:00",
+  "pr": "dynamo-0ca12b7-software-engineering#11",
+  "type": "started",
+  "msg": "Check started: review"
+ },
+ {
+  "ts": "2026-09-19T17:15:27.582093+00:00",
+  "pr": "dynamo-0ca12b7-software-engineering#11",
+  "type": "passed",
+  "msg": "Check passed: cosine_similarity"
  }
 ]
