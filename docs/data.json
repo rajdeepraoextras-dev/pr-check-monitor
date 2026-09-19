@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T12:27:01.987470+00:00",
+  "snapshot_time": "2026-09-19T12:29:19.410234+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -719,7 +719,7 @@
       "title": "Grade computed constant root degrees and exponents",
       "url": "https://github.com/handshake-project-dynamo/dynamo-47fcd6a-mathematics-and-formal-reasoning/pull/7",
       "createdAt": "2026-09-19T11:40:06Z",
-      "updatedAt": "2026-09-19T12:18:34Z",
+      "updatedAt": "2026-09-19T12:27:20Z",
       "sha": "062d2760dcfb3e1f4b176ac5ef698cbe9c6aa416",
       "draft": false,
       "mergeable": true,
@@ -733,15 +733,11 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
-        {
-          "name": "ava_review",
-          "started_at": "2026-09-19T12:18:27Z"
-        },
         {
           "name": "deep_review",
           "started_at": "2026-09-19T12:18:27Z"
@@ -750,16 +746,6 @@
       "queued": [],
       "checks": [
         {
-          "name": "ava_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-19T12:18:27Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-47fcd6a-mathematics-and-formal-reasoning/actions/runs/35440740267/job/105895596164",
-          "app": "github-actions"
-        },
-        {
           "name": "deep_review",
           "state": "running",
           "conclusion": null,
@@ -767,6 +753,16 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-47fcd6a-mathematics-and-formal-reasoning/actions/runs/35440740267/job/105895596129",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T12:18:27Z",
+          "completed_at": "2026-09-19T12:27:26Z",
+          "duration_sec": 539,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-47fcd6a-mathematics-and-formal-reasoning/actions/runs/35440740267/job/105895596164",
           "app": "github-actions"
         },
         {
@@ -852,7 +848,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:45:00.322230+00:00",
-      "last_change": "2026-09-19T12:20:35.940929+00:00"
+      "last_change": "2026-09-19T12:29:19.410234+00:00"
     },
     {
       "repo": "dynamo-3def1d8-data-processing-and-etl",
@@ -969,7 +965,7 @@
       "title": "Fix repeated same-path operations within one patch from #9",
       "url": "https://github.com/handshake-project-dynamo/dynamo-a6e6445-data-querying-and-databases/pull/10",
       "createdAt": "2026-09-19T11:03:21Z",
-      "updatedAt": "2026-09-19T12:24:52Z",
+      "updatedAt": "2026-09-19T12:28:08Z",
       "sha": "7d2d2fc16b83fc7bc696c357a6bbe6b9759a0936",
       "draft": false,
       "mergeable": true,
@@ -983,25 +979,49 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 10,
+      "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "ava_review",
-          "started_at": "2026-09-19T12:18:16Z"
+          "name": "qc_eval",
+          "started_at": "2026-09-19T12:28:02Z"
+        },
+        {
+          "name": "qc_exec",
+          "started_at": "2026-09-19T12:28:02Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "ava_review",
+          "name": "qc_eval",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-19T12:18:16Z",
+          "started_at": "2026-09-19T12:28:02Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-a6e6445-data-querying-and-databases/actions/runs/35439057809/job/105896802285",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-19T12:28:02Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-a6e6445-data-querying-and-databases/actions/runs/35439057809/job/105896802260",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T12:18:16Z",
+          "completed_at": "2026-09-19T12:27:28Z",
+          "duration_sec": 552,
           "url": "https://github.com/handshake-project-dynamo/dynamo-a6e6445-data-querying-and-databases/actions/runs/35439057809/job/105895572642",
           "app": "github-actions"
         },
@@ -1076,6 +1096,16 @@
           "app": "github-actions"
         },
         {
+          "name": "tier1",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T12:27:31Z",
+          "completed_at": "2026-09-19T12:28:00Z",
+          "duration_sec": 29,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-a6e6445-data-querying-and-databases/actions/runs/35439057809/job/105896737603",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -1098,7 +1128,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:04:25.544225+00:00",
-      "last_change": "2026-09-19T12:24:54.334578+00:00"
+      "last_change": "2026-09-19T12:29:19.410234+00:00"
     },
     {
       "repo": "dynamo-ed0506b-model-training-and-ml-infrastructure",
