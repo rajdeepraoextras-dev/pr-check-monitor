@@ -1,11 +1,69 @@
 {
-  "snapshot_time": "2026-09-19T11:02:22.869921+00:00",
+  "snapshot_time": "2026-09-19T11:04:19.898678+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-a6e6445-data-querying-and-databases",
+      "full_repo": "handshake-project-dynamo/dynamo-a6e6445-data-querying-and-databases",
+      "num": "10",
+      "title": "Fix repeated same-path operations within one patch from #9",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-a6e6445-data-querying-and-databases/pull/10",
+      "createdAt": "2026-09-19T11:03:21Z",
+      "updatedAt": "2026-09-19T11:03:44Z",
+      "sha": "7d2d2fc16b83fc7bc696c357a6bbe6b9759a0936",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 977,
+      "deletions": 32,
+      "changedFiles": 10,
+      "head": "rework/a6e6445-self-conflict-repeated-path",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 1,
+      "total": 2,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "cosine_similarity",
+          "started_at": "2026-09-19T11:03:53Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "cosine_similarity",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-19T11:03:53Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-a6e6445-data-querying-and-databases/actions/runs/35439057809/job/105886655820",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T11:03:27Z",
+          "completed_at": "2026-09-19T11:03:50Z",
+          "duration_sec": 23,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-a6e6445-data-querying-and-databases/actions/runs/35439057809/job/105886605012",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-19T11:04:25.544225+00:00",
+      "last_change": "2026-09-19T11:04:19.898678+00:00"
+    },
     {
       "repo": "dynamo-ed0506b-model-training-and-ml-infrastructure",
       "full_repo": "handshake-project-dynamo/dynamo-ed0506b-model-training-and-ml-infrastructure",
