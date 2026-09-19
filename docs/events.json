@@ -1,35 +1,5 @@
 [
  {
-  "ts": "2026-09-18T11:41:07.032095+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-18T11:41:07.032095+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: similarity"
- },
- {
-  "ts": "2026-09-18T11:41:07.032095+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: validation"
- },
- {
-  "ts": "2026-09-18T11:46:34.788578+00:00",
-  "pr": "dynamo-84d5250-build-dependency-and-release-management#8",
-  "type": "started",
-  "msg": "Check started: qc_gate"
- },
- {
-  "ts": "2026-09-18T11:46:34.788578+00:00",
-  "pr": "dynamo-84d5250-build-dependency-and-release-management#8",
-  "type": "passed",
-  "msg": "Check passed: qc_eval"
- },
- {
   "ts": "2026-09-18T11:48:22.840544+00:00",
   "pr": "dynamo-84d5250-build-dependency-and-release-management#8",
   "type": "started",
@@ -2396,6 +2366,36 @@
  {
   "ts": "2026-09-19T18:20:16.298349+00:00",
   "pr": "dynamo-0ca12b7-software-engineering#11",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-19T18:22:26.719843+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#12",
+  "type": "passed",
+  "msg": "Check passed: deep_review"
+ },
+ {
+  "ts": "2026-09-19T18:22:26.719843+00:00",
+  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-19T18:22:26.719843+00:00",
+  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
+  "type": "failing",
+  "msg": "Check failed: ava_review"
+ },
+ {
+  "ts": "2026-09-19T18:22:26.719843+00:00",
+  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-19T18:22:26.719843+00:00",
+  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
   "type": "passed",
   "msg": "Check passed: claude-cost-report"
  }
