@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T12:42:20.349002+00:00",
+  "snapshot_time": "2026-09-19T12:44:28.681213+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -229,7 +229,7 @@
       "title": "Rework: separate requires from after in graded coverage and stop probe-only activation fabrication",
       "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/pull/7",
       "createdAt": "2026-09-19T11:46:41Z",
-      "updatedAt": "2026-09-19T12:36:46Z",
+      "updatedAt": "2026-09-19T12:43:51Z",
       "sha": "bcb55835d6be0d0119bf22b6f82fcc2fb0bb389e",
       "draft": false,
       "mergeable": true,
@@ -243,17 +243,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "ava_review",
-          "started_at": "2026-09-19T12:36:38Z"
-        },
-        {
-          "name": "deep_review",
           "started_at": "2026-09-19T12:36:38Z"
         }
       ],
@@ -267,16 +263,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35441037470/job/105897951437",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-19T12:36:38Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35441037470/job/105897951442",
           "app": "github-actions"
         },
         {
@@ -297,6 +283,16 @@
           "completed_at": "2026-09-19T11:48:30Z",
           "duration_sec": 76,
           "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35441037470/job/105891797730",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T12:36:38Z",
+          "completed_at": "2026-09-19T12:43:56Z",
+          "duration_sec": 438,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35441037470/job/105897951442",
           "app": "github-actions"
         },
         {
@@ -362,7 +358,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:49:55.522659+00:00",
-      "last_change": "2026-09-19T12:38:03.065858+00:00"
+      "last_change": "2026-09-19T12:44:28.681213+00:00"
     },
     {
       "repo": "dynamo-0ca12b7-software-engineering",
@@ -539,7 +535,7 @@
       "title": "Rework: root the ext4 volume at its own mount point",
       "url": "https://github.com/handshake-project-dynamo/dynamo-8230e74-systems-infrastructure-and-operations/pull/6",
       "createdAt": "2026-09-19T11:41:39Z",
-      "updatedAt": "2026-09-19T12:42:03Z",
+      "updatedAt": "2026-09-19T12:42:21Z",
       "sha": "1abc299042568d7cf6757f9e062024f6326c46f8",
       "draft": false,
       "mergeable": true,
