@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T12:22:45.423425+00:00",
+  "snapshot_time": "2026-09-19T12:24:54.334578+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -121,7 +121,7 @@
       "title": "Rework: fall back to the last qualifying rolling VWAP instead of dropping the ticker",
       "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/pull/9",
       "createdAt": "2026-09-19T11:50:57Z",
-      "updatedAt": "2026-09-19T12:12:12Z",
+      "updatedAt": "2026-09-19T12:24:24Z",
       "sha": "ae55ddc8f1b4c4741e7888e49e058c2e86040013",
       "draft": false,
       "mergeable": true,
@@ -132,43 +132,37 @@
       "head": "rework/2f11980-vwap-fallback",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
-      "passed": 7,
-      "total": 10,
-      "skipped": 1,
-      "failed": [],
-      "running": [
-        {
-          "name": "ava_review",
-          "started_at": "2026-09-19T12:12:04Z"
-        },
-        {
-          "name": "deep_review",
-          "started_at": "2026-09-19T12:12:04Z"
-        }
+      "overall": "failing",
+      "passed": 9,
+      "total": 17,
+      "skipped": 6,
+      "failed": [
+        "ava_review",
+        "gate"
       ],
+      "running": [],
       "queued": [],
       "checks": [
         {
           "name": "ava_review",
-          "state": "running",
-          "conclusion": null,
+          "state": "failed",
+          "conclusion": "failure",
           "started_at": "2026-09-19T12:12:04Z",
-          "completed_at": null,
-          "duration_sec": null,
+          "completed_at": "2026-09-19T12:24:15Z",
+          "duration_sec": 731,
           "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35441231168/job/105894792820",
           "app": "github-actions"
         },
         {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-19T12:12:04Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35441231168/job/105894792792",
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-19T12:24:19Z",
+          "completed_at": "2026-09-19T12:24:28Z",
+          "duration_sec": 9,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35441231168/job/105896334115",
           "app": "github-actions"
         },
         {
@@ -182,6 +176,16 @@
           "app": "github-actions"
         },
         {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T12:24:19Z",
+          "completed_at": "2026-09-19T12:24:34Z",
+          "duration_sec": 15,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35441231168/job/105896334100",
+          "app": "github-actions"
+        },
+        {
           "name": "cosine_similarity",
           "state": "passed",
           "conclusion": "success",
@@ -189,6 +193,16 @@
           "completed_at": "2026-09-19T11:52:37Z",
           "duration_sec": 69,
           "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35441231168/job/105892293098",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T12:12:04Z",
+          "completed_at": "2026-09-19T12:23:41Z",
+          "duration_sec": 697,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35441231168/job/105894792792",
           "app": "github-actions"
         },
         {
@@ -250,11 +264,61 @@
           "duration_sec": -1,
           "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35441231168/job/105894793494",
           "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-19T12:24:16Z",
+          "completed_at": "2026-09-19T12:24:16Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35441231168/job/105896334193",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-19T12:24:16Z",
+          "completed_at": "2026-09-19T12:24:16Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35441231168/job/105896334181",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-19T12:24:16Z",
+          "completed_at": "2026-09-19T12:24:16Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35441231168/job/105896334430",
+          "app": "github-actions"
+        },
+        {
+          "name": "tier1",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-19T12:24:16Z",
+          "completed_at": "2026-09-19T12:24:16Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35441231168/job/105896333949",
+          "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-19T12:24:16Z",
+          "completed_at": "2026-09-19T12:24:16Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35441231168/job/105896334519",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:52:06.791044+00:00",
-      "last_change": "2026-09-19T12:11:57.542980+00:00"
+      "last_change": "2026-09-19T12:24:54.334578+00:00"
     },
     {
       "repo": "dynamo-22e7dff-systems-infrastructure-and-operations",
@@ -479,7 +543,7 @@
       "title": "Rework: root the ext4 volume at its own mount point",
       "url": "https://github.com/handshake-project-dynamo/dynamo-8230e74-systems-infrastructure-and-operations/pull/6",
       "createdAt": "2026-09-19T11:41:39Z",
-      "updatedAt": "2026-09-19T11:49:42Z",
+      "updatedAt": "2026-09-19T12:24:29Z",
       "sha": "e3b0412ba28e751f2e5da9dd6cf4c0466db5cd11",
       "draft": false,
       "mergeable": true,
@@ -493,26 +557,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-19T11:49:33Z"
+          "name": "ava_review",
+          "started_at": "2026-09-19T12:24:22Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-19T12:24:22Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "pass2",
+          "name": "ava_review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-19T11:49:33Z",
+          "started_at": "2026-09-19T12:24:22Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-8230e74-systems-infrastructure-and-operations/actions/runs/35440810896/job/105892070215",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8230e74-systems-infrastructure-and-operations/actions/runs/35440810896/job/105896342003",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-19T12:24:22Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8230e74-systems-infrastructure-and-operations/actions/runs/35440810896/job/105896341991",
           "app": "github-actions"
         },
         {
@@ -533,6 +611,16 @@
           "completed_at": "2026-09-19T11:43:43Z",
           "duration_sec": 90,
           "url": "https://github.com/handshake-project-dynamo/dynamo-8230e74-systems-infrastructure-and-operations/actions/runs/35440810896/job/105891197116",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T11:49:33Z",
+          "completed_at": "2026-09-19T12:24:20Z",
+          "duration_sec": 2087,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8230e74-systems-infrastructure-and-operations/actions/runs/35440810896/job/105892070215",
           "app": "github-actions"
         },
         {
@@ -574,11 +662,21 @@
           "duration_sec": 74,
           "url": "https://github.com/handshake-project-dynamo/dynamo-8230e74-systems-infrastructure-and-operations/actions/runs/35440810896/job/105891898808",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-19T12:24:20Z",
+          "completed_at": "2026-09-19T12:24:20Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8230e74-systems-infrastructure-and-operations/actions/runs/35440810896/job/105896342682",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:45:16.554860+00:00",
-      "last_change": "2026-09-19T11:49:45.518017+00:00"
+      "last_change": "2026-09-19T12:24:54.334578+00:00"
     },
     {
       "repo": "dynamo-47fcd6a-mathematics-and-formal-reasoning",
@@ -837,7 +935,7 @@
       "title": "Fix repeated same-path operations within one patch from #9",
       "url": "https://github.com/handshake-project-dynamo/dynamo-a6e6445-data-querying-and-databases/pull/10",
       "createdAt": "2026-09-19T11:03:21Z",
-      "updatedAt": "2026-09-19T12:18:23Z",
+      "updatedAt": "2026-09-19T12:24:52Z",
       "sha": "7d2d2fc16b83fc7bc696c357a6bbe6b9759a0936",
       "draft": false,
       "mergeable": true,
@@ -851,17 +949,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "ava_review",
-          "started_at": "2026-09-19T12:18:16Z"
-        },
-        {
-          "name": "deep_review",
           "started_at": "2026-09-19T12:18:16Z"
         }
       ],
@@ -875,16 +969,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-a6e6445-data-querying-and-databases/actions/runs/35439057809/job/105895572642",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-19T12:18:16Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-a6e6445-data-querying-and-databases/actions/runs/35439057809/job/105895572601",
           "app": "github-actions"
         },
         {
@@ -905,6 +989,16 @@
           "completed_at": "2026-09-19T11:04:59Z",
           "duration_sec": 66,
           "url": "https://github.com/handshake-project-dynamo/dynamo-a6e6445-data-querying-and-databases/actions/runs/35439057809/job/105886655820",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T12:18:16Z",
+          "completed_at": "2026-09-19T12:24:58Z",
+          "duration_sec": 402,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-a6e6445-data-querying-and-databases/actions/runs/35439057809/job/105895572601",
           "app": "github-actions"
         },
         {
@@ -970,7 +1064,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:04:25.544225+00:00",
-      "last_change": "2026-09-19T12:18:22.639827+00:00"
+      "last_change": "2026-09-19T12:24:54.334578+00:00"
     },
     {
       "repo": "dynamo-ed0506b-model-training-and-ml-infrastructure",
