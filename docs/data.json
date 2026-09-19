@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T13:21:54.339624+00:00",
+  "snapshot_time": "2026-09-19T13:24:10.619323+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -121,7 +121,7 @@
       "title": "Rework: make the dihedral transform set a group and grade every winning rule family",
       "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/pull/8",
       "createdAt": "2026-09-19T11:56:12Z",
-      "updatedAt": "2026-09-19T13:02:52Z",
+      "updatedAt": "2026-09-19T13:22:33Z",
       "sha": "4ce0b9f00c7e46bba455a9e8558dc7ba6e0c1dcd",
       "draft": false,
       "mergeable": true,
@@ -132,29 +132,37 @@
       "head": "rework/46484b8-profile-orbits",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
-      "passed": 11,
-      "total": 13,
-      "skipped": 1,
-      "failed": [],
-      "running": [
-        {
-          "name": "qc_eval",
-          "started_at": "2026-09-19T13:02:45Z"
-        }
+      "overall": "failing",
+      "passed": 13,
+      "total": 17,
+      "skipped": 2,
+      "failed": [
+        "gate",
+        "qc_gate"
       ],
+      "running": [],
       "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-19T13:02:45Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35441457124/job/105901261348",
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-19T13:22:27Z",
+          "completed_at": "2026-09-19T13:22:37Z",
+          "duration_sec": 10,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35441457124/job/105903779561",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-19T13:22:10Z",
+          "completed_at": "2026-09-19T13:22:25Z",
+          "duration_sec": 15,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35441457124/job/105903743898",
           "app": "github-actions"
         },
         {
@@ -175,6 +183,16 @@
           "completed_at": "2026-09-19T11:56:44Z",
           "duration_sec": 26,
           "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35441457124/job/105892843359",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T13:22:28Z",
+          "completed_at": "2026-09-19T13:22:43Z",
+          "duration_sec": 15,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35441457124/job/105903779603",
           "app": "github-actions"
         },
         {
@@ -205,6 +223,16 @@
           "completed_at": "2026-09-19T12:48:13Z",
           "duration_sec": 2522,
           "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35441457124/job/105894062637",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T13:02:45Z",
+          "completed_at": "2026-09-19T13:22:07Z",
+          "duration_sec": 1162,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35441457124/job/105901261348",
           "app": "github-actions"
         },
         {
@@ -276,11 +304,21 @@
           "duration_sec": 0,
           "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35441457124/job/105899443597",
           "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-19T13:22:25Z",
+          "completed_at": "2026-09-19T13:22:25Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35441457124/job/105903779854",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:58:49.134255+00:00",
-      "last_change": "2026-09-19T13:06:25.204476+00:00"
+      "last_change": "2026-09-19T13:24:10.619323+00:00"
     },
     {
       "repo": "dynamo-2f11980-software-engineering",

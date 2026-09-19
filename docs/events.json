@@ -1,35 +1,5 @@
 [
  {
-  "ts": "2026-09-18T08:18:29.107749+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "started",
-  "msg": "Check started: validation"
- },
- {
-  "ts": "2026-09-18T08:18:29.107749+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: similarity"
- },
- {
-  "ts": "2026-09-18T08:18:29.107749+00:00",
-  "pr": "dynamo-cd443f7-machine-learning-and-ai#8",
-  "type": "started",
-  "msg": "Check started: qc_eval"
- },
- {
-  "ts": "2026-09-18T08:18:29.107749+00:00",
-  "pr": "dynamo-cd443f7-machine-learning-and-ai#8",
-  "type": "started",
-  "msg": "Check started: qc_exec"
- },
- {
-  "ts": "2026-09-18T08:18:29.107749+00:00",
-  "pr": "dynamo-cd443f7-machine-learning-and-ai#8",
-  "type": "passed",
-  "msg": "Check passed: tier1"
- },
- {
   "ts": "2026-09-18T08:20:15.460062+00:00",
   "pr": "dynamo-ec0883c-data-processing-and-etl#11",
   "type": "started",
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
   "type": "passed",
   "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-19T13:24:10.619323+00:00",
+  "pr": "dynamo-46484b8-mathematics-and-formal-reasoning#8",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-19T13:24:10.619323+00:00",
+  "pr": "dynamo-46484b8-mathematics-and-formal-reasoning#8",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-19T13:24:10.619323+00:00",
+  "pr": "dynamo-46484b8-mathematics-and-formal-reasoning#8",
+  "type": "failing",
+  "msg": "Check failed: qc_gate"
+ },
+ {
+  "ts": "2026-09-19T13:24:10.619323+00:00",
+  "pr": "dynamo-46484b8-mathematics-and-formal-reasoning#8",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-19T13:24:10.619323+00:00",
+  "pr": "dynamo-46484b8-mathematics-and-formal-reasoning#8",
+  "type": "passed",
+  "msg": "Check passed: qc_eval"
  }
 ]
