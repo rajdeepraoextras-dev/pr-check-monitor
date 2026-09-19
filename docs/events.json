@@ -1,47 +1,5 @@
 [
  {
-  "ts": "2026-09-18T06:34:48.618156+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "started",
-  "msg": "Check started: review"
- },
- {
-  "ts": "2026-09-18T06:34:48.618156+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
-  "ts": "2026-09-18T06:38:51.591776+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
-  "ts": "2026-09-18T06:38:51.591776+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: similarity"
- },
- {
-  "ts": "2026-09-18T06:38:51.591776+00:00",
-  "pr": "dynamo-73d0ec4-debugging-and-repair#10",
-  "type": "push",
-  "msg": "New commit pushed (e814a99)"
- },
- {
-  "ts": "2026-09-18T06:38:51.591776+00:00",
-  "pr": "dynamo-73d0ec4-debugging-and-repair#10",
-  "type": "running",
-  "msg": "Status failing \u2192 running"
- },
- {
-  "ts": "2026-09-18T06:38:51.591776+00:00",
-  "pr": "dynamo-73d0ec4-debugging-and-repair#10",
-  "type": "started",
-  "msg": "Check started: cosine_similarity"
- },
- {
   "ts": "2026-09-18T06:38:51.591776+00:00",
   "pr": "dynamo-73d0ec4-debugging-and-repair#10",
   "type": "passed",
@@ -2398,5 +2356,47 @@
   "pr": "dynamo-0ca12b7-software-engineering#11",
   "type": "passed",
   "msg": "Check passed: tier1"
+ },
+ {
+  "ts": "2026-09-19T12:38:03.065858+00:00",
+  "pr": "dynamo-8230e74-systems-infrastructure-and-operations#6",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-19T12:38:03.065858+00:00",
+  "pr": "dynamo-8230e74-systems-infrastructure-and-operations#6",
+  "type": "failing",
+  "msg": "Check failed: ava_review"
+ },
+ {
+  "ts": "2026-09-19T12:38:03.065858+00:00",
+  "pr": "dynamo-8230e74-systems-infrastructure-and-operations#6",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-19T12:38:03.065858+00:00",
+  "pr": "dynamo-8230e74-systems-infrastructure-and-operations#6",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-19T12:38:03.065858+00:00",
+  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
+  "type": "started",
+  "msg": "Check started: ava_review"
+ },
+ {
+  "ts": "2026-09-19T12:38:03.065858+00:00",
+  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
+  "type": "started",
+  "msg": "Check started: deep_review"
+ },
+ {
+  "ts": "2026-09-19T12:38:03.065858+00:00",
+  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
+  "type": "passed",
+  "msg": "Check passed: pass2"
  }
 ]
