@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T13:26:25.600425+00:00",
+  "snapshot_time": "2026-09-19T13:28:36.168720+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -327,7 +327,7 @@
       "title": "Rework: fall back to the last qualifying rolling VWAP instead of dropping the ticker",
       "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/pull/9",
       "createdAt": "2026-09-19T11:50:57Z",
-      "updatedAt": "2026-09-19T13:06:17Z",
+      "updatedAt": "2026-09-19T13:28:38Z",
       "sha": "c4b0196f2813dde045b1a9a99146490a456bda1e",
       "draft": false,
       "mergeable": true,
@@ -341,26 +341,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 11,
-      "total": 13,
+      "passed": 13,
+      "total": 15,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_eval",
-          "started_at": "2026-09-19T13:06:11Z"
+          "name": "trials",
+          "started_at": "2026-09-19T13:28:46Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
+          "name": "trials",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-19T13:06:11Z",
+          "started_at": "2026-09-19T13:28:46Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35443146994/job/105901693040",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35443146994/job/105904593852",
           "app": "github-actions"
         },
         {
@@ -414,6 +414,16 @@
           "app": "github-actions"
         },
         {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T13:06:11Z",
+          "completed_at": "2026-09-19T13:28:26Z",
+          "duration_sec": 1335,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35443146994/job/105901693040",
+          "app": "github-actions"
+        },
+        {
           "name": "qc_exec",
           "state": "passed",
           "conclusion": "success",
@@ -421,6 +431,16 @@
           "completed_at": "2026-09-19T13:19:29Z",
           "duration_sec": 798,
           "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35443146994/job/105901693037",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T13:28:29Z",
+          "completed_at": "2026-09-19T13:28:44Z",
+          "duration_sec": 15,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2f11980-software-engineering/actions/runs/35443146994/job/105904558124",
           "app": "github-actions"
         },
         {
@@ -486,7 +506,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:52:06.791044+00:00",
-      "last_change": "2026-09-19T13:19:47.034047+00:00"
+      "last_change": "2026-09-19T13:28:36.168720+00:00"
     },
     {
       "repo": "dynamo-22e7dff-systems-infrastructure-and-operations",
@@ -1101,26 +1121,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 11,
-      "total": 13,
+      "passed": 12,
+      "total": 14,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_eval",
-          "started_at": "2026-09-19T13:04:54Z"
+          "name": "qc_gate",
+          "started_at": "2026-09-19T13:28:45Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
+          "name": "qc_gate",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-19T13:04:54Z",
+          "started_at": "2026-09-19T13:28:45Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35440597275/job/105901532277",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35440597275/job/105904591266",
           "app": "github-actions"
         },
         {
@@ -1171,6 +1191,16 @@
           "completed_at": "2026-09-19T12:53:25Z",
           "duration_sec": 3942,
           "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35440597275/job/105891852571",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T13:04:54Z",
+          "completed_at": "2026-09-19T13:28:42Z",
+          "duration_sec": 1428,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35440597275/job/105901532277",
           "app": "github-actions"
         },
         {
@@ -1246,7 +1276,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:41:29.652919+00:00",
-      "last_change": "2026-09-19T13:10:49.678103+00:00"
+      "last_change": "2026-09-19T13:28:36.168720+00:00"
     },
     {
       "repo": "dynamo-a6e6445-data-querying-and-databases",
