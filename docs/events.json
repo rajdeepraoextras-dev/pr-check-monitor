@@ -1,35 +1,5 @@
 [
  {
-  "ts": "2026-09-18T07:21:44.353956+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check recovered: gate"
- },
- {
-  "ts": "2026-09-18T07:21:44.353956+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check recovered: pass2"
- },
- {
-  "ts": "2026-09-18T07:23:39.869020+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "started",
-  "msg": "Check started: review"
- },
- {
-  "ts": "2026-09-18T07:23:39.869020+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: changes"
- },
- {
-  "ts": "2026-09-18T07:23:39.869020+00:00",
-  "pr": "dynamo-ec0883c-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
   "ts": "2026-09-18T07:29:27.907449+00:00",
   "pr": "dynamo-ec0883c-data-processing-and-etl#11",
   "type": "started",
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-1f505a6-model-training-and-ml-infrastructure#7",
   "type": "discovered",
   "msg": "PR discovered: Rework: derive the oracle parameters by search and enforce the tuning split in the probe"
+ },
+ {
+  "ts": "2026-09-19T13:02:10.494078+00:00",
+  "pr": "dynamo-46484b8-mathematics-and-formal-reasoning#8",
+  "type": "started",
+  "msg": "Check started: tier1"
+ },
+ {
+  "ts": "2026-09-19T13:02:10.494078+00:00",
+  "pr": "dynamo-46484b8-mathematics-and-formal-reasoning#8",
+  "type": "passed",
+  "msg": "Check passed: ava_review"
+ },
+ {
+  "ts": "2026-09-19T13:02:10.494078+00:00",
+  "pr": "dynamo-1f505a6-model-training-and-ml-infrastructure#7",
+  "type": "started",
+  "msg": "Check started: validation"
+ },
+ {
+  "ts": "2026-09-19T13:02:10.494078+00:00",
+  "pr": "dynamo-1f505a6-model-training-and-ml-infrastructure#7",
+  "type": "passed",
+  "msg": "Check passed: review"
+ },
+ {
+  "ts": "2026-09-19T13:02:10.494078+00:00",
+  "pr": "dynamo-1f505a6-model-training-and-ml-infrastructure#7",
+  "type": "passed",
+  "msg": "Check passed: similarity"
  }
 ]
