@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T14:17:00.594493+00:00",
+  "snapshot_time": "2026-09-19T14:19:24.525835+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -27,15 +27,11 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
-        {
-          "name": "qc_eval",
-          "started_at": "2026-09-19T14:01:11Z"
-        },
         {
           "name": "qc_exec",
           "started_at": "2026-09-19T14:01:11Z"
@@ -43,16 +39,6 @@
       ],
       "queued": [],
       "checks": [
-        {
-          "name": "qc_eval",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-19T14:01:11Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-1f505a6-model-training-and-ml-infrastructure/actions/runs/35444241424/job/105908742146",
-          "app": "github-actions"
-        },
         {
           "name": "qc_exec",
           "state": "running",
@@ -111,6 +97,16 @@
           "completed_at": "2026-09-19T13:50:39Z",
           "duration_sec": 2020,
           "url": "https://github.com/handshake-project-dynamo/dynamo-1f505a6-model-training-and-ml-infrastructure/actions/runs/35444241424/job/105903066070",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T14:01:11Z",
+          "completed_at": "2026-09-19T14:18:33Z",
+          "duration_sec": 1042,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-1f505a6-model-training-and-ml-infrastructure/actions/runs/35444241424/job/105908742146",
           "app": "github-actions"
         },
         {
@@ -176,7 +172,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-19T12:58:13.872343+00:00",
-      "last_change": "2026-09-19T14:02:42.192810+00:00"
+      "last_change": "2026-09-19T14:19:24.525835+00:00"
     },
     {
       "repo": "dynamo-46484b8-mathematics-and-formal-reasoning",
@@ -634,7 +630,7 @@
       "title": "Rework: rule out name capture in the fold pass, and grade a shadowed form of every held-out program",
       "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/pull/11",
       "createdAt": "2026-09-19T11:43:11Z",
-      "updatedAt": "2026-09-19T14:17:09Z",
+      "updatedAt": "2026-09-19T14:17:37Z",
       "sha": "e9c3798c5429ddaf3329bd00769b2704d48a4d26",
       "draft": false,
       "mergeable": true,
@@ -648,35 +644,23 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 5,
+      "passed": 6,
       "total": 7,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "ratelimit",
-          "started_at": "2026-09-19T14:17:18Z"
+          "name": "pass2",
+          "started_at": "2026-09-19T14:17:28Z"
         }
       ],
-      "queued": [
-        "pass2"
-      ],
+      "queued": [],
       "checks": [
         {
-          "name": "ratelimit",
+          "name": "pass2",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-19T14:17:18Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35447866150/job/105910891133",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2",
-          "state": "queued",
-          "conclusion": null,
-          "started_at": "2026-09-19T14:17:26Z",
+          "started_at": "2026-09-19T14:17:28Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35447866150/job/105910913568",
@@ -700,6 +684,16 @@
           "completed_at": "2026-09-19T14:11:02Z",
           "duration_sec": 73,
           "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35447866150/job/105909885882",
+          "app": "github-actions"
+        },
+        {
+          "name": "ratelimit",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T14:17:18Z",
+          "completed_at": "2026-09-19T14:17:26Z",
+          "duration_sec": 8,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/actions/runs/35447866150/job/105910891133",
           "app": "github-actions"
         },
         {
@@ -735,7 +729,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:45:06.640054+00:00",
-      "last_change": "2026-09-19T14:17:00.594493+00:00"
+      "last_change": "2026-09-19T14:19:24.525835+00:00"
     },
     {
       "repo": "dynamo-8230e74-systems-infrastructure-and-operations",
