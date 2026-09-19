@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T18:01:30.494324+00:00",
+  "snapshot_time": "2026-09-19T18:03:35.554325+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -730,7 +730,7 @@
       "title": "Rework: separate requires from after in graded coverage and stop probe-only activation fabrication",
       "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/pull/7",
       "createdAt": "2026-09-19T11:46:41Z",
-      "updatedAt": "2026-09-19T18:01:39Z",
+      "updatedAt": "2026-09-19T18:01:58Z",
       "sha": "4de270fa7a8b6f67a3237fe2c660c5df3f2288d4",
       "draft": false,
       "mergeable": true,
@@ -748,17 +748,23 @@
       "total": 10,
       "skipped": 1,
       "failed": [],
-      "running": [],
-      "queued": [
-        "ava_review",
-        "deep_review"
+      "running": [
+        {
+          "name": "ava_review",
+          "started_at": "2026-09-19T18:01:51Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-19T18:01:51Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
           "name": "ava_review",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-19T18:01:49Z",
+          "started_at": "2026-09-19T18:01:51Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35457547235/job/105941729410",
@@ -766,9 +772,9 @@
         },
         {
           "name": "deep_review",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-19T18:01:49Z",
+          "started_at": "2026-09-19T18:01:51Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-22e7dff-systems-infrastructure-and-operations/actions/runs/35457547235/job/105941729459",
@@ -857,7 +863,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:49:55.522659+00:00",
-      "last_change": "2026-09-19T18:01:30.494324+00:00"
+      "last_change": "2026-09-19T18:03:35.554325+00:00"
     },
     {
       "repo": "dynamo-0ca12b7-software-engineering",
