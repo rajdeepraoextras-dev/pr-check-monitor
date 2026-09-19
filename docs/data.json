@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-19T14:26:29.360539+00:00",
+  "snapshot_time": "2026-09-19T14:28:51.381205+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -181,7 +181,7 @@
       "title": "Rework: make the dihedral transform set a group and grade every winning rule family",
       "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/pull/8",
       "createdAt": "2026-09-19T11:56:12Z",
-      "updatedAt": "2026-09-19T14:20:45Z",
+      "updatedAt": "2026-09-19T14:27:25Z",
       "sha": "9e22b717bf8c9b8193618b1a4cc2b7a98f48fb28",
       "draft": false,
       "mergeable": true,
@@ -195,17 +195,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "ava_review",
-          "started_at": "2026-09-19T14:20:36Z"
-        },
-        {
-          "name": "deep_review",
           "started_at": "2026-09-19T14:20:36Z"
         }
       ],
@@ -219,16 +215,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35446404571/job/105911325129",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-19T14:20:36Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35446404571/job/105911325080",
           "app": "github-actions"
         },
         {
@@ -249,6 +235,16 @@
           "completed_at": "2026-09-19T13:41:04Z",
           "duration_sec": 74,
           "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35446404571/job/105906035770",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T14:20:36Z",
+          "completed_at": "2026-09-19T14:27:31Z",
+          "duration_sec": 415,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-46484b8-mathematics-and-formal-reasoning/actions/runs/35446404571/job/105911325080",
           "app": "github-actions"
         },
         {
@@ -314,7 +310,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:58:49.134255+00:00",
-      "last_change": "2026-09-19T14:21:51.851206+00:00"
+      "last_change": "2026-09-19T14:28:51.381205+00:00"
     },
     {
       "repo": "dynamo-2f11980-software-engineering",
@@ -840,7 +836,7 @@
       "title": "Rework: root the ext4 volume at its own mount point",
       "url": "https://github.com/handshake-project-dynamo/dynamo-8230e74-systems-infrastructure-and-operations/pull/6",
       "createdAt": "2026-09-19T11:41:39Z",
-      "updatedAt": "2026-09-19T14:05:46Z",
+      "updatedAt": "2026-09-19T14:27:03Z",
       "sha": "1abc299042568d7cf6757f9e062024f6326c46f8",
       "draft": false,
       "mergeable": true,
@@ -854,23 +850,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 12,
-      "total": 14,
+      "passed": 13,
+      "total": 15,
       "skipped": 1,
       "failed": [],
-      "running": [],
-      "queued": [
-        "qc_gate"
+      "running": [
+        {
+          "name": "trials",
+          "started_at": "2026-09-19T14:26:54Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
-          "name": "qc_gate",
-          "state": "queued",
+          "name": "trials",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-19T14:26:35Z",
+          "started_at": "2026-09-19T14:26:54Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-8230e74-systems-infrastructure-and-operations/actions/runs/35443522403/job/105912119231",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8230e74-systems-infrastructure-and-operations/actions/runs/35443522403/job/105912152066",
           "app": "github-actions"
         },
         {
@@ -944,6 +943,16 @@
           "app": "github-actions"
         },
         {
+          "name": "qc_gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-19T14:26:37Z",
+          "completed_at": "2026-09-19T14:26:51Z",
+          "duration_sec": 14,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8230e74-systems-infrastructure-and-operations/actions/runs/35443522403/job/105912119231",
+          "app": "github-actions"
+        },
+        {
           "name": "ratelimit",
           "state": "passed",
           "conclusion": "success",
@@ -1006,7 +1015,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-19T11:45:16.554860+00:00",
-      "last_change": "2026-09-19T14:26:29.360539+00:00"
+      "last_change": "2026-09-19T14:28:51.381205+00:00"
     },
     {
       "repo": "dynamo-47fcd6a-mathematics-and-formal-reasoning",
