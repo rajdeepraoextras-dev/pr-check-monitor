@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-20T21:58:29.654641+00:00",
+  "snapshot_time": "2026-09-20T21:59:05.815800+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: publish the canonical per-pass rules and close the external-include axiom path",
       "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/pull/15",
       "createdAt": "2026-09-20T18:56:55Z",
-      "updatedAt": "2026-09-20T21:58:22Z",
+      "updatedAt": "2026-09-20T21:58:37Z",
       "sha": "69014fe65750d92a2ba573e266b55942b44134d0",
       "draft": false,
       "mergeable": true,
@@ -31,16 +31,19 @@
       "total": 5,
       "skipped": 0,
       "failed": [],
-      "running": [],
-      "queued": [
-        "validation"
+      "running": [
+        {
+          "name": "validation",
+          "started_at": "2026-09-20T21:58:32Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
           "name": "validation",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-20T21:58:29Z",
+          "started_at": "2026-09-20T21:58:32Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35539728258/job/106156463017",
@@ -89,7 +92,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-20T19:00:36.983919+00:00",
-      "last_change": "2026-09-20T21:58:29.654641+00:00"
+      "last_change": "2026-09-20T21:59:05.815800+00:00"
     },
     {
       "repo": "dynamo-f17a844-data-processing-and-etl",
