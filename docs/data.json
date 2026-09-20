@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-20T10:24:24.155189+00:00",
+  "snapshot_time": "2026-09-20T10:25:06.244779+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -81,7 +81,7 @@
       "title": "Define the placement anchor, referenced prepare set, and raw record identity (#10)",
       "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/pull/12",
       "createdAt": "2026-09-20T10:15:35Z",
-      "updatedAt": "2026-09-20T10:24:04Z",
+      "updatedAt": "2026-09-20T10:24:53Z",
       "sha": "5aadbdf9db88b24ff1c87f8ef903fa72383c124f",
       "draft": false,
       "mergeable": true,
@@ -95,26 +95,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 3,
-      "total": 4,
+      "passed": 4,
+      "total": 5,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "similarity",
-          "started_at": "2026-09-20T10:24:14Z"
+          "name": "validation",
+          "started_at": "2026-09-20T10:24:47Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "similarity",
+          "name": "validation",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-20T10:24:14Z",
+          "started_at": "2026-09-20T10:24:47Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35504562699/job/106063119127",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35504562699/job/106063184970",
           "app": "github-actions"
         },
         {
@@ -146,11 +146,21 @@
           "duration_sec": 388,
           "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35504562699/job/106062314821",
           "app": "github-actions"
+        },
+        {
+          "name": "similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-20T10:24:14Z",
+          "completed_at": "2026-09-20T10:24:44Z",
+          "duration_sec": 30,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35504562699/job/106063119127",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-20T10:16:59.014323+00:00",
-      "last_change": "2026-09-20T10:24:24.155189+00:00"
+      "last_change": "2026-09-20T10:25:06.244779+00:00"
     },
     {
       "repo": "dynamo-71e499d-systems-infrastructure-and-operations",
