@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-20T13:32:05.399353+00:00",
+  "snapshot_time": "2026-09-20T13:32:28.239712+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -337,7 +337,7 @@
       "title": "Define the placement anchor, referenced prepare set, and raw record identity (#10)",
       "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/pull/12",
       "createdAt": "2026-09-20T10:15:35Z",
-      "updatedAt": "2026-09-20T13:32:03Z",
+      "updatedAt": "2026-09-20T13:32:21Z",
       "sha": "611159c9298a3330b504e07da8edee6b65568382",
       "draft": false,
       "mergeable": true,
@@ -355,17 +355,23 @@
       "total": 10,
       "skipped": 1,
       "failed": [],
-      "running": [],
-      "queued": [
-        "ava_review",
-        "deep_review"
+      "running": [
+        {
+          "name": "ava_review",
+          "started_at": "2026-09-20T13:32:14Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-20T13:32:14Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
           "name": "ava_review",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-20T13:32:12Z",
+          "started_at": "2026-09-20T13:32:14Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35510850281/job/106086178363",
@@ -373,9 +379,9 @@
         },
         {
           "name": "deep_review",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-20T13:32:12Z",
+          "started_at": "2026-09-20T13:32:14Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35510850281/job/106086178319",
@@ -464,7 +470,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-20T10:16:59.014323+00:00",
-      "last_change": "2026-09-20T13:32:05.399353+00:00"
+      "last_change": "2026-09-20T13:32:28.239712+00:00"
     },
     {
       "repo": "dynamo-71e499d-systems-infrastructure-and-operations",
