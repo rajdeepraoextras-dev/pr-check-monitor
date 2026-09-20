@@ -1,29 +1,5 @@
 [
  {
-  "ts": "2026-09-19T22:10:07.557832+00:00",
-  "pr": "dynamo-3def1d8-data-processing-and-etl#14",
-  "type": "discovered",
-  "msg": "PR discovered: Rework: state the caption correction, and grade the rows the drop cannot confirm"
- },
- {
-  "ts": "2026-09-19T22:12:13.225956+00:00",
-  "pr": "dynamo-3def1d8-data-processing-and-etl#14",
-  "type": "started",
-  "msg": "Check started: review"
- },
- {
-  "ts": "2026-09-19T22:12:13.225956+00:00",
-  "pr": "dynamo-3def1d8-data-processing-and-etl#14",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
-  "ts": "2026-09-19T22:18:18.514302+00:00",
-  "pr": "dynamo-3def1d8-data-processing-and-etl#14",
-  "type": "started",
-  "msg": "Check started: similarity"
- },
- {
   "ts": "2026-09-19T22:18:18.514302+00:00",
   "pr": "dynamo-3def1d8-data-processing-and-etl#14",
   "type": "passed",
@@ -2398,5 +2374,29 @@
   "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
   "type": "passed",
   "msg": "Check passed: similarity"
+ },
+ {
+  "ts": "2026-09-20T14:39:27.825695+00:00",
+  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
+  "type": "started",
+  "msg": "Check started: pass2"
+ },
+ {
+  "ts": "2026-09-20T14:39:27.825695+00:00",
+  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
+  "type": "passed",
+  "msg": "Check passed: ratelimit"
+ },
+ {
+  "ts": "2026-09-20T14:39:27.825695+00:00",
+  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
+  "type": "passed",
+  "msg": "Check passed: similarity"
+ },
+ {
+  "ts": "2026-09-20T14:39:27.825695+00:00",
+  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
+  "type": "passed",
+  "msg": "Check passed: validation"
  }
 ]
