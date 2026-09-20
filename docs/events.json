@@ -1,35 +1,5 @@
 [
  {
-  "ts": "2026-09-19T22:18:18.514302+00:00",
-  "pr": "dynamo-3def1d8-data-processing-and-etl#14",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
-  "ts": "2026-09-19T22:20:21.304593+00:00",
-  "pr": "dynamo-3def1d8-data-processing-and-etl#14",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-19T22:20:21.304593+00:00",
-  "pr": "dynamo-3def1d8-data-processing-and-etl#14",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-19T22:20:21.304593+00:00",
-  "pr": "dynamo-3def1d8-data-processing-and-etl#14",
-  "type": "passed",
-  "msg": "Check passed: similarity"
- },
- {
-  "ts": "2026-09-19T22:20:21.304593+00:00",
-  "pr": "dynamo-3def1d8-data-processing-and-etl#14",
-  "type": "passed",
-  "msg": "Check passed: validation"
- },
- {
   "ts": "2026-09-19T22:57:18.301573+00:00",
   "pr": "dynamo-3def1d8-data-processing-and-etl#14",
   "type": "failing",
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
   "type": "passed",
   "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-20T14:52:47.998645+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-20T14:52:47.998645+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "started",
+  "msg": "Check started: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-20T14:52:47.998645+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-20T14:52:47.998645+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-20T14:52:47.998645+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
  }
 ]
