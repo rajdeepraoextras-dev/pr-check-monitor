@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-20T16:00:43.325488+00:00",
+  "snapshot_time": "2026-09-20T16:01:17.383061+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -121,7 +121,7 @@
       "title": "Grade against shipped goldens, cover escaped Unicode, and close the recorded-ranking route",
       "url": "https://github.com/handshake-project-dynamo/dynamo-4c6a7ed-systems-infrastructure-and-operations/pull/6",
       "createdAt": "2026-09-20T10:24:37Z",
-      "updatedAt": "2026-09-20T15:54:24Z",
+      "updatedAt": "2026-09-20T16:00:45Z",
       "sha": "73aaa9dddbe8e35fce6aeabd46f321c5138fe99b",
       "draft": false,
       "mergeable": true,
@@ -135,26 +135,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 9,
+      "total": 11,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "deep_review",
-          "started_at": "2026-09-20T15:45:06Z"
+          "name": "tier1",
+          "started_at": "2026-09-20T16:00:53Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "deep_review",
+          "name": "tier1",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-20T15:45:06Z",
+          "started_at": "2026-09-20T16:00:53Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-4c6a7ed-systems-infrastructure-and-operations/actions/runs/35516713820/job/106103765164",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4c6a7ed-systems-infrastructure-and-operations/actions/runs/35516713820/job/106105878942",
           "app": "github-actions"
         },
         {
@@ -185,6 +185,16 @@
           "completed_at": "2026-09-20T14:32:34Z",
           "duration_sec": 73,
           "url": "https://github.com/handshake-project-dynamo/dynamo-4c6a7ed-systems-infrastructure-and-operations/actions/runs/35516713820/job/106093845305",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-20T15:45:06Z",
+          "completed_at": "2026-09-20T16:00:50Z",
+          "duration_sec": 944,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-4c6a7ed-systems-infrastructure-and-operations/actions/runs/35516713820/job/106103765164",
           "app": "github-actions"
         },
         {
@@ -250,7 +260,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-20T10:26:09.090174+00:00",
-      "last_change": "2026-09-20T15:56:12.431145+00:00"
+      "last_change": "2026-09-20T16:01:17.383061+00:00"
     },
     {
       "repo": "dynamo-e05237e-model-training-and-ml-infrastructure",
