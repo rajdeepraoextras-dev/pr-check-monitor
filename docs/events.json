@@ -1,137 +1,5 @@
 [
  {
-  "ts": "2026-09-19T13:10:49.678103+00:00",
-  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
-  "type": "running",
-  "msg": "Status failing \u2192 running"
- },
- {
-  "ts": "2026-09-19T13:10:49.678103+00:00",
-  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
-  "type": "started",
-  "msg": "Check started: cosine_similarity"
- },
- {
-  "ts": "2026-09-19T13:10:49.678103+00:00",
-  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
-  "type": "passed",
-  "msg": "Check recovered: ava_review"
- },
- {
-  "ts": "2026-09-19T13:10:49.678103+00:00",
-  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
-  "type": "passed",
-  "msg": "Check recovered: gate"
- },
- {
-  "ts": "2026-09-19T13:13:07.958856+00:00",
-  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
-  "type": "started",
-  "msg": "Check started: review"
- },
- {
-  "ts": "2026-09-19T13:13:07.958856+00:00",
-  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
-  "ts": "2026-09-19T13:17:31.910683+00:00",
-  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
-  "type": "started",
-  "msg": "Check started: similarity"
- },
- {
-  "ts": "2026-09-19T13:17:31.910683+00:00",
-  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
-  "ts": "2026-09-19T13:17:31.910683+00:00",
-  "pr": "dynamo-1f505a6-model-training-and-ml-infrastructure#7",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-19T13:17:31.910683+00:00",
-  "pr": "dynamo-1f505a6-model-training-and-ml-infrastructure#7",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-19T13:17:31.910683+00:00",
-  "pr": "dynamo-1f505a6-model-training-and-ml-infrastructure#7",
-  "type": "passed",
-  "msg": "Check passed: validation"
- },
- {
-  "ts": "2026-09-19T13:19:47.034047+00:00",
-  "pr": "dynamo-2f11980-software-engineering#9",
-  "type": "passed",
-  "msg": "Check passed: qc_exec"
- },
- {
-  "ts": "2026-09-19T13:19:47.034047+00:00",
-  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-19T13:19:47.034047+00:00",
-  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-19T13:19:47.034047+00:00",
-  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
-  "type": "passed",
-  "msg": "Check passed: similarity"
- },
- {
-  "ts": "2026-09-19T13:19:47.034047+00:00",
-  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
-  "type": "passed",
-  "msg": "Check passed: validation"
- },
- {
-  "ts": "2026-09-19T13:24:10.619323+00:00",
-  "pr": "dynamo-46484b8-mathematics-and-formal-reasoning#8",
-  "type": "failing",
-  "msg": "Status running \u2192 failing"
- },
- {
-  "ts": "2026-09-19T13:24:10.619323+00:00",
-  "pr": "dynamo-46484b8-mathematics-and-formal-reasoning#8",
-  "type": "failing",
-  "msg": "Check failed: gate"
- },
- {
-  "ts": "2026-09-19T13:24:10.619323+00:00",
-  "pr": "dynamo-46484b8-mathematics-and-formal-reasoning#8",
-  "type": "failing",
-  "msg": "Check failed: qc_gate"
- },
- {
-  "ts": "2026-09-19T13:24:10.619323+00:00",
-  "pr": "dynamo-46484b8-mathematics-and-formal-reasoning#8",
-  "type": "passed",
-  "msg": "Check passed: claude-cost-report"
- },
- {
-  "ts": "2026-09-19T13:24:10.619323+00:00",
-  "pr": "dynamo-46484b8-mathematics-and-formal-reasoning#8",
-  "type": "passed",
-  "msg": "Check passed: qc_eval"
- },
- {
-  "ts": "2026-09-19T13:28:36.168720+00:00",
-  "pr": "dynamo-3def1d8-data-processing-and-etl#11",
-  "type": "started",
-  "msg": "Check started: qc_gate"
- },
- {
   "ts": "2026-09-19T13:28:36.168720+00:00",
   "pr": "dynamo-3def1d8-data-processing-and-etl#11",
   "type": "passed",
@@ -2396,6 +2264,138 @@
  {
   "ts": "2026-09-20T12:22:23.521483+00:00",
   "pr": "dynamo-0ca12b7-software-engineering#11",
+  "type": "passed",
+  "msg": "16 checks passed"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
+  "type": "failing",
+  "msg": "Status error \u2192 failing"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
+  "type": "failing",
+  "msg": "Check failed: deep_review"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
+  "type": "passed",
+  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-e05237e-model-training-and-ml-infrastructure/` failed: error connecting to api.github.com\ncheck your internet connection or https://githubstatus.com"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
+  "type": "passed",
+  "msg": "9 checks passed"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-71e499d-systems-infrastructure-and-operations#10",
+  "type": "running",
+  "msg": "Status error \u2192 running"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-71e499d-systems-infrastructure-and-operations#10",
+  "type": "started",
+  "msg": "Check started: trials"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-71e499d-systems-infrastructure-and-operations#10",
+  "type": "passed",
+  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-71e499d-systems-infrastructure-and-operations` failed: error connecting to api.github.com\ncheck your internet connection or https://githubstatus.com"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-71e499d-systems-infrastructure-and-operations#10",
+  "type": "passed",
+  "msg": "13 checks passed"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
+  "type": "failing",
+  "msg": "Status error \u2192 failing"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
+  "type": "failing",
+  "msg": "Check failed: tier1"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
+  "type": "passed",
+  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-4c6a7ed-systems-infrastructure-and-operations` failed: error connecting to api.github.com\ncheck your internet connection or https://githubstatus.com"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
+  "type": "passed",
+  "msg": "10 checks passed"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
+  "type": "failing",
+  "msg": "Status error \u2192 failing"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
+  "type": "passed",
+  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/` failed: error connecting to api.github.com\ncheck your internet connection or https://githubstatus.com"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
+  "type": "passed",
+  "msg": "8 checks passed"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-1f505a6-model-training-and-ml-infrastructure#7",
+  "type": "passed",
+  "msg": "Status error \u2192 passed"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-1f505a6-model-training-and-ml-infrastructure#7",
+  "type": "passed",
+  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-1f505a6-model-training-and-ml-infrastructure/` failed: error connecting to api.github.com\ncheck your internet connection or https://githubstatus.com"
+ },
+ {
+  "ts": "2026-09-20T12:24:06.386298+00:00",
+  "pr": "dynamo-1f505a6-model-training-and-ml-infrastructure#7",
   "type": "passed",
   "msg": "16 checks passed"
  }
