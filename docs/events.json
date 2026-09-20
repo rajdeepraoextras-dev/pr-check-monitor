@@ -1,5 +1,35 @@
 [
  {
+  "ts": "2026-09-20T01:59:58.242134+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#16",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-20T01:59:58.242134+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#16",
+  "type": "passed",
+  "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-20T10:16:32.697140+00:00",
+  "pr": "dynamo-71e499d-systems-infrastructure-and-operations#10",
+  "type": "discovered",
+  "msg": "PR discovered: Rework: define root span selection for the trace stitcher"
+ },
+ {
+  "ts": "2026-09-20T10:16:32.697140+00:00",
+  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
+  "type": "discovered",
+  "msg": "PR discovered: Define the placement anchor, referenced prepare set, and raw record identity (#10)"
+ },
+ {
+  "ts": "2026-09-20T10:18:24.950127+00:00",
+  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
+  "type": "started",
+  "msg": "Check started: review"
+ },
+ {
   "ts": "2026-09-20T10:18:24.950127+00:00",
   "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
   "type": "passed",
@@ -2352,49 +2382,19 @@
   "msg": "Check failed: pass2"
  },
  {
-  "ts": "2026-09-20T15:06:25.112382+00:00",
-  "pr": "dynamo-f17a844-data-processing-and-etl#11",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-20T15:06:25.112382+00:00",
-  "pr": "dynamo-f17a844-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-20T15:06:25.112382+00:00",
-  "pr": "dynamo-f17a844-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: validation"
- },
- {
-  "ts": "2026-09-20T15:06:25.112382+00:00",
-  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
-  "type": "failing",
-  "msg": "Status running \u2192 failing"
- },
- {
-  "ts": "2026-09-20T15:06:25.112382+00:00",
+  "ts": "2026-09-20T15:06:31.250559+00:00",
   "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
   "type": "failing",
   "msg": "Check failed: gate"
  },
  {
-  "ts": "2026-09-20T15:06:25.112382+00:00",
-  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
-  "type": "failing",
-  "msg": "Check failed: pass2"
- },
- {
-  "ts": "2026-09-20T15:06:25.112382+00:00",
+  "ts": "2026-09-20T15:06:31.250559+00:00",
   "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
   "type": "passed",
   "msg": "Check passed: claude-cost-report"
  },
  {
-  "ts": "2026-09-20T15:06:25.112382+00:00",
+  "ts": "2026-09-20T15:06:31.250559+00:00",
   "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
   "type": "passed",
   "msg": "Check passed: pass2_suggestion"
