@@ -1,23 +1,5 @@
 [
  {
-  "ts": "2026-09-20T12:41:13.274858+00:00",
-  "pr": "dynamo-f17a844-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-20T12:41:13.274858+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-20T12:41:13.274858+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
   "ts": "2026-09-20T12:42:43.577479+00:00",
   "pr": "dynamo-f17a844-data-processing-and-etl#11",
   "type": "started",
@@ -2388,15 +2370,33 @@
   "msg": "Check failed: ava_review"
  },
  {
-  "ts": "2026-09-20T18:34:23.603860+00:00",
+  "ts": "2026-09-20T18:34:31.513404+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-20T18:34:31.513404+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "failing",
+  "msg": "Check failed: ava_review"
+ },
+ {
+  "ts": "2026-09-20T18:34:31.513404+00:00",
   "pr": "dynamo-f17a844-data-processing-and-etl#11",
   "type": "failing",
   "msg": "Check failed: gate"
  },
  {
-  "ts": "2026-09-20T18:34:23.603860+00:00",
+  "ts": "2026-09-20T18:34:31.513404+00:00",
   "pr": "dynamo-f17a844-data-processing-and-etl#11",
   "type": "passed",
   "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-20T18:34:31.513404+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "passed",
+  "msg": "Check passed: deep_review"
  }
 ]
