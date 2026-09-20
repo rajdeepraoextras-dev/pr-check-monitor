@@ -1,35 +1,5 @@
 [
  {
-  "ts": "2026-09-19T12:31:44.542430+00:00",
-  "pr": "dynamo-8230e74-systems-infrastructure-and-operations#6",
-  "type": "passed",
-  "msg": "Check passed: deep_review"
- },
- {
-  "ts": "2026-09-19T12:31:44.542430+00:00",
-  "pr": "dynamo-47fcd6a-mathematics-and-formal-reasoning#7",
-  "type": "started",
-  "msg": "Check started: qc_eval"
- },
- {
-  "ts": "2026-09-19T12:31:44.542430+00:00",
-  "pr": "dynamo-47fcd6a-mathematics-and-formal-reasoning#7",
-  "type": "started",
-  "msg": "Check started: qc_exec"
- },
- {
-  "ts": "2026-09-19T12:31:44.542430+00:00",
-  "pr": "dynamo-47fcd6a-mathematics-and-formal-reasoning#7",
-  "type": "passed",
-  "msg": "Check passed: deep_review"
- },
- {
-  "ts": "2026-09-19T12:31:44.542430+00:00",
-  "pr": "dynamo-47fcd6a-mathematics-and-formal-reasoning#7",
-  "type": "passed",
-  "msg": "Check passed: tier1"
- },
- {
   "ts": "2026-09-19T12:33:53.504461+00:00",
   "pr": "dynamo-2f11980-software-engineering#9",
   "type": "push",
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-3def1d8-data-processing-and-etl#16",
   "type": "passed",
   "msg": "Check passed: similarity"
+ },
+ {
+  "ts": "2026-09-20T01:59:58.242134+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#16",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-20T01:59:58.242134+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#16",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-20T01:59:58.242134+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#16",
+  "type": "failing",
+  "msg": "Check failed: ratelimit"
+ },
+ {
+  "ts": "2026-09-20T01:59:58.242134+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#16",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-20T01:59:58.242134+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#16",
+  "type": "passed",
+  "msg": "Check passed: validation"
  }
 ]
