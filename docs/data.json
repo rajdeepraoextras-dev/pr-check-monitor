@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-20T21:16:02.924307+00:00",
+  "snapshot_time": "2026-09-20T21:16:36.972634+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: publish the canonical per-pass rules and close the external-include axiom path",
       "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/pull/15",
       "createdAt": "2026-09-20T18:56:55Z",
-      "updatedAt": "2026-09-20T20:04:15Z",
+      "updatedAt": "2026-09-20T21:16:25Z",
       "sha": "100da6d0a46808f6867dd136c2c789770767abc9",
       "draft": false,
       "mergeable": true,
@@ -27,26 +27,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-20T20:04:07Z"
+          "name": "ava_review",
+          "started_at": "2026-09-20T21:16:17Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-20T21:16:17Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "pass2",
+          "name": "ava_review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-20T20:04:07Z",
+          "started_at": "2026-09-20T21:16:17Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35533619678/job/106140515895",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35533619678/job/106150865676",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-20T21:16:17Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35533619678/job/106150865566",
           "app": "github-actions"
         },
         {
@@ -67,6 +81,16 @@
           "completed_at": "2026-09-20T19:52:28Z",
           "duration_sec": 82,
           "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35533619678/job/106138660108",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-20T20:04:07Z",
+          "completed_at": "2026-09-20T21:16:15Z",
+          "duration_sec": 4328,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35533619678/job/106140515895",
           "app": "github-actions"
         },
         {
@@ -108,11 +132,21 @@
           "duration_sec": 122,
           "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35533619678/job/106140173756",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-20T21:16:15Z",
+          "completed_at": "2026-09-20T21:16:15Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35533619678/job/106150866374",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-20T19:00:36.983919+00:00",
-      "last_change": "2026-09-20T20:04:21.614708+00:00"
+      "last_change": "2026-09-20T21:16:36.972634+00:00"
     },
     {
       "repo": "dynamo-f17a844-data-processing-and-etl",
