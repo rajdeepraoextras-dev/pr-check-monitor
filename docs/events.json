@@ -1,18 +1,6 @@
 [
  {
   "ts": "2026-09-20T14:31:45.387440+00:00",
-  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
-  "type": "started",
-  "msg": "Check started: cosine_similarity"
- },
- {
-  "ts": "2026-09-20T14:31:45.387440+00:00",
-  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
-  "type": "passed",
-  "msg": "Check passed: changes"
- },
- {
-  "ts": "2026-09-20T14:31:45.387440+00:00",
   "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
   "type": "started",
   "msg": "Check started: similarity"
@@ -2370,33 +2358,45 @@
   "msg": "Check passed: claude-cost-report"
  },
  {
-  "ts": "2026-09-20T21:31:47.534587+00:00",
+  "ts": "2026-09-20T21:31:44.645549+00:00",
   "pr": "dynamo-f17a844-data-processing-and-etl#11",
   "type": "failing",
   "msg": "Status running \u2192 failing"
  },
  {
-  "ts": "2026-09-20T21:31:47.534587+00:00",
+  "ts": "2026-09-20T21:31:44.645549+00:00",
   "pr": "dynamo-f17a844-data-processing-and-etl#11",
   "type": "started",
   "msg": "Check started: claude-cost-report"
  },
  {
-  "ts": "2026-09-20T21:31:47.534587+00:00",
+  "ts": "2026-09-20T21:31:44.645549+00:00",
   "pr": "dynamo-f17a844-data-processing-and-etl#11",
   "type": "started",
   "msg": "Check started: pass2_suggestion"
  },
  {
-  "ts": "2026-09-20T21:31:47.534587+00:00",
+  "ts": "2026-09-20T21:31:44.645549+00:00",
   "pr": "dynamo-f17a844-data-processing-and-etl#11",
   "type": "failing",
   "msg": "Check failed: gate"
  },
  {
-  "ts": "2026-09-20T21:31:47.534587+00:00",
+  "ts": "2026-09-20T21:31:44.645549+00:00",
   "pr": "dynamo-f17a844-data-processing-and-etl#11",
   "type": "failing",
   "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-20T21:31:44.645549+00:00",
+  "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-20T21:31:44.645549+00:00",
+  "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
  }
 ]
