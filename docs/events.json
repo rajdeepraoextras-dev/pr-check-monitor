@@ -1,29 +1,5 @@
 [
  {
-  "ts": "2026-09-20T12:22:23.521483+00:00",
-  "pr": "dynamo-0ca12b7-software-engineering#11",
-  "type": "passed",
-  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/pulls/11 --jq '{` failed: Get \"https://api.github.com/repos/handshake-project-dynamo/dynamo-0ca12b7-software-engineering/pulls/11\": dial tcp 20.207.73.85:443: connect: network is unreachable"
- },
- {
-  "ts": "2026-09-20T12:22:23.521483+00:00",
-  "pr": "dynamo-0ca12b7-software-engineering#11",
-  "type": "passed",
-  "msg": "16 checks passed"
- },
- {
-  "ts": "2026-09-20T12:26:51.493097+00:00",
-  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
-  "type": "push",
-  "msg": "New commit pushed (f9eef50)"
- },
- {
-  "ts": "2026-09-20T12:26:51.493097+00:00",
-  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
-  "type": "running",
-  "msg": "Status failing \u2192 running"
- },
- {
   "ts": "2026-09-20T12:26:51.493097+00:00",
   "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
   "type": "started",
@@ -2398,5 +2374,29 @@
   "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
   "type": "passed",
   "msg": "Check passed: deep_review"
+ },
+ {
+  "ts": "2026-09-20T16:30:11.273617+00:00",
+  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-20T16:30:11.273617+00:00",
+  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-20T16:30:11.273617+00:00",
+  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
+  "type": "failing",
+  "msg": "Check failed: tier1"
+ },
+ {
+  "ts": "2026-09-20T16:30:11.273617+00:00",
+  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
  }
 ]
