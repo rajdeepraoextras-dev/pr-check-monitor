@@ -1,11 +1,79 @@
 {
-  "snapshot_time": "2026-09-20T19:00:11.568552+00:00",
+  "snapshot_time": "2026-09-20T19:00:20.715607+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-29ec2b8-mathematics-and-formal-reasoning",
+      "full_repo": "handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning",
+      "num": "15",
+      "title": "Rework: publish the canonical per-pass rules and close the external-include axiom path",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/pull/15",
+      "createdAt": "2026-09-20T18:56:55Z",
+      "updatedAt": "2026-09-20T18:59:11Z",
+      "sha": "bf8937cd62c207d616bf09548ef976c477206688",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 3052,
+      "deletions": 160,
+      "changedFiles": 20,
+      "head": "rework/29ec2b8-contract-determinacy",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 2,
+      "total": 3,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "review",
+          "started_at": "2026-09-20T18:59:02Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-20T18:59:02Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35530686835/job/106130885126",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-20T18:57:02Z",
+          "completed_at": "2026-09-20T18:57:26Z",
+          "duration_sec": 24,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35530686835/job/106130622457",
+          "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-20T18:57:28Z",
+          "completed_at": "2026-09-20T18:58:59Z",
+          "duration_sec": 91,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35530686835/job/106130683442",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-20T19:00:36.983919+00:00",
+      "last_change": "2026-09-20T19:00:20.715607+00:00"
+    },
     {
       "repo": "dynamo-f17a844-data-processing-and-etl",
       "full_repo": "handshake-project-dynamo/dynamo-f17a844-data-processing-and-etl",
@@ -527,7 +595,7 @@
       "title": "Define the placement anchor, referenced prepare set, and raw record identity (#10)",
       "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/pull/12",
       "createdAt": "2026-09-20T10:15:35Z",
-      "updatedAt": "2026-09-20T18:53:51Z",
+      "updatedAt": "2026-09-20T19:00:30Z",
       "sha": "5e3dbfb8b2c125370f70ddc861c536925a331a8f",
       "draft": false,
       "mergeable": true,
