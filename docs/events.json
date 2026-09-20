@@ -1,24 +1,6 @@
 [
  {
   "ts": "2026-09-20T12:22:23.521483+00:00",
-  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
-  "type": "failing",
-  "msg": "Check failed: gate"
- },
- {
-  "ts": "2026-09-20T12:22:23.521483+00:00",
-  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
-  "type": "passed",
-  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-e05237e-model-training-and-ml-infrastructure/` failed: error connecting to api.github.com\ncheck your internet connection or https://githubstatus.com"
- },
- {
-  "ts": "2026-09-20T12:22:23.521483+00:00",
-  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
-  "type": "passed",
-  "msg": "9 checks passed"
- },
- {
-  "ts": "2026-09-20T12:22:23.521483+00:00",
   "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
   "type": "failing",
   "msg": "Status error \u2192 failing"
@@ -2398,5 +2380,23 @@
   "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
   "type": "passed",
   "msg": "Check passed: pass2"
+ },
+ {
+  "ts": "2026-09-20T16:11:06.705419+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-20T16:11:06.705419+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-20T16:11:06.705419+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "passed",
+  "msg": "Check passed: pass2_suggestion"
  }
 ]
