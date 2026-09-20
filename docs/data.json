@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-20T00:17:22.868677+00:00",
+  "snapshot_time": "2026-09-20T00:19:28.298070+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -27,17 +27,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "qc_eval",
-          "started_at": "2026-09-20T00:10:54Z"
-        },
-        {
-          "name": "qc_exec",
           "started_at": "2026-09-20T00:10:54Z"
         }
       ],
@@ -51,16 +47,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35474981896/job/105990735816",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-20T00:10:54Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35474981896/job/105990735837",
           "app": "github-actions"
         },
         {
@@ -111,6 +97,16 @@
           "completed_at": "2026-09-20T00:00:20Z",
           "duration_sec": 2796,
           "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35474981896/job/105984003486",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-20T00:10:54Z",
+          "completed_at": "2026-09-20T00:18:43Z",
+          "duration_sec": 469,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-3def1d8-data-processing-and-etl/actions/runs/35474981896/job/105990735837",
           "app": "github-actions"
         },
         {
@@ -176,7 +172,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-19T23:03:42.683293+00:00",
-      "last_change": "2026-09-20T00:11:03.407919+00:00"
+      "last_change": "2026-09-20T00:19:28.298070+00:00"
     },
     {
       "repo": "dynamo-1f505a6-model-training-and-ml-infrastructure",
