@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-20T16:20:51.295489+00:00",
+  "snapshot_time": "2026-09-20T16:21:29.794665+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -407,7 +407,7 @@
       "title": "Rework: grade the contract boundaries the held-out cohort never reached",
       "url": "https://github.com/handshake-project-dynamo/dynamo-e05237e-model-training-and-ml-infrastructure/pull/9",
       "createdAt": "2026-09-20T10:19:41Z",
-      "updatedAt": "2026-09-20T16:20:49Z",
+      "updatedAt": "2026-09-20T16:21:05Z",
       "sha": "945b8023ae1f8867352dd7f5c842ebd3ddd5b90a",
       "draft": false,
       "mergeable": true,
@@ -425,17 +425,23 @@
       "total": 13,
       "skipped": 1,
       "failed": [],
-      "running": [],
-      "queued": [
-        "qc_eval",
-        "qc_exec"
+      "running": [
+        {
+          "name": "qc_eval",
+          "started_at": "2026-09-20T16:20:58Z"
+        },
+        {
+          "name": "qc_exec",
+          "started_at": "2026-09-20T16:20:58Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
           "name": "qc_eval",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-20T16:20:56Z",
+          "started_at": "2026-09-20T16:20:58Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e05237e-model-training-and-ml-infrastructure/actions/runs/35519174256/job/106108695339",
@@ -443,9 +449,9 @@
         },
         {
           "name": "qc_exec",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-20T16:20:56Z",
+          "started_at": "2026-09-20T16:20:58Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e05237e-model-training-and-ml-infrastructure/actions/runs/35519174256/job/106108695310",
@@ -564,7 +570,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-20T10:21:41.487561+00:00",
-      "last_change": "2026-09-20T16:20:51.295489+00:00"
+      "last_change": "2026-09-20T16:21:29.794665+00:00"
     },
     {
       "repo": "dynamo-472321b-model-training-and-ml-infrastructure",
