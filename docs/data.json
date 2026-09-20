@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-20T14:37:24.081100+00:00",
+  "snapshot_time": "2026-09-20T14:37:36.108471+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -139,16 +139,19 @@
       "total": 4,
       "skipped": 0,
       "failed": [],
-      "running": [],
-      "queued": [
-        "similarity"
+      "running": [
+        {
+          "name": "similarity",
+          "started_at": "2026-09-20T14:37:36Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
           "name": "similarity",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-20T14:37:33Z",
+          "started_at": "2026-09-20T14:37:36Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-4c6a7ed-systems-infrastructure-and-operations/actions/runs/35516713820/job/106094664521",
@@ -187,7 +190,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-20T10:26:09.090174+00:00",
-      "last_change": "2026-09-20T14:37:24.081100+00:00"
+      "last_change": "2026-09-20T14:37:36.108471+00:00"
     },
     {
       "repo": "dynamo-e05237e-model-training-and-ml-infrastructure",
