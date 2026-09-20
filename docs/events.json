@@ -1,53 +1,5 @@
 [
  {
-  "ts": "2026-09-19T17:17:53.484516+00:00",
-  "pr": "dynamo-0ca12b7-software-engineering#11",
-  "type": "started",
-  "msg": "Check started: similarity"
- },
- {
-  "ts": "2026-09-19T17:17:53.484516+00:00",
-  "pr": "dynamo-0ca12b7-software-engineering#11",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
-  "ts": "2026-09-19T17:20:15.856236+00:00",
-  "pr": "dynamo-0ca12b7-software-engineering#11",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-19T17:20:15.856236+00:00",
-  "pr": "dynamo-0ca12b7-software-engineering#11",
-  "type": "passed",
-  "msg": "Check passed: similarity"
- },
- {
-  "ts": "2026-09-19T17:20:15.856236+00:00",
-  "pr": "dynamo-0ca12b7-software-engineering#11",
-  "type": "passed",
-  "msg": "Check passed: validation"
- },
- {
-  "ts": "2026-09-19T17:22:22.849382+00:00",
-  "pr": "dynamo-3def1d8-data-processing-and-etl#12",
-  "type": "started",
-  "msg": "Check started: similarity"
- },
- {
-  "ts": "2026-09-19T17:22:22.849382+00:00",
-  "pr": "dynamo-3def1d8-data-processing-and-etl#12",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
-  "ts": "2026-09-19T17:22:22.849382+00:00",
-  "pr": "dynamo-0ca12b7-software-engineering#11",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
   "ts": "2026-09-19T17:24:30.957812+00:00",
   "pr": "dynamo-3def1d8-data-processing-and-etl#12",
   "type": "started",
@@ -2388,15 +2340,63 @@
   "msg": "Check recovered: gate"
  },
  {
-  "ts": "2026-09-20T13:47:59.516554+00:00",
+  "ts": "2026-09-20T13:48:06.084602+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-20T13:48:06.084602+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "started",
+  "msg": "Check started: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-20T13:48:06.084602+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-20T13:48:06.084602+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-20T13:48:06.084602+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-20T13:48:06.084602+00:00",
+  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
+  "type": "push",
+  "msg": "New commit pushed (9eba794)"
+ },
+ {
+  "ts": "2026-09-20T13:48:06.084602+00:00",
+  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
+  "type": "running",
+  "msg": "Status failing \u2192 running"
+ },
+ {
+  "ts": "2026-09-20T13:48:06.084602+00:00",
   "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
   "type": "started",
   "msg": "Check started: cosine_similarity"
  },
  {
-  "ts": "2026-09-20T13:47:59.516554+00:00",
+  "ts": "2026-09-20T13:48:06.084602+00:00",
   "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
   "type": "passed",
-  "msg": "Check passed: changes"
+  "msg": "Check recovered: ava_review"
+ },
+ {
+  "ts": "2026-09-20T13:48:06.084602+00:00",
+  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
+  "type": "passed",
+  "msg": "Check recovered: gate"
  }
 ]
