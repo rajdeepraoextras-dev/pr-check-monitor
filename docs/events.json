@@ -2,18 +2,6 @@
  {
   "ts": "2026-09-20T13:50:20.697202+00:00",
   "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "running",
-  "msg": "Status failing \u2192 running"
- },
- {
-  "ts": "2026-09-20T13:50:20.697202+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "started",
-  "msg": "Check started: cosine_similarity"
- },
- {
-  "ts": "2026-09-20T13:50:20.697202+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
   "type": "passed",
   "msg": "Check recovered: gate"
  },
@@ -2394,7 +2382,19 @@
   "msg": "Check passed: claude-cost-report"
  },
  {
-  "ts": "2026-09-20T19:37:54.817217+00:00",
+  "ts": "2026-09-20T19:37:57.152767+00:00",
+  "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-20T19:37:57.152767+00:00",
+  "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-20T19:37:57.152767+00:00",
   "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
   "type": "passed",
   "msg": "Check passed: pass2_suggestion"
