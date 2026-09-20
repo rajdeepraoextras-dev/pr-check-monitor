@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-20T13:06:09.799639+00:00",
+  "snapshot_time": "2026-09-20T13:06:44.089669+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -405,7 +405,7 @@
       "title": "Rework: define root span selection for the trace stitcher",
       "url": "https://github.com/handshake-project-dynamo/dynamo-71e499d-systems-infrastructure-and-operations/pull/10",
       "createdAt": "2026-09-20T10:11:01Z",
-      "updatedAt": "2026-09-20T13:06:09Z",
+      "updatedAt": "2026-09-20T13:06:28Z",
       "sha": "9764f10d2caeba8f8efc1cc03bdc353b06f29946",
       "draft": false,
       "mergeable": true,
@@ -416,39 +416,16 @@
       "head": "rework/71e499d-trace-root",
       "base": "main",
       "labels": [
-        "in-progress"
+        "accepted"
       ],
-      "overall": "running",
-      "passed": 14,
+      "overall": "passed",
+      "passed": 16,
       "total": 17,
       "skipped": 1,
       "failed": [],
       "running": [],
-      "queued": [
-        "claude-cost-report",
-        "gate"
-      ],
+      "queued": [],
       "checks": [
-        {
-          "name": "claude-cost-report",
-          "state": "queued",
-          "conclusion": null,
-          "started_at": "2026-09-20T13:06:17Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-71e499d-systems-infrastructure-and-operations/actions/runs/35504346933/job/106082808511",
-          "app": "github-actions"
-        },
-        {
-          "name": "gate",
-          "state": "queued",
-          "conclusion": null,
-          "started_at": "2026-09-20T13:06:17Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-71e499d-systems-infrastructure-and-operations/actions/runs/35504346933/job/106082808573",
-          "app": "github-actions"
-        },
         {
           "name": "ava_review",
           "state": "passed",
@@ -470,6 +447,16 @@
           "app": "github-actions"
         },
         {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-20T13:06:20Z",
+          "completed_at": "2026-09-20T13:06:35Z",
+          "duration_sec": 15,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-71e499d-systems-infrastructure-and-operations/actions/runs/35504346933/job/106082808511",
+          "app": "github-actions"
+        },
+        {
           "name": "cosine_similarity",
           "state": "passed",
           "conclusion": "success",
@@ -487,6 +474,16 @@
           "completed_at": "2026-09-20T11:37:40Z",
           "duration_sec": 630,
           "url": "https://github.com/handshake-project-dynamo/dynamo-71e499d-systems-infrastructure-and-operations/actions/runs/35504346933/job/106070620315",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-20T13:06:19Z",
+          "completed_at": "2026-09-20T13:06:31Z",
+          "duration_sec": 12,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-71e499d-systems-infrastructure-and-operations/actions/runs/35504346933/job/106082808573",
           "app": "github-actions"
         },
         {
@@ -602,7 +599,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-20T10:16:51.650193+00:00",
-      "last_change": "2026-09-20T13:06:09.799639+00:00"
+      "last_change": "2026-09-20T13:06:44.089669+00:00"
     }
   ]
 }
