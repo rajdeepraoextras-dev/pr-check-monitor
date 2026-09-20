@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-20T13:43:38.492371+00:00",
+  "snapshot_time": "2026-09-20T13:44:16.365324+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -229,7 +229,7 @@
       "title": "Rework: grade the contract boundaries the held-out cohort never reached",
       "url": "https://github.com/handshake-project-dynamo/dynamo-e05237e-model-training-and-ml-infrastructure/pull/9",
       "createdAt": "2026-09-20T10:19:41Z",
-      "updatedAt": "2026-09-20T13:43:32Z",
+      "updatedAt": "2026-09-20T13:43:47Z",
       "sha": "fd867d16c25c90f1857833416d52c73aa2171cde",
       "draft": false,
       "mergeable": true,
@@ -240,25 +240,17 @@
       "head": "rework/e05237e-holdout-coverage",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
       "overall": "failing",
-      "passed": 8,
+      "passed": 9,
       "total": 17,
       "skipped": 6,
       "failed": [
-        "ava_review"
+        "ava_review",
+        "gate"
       ],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-20T13:43:42Z"
-        },
-        {
-          "name": "gate",
-          "started_at": "2026-09-20T13:43:42Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -272,22 +264,12 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-20T13:43:42Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-e05237e-model-training-and-ml-infrastructure/actions/runs/35512329048/job/106087640619",
-          "app": "github-actions"
-        },
-        {
           "name": "gate",
-          "state": "running",
-          "conclusion": null,
+          "state": "failed",
+          "conclusion": "failure",
           "started_at": "2026-09-20T13:43:42Z",
-          "completed_at": null,
-          "duration_sec": null,
+          "completed_at": "2026-09-20T13:43:51Z",
+          "duration_sec": 9,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e05237e-model-training-and-ml-infrastructure/actions/runs/35512329048/job/106087640573",
           "app": "github-actions"
         },
@@ -299,6 +281,16 @@
           "completed_at": "2026-09-20T13:02:43Z",
           "duration_sec": 24,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e05237e-model-training-and-ml-infrastructure/actions/runs/35512329048/job/106082275313",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-20T13:43:42Z",
+          "completed_at": "2026-09-20T13:43:58Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e05237e-model-training-and-ml-infrastructure/actions/runs/35512329048/job/106087640619",
           "app": "github-actions"
         },
         {
@@ -434,7 +426,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-20T10:21:41.487561+00:00",
-      "last_change": "2026-09-20T13:43:38.492371+00:00"
+      "last_change": "2026-09-20T13:44:16.365324+00:00"
     },
     {
       "repo": "dynamo-472321b-model-training-and-ml-infrastructure",
