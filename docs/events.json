@@ -1,29 +1,5 @@
 [
  {
-  "ts": "2026-09-19T12:27:01.987470+00:00",
-  "pr": "dynamo-0ca12b7-software-engineering#11",
-  "type": "started",
-  "msg": "Check started: ava_review"
- },
- {
-  "ts": "2026-09-19T12:27:01.987470+00:00",
-  "pr": "dynamo-0ca12b7-software-engineering#11",
-  "type": "started",
-  "msg": "Check started: deep_review"
- },
- {
-  "ts": "2026-09-19T12:27:01.987470+00:00",
-  "pr": "dynamo-0ca12b7-software-engineering#11",
-  "type": "passed",
-  "msg": "Check passed: pass2"
- },
- {
-  "ts": "2026-09-19T12:29:19.410234+00:00",
-  "pr": "dynamo-47fcd6a-mathematics-and-formal-reasoning#7",
-  "type": "passed",
-  "msg": "Check passed: ava_review"
- },
- {
   "ts": "2026-09-19T12:29:19.410234+00:00",
   "pr": "dynamo-a6e6445-data-querying-and-databases#10",
   "type": "started",
@@ -2398,5 +2374,29 @@
   "pr": "dynamo-3def1d8-data-processing-and-etl#15",
   "type": "passed",
   "msg": "Check passed: qc_gate"
+ },
+ {
+  "ts": "2026-09-20T01:44:13.186550+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#15",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-20T01:44:13.186550+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#15",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-20T01:44:13.186550+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#15",
+  "type": "failing",
+  "msg": "Check failed: trials"
+ },
+ {
+  "ts": "2026-09-20T01:44:13.186550+00:00",
+  "pr": "dynamo-3def1d8-data-processing-and-etl#15",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
  }
 ]
