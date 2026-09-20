@@ -1,79 +1,11 @@
 {
-  "snapshot_time": "2026-09-20T10:13:26.685610+00:00",
+  "snapshot_time": "2026-09-20T10:13:56.011578+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
-    {
-      "repo": "dynamo-71e499d-systems-infrastructure-and-operations",
-      "full_repo": "handshake-project-dynamo/dynamo-71e499d-systems-infrastructure-and-operations",
-      "num": "10",
-      "title": "Rework: define root span selection for the trace stitcher",
-      "url": "https://github.com/handshake-project-dynamo/dynamo-71e499d-systems-infrastructure-and-operations/pull/10",
-      "createdAt": "2026-09-20T10:11:01Z",
-      "updatedAt": "2026-09-20T10:13:06Z",
-      "sha": "9764f10d2caeba8f8efc1cc03bdc353b06f29946",
-      "draft": false,
-      "mergeable": true,
-      "reviewDecision": "",
-      "additions": 735,
-      "deletions": 15,
-      "changedFiles": 8,
-      "head": "rework/71e499d-trace-root",
-      "base": "main",
-      "labels": [
-        "in-progress"
-      ],
-      "overall": "running",
-      "passed": 2,
-      "total": 3,
-      "skipped": 0,
-      "failed": [],
-      "running": [
-        {
-          "name": "review",
-          "started_at": "2026-09-20T10:12:57Z"
-        }
-      ],
-      "queued": [],
-      "checks": [
-        {
-          "name": "review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-20T10:12:57Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-71e499d-systems-infrastructure-and-operations/actions/runs/35504346933/job/106061724226",
-          "app": "github-actions"
-        },
-        {
-          "name": "changes",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-20T10:11:07Z",
-          "completed_at": "2026-09-20T10:11:31Z",
-          "duration_sec": 24,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-71e499d-systems-infrastructure-and-operations/actions/runs/35504346933/job/106061507412",
-          "app": "github-actions"
-        },
-        {
-          "name": "cosine_similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-20T10:11:34Z",
-          "completed_at": "2026-09-20T10:12:54Z",
-          "duration_sec": 80,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-71e499d-systems-infrastructure-and-operations/actions/runs/35504346933/job/106061562817",
-          "app": "github-actions"
-        }
-      ],
-      "submitted": false,
-      "first_seen": "2026-09-20T10:13:38.124704+00:00",
-      "last_change": "2026-09-20T10:13:26.685610+00:00"
-    },
     {
       "repo": "dynamo-1f505a6-model-training-and-ml-infrastructure",
       "full_repo": "handshake-project-dynamo/dynamo-1f505a6-model-training-and-ml-infrastructure",
