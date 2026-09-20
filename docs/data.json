@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-20T15:19:05.328319+00:00",
+  "snapshot_time": "2026-09-20T15:19:15.458428+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -243,44 +243,42 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 0,
+      "passed": 1,
       "total": 2,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "changes",
-          "started_at": "2026-09-20T15:18:46Z"
+          "name": "cosine_similarity",
+          "started_at": "2026-09-20T15:19:14Z"
         }
       ],
-      "queued": [
-        "cosine_similarity"
-      ],
+      "queued": [],
       "checks": [
         {
-          "name": "changes",
+          "name": "cosine_similarity",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-20T15:18:46Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-e05237e-model-training-and-ml-infrastructure/actions/runs/35519174256/job/106100156618",
-          "app": "github-actions"
-        },
-        {
-          "name": "cosine_similarity",
-          "state": "queued",
-          "conclusion": null,
-          "started_at": "2026-09-20T15:19:12Z",
+          "started_at": "2026-09-20T15:19:14Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e05237e-model-training-and-ml-infrastructure/actions/runs/35519174256/job/106100222309",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-20T15:18:46Z",
+          "completed_at": "2026-09-20T15:19:12Z",
+          "duration_sec": 26,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e05237e-model-training-and-ml-infrastructure/actions/runs/35519174256/job/106100156618",
           "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-20T10:21:41.487561+00:00",
-      "last_change": "2026-09-20T15:19:05.328319+00:00"
+      "last_change": "2026-09-20T15:19:15.458428+00:00"
     },
     {
       "repo": "dynamo-472321b-model-training-and-ml-infrastructure",
