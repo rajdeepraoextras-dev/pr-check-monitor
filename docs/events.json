@@ -1,23 +1,5 @@
 [
  {
-  "ts": "2026-09-20T13:57:47.537588+00:00",
-  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-20T13:57:47.537588+00:00",
-  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-20T13:58:20.874832+00:00",
-  "pr": "dynamo-f17a844-data-processing-and-etl#11",
-  "type": "started",
-  "msg": "Check started: validation"
- },
- {
   "ts": "2026-09-20T13:58:20.874832+00:00",
   "pr": "dynamo-f17a844-data-processing-and-etl#11",
   "type": "passed",
@@ -2388,13 +2370,31 @@
   "msg": "Check passed: tier1"
  },
  {
-  "ts": "2026-09-20T20:01:24.816492+00:00",
+  "ts": "2026-09-20T20:01:25.675783+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "started",
+  "msg": "Check started: qc_eval"
+ },
+ {
+  "ts": "2026-09-20T20:01:25.675783+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "started",
+  "msg": "Check started: qc_exec"
+ },
+ {
+  "ts": "2026-09-20T20:01:25.675783+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "passed",
+  "msg": "Check passed: tier1"
+ },
+ {
+  "ts": "2026-09-20T20:01:25.675783+00:00",
   "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
   "type": "started",
   "msg": "Check started: similarity"
  },
  {
-  "ts": "2026-09-20T20:01:24.816492+00:00",
+  "ts": "2026-09-20T20:01:25.675783+00:00",
   "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
   "type": "passed",
   "msg": "Check passed: review"
