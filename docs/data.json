@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-20T13:38:51.875556+00:00",
+  "snapshot_time": "2026-09-20T13:39:20.207519+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -229,7 +229,7 @@
       "title": "Rework: grade the contract boundaries the held-out cohort never reached",
       "url": "https://github.com/handshake-project-dynamo/dynamo-e05237e-model-training-and-ml-infrastructure/pull/9",
       "createdAt": "2026-09-20T10:19:41Z",
-      "updatedAt": "2026-09-20T13:34:10Z",
+      "updatedAt": "2026-09-20T13:39:13Z",
       "sha": "fd867d16c25c90f1857833416d52c73aa2171cde",
       "draft": false,
       "mergeable": true,
@@ -243,17 +243,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "ava_review",
-          "started_at": "2026-09-20T13:34:03Z"
-        },
-        {
-          "name": "deep_review",
           "started_at": "2026-09-20T13:34:03Z"
         }
       ],
@@ -267,16 +263,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e05237e-model-training-and-ml-infrastructure/actions/runs/35512329048/job/106086415486",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-20T13:34:03Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-e05237e-model-training-and-ml-infrastructure/actions/runs/35512329048/job/106086415380",
           "app": "github-actions"
         },
         {
@@ -297,6 +283,16 @@
           "completed_at": "2026-09-20T13:04:04Z",
           "duration_sec": 78,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e05237e-model-training-and-ml-infrastructure/actions/runs/35512329048/job/106082331894",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-20T13:34:03Z",
+          "completed_at": "2026-09-20T13:39:18Z",
+          "duration_sec": 315,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e05237e-model-training-and-ml-infrastructure/actions/runs/35512329048/job/106086415380",
           "app": "github-actions"
         },
         {
@@ -362,7 +358,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-20T10:21:41.487561+00:00",
-      "last_change": "2026-09-20T13:34:54.914986+00:00"
+      "last_change": "2026-09-20T13:39:20.207519+00:00"
     },
     {
       "repo": "dynamo-472321b-model-training-and-ml-infrastructure",
@@ -371,7 +367,7 @@
       "title": "Define the placement anchor, referenced prepare set, and raw record identity (#10)",
       "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/pull/12",
       "createdAt": "2026-09-20T10:15:35Z",
-      "updatedAt": "2026-09-20T13:32:21Z",
+      "updatedAt": "2026-09-20T13:39:02Z",
       "sha": "611159c9298a3330b504e07da8edee6b65568382",
       "draft": false,
       "mergeable": true,
@@ -385,17 +381,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "ava_review",
-          "started_at": "2026-09-20T13:32:14Z"
-        },
-        {
-          "name": "deep_review",
           "started_at": "2026-09-20T13:32:14Z"
         }
       ],
@@ -409,16 +401,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35510850281/job/106086178363",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-20T13:32:14Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35510850281/job/106086178319",
           "app": "github-actions"
         },
         {
@@ -439,6 +421,16 @@
           "completed_at": "2026-09-20T12:33:08Z",
           "duration_sec": 84,
           "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35510850281/job/106078442150",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-20T13:32:14Z",
+          "completed_at": "2026-09-20T13:39:07Z",
+          "duration_sec": 413,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35510850281/job/106086178319",
           "app": "github-actions"
         },
         {
@@ -504,7 +496,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-20T10:16:59.014323+00:00",
-      "last_change": "2026-09-20T13:32:40.328175+00:00"
+      "last_change": "2026-09-20T13:39:20.207519+00:00"
     },
     {
       "repo": "dynamo-71e499d-systems-infrastructure-and-operations",
