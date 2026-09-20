@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-20T15:01:47.287642+00:00",
+  "snapshot_time": "2026-09-20T15:02:20.639643+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -297,7 +297,7 @@
       "title": "Define the placement anchor, referenced prepare set, and raw record identity (#10)",
       "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/pull/12",
       "createdAt": "2026-09-20T10:15:35Z",
-      "updatedAt": "2026-09-20T15:02:02Z",
+      "updatedAt": "2026-09-20T15:02:20Z",
       "sha": "6bb86f9e0b5af367cf323f97e7c83d29d7593e47",
       "draft": false,
       "mergeable": true,
@@ -311,26 +311,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-20T14:00:09Z"
+          "name": "ava_review",
+          "started_at": "2026-09-20T15:02:13Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-20T15:02:13Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "pass2",
+          "name": "ava_review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-20T14:00:09Z",
+          "started_at": "2026-09-20T15:02:13Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35514660226/job/106089682110",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35514660226/job/106097888709",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-20T15:02:13Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35514660226/job/106097888769",
           "app": "github-actions"
         },
         {
@@ -351,6 +365,16 @@
           "completed_at": "2026-09-20T13:51:56Z",
           "duration_sec": 75,
           "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35514660226/job/106088519796",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-20T14:00:09Z",
+          "completed_at": "2026-09-20T15:02:10Z",
+          "duration_sec": 3721,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35514660226/job/106089682110",
           "app": "github-actions"
         },
         {
@@ -392,11 +416,21 @@
           "duration_sec": 61,
           "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35514660226/job/106089536125",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-20T15:02:11Z",
+          "completed_at": "2026-09-20T15:02:11Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35514660226/job/106097889504",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-20T10:16:59.014323+00:00",
-      "last_change": "2026-09-20T14:01:47.117964+00:00"
+      "last_change": "2026-09-20T15:02:20.639643+00:00"
     },
     {
       "repo": "dynamo-71e499d-systems-infrastructure-and-operations",
