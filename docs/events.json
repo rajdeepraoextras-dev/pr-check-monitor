@@ -2,24 +2,6 @@
  {
   "ts": "2026-09-19T12:42:20.349002+00:00",
   "pr": "dynamo-8230e74-systems-infrastructure-and-operations#6",
-  "type": "push",
-  "msg": "New commit pushed (1abc299)"
- },
- {
-  "ts": "2026-09-19T12:42:20.349002+00:00",
-  "pr": "dynamo-8230e74-systems-infrastructure-and-operations#6",
-  "type": "running",
-  "msg": "Status failing \u2192 running"
- },
- {
-  "ts": "2026-09-19T12:42:20.349002+00:00",
-  "pr": "dynamo-8230e74-systems-infrastructure-and-operations#6",
-  "type": "started",
-  "msg": "Check started: review"
- },
- {
-  "ts": "2026-09-19T12:42:20.349002+00:00",
-  "pr": "dynamo-8230e74-systems-infrastructure-and-operations#6",
   "type": "passed",
   "msg": "Check recovered: ava_review"
  },
@@ -2388,13 +2370,31 @@
   "msg": "Check passed: similarity"
  },
  {
-  "ts": "2026-09-20T10:25:49.858225+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "started",
-  "msg": "Check started: ratelimit"
+  "ts": "2026-09-20T10:25:55.512095+00:00",
+  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
+  "type": "discovered",
+  "msg": "PR discovered: Grade against shipped goldens, cover escaped Unicode, and close the recorded-ranking route"
  },
  {
-  "ts": "2026-09-20T10:25:49.858225+00:00",
+  "ts": "2026-09-20T10:25:55.512095+00:00",
+  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
+  "type": "started",
+  "msg": "Check started: pass2"
+ },
+ {
+  "ts": "2026-09-20T10:25:55.512095+00:00",
+  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
+  "type": "passed",
+  "msg": "Check passed: ratelimit"
+ },
+ {
+  "ts": "2026-09-20T10:25:55.512095+00:00",
+  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
+  "type": "passed",
+  "msg": "Check passed: similarity"
+ },
+ {
+  "ts": "2026-09-20T10:25:55.512095+00:00",
   "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
   "type": "passed",
   "msg": "Check passed: validation"
