@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-20T16:20:55.541230+00:00",
+  "snapshot_time": "2026-09-20T16:20:51.295489+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -398,7 +398,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-20T10:26:09.090174+00:00",
-      "last_change": "2026-09-20T16:19:43.732852+00:00"
+      "last_change": "2026-09-20T16:20:51.295489+00:00"
     },
     {
       "repo": "dynamo-e05237e-model-training-and-ml-infrastructure",
@@ -425,23 +425,17 @@
       "total": 13,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "qc_eval",
-          "started_at": "2026-09-20T16:20:58Z"
-        },
-        {
-          "name": "qc_exec",
-          "started_at": "2026-09-20T16:20:58Z"
-        }
+      "running": [],
+      "queued": [
+        "qc_eval",
+        "qc_exec"
       ],
-      "queued": [],
       "checks": [
         {
           "name": "qc_eval",
-          "state": "running",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-20T16:20:58Z",
+          "started_at": "2026-09-20T16:20:56Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e05237e-model-training-and-ml-infrastructure/actions/runs/35519174256/job/106108695339",
@@ -449,9 +443,9 @@
         },
         {
           "name": "qc_exec",
-          "state": "running",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-20T16:20:58Z",
+          "started_at": "2026-09-20T16:20:56Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e05237e-model-training-and-ml-infrastructure/actions/runs/35519174256/job/106108695310",
@@ -570,7 +564,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-20T10:21:41.487561+00:00",
-      "last_change": "2026-09-20T16:20:55.541230+00:00"
+      "last_change": "2026-09-20T16:20:51.295489+00:00"
     },
     {
       "repo": "dynamo-472321b-model-training-and-ml-infrastructure",
