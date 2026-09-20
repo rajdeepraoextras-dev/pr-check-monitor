@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-20T20:15:12.339959+00:00",
+  "snapshot_time": "2026-09-20T20:15:29.477083+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -135,26 +135,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 11,
-      "total": 13,
+      "passed": 12,
+      "total": 14,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_eval",
-          "started_at": "2026-09-20T19:59:45Z"
+          "name": "qc_gate",
+          "started_at": "2026-09-20T20:15:25Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
+          "name": "qc_gate",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-20T19:59:45Z",
+          "started_at": "2026-09-20T20:15:25Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-f17a844-data-processing-and-etl/actions/runs/35529611200/job/106139852948",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f17a844-data-processing-and-etl/actions/runs/35529611200/job/106142190696",
           "app": "github-actions"
         },
         {
@@ -205,6 +205,16 @@
           "completed_at": "2026-09-20T19:49:52Z",
           "duration_sec": 4007,
           "url": "https://github.com/handshake-project-dynamo/dynamo-f17a844-data-processing-and-etl/actions/runs/35529611200/job/106128686885",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-20T19:59:45Z",
+          "completed_at": "2026-09-20T20:15:22Z",
+          "duration_sec": 937,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f17a844-data-processing-and-etl/actions/runs/35529611200/job/106139852948",
           "app": "github-actions"
         },
         {
@@ -280,7 +290,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-20T12:34:21.898311+00:00",
-      "last_change": "2026-09-20T20:10:13.886491+00:00"
+      "last_change": "2026-09-20T20:15:29.477083+00:00"
     },
     {
       "repo": "dynamo-4c6a7ed-systems-infrastructure-and-operations",
