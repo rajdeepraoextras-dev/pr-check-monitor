@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-20T19:00:20.715607+00:00",
+  "snapshot_time": "2026-09-20T19:00:45.798026+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -609,17 +609,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "ava_review",
-          "started_at": "2026-09-20T18:53:45Z"
-        },
-        {
-          "name": "deep_review",
           "started_at": "2026-09-20T18:53:45Z"
         }
       ],
@@ -633,16 +629,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35526353155/job/106130173284",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-20T18:53:45Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35526353155/job/106130173230",
           "app": "github-actions"
         },
         {
@@ -663,6 +649,16 @@
           "completed_at": "2026-09-20T17:38:07Z",
           "duration_sec": 125,
           "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35526353155/job/106119139738",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-20T18:53:45Z",
+          "completed_at": "2026-09-20T19:00:35Z",
+          "duration_sec": 410,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-472321b-model-training-and-ml-infrastructure/actions/runs/35526353155/job/106130173230",
           "app": "github-actions"
         },
         {
@@ -728,7 +724,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-20T10:16:59.014323+00:00",
-      "last_change": "2026-09-20T18:54:23.136264+00:00"
+      "last_change": "2026-09-20T19:00:45.798026+00:00"
     },
     {
       "repo": "dynamo-71e499d-systems-infrastructure-and-operations",
