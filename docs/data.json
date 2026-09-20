@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-20T20:15:29.477083+00:00",
+  "snapshot_time": "2026-09-20T20:16:04.114470+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -121,7 +121,7 @@
       "title": "Fix the cue timestamp contract and close the output and input verifier gaps",
       "url": "https://github.com/handshake-project-dynamo/dynamo-f17a844-data-processing-and-etl/pull/11",
       "createdAt": "2026-09-20T12:32:23Z",
-      "updatedAt": "2026-09-20T19:59:52Z",
+      "updatedAt": "2026-09-20T20:15:50Z",
       "sha": "a9b4f7e5fe31c36727193c6071e4f2aa81f13dc4",
       "draft": false,
       "mergeable": true,
@@ -132,28 +132,36 @@
       "head": "rework/f17a844-subtitle-timeline-repair",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
-      "passed": 12,
-      "total": 14,
-      "skipped": 1,
-      "failed": [],
-      "running": [
-        {
-          "name": "qc_gate",
-          "started_at": "2026-09-20T20:15:25Z"
-        }
+      "overall": "failing",
+      "passed": 13,
+      "total": 17,
+      "skipped": 2,
+      "failed": [
+        "gate",
+        "qc_gate"
       ],
+      "running": [],
       "queued": [],
       "checks": [
         {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-20T20:15:43Z",
+          "completed_at": "2026-09-20T20:15:53Z",
+          "duration_sec": 10,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f17a844-data-processing-and-etl/actions/runs/35529611200/job/106142237034",
+          "app": "github-actions"
+        },
+        {
           "name": "qc_gate",
-          "state": "running",
-          "conclusion": null,
+          "state": "failed",
+          "conclusion": "failure",
           "started_at": "2026-09-20T20:15:25Z",
-          "completed_at": null,
-          "duration_sec": null,
+          "completed_at": "2026-09-20T20:15:40Z",
+          "duration_sec": 15,
           "url": "https://github.com/handshake-project-dynamo/dynamo-f17a844-data-processing-and-etl/actions/runs/35529611200/job/106142190696",
           "app": "github-actions"
         },
@@ -175,6 +183,16 @@
           "completed_at": "2026-09-20T18:37:02Z",
           "duration_sec": 24,
           "url": "https://github.com/handshake-project-dynamo/dynamo-f17a844-data-processing-and-etl/actions/runs/35529611200/job/106127772132",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-20T20:15:43Z",
+          "completed_at": "2026-09-20T20:15:59Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f17a844-data-processing-and-etl/actions/runs/35529611200/job/106142237109",
           "app": "github-actions"
         },
         {
@@ -286,11 +304,21 @@
           "duration_sec": -1,
           "url": "https://github.com/handshake-project-dynamo/dynamo-f17a844-data-processing-and-etl/actions/runs/35529611200/job/106138494178",
           "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-20T20:15:41Z",
+          "completed_at": "2026-09-20T20:15:41Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-f17a844-data-processing-and-etl/actions/runs/35529611200/job/106142237714",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-20T12:34:21.898311+00:00",
-      "last_change": "2026-09-20T20:15:29.477083+00:00"
+      "last_change": "2026-09-20T20:16:04.114470+00:00"
     },
     {
       "repo": "dynamo-4c6a7ed-systems-infrastructure-and-operations",
