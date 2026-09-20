@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-20T19:35:57.714553+00:00",
+  "snapshot_time": "2026-09-20T19:36:09.047363+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -31,12 +31,15 @@
       "total": 17,
       "skipped": 7,
       "failed": [
-        "gate",
         "pass2"
       ],
       "running": [
         {
           "name": "claude-cost-report",
+          "started_at": "2026-09-20T19:36:02Z"
+        },
+        {
+          "name": "gate",
           "started_at": "2026-09-20T19:36:02Z"
         },
         {
@@ -46,16 +49,6 @@
       ],
       "queued": [],
       "checks": [
-        {
-          "name": "gate",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-20T19:36:02Z",
-          "completed_at": "2026-09-20T19:36:11Z",
-          "duration_sec": 9,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35530686835/job/106136396869",
-          "app": "github-actions"
-        },
         {
           "name": "pass2",
           "state": "failed",
@@ -74,6 +67,16 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35530686835/job/106136396925",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-20T19:36:02Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35530686835/job/106136396869",
           "app": "github-actions"
         },
         {
@@ -219,7 +222,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-20T19:00:36.983919+00:00",
-      "last_change": "2026-09-20T19:35:57.714553+00:00"
+      "last_change": "2026-09-20T19:36:09.047363+00:00"
     },
     {
       "repo": "dynamo-f17a844-data-processing-and-etl",
