@@ -1,17 +1,5 @@
 [
  {
-  "ts": "2026-09-19T18:47:03.421272+00:00",
-  "pr": "dynamo-3def1d8-data-processing-and-etl#12",
-  "type": "passed",
-  "msg": "Check passed: qc_gate"
- },
- {
-  "ts": "2026-09-19T19:07:37.902554+00:00",
-  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
-  "type": "started",
-  "msg": "Check started: ava_review"
- },
- {
   "ts": "2026-09-19T19:07:37.902554+00:00",
   "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
   "type": "started",
@@ -2398,5 +2386,17 @@
   "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
   "type": "passed",
   "msg": "Check passed: qc_eval"
+ },
+ {
+  "ts": "2026-09-20T14:21:55.743313+00:00",
+  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-20T14:21:55.743313+00:00",
+  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
  }
 ]
