@@ -1,47 +1,5 @@
 [
  {
-  "ts": "2026-09-20T11:32:38.335129+00:00",
-  "pr": "dynamo-a6e6445-data-querying-and-databases#10",
-  "type": "passed",
-  "msg": "16 checks passed"
- },
- {
-  "ts": "2026-09-20T12:22:23.521483+00:00",
-  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
-  "type": "failing",
-  "msg": "Status error \u2192 failing"
- },
- {
-  "ts": "2026-09-20T12:22:23.521483+00:00",
-  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
-  "type": "failing",
-  "msg": "Check failed: gate"
- },
- {
-  "ts": "2026-09-20T12:22:23.521483+00:00",
-  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
-  "type": "failing",
-  "msg": "Check failed: tier1"
- },
- {
-  "ts": "2026-09-20T12:22:23.521483+00:00",
-  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
-  "type": "passed",
-  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-4c6a7ed-systems-infrastructure-and-operations` failed: error connecting to api.github.com\ncheck your internet connection or https://githubstatus.com"
- },
- {
-  "ts": "2026-09-20T12:22:23.521483+00:00",
-  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
-  "type": "passed",
-  "msg": "10 checks passed"
- },
- {
-  "ts": "2026-09-20T12:22:23.521483+00:00",
-  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
-  "type": "failing",
-  "msg": "Status error \u2192 failing"
- },
- {
   "ts": "2026-09-20T12:22:23.521483+00:00",
   "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
   "type": "failing",
@@ -2398,5 +2356,47 @@
   "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
   "type": "passed",
   "msg": "Check passed: pass2"
+ },
+ {
+  "ts": "2026-09-20T16:10:32.170285+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-20T16:10:32.170285+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "started",
+  "msg": "Check started: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-20T16:10:32.170285+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "started",
+  "msg": "Check started: gate"
+ },
+ {
+  "ts": "2026-09-20T16:10:32.170285+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "started",
+  "msg": "Check started: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-20T16:10:32.170285+00:00",
+  "pr": "dynamo-f17a844-data-processing-and-etl#11",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-20T16:10:32.170285+00:00",
+  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
+  "type": "started",
+  "msg": "Check started: ava_review"
+ },
+ {
+  "ts": "2026-09-20T16:10:32.170285+00:00",
+  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
+  "type": "started",
+  "msg": "Check started: deep_review"
  }
 ]
