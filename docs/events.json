@@ -1,17 +1,5 @@
 [
  {
-  "ts": "2026-09-19T18:03:35.554325+00:00",
-  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
-  "type": "started",
-  "msg": "Check started: ava_review"
- },
- {
-  "ts": "2026-09-19T18:03:35.554325+00:00",
-  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
-  "type": "started",
-  "msg": "Check started: deep_review"
- },
- {
   "ts": "2026-09-19T18:09:55.306881+00:00",
   "pr": "dynamo-0ca12b7-software-engineering#11",
   "type": "started",
@@ -2398,5 +2386,17 @@
   "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
   "type": "passed",
   "msg": "Check recovered: tier1"
+ },
+ {
+  "ts": "2026-09-20T13:52:19.970019+00:00",
+  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
+  "type": "started",
+  "msg": "Check started: review"
+ },
+ {
+  "ts": "2026-09-20T13:52:19.970019+00:00",
+  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
+  "type": "passed",
+  "msg": "Check passed: cosine_similarity"
  }
 ]
