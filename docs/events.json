@@ -1,41 +1,5 @@
 [
  {
-  "ts": "2026-09-20T13:34:54.914986+00:00",
-  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
-  "type": "started",
-  "msg": "Check started: deep_review"
- },
- {
-  "ts": "2026-09-20T13:34:54.914986+00:00",
-  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
-  "type": "passed",
-  "msg": "Check passed: pass2"
- },
- {
-  "ts": "2026-09-20T13:39:31.038588+00:00",
-  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
-  "type": "passed",
-  "msg": "Check passed: deep_review"
- },
- {
-  "ts": "2026-09-20T13:39:31.038588+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "passed",
-  "msg": "Check passed: deep_review"
- },
- {
-  "ts": "2026-09-20T13:43:38.492371+00:00",
-  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
-  "type": "failing",
-  "msg": "Status running \u2192 failing"
- },
- {
-  "ts": "2026-09-20T13:43:38.492371+00:00",
-  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
-  "type": "started",
-  "msg": "Check started: claude-cost-report"
- },
- {
   "ts": "2026-09-20T13:43:38.492371+00:00",
   "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
   "type": "started",
@@ -2398,5 +2362,41 @@
   "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
   "type": "passed",
   "msg": "Check passed: review"
+ },
+ {
+  "ts": "2026-09-20T19:06:16.031021+00:00",
+  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
+  "type": "started",
+  "msg": "Check started: qc_eval"
+ },
+ {
+  "ts": "2026-09-20T19:06:16.031021+00:00",
+  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
+  "type": "started",
+  "msg": "Check started: qc_exec"
+ },
+ {
+  "ts": "2026-09-20T19:06:16.031021+00:00",
+  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
+  "type": "passed",
+  "msg": "Check passed: tier1"
+ },
+ {
+  "ts": "2026-09-20T19:06:16.031021+00:00",
+  "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
+  "type": "started",
+  "msg": "Check started: validation"
+ },
+ {
+  "ts": "2026-09-20T19:06:16.031021+00:00",
+  "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
+  "type": "passed",
+  "msg": "Check passed: review"
+ },
+ {
+  "ts": "2026-09-20T19:06:16.031021+00:00",
+  "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
+  "type": "passed",
+  "msg": "Check passed: similarity"
  }
 ]
