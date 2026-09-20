@@ -252,9 +252,73 @@ kbd{font-size:10px;font-weight:500;color:var(--dim2);border:1px solid var(--bord
 .foot{margin-top:28px;text-align:center;color:var(--dim2);font-size:11px;text-transform:uppercase;letter-spacing:.05em}
 .toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(16px);background:var(--panel);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);color:var(--text);border:1px solid var(--accent-br);padding:9px 16px;border-radius:10px;font-size:12.5px;font-weight:500;opacity:0;transition:.2s;pointer-events:none;box-shadow:var(--shadow2),0 0 20px var(--accent-glow)}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* live-refresh scan pulse — fires when a genuinely new snapshot lands */
+.scanline{position:fixed;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent),var(--sub),transparent);opacity:0;pointer-events:none;z-index:80;box-shadow:0 0 14px var(--accent-glow)}
+.scanline.go{animation:scan 1.1s ease-out}
+@keyframes scan{0%{opacity:0;top:0}12%{opacity:1}88%{opacity:1}100%{opacity:0;top:100%}}
+
+/* ============ timeline (gantt) view ============ */
+.gantt{display:flex;flex-direction:column;gap:10px}
+.gantt-row{background:var(--glass);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);border:1px solid var(--border);border-radius:var(--r);padding:14px 16px;box-shadow:var(--shadow)}
+.gantt-head{display:flex;align-items:baseline;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+.gantt-head .title{font-size:12.5px;text-decoration:none;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.gantt-head .title:hover{color:var(--accent)}
+.gantt-track{position:relative;background:var(--track);border-radius:6px;padding:2px}
+.gantt-lane{position:absolute;left:2px;right:2px;height:20px}
+.gantt-lane+.gantt-lane{margin-top:3px}
+.gantt-bar{position:absolute;top:1px;bottom:1px;border-radius:4px;min-width:5px;text-decoration:none}
+.gantt-bar.passed{background:var(--pass);box-shadow:0 0 8px var(--pass-glow)}
+.gantt-bar.failed{background:var(--fail);box-shadow:0 0 8px var(--fail-glow)}
+.gantt-bar.running{background:var(--run);box-shadow:0 0 10px var(--run-glow);background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.3) 0 4px,transparent 4px 8px);animation:stripes 1s linear infinite}
+.gantt-bar.skipped{background:var(--queue)}
+.gantt-bar .gl{position:absolute;left:100%;top:50%;transform:translateY(-50%);margin-left:7px;font-size:10px;color:var(--dim);white-space:nowrap;pointer-events:none}
+.gantt-now{position:absolute;top:0;bottom:0;width:2px;background:var(--accent);box-shadow:0 0 8px var(--accent-glow);opacity:.8;z-index:1}
+
+/* ============ fleet matrix heatmap ============ */
+.matrix{border-collapse:collapse;font-size:11px}
+.matrix th,.matrix td{border:1px solid var(--border)}
+.matrix thead th{padding:5px 3px;font-size:9.5px;text-transform:none;font-weight:600;color:var(--dim);white-space:nowrap;writing-mode:vertical-rl;transform:rotate(180deg);height:100px;vertical-align:bottom;background:var(--panel2)}
+.matrix .mx-pr-h{writing-mode:horizontal-tb;transform:none;vertical-align:middle;text-align:left;padding:6px 10px;height:auto}
+.matrix td.mx-pr{padding:6px 10px;white-space:nowrap;font-weight:500;background:var(--panel2);position:sticky;left:0;z-index:2}
+.matrix td.mx-pr a{color:var(--accent);font-weight:700;text-decoration:none}
+.matrix .mx-repo{color:var(--dim2);font-size:10px;margin-left:6px}
+.mx-cell{width:22px;height:22px;text-align:center;padding:0}
+.mx-cell a{display:block;width:100%;height:100%}
+.mx-cell.mx-passed{background:var(--pass-bg)} .mx-cell.mx-passed a{background:var(--pass);box-shadow:inset 0 0 8px var(--pass-glow)}
+.mx-cell.mx-failed{background:var(--fail-bg)} .mx-cell.mx-failed a{background:var(--fail);box-shadow:inset 0 0 8px var(--fail-glow)}
+.mx-cell.mx-running{background:var(--run-bg)} .mx-cell.mx-running a{background:var(--run);box-shadow:inset 0 0 8px var(--run-glow);animation:pulse 1.4s infinite}
+.mx-cell.mx-queued a{background:var(--queue);opacity:.5}
+.mx-cell.mx-skipped a{background:var(--dim2);opacity:.3}
+.mx-cell.mx-na{background:transparent}
+
+/* flaky checks panel */
+.flaky{display:flex;flex-direction:column;gap:6px;padding:4px}
+.flaky .r{display:grid;grid-template-columns:1fr auto;gap:2px 10px;align-items:center;font-size:12px;padding:4px 6px}
+.flaky .r .nm{font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.flaky .r .bar{grid-column:1/3;height:5px;background:var(--track);border-radius:3px;overflow:hidden;margin-top:3px}
+.flaky .r .bar i{display:block;height:100%;background:var(--fail);box-shadow:0 0 8px var(--fail-glow);width:var(--w);border-radius:3px}
+.flaky .r .v{font-size:11.5px;color:var(--fail);white-space:nowrap;font-weight:600}
+
+/* ============ command palette ============ */
+.cmdk-overlay{position:fixed;inset:0;background:rgba(2,4,10,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);z-index:100;display:none;align-items:flex-start;justify-content:center;padding-top:12vh}
+.cmdk-overlay.open{display:flex}
+.cmdk{width:min(560px,92vw);background:var(--panel);backdrop-filter:var(--blur);-webkit-backdrop-filter:var(--blur);border:1px solid var(--accent-br);border-radius:var(--r);box-shadow:var(--shadow2),0 0 40px var(--accent-glow);overflow:hidden}
+.cmdk input{width:100%;background:transparent;border:0;outline:0;padding:16px 18px;font-size:15px;color:var(--text);border-bottom:1px solid var(--border)}
+.cmdk input::placeholder{color:var(--dim2)}
+.cmdk-results{max-height:50vh;overflow:auto;padding:6px}
+.cmdk-row{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:9px;cursor:pointer;font-size:12.5px}
+.cmdk-row:hover,.cmdk-row.sel{background:var(--panel2)}
+.cmdk-row .badge{font-size:10px;padding:2px 8px}
+.cmdk-row .t{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:500}
+.cmdk-empty{padding:20px;text-align:center;color:var(--dim2);font-size:12px}
+.cmdk-hint{padding:8px 14px;border-top:1px solid var(--border);font-size:10.5px;color:var(--dim2);display:flex;gap:14px}
+
+.btn.notify-on{color:var(--sub);border-color:var(--sub-br);background:var(--sub-bg);box-shadow:0 0 14px var(--sub-glow)}
 </style>
 </head>
 <body>
+<div class="scanline" id="scanline"></div>
 <div class="wrap">
 
   <div class="top">
@@ -267,9 +331,11 @@ kbd{font-size:10px;font-weight:500;color:var(--dim2);border:1px solid var(--bord
     </div>
     <div class="actions">
       <div class="live" id="live"><span class="dot"></span><span id="liveText">connecting</span><span class="ring" id="ring" title="next refresh"></span></div>
+      <button class="btn" id="btnCmdk" title="Jump to any PR or check">Jump <kbd>⌘K</kbd></button>
       <button class="btn" id="btnCopy" title="Copy visible PRs as a markdown table">Copy summary</button>
       <button class="btn" id="btnVoice" title="Read check status changes out loud as they happen"><span class="voicedot" id="voiceDot"></span><span id="voiceLabel">Announcements</span> <kbd>A</kbd></button>
       <button class="btn" id="btnAlarm" title="Tick as checks progress, chime when one passes, alarm when one fails"><span class="alarmdot" id="alarmDot"></span><span id="alarmLabel">Sound alerts</span> <kbd>L</kbd></button>
+      <button class="btn" id="btnNotify" title="Desktop notification when a check fails"><span id="notifyLabel">Desktop alerts</span> <kbd>N</kbd></button>
       <button class="btn" id="btnTheme" title="Toggle theme">Dark <kbd>T</kbd></button>
     </div>
   </div>
@@ -303,6 +369,8 @@ kbd{font-size:10px;font-weight:500;color:var(--dim2);border:1px solid var(--bord
     <div class="seg" id="segView">
       <button data-v="cards" class="on">Cards</button>
       <button data-v="table">Table</button>
+      <button data-v="timeline">Timeline</button>
+      <button data-v="matrix">Matrix</button>
     </div>
     <button class="btn" id="btnGroup">Group by repo</button>
     <button class="btn" id="btnExpand">Collapse all <kbd>E</kbd></button>
@@ -326,12 +394,23 @@ kbd{font-size:10px;font-weight:500;color:var(--dim2);border:1px solid var(--bord
         <div class="ph"><span>Slowest checks</span><small>avg of completed runs</small></div>
         <div class="pb"><div class="dur" id="dur"></div></div>
       </div>
+      <div class="panel hud">
+        <div class="ph"><span>Flaky checks</span><small id="flakyCount"></small></div>
+        <div class="pb"><div class="flaky" id="flaky"></div></div>
+      </div>
     </div>
   </div>
 
   <div class="foot" id="foot"></div>
 </div>
 <div class="toast" id="toast"></div>
+<div class="cmdk-overlay" id="cmdkOverlay">
+  <div class="cmdk hud">
+    <input id="cmdkInput" placeholder="Jump to a PR by repo, title, #, or check name…" autocomplete="off">
+    <div class="cmdk-results" id="cmdkResults"></div>
+    <div class="cmdk-hint"><span>↑↓ navigate</span><span>↵ jump</span><span>esc close</span></div>
+  </div>
+</div>
 
 <script>
 /* ================= state ================= */
@@ -366,6 +445,23 @@ function key(pr){ return pr.repo + "#" + pr.num; }
 function getMarks(){ return LS.get("pr_submitted_marks", {}); }
 function isSub(pr){ return !!pr.submitted || !!getMarks()[key(pr)]; }
 function toast(msg){ const t=$("toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove("show"),1600); }
+
+/* ================= shared: average check duration + ETA ================= */
+let AVG_DURATION = {};
+function computeAvgDuration(){
+  const agg = {};
+  DATA.forEach(pr=>(pr.checks||[]).forEach(c=>{
+    if(c.duration_sec!=null && c.state!=="skipped"){ (agg[c.name] ||= []).push(c.duration_sec); }
+  }));
+  AVG_DURATION = Object.fromEntries(Object.entries(agg).map(([n,a])=>[n, a.reduce((x,y)=>x+y,0)/a.length]));
+  return agg; // reused by the "Slowest checks" panel so it isn't computed twice
+}
+function etaText(name, elapsedSec){
+  const avg = AVG_DURATION[name];
+  if(!avg) return "";
+  const left = avg - elapsedSec;
+  return left > 3 ? ` · ETA ${fmtDur(left)}` : " · overdue";
+}
 
 /* ================= voice announcements ================= */
 function speak(text){
@@ -524,6 +620,83 @@ function setAlarm(on){
   syncControls();
 }
 
+/* ================= desktop notifications ================= */
+let NOTIFY = LS.get("prmon_notify", false);
+let notifyWatermark = LS.get("prmon_notify_watermark", null);
+function checkNotify(){
+  if(!NOTIFY || notifyWatermark==null || !EVENTS.length) return;
+  if(!("Notification" in window) || Notification.permission !== "granted") return;
+  const fresh = EVENTS.filter(e => new Date(e.ts).getTime() > notifyWatermark);
+  if(!fresh.length) return;
+  const fails = fresh.filter(e => e.type === "failing" || e.type === "error");
+  if(fails.length){
+    const prs = [...new Set(fails.map(e=>e.pr))];
+    try{
+      new Notification(`${fails.length} check${fails.length>1?"s":""} failing`, {
+        body: prs.slice(0,4).join(", ") + (prs.length>4 ? ` +${prs.length-4} more` : ""),
+      });
+    }catch(e){}
+  }
+  notifyWatermark = Math.max(...fresh.map(e=>new Date(e.ts).getTime()));
+  LS.set("prmon_notify_watermark", notifyWatermark);
+}
+function setNotify(on){
+  if(!on){
+    NOTIFY = false; LS.set("prmon_notify", false);
+    syncControls();
+    return;
+  }
+  if(!("Notification" in window)){ toast("Notifications aren't supported in this browser"); return; }
+  if(Notification.permission === "denied"){ toast("Notifications are blocked — allow them in your browser's site settings"); return; }
+  Notification.requestPermission().then(perm=>{
+    if(perm !== "granted"){ toast("Notifications weren't allowed"); return; }
+    NOTIFY = true; LS.set("prmon_notify", true);
+    // Start from now — don't replay a backlog of old failures on enable.
+    notifyWatermark = Date.now(); LS.set("prmon_notify_watermark", notifyWatermark);
+    try{ new Notification("Desktop alerts on", {body:"You'll be notified here when a check fails, even if this tab isn't focused."}); }catch(e){}
+    syncControls();
+  });
+}
+
+/* ================= command palette ================= */
+let CMDK_ITEMS = [], CMDK_SEL = 0;
+function cmdkOpen(){
+  $("cmdkOverlay").classList.add("open");
+  const inp = $("cmdkInput"); inp.value = ""; inp.focus();
+  cmdkRender("");
+}
+function cmdkClose(){ $("cmdkOverlay").classList.remove("open"); }
+function cmdkRender(q){
+  q = q.trim().toLowerCase();
+  CMDK_ITEMS = (!q ? DATA : DATA.filter(pr=>{
+    const hay = [pr.repo, pr.title, "#"+pr.num, ...(pr.checks||[]).map(c=>c.name)].join(" ").toLowerCase();
+    return hay.includes(q);
+  })).slice(0,30);
+  CMDK_SEL = 0;
+  const el = $("cmdkResults");
+  el.innerHTML = CMDK_ITEMS.length ? CMDK_ITEMS.map((pr,i)=>{
+    const label = pr.overall==="passed"?"Passed":pr.overall==="failing"?"Failing":pr.overall==="error"?"Error":"Running";
+    return `<div class="cmdk-row ${i===0?'sel':''}" data-i="${i}"><span class="badge ${pr.overall}"><span class="bdot ${pr.overall==='running'?'running':''}"></span>${label}</span><span class="t">#${pr.num} ${esc(pr.repo)} — ${esc(pr.title)}</span></div>`;
+  }).join("") : `<div class="cmdk-empty">No matches</div>`;
+  el.querySelectorAll(".cmdk-row").forEach(row=>row.addEventListener("click",()=>cmdkJump(+row.dataset.i)));
+}
+function cmdkHighlight(){
+  $("cmdkResults").querySelectorAll(".cmdk-row").forEach(r=>r.classList.toggle("sel", +r.dataset.i===CMDK_SEL));
+  $("cmdkResults").querySelector(".sel")?.scrollIntoView({block:"nearest"});
+}
+function cmdkJump(i){
+  const pr = CMDK_ITEMS[i]; if(!pr) return;
+  cmdkClose();
+  Object.assign(F, {q:"", status:"all", sub:"all", repo:"", view:"cards", group:false});
+  save(); render();
+  requestAnimationFrame(()=>{
+    const el = document.querySelector(`[data-k="${CSS.escape(key(pr))}"]`);
+    if(!el) return;
+    el.scrollIntoView({behavior:"smooth", block:"center"});
+    el.classList.remove("changed"); void el.offsetWidth; el.classList.add("changed");
+  });
+}
+
 /* ================= filtering ================= */
 function visible(){
   const marks = getMarks();
@@ -635,7 +808,10 @@ function card(pr, now){
 
   const checks = (pr.checks||[]).map(c=>{
     let t = "";
-    if(c.state==="running" && c.started_at) t = fmtDur((now - new Date(c.started_at).getTime())/1000);
+    if(c.state==="running" && c.started_at){
+      const elapsed = (now - new Date(c.started_at).getTime())/1000;
+      t = fmtDur(elapsed) + etaText(c.name, elapsed);
+    }
     else if(c.duration_sec!=null) t = fmtDur(c.duration_sec);
     else if(c.state==="queued") t = "queued";
     return `<a class="chk ${c.state}" href="${esc(c.url||pr.url)}" target="_blank" rel="noopener" title="${esc(c.name)} · ${c.state}${c.conclusion?' · '+c.conclusion:''}"><span class="d"></span><span class="nm">${esc(c.name)}</span>${t?`<span class="t">${t}</span>`:""}</a>`;
@@ -687,29 +863,106 @@ function table(rows, now){
   return `<div class="panel tblwrap"><table class="tbl"><thead><tr><th>Repo</th><th>PR</th><th>Title</th><th>Status</th><th>Checks</th><th>Failing</th><th>Running</th><th>Opened</th><th></th></tr></thead><tbody>${tr}</tbody></table></div>`;
 }
 
+/* ================= render: timeline (gantt) ================= */
+function renderTimeline(rows, now){
+  const body = rows.map(pr=>{
+    const cs = (pr.checks||[]).filter(c=>c.started_at).map(c=>{
+      const s = new Date(c.started_at).getTime();
+      const e = c.completed_at ? new Date(c.completed_at).getTime() : (c.state==="running" ? now : s+2000);
+      return {name:c.name, state:c.state, s, e, url:c.url};
+    });
+    if(!cs.length){
+      return `<div class="gantt-row"><div class="gantt-head"><span class="repo"><span class="num">#${pr.num}</span> ${esc(pr.repo)}</span><a class="title" href="${esc(pr.url)}" target="_blank" rel="noopener">${esc(pr.title)}</a></div><div class="empty">No checks have started yet</div></div>`;
+    }
+    const t0 = Math.min(...cs.map(c=>c.s));
+    const t1 = Math.max(...cs.map(c=>c.e), now);
+    const span = Math.max(1000, t1-t0);
+    // pack concurrent checks into lanes so overlapping bars don't collide
+    const sorted = [...cs].sort((a,b)=>a.s-b.s);
+    const laneEnd = [];
+    sorted.forEach(c=>{
+      let lane = laneEnd.findIndex(end=>end<=c.s);
+      if(lane===-1){ lane = laneEnd.length; laneEnd.push(0); }
+      laneEnd[lane] = c.e; c.lane = lane;
+    });
+    const nowPct = Math.min(100, Math.max(0, (now-t0)/span*100));
+    const barsHtml = sorted.map(c=>{
+      const left = (c.s-t0)/span*100, width = Math.max(0.6,(c.e-c.s)/span*100);
+      const dur = fmtDur((c.e-c.s)/1000);
+      return `<div class="gantt-lane" style="top:${c.lane*23}px"><a class="gantt-bar ${c.state}" style="left:${left}%;width:${width}%" href="${esc(c.url||pr.url)}" target="_blank" rel="noopener" title="${esc(c.name)} · ${c.state} · ${dur}"><span class="gl">${esc(c.name)}</span></a></div>`;
+    }).join("");
+    return `<div class="gantt-row">
+      <div class="gantt-head">
+        <span class="repo"><span class="num">#${pr.num}</span> ${esc(pr.repo)}</span>
+        <a class="title" href="${esc(pr.url)}" target="_blank" rel="noopener">${esc(pr.title)}</a>
+      </div>
+      <div class="gantt-track" style="height:${laneEnd.length*23}px">
+        ${pr.overall==="running" ? `<div class="gantt-now" style="left:${nowPct}%"></div>` : ""}
+        ${barsHtml}
+      </div>
+    </div>`;
+  }).join("");
+  return `<div class="gantt">${body}</div>`;
+}
+
+/* ================= render: fleet matrix heatmap ================= */
+function renderMatrix(rows){
+  const checkNames = [...new Set(rows.flatMap(pr=>(pr.checks||[]).map(c=>c.name)))].sort();
+  if(!checkNames.length) return `<div class="panel"><div class="empty">No checks reported yet</div></div>`;
+  const head = checkNames.map(n=>`<th title="${esc(n)}">${esc(n)}</th>`).join("");
+  const body = rows.map(pr=>{
+    const byName = Object.fromEntries((pr.checks||[]).map(c=>[c.name,c]));
+    const cells = checkNames.map(n=>{
+      const c = byName[n];
+      if(!c) return `<td class="mx-cell mx-na"></td>`;
+      return `<td class="mx-cell mx-${c.state}"><a href="${esc(c.url||pr.url)}" target="_blank" rel="noopener" title="${esc(pr.repo)}#${pr.num} · ${esc(n)}: ${c.state}"></a></td>`;
+    }).join("");
+    return `<tr><td class="mx-pr"><a href="${esc(pr.url)}" target="_blank" rel="noopener">#${pr.num}</a><span class="mx-repo">${esc(pr.repo)}</span></td>${cells}</tr>`;
+  }).join("");
+  return `<div class="panel tblwrap"><table class="matrix"><thead><tr><th class="mx-pr-h">PR</th>${head}</tr></thead><tbody>${body}</tbody></table></div>`;
+}
+
 /* ================= render: side panels ================= */
-function renderSide(now){
+function computeFlaky(){
+  const stats = {};
+  DATA.forEach(pr=>(pr.checks||[]).forEach(c=>{
+    if(c.state==="passed" || c.state==="failed"){
+      const s = stats[c.name] ||= {fail:0,total:0};
+      s.total++; if(c.state==="failed") s.fail++;
+    }
+  }));
+  return Object.entries(stats).filter(([,s])=>s.total>=2 && s.fail>0)
+    .map(([n,s])=>({n,rate:s.fail/s.total,fail:s.fail,total:s.total}))
+    .sort((a,b)=>b.rate-a.rate).slice(0,8);
+}
+function renderSide(now, durAgg){
   const items = [];
   DATA.forEach(pr=>(pr.checks||[]).filter(c=>c.state==="failed").forEach(c=>items.push({k:0,cls:"fail",pr,c,v:"Failed"})));
-  DATA.forEach(pr=>(pr.checks||[]).filter(c=>c.state==="running").forEach(c=>items.push({k:1,cls:"run",pr,c,v:c.started_at?fmtDur((now-new Date(c.started_at).getTime())/1000):"Running"})));
+  DATA.forEach(pr=>(pr.checks||[]).filter(c=>c.state==="running").forEach(c=>{
+    const elapsed = c.started_at ? (now-new Date(c.started_at).getTime())/1000 : null;
+    items.push({k:1,cls:"run",pr,c,v: elapsed!=null ? fmtDur(elapsed)+etaText(c.name,elapsed) : "Running"});
+  }));
   const nf = items.filter(i=>i.k===0).length, nr = items.filter(i=>i.k===1).length;
   $("attCount").textContent = items.length ? `${nf} failed · ${nr} running` : "";
-  $("att").innerHTML = items.length ? items.map(i=>`<a class="${i.cls}" href="${esc(i.c.url||i.pr.url)}" target="_blank" rel="noopener"${i.k===1&&i.c.started_at?` data-start="${esc(i.c.started_at)}"`:""}><span class="d ${i.cls}"></span><span class="t">${esc(i.c.name)}<small>#${i.pr.num} · ${esc(i.pr.repo)}</small></span><span class="v">${i.v}</span></a>`).join("") : `<div class="empty">Everything is green</div>`;
+  $("att").innerHTML = items.length ? items.map(i=>`<a class="${i.cls}" href="${esc(i.c.url||i.pr.url)}" target="_blank" rel="noopener"${i.k===1&&i.c.started_at?` data-start="${esc(i.c.started_at)}" data-name="${esc(i.c.name)}"`:""}><span class="d ${i.cls}"></span><span class="t">${esc(i.c.name)}<small>#${i.pr.num} · ${esc(i.pr.repo)}</small></span><span class="v">${i.v}</span></a>`).join("") : `<div class="empty">Everything is green</div>`;
 
   const evs = [...EVENTS].reverse().slice(0,80);
   $("feedCount").textContent = EVENTS.length ? `${EVENTS.length} events` : "";
   $("feed").innerHTML = evs.length ? evs.map(e=>`<div class="ev ${esc(e.type)}"><span class="d"></span><div><div class="m">${esc(e.msg)}</div><div class="k"><span>${esc(e.pr)}</span><span>${ago(e.ts)}</span></div></div></div>`).join("") : `<div class="empty">No state changes recorded yet</div>`;
 
-  const agg = {};
-  DATA.forEach(pr=>(pr.checks||[]).forEach(c=>{ if(c.duration_sec!=null && c.state!=="skipped"){ (agg[c.name] ||= []).push(c.duration_sec); } }));
-  const rows = Object.entries(agg).map(([n,a])=>({n,avg:a.reduce((x,y)=>x+y,0)/a.length,cnt:a.length})).sort((a,b)=>b.avg-a.avg).slice(0,10);
+  const rows = Object.entries(durAgg).map(([n,a])=>({n,avg:a.reduce((x,y)=>x+y,0)/a.length,cnt:a.length})).sort((a,b)=>b.avg-a.avg).slice(0,10);
   const max = rows[0]?.avg || 1;
   $("dur").innerHTML = rows.length ? rows.map(r=>`<div class="r"><span class="nm" title="${esc(r.n)}">${esc(r.n)}</span><span class="v">${fmtDur(r.avg)} · ${r.cnt} run${r.cnt===1?"":"s"}</span><div class="bar"><i style="--w:${r.avg/max*100}%"></i></div></div>`).join("") : `<div class="empty">No completed checks yet</div>`;
+
+  const flaky = computeFlaky();
+  $("flakyCount").textContent = flaky.length ? `${flaky.length} flagged` : "";
+  $("flaky").innerHTML = flaky.length ? flaky.map(f=>`<div class="r"><span class="nm" title="${esc(f.n)}">${esc(f.n)}</span><span class="v">${Math.round(f.rate*100)}% · ${f.fail}/${f.total}</span><div class="bar"><i style="--w:${f.rate*100}%"></i></div></div>`).join("") : `<div class="empty">No failures in the current set</div>`;
 }
 
 /* ================= render: main ================= */
 function render(){
   const now = Date.now();
+  const durAgg = computeAvgDuration(); // sets AVG_DURATION for ETA text; needed before card()/table() render
   renderStats();
   const rows = visible();
   $("fcount").textContent = `${rows.length} of ${DATA.length}`;
@@ -717,6 +970,10 @@ function render(){
   const none = `<div class="panel"><div class="empty">Nothing matches these filters</div></div>`;
   if(F.view === "table"){
     list.innerHTML = rows.length ? table(rows, now) : none;
+  } else if(F.view === "timeline"){
+    list.innerHTML = rows.length ? renderTimeline(rows, now) : none;
+  } else if(F.view === "matrix"){
+    list.innerHTML = rows.length ? renderMatrix(rows) : none;
   } else if(F.group){
     const byRepo = {};
     rows.forEach(pr=>(byRepo[pr.repo] ||= []).push(pr));
@@ -733,7 +990,7 @@ function render(){
   list.querySelectorAll("[data-tog]").forEach(b=>b.addEventListener("click",()=>{
     const k = b.dataset.tog; F.collapsed[k] = !(F.collapsed[k] ?? allCollapsed); save(); render();
   }));
-  renderSide(now);
+  renderSide(now, durAgg);
   syncControls();
   $("scope").innerHTML = CFG.org ? `<span><b>${esc(CFG.org)}</b></span><span>by <b>${esc(CFG.author)}</b></span><span>opened in the last <b>${CFG.window_hours}h</b></span>` : "";
   if(SNAP){
@@ -746,13 +1003,17 @@ function render(){
 }
 function tick(){
   const now = Date.now();
-  if(F.view==="table"){ render(); return; }
+  if(F.view==="table" || F.view==="timeline" || F.view==="matrix"){ render(); return; }
   document.querySelectorAll(".chk.running").forEach(el=>{
     const k = el.closest(".card")?.dataset.k; const pr = DATA.find(p=>key(p)===k); if(!pr) return;
     const c = (pr.checks||[]).find(c=>c.name===el.querySelector(".nm").textContent && c.state==="running"); if(!c||!c.started_at) return;
-    const t = el.querySelector(".t"); if(t) t.textContent = fmtDur((now-new Date(c.started_at).getTime())/1000);
+    const elapsed = (now-new Date(c.started_at).getTime())/1000;
+    const t = el.querySelector(".t"); if(t) t.textContent = fmtDur(elapsed) + etaText(c.name, elapsed);
   });
-  document.querySelectorAll("#att a[data-start]").forEach(el=>{ el.querySelector(".v").textContent = fmtDur((now-new Date(el.dataset.start).getTime())/1000); });
+  document.querySelectorAll("#att a[data-start]").forEach(el=>{
+    const elapsed = (now-new Date(el.dataset.start).getTime())/1000;
+    el.querySelector(".v").textContent = fmtDur(elapsed) + etaText(el.dataset.name, elapsed);
+  });
   if(SNAP){ const secAgo = Math.max(0,(now-new Date(SNAP).getTime())/1000); $("liveText").textContent = `Updated ${fmtDur(secAgo)} ago`; }
   $("ring").style.setProperty("--p", Math.min(100,((now-lastFetch)/REFRESH_MS)*100)+"%");
   $("voiceDot").classList.toggle("speaking", VOICE && 'speechSynthesis' in window && speechSynthesis.speaking);
@@ -781,6 +1042,10 @@ function syncControls(){
   ba.classList.toggle("alarm-on", ALARM);
   ba.title = ALARM ? "Sound alerts on — click to silence" : "Tick as checks progress, chime when one passes, alarm when one fails";
   $("alarmLabel").textContent = ALARM ? "Sound alerts: On" : "Sound alerts";
+  const bn = $("btnNotify");
+  bn.classList.toggle("notify-on", NOTIFY);
+  bn.title = NOTIFY ? "Desktop alerts on — click to turn off" : "Desktop notification when a check fails";
+  $("notifyLabel").textContent = NOTIFY ? "Desktop alerts: On" : "Desktop alerts";
 }
 $("q").addEventListener("input", e=>{ F.q = e.target.value; save(); render(); });
 $("segStatus").addEventListener("click", e=>{ const b=e.target.closest("button"); if(!b) return; F.status=b.dataset.v; save(); render(); });
@@ -794,6 +1059,16 @@ $("btnReset").addEventListener("click", ()=>{ Object.assign(F,{q:"",status:"all"
 $("btnTheme").addEventListener("click", ()=>{ THEME = THEME==="dark"?"light":"dark"; applyTheme(); render(); });
 $("btnVoice").addEventListener("click", ()=>{ setVoice(!VOICE); });
 $("btnAlarm").addEventListener("click", ()=>{ setAlarm(!ALARM); });
+$("btnNotify").addEventListener("click", ()=>{ setNotify(!NOTIFY); });
+$("btnCmdk").addEventListener("click", cmdkOpen);
+$("cmdkOverlay").addEventListener("click", e=>{ if(e.target.id==="cmdkOverlay") cmdkClose(); });
+$("cmdkInput").addEventListener("input", e=>cmdkRender(e.target.value));
+$("cmdkInput").addEventListener("keydown", e=>{
+  if(e.key==="Escape"){ cmdkClose(); }
+  else if(e.key==="ArrowDown"){ e.preventDefault(); CMDK_SEL=Math.min(CMDK_SEL+1, CMDK_ITEMS.length-1); cmdkHighlight(); }
+  else if(e.key==="ArrowUp"){ e.preventDefault(); CMDK_SEL=Math.max(CMDK_SEL-1,0); cmdkHighlight(); }
+  else if(e.key==="Enter"){ e.preventDefault(); cmdkJump(CMDK_SEL); }
+});
 $("btnCopy").addEventListener("click", ()=>{
   const rows = visible();
   const md = ["| PR | Repo | Status | Checks | Failing | Running | Submitted |","|---|---|---|---|---|---|---|",
@@ -801,6 +1076,7 @@ $("btnCopy").addEventListener("click", ()=>{
   navigator.clipboard?.writeText(md).then(()=>toast(`Copied ${rows.length} rows as markdown`)).catch(()=>toast("Clipboard blocked"));
 });
 document.addEventListener("keydown", e=>{
+  if((e.metaKey||e.ctrlKey) && e.key.toLowerCase()==="k"){ e.preventDefault(); cmdkOpen(); return; }
   if(e.metaKey || e.ctrlKey || e.altKey) return;
   if(e.target.tagName==="INPUT" || e.target.tagName==="SELECT"){ if(e.key==="Escape"){ e.target.blur(); } return; }
   const k = e.key.toLowerCase();
@@ -815,6 +1091,7 @@ document.addEventListener("keydown", e=>{
   else if(k==="g"){ $("btnGroup").click(); }
   else if(k==="a"){ $("btnVoice").click(); }
   else if(k==="l"){ $("btnAlarm").click(); }
+  else if(k==="n"){ $("btnNotify").click(); }
   else if(k==="r"){ loadData(); toast("Refreshing"); }
 });
 function applyTheme(){ document.documentElement.setAttribute("data-theme", THEME); LS.set("prmon_theme2", THEME); }
@@ -851,6 +1128,11 @@ async function fetchJSON(name){
   }
   throw lastErr;
 }
+function fireScan(){
+  const el = $("scanline");
+  el.classList.remove("go"); void el.offsetWidth; el.classList.add("go");
+}
+let prevSnap = null;
 async function loadData(){
   try {
     const [d, ev] = await Promise.all([
@@ -860,10 +1142,12 @@ async function loadData(){
     prevOverall = Object.fromEntries(DATA.map(p=>[key(p), p.overall]));
     DATA = d.prs || []; SNAP = d.snapshot_time; CFG = d.config || {}; EVENTS = Array.isArray(ev)?ev:[];
     lastFetch = Date.now();
+    if(SNAP && SNAP !== prevSnap){ fireScan(); prevSnap = SNAP; } // a genuinely new snapshot landed, not just a repeat poll
     const changed = DATA.filter(p=>prevOverall[key(p)] && prevOverall[key(p)]!==p.overall);
     if(changed.length) toast(`${changed.length} PR${changed.length>1?"s":""} changed status`);
     announceNewEvents();
     checkAlarm();
+    checkNotify();
     const nf = DATA.filter(p=>p.overall==="failing").length;
     document.title = `${nf?"("+nf+") ":""}PR Check Monitor`;
   } catch(e) {
