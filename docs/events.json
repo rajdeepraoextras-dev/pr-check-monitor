@@ -1,35 +1,5 @@
 [
  {
-  "ts": "2026-09-19T14:07:40.981821+00:00",
-  "pr": "dynamo-8230e74-systems-infrastructure-and-operations#6",
-  "type": "started",
-  "msg": "Check started: qc_eval"
- },
- {
-  "ts": "2026-09-19T14:07:40.981821+00:00",
-  "pr": "dynamo-8230e74-systems-infrastructure-and-operations#6",
-  "type": "started",
-  "msg": "Check started: qc_exec"
- },
- {
-  "ts": "2026-09-19T14:07:40.981821+00:00",
-  "pr": "dynamo-8230e74-systems-infrastructure-and-operations#6",
-  "type": "passed",
-  "msg": "Check passed: tier1"
- },
- {
-  "ts": "2026-09-19T14:10:07.868802+00:00",
-  "pr": "dynamo-22e7dff-systems-infrastructure-and-operations#7",
-  "type": "passed",
-  "msg": "Check passed: deep_review"
- },
- {
-  "ts": "2026-09-19T14:10:07.868802+00:00",
-  "pr": "dynamo-0ca12b7-software-engineering#11",
-  "type": "push",
-  "msg": "New commit pushed (e9c3798)"
- },
- {
   "ts": "2026-09-19T14:10:07.868802+00:00",
   "pr": "dynamo-0ca12b7-software-engineering#11",
   "type": "running",
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
   "type": "passed",
   "msg": "Check passed: ratelimit"
+ },
+ {
+  "ts": "2026-09-20T12:56:13.134774+00:00",
+  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-20T12:56:13.134774+00:00",
+  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
+  "type": "started",
+  "msg": "Check started: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-20T12:56:13.134774+00:00",
+  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
+  "type": "started",
+  "msg": "Check started: gate"
+ },
+ {
+  "ts": "2026-09-20T12:56:13.134774+00:00",
+  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
+  "type": "started",
+  "msg": "Check started: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-20T12:56:13.134774+00:00",
+  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
+  "type": "failing",
+  "msg": "Check failed: pass2"
  }
 ]
