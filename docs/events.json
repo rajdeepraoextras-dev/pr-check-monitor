@@ -2370,33 +2370,33 @@
   "msg": "Check passed: ratelimit"
  },
  {
-  "ts": "2026-09-20T12:56:13.134774+00:00",
+  "ts": "2026-09-20T12:56:21.359326+00:00",
   "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
   "type": "failing",
   "msg": "Status running \u2192 failing"
  },
  {
-  "ts": "2026-09-20T12:56:13.134774+00:00",
-  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
-  "type": "started",
-  "msg": "Check started: claude-cost-report"
- },
- {
-  "ts": "2026-09-20T12:56:13.134774+00:00",
-  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
-  "type": "started",
-  "msg": "Check started: gate"
- },
- {
-  "ts": "2026-09-20T12:56:13.134774+00:00",
+  "ts": "2026-09-20T12:56:21.359326+00:00",
   "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
   "type": "started",
   "msg": "Check started: pass2_suggestion"
  },
  {
-  "ts": "2026-09-20T12:56:13.134774+00:00",
+  "ts": "2026-09-20T12:56:21.359326+00:00",
+  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-20T12:56:21.359326+00:00",
   "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
   "type": "failing",
   "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-20T12:56:21.359326+00:00",
+  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
  }
 ]
