@@ -1,35 +1,5 @@
 [
  {
-  "ts": "2026-09-21T02:29:08.038974+00:00",
-  "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-21T02:29:48.792201+00:00",
-  "pr": "dynamo-52aba7d-software-engineering#8",
-  "type": "discovered",
-  "msg": "PR discovered: Rework: close the output backpressure gap and the coalesced parse ahead divergence"
- },
- {
-  "ts": "2026-09-21T02:29:48.792201+00:00",
-  "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-21T02:29:48.792201+00:00",
-  "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-21T02:29:48.792201+00:00",
-  "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
-  "type": "passed",
-  "msg": "Check passed: validation"
- },
- {
   "ts": "2026-09-21T02:35:23.314635+00:00",
   "pr": "dynamo-52aba7d-software-engineering#8",
   "type": "started",
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
   "type": "passed",
   "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-21T22:05:40.106436+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-21T22:05:40.106436+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "started",
+  "msg": "Check started: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-21T22:05:40.106436+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "started",
+  "msg": "Check started: gate"
+ },
+ {
+  "ts": "2026-09-21T22:05:40.106436+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "started",
+  "msg": "Check started: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-21T22:05:40.106436+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "failing",
+  "msg": "Check failed: pass2"
  }
 ]
