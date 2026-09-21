@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T20:31:58.342782+00:00",
+  "snapshot_time": "2026-09-21T20:32:35.723280+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -27,23 +27,14 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 6,
+      "passed": 8,
       "total": 17,
       "skipped": 7,
       "failed": [
         "gate",
         "pass2"
       ],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-21T20:31:47Z"
-        },
-        {
-          "name": "pass2_suggestion",
-          "started_at": "2026-09-21T20:31:46Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -67,26 +58,6 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-21T20:31:47Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35649904504/job/106505162103",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-21T20:31:46Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35649904504/job/106505156540",
-          "app": "github-actions"
-        },
-        {
           "name": "changes",
           "state": "passed",
           "conclusion": "success",
@@ -97,6 +68,16 @@
           "app": "github-actions"
         },
         {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T20:31:47Z",
+          "completed_at": "2026-09-21T20:32:03Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35649904504/job/106505162103",
+          "app": "github-actions"
+        },
+        {
           "name": "cosine_similarity",
           "state": "passed",
           "conclusion": "success",
@@ -104,6 +85,16 @@
           "completed_at": "2026-09-21T20:17:06Z",
           "duration_sec": 85,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35649904504/job/106499595477",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T20:31:46Z",
+          "completed_at": "2026-09-21T20:32:05Z",
+          "duration_sec": 19,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35649904504/job/106505156540",
           "app": "github-actions"
         },
         {
@@ -219,7 +210,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-21T18:43:27.877345+00:00",
-      "last_change": "2026-09-21T20:31:58.342782+00:00"
+      "last_change": "2026-09-21T20:32:35.723280+00:00"
     },
     {
       "repo": "dynamo-b27e15c-systems-infrastructure-and-operations",
