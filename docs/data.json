@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T04:01:45.890371+00:00",
+  "snapshot_time": "2026-09-21T04:02:33.854865+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -185,7 +185,7 @@
       "title": "Rework: close the output backpressure gap and the coalesced parse ahead divergence",
       "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/pull/8",
       "createdAt": "2026-09-21T02:27:40Z",
-      "updatedAt": "2026-09-21T03:33:59Z",
+      "updatedAt": "2026-09-21T04:02:22Z",
       "sha": "85170336cb351e89f5553e740a03633e13c9f40c",
       "draft": false,
       "mergeable": true,
@@ -196,31 +196,16 @@
       "head": "rework/52aba7d-stalled-reader-and-parse-ahead",
       "base": "main",
       "labels": [
-        "in-progress"
+        "accepted"
       ],
-      "overall": "running",
-      "passed": 13,
-      "total": 15,
+      "overall": "passed",
+      "passed": 16,
+      "total": 17,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "trials",
-          "started_at": "2026-09-21T03:33:50Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
-        {
-          "name": "trials",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-21T03:33:50Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106205121705",
-          "app": "github-actions"
-        },
         {
           "name": "ava_review",
           "state": "passed",
@@ -242,6 +227,16 @@
           "app": "github-actions"
         },
         {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T04:02:16Z",
+          "completed_at": "2026-09-21T04:02:31Z",
+          "duration_sec": 15,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106209583932",
+          "app": "github-actions"
+        },
+        {
           "name": "cosine_similarity",
           "state": "passed",
           "conclusion": "success",
@@ -259,6 +254,16 @@
           "completed_at": "2026-09-21T03:02:57Z",
           "duration_sec": 330,
           "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106199261917",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T04:02:16Z",
+          "completed_at": "2026-09-21T04:02:26Z",
+          "duration_sec": 10,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106209583930",
           "app": "github-actions"
         },
         {
@@ -342,6 +347,16 @@
           "app": "github-actions"
         },
         {
+          "name": "trials",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T03:33:50Z",
+          "completed_at": "2026-09-21T04:02:13Z",
+          "duration_sec": 1703,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106205121705",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -364,7 +379,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-21T02:30:02.761794+00:00",
-      "last_change": "2026-09-21T03:34:17.786392+00:00"
+      "last_change": "2026-09-21T04:02:33.854865+00:00"
     },
     {
       "repo": "dynamo-04ff9ff-model-training-and-ml-infrastructure",
