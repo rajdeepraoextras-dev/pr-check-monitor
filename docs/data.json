@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T05:56:32.494583+00:00",
+  "snapshot_time": "2026-09-21T05:57:19.457042+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -433,17 +433,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "qc_eval",
-          "started_at": "2026-09-21T05:43:33Z"
-        },
-        {
-          "name": "qc_exec",
           "started_at": "2026-09-21T05:43:33Z"
         }
       ],
@@ -457,16 +453,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35560693586/job/106226739031",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-21T05:43:33Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35560693586/job/106226739063",
           "app": "github-actions"
         },
         {
@@ -517,6 +503,16 @@
           "completed_at": "2026-09-21T05:31:38Z",
           "duration_sec": 3773,
           "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35560693586/job/106214080806",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T05:43:33Z",
+          "completed_at": "2026-09-21T05:57:06Z",
+          "duration_sec": 813,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35560693586/job/106226739063",
           "app": "github-actions"
         },
         {
@@ -582,7 +578,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-21T02:20:45.404061+00:00",
-      "last_change": "2026-09-21T05:43:47.354372+00:00"
+      "last_change": "2026-09-21T05:57:19.457042+00:00"
     },
     {
       "repo": "dynamo-d1d0486-debugging-and-repair",
