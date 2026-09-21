@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T03:37:57.592337+00:00",
+  "snapshot_time": "2026-09-21T03:38:42.147351+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -451,7 +451,7 @@
       "title": "Fix issue #6 stage-name contract and the validation rules the verifier left ungraded",
       "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/pull/8",
       "createdAt": "2026-09-21T02:05:45Z",
-      "updatedAt": "2026-09-21T03:37:57Z",
+      "updatedAt": "2026-09-21T03:38:12Z",
       "sha": "4c2d8332e09c5e8270d69c2ae72c684e396beb0d",
       "draft": false,
       "mergeable": true,
@@ -469,17 +469,23 @@
       "total": 13,
       "skipped": 1,
       "failed": [],
-      "running": [],
-      "queued": [
-        "qc_eval",
-        "qc_exec"
+      "running": [
+        {
+          "name": "qc_eval",
+          "started_at": "2026-09-21T03:38:06Z"
+        },
+        {
+          "name": "qc_exec",
+          "started_at": "2026-09-21T03:38:06Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
           "name": "qc_eval",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-21T03:38:04Z",
+          "started_at": "2026-09-21T03:38:06Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106205813739",
@@ -487,9 +493,9 @@
         },
         {
           "name": "qc_exec",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-21T03:38:04Z",
+          "started_at": "2026-09-21T03:38:06Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106205813775",
@@ -608,7 +614,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-21T02:07:20.355733+00:00",
-      "last_change": "2026-09-21T03:37:57.592337+00:00"
+      "last_change": "2026-09-21T03:38:42.147351+00:00"
     },
     {
       "repo": "dynamo-29ec2b8-mathematics-and-formal-reasoning",
