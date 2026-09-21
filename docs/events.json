@@ -1,35 +1,5 @@
 [
  {
-  "ts": "2026-09-20T19:20:15.935319+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "passed",
-  "msg": "Check recovered: qc_gate"
- },
- {
-  "ts": "2026-09-20T19:20:54.343482+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "started",
-  "msg": "Check started: cosine_similarity"
- },
- {
-  "ts": "2026-09-20T19:20:54.343482+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "passed",
-  "msg": "Check passed: changes"
- },
- {
-  "ts": "2026-09-20T19:22:10.815051+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "started",
-  "msg": "Check started: review"
- },
- {
-  "ts": "2026-09-20T19:22:10.815051+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "passed",
-  "msg": "Check passed: changes"
- },
- {
   "ts": "2026-09-20T19:22:10.815051+00:00",
   "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
   "type": "passed",
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-52aba7d-software-engineering#8",
   "type": "passed",
   "msg": "Check passed: trials"
+ },
+ {
+  "ts": "2026-09-21T04:14:42.678624+00:00",
+  "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-21T04:14:42.678624+00:00",
+  "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
+  "type": "started",
+  "msg": "Check started: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-21T04:14:42.678624+00:00",
+  "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-21T04:14:42.678624+00:00",
+  "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
+  "type": "failing",
+  "msg": "Check failed: qc_gate"
+ },
+ {
+  "ts": "2026-09-21T04:14:42.678624+00:00",
+  "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
+  "type": "passed",
+  "msg": "Check passed: qc_exec"
  }
 ]
