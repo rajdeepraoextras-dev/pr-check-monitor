@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T02:56:44.446143+00:00",
+  "snapshot_time": "2026-09-21T02:57:30.258177+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Harden the ledger_sync verifier: canonical script, record continuity, suspension counter (rework for #4)",
       "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/pull/7",
       "createdAt": "2026-09-21T02:39:00Z",
-      "updatedAt": "2026-09-21T02:55:18Z",
+      "updatedAt": "2026-09-21T02:57:11Z",
       "sha": "b875f7a4b8061bd101b61604dc056dd577d50263",
       "draft": false,
       "mergeable": true,
@@ -27,26 +27,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 1,
-      "total": 2,
+      "passed": 2,
+      "total": 3,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "cosine_similarity",
-          "started_at": "2026-09-21T02:55:26Z"
+          "name": "review",
+          "started_at": "2026-09-21T02:57:01Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "cosine_similarity",
+          "name": "review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-21T02:55:26Z",
+          "started_at": "2026-09-21T02:57:01Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35555727041/job/106198955398",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35555727041/job/106199193597",
           "app": "github-actions"
         },
         {
@@ -58,11 +58,21 @@
           "duration_sec": 24,
           "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35555727041/job/106198885820",
           "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T02:55:26Z",
+          "completed_at": "2026-09-21T02:56:58Z",
+          "duration_sec": 92,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35555727041/job/106198955398",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-21T02:43:58.534489+00:00",
-      "last_change": "2026-09-21T02:56:00.115487+00:00"
+      "last_change": "2026-09-21T02:57:30.258177+00:00"
     },
     {
       "repo": "dynamo-52aba7d-software-engineering",
@@ -71,7 +81,7 @@
       "title": "Rework: close the output backpressure gap and the coalesced parse ahead divergence",
       "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/pull/8",
       "createdAt": "2026-09-21T02:27:40Z",
-      "updatedAt": "2026-09-21T02:42:17Z",
+      "updatedAt": "2026-09-21T02:57:16Z",
       "sha": "85170336cb351e89f5553e740a03633e13c9f40c",
       "draft": false,
       "mergeable": true,
@@ -85,26 +95,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-21T02:42:08Z"
+          "name": "ava_review",
+          "started_at": "2026-09-21T02:57:28Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-21T02:57:27Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "pass2",
+          "name": "ava_review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-21T02:42:08Z",
+          "started_at": "2026-09-21T02:57:28Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106196936276",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106199261865",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-21T02:57:27Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106199261917",
           "app": "github-actions"
         },
         {
@@ -125,6 +149,16 @@
           "completed_at": "2026-09-21T02:29:51Z",
           "duration_sec": 96,
           "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106194750347",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T02:42:08Z",
+          "completed_at": "2026-09-21T02:57:25Z",
+          "duration_sec": 917,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106196936276",
           "app": "github-actions"
         },
         {
@@ -166,11 +200,21 @@
           "duration_sec": 366,
           "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106195936882",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-21T02:57:26Z",
+          "completed_at": "2026-09-21T02:57:25Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106199262899",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-21T02:30:02.761794+00:00",
-      "last_change": "2026-09-21T02:43:47.138858+00:00"
+      "last_change": "2026-09-21T02:57:30.258177+00:00"
     },
     {
       "repo": "dynamo-04ff9ff-model-training-and-ml-infrastructure",
