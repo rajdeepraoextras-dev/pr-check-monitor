@@ -1,29 +1,5 @@
 [
  {
-  "ts": "2026-09-20T16:01:55.161286+00:00",
-  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
-  "type": "started",
-  "msg": "Check started: qc_exec"
- },
- {
-  "ts": "2026-09-20T16:01:55.161286+00:00",
-  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
-  "type": "passed",
-  "msg": "Check passed: tier1"
- },
- {
-  "ts": "2026-09-20T16:07:37.897991+00:00",
-  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
-  "type": "passed",
-  "msg": "Check passed: qc_exec"
- },
- {
-  "ts": "2026-09-20T16:08:22.263761+00:00",
-  "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
-  "type": "passed",
-  "msg": "Check passed: qc_exec"
- },
- {
   "ts": "2026-09-20T16:09:57.831161+00:00",
   "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
   "type": "passed",
@@ -2398,5 +2374,29 @@
   "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
   "type": "passed",
   "msg": "Check passed: qc_gate"
+ },
+ {
+  "ts": "2026-09-21T02:04:34.867018+00:00",
+  "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-21T02:04:34.867018+00:00",
+  "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
+  "type": "started",
+  "msg": "Check started: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-21T02:04:34.867018+00:00",
+  "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
+  "type": "started",
+  "msg": "Check started: gate"
+ },
+ {
+  "ts": "2026-09-21T02:04:34.867018+00:00",
+  "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
+  "type": "failing",
+  "msg": "Check failed: trials"
  }
 ]
