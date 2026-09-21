@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T05:21:29.699461+00:00",
+  "snapshot_time": "2026-09-21T05:22:15.308835+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -730,7 +730,7 @@
       "title": "Rework: publish the canonical per-pass rules and close the external-include axiom path",
       "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/pull/15",
       "createdAt": "2026-09-20T18:56:55Z",
-      "updatedAt": "2026-09-21T05:20:33Z",
+      "updatedAt": "2026-09-21T05:22:15Z",
       "sha": "017f5da7c96a21127602c6d5584ea0009e475465",
       "draft": false,
       "mergeable": true,
@@ -744,26 +744,23 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 1,
-      "total": 2,
+      "passed": 2,
+      "total": 3,
       "skipped": 0,
       "failed": [],
-      "running": [
-        {
-          "name": "cosine_similarity",
-          "started_at": "2026-09-21T05:20:43Z"
-        }
+      "running": [],
+      "queued": [
+        "review"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "cosine_similarity",
-          "state": "running",
+          "name": "review",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-21T05:20:43Z",
+          "started_at": "2026-09-21T05:22:22Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35564213341/job/106222798737",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35564213341/job/106223078322",
           "app": "github-actions"
         },
         {
@@ -775,11 +772,21 @@
           "duration_sec": 25,
           "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35564213341/job/106222715443",
           "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T05:20:43Z",
+          "completed_at": "2026-09-21T05:22:22Z",
+          "duration_sec": 99,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35564213341/job/106222798737",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-20T19:00:36.983919+00:00",
-      "last_change": "2026-09-21T05:20:47.016752+00:00"
+      "last_change": "2026-09-21T05:22:15.308835+00:00"
     },
     {
       "repo": "dynamo-f17a844-data-processing-and-etl",
