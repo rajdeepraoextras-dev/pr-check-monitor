@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T20:44:02.615373+00:00",
+  "snapshot_time": "2026-09-21T20:44:45.153489+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -81,7 +81,7 @@
       "title": "Rework: publish the immediate priority ceiling contract and grade it directly",
       "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/pull/11",
       "createdAt": "2026-09-21T18:41:11Z",
-      "updatedAt": "2026-09-21T20:43:59Z",
+      "updatedAt": "2026-09-21T20:44:36Z",
       "sha": "608eac73b686786a42fb3b317595e9b94beffca3",
       "draft": false,
       "mergeable": true,
@@ -95,26 +95,38 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 2,
-      "total": 3,
+      "passed": 3,
+      "total": 5,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "review",
-          "started_at": "2026-09-21T20:40:45Z"
+          "name": "similarity",
+          "started_at": "2026-09-21T20:44:17Z"
         }
       ],
-      "queued": [],
+      "queued": [
+        "validation"
+      ],
       "checks": [
         {
-          "name": "review",
+          "name": "similarity",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-21T20:40:45Z",
+          "started_at": "2026-09-21T20:44:17Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35652357674/job/106508219288",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35652357674/job/106509369854",
+          "app": "github-actions"
+        },
+        {
+          "name": "validation",
+          "state": "queued",
+          "conclusion": null,
+          "started_at": "2026-09-21T20:44:44Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35652357674/job/106509596639",
           "app": "github-actions"
         },
         {
@@ -136,11 +148,21 @@
           "duration_sec": 86,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35652357674/job/106507736685",
           "app": "github-actions"
+        },
+        {
+          "name": "review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T20:40:45Z",
+          "completed_at": "2026-09-21T20:44:07Z",
+          "duration_sec": 202,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35652357674/job/106508219288",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-21T18:43:27.877345+00:00",
-      "last_change": "2026-09-21T20:41:49.507562+00:00"
+      "last_change": "2026-09-21T20:44:45.153489+00:00"
     },
     {
       "repo": "dynamo-b27e15c-systems-infrastructure-and-operations",
