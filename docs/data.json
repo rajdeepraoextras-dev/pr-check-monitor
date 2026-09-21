@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T05:30:24.875670+00:00",
+  "snapshot_time": "2026-09-21T05:31:09.159899+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -730,7 +730,7 @@
       "title": "Rework: publish the canonical per-pass rules and close the external-include axiom path",
       "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/pull/15",
       "createdAt": "2026-09-20T18:56:55Z",
-      "updatedAt": "2026-09-21T05:30:33Z",
+      "updatedAt": "2026-09-21T05:30:46Z",
       "sha": "017f5da7c96a21127602c6d5584ea0009e475465",
       "draft": false,
       "mergeable": true,
@@ -741,28 +741,36 @@
       "head": "rework/29ec2b8-contract-determinacy",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
-      "passed": 5,
-      "total": 6,
-      "skipped": 0,
-      "failed": [],
-      "running": [
-        {
-          "name": "ratelimit",
-          "started_at": "2026-09-21T05:30:20Z"
-        }
+      "overall": "failing",
+      "passed": 6,
+      "total": 17,
+      "skipped": 9,
+      "failed": [
+        "gate",
+        "ratelimit"
       ],
+      "running": [],
       "queued": [],
       "checks": [
         {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-21T05:30:40Z",
+          "completed_at": "2026-09-21T05:30:49Z",
+          "duration_sec": 9,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35564213341/job/106224343721",
+          "app": "github-actions"
+        },
+        {
           "name": "ratelimit",
-          "state": "running",
-          "conclusion": null,
+          "state": "failed",
+          "conclusion": "failure",
           "started_at": "2026-09-21T05:30:20Z",
-          "completed_at": null,
-          "duration_sec": null,
+          "completed_at": "2026-09-21T05:30:36Z",
+          "duration_sec": 16,
           "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35564213341/job/106224285656",
           "app": "github-actions"
         },
@@ -774,6 +782,16 @@
           "completed_at": "2026-09-21T05:20:40Z",
           "duration_sec": 25,
           "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35564213341/job/106222715443",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T05:30:40Z",
+          "completed_at": "2026-09-21T05:30:56Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35564213341/job/106224343638",
           "app": "github-actions"
         },
         {
@@ -815,11 +833,101 @@
           "duration_sec": 109,
           "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35564213341/job/106223986781",
           "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-21T05:30:37Z",
+          "completed_at": "2026-09-21T05:30:37Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35564213341/job/106224343053",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-21T05:30:37Z",
+          "completed_at": "2026-09-21T05:30:37Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35564213341/job/106224342955",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-21T05:30:37Z",
+          "completed_at": "2026-09-21T05:30:37Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35564213341/job/106224342562",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-21T05:30:37Z",
+          "completed_at": "2026-09-21T05:30:37Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35564213341/job/106224343187",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-21T05:30:37Z",
+          "completed_at": "2026-09-21T05:30:37Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35564213341/job/106224343905",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-21T05:30:37Z",
+          "completed_at": "2026-09-21T05:30:37Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35564213341/job/106224343546",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-21T05:30:37Z",
+          "completed_at": "2026-09-21T05:30:37Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35564213341/job/106224344138",
+          "app": "github-actions"
+        },
+        {
+          "name": "tier1",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-21T05:30:37Z",
+          "completed_at": "2026-09-21T05:30:37Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35564213341/job/106224343210",
+          "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-21T05:30:37Z",
+          "completed_at": "2026-09-21T05:30:37Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35564213341/job/106224344351",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-20T19:00:36.983919+00:00",
-      "last_change": "2026-09-21T05:30:24.875670+00:00"
+      "last_change": "2026-09-21T05:31:09.159899+00:00"
     },
     {
       "repo": "dynamo-f17a844-data-processing-and-etl",
