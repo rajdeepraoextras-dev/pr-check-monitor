@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T03:58:53.739693+00:00",
+  "snapshot_time": "2026-09-21T03:59:38.551073+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Harden the ledger_sync verifier: canonical script, record continuity, suspension counter (rework for #4)",
       "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/pull/7",
       "createdAt": "2026-09-21T02:39:00Z",
-      "updatedAt": "2026-09-21T03:58:59Z",
+      "updatedAt": "2026-09-21T03:59:30Z",
       "sha": "b875f7a4b8061bd101b61604dc056dd577d50263",
       "draft": false,
       "mergeable": true,
@@ -27,23 +27,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 9,
-      "total": 11,
+      "passed": 10,
+      "total": 13,
       "skipped": 1,
       "failed": [],
-      "running": [],
-      "queued": [
-        "tier1"
+      "running": [
+        {
+          "name": "qc_eval",
+          "started_at": "2026-09-21T03:59:38Z"
+        },
+        {
+          "name": "qc_exec",
+          "started_at": "2026-09-21T03:59:37Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
-          "name": "tier1",
-          "state": "queued",
+          "name": "qc_eval",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-21T03:59:05Z",
+          "started_at": "2026-09-21T03:59:38Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35555727041/job/106209079322",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35555727041/job/106209147959",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-21T03:59:37Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35555727041/job/106209147898",
           "app": "github-actions"
         },
         {
@@ -127,6 +144,16 @@
           "app": "github-actions"
         },
         {
+          "name": "tier1",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T03:59:07Z",
+          "completed_at": "2026-09-21T03:59:34Z",
+          "duration_sec": 27,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35555727041/job/106209079322",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -149,7 +176,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-21T02:43:58.534489+00:00",
-      "last_change": "2026-09-21T03:58:53.739693+00:00"
+      "last_change": "2026-09-21T03:59:38.551073+00:00"
     },
     {
       "repo": "dynamo-52aba7d-software-engineering",
@@ -514,7 +541,7 @@
       "title": "Fix issue #6 stage-name contract and the validation rules the verifier left ungraded",
       "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/pull/8",
       "createdAt": "2026-09-21T02:05:45Z",
-      "updatedAt": "2026-09-21T03:38:12Z",
+      "updatedAt": "2026-09-21T03:59:26Z",
       "sha": "4c2d8332e09c5e8270d69c2ae72c684e396beb0d",
       "draft": false,
       "mergeable": true,
@@ -528,26 +555,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 12,
-      "total": 14,
+      "passed": 13,
+      "total": 15,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_gate",
-          "started_at": "2026-09-21T03:58:59Z"
+          "name": "trials",
+          "started_at": "2026-09-21T03:59:15Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_gate",
+          "name": "trials",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-21T03:58:59Z",
+          "started_at": "2026-09-21T03:59:15Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106209060286",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106209098202",
           "app": "github-actions"
         },
         {
@@ -621,6 +648,16 @@
           "app": "github-actions"
         },
         {
+          "name": "qc_gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T03:58:59Z",
+          "completed_at": "2026-09-21T03:59:13Z",
+          "duration_sec": 14,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106209060286",
+          "app": "github-actions"
+        },
+        {
           "name": "ratelimit",
           "state": "passed",
           "conclusion": "success",
@@ -683,7 +720,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-21T02:07:20.355733+00:00",
-      "last_change": "2026-09-21T03:58:53.739693+00:00"
+      "last_change": "2026-09-21T03:59:38.551073+00:00"
     },
     {
       "repo": "dynamo-29ec2b8-mathematics-and-formal-reasoning",
