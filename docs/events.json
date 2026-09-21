@@ -1,35 +1,5 @@
 [
  {
-  "ts": "2026-09-21T02:35:23.314635+00:00",
-  "pr": "dynamo-52aba7d-software-engineering#8",
-  "type": "started",
-  "msg": "Check started: similarity"
- },
- {
-  "ts": "2026-09-21T02:35:23.314635+00:00",
-  "pr": "dynamo-52aba7d-software-engineering#8",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
-  "ts": "2026-09-21T02:36:03.411654+00:00",
-  "pr": "dynamo-52aba7d-software-engineering#8",
-  "type": "started",
-  "msg": "Check started: validation"
- },
- {
-  "ts": "2026-09-21T02:36:03.411654+00:00",
-  "pr": "dynamo-52aba7d-software-engineering#8",
-  "type": "passed",
-  "msg": "Check passed: similarity"
- },
- {
-  "ts": "2026-09-21T02:36:40.535937+00:00",
-  "pr": "dynamo-52aba7d-software-engineering#8",
-  "type": "started",
-  "msg": "Check started: validation"
- },
- {
   "ts": "2026-09-21T02:36:40.535937+00:00",
   "pr": "dynamo-52aba7d-software-engineering#8",
   "type": "passed",
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
   "type": "failing",
   "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-21T22:05:59.308014+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-21T22:05:59.308014+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "started",
+  "msg": "Check started: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-21T22:05:59.308014+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-21T22:05:59.308014+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-21T22:05:59.308014+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
  }
 ]

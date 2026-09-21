@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T22:05:40.106436+00:00",
+  "snapshot_time": "2026-09-21T22:05:59.308014+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: publish the latent partition, role evidence and causal estimator",
       "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/pull/12",
       "createdAt": "2026-09-21T20:41:21Z",
-      "updatedAt": "2026-09-21T22:05:38Z",
+      "updatedAt": "2026-09-21T22:05:40Z",
       "sha": "340496c329e1a572bf60b92fe5337676ef2a7584",
       "draft": false,
       "mergeable": true,
@@ -24,25 +24,17 @@
       "head": "rework/b2366b5-audit-contract",
       "base": "main",
       "labels": [
-        "in-progress",
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 6,
+      "passed": 7,
       "total": 17,
       "skipped": 7,
       "failed": [
+        "gate",
         "pass2"
       ],
       "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-21T22:05:34Z"
-        },
-        {
-          "name": "gate",
-          "started_at": "2026-09-21T22:05:34Z"
-        },
         {
           "name": "pass2_suggestion",
           "started_at": "2026-09-21T22:05:33Z"
@@ -51,6 +43,16 @@
       "queued": [],
       "checks": [
         {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-21T22:05:34Z",
+          "completed_at": "2026-09-21T22:05:43Z",
+          "duration_sec": 9,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35656370601/job/106535414232",
+          "app": "github-actions"
+        },
+        {
           "name": "pass2",
           "state": "failed",
           "conclusion": "failure",
@@ -58,26 +60,6 @@
           "completed_at": "2026-09-21T22:05:30Z",
           "duration_sec": 2233,
           "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35656370601/job/106524158506",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-21T22:05:34Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35656370601/job/106535414224",
-          "app": "github-actions"
-        },
-        {
-          "name": "gate",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-21T22:05:34Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35656370601/job/106535414232",
           "app": "github-actions"
         },
         {
@@ -98,6 +80,16 @@
           "completed_at": "2026-09-21T21:18:45Z",
           "duration_sec": 27,
           "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35656370601/job/106520940929",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T22:05:34Z",
+          "completed_at": "2026-09-21T22:05:51Z",
+          "duration_sec": 17,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35656370601/job/106535414224",
           "app": "github-actions"
         },
         {
@@ -223,7 +215,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-21T20:44:17.057104+00:00",
-      "last_change": "2026-09-21T22:05:40.106436+00:00"
+      "last_change": "2026-09-21T22:05:59.308014+00:00"
     },
     {
       "repo": "dynamo-ed760a2-debugging-and-repair",
