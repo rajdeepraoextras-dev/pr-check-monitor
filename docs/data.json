@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T20:56:59.501961+00:00",
+  "snapshot_time": "2026-09-21T20:57:13.443246+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -219,7 +219,7 @@
       "title": "Rework: publish the immediate priority ceiling contract and grade it directly",
       "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/pull/11",
       "createdAt": "2026-09-21T18:41:11Z",
-      "updatedAt": "2026-09-21T20:56:53Z",
+      "updatedAt": "2026-09-21T20:57:13Z",
       "sha": "608eac73b686786a42fb3b317595e9b94beffca3",
       "draft": false,
       "mergeable": true,
@@ -230,21 +230,30 @@
       "head": "rework/ed760a2-ipcp-contract",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
       "overall": "failing",
       "passed": 6,
-      "total": 16,
-      "skipped": 6,
+      "total": 17,
+      "skipped": 7,
       "failed": [
         "pass2"
       ],
-      "running": [],
-      "queued": [
-        "claude-cost-report",
-        "gate",
-        "pass2_suggestion"
+      "running": [
+        {
+          "name": "claude-cost-report",
+          "started_at": "2026-09-21T20:57:05Z"
+        },
+        {
+          "name": "gate",
+          "started_at": "2026-09-21T20:57:04Z"
+        },
+        {
+          "name": "pass2_suggestion",
+          "started_at": "2026-09-21T20:57:09Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
           "name": "pass2",
@@ -258,9 +267,9 @@
         },
         {
           "name": "claude-cost-report",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-21T20:57:02Z",
+          "started_at": "2026-09-21T20:57:05Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35652357674/job/106513744441",
@@ -268,9 +277,9 @@
         },
         {
           "name": "gate",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-21T20:57:02Z",
+          "started_at": "2026-09-21T20:57:04Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35652357674/job/106513744419",
@@ -278,9 +287,9 @@
         },
         {
           "name": "pass2_suggestion",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-21T20:57:02Z",
+          "started_at": "2026-09-21T20:57:09Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35652357674/job/106513741304",
@@ -405,11 +414,21 @@
           "duration_sec": 0,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35652357674/job/106513744093",
           "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-21T20:57:02Z",
+          "completed_at": "2026-09-21T20:57:02Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35652357674/job/106513745855",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-21T18:43:27.877345+00:00",
-      "last_change": "2026-09-21T20:56:59.501961+00:00"
+      "last_change": "2026-09-21T20:57:13.443246+00:00"
     },
     {
       "repo": "dynamo-b27e15c-systems-infrastructure-and-operations",
