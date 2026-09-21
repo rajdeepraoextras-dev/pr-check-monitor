@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T04:28:17.090346+00:00",
+  "snapshot_time": "2026-09-21T04:28:57.186473+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -404,7 +404,7 @@
       "title": "Rework: reject wrong-typed and non-finite input, keep extreme finite weights exact, and catch same-stream conflicts",
       "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/pull/7",
       "createdAt": "2026-09-21T02:19:48Z",
-      "updatedAt": "2026-09-21T04:28:27Z",
+      "updatedAt": "2026-09-21T04:28:54Z",
       "sha": "23a7b957d146832c291fb3d52ffa6dd564173402",
       "draft": false,
       "mergeable": true,
@@ -422,16 +422,19 @@
       "total": 7,
       "skipped": 0,
       "failed": [],
-      "running": [],
-      "queued": [
-        "pass2"
+      "running": [
+        {
+          "name": "pass2",
+          "started_at": "2026-09-21T04:28:45Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
           "name": "pass2",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-21T04:28:43Z",
+          "started_at": "2026-09-21T04:28:45Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35560693586/job/106214080806",
@@ -500,7 +503,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-21T02:20:45.404061+00:00",
-      "last_change": "2026-09-21T04:28:17.090346+00:00"
+      "last_change": "2026-09-21T04:28:57.186473+00:00"
     },
     {
       "repo": "dynamo-d1d0486-debugging-and-repair",
