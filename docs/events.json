@@ -1,53 +1,5 @@
 [
  {
-  "ts": "2026-09-20T19:17:54.895921+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "failing",
-  "msg": "Status running \u2192 failing"
- },
- {
-  "ts": "2026-09-20T19:17:54.895921+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "failing",
-  "msg": "Check failed: gate"
- },
- {
-  "ts": "2026-09-20T19:17:54.895921+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "failing",
-  "msg": "Check failed: qc_gate"
- },
- {
-  "ts": "2026-09-20T19:17:54.895921+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "passed",
-  "msg": "Check passed: claude-cost-report"
- },
- {
-  "ts": "2026-09-20T19:18:09.409541+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "failing",
-  "msg": "Status running \u2192 failing"
- },
- {
-  "ts": "2026-09-20T19:18:09.409541+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "failing",
-  "msg": "Check failed: gate"
- },
- {
-  "ts": "2026-09-20T19:18:09.409541+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "failing",
-  "msg": "Check failed: qc_gate"
- },
- {
-  "ts": "2026-09-20T19:18:09.409541+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "passed",
-  "msg": "Check passed: claude-cost-report"
- },
- {
   "ts": "2026-09-20T19:18:09.409541+00:00",
   "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
   "type": "passed",
@@ -2388,13 +2340,61 @@
   "msg": "Check failed: pass2"
  },
  {
-  "ts": "2026-09-21T04:01:03.587265+00:00",
+  "ts": "2026-09-21T04:01:09.715813+00:00",
+  "pr": "dynamo-d1d0486-debugging-and-repair#8",
+  "type": "started",
+  "msg": "Check started: trials"
+ },
+ {
+  "ts": "2026-09-21T04:01:09.715813+00:00",
+  "pr": "dynamo-d1d0486-debugging-and-repair#8",
+  "type": "passed",
+  "msg": "Check passed: qc_gate"
+ },
+ {
+  "ts": "2026-09-21T04:01:09.715813+00:00",
+  "pr": "dynamo-b27e15c-systems-infrastructure-and-operations#7",
+  "type": "started",
+  "msg": "Check started: qc_eval"
+ },
+ {
+  "ts": "2026-09-21T04:01:09.715813+00:00",
+  "pr": "dynamo-b27e15c-systems-infrastructure-and-operations#7",
+  "type": "started",
+  "msg": "Check started: qc_exec"
+ },
+ {
+  "ts": "2026-09-21T04:01:09.715813+00:00",
+  "pr": "dynamo-b27e15c-systems-infrastructure-and-operations#7",
+  "type": "passed",
+  "msg": "Check passed: tier1"
+ },
+ {
+  "ts": "2026-09-21T04:01:09.715813+00:00",
+  "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-21T04:01:09.715813+00:00",
+  "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
+  "type": "started",
+  "msg": "Check started: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-21T04:01:09.715813+00:00",
   "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
   "type": "failing",
   "msg": "Check failed: gate"
  },
  {
-  "ts": "2026-09-21T04:01:03.587265+00:00",
+  "ts": "2026-09-21T04:01:09.715813+00:00",
+  "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-21T04:01:09.715813+00:00",
   "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
   "type": "passed",
   "msg": "Check passed: claude-cost-report"
