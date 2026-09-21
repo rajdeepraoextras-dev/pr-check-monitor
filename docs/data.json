@@ -1,11 +1,69 @@
 {
-  "snapshot_time": "2026-09-21T02:07:15.768642+00:00",
+  "snapshot_time": "2026-09-21T02:07:11.806173+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-d1d0486-debugging-and-repair",
+      "full_repo": "handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair",
+      "num": "8",
+      "title": "Fix issue #6 stage-name contract and the validation rules the verifier left ungraded",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/pull/8",
+      "createdAt": "2026-09-21T02:05:45Z",
+      "updatedAt": "2026-09-21T02:06:08Z",
+      "sha": "4c2d8332e09c5e8270d69c2ae72c684e396beb0d",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 1748,
+      "deletions": 240,
+      "changedFiles": 8,
+      "head": "rework/d1d0486-scheduler-contract",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 1,
+      "total": 2,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "cosine_similarity",
+          "started_at": "2026-09-21T02:06:19Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "cosine_similarity",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-21T02:06:19Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106191223873",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T02:05:52Z",
+          "completed_at": "2026-09-21T02:06:16Z",
+          "duration_sec": 24,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106191155977",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-21T02:07:20.355733+00:00",
+      "last_change": "2026-09-21T02:07:11.806173+00:00"
+    },
     {
       "repo": "dynamo-29ec2b8-mathematics-and-formal-reasoning",
       "full_repo": "handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning",
