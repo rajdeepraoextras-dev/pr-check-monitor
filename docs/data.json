@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T04:14:42.678624+00:00",
+  "snapshot_time": "2026-09-21T04:15:39.117351+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -402,19 +402,14 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 12,
+      "passed": 13,
       "total": 17,
       "skipped": 2,
       "failed": [
         "gate",
         "qc_gate"
       ],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-21T04:14:41Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -438,16 +433,6 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-21T04:14:41Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35553817685/job/106211603480",
-          "app": "github-actions"
-        },
-        {
           "name": "ava_review",
           "state": "passed",
           "conclusion": "success",
@@ -465,6 +450,16 @@
           "completed_at": "2026-09-21T02:20:20Z",
           "duration_sec": 25,
           "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35553817685/job/106193434671",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T04:14:41Z",
+          "completed_at": "2026-09-21T04:14:57Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35553817685/job/106211603480",
           "app": "github-actions"
         },
         {
@@ -590,7 +585,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-21T02:20:45.404061+00:00",
-      "last_change": "2026-09-21T04:14:42.678624+00:00"
+      "last_change": "2026-09-21T04:15:39.117351+00:00"
     },
     {
       "repo": "dynamo-d1d0486-debugging-and-repair",
