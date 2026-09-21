@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T00:36:12.736555+00:00",
+  "snapshot_time": "2026-09-21T00:36:11.854726+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -27,25 +27,35 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 9,
+      "total": 11,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "ava_review",
-          "started_at": "2026-09-21T00:24:25Z"
+          "name": "tier1",
+          "started_at": "2026-09-21T00:36:20Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "ava_review",
+          "name": "tier1",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-21T00:24:25Z",
+          "started_at": "2026-09-21T00:36:20Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35543498942/job/106177965034",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T00:24:25Z",
+          "completed_at": "2026-09-21T00:36:17Z",
+          "duration_sec": 712,
           "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35543498942/job/106176216601",
           "app": "github-actions"
         },
@@ -142,7 +152,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-20T19:00:36.983919+00:00",
-      "last_change": "2026-09-21T00:32:08.750688+00:00"
+      "last_change": "2026-09-21T00:36:11.854726+00:00"
     },
     {
       "repo": "dynamo-f17a844-data-processing-and-etl",
