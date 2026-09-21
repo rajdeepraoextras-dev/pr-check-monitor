@@ -1,29 +1,5 @@
 [
  {
-  "ts": "2026-09-20T16:15:41.602207+00:00",
-  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
-  "type": "passed",
-  "msg": "Check passed: deep_review"
- },
- {
-  "ts": "2026-09-20T16:18:41.604604+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "started",
-  "msg": "Check started: ava_review"
- },
- {
-  "ts": "2026-09-20T16:18:41.604604+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "started",
-  "msg": "Check started: deep_review"
- },
- {
-  "ts": "2026-09-20T16:18:41.604604+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "passed",
-  "msg": "Check passed: pass2"
- },
- {
   "ts": "2026-09-20T16:19:43.732852+00:00",
   "pr": "dynamo-4c6a7ed-systems-infrastructure-and-operations#6",
   "type": "started",
@@ -2398,5 +2374,29 @@
   "pr": "dynamo-d1d0486-debugging-and-repair#8",
   "type": "passed",
   "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-21T02:20:19.224106+00:00",
+  "pr": "dynamo-d1d0486-debugging-and-repair#8",
+  "type": "started",
+  "msg": "Check started: pass2"
+ },
+ {
+  "ts": "2026-09-21T02:20:19.224106+00:00",
+  "pr": "dynamo-d1d0486-debugging-and-repair#8",
+  "type": "passed",
+  "msg": "Check passed: ratelimit"
+ },
+ {
+  "ts": "2026-09-21T02:20:19.224106+00:00",
+  "pr": "dynamo-d1d0486-debugging-and-repair#8",
+  "type": "passed",
+  "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-21T02:20:19.224106+00:00",
+  "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
+  "type": "discovered",
+  "msg": "PR discovered: Rework: reject wrong-typed and non-finite input, keep extreme finite weights exact, and catch same-stream conflicts"
  }
 ]
