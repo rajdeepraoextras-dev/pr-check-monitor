@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T05:42:02.821634+00:00",
+  "snapshot_time": "2026-09-21T05:42:53.525277+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -419,7 +419,7 @@
       "title": "Rework: reject wrong-typed and non-finite input, keep extreme finite weights exact, and catch same-stream conflicts",
       "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/pull/7",
       "createdAt": "2026-09-21T02:19:48Z",
-      "updatedAt": "2026-09-21T05:38:30Z",
+      "updatedAt": "2026-09-21T05:42:51Z",
       "sha": "23a7b957d146832c291fb3d52ffa6dd564173402",
       "draft": false,
       "mergeable": true,
@@ -433,25 +433,32 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 9,
+      "total": 11,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "ava_review",
-          "started_at": "2026-09-21T05:31:41Z"
-        }
+      "running": [],
+      "queued": [
+        "tier1"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "ava_review",
-          "state": "running",
+          "name": "tier1",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-21T05:31:41Z",
+          "started_at": "2026-09-21T05:42:58Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35560693586/job/106226638800",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T05:31:41Z",
+          "completed_at": "2026-09-21T05:42:57Z",
+          "duration_sec": 676,
           "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35560693586/job/106224525042",
           "app": "github-actions"
         },
@@ -548,7 +555,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-21T02:20:45.404061+00:00",
-      "last_change": "2026-09-21T05:38:21.887088+00:00"
+      "last_change": "2026-09-21T05:42:53.525277+00:00"
     },
     {
       "repo": "dynamo-d1d0486-debugging-and-repair",
