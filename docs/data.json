@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T23:24:25.591607+00:00",
+  "snapshot_time": "2026-09-21T23:24:46.660659+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -27,7 +27,7 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 7,
+      "passed": 8,
       "total": 17,
       "skipped": 6,
       "failed": [
@@ -35,12 +35,7 @@
         "deep_review",
         "gate"
       ],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-21T23:24:21Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -74,16 +69,6 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-21T23:24:21Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35664283190/job/106556090462",
-          "app": "github-actions"
-        },
-        {
           "name": "changes",
           "state": "passed",
           "conclusion": "success",
@@ -91,6 +76,16 @@
           "completed_at": "2026-09-21T22:45:47Z",
           "duration_sec": 26,
           "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35664283190/job/106546417178",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T23:24:21Z",
+          "completed_at": "2026-09-21T23:24:36Z",
+          "duration_sec": 15,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35664283190/job/106556090462",
           "app": "github-actions"
         },
         {
@@ -216,7 +211,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-21T20:44:17.057104+00:00",
-      "last_change": "2026-09-21T23:24:25.591607+00:00"
+      "last_change": "2026-09-21T23:24:46.660659+00:00"
     },
     {
       "repo": "dynamo-ed760a2-debugging-and-repair",
