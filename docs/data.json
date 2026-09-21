@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T02:44:34.982068+00:00",
+  "snapshot_time": "2026-09-21T02:45:24.721733+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,12 +13,12 @@
       "title": "Harden the ledger_sync verifier: canonical script, record continuity, suspension counter (rework for #4)",
       "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/pull/7",
       "createdAt": "2026-09-21T02:39:00Z",
-      "updatedAt": "2026-09-21T02:41:15Z",
-      "sha": "05d8c231b0f2a6793c1c15afd1d9bca7ee7b6153",
+      "updatedAt": "2026-09-21T02:45:07Z",
+      "sha": "c5c8070ca9ffc8d6183ffa9e2ae3753770b29174",
       "draft": false,
       "mergeable": true,
       "reviewDecision": "",
-      "additions": 483,
+      "additions": 484,
       "deletions": 70,
       "changedFiles": 8,
       "head": "rework/b27e15c-sound-verifier",
@@ -26,191 +26,33 @@
       "labels": [
         "needs-revision"
       ],
-      "overall": "failing",
-      "passed": 3,
-      "total": 17,
-      "skipped": 12,
-      "failed": [
-        "gate",
-        "review"
+      "overall": "running",
+      "passed": 0,
+      "total": 1,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "changes",
+          "started_at": "2026-09-21T02:45:12Z"
+        }
       ],
-      "running": [],
       "queued": [],
       "checks": [
         {
-          "name": "gate",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-21T02:41:09Z",
-          "completed_at": "2026-09-21T02:41:19Z",
-          "duration_sec": 10,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35554876458/job/106196788771",
-          "app": "github-actions"
-        },
-        {
-          "name": "review",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-21T02:40:52Z",
-          "completed_at": "2026-09-21T02:41:06Z",
-          "duration_sec": 14,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35554876458/job/106196745645",
-          "app": "github-actions"
-        },
-        {
           "name": "changes",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T02:39:06Z",
-          "completed_at": "2026-09-21T02:39:29Z",
-          "duration_sec": 23,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35554876458/job/106196457854",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T02:41:10Z",
-          "completed_at": "2026-09-21T02:41:24Z",
-          "duration_sec": 14,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35554876458/job/106196788737",
-          "app": "github-actions"
-        },
-        {
-          "name": "cosine_similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T02:39:32Z",
-          "completed_at": "2026-09-21T02:40:49Z",
-          "duration_sec": 77,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35554876458/job/106196531954",
-          "app": "github-actions"
-        },
-        {
-          "name": "ava_review",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-21T02:41:07Z",
-          "completed_at": "2026-09-21T02:41:07Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35554876458/job/106196788746",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-21T02:41:07Z",
-          "completed_at": "2026-09-21T02:41:07Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35554876458/job/106196788731",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-21T02:41:07Z",
-          "completed_at": "2026-09-21T02:41:06Z",
-          "duration_sec": -1,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35554876458/job/106196787862",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-21T02:41:07Z",
-          "completed_at": "2026-09-21T02:41:07Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35554876458/job/106196788070",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_eval",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-21T02:41:07Z",
-          "completed_at": "2026-09-21T02:41:07Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35554876458/job/106196789106",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-21T02:41:07Z",
-          "completed_at": "2026-09-21T02:41:07Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35554876458/job/106196788876",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_gate",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-21T02:41:07Z",
-          "completed_at": "2026-09-21T02:41:07Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35554876458/job/106196789157",
-          "app": "github-actions"
-        },
-        {
-          "name": "ratelimit",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-21T02:41:07Z",
-          "completed_at": "2026-09-21T02:41:06Z",
-          "duration_sec": -1,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35554876458/job/106196788076",
-          "app": "github-actions"
-        },
-        {
-          "name": "similarity",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-21T02:41:07Z",
-          "completed_at": "2026-09-21T02:41:06Z",
-          "duration_sec": -1,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35554876458/job/106196787583",
-          "app": "github-actions"
-        },
-        {
-          "name": "tier1",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-21T02:41:07Z",
-          "completed_at": "2026-09-21T02:41:07Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35554876458/job/106196788372",
-          "app": "github-actions"
-        },
-        {
-          "name": "trials",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-21T02:41:07Z",
-          "completed_at": "2026-09-21T02:41:07Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35554876458/job/106196789624",
-          "app": "github-actions"
-        },
-        {
-          "name": "validation",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-21T02:41:07Z",
-          "completed_at": "2026-09-21T02:41:06Z",
-          "duration_sec": -1,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35554876458/job/106196787626",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-21T02:45:12Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b27e15c-systems-infrastructure-and-operations/actions/runs/35555203277/job/106197409920",
           "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-21T02:43:58.534489+00:00",
-      "last_change": "2026-09-21T02:43:47.138858+00:00"
+      "last_change": "2026-09-21T02:45:24.721733+00:00"
     },
     {
       "repo": "dynamo-52aba7d-software-engineering",
@@ -543,204 +385,56 @@
       "title": "Rework: publish the canonical per-pass rules and close the external-include axiom path",
       "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/pull/15",
       "createdAt": "2026-09-20T18:56:55Z",
-      "updatedAt": "2026-09-21T02:04:33Z",
-      "sha": "dce7742479917feafec6c4367547d050a84be69b",
+      "updatedAt": "2026-09-21T02:45:19Z",
+      "sha": "0977b1ea6e38f01a98bde315e78eb15c3c6de835",
       "draft": false,
       "mergeable": true,
       "reviewDecision": "",
-      "additions": 3193,
-      "deletions": 359,
-      "changedFiles": 21,
+      "additions": 3332,
+      "deletions": 346,
+      "changedFiles": 22,
       "head": "rework/29ec2b8-contract-determinacy",
       "base": "main",
       "labels": [
-        "needs-revision"
+        "in-progress"
       ],
-      "overall": "failing",
-      "passed": 14,
-      "total": 17,
-      "skipped": 1,
-      "failed": [
-        "gate",
-        "trials"
+      "overall": "running",
+      "passed": 1,
+      "total": 2,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "cosine_similarity",
+          "started_at": "2026-09-21T02:45:28Z"
+        }
       ],
-      "running": [],
       "queued": [],
       "checks": [
         {
-          "name": "gate",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-21T02:04:27Z",
-          "completed_at": "2026-09-21T02:04:37Z",
-          "duration_sec": 10,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35543498942/job/106190934404",
-          "app": "github-actions"
-        },
-        {
-          "name": "trials",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-21T00:49:48Z",
-          "completed_at": "2026-09-21T02:04:25Z",
-          "duration_sec": 4477,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35543498942/job/106179899892",
-          "app": "github-actions"
-        },
-        {
-          "name": "ava_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T00:24:25Z",
-          "completed_at": "2026-09-21T00:36:17Z",
-          "duration_sec": 712,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35543498942/job/106176216601",
+          "name": "cosine_similarity",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-21T02:45:28Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35555188980/job/106197453326",
           "app": "github-actions"
         },
         {
           "name": "changes",
           "state": "passed",
           "conclusion": "success",
-          "started_at": "2026-09-20T23:03:36Z",
-          "completed_at": "2026-09-20T23:03:59Z",
-          "duration_sec": 23,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35543498942/job/106165256706",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T02:04:27Z",
-          "completed_at": "2026-09-21T02:04:43Z",
-          "duration_sec": 16,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35543498942/job/106190934529",
-          "app": "github-actions"
-        },
-        {
-          "name": "cosine_similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-20T23:04:02Z",
-          "completed_at": "2026-09-20T23:05:30Z",
-          "duration_sec": 88,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35543498942/job/106165314615",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T00:24:25Z",
-          "completed_at": "2026-09-21T00:32:08Z",
-          "duration_sec": 463,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35543498942/job/106176216581",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-20T23:17:38Z",
-          "completed_at": "2026-09-21T00:24:22Z",
-          "duration_sec": 4004,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35543498942/job/106167138805",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_eval",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T00:36:59Z",
-          "completed_at": "2026-09-21T00:45:38Z",
-          "duration_sec": 519,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35543498942/job/106178060392",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T00:36:59Z",
-          "completed_at": "2026-09-21T00:49:30Z",
-          "duration_sec": 751,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35543498942/job/106178060442",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_gate",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T00:49:32Z",
-          "completed_at": "2026-09-21T00:49:45Z",
-          "duration_sec": 13,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35543498942/job/106179865393",
-          "app": "github-actions"
-        },
-        {
-          "name": "ratelimit",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-20T23:17:27Z",
-          "completed_at": "2026-09-20T23:17:36Z",
-          "duration_sec": 9,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35543498942/job/106167113865",
-          "app": "github-actions"
-        },
-        {
-          "name": "review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-20T23:05:32Z",
-          "completed_at": "2026-09-20T23:15:01Z",
-          "duration_sec": 569,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35543498942/job/106165529197",
-          "app": "github-actions"
-        },
-        {
-          "name": "similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-20T23:15:03Z",
-          "completed_at": "2026-09-20T23:15:35Z",
-          "duration_sec": 32,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35543498942/job/106166792889",
-          "app": "github-actions"
-        },
-        {
-          "name": "tier1",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T00:36:20Z",
-          "completed_at": "2026-09-21T00:36:57Z",
-          "duration_sec": 37,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35543498942/job/106177965034",
-          "app": "github-actions"
-        },
-        {
-          "name": "validation",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-20T23:15:38Z",
-          "completed_at": "2026-09-20T23:17:24Z",
-          "duration_sec": 106,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35543498942/job/106166875813",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-21T00:24:23Z",
-          "completed_at": "2026-09-21T00:24:23Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35543498942/job/106176217550",
+          "started_at": "2026-09-21T02:44:59Z",
+          "completed_at": "2026-09-21T02:45:25Z",
+          "duration_sec": 26,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-29ec2b8-mathematics-and-formal-reasoning/actions/runs/35555188980/job/106197373121",
           "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-20T19:00:36.983919+00:00",
-      "last_change": "2026-09-21T02:04:39.137859+00:00"
+      "last_change": "2026-09-21T02:45:24.721733+00:00"
     },
     {
       "repo": "dynamo-f17a844-data-processing-and-etl",
