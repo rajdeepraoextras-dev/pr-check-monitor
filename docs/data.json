@@ -1,11 +1,79 @@
 {
-  "snapshot_time": "2026-09-21T02:29:48.944688+00:00",
+  "snapshot_time": "2026-09-21T02:29:48.792201+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-52aba7d-software-engineering",
+      "full_repo": "handshake-project-dynamo/dynamo-52aba7d-software-engineering",
+      "num": "8",
+      "title": "Rework: close the output backpressure gap and the coalesced parse ahead divergence",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/pull/8",
+      "createdAt": "2026-09-21T02:27:40Z",
+      "updatedAt": "2026-09-21T02:29:46Z",
+      "sha": "85170336cb351e89f5553e740a03633e13c9f40c",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 548,
+      "deletions": 154,
+      "changedFiles": 6,
+      "head": "rework/52aba7d-stalled-reader-and-parse-ahead",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 2,
+      "total": 3,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "review",
+          "started_at": "2026-09-21T02:29:53Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-21T02:29:53Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106194993612",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T02:27:47Z",
+          "completed_at": "2026-09-21T02:28:13Z",
+          "duration_sec": 26,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106194680786",
+          "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T02:28:15Z",
+          "completed_at": "2026-09-21T02:29:51Z",
+          "duration_sec": 96,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106194750347",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-21T02:30:02.761794+00:00",
+      "last_change": "2026-09-21T02:29:48.792201+00:00"
+    },
     {
       "repo": "dynamo-04ff9ff-model-training-and-ml-infrastructure",
       "full_repo": "handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure",
@@ -112,7 +180,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-21T02:20:45.404061+00:00",
-      "last_change": "2026-09-21T02:29:08.038974+00:00"
+      "last_change": "2026-09-21T02:29:48.792201+00:00"
     },
     {
       "repo": "dynamo-d1d0486-debugging-and-repair",

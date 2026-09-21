@@ -1,29 +1,5 @@
 [
  {
-  "ts": "2026-09-20T16:21:29.794665+00:00",
-  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
-  "type": "started",
-  "msg": "Check started: qc_eval"
- },
- {
-  "ts": "2026-09-20T16:21:29.794665+00:00",
-  "pr": "dynamo-e05237e-model-training-and-ml-infrastructure#9",
-  "type": "started",
-  "msg": "Check started: qc_exec"
- },
- {
-  "ts": "2026-09-20T16:29:11.676618+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "started",
-  "msg": "Check started: tier1"
- },
- {
-  "ts": "2026-09-20T16:29:11.676618+00:00",
-  "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
-  "type": "passed",
-  "msg": "Check passed: ava_review"
- },
- {
   "ts": "2026-09-20T16:29:11.676618+00:00",
   "pr": "dynamo-472321b-model-training-and-ml-infrastructure#12",
   "type": "passed",
@@ -2398,5 +2374,29 @@
   "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
   "type": "passed",
   "msg": "Check passed: ratelimit"
+ },
+ {
+  "ts": "2026-09-21T02:29:48.792201+00:00",
+  "pr": "dynamo-52aba7d-software-engineering#8",
+  "type": "discovered",
+  "msg": "PR discovered: Rework: close the output backpressure gap and the coalesced parse ahead divergence"
+ },
+ {
+  "ts": "2026-09-21T02:29:48.792201+00:00",
+  "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
+  "type": "started",
+  "msg": "Check started: pass2"
+ },
+ {
+  "ts": "2026-09-21T02:29:48.792201+00:00",
+  "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
+  "type": "passed",
+  "msg": "Check passed: ratelimit"
+ },
+ {
+  "ts": "2026-09-21T02:29:48.792201+00:00",
+  "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
+  "type": "passed",
+  "msg": "Check passed: validation"
  }
 ]
