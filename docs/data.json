@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T03:39:26.278755+00:00",
+  "snapshot_time": "2026-09-21T03:40:12.684397+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -309,7 +309,7 @@
       "title": "Rework: reject wrong-typed and non-finite input, keep extreme finite weights exact, and catch same-stream conflicts",
       "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/pull/7",
       "createdAt": "2026-09-21T02:19:48Z",
-      "updatedAt": "2026-09-21T03:33:03Z",
+      "updatedAt": "2026-09-21T03:39:30Z",
       "sha": "d917c21e45557956677fa6bd746d37779118ef6d",
       "draft": false,
       "mergeable": true,
@@ -323,17 +323,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "ava_review",
-          "started_at": "2026-09-21T03:32:56Z"
-        },
-        {
-          "name": "deep_review",
           "started_at": "2026-09-21T03:32:56Z"
         }
       ],
@@ -347,16 +343,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35553817685/job/106204977226",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-21T03:32:56Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35553817685/job/106204977162",
           "app": "github-actions"
         },
         {
@@ -377,6 +363,16 @@
           "completed_at": "2026-09-21T02:21:42Z",
           "duration_sec": 79,
           "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35553817685/job/106193513350",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T03:32:56Z",
+          "completed_at": "2026-09-21T03:39:36Z",
+          "duration_sec": 400,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35553817685/job/106204977162",
           "app": "github-actions"
         },
         {
@@ -442,7 +438,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-21T02:20:45.404061+00:00",
-      "last_change": "2026-09-21T03:32:39.637422+00:00"
+      "last_change": "2026-09-21T03:40:12.684397+00:00"
     },
     {
       "repo": "dynamo-d1d0486-debugging-and-repair",
