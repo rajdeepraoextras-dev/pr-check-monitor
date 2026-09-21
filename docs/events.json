@@ -1,35 +1,5 @@
 [
  {
-  "ts": "2026-09-21T00:08:46.413687+00:00",
-  "pr": "dynamo-f17a844-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
-  "ts": "2026-09-21T00:09:37.897546+00:00",
-  "pr": "dynamo-f17a844-data-processing-and-etl#11",
-  "type": "started",
-  "msg": "Check started: validation"
- },
- {
-  "ts": "2026-09-21T00:09:37.897546+00:00",
-  "pr": "dynamo-f17a844-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
-  "ts": "2026-09-21T00:09:37.897546+00:00",
-  "pr": "dynamo-f17a844-data-processing-and-etl#11",
-  "type": "passed",
-  "msg": "Check passed: similarity"
- },
- {
-  "ts": "2026-09-21T00:10:08.454494+00:00",
-  "pr": "dynamo-f17a844-data-processing-and-etl#11",
-  "type": "started",
-  "msg": "Check started: ratelimit"
- },
- {
   "ts": "2026-09-21T00:10:08.454494+00:00",
   "pr": "dynamo-f17a844-data-processing-and-etl#11",
   "type": "passed",
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-ed760a2-debugging-and-repair#11",
   "type": "passed",
   "msg": "Check passed: ratelimit"
+ },
+ {
+  "ts": "2026-09-21T20:31:58.342782+00:00",
+  "pr": "dynamo-ed760a2-debugging-and-repair#11",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-21T20:31:58.342782+00:00",
+  "pr": "dynamo-ed760a2-debugging-and-repair#11",
+  "type": "started",
+  "msg": "Check started: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-21T20:31:58.342782+00:00",
+  "pr": "dynamo-ed760a2-debugging-and-repair#11",
+  "type": "started",
+  "msg": "Check started: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-21T20:31:58.342782+00:00",
+  "pr": "dynamo-ed760a2-debugging-and-repair#11",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-21T20:31:58.342782+00:00",
+  "pr": "dynamo-ed760a2-debugging-and-repair#11",
+  "type": "failing",
+  "msg": "Check failed: pass2"
  }
 ]
