@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T05:06:30.574616+00:00",
+  "snapshot_time": "2026-09-21T05:07:15.000580+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -527,7 +527,7 @@
       "title": "Fix issue #6 stage-name contract and the validation rules the verifier left ungraded",
       "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/pull/8",
       "createdAt": "2026-09-21T02:05:45Z",
-      "updatedAt": "2026-09-21T03:59:26Z",
+      "updatedAt": "2026-09-21T05:07:07Z",
       "sha": "4c2d8332e09c5e8270d69c2ae72c684e396beb0d",
       "draft": false,
       "mergeable": true,
@@ -538,31 +538,16 @@
       "head": "rework/d1d0486-scheduler-contract",
       "base": "main",
       "labels": [
-        "in-progress"
+        "accepted"
       ],
-      "overall": "running",
-      "passed": 13,
-      "total": 15,
+      "overall": "passed",
+      "passed": 16,
+      "total": 17,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "trials",
-          "started_at": "2026-09-21T03:59:15Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
-        {
-          "name": "trials",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-21T03:59:15Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106209098202",
-          "app": "github-actions"
-        },
         {
           "name": "ava_review",
           "state": "passed",
@@ -584,6 +569,16 @@
           "app": "github-actions"
         },
         {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T05:07:00Z",
+          "completed_at": "2026-09-21T05:07:16Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106220360475",
+          "app": "github-actions"
+        },
+        {
           "name": "cosine_similarity",
           "state": "passed",
           "conclusion": "success",
@@ -601,6 +596,16 @@
           "completed_at": "2026-09-21T03:32:33Z",
           "duration_sec": 468,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106203679228",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T05:07:00Z",
+          "completed_at": "2026-09-21T05:07:11Z",
+          "duration_sec": 11,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106220360462",
           "app": "github-actions"
         },
         {
@@ -684,6 +689,16 @@
           "app": "github-actions"
         },
         {
+          "name": "trials",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T03:59:15Z",
+          "completed_at": "2026-09-21T05:06:57Z",
+          "duration_sec": 4062,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106209098202",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -706,7 +721,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-21T02:07:20.355733+00:00",
-      "last_change": "2026-09-21T04:01:09.715813+00:00"
+      "last_change": "2026-09-21T05:07:15.000580+00:00"
     },
     {
       "repo": "dynamo-29ec2b8-mathematics-and-formal-reasoning",
