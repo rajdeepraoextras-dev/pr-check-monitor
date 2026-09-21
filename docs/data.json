@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T03:05:41.265144+00:00",
+  "snapshot_time": "2026-09-21T03:06:26.411140+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -81,7 +81,7 @@
       "title": "Rework: close the output backpressure gap and the coalesced parse ahead divergence",
       "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/pull/8",
       "createdAt": "2026-09-21T02:27:40Z",
-      "updatedAt": "2026-09-21T03:05:39Z",
+      "updatedAt": "2026-09-21T03:05:54Z",
       "sha": "85170336cb351e89f5553e740a03633e13c9f40c",
       "draft": false,
       "mergeable": true,
@@ -95,26 +95,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 9,
-      "total": 11,
+      "passed": 10,
+      "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "tier1",
-          "started_at": "2026-09-21T03:05:13Z"
+          "name": "qc_eval",
+          "started_at": "2026-09-21T03:05:48Z"
+        },
+        {
+          "name": "qc_exec",
+          "started_at": "2026-09-21T03:05:48Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "tier1",
+          "name": "qc_eval",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-21T03:05:13Z",
+          "started_at": "2026-09-21T03:05:48Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106200446596",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106200547394",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-21T03:05:48Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106200547482",
           "app": "github-actions"
         },
         {
@@ -198,6 +212,16 @@
           "app": "github-actions"
         },
         {
+          "name": "tier1",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T03:05:13Z",
+          "completed_at": "2026-09-21T03:05:46Z",
+          "duration_sec": 33,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106200446596",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -220,7 +244,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-21T02:30:02.761794+00:00",
-      "last_change": "2026-09-21T03:05:41.265144+00:00"
+      "last_change": "2026-09-21T03:06:26.411140+00:00"
     },
     {
       "repo": "dynamo-04ff9ff-model-training-and-ml-infrastructure",
