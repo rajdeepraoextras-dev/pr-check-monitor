@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T23:24:12.148729+00:00",
+  "snapshot_time": "2026-09-21T23:24:25.591607+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: publish the latent partition, role evidence and causal estimator",
       "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/pull/12",
       "createdAt": "2026-09-21T20:41:21Z",
-      "updatedAt": "2026-09-21T23:24:11Z",
+      "updatedAt": "2026-09-21T23:24:27Z",
       "sha": "5d33c22f6e653fdcada125b193850d446f2c877a",
       "draft": false,
       "mergeable": true,
@@ -24,43 +24,63 @@
       "head": "rework/b2366b5-audit-contract",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
+      "overall": "failing",
       "passed": 7,
-      "total": 10,
-      "skipped": 1,
-      "failed": [],
+      "total": 17,
+      "skipped": 6,
+      "failed": [
+        "ava_review",
+        "deep_review",
+        "gate"
+      ],
       "running": [
         {
-          "name": "ava_review",
-          "started_at": "2026-09-21T23:24:02Z"
-        },
-        {
-          "name": "deep_review",
-          "started_at": "2026-09-21T23:24:02Z"
+          "name": "claude-cost-report",
+          "started_at": "2026-09-21T23:24:21Z"
         }
       ],
       "queued": [],
       "checks": [
         {
           "name": "ava_review",
-          "state": "running",
-          "conclusion": null,
+          "state": "failed",
+          "conclusion": "failure",
           "started_at": "2026-09-21T23:24:02Z",
-          "completed_at": null,
-          "duration_sec": null,
+          "completed_at": "2026-09-21T23:24:16Z",
+          "duration_sec": 14,
           "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35664283190/job/106556014299",
           "app": "github-actions"
         },
         {
           "name": "deep_review",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-21T23:24:02Z",
+          "completed_at": "2026-09-21T23:24:18Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35664283190/job/106556014308",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-21T23:24:21Z",
+          "completed_at": "2026-09-21T23:24:31Z",
+          "duration_sec": 10,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35664283190/job/106556090458",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-21T23:24:02Z",
+          "started_at": "2026-09-21T23:24:21Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35664283190/job/106556014308",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35664283190/job/106556090462",
           "app": "github-actions"
         },
         {
@@ -142,11 +162,61 @@
           "duration_sec": 0,
           "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35664283190/job/106556016078",
           "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-21T23:24:18Z",
+          "completed_at": "2026-09-21T23:24:18Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35664283190/job/106556089732",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-21T23:24:18Z",
+          "completed_at": "2026-09-21T23:24:18Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35664283190/job/106556090025",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-21T23:24:19Z",
+          "completed_at": "2026-09-21T23:24:18Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35664283190/job/106556090472",
+          "app": "github-actions"
+        },
+        {
+          "name": "tier1",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-21T23:24:18Z",
+          "completed_at": "2026-09-21T23:24:18Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35664283190/job/106556089581",
+          "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-21T23:24:19Z",
+          "completed_at": "2026-09-21T23:24:18Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35664283190/job/106556091226",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-21T20:44:17.057104+00:00",
-      "last_change": "2026-09-21T23:24:12.148729+00:00"
+      "last_change": "2026-09-21T23:24:25.591607+00:00"
     },
     {
       "repo": "dynamo-ed760a2-debugging-and-repair",
