@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T06:03:43.694365+00:00",
+  "snapshot_time": "2026-09-21T06:04:38.414657+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -419,7 +419,7 @@
       "title": "Rework: reject wrong-typed and non-finite input, keep extreme finite weights exact, and catch same-stream conflicts",
       "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/pull/7",
       "createdAt": "2026-09-21T02:19:48Z",
-      "updatedAt": "2026-09-21T05:43:40Z",
+      "updatedAt": "2026-09-21T06:04:24Z",
       "sha": "23a7b957d146832c291fb3d52ffa6dd564173402",
       "draft": false,
       "mergeable": true,
@@ -433,26 +433,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 11,
-      "total": 13,
+      "passed": 13,
+      "total": 15,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_eval",
-          "started_at": "2026-09-21T05:43:33Z"
+          "name": "trials",
+          "started_at": "2026-09-21T06:04:15Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
+          "name": "trials",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-21T05:43:33Z",
+          "started_at": "2026-09-21T06:04:15Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35560693586/job/106226739031",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35560693586/job/106230344335",
           "app": "github-actions"
         },
         {
@@ -506,6 +506,16 @@
           "app": "github-actions"
         },
         {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T05:43:33Z",
+          "completed_at": "2026-09-21T06:03:55Z",
+          "duration_sec": 1222,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35560693586/job/106226739031",
+          "app": "github-actions"
+        },
+        {
           "name": "qc_exec",
           "state": "passed",
           "conclusion": "success",
@@ -513,6 +523,16 @@
           "completed_at": "2026-09-21T05:57:06Z",
           "duration_sec": 813,
           "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35560693586/job/106226739063",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T06:03:58Z",
+          "completed_at": "2026-09-21T06:04:12Z",
+          "duration_sec": 14,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35560693586/job/106230296587",
           "app": "github-actions"
         },
         {
@@ -578,7 +598,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-21T02:20:45.404061+00:00",
-      "last_change": "2026-09-21T05:57:19.457042+00:00"
+      "last_change": "2026-09-21T06:04:38.414657+00:00"
     },
     {
       "repo": "dynamo-d1d0486-debugging-and-repair",
