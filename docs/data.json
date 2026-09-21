@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T19:58:49.591485+00:00",
+  "snapshot_time": "2026-09-21T19:59:11.684315+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -27,15 +27,11 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 0,
+      "passed": 1,
       "total": 2,
       "skipped": 0,
       "failed": [],
       "running": [
-        {
-          "name": "changes",
-          "started_at": "2026-09-21T19:58:01Z"
-        },
         {
           "name": "cosine_similarity",
           "started_at": "2026-09-21T19:58:31Z"
@@ -43,16 +39,6 @@
       ],
       "queued": [],
       "checks": [
-        {
-          "name": "changes",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-21T19:58:01Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35648091920/job/106493402603",
-          "app": "github-actions"
-        },
         {
           "name": "cosine_similarity",
           "state": "running",
@@ -62,11 +48,21 @@
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35648091920/job/106493570391",
           "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T19:58:01Z",
+          "completed_at": "2026-09-21T19:58:28Z",
+          "duration_sec": 27,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35648091920/job/106493402603",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-21T18:43:27.877345+00:00",
-      "last_change": "2026-09-21T19:58:49.591485+00:00"
+      "last_change": "2026-09-21T19:59:11.684315+00:00"
     },
     {
       "repo": "dynamo-b27e15c-systems-infrastructure-and-operations",
