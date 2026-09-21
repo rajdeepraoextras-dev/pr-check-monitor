@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-21T07:11:03.001216+00:00",
+  "snapshot_time": "2026-09-21T07:11:41.855884+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -419,7 +419,7 @@
       "title": "Rework: reject wrong-typed and non-finite input, keep extreme finite weights exact, and catch same-stream conflicts",
       "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/pull/7",
       "createdAt": "2026-09-21T02:19:48Z",
-      "updatedAt": "2026-09-21T06:04:24Z",
+      "updatedAt": "2026-09-21T07:11:37Z",
       "sha": "23a7b957d146832c291fb3d52ffa6dd564173402",
       "draft": false,
       "mergeable": true,
@@ -430,31 +430,16 @@
       "head": "rework/04ff9ff-retry-safe-evaluator",
       "base": "main",
       "labels": [
-        "in-progress"
+        "accepted"
       ],
-      "overall": "running",
-      "passed": 13,
-      "total": 15,
+      "overall": "passed",
+      "passed": 16,
+      "total": 17,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "trials",
-          "started_at": "2026-09-21T06:04:15Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
-        {
-          "name": "trials",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-21T06:04:15Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35560693586/job/106230344335",
-          "app": "github-actions"
-        },
         {
           "name": "ava_review",
           "state": "passed",
@@ -476,6 +461,16 @@
           "app": "github-actions"
         },
         {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T07:11:31Z",
+          "completed_at": "2026-09-21T07:11:46Z",
+          "duration_sec": 15,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35560693586/job/106244738313",
+          "app": "github-actions"
+        },
+        {
           "name": "cosine_similarity",
           "state": "passed",
           "conclusion": "success",
@@ -493,6 +488,16 @@
           "completed_at": "2026-09-21T05:38:36Z",
           "duration_sec": 415,
           "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35560693586/job/106224525029",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T07:11:30Z",
+          "completed_at": "2026-09-21T07:11:41Z",
+          "duration_sec": 11,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35560693586/job/106244738311",
           "app": "github-actions"
         },
         {
@@ -576,6 +581,16 @@
           "app": "github-actions"
         },
         {
+          "name": "trials",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-21T06:04:15Z",
+          "completed_at": "2026-09-21T07:11:27Z",
+          "duration_sec": 4032,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-04ff9ff-model-training-and-ml-infrastructure/actions/runs/35560693586/job/106230344335",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -598,7 +613,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-21T02:20:45.404061+00:00",
-      "last_change": "2026-09-21T06:06:18.773492+00:00"
+      "last_change": "2026-09-21T07:11:41.855884+00:00"
     },
     {
       "repo": "dynamo-d1d0486-debugging-and-repair",
