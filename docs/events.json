@@ -1,119 +1,5 @@
 [
  {
-  "ts": "2026-09-21T20:20:41.842868+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
-  "ts": "2026-09-21T20:21:18.846841+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "started",
-  "msg": "Check started: validation"
- },
- {
-  "ts": "2026-09-21T20:21:18.846841+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check passed: similarity"
- },
- {
-  "ts": "2026-09-21T20:22:29.090588+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "started",
-  "msg": "Check started: ratelimit"
- },
- {
-  "ts": "2026-09-21T20:22:29.090588+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check passed: validation"
- },
- {
-  "ts": "2026-09-21T20:23:03.100332+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-21T20:23:03.100332+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-21T20:24:28.957152+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-21T20:24:28.957152+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-21T20:31:58.342782+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "failing",
-  "msg": "Status running \u2192 failing"
- },
- {
-  "ts": "2026-09-21T20:31:58.342782+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "started",
-  "msg": "Check started: claude-cost-report"
- },
- {
-  "ts": "2026-09-21T20:31:58.342782+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "started",
-  "msg": "Check started: pass2_suggestion"
- },
- {
-  "ts": "2026-09-21T20:31:58.342782+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "failing",
-  "msg": "Check failed: gate"
- },
- {
-  "ts": "2026-09-21T20:31:58.342782+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "failing",
-  "msg": "Check failed: pass2"
- },
- {
-  "ts": "2026-09-21T20:32:35.723280+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check passed: claude-cost-report"
- },
- {
-  "ts": "2026-09-21T20:32:35.723280+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check passed: pass2_suggestion"
- },
- {
-  "ts": "2026-09-21T20:33:11.619624+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "failing",
-  "msg": "Status running \u2192 failing"
- },
- {
-  "ts": "2026-09-21T20:33:11.619624+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "failing",
-  "msg": "Check failed: gate"
- },
- {
-  "ts": "2026-09-21T20:33:11.619624+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "failing",
-  "msg": "Check failed: pass2"
- },
- {
   "ts": "2026-09-21T20:33:11.619624+00:00",
   "pr": "dynamo-ed760a2-debugging-and-repair#11",
   "type": "passed",
@@ -2398,5 +2284,119 @@
   "pr": "dynamo-69e224d-data-processing-and-etl#6",
   "type": "passed",
   "msg": "Check passed: ava_review"
+ },
+ {
+  "ts": "2026-09-22T03:27:59.913417+00:00",
+  "pr": "dynamo-81dc97e-scientific-computing-and-domain-science#7",
+  "type": "started",
+  "msg": "Check started: trials"
+ },
+ {
+  "ts": "2026-09-22T03:27:59.913417+00:00",
+  "pr": "dynamo-81dc97e-scientific-computing-and-domain-science#7",
+  "type": "passed",
+  "msg": "7 checks passed"
+ },
+ {
+  "ts": "2026-09-22T03:27:59.913417+00:00",
+  "pr": "dynamo-0aa466f-data-querying-and-databases#8",
+  "type": "passed",
+  "msg": "Check passed: pass2"
+ },
+ {
+  "ts": "2026-09-22T03:27:59.913417+00:00",
+  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
+  "type": "started",
+  "msg": "Check started: trials"
+ },
+ {
+  "ts": "2026-09-22T03:27:59.913417+00:00",
+  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
+  "type": "passed",
+  "msg": "Check passed: qc_eval"
+ },
+ {
+  "ts": "2026-09-22T03:27:59.913417+00:00",
+  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
+  "type": "passed",
+  "msg": "Check passed: qc_exec"
+ },
+ {
+  "ts": "2026-09-22T03:27:59.913417+00:00",
+  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
+  "type": "passed",
+  "msg": "Check passed: qc_gate"
+ },
+ {
+  "ts": "2026-09-22T03:27:59.913417+00:00",
+  "pr": "dynamo-69e224d-data-processing-and-etl#6",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-22T03:27:59.913417+00:00",
+  "pr": "dynamo-69e224d-data-processing-and-etl#6",
+  "type": "failing",
+  "msg": "Check failed: deep_review"
+ },
+ {
+  "ts": "2026-09-22T03:27:59.913417+00:00",
+  "pr": "dynamo-69e224d-data-processing-and-etl#6",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-22T03:27:59.913417+00:00",
+  "pr": "dynamo-69e224d-data-processing-and-etl#6",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-22T03:27:59.913417+00:00",
+  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
+  "type": "started",
+  "msg": "Check started: qc_eval"
+ },
+ {
+  "ts": "2026-09-22T03:27:59.913417+00:00",
+  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
+  "type": "passed",
+  "msg": "4 checks passed"
+ },
+ {
+  "ts": "2026-09-22T03:27:59.913417+00:00",
+  "pr": "dynamo-42bb5d9-debugging-and-repair#6",
+  "type": "started",
+  "msg": "Check started: qc_eval"
+ },
+ {
+  "ts": "2026-09-22T03:27:59.913417+00:00",
+  "pr": "dynamo-42bb5d9-debugging-and-repair#6",
+  "type": "passed",
+  "msg": "5 checks passed"
+ },
+ {
+  "ts": "2026-09-22T03:27:59.913417+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "started",
+  "msg": "Check started: pass2"
+ },
+ {
+  "ts": "2026-09-22T03:27:59.913417+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "passed",
+  "msg": "Check passed: ratelimit"
+ },
+ {
+  "ts": "2026-09-22T03:27:59.913417+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "passed",
+  "msg": "Check passed: similarity"
+ },
+ {
+  "ts": "2026-09-22T03:27:59.913417+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "passed",
+  "msg": "Check passed: validation"
  }
 ]
