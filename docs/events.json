@@ -2,6 +2,12 @@
  {
   "ts": "2026-09-21T19:17:23.216314+00:00",
   "pr": "dynamo-ed760a2-debugging-and-repair#11",
+  "type": "started",
+  "msg": "Check started: pass2"
+ },
+ {
+  "ts": "2026-09-21T19:17:23.216314+00:00",
+  "pr": "dynamo-ed760a2-debugging-and-repair#11",
   "type": "passed",
   "msg": "Check passed: ratelimit"
  },
@@ -2370,33 +2376,27 @@
   "msg": "Check passed: pass2"
  },
  {
-  "ts": "2026-09-22T03:14:35.338409+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "failing",
-  "msg": "Status running \u2192 failing"
+  "ts": "2026-09-22T03:14:25.575282+00:00",
+  "pr": "dynamo-b538a3d-systems-infrastructure-and-operations#7",
+  "type": "discovered",
+  "msg": "PR discovered: Fix #4 findings: align journaled tree recovery contract and verifier"
  },
  {
-  "ts": "2026-09-22T03:14:35.338409+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
+  "ts": "2026-09-22T03:14:25.575282+00:00",
+  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
   "type": "started",
-  "msg": "Check started: claude-cost-report"
+  "msg": "Check started: ava_review"
  },
  {
-  "ts": "2026-09-22T03:14:35.338409+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
+  "ts": "2026-09-22T03:14:25.575282+00:00",
+  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
   "type": "started",
-  "msg": "Check started: pass2_suggestion"
+  "msg": "Check started: deep_review"
  },
  {
-  "ts": "2026-09-22T03:14:35.338409+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "failing",
-  "msg": "Check failed: gate"
- },
- {
-  "ts": "2026-09-22T03:14:35.338409+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "failing",
-  "msg": "Check failed: pass2"
+  "ts": "2026-09-22T03:14:25.575282+00:00",
+  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
+  "type": "passed",
+  "msg": "Check passed: pass2"
  }
 ]

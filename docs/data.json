@@ -1,11 +1,119 @@
 {
-  "snapshot_time": "2026-09-22T03:14:35.338409+00:00",
+  "snapshot_time": "2026-09-22T03:14:25.575282+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-b538a3d-systems-infrastructure-and-operations",
+      "full_repo": "handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations",
+      "num": "7",
+      "title": "Fix #4 findings: align journaled tree recovery contract and verifier",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/pull/7",
+      "createdAt": "2026-09-22T02:58:28Z",
+      "updatedAt": "2026-09-22T03:09:13Z",
+      "sha": "b01f4a02813a038c29947b9d52af3f0649e4f2d0",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 3580,
+      "deletions": 1484,
+      "changedFiles": 47,
+      "head": "rework/b538a3d-journaled-tree-recovery",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 6,
+      "total": 7,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "pass2",
+          "started_at": "2026-09-22T03:09:04Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "pass2",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-22T03:09:04Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106600997742",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T02:58:36Z",
+          "completed_at": "2026-09-22T02:59:00Z",
+          "duration_sec": 24,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106599021321",
+          "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T02:59:03Z",
+          "completed_at": "2026-09-22T03:00:16Z",
+          "duration_sec": 73,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106599098844",
+          "app": "github-actions"
+        },
+        {
+          "name": "ratelimit",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T03:08:51Z",
+          "completed_at": "2026-09-22T03:08:59Z",
+          "duration_sec": 8,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106600957604",
+          "app": "github-actions"
+        },
+        {
+          "name": "review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T03:00:20Z",
+          "completed_at": "2026-09-22T03:06:49Z",
+          "duration_sec": 389,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106599331684",
+          "app": "github-actions"
+        },
+        {
+          "name": "similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T03:06:53Z",
+          "completed_at": "2026-09-22T03:07:25Z",
+          "duration_sec": 32,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106600601414",
+          "app": "github-actions"
+        },
+        {
+          "name": "validation",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T03:07:30Z",
+          "completed_at": "2026-09-22T03:08:45Z",
+          "duration_sec": 75,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106600708847",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-22T03:14:55.251795+00:00",
+      "last_change": "2026-09-22T03:14:25.575282+00:00"
+    },
     {
       "repo": "dynamo-91b21b1-security",
       "full_repo": "handshake-project-dynamo/dynamo-91b21b1-security",
@@ -470,7 +578,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:45:01.537403+00:00",
-      "last_change": "2026-09-22T03:13:38.839810+00:00"
+      "last_change": "2026-09-22T03:14:25.575282+00:00"
     },
     {
       "repo": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations",
@@ -1565,7 +1673,7 @@
       "title": "Rework: publish the immediate priority ceiling contract and grade it directly",
       "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/pull/11",
       "createdAt": "2026-09-21T18:41:11Z",
-      "updatedAt": "2026-09-22T03:15:39Z",
+      "updatedAt": "2026-09-22T03:02:46Z",
       "sha": "df447744afbf6fb12cbc3dbaa1402b53fe273d6b",
       "draft": false,
       "mergeable": true,
@@ -1576,66 +1684,29 @@
       "head": "rework/ed760a2-ipcp-contract",
       "base": "main",
       "labels": [
-        "needs-revision"
+        "in-progress"
       ],
-      "overall": "failing",
+      "overall": "running",
       "passed": 6,
-      "total": 17,
-      "skipped": 7,
-      "failed": [
-        "gate",
-        "pass2"
-      ],
+      "total": 7,
+      "skipped": 0,
+      "failed": [],
       "running": [
         {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-22T03:15:33Z"
-        },
-        {
-          "name": "pass2_suggestion",
-          "started_at": "2026-09-22T03:15:31Z"
+          "name": "pass2",
+          "started_at": "2026-09-22T03:02:38Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "gate",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-22T03:15:32Z",
-          "completed_at": "2026-09-22T03:15:43Z",
-          "duration_sec": 11,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35681130380/job/106602209277",
-          "app": "github-actions"
-        },
-        {
           "name": "pass2",
-          "state": "failed",
-          "conclusion": "failure",
+          "state": "running",
+          "conclusion": null,
           "started_at": "2026-09-22T03:02:38Z",
-          "completed_at": "2026-09-22T03:15:27Z",
-          "duration_sec": 769,
+          "completed_at": null,
+          "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35681130380/job/106599787448",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T03:15:33Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35681130380/job/106602209278",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T03:15:31Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35681130380/job/106602206846",
           "app": "github-actions"
         },
         {
@@ -1697,81 +1768,11 @@
           "duration_sec": 78,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35681130380/job/106599469341",
           "app": "github-actions"
-        },
-        {
-          "name": "ava_review",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-22T03:15:28Z",
-          "completed_at": "2026-09-22T03:15:27Z",
-          "duration_sec": -1,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35681130380/job/106602207482",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-22T03:15:28Z",
-          "completed_at": "2026-09-22T03:15:27Z",
-          "duration_sec": -1,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35681130380/job/106602207912",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_eval",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-22T03:15:28Z",
-          "completed_at": "2026-09-22T03:15:28Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35681130380/job/106602208398",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-22T03:15:28Z",
-          "completed_at": "2026-09-22T03:15:28Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35681130380/job/106602208796",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_gate",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-22T03:15:28Z",
-          "completed_at": "2026-09-22T03:15:28Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35681130380/job/106602209646",
-          "app": "github-actions"
-        },
-        {
-          "name": "tier1",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-22T03:15:28Z",
-          "completed_at": "2026-09-22T03:15:28Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35681130380/job/106602208435",
-          "app": "github-actions"
-        },
-        {
-          "name": "trials",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-22T03:15:28Z",
-          "completed_at": "2026-09-22T03:15:28Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35681130380/job/106602209987",
-          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-21T18:43:27.877345+00:00",
-      "last_change": "2026-09-22T03:14:35.338409+00:00"
+      "last_change": "2026-09-22T03:02:16.813176+00:00"
     }
   ]
 }
