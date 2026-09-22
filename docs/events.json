@@ -1,113 +1,5 @@
 [
  {
-  "ts": "2026-09-22T02:52:59.264468+00:00",
-  "pr": "dynamo-42bb5d9-debugging-and-repair#6",
-  "type": "running",
-  "msg": "Status failing \u2192 running"
- },
- {
-  "ts": "2026-09-22T02:52:59.264468+00:00",
-  "pr": "dynamo-42bb5d9-debugging-and-repair#6",
-  "type": "started",
-  "msg": "Check started: cosine_similarity"
- },
- {
-  "ts": "2026-09-22T02:52:59.264468+00:00",
-  "pr": "dynamo-42bb5d9-debugging-and-repair#6",
-  "type": "passed",
-  "msg": "Check recovered: gate"
- },
- {
-  "ts": "2026-09-22T02:52:59.264468+00:00",
-  "pr": "dynamo-42bb5d9-debugging-and-repair#6",
-  "type": "passed",
-  "msg": "Check recovered: review"
- },
- {
-  "ts": "2026-09-22T02:52:59.264468+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "push",
-  "msg": "New commit pushed (df44774)"
- },
- {
-  "ts": "2026-09-22T02:52:59.264468+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "running",
-  "msg": "Status failing \u2192 running"
- },
- {
-  "ts": "2026-09-22T02:52:59.264468+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "started",
-  "msg": "Check started: changes"
- },
- {
-  "ts": "2026-09-22T02:52:59.264468+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check recovered: gate"
- },
- {
-  "ts": "2026-09-22T02:52:59.264468+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check recovered: pass2"
- },
- {
-  "ts": "2026-09-22T02:54:36.538117+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "push",
-  "msg": "New commit pushed (df44774)"
- },
- {
-  "ts": "2026-09-22T02:54:36.538117+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "running",
-  "msg": "Status failing \u2192 running"
- },
- {
-  "ts": "2026-09-22T02:54:36.538117+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "started",
-  "msg": "Check started: cosine_similarity"
- },
- {
-  "ts": "2026-09-22T02:54:36.538117+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check recovered: gate"
- },
- {
-  "ts": "2026-09-22T02:54:36.538117+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check recovered: pass2"
- },
- {
-  "ts": "2026-09-22T02:54:36.538117+00:00",
-  "pr": "dynamo-91b21b1-security#10",
-  "type": "discovered",
-  "msg": "PR discovered: Rework: opaque conformance evidence for #6"
- },
- {
-  "ts": "2026-09-22T02:54:36.538117+00:00",
-  "pr": "dynamo-81dc97e-scientific-computing-and-domain-science#7",
-  "type": "discovered",
-  "msg": "PR discovered: Rework 81dc97e: enforce exact nested report schemas"
- },
- {
-  "ts": "2026-09-22T02:54:36.538117+00:00",
-  "pr": "dynamo-69e224d-data-processing-and-etl#6",
-  "type": "push",
-  "msg": "New commit pushed (7137f6d)"
- },
- {
-  "ts": "2026-09-22T02:54:36.538117+00:00",
-  "pr": "dynamo-69e224d-data-processing-and-etl#6",
-  "type": "running",
-  "msg": "Status failing \u2192 running"
- },
- {
   "ts": "2026-09-22T02:54:36.538117+00:00",
   "pr": "dynamo-69e224d-data-processing-and-etl#6",
   "type": "started",
@@ -2398,5 +2290,113 @@
   "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
   "type": "passed",
   "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-22T04:38:02.904153+00:00",
+  "pr": "dynamo-69e224d-data-processing-and-etl#6",
+  "type": "started",
+  "msg": "Check started: review"
+ },
+ {
+  "ts": "2026-09-22T04:38:02.904153+00:00",
+  "pr": "dynamo-69e224d-data-processing-and-etl#6",
+  "type": "passed",
+  "msg": "Check passed: cosine_similarity"
+ },
+ {
+  "ts": "2026-09-22T04:38:02.904153+00:00",
+  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
+  "type": "started",
+  "msg": "Check started: pass2"
+ },
+ {
+  "ts": "2026-09-22T04:38:02.904153+00:00",
+  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
+  "type": "passed",
+  "msg": "Check passed: ratelimit"
+ },
+ {
+  "ts": "2026-09-22T04:38:02.904153+00:00",
+  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
+  "type": "passed",
+  "msg": "Check passed: similarity"
+ },
+ {
+  "ts": "2026-09-22T04:38:02.904153+00:00",
+  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
+  "type": "passed",
+  "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-22T04:38:02.904153+00:00",
+  "pr": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations#9",
+  "type": "started",
+  "msg": "Check started: review"
+ },
+ {
+  "ts": "2026-09-22T04:38:02.904153+00:00",
+  "pr": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations#9",
+  "type": "passed",
+  "msg": "Check passed: cosine_similarity"
+ },
+ {
+  "ts": "2026-09-22T04:38:02.904153+00:00",
+  "pr": "dynamo-42bb5d9-debugging-and-repair#6",
+  "type": "passed",
+  "msg": "Status running \u2192 passed"
+ },
+ {
+  "ts": "2026-09-22T04:38:02.904153+00:00",
+  "pr": "dynamo-42bb5d9-debugging-and-repair#6",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-22T04:38:02.904153+00:00",
+  "pr": "dynamo-42bb5d9-debugging-and-repair#6",
+  "type": "passed",
+  "msg": "Check passed: gate"
+ },
+ {
+  "ts": "2026-09-22T04:38:02.904153+00:00",
+  "pr": "dynamo-42bb5d9-debugging-and-repair#6",
+  "type": "passed",
+  "msg": "Check passed: trials"
+ },
+ {
+  "ts": "2026-09-22T04:38:02.904153+00:00",
+  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
+  "type": "started",
+  "msg": "Check started: pass2"
+ },
+ {
+  "ts": "2026-09-22T04:38:02.904153+00:00",
+  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
+  "type": "passed",
+  "msg": "Check passed: ratelimit"
+ },
+ {
+  "ts": "2026-09-22T04:38:02.904153+00:00",
+  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
+  "type": "passed",
+  "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-22T04:38:02.904153+00:00",
+  "pr": "dynamo-306ca9b-mathematics-and-formal-reasoning#8",
+  "type": "started",
+  "msg": "Check started: validation"
+ },
+ {
+  "ts": "2026-09-22T04:38:02.904153+00:00",
+  "pr": "dynamo-306ca9b-mathematics-and-formal-reasoning#8",
+  "type": "passed",
+  "msg": "Check passed: review"
+ },
+ {
+  "ts": "2026-09-22T04:38:02.904153+00:00",
+  "pr": "dynamo-306ca9b-mathematics-and-formal-reasoning#8",
+  "type": "passed",
+  "msg": "Check passed: similarity"
  }
 ]
