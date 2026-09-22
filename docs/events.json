@@ -1,42 +1,6 @@
 [
  {
   "ts": "2026-09-22T04:33:55.916721+00:00",
-  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
-  "ts": "2026-09-22T04:33:55.916721+00:00",
-  "pr": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations#9",
-  "type": "push",
-  "msg": "New commit pushed (4b5970b)"
- },
- {
-  "ts": "2026-09-22T04:33:55.916721+00:00",
-  "pr": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations#9",
-  "type": "running",
-  "msg": "Status failing \u2192 running"
- },
- {
-  "ts": "2026-09-22T04:33:55.916721+00:00",
-  "pr": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations#9",
-  "type": "started",
-  "msg": "Check started: changes"
- },
- {
-  "ts": "2026-09-22T04:33:55.916721+00:00",
-  "pr": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations#9",
-  "type": "passed",
-  "msg": "Check recovered: gate"
- },
- {
-  "ts": "2026-09-22T04:33:55.916721+00:00",
-  "pr": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations#9",
-  "type": "passed",
-  "msg": "Check recovered: qc_gate"
- },
- {
-  "ts": "2026-09-22T04:33:55.916721+00:00",
   "pr": "dynamo-de09a26-data-processing-and-etl#5",
   "type": "started",
   "msg": "Check started: cosine_similarity"
@@ -2398,5 +2362,41 @@
   "pr": "dynamo-de09a26-data-processing-and-etl#5",
   "type": "passed",
   "msg": "Check passed: similarity"
+ },
+ {
+  "ts": "2026-09-22T06:50:55.751185+00:00",
+  "pr": "dynamo-91b21b1-security#10",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-22T06:50:55.751185+00:00",
+  "pr": "dynamo-91b21b1-security#10",
+  "type": "started",
+  "msg": "Check started: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-22T06:50:55.751185+00:00",
+  "pr": "dynamo-91b21b1-security#10",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-22T06:50:55.751185+00:00",
+  "pr": "dynamo-91b21b1-security#10",
+  "type": "failing",
+  "msg": "Check failed: review"
+ },
+ {
+  "ts": "2026-09-22T06:50:55.751185+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "started",
+  "msg": "Check started: ratelimit"
+ },
+ {
+  "ts": "2026-09-22T06:50:55.751185+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "passed",
+  "msg": "Check passed: validation"
  }
 ]
