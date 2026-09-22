@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T16:36:56.552831+00:00",
+  "snapshot_time": "2026-09-22T16:37:06.625108+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -982,7 +982,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:36:43.743170+00:00",
-      "last_change": "2026-09-22T16:36:56.552831+00:00"
+      "last_change": "2026-09-22T16:37:06.625108+00:00"
     },
     {
       "repo": "dynamo-306ca9b-mathematics-and-formal-reasoning",
@@ -1414,19 +1414,14 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 5,
+      "passed": 6,
       "total": 17,
       "skipped": 9,
       "failed": [
         "gate",
         "ratelimit"
       ],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-22T16:37:00Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -1450,16 +1445,6 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T16:37:00Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35754440031/job/106839371439",
-          "app": "github-actions"
-        },
-        {
           "name": "changes",
           "state": "passed",
           "conclusion": "success",
@@ -1467,6 +1452,16 @@
           "completed_at": "2026-09-22T16:29:55Z",
           "duration_sec": 25,
           "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35754440031/job/106836540046",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T16:37:00Z",
+          "completed_at": "2026-09-22T16:37:18Z",
+          "duration_sec": 18,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35754440031/job/106839371439",
           "app": "github-actions"
         },
         {
@@ -1602,7 +1597,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:32:05.410861+00:00",
-      "last_change": "2026-09-22T16:36:56.552831+00:00"
+      "last_change": "2026-09-22T16:37:06.625108+00:00"
     },
     {
       "repo": "dynamo-42bb5d9-debugging-and-repair",
