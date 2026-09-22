@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T16:27:18.244250+00:00",
+  "snapshot_time": "2026-09-22T16:28:09.021191+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -216,7 +216,7 @@
       "title": "Rework 81dc97e: enforce report schemas and calibrate damage inference",
       "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/pull/7",
       "createdAt": "2026-09-22T02:40:04Z",
-      "updatedAt": "2026-09-22T16:24:03Z",
+      "updatedAt": "2026-09-22T16:28:00Z",
       "sha": "c56f4ba6b1f783b49a1b368c6fe25253f2adb317",
       "draft": false,
       "mergeable": true,
@@ -230,26 +230,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 2,
-      "total": 3,
+      "passed": 4,
+      "total": 5,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "review",
-          "started_at": "2026-09-22T16:23:53Z"
+          "name": "validation",
+          "started_at": "2026-09-22T16:28:11Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "review",
+          "name": "validation",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T16:23:53Z",
+          "started_at": "2026-09-22T16:28:11Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35753633008/job/106834479257",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35753633008/job/106836072251",
           "app": "github-actions"
         },
         {
@@ -271,11 +271,31 @@
           "duration_sec": 74,
           "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35753633008/job/106833998330",
           "app": "github-actions"
+        },
+        {
+          "name": "review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T16:23:53Z",
+          "completed_at": "2026-09-22T16:27:34Z",
+          "duration_sec": 221,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35753633008/job/106834479257",
+          "app": "github-actions"
+        },
+        {
+          "name": "similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T16:27:38Z",
+          "completed_at": "2026-09-22T16:28:07Z",
+          "duration_sec": 29,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35753633008/job/106835873752",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:55:17.564817+00:00",
-      "last_change": "2026-09-22T16:26:45.699124+00:00"
+      "last_change": "2026-09-22T16:28:09.021191+00:00"
     },
     {
       "repo": "dynamo-0aa466f-data-querying-and-databases",
@@ -893,7 +913,7 @@
       "title": "Rework 69e224d: Specify the codec and isolate held-out answers",
       "url": "https://github.com/handshake-project-dynamo/dynamo-69e224d-data-processing-and-etl/pull/6",
       "createdAt": "2026-09-22T02:32:07Z",
-      "updatedAt": "2026-09-22T16:27:21Z",
+      "updatedAt": "2026-09-22T16:27:40Z",
       "sha": "49f4e092818ae26bad07a3799e24af6205de6fac",
       "draft": false,
       "mergeable": true,
