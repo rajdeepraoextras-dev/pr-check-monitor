@@ -1,42 +1,6 @@
 [
  {
   "ts": "2026-09-22T03:27:59.913417+00:00",
-  "pr": "dynamo-69e224d-data-processing-and-etl#6",
-  "type": "passed",
-  "msg": "Check passed: claude-cost-report"
- },
- {
-  "ts": "2026-09-22T03:27:59.913417+00:00",
-  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
-  "type": "started",
-  "msg": "Check started: qc_eval"
- },
- {
-  "ts": "2026-09-22T03:27:59.913417+00:00",
-  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
-  "type": "passed",
-  "msg": "4 checks passed"
- },
- {
-  "ts": "2026-09-22T03:27:59.913417+00:00",
-  "pr": "dynamo-42bb5d9-debugging-and-repair#6",
-  "type": "started",
-  "msg": "Check started: qc_eval"
- },
- {
-  "ts": "2026-09-22T03:27:59.913417+00:00",
-  "pr": "dynamo-42bb5d9-debugging-and-repair#6",
-  "type": "passed",
-  "msg": "5 checks passed"
- },
- {
-  "ts": "2026-09-22T03:27:59.913417+00:00",
-  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-22T03:27:59.913417+00:00",
   "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
   "type": "passed",
   "msg": "Check passed: ratelimit"
@@ -2398,5 +2362,41 @@
   "pr": "dynamo-de09a26-data-processing-and-etl#5",
   "type": "passed",
   "msg": "Check passed: similarity"
+ },
+ {
+  "ts": "2026-09-22T05:21:57.746418+00:00",
+  "pr": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations#9",
+  "type": "passed",
+  "msg": "Check passed: deep_review"
+ },
+ {
+  "ts": "2026-09-22T05:21:57.746418+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "started",
+  "msg": "Check started: pass2"
+ },
+ {
+  "ts": "2026-09-22T05:21:57.746418+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "passed",
+  "msg": "Check passed: ratelimit"
+ },
+ {
+  "ts": "2026-09-22T05:21:57.746418+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "passed",
+  "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-22T05:21:57.746418+00:00",
+  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-22T05:21:57.746418+00:00",
+  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
+  "type": "failing",
+  "msg": "Check failed: pass2"
  }
 ]
