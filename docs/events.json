@@ -1,71 +1,5 @@
 [
  {
-  "ts": "2026-09-22T03:04:06.833591+00:00",
-  "pr": "dynamo-de09a26-data-processing-and-etl#5",
-  "type": "started",
-  "msg": "Check started: tier1"
- },
- {
-  "ts": "2026-09-22T03:04:06.833591+00:00",
-  "pr": "dynamo-de09a26-data-processing-and-etl#5",
-  "type": "passed",
-  "msg": "Check passed: ava_review"
- },
- {
-  "ts": "2026-09-22T03:04:06.833591+00:00",
-  "pr": "dynamo-de09a26-data-processing-and-etl#5",
-  "type": "passed",
-  "msg": "Check passed: deep_review"
- },
- {
-  "ts": "2026-09-22T03:04:06.833591+00:00",
-  "pr": "dynamo-42bb5d9-debugging-and-repair#6",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-22T03:04:06.833591+00:00",
-  "pr": "dynamo-42bb5d9-debugging-and-repair#6",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-22T03:04:06.833591+00:00",
-  "pr": "dynamo-42bb5d9-debugging-and-repair#6",
-  "type": "passed",
-  "msg": "Check passed: validation"
- },
- {
-  "ts": "2026-09-22T03:05:24.244721+00:00",
-  "pr": "dynamo-de09a26-data-processing-and-etl#5",
-  "type": "started",
-  "msg": "Check started: qc_eval"
- },
- {
-  "ts": "2026-09-22T03:05:24.244721+00:00",
-  "pr": "dynamo-de09a26-data-processing-and-etl#5",
-  "type": "started",
-  "msg": "Check started: qc_exec"
- },
- {
-  "ts": "2026-09-22T03:05:24.244721+00:00",
-  "pr": "dynamo-de09a26-data-processing-and-etl#5",
-  "type": "passed",
-  "msg": "Check passed: tier1"
- },
- {
-  "ts": "2026-09-22T03:05:24.244721+00:00",
-  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
-  "type": "started",
-  "msg": "Check started: similarity"
- },
- {
-  "ts": "2026-09-22T03:05:24.244721+00:00",
-  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
   "ts": "2026-09-22T03:06:48.093016+00:00",
   "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
   "type": "started",
@@ -2394,9 +2328,75 @@
   "msg": "Check passed: claude-cost-report"
  },
  {
-  "ts": "2026-09-22T05:02:06.171532+00:00",
+  "ts": "2026-09-22T05:01:54.092420+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-22T05:01:54.092420+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "started",
+  "msg": "Check started: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-22T05:01:54.092420+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-22T05:01:54.092420+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-22T05:01:54.092420+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-22T05:01:54.092420+00:00",
+  "pr": "dynamo-69e224d-data-processing-and-etl#6",
+  "type": "push",
+  "msg": "New commit pushed (7f8c87e)"
+ },
+ {
+  "ts": "2026-09-22T05:01:54.092420+00:00",
+  "pr": "dynamo-69e224d-data-processing-and-etl#6",
+  "type": "running",
+  "msg": "Status failing \u2192 running"
+ },
+ {
+  "ts": "2026-09-22T05:01:54.092420+00:00",
   "pr": "dynamo-69e224d-data-processing-and-etl#6",
   "type": "started",
   "msg": "Check started: cosine_similarity"
+ },
+ {
+  "ts": "2026-09-22T05:01:54.092420+00:00",
+  "pr": "dynamo-69e224d-data-processing-and-etl#6",
+  "type": "passed",
+  "msg": "Check recovered: gate"
+ },
+ {
+  "ts": "2026-09-22T05:01:54.092420+00:00",
+  "pr": "dynamo-69e224d-data-processing-and-etl#6",
+  "type": "passed",
+  "msg": "Check recovered: pass2"
+ },
+ {
+  "ts": "2026-09-22T05:01:54.092420+00:00",
+  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
+  "type": "started",
+  "msg": "Check started: review"
+ },
+ {
+  "ts": "2026-09-22T05:01:54.092420+00:00",
+  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
+  "type": "passed",
+  "msg": "Check passed: cosine_similarity"
  }
 ]
