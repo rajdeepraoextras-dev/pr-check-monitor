@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T03:09:26.477432+00:00",
+  "snapshot_time": "2026-09-22T03:10:36.632742+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -783,17 +783,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "qc_eval",
-          "started_at": "2026-09-22T03:05:11Z"
-        },
-        {
-          "name": "qc_exec",
           "started_at": "2026-09-22T03:05:11Z"
         }
       ],
@@ -807,16 +803,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35679356426/job/106600280786",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T03:05:11Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35679356426/job/106600279833",
           "app": "github-actions"
         },
         {
@@ -867,6 +853,16 @@
           "completed_at": "2026-09-22T02:55:34Z",
           "duration_sec": 1289,
           "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35679356426/job/106594482299",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T03:05:11Z",
+          "completed_at": "2026-09-22T03:09:53Z",
+          "duration_sec": 282,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35679356426/job/106600279833",
           "app": "github-actions"
         },
         {
@@ -932,7 +928,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:31:38.750349+00:00",
-      "last_change": "2026-09-22T03:05:24.244721+00:00"
+      "last_change": "2026-09-22T03:10:36.632742+00:00"
     },
     {
       "repo": "dynamo-5f7c3e1-data-processing-and-etl",
@@ -1157,7 +1153,7 @@
       "title": "Rework 7a8b3a7: keep graded pools within the positive-capacity contract",
       "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/pull/7",
       "createdAt": "2026-09-22T02:09:50Z",
-      "updatedAt": "2026-09-22T03:07:24Z",
+      "updatedAt": "2026-09-22T03:10:37Z",
       "sha": "72d4aa189bf7802a46e89e8b6a26fb5980ec61e9",
       "draft": false,
       "mergeable": true,
@@ -1171,25 +1167,35 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 9,
+      "total": 11,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "ava_review",
-          "started_at": "2026-09-22T02:59:13Z"
+          "name": "tier1",
+          "started_at": "2026-09-22T03:10:49Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "ava_review",
+          "name": "tier1",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T02:59:13Z",
+          "started_at": "2026-09-22T03:10:49Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35678455309/job/106601322509",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T02:59:13Z",
+          "completed_at": "2026-09-22T03:10:43Z",
+          "duration_sec": 690,
           "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35678455309/job/106599131951",
           "app": "github-actions"
         },
@@ -1286,7 +1292,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:16:13.804311+00:00",
-      "last_change": "2026-09-22T03:06:48.093016+00:00"
+      "last_change": "2026-09-22T03:10:36.632742+00:00"
     },
     {
       "repo": "dynamo-b2366b5-machine-learning-and-ai",
