@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T19:23:37.521958+00:00",
+  "snapshot_time": "2026-09-22T19:23:44.312751+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -216,7 +216,7 @@
       "title": "Rework 81dc97e: enforce report schemas and calibrate damage inference",
       "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/pull/7",
       "createdAt": "2026-09-22T02:40:04Z",
-      "updatedAt": "2026-09-22T18:33:26Z",
+      "updatedAt": "2026-09-22T19:23:39Z",
       "sha": "c56f4ba6b1f783b49a1b368c6fe25253f2adb317",
       "draft": false,
       "mergeable": true,
@@ -231,7 +231,7 @@
       ],
       "overall": "running",
       "passed": 13,
-      "total": 15,
+      "total": 17,
       "skipped": 1,
       "failed": [],
       "running": [
@@ -240,7 +240,10 @@
           "started_at": "2026-09-22T18:33:16Z"
         }
       ],
-      "queued": [],
+      "queued": [
+        "claude-cost-report",
+        "gate"
+      ],
       "checks": [
         {
           "name": "trials",
@@ -250,6 +253,26 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35753633008/job/106882033974",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "queued",
+          "conclusion": null,
+          "started_at": "2026-09-22T19:23:47Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35753633008/job/106900792529",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "queued",
+          "conclusion": null,
+          "started_at": "2026-09-22T19:23:47Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35753633008/job/106900792493",
           "app": "github-actions"
         },
         {
