@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T07:19:42.570161+00:00",
+  "snapshot_time": "2026-09-22T07:20:36.650388+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1310,7 +1310,7 @@
       "title": "Rework: fix variable-cardinality runtime finding",
       "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/pull/8",
       "createdAt": "2026-09-22T02:30:36Z",
-      "updatedAt": "2026-09-22T07:19:54Z",
+      "updatedAt": "2026-09-22T07:20:12Z",
       "sha": "b4c07713a406ecd6e6dad11e93f814719e2feb37",
       "draft": false,
       "mergeable": true,
@@ -1321,31 +1321,16 @@
       "head": "rework/306ca9b-variable-cardinality",
       "base": "main",
       "labels": [
-        "in-progress"
+        "accepted"
       ],
-      "overall": "running",
-      "passed": 13,
-      "total": 15,
+      "overall": "passed",
+      "passed": 16,
+      "total": 17,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "trials",
-          "started_at": "2026-09-22T06:10:07Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
-        {
-          "name": "trials",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T06:10:07Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35687133605/job/106635670421",
-          "app": "github-actions"
-        },
         {
           "name": "ava_review",
           "state": "passed",
@@ -1367,6 +1352,16 @@
           "app": "github-actions"
         },
         {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T07:20:05Z",
+          "completed_at": "2026-09-22T07:20:21Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35687133605/job/106652516063",
+          "app": "github-actions"
+        },
+        {
           "name": "cosine_similarity",
           "state": "passed",
           "conclusion": "success",
@@ -1384,6 +1379,16 @@
           "completed_at": "2026-09-22T05:50:32Z",
           "duration_sec": 650,
           "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35687133605/job/106629501711",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T07:20:05Z",
+          "completed_at": "2026-09-22T07:20:15Z",
+          "duration_sec": 10,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35687133605/job/106652516082",
           "app": "github-actions"
         },
         {
@@ -1467,6 +1472,16 @@
           "app": "github-actions"
         },
         {
+          "name": "trials",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T06:10:07Z",
+          "completed_at": "2026-09-22T07:20:01Z",
+          "duration_sec": 4194,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35687133605/job/106635670421",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -1489,7 +1504,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:32:18.588992+00:00",
-      "last_change": "2026-09-22T06:10:39.007877+00:00"
+      "last_change": "2026-09-22T07:20:36.650388+00:00"
     },
     {
       "repo": "dynamo-de09a26-data-processing-and-etl",
