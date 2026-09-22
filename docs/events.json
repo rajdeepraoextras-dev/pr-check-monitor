@@ -1,35 +1,5 @@
 [
  {
-  "ts": "2026-09-21T03:44:42.640958+00:00",
-  "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
-  "type": "passed",
-  "msg": "Check passed: ava_review"
- },
- {
-  "ts": "2026-09-21T03:44:42.640958+00:00",
-  "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
-  "type": "passed",
-  "msg": "Check passed: tier1"
- },
- {
-  "ts": "2026-09-21T03:48:18.983839+00:00",
-  "pr": "dynamo-b27e15c-systems-infrastructure-and-operations#7",
-  "type": "started",
-  "msg": "Check started: ava_review"
- },
- {
-  "ts": "2026-09-21T03:48:18.983839+00:00",
-  "pr": "dynamo-b27e15c-systems-infrastructure-and-operations#7",
-  "type": "started",
-  "msg": "Check started: deep_review"
- },
- {
-  "ts": "2026-09-21T03:48:18.983839+00:00",
-  "pr": "dynamo-b27e15c-systems-infrastructure-and-operations#7",
-  "type": "passed",
-  "msg": "Check passed: pass2"
- },
- {
   "ts": "2026-09-21T03:51:26.158300+00:00",
   "pr": "dynamo-d1d0486-debugging-and-repair#8",
   "type": "passed",
@@ -2395,6 +2365,36 @@
  },
  {
   "ts": "2026-09-22T00:53:58.591580+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-22T00:54:30.443955+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-22T00:54:30.443955+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "started",
+  "msg": "Check started: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-22T00:54:30.443955+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-22T00:54:30.443955+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-22T00:54:30.443955+00:00",
   "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
   "type": "passed",
   "msg": "Check passed: claude-cost-report"
