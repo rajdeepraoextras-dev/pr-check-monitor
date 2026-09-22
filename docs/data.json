@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T04:22:16.359128+00:00",
+  "snapshot_time": "2026-09-22T04:23:11.163203+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Fix #4 findings: align journaled tree recovery contract and verifier",
       "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/pull/7",
       "createdAt": "2026-09-22T02:58:28Z",
-      "updatedAt": "2026-09-22T04:00:01Z",
+      "updatedAt": "2026-09-22T04:22:57Z",
       "sha": "b01f4a02813a038c29947b9d52af3f0649e4f2d0",
       "draft": false,
       "mergeable": true,
@@ -27,26 +27,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 11,
-      "total": 13,
+      "passed": 13,
+      "total": 15,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_eval",
-          "started_at": "2026-09-22T03:59:54Z"
+          "name": "trials",
+          "started_at": "2026-09-22T04:23:04Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
+          "name": "trials",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T03:59:54Z",
+          "started_at": "2026-09-22T04:23:04Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106610385296",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106614859053",
           "app": "github-actions"
         },
         {
@@ -100,6 +100,16 @@
           "app": "github-actions"
         },
         {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T03:59:54Z",
+          "completed_at": "2026-09-22T04:22:38Z",
+          "duration_sec": 1364,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106610385296",
+          "app": "github-actions"
+        },
+        {
           "name": "qc_exec",
           "state": "passed",
           "conclusion": "success",
@@ -107,6 +117,16 @@
           "completed_at": "2026-09-22T04:07:00Z",
           "duration_sec": 427,
           "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106610385262",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T04:22:47Z",
+          "completed_at": "2026-09-22T04:23:01Z",
+          "duration_sec": 14,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106614797478",
           "app": "github-actions"
         },
         {
@@ -172,7 +192,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T03:14:55.251795+00:00",
-      "last_change": "2026-09-22T04:07:22.268478+00:00"
+      "last_change": "2026-09-22T04:23:11.163203+00:00"
     },
     {
       "repo": "dynamo-91b21b1-security",
@@ -1283,7 +1303,7 @@
       "title": "Rework: fix variable-cardinality runtime finding",
       "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/pull/8",
       "createdAt": "2026-09-22T02:30:36Z",
-      "updatedAt": "2026-09-22T04:05:03Z",
+      "updatedAt": "2026-09-22T04:23:03Z",
       "sha": "5f3ccfe824b03b333ce0cddcd6c9268a3ae1d2dd",
       "draft": false,
       "mergeable": true,
@@ -1294,29 +1314,37 @@
       "head": "rework/306ca9b-variable-cardinality",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
-      "passed": 11,
-      "total": 13,
-      "skipped": 1,
-      "failed": [],
-      "running": [
-        {
-          "name": "qc_eval",
-          "started_at": "2026-09-22T04:04:57Z"
-        }
+      "overall": "failing",
+      "passed": 13,
+      "total": 17,
+      "skipped": 2,
+      "failed": [
+        "gate",
+        "qc_gate"
       ],
+      "running": [],
       "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T04:04:57Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106611345187",
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-22T04:22:56Z",
+          "completed_at": "2026-09-22T04:23:07Z",
+          "duration_sec": 11,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106614833983",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-22T04:22:39Z",
+          "completed_at": "2026-09-22T04:22:53Z",
+          "duration_sec": 14,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106614769358",
           "app": "github-actions"
         },
         {
@@ -1337,6 +1365,16 @@
           "completed_at": "2026-09-22T02:31:08Z",
           "duration_sec": 24,
           "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106593844745",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T04:22:57Z",
+          "completed_at": "2026-09-22T04:23:14Z",
+          "duration_sec": 17,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106614834034",
           "app": "github-actions"
         },
         {
@@ -1367,6 +1405,16 @@
           "completed_at": "2026-09-22T03:52:58Z",
           "duration_sec": 4054,
           "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106596583721",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T04:04:57Z",
+          "completed_at": "2026-09-22T04:22:32Z",
+          "duration_sec": 1055,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106611345187",
           "app": "github-actions"
         },
         {
@@ -1438,11 +1486,21 @@
           "duration_sec": 0,
           "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106609164675",
           "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-22T04:22:54Z",
+          "completed_at": "2026-09-22T04:22:54Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106614835129",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:32:18.588992+00:00",
-      "last_change": "2026-09-22T04:12:49.720044+00:00"
+      "last_change": "2026-09-22T04:23:11.163203+00:00"
     },
     {
       "repo": "dynamo-de09a26-data-processing-and-etl",
