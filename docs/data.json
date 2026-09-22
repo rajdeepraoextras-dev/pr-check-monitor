@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T03:27:59.913417+00:00",
+  "snapshot_time": "2026-09-22T03:52:59.432468+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Fix #4 findings: align journaled tree recovery contract and verifier",
       "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/pull/7",
       "createdAt": "2026-09-22T02:58:28Z",
-      "updatedAt": "2026-09-22T03:09:13Z",
+      "updatedAt": "2026-09-22T03:49:29Z",
       "sha": "b01f4a02813a038c29947b9d52af3f0649e4f2d0",
       "draft": false,
       "mergeable": true,
@@ -27,26 +27,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-22T03:09:04Z"
+          "name": "ava_review",
+          "started_at": "2026-09-22T03:49:21Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-22T03:49:21Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "pass2",
+          "name": "ava_review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T03:09:04Z",
+          "started_at": "2026-09-22T03:49:21Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106600997742",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106608499278",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-22T03:49:21Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106608498448",
           "app": "github-actions"
         },
         {
@@ -67,6 +81,16 @@
           "completed_at": "2026-09-22T03:00:16Z",
           "duration_sec": 73,
           "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106599098844",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T03:09:04Z",
+          "completed_at": "2026-09-22T03:49:17Z",
+          "duration_sec": 2413,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106600997742",
           "app": "github-actions"
         },
         {
@@ -108,11 +132,21 @@
           "duration_sec": 75,
           "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106600708847",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-22T03:49:18Z",
+          "completed_at": "2026-09-22T03:49:18Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106608499337",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T03:14:55.251795+00:00",
-      "last_change": "2026-09-22T03:14:25.575282+00:00"
+      "last_change": "2026-09-22T03:52:59.432468+00:00"
     },
     {
       "repo": "dynamo-91b21b1-security",
@@ -417,7 +451,7 @@
       "title": "Rework 0aa466f: include cache-relevant sorts on every subtree",
       "url": "https://github.com/handshake-project-dynamo/dynamo-0aa466f-data-querying-and-databases/pull/8",
       "createdAt": "2026-09-22T02:38:20Z",
-      "updatedAt": "2026-09-22T03:52:04Z",
+      "updatedAt": "2026-09-22T03:52:23Z",
       "sha": "477441def4c7c85a54372c7c350dcd85ebb4c8b0",
       "draft": false,
       "mergeable": true,
@@ -435,17 +469,23 @@
       "total": 10,
       "skipped": 1,
       "failed": [],
-      "running": [],
-      "queued": [
-        "ava_review",
-        "deep_review"
+      "running": [
+        {
+          "name": "ava_review",
+          "started_at": "2026-09-22T03:52:16Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-22T03:52:15Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
           "name": "ava_review",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T03:52:12Z",
+          "started_at": "2026-09-22T03:52:16Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-0aa466f-data-querying-and-databases/actions/runs/35680199554/job/106609025969",
@@ -453,9 +493,9 @@
         },
         {
           "name": "deep_review",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T03:52:12Z",
+          "started_at": "2026-09-22T03:52:15Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-0aa466f-data-querying-and-databases/actions/runs/35680199554/job/106609025935",
@@ -544,7 +584,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:45:16.043206+00:00",
-      "last_change": "2026-09-22T03:27:59.913417+00:00"
+      "last_change": "2026-09-22T03:52:59.432468+00:00"
     },
     {
       "repo": "dynamo-40c7c6a-scientific-computing-and-domain-science",
@@ -1055,7 +1095,7 @@
       "title": "Rework: fix variable-cardinality runtime finding",
       "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/pull/8",
       "createdAt": "2026-09-22T02:30:36Z",
-      "updatedAt": "2026-09-22T02:45:33Z",
+      "updatedAt": "2026-09-22T03:53:09Z",
       "sha": "5f3ccfe824b03b333ce0cddcd6c9268a3ae1d2dd",
       "draft": false,
       "mergeable": true,
@@ -1069,26 +1109,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-22T02:45:24Z"
+          "name": "ava_review",
+          "started_at": "2026-09-22T03:53:02Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-22T03:53:01Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "pass2",
+          "name": "ava_review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T02:45:24Z",
+          "started_at": "2026-09-22T03:53:02Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106596583721",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106609163558",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-22T03:53:01Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106609163580",
           "app": "github-actions"
         },
         {
@@ -1109,6 +1163,16 @@
           "completed_at": "2026-09-22T02:32:32Z",
           "duration_sec": 81,
           "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106593932024",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T02:45:24Z",
+          "completed_at": "2026-09-22T03:52:58Z",
+          "duration_sec": 4054,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106596583721",
           "app": "github-actions"
         },
         {
@@ -1150,11 +1214,21 @@
           "duration_sec": 133,
           "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106596132493",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-22T03:52:59Z",
+          "completed_at": "2026-09-22T03:52:59Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106609164675",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:32:18.588992+00:00",
-      "last_change": "2026-09-22T02:45:17.032570+00:00"
+      "last_change": "2026-09-22T03:52:59.432468+00:00"
     },
     {
       "repo": "dynamo-de09a26-data-processing-and-etl",
