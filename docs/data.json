@@ -1,119 +1,11 @@
 {
-  "snapshot_time": "2026-09-22T03:11:07.177538+00:00",
+  "snapshot_time": "2026-09-22T03:11:43.566229+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
-    {
-      "repo": "dynamo-b538a3d-systems-infrastructure-and-operations",
-      "full_repo": "handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations",
-      "num": "7",
-      "title": "Fix #4 findings: align journaled tree recovery contract and verifier",
-      "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/pull/7",
-      "createdAt": "2026-09-22T02:58:28Z",
-      "updatedAt": "2026-09-22T03:09:13Z",
-      "sha": "b01f4a02813a038c29947b9d52af3f0649e4f2d0",
-      "draft": false,
-      "mergeable": true,
-      "reviewDecision": "",
-      "additions": 3580,
-      "deletions": 1484,
-      "changedFiles": 47,
-      "head": "rework/b538a3d-journaled-tree-recovery",
-      "base": "main",
-      "labels": [
-        "in-progress"
-      ],
-      "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
-      "failed": [],
-      "running": [
-        {
-          "name": "pass2",
-          "started_at": "2026-09-22T03:09:04Z"
-        }
-      ],
-      "queued": [],
-      "checks": [
-        {
-          "name": "pass2",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T03:09:04Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106600997742",
-          "app": "github-actions"
-        },
-        {
-          "name": "changes",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T02:58:36Z",
-          "completed_at": "2026-09-22T02:59:00Z",
-          "duration_sec": 24,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106599021321",
-          "app": "github-actions"
-        },
-        {
-          "name": "cosine_similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T02:59:03Z",
-          "completed_at": "2026-09-22T03:00:16Z",
-          "duration_sec": 73,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106599098844",
-          "app": "github-actions"
-        },
-        {
-          "name": "ratelimit",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:08:51Z",
-          "completed_at": "2026-09-22T03:08:59Z",
-          "duration_sec": 8,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106600957604",
-          "app": "github-actions"
-        },
-        {
-          "name": "review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:00:20Z",
-          "completed_at": "2026-09-22T03:06:49Z",
-          "duration_sec": 389,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106599331684",
-          "app": "github-actions"
-        },
-        {
-          "name": "similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:06:53Z",
-          "completed_at": "2026-09-22T03:07:25Z",
-          "duration_sec": 32,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106600601414",
-          "app": "github-actions"
-        },
-        {
-          "name": "validation",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:07:30Z",
-          "completed_at": "2026-09-22T03:08:45Z",
-          "duration_sec": 75,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106600708847",
-          "app": "github-actions"
-        }
-      ],
-      "submitted": false,
-      "first_seen": "2026-09-22T03:05:56.581256+00:00",
-      "last_change": "2026-09-22T03:11:07.177538+00:00"
-    },
     {
       "repo": "dynamo-91b21b1-security",
       "full_repo": "handshake-project-dynamo/dynamo-91b21b1-security",
@@ -328,7 +220,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:55:17.564817+00:00",
-      "last_change": "2026-09-22T03:05:40.416004+00:00"
+      "last_change": "2026-09-22T03:02:16.813176+00:00"
     },
     {
       "repo": "dynamo-0aa466f-data-querying-and-databases",
@@ -1036,7 +928,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:31:38.750349+00:00",
-      "last_change": "2026-09-22T03:11:07.177538+00:00"
+      "last_change": "2026-09-22T03:10:36.632742+00:00"
     },
     {
       "repo": "dynamo-5f7c3e1-data-processing-and-etl",
@@ -1144,7 +1036,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:32:05.410861+00:00",
-      "last_change": "2026-09-22T03:11:07.177538+00:00"
+      "last_change": "2026-09-22T03:06:48.093016+00:00"
     },
     {
       "repo": "dynamo-42bb5d9-debugging-and-repair",
@@ -1252,7 +1144,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:32:14.410214+00:00",
-      "last_change": "2026-09-22T03:05:40.416004+00:00"
+      "last_change": "2026-09-22T03:04:06.833591+00:00"
     },
     {
       "repo": "dynamo-7a8b3a7-security",
@@ -1261,7 +1153,7 @@
       "title": "Rework 7a8b3a7: keep graded pools within the positive-capacity contract",
       "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/pull/7",
       "createdAt": "2026-09-22T02:09:50Z",
-      "updatedAt": "2026-09-22T03:11:17Z",
+      "updatedAt": "2026-09-22T03:11:33Z",
       "sha": "72d4aa189bf7802a46e89e8b6a26fb5980ec61e9",
       "draft": false,
       "mergeable": true,
@@ -1424,7 +1316,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:16:13.804311+00:00",
-      "last_change": "2026-09-22T03:11:07.177538+00:00"
+      "last_change": "2026-09-22T03:11:43.566229+00:00"
     },
     {
       "repo": "dynamo-b2366b5-machine-learning-and-ai",
@@ -1738,7 +1630,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-21T18:43:27.877345+00:00",
-      "last_change": "2026-09-22T03:05:40.416004+00:00"
+      "last_change": "2026-09-22T03:02:16.813176+00:00"
     }
   ]
 }
