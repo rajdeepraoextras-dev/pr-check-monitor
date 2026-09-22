@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T06:47:48.332650+00:00",
+  "snapshot_time": "2026-09-22T06:47:32.791265+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -275,7 +275,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:55:11.789412+00:00",
-      "last_change": "2026-09-22T06:47:48.332650+00:00"
+      "last_change": "2026-09-22T06:47:32.791265+00:00"
     },
     {
       "repo": "dynamo-81dc97e-scientific-computing-and-domain-science",
@@ -655,7 +655,7 @@
       "title": "Rework 40c7c6a: disclose wall slip and verify robust bulk recovery",
       "url": "https://github.com/handshake-project-dynamo/dynamo-40c7c6a-scientific-computing-and-domain-science/pull/5",
       "createdAt": "2026-09-22T02:36:32Z",
-      "updatedAt": "2026-09-22T06:47:56Z",
+      "updatedAt": "2026-09-22T06:48:14Z",
       "sha": "d830e6c7f9552f63d81597e21cfeb2f16991be22",
       "draft": false,
       "mergeable": true,
@@ -669,26 +669,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 3,
-      "total": 4,
+      "passed": 4,
+      "total": 5,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "similarity",
-          "started_at": "2026-09-22T06:47:33Z"
+          "name": "validation",
+          "started_at": "2026-09-22T06:48:08Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "similarity",
+          "name": "validation",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T06:47:33Z",
+          "started_at": "2026-09-22T06:48:08Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-40c7c6a-scientific-computing-and-domain-science/actions/runs/35695951823/job/106644241765",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-40c7c6a-scientific-computing-and-domain-science/actions/runs/35695951823/job/106644375286",
           "app": "github-actions"
         },
         {
@@ -720,11 +720,21 @@
           "duration_sec": 280,
           "url": "https://github.com/handshake-project-dynamo/dynamo-40c7c6a-scientific-computing-and-domain-science/actions/runs/35695951823/job/106643131964",
           "app": "github-actions"
+        },
+        {
+          "name": "similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T06:47:33Z",
+          "completed_at": "2026-09-22T06:48:03Z",
+          "duration_sec": 30,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-40c7c6a-scientific-computing-and-domain-science/actions/runs/35695951823/job/106644241765",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:45:01.537403+00:00",
-      "last_change": "2026-09-22T06:47:48.332650+00:00"
+      "last_change": "2026-09-22T06:47:32.791265+00:00"
     },
     {
       "repo": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations",
