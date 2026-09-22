@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T02:42:57.093646+00:00",
+  "snapshot_time": "2026-09-22T02:45:17.032570+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework 0aa466f: include cache-relevant sorts on every subtree",
       "url": "https://github.com/handshake-project-dynamo/dynamo-0aa466f-data-querying-and-databases/pull/8",
       "createdAt": "2026-09-22T02:38:20Z",
-      "updatedAt": "2026-09-22T02:45:04Z",
+      "updatedAt": "2026-09-22T02:45:20Z",
       "sha": "477441def4c7c85a54372c7c350dcd85ebb4c8b0",
       "draft": false,
       "mergeable": true,
@@ -209,7 +209,7 @@
       "title": "Rework 5da1f4a: cover dosing boundaries and accept CRLF output",
       "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/pull/9",
       "createdAt": "2026-09-22T02:33:37Z",
-      "updatedAt": "2026-09-22T02:43:37Z",
+      "updatedAt": "2026-09-22T02:45:06Z",
       "sha": "2a2d9b56d86e67489d51fe2a576a0f824128cc58",
       "draft": false,
       "mergeable": true,
@@ -223,26 +223,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 4,
-      "total": 5,
+      "passed": 6,
+      "total": 7,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "validation",
-          "started_at": "2026-09-22T02:43:31Z"
+          "name": "pass2",
+          "started_at": "2026-09-22T02:44:55Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "validation",
+          "name": "pass2",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T02:43:31Z",
+          "started_at": "2026-09-22T02:44:55Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106596236268",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106596493962",
           "app": "github-actions"
         },
         {
@@ -266,6 +266,16 @@
           "app": "github-actions"
         },
         {
+          "name": "ratelimit",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T02:44:45Z",
+          "completed_at": "2026-09-22T02:44:52Z",
+          "duration_sec": 7,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106596462185",
+          "app": "github-actions"
+        },
+        {
           "name": "review",
           "state": "passed",
           "conclusion": "success",
@@ -284,11 +294,21 @@
           "duration_sec": 28,
           "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106596138814",
           "app": "github-actions"
+        },
+        {
+          "name": "validation",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T02:43:31Z",
+          "completed_at": "2026-09-22T02:44:42Z",
+          "duration_sec": 71,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106596236268",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:36:56.926351+00:00",
-      "last_change": "2026-09-22T02:42:57.093646+00:00"
+      "last_change": "2026-09-22T02:45:17.032570+00:00"
     },
     {
       "repo": "dynamo-69e224d-data-processing-and-etl",
@@ -503,7 +523,7 @@
       "title": "Rework: fix variable-cardinality runtime finding",
       "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/pull/8",
       "createdAt": "2026-09-22T02:30:36Z",
-      "updatedAt": "2026-09-22T02:43:04Z",
+      "updatedAt": "2026-09-22T02:45:33Z",
       "sha": "5f3ccfe824b03b333ce0cddcd6c9268a3ae1d2dd",
       "draft": false,
       "mergeable": true,
@@ -517,26 +537,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 4,
-      "total": 5,
+      "passed": 6,
+      "total": 7,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "validation",
-          "started_at": "2026-09-22T02:42:57Z"
+          "name": "pass2",
+          "started_at": "2026-09-22T02:45:24Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "validation",
+          "name": "pass2",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T02:42:57Z",
+          "started_at": "2026-09-22T02:45:24Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106596132493",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106596583721",
           "app": "github-actions"
         },
         {
@@ -560,6 +580,16 @@
           "app": "github-actions"
         },
         {
+          "name": "ratelimit",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T02:45:13Z",
+          "completed_at": "2026-09-22T02:45:20Z",
+          "duration_sec": 7,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106596548318",
+          "app": "github-actions"
+        },
+        {
           "name": "review",
           "state": "passed",
           "conclusion": "success",
@@ -578,11 +608,21 @@
           "duration_sec": 29,
           "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106596035900",
           "app": "github-actions"
+        },
+        {
+          "name": "validation",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T02:42:57Z",
+          "completed_at": "2026-09-22T02:45:10Z",
+          "duration_sec": 133,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35679723075/job/106596132493",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:32:18.588992+00:00",
-      "last_change": "2026-09-22T02:42:57.093646+00:00"
+      "last_change": "2026-09-22T02:45:17.032570+00:00"
     },
     {
       "repo": "dynamo-de09a26-data-processing-and-etl",
@@ -699,7 +739,7 @@
       "title": "Rework: bound vevent signature recovery",
       "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/pull/4",
       "createdAt": "2026-09-22T02:20:51Z",
-      "updatedAt": "2026-09-22T02:28:10Z",
+      "updatedAt": "2026-09-22T02:45:05Z",
       "sha": "552e6f43bfb6c924580ec932cdf4f208132533ea",
       "draft": false,
       "mergeable": true,
@@ -710,29 +750,52 @@
       "head": "rework/5f7c3e1-signature-contract",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
-      "failed": [],
+      "overall": "failing",
+      "passed": 7,
+      "total": 17,
+      "skipped": 7,
+      "failed": [
+        "gate",
+        "pass2"
+      ],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-22T02:28:00Z"
+          "name": "pass2_suggestion",
+          "started_at": "2026-09-22T02:44:59Z"
         }
       ],
       "queued": [],
       "checks": [
         {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-22T02:45:00Z",
+          "completed_at": "2026-09-22T02:45:09Z",
+          "duration_sec": 9,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35679127583/job/106596506507",
+          "app": "github-actions"
+        },
+        {
           "name": "pass2",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-22T02:28:00Z",
+          "completed_at": "2026-09-22T02:44:56Z",
+          "duration_sec": 1016,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35679127583/job/106593316564",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T02:28:00Z",
+          "started_at": "2026-09-22T02:44:59Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35679127583/job/106593316564",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35679127583/job/106596505554",
           "app": "github-actions"
         },
         {
@@ -743,6 +806,16 @@
           "completed_at": "2026-09-22T02:21:20Z",
           "duration_sec": 22,
           "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35679127583/job/106592006664",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T02:44:59Z",
+          "completed_at": "2026-09-22T02:45:18Z",
+          "duration_sec": 19,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35679127583/job/106596506537",
           "app": "github-actions"
         },
         {
@@ -794,11 +867,81 @@
           "duration_sec": 58,
           "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35679127583/job/106593096988",
           "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-22T02:44:57Z",
+          "completed_at": "2026-09-22T02:44:56Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35679127583/job/106596506479",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-22T02:44:57Z",
+          "completed_at": "2026-09-22T02:44:56Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35679127583/job/106596506248",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-22T02:44:57Z",
+          "completed_at": "2026-09-22T02:44:57Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35679127583/job/106596507066",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-22T02:44:57Z",
+          "completed_at": "2026-09-22T02:44:57Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35679127583/job/106596506755",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-22T02:44:57Z",
+          "completed_at": "2026-09-22T02:44:57Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35679127583/job/106596506999",
+          "app": "github-actions"
+        },
+        {
+          "name": "tier1",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-22T02:44:57Z",
+          "completed_at": "2026-09-22T02:44:56Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35679127583/job/106596506845",
+          "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-22T02:44:57Z",
+          "completed_at": "2026-09-22T02:44:57Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35679127583/job/106596507041",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:32:05.410861+00:00",
-      "last_change": "2026-09-22T02:31:29.556721+00:00"
+      "last_change": "2026-09-22T02:45:17.032570+00:00"
     },
     {
       "repo": "dynamo-42bb5d9-debugging-and-repair",
