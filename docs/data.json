@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T06:00:05.244591+00:00",
+  "snapshot_time": "2026-09-22T06:01:01.006947+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1151,17 +1151,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "qc_eval",
-          "started_at": "2026-09-22T05:51:39Z"
-        },
-        {
-          "name": "qc_exec",
           "started_at": "2026-09-22T05:51:39Z"
         }
       ],
@@ -1175,16 +1171,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35687133605/job/106631862441",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T05:51:39Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35687133605/job/106631862472",
           "app": "github-actions"
         },
         {
@@ -1235,6 +1221,16 @@
           "completed_at": "2026-09-22T05:39:39Z",
           "duration_sec": 3591,
           "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35687133605/job/106618052039",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T05:51:39Z",
+          "completed_at": "2026-09-22T06:00:35Z",
+          "duration_sec": 536,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35687133605/job/106631862472",
           "app": "github-actions"
         },
         {
@@ -1300,7 +1296,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:32:18.588992+00:00",
-      "last_change": "2026-09-22T05:51:38.165620+00:00"
+      "last_change": "2026-09-22T06:01:01.006947+00:00"
     },
     {
       "repo": "dynamo-de09a26-data-processing-and-etl",
