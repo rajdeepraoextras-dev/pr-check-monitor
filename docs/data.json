@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T05:31:09.772472+00:00",
+  "snapshot_time": "2026-09-22T05:32:02.276616+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -412,7 +412,7 @@
       "title": "Rework 0aa466f: include cache-relevant sorts on every subtree",
       "url": "https://github.com/handshake-project-dynamo/dynamo-0aa466f-data-querying-and-databases/pull/8",
       "createdAt": "2026-09-22T02:38:20Z",
-      "updatedAt": "2026-09-22T04:20:30Z",
+      "updatedAt": "2026-09-22T05:32:03Z",
       "sha": "477441def4c7c85a54372c7c350dcd85ebb4c8b0",
       "draft": false,
       "mergeable": true,
@@ -423,29 +423,29 @@
       "head": "rework-0aa466f-all-sort-keys",
       "base": "main",
       "labels": [
-        "in-progress"
+        "accepted"
       ],
       "overall": "running",
-      "passed": 13,
-      "total": 15,
+      "passed": 15,
+      "total": 17,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "trials",
-          "started_at": "2026-09-22T04:20:21Z"
+          "name": "claude-cost-report",
+          "started_at": "2026-09-22T05:31:56Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "trials",
+          "name": "claude-cost-report",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T04:20:21Z",
+          "started_at": "2026-09-22T05:31:56Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-0aa466f-data-querying-and-databases/actions/runs/35680199554/job/106614349469",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0aa466f-data-querying-and-databases/actions/runs/35680199554/job/106627965519",
           "app": "github-actions"
         },
         {
@@ -486,6 +486,16 @@
           "completed_at": "2026-09-22T04:03:15Z",
           "duration_sec": 660,
           "url": "https://github.com/handshake-project-dynamo/dynamo-0aa466f-data-querying-and-databases/actions/runs/35680199554/job/106609025935",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T05:31:56Z",
+          "completed_at": "2026-09-22T05:32:08Z",
+          "duration_sec": 12,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0aa466f-data-querying-and-databases/actions/runs/35680199554/job/106627965501",
           "app": "github-actions"
         },
         {
@@ -569,6 +579,16 @@
           "app": "github-actions"
         },
         {
+          "name": "trials",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T04:20:21Z",
+          "completed_at": "2026-09-22T05:31:53Z",
+          "duration_sec": 4292,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0aa466f-data-querying-and-databases/actions/runs/35680199554/job/106614349469",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -591,7 +611,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:45:16.043206+00:00",
-      "last_change": "2026-09-22T04:21:23.731192+00:00"
+      "last_change": "2026-09-22T05:32:02.276616+00:00"
     },
     {
       "repo": "dynamo-40c7c6a-scientific-computing-and-domain-science",
