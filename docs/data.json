@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T07:58:15.759837+00:00",
+  "snapshot_time": "2026-09-22T07:59:09.054991+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -729,15 +729,11 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
-        {
-          "name": "qc_eval",
-          "started_at": "2026-09-22T07:48:27Z"
-        },
         {
           "name": "qc_exec",
           "started_at": "2026-09-22T07:48:27Z"
@@ -745,16 +741,6 @@
       ],
       "queued": [],
       "checks": [
-        {
-          "name": "qc_eval",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T07:48:27Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-40c7c6a-scientific-computing-and-domain-science/actions/runs/35695951823/job/106660239352",
-          "app": "github-actions"
-        },
         {
           "name": "qc_exec",
           "state": "running",
@@ -813,6 +799,16 @@
           "completed_at": "2026-09-22T07:39:57Z",
           "duration_sec": 2992,
           "url": "https://github.com/handshake-project-dynamo/dynamo-40c7c6a-scientific-computing-and-domain-science/actions/runs/35695951823/job/106644819679",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T07:48:27Z",
+          "completed_at": "2026-09-22T07:59:06Z",
+          "duration_sec": 639,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-40c7c6a-scientific-computing-and-domain-science/actions/runs/35695951823/job/106660239352",
           "app": "github-actions"
         },
         {
@@ -878,7 +874,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:45:01.537403+00:00",
-      "last_change": "2026-09-22T07:47:53.115543+00:00"
+      "last_change": "2026-09-22T07:59:09.054991+00:00"
     },
     {
       "repo": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations",
