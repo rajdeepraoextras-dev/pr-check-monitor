@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T05:18:31.223446+00:00",
+  "snapshot_time": "2026-09-22T05:19:47.047862+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -216,7 +216,7 @@
       "title": "Rework: opaque conformance evidence for #6",
       "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/pull/10",
       "createdAt": "2026-09-22T02:46:09Z",
-      "updatedAt": "2026-09-22T05:17:53Z",
+      "updatedAt": "2026-09-22T05:19:17Z",
       "sha": "3246e1fdb74e529e3e9e8aed42548763f38885a5",
       "draft": false,
       "mergeable": true,
@@ -230,26 +230,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 4,
-      "total": 5,
+      "passed": 6,
+      "total": 7,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "validation",
-          "started_at": "2026-09-22T05:17:47Z"
+          "name": "pass2",
+          "started_at": "2026-09-22T05:19:07Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "validation",
+          "name": "pass2",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T05:17:47Z",
+          "started_at": "2026-09-22T05:19:07Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35689784428/job/106625205783",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35689784428/job/106625462445",
           "app": "github-actions"
         },
         {
@@ -273,6 +273,16 @@
           "app": "github-actions"
         },
         {
+          "name": "ratelimit",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T05:18:56Z",
+          "completed_at": "2026-09-22T05:19:05Z",
+          "duration_sec": 9,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35689784428/job/106625428031",
+          "app": "github-actions"
+        },
+        {
           "name": "review",
           "state": "passed",
           "conclusion": "success",
@@ -291,20 +301,30 @@
           "duration_sec": 24,
           "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35689784428/job/106625117913",
           "app": "github-actions"
+        },
+        {
+          "name": "validation",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T05:17:47Z",
+          "completed_at": "2026-09-22T05:18:54Z",
+          "duration_sec": 67,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35689784428/job/106625205783",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:55:11.789412+00:00",
-      "last_change": "2026-09-22T05:18:31.223446+00:00"
+      "last_change": "2026-09-22T05:19:47.047862+00:00"
     },
     {
       "repo": "dynamo-81dc97e-scientific-computing-and-domain-science",
       "full_repo": "handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science",
       "num": "7",
-      "title": "Rework 81dc97e: enforce exact nested report schemas",
+      "title": "Rework 81dc97e: enforce report schemas and calibrate damage inference",
       "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/pull/7",
       "createdAt": "2026-09-22T02:40:04Z",
-      "updatedAt": "2026-09-22T05:18:27Z",
+      "updatedAt": "2026-09-22T05:18:51Z",
       "sha": "e44bfb663b523f7d04387090b447a610462b41d6",
       "draft": false,
       "mergeable": true,
@@ -315,35 +335,45 @@
       "head": "rework/81dc97e-exact-report-schema",
       "base": "main",
       "labels": [
-        "needs-revision"
+        "in-progress"
       ],
       "overall": "running",
-      "passed": 0,
-      "total": 1,
+      "passed": 1,
+      "total": 2,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "changes",
-          "started_at": "2026-09-22T05:18:33Z"
+          "name": "cosine_similarity",
+          "started_at": "2026-09-22T05:19:00Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "changes",
+          "name": "cosine_similarity",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T05:18:33Z",
+          "started_at": "2026-09-22T05:19:00Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35690195600/job/106625441622",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T05:18:33Z",
+          "completed_at": "2026-09-22T05:18:58Z",
+          "duration_sec": 25,
           "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35690195600/job/106625354208",
           "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:55:17.564817+00:00",
-      "last_change": "2026-09-22T05:18:31.223446+00:00"
+      "last_change": "2026-09-22T05:19:47.047862+00:00"
     },
     {
       "repo": "dynamo-0aa466f-data-querying-and-databases",
@@ -1104,7 +1134,7 @@
       "title": "Fix issue #4: make corruption provenance observable",
       "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/pull/5",
       "createdAt": "2026-09-22T02:24:35Z",
-      "updatedAt": "2026-09-22T05:16:19Z",
+      "updatedAt": "2026-09-22T05:19:48Z",
       "sha": "ae98dbcaa1d1a513ad4aa8bba8181b7742b4d44c",
       "draft": false,
       "mergeable": true,
@@ -1118,26 +1148,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 2,
-      "total": 3,
+      "passed": 3,
+      "total": 4,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "review",
-          "started_at": "2026-09-22T05:16:10Z"
+          "name": "similarity",
+          "started_at": "2026-09-22T05:19:59Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "review",
+          "name": "similarity",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T05:16:10Z",
+          "started_at": "2026-09-22T05:19:59Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35689916462/job/106624890115",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35689916462/job/106625626210",
           "app": "github-actions"
         },
         {
@@ -1159,11 +1189,21 @@
           "duration_sec": 82,
           "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35689916462/job/106624595287",
           "app": "github-actions"
+        },
+        {
+          "name": "review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T05:16:10Z",
+          "completed_at": "2026-09-22T05:19:56Z",
+          "duration_sec": 226,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35689916462/job/106624890115",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:31:38.750349+00:00",
-      "last_change": "2026-09-22T05:16:40.237619+00:00"
+      "last_change": "2026-09-22T05:19:47.047862+00:00"
     },
     {
       "repo": "dynamo-5f7c3e1-data-processing-and-etl",
