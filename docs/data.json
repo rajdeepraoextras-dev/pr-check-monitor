@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T08:32:52.776118+00:00",
+  "snapshot_time": "2026-09-22T08:33:53.059658+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -216,7 +216,7 @@
       "title": "Rework: opaque conformance evidence for #6",
       "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/pull/10",
       "createdAt": "2026-09-22T02:46:09Z",
-      "updatedAt": "2026-09-22T08:32:37Z",
+      "updatedAt": "2026-09-22T08:33:00Z",
       "sha": "3ec059c7dfa2120b1d7164073026edcc3bbdf168",
       "draft": false,
       "mergeable": true,
@@ -227,31 +227,29 @@
       "head": "rework/91b21b1-probe-hardening",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
       "overall": "failing",
-      "passed": 6,
+      "passed": 8,
       "total": 17,
       "skipped": 7,
       "failed": [
+        "gate",
         "pass2"
       ],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-22T08:32:54Z"
-        },
-        {
-          "name": "gate",
-          "started_at": "2026-09-22T08:32:54Z"
-        },
-        {
-          "name": "pass2_suggestion",
-          "started_at": "2026-09-22T08:32:51Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
+        {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-22T08:32:54Z",
+          "completed_at": "2026-09-22T08:33:05Z",
+          "duration_sec": 11,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106672960736",
+          "app": "github-actions"
+        },
         {
           "name": "pass2",
           "state": "failed",
@@ -260,36 +258,6 @@
           "completed_at": "2026-09-22T08:32:46Z",
           "duration_sec": 2230,
           "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106662167222",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T08:32:54Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106672960668",
-          "app": "github-actions"
-        },
-        {
-          "name": "gate",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T08:32:54Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106672960736",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T08:32:51Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106672941321",
           "app": "github-actions"
         },
         {
@@ -303,6 +271,16 @@
           "app": "github-actions"
         },
         {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T08:32:54Z",
+          "completed_at": "2026-09-22T08:33:10Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106672960668",
+          "app": "github-actions"
+        },
+        {
           "name": "cosine_similarity",
           "state": "passed",
           "conclusion": "success",
@@ -310,6 +288,16 @@
           "completed_at": "2026-09-22T07:50:36Z",
           "duration_sec": 81,
           "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106660452408",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T08:32:51Z",
+          "completed_at": "2026-09-22T08:33:09Z",
+          "duration_sec": 18,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106672941321",
           "app": "github-actions"
         },
         {
@@ -425,7 +413,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:55:11.789412+00:00",
-      "last_change": "2026-09-22T08:32:52.776118+00:00"
+      "last_change": "2026-09-22T08:33:53.059658+00:00"
     },
     {
       "repo": "dynamo-81dc97e-scientific-computing-and-domain-science",
