@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T16:43:59.331003+00:00",
+  "snapshot_time": "2026-09-22T16:44:48.242311+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -216,7 +216,7 @@
       "title": "Rework 81dc97e: enforce report schemas and calibrate damage inference",
       "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/pull/7",
       "createdAt": "2026-09-22T02:40:04Z",
-      "updatedAt": "2026-09-22T16:28:18Z",
+      "updatedAt": "2026-09-22T16:44:28Z",
       "sha": "c56f4ba6b1f783b49a1b368c6fe25253f2adb317",
       "draft": false,
       "mergeable": true,
@@ -229,29 +229,14 @@
       "labels": [
         "in-progress"
       ],
-      "overall": "running",
-      "passed": 4,
-      "total": 5,
+      "overall": "passed",
+      "passed": 6,
+      "total": 6,
       "skipped": 0,
       "failed": [],
-      "running": [
-        {
-          "name": "validation",
-          "started_at": "2026-09-22T16:28:11Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
-        {
-          "name": "validation",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T16:28:11Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35753633008/job/106836072251",
-          "app": "github-actions"
-        },
         {
           "name": "changes",
           "state": "passed",
@@ -273,6 +258,16 @@
           "app": "github-actions"
         },
         {
+          "name": "ratelimit",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T16:44:38Z",
+          "completed_at": "2026-09-22T16:44:49Z",
+          "duration_sec": 11,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35753633008/job/106842212358",
+          "app": "github-actions"
+        },
+        {
           "name": "review",
           "state": "passed",
           "conclusion": "success",
@@ -291,11 +286,21 @@
           "duration_sec": 29,
           "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35753633008/job/106835873752",
           "app": "github-actions"
+        },
+        {
+          "name": "validation",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T16:28:11Z",
+          "completed_at": "2026-09-22T16:44:35Z",
+          "duration_sec": 984,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35753633008/job/106836072251",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:55:17.564817+00:00",
-      "last_change": "2026-09-22T16:28:09.021191+00:00"
+      "last_change": "2026-09-22T16:44:48.242311+00:00"
     },
     {
       "repo": "dynamo-0aa466f-data-querying-and-databases",
