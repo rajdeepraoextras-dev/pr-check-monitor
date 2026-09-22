@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T04:33:03.818534+00:00",
+  "snapshot_time": "2026-09-22T04:33:55.916721+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -685,7 +685,7 @@
       "title": "Rework 40c7c6a: disclose wall slip and verify scaled bulk recovery",
       "url": "https://github.com/handshake-project-dynamo/dynamo-40c7c6a-scientific-computing-and-domain-science/pull/5",
       "createdAt": "2026-09-22T02:36:32Z",
-      "updatedAt": "2026-09-22T04:30:10Z",
+      "updatedAt": "2026-09-22T04:33:56Z",
       "sha": "7583973ac783bdbc2e22af3f4c6b8e27f6e3440e",
       "draft": false,
       "mergeable": true,
@@ -699,26 +699,23 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 2,
-      "total": 3,
+      "passed": 3,
+      "total": 4,
       "skipped": 0,
       "failed": [],
-      "running": [
-        {
-          "name": "review",
-          "started_at": "2026-09-22T04:29:59Z"
-        }
+      "running": [],
+      "queued": [
+        "similarity"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "review",
-          "state": "running",
+          "name": "similarity",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-22T04:29:59Z",
+          "started_at": "2026-09-22T04:34:04Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-40c7c6a-scientific-computing-and-domain-science/actions/runs/35686997684/job/106616172035",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-40c7c6a-scientific-computing-and-domain-science/actions/runs/35686997684/job/106616971897",
           "app": "github-actions"
         },
         {
@@ -740,11 +737,21 @@
           "duration_sec": 71,
           "url": "https://github.com/handshake-project-dynamo/dynamo-40c7c6a-scientific-computing-and-domain-science/actions/runs/35686997684/job/106615936878",
           "app": "github-actions"
+        },
+        {
+          "name": "review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T04:29:59Z",
+          "completed_at": "2026-09-22T04:34:03Z",
+          "duration_sec": 244,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-40c7c6a-scientific-computing-and-domain-science/actions/runs/35686997684/job/106616172035",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:45:01.537403+00:00",
-      "last_change": "2026-09-22T04:29:21.007389+00:00"
+      "last_change": "2026-09-22T04:33:55.916721+00:00"
     },
     {
       "repo": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations",
@@ -753,204 +760,46 @@
       "title": "Rework 5da1f4a: cover dosing boundaries and accept CRLF output",
       "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/pull/9",
       "createdAt": "2026-09-22T02:33:37Z",
-      "updatedAt": "2026-09-22T04:20:38Z",
-      "sha": "2a2d9b56d86e67489d51fe2a576a0f824128cc58",
+      "updatedAt": "2026-09-22T04:33:50Z",
+      "sha": "4b5970ba77bf1c2b8733962e7d411cf13cb11cc1",
       "draft": false,
       "mergeable": true,
       "reviewDecision": "",
-      "additions": 412,
-      "deletions": 77,
-      "changedFiles": 17,
+      "additions": 531,
+      "deletions": 102,
+      "changedFiles": 18,
       "head": "rework/5da1f4a-dosing-boundaries",
       "base": "main",
       "labels": [
         "needs-revision"
       ],
-      "overall": "failing",
-      "passed": 13,
-      "total": 17,
-      "skipped": 2,
-      "failed": [
-        "gate",
-        "qc_gate"
+      "overall": "running",
+      "passed": 0,
+      "total": 1,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "changes",
+          "started_at": "2026-09-22T04:33:54Z"
+        }
       ],
-      "running": [],
       "queued": [],
       "checks": [
         {
-          "name": "gate",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-22T04:20:32Z",
-          "completed_at": "2026-09-22T04:20:42Z",
-          "duration_sec": 10,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106614387452",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_gate",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-22T04:20:15Z",
-          "completed_at": "2026-09-22T04:20:29Z",
-          "duration_sec": 14,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106614327599",
-          "app": "github-actions"
-        },
-        {
-          "name": "ava_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:57:05Z",
-          "completed_at": "2026-09-22T04:07:12Z",
-          "duration_sec": 607,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106609904652",
-          "app": "github-actions"
-        },
-        {
           "name": "changes",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T02:33:57Z",
-          "completed_at": "2026-09-22T02:34:23Z",
-          "duration_sec": 26,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106594439641",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T04:20:32Z",
-          "completed_at": "2026-09-22T04:20:49Z",
-          "duration_sec": 17,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106614387461",
-          "app": "github-actions"
-        },
-        {
-          "name": "cosine_similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T02:34:30Z",
-          "completed_at": "2026-09-22T02:35:56Z",
-          "duration_sec": 86,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106594558072",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:57:05Z",
-          "completed_at": "2026-09-22T04:03:34Z",
-          "duration_sec": 389,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106609904744",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T02:44:55Z",
-          "completed_at": "2026-09-22T03:57:01Z",
-          "duration_sec": 4326,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106596493962",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_eval",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T04:07:52Z",
-          "completed_at": "2026-09-22T04:11:53Z",
-          "duration_sec": 241,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106611891968",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T04:07:51Z",
-          "completed_at": "2026-09-22T04:20:12Z",
-          "duration_sec": 741,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106611891853",
-          "app": "github-actions"
-        },
-        {
-          "name": "ratelimit",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T02:44:45Z",
-          "completed_at": "2026-09-22T02:44:52Z",
-          "duration_sec": 7,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106596462185",
-          "app": "github-actions"
-        },
-        {
-          "name": "review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T02:35:58Z",
-          "completed_at": "2026-09-22T02:42:56Z",
-          "duration_sec": 418,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106594866938",
-          "app": "github-actions"
-        },
-        {
-          "name": "similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T02:43:00Z",
-          "completed_at": "2026-09-22T02:43:28Z",
-          "duration_sec": 28,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106596138814",
-          "app": "github-actions"
-        },
-        {
-          "name": "tier1",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T04:07:15Z",
-          "completed_at": "2026-09-22T04:07:45Z",
-          "duration_sec": 30,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106611784643",
-          "app": "github-actions"
-        },
-        {
-          "name": "validation",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T02:43:31Z",
-          "completed_at": "2026-09-22T02:44:42Z",
-          "duration_sec": 71,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106596236268",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-22T03:57:02Z",
-          "completed_at": "2026-09-22T03:57:02Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106609905933",
-          "app": "github-actions"
-        },
-        {
-          "name": "trials",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-22T04:20:30Z",
-          "completed_at": "2026-09-22T04:20:30Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106614388180",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-22T04:33:54Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35687356640/job/106616934170",
           "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:36:56.926351+00:00",
-      "last_change": "2026-09-22T04:21:23.731192+00:00"
+      "last_change": "2026-09-22T04:33:55.916721+00:00"
     },
     {
       "repo": "dynamo-69e224d-data-processing-and-etl",
@@ -1233,7 +1082,7 @@
       "title": "Fix issue #4: make corruption provenance observable",
       "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/pull/5",
       "createdAt": "2026-09-22T02:24:35Z",
-      "updatedAt": "2026-09-22T04:33:13Z",
+      "updatedAt": "2026-09-22T04:33:37Z",
       "sha": "572f80475290fa8e74eed877c419c3a4b37ef96c",
       "draft": false,
       "mergeable": true,
@@ -1244,35 +1093,45 @@
       "head": "rework/de09a26-explicit-provenance",
       "base": "main",
       "labels": [
-        "needs-revision"
+        "in-progress"
       ],
       "overall": "running",
-      "passed": 0,
-      "total": 1,
+      "passed": 1,
+      "total": 2,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "changes",
-          "started_at": "2026-09-22T04:33:19Z"
+          "name": "cosine_similarity",
+          "started_at": "2026-09-22T04:33:45Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "changes",
+          "name": "cosine_similarity",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T04:33:19Z",
+          "started_at": "2026-09-22T04:33:45Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35687320288/job/106616903604",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T04:33:19Z",
+          "completed_at": "2026-09-22T04:33:43Z",
+          "duration_sec": 24,
           "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35687320288/job/106616819222",
           "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:31:38.750349+00:00",
-      "last_change": "2026-09-22T04:33:03.818534+00:00"
+      "last_change": "2026-09-22T04:33:55.916721+00:00"
     },
     {
       "repo": "dynamo-5f7c3e1-data-processing-and-etl",
