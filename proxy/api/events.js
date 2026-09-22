@@ -1,12 +1,5 @@
 export const config = { runtime: 'edge' };
 
-// Unlike data.js, this still just relays the repo's events.json rather than
-// computing live: the activity/event log is inherently stateful (it's a
-// diff against the PREVIOUS snapshot), which a stateless-per-request edge
-// function can't reconstruct without a real database. It's produced by the
-// Mac's fetch.py comparing consecutive runs — so while the Mac is off, PR
-// and check STATUS (data.js) stays fully live, but no NEW activity-feed
-// entries get appended (old ones stay visible; nothing errors).
 const REPO = "rajdeepraoextras-dev/pr-check-monitor";
 const TOKEN = process.env.GITHUB_TOKEN;
 const TTL_MS = TOKEN ? 3000 : 75000;
