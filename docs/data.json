@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T15:18:03.761597+00:00",
+  "snapshot_time": "2026-09-22T15:18:57.202973+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1302,7 +1302,7 @@
       "title": "Fix issue #4: make corruption provenance observable",
       "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/pull/5",
       "createdAt": "2026-09-22T02:24:35Z",
-      "updatedAt": "2026-09-22T15:18:21Z",
+      "updatedAt": "2026-09-22T15:18:23Z",
       "sha": "a2f566ea299287451f66fb95fc7cf905f62c185b",
       "draft": false,
       "mergeable": true,
@@ -1313,28 +1313,29 @@
       "head": "rework/de09a26-explicit-provenance",
       "base": "main",
       "labels": [
-        "in-progress",
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 5,
+      "passed": 6,
       "total": 17,
       "skipped": 9,
       "failed": [
+        "gate",
         "ratelimit"
       ],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-22T15:18:17Z"
-        },
-        {
-          "name": "gate",
-          "started_at": "2026-09-22T15:18:17Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
+        {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-22T15:18:17Z",
+          "completed_at": "2026-09-22T15:18:27Z",
+          "duration_sec": 10,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35745070534/job/106808948817",
+          "app": "github-actions"
+        },
         {
           "name": "ratelimit",
           "state": "failed",
@@ -1346,26 +1347,6 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T15:18:17Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35745070534/job/106808948809",
-          "app": "github-actions"
-        },
-        {
-          "name": "gate",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T15:18:17Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35745070534/job/106808948817",
-          "app": "github-actions"
-        },
-        {
           "name": "changes",
           "state": "passed",
           "conclusion": "success",
@@ -1373,6 +1354,16 @@
           "completed_at": "2026-09-22T15:07:35Z",
           "duration_sec": 27,
           "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35745070534/job/106804442079",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T15:18:17Z",
+          "completed_at": "2026-09-22T15:18:36Z",
+          "duration_sec": 19,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35745070534/job/106808948809",
           "app": "github-actions"
         },
         {
@@ -1508,7 +1499,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:31:38.750349+00:00",
-      "last_change": "2026-09-22T15:18:03.761597+00:00"
+      "last_change": "2026-09-22T15:18:57.202973+00:00"
     },
     {
       "repo": "dynamo-5f7c3e1-data-processing-and-etl",
