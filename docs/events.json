@@ -1,65 +1,5 @@
 [
  {
-  "ts": "2026-09-22T00:11:05.583600+00:00",
-  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
-  "type": "failing",
-  "msg": "Status running \u2192 failing"
- },
- {
-  "ts": "2026-09-22T00:11:05.583600+00:00",
-  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
-  "type": "failing",
-  "msg": "Check failed: gate"
- },
- {
-  "ts": "2026-09-22T00:11:05.583600+00:00",
-  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
-  "type": "failing",
-  "msg": "Check failed: pass2"
- },
- {
-  "ts": "2026-09-22T00:11:05.583600+00:00",
-  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
-  "type": "passed",
-  "msg": "Check passed: claude-cost-report"
- },
- {
-  "ts": "2026-09-22T00:11:05.583600+00:00",
-  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
-  "type": "passed",
-  "msg": "Check passed: pass2_suggestion"
- },
- {
-  "ts": "2026-09-22T00:20:56.353197+00:00",
-  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
-  "type": "push",
-  "msg": "New commit pushed (6266c0e)"
- },
- {
-  "ts": "2026-09-22T00:20:56.353197+00:00",
-  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
-  "type": "running",
-  "msg": "Status failing \u2192 running"
- },
- {
-  "ts": "2026-09-22T00:20:56.353197+00:00",
-  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
-  "type": "started",
-  "msg": "Check started: changes"
- },
- {
-  "ts": "2026-09-22T00:20:56.353197+00:00",
-  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
-  "type": "passed",
-  "msg": "Check recovered: gate"
- },
- {
-  "ts": "2026-09-22T00:20:56.353197+00:00",
-  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
-  "type": "passed",
-  "msg": "Check recovered: pass2"
- },
- {
   "ts": "2026-09-22T00:21:14.626505+00:00",
   "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
   "type": "push",
@@ -2388,15 +2328,75 @@
   "msg": "Check passed: validation"
  },
  {
-  "ts": "2026-09-22T04:21:20.444478+00:00",
+  "ts": "2026-09-22T04:21:23.731192+00:00",
+  "pr": "dynamo-7a8b3a7-security#7",
+  "type": "started",
+  "msg": "Check started: pass2"
+ },
+ {
+  "ts": "2026-09-22T04:21:23.731192+00:00",
+  "pr": "dynamo-7a8b3a7-security#7",
+  "type": "passed",
+  "msg": "Check passed: ratelimit"
+ },
+ {
+  "ts": "2026-09-22T04:21:23.731192+00:00",
+  "pr": "dynamo-7a8b3a7-security#7",
+  "type": "passed",
+  "msg": "Check passed: similarity"
+ },
+ {
+  "ts": "2026-09-22T04:21:23.731192+00:00",
+  "pr": "dynamo-7a8b3a7-security#7",
+  "type": "passed",
+  "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-22T04:21:23.731192+00:00",
+  "pr": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations#9",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-22T04:21:23.731192+00:00",
   "pr": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations#9",
   "type": "failing",
   "msg": "Check failed: gate"
  },
  {
-  "ts": "2026-09-22T04:21:20.444478+00:00",
+  "ts": "2026-09-22T04:21:23.731192+00:00",
+  "pr": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations#9",
+  "type": "failing",
+  "msg": "Check failed: qc_gate"
+ },
+ {
+  "ts": "2026-09-22T04:21:23.731192+00:00",
   "pr": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations#9",
   "type": "passed",
   "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-22T04:21:23.731192+00:00",
+  "pr": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations#9",
+  "type": "passed",
+  "msg": "Check passed: qc_exec"
+ },
+ {
+  "ts": "2026-09-22T04:21:23.731192+00:00",
+  "pr": "dynamo-0aa466f-data-querying-and-databases#8",
+  "type": "started",
+  "msg": "Check started: trials"
+ },
+ {
+  "ts": "2026-09-22T04:21:23.731192+00:00",
+  "pr": "dynamo-0aa466f-data-querying-and-databases#8",
+  "type": "passed",
+  "msg": "Check passed: qc_eval"
+ },
+ {
+  "ts": "2026-09-22T04:21:23.731192+00:00",
+  "pr": "dynamo-0aa466f-data-querying-and-databases#8",
+  "type": "passed",
+  "msg": "Check passed: qc_gate"
  }
 ]
