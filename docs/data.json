@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T05:11:00.924718+00:00",
+  "snapshot_time": "2026-09-22T05:11:58.406197+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -816,7 +816,7 @@
       "title": "Rework 40c7c6a: disclose wall slip and verify scaled bulk recovery",
       "url": "https://github.com/handshake-project-dynamo/dynamo-40c7c6a-scientific-computing-and-domain-science/pull/5",
       "createdAt": "2026-09-22T02:36:32Z",
-      "updatedAt": "2026-09-22T05:11:24Z",
+      "updatedAt": "2026-09-22T05:11:46Z",
       "sha": "7583973ac783bdbc2e22af3f4c6b8e27f6e3440e",
       "draft": false,
       "mergeable": true,
@@ -827,24 +827,17 @@
       "head": "rework-40c7c6a-explicit-slip-contract",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
       "overall": "failing",
-      "passed": 6,
+      "passed": 7,
       "total": 17,
       "skipped": 7,
       "failed": [
+        "gate",
         "pass2"
       ],
       "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-22T05:11:40Z"
-        },
-        {
-          "name": "gate",
-          "started_at": "2026-09-22T05:11:40Z"
-        },
         {
           "name": "pass2_suggestion",
           "started_at": "2026-09-22T05:11:39Z"
@@ -853,6 +846,16 @@
       "queued": [],
       "checks": [
         {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-22T05:11:40Z",
+          "completed_at": "2026-09-22T05:11:50Z",
+          "duration_sec": 10,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-40c7c6a-scientific-computing-and-domain-science/actions/runs/35686997684/job/106623992969",
+          "app": "github-actions"
+        },
+        {
           "name": "pass2",
           "state": "failed",
           "conclusion": "failure",
@@ -860,26 +863,6 @@
           "completed_at": "2026-09-22T05:11:33Z",
           "duration_sec": 2108,
           "url": "https://github.com/handshake-project-dynamo/dynamo-40c7c6a-scientific-computing-and-domain-science/actions/runs/35686997684/job/106617423354",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T05:11:40Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-40c7c6a-scientific-computing-and-domain-science/actions/runs/35686997684/job/106623992298",
-          "app": "github-actions"
-        },
-        {
-          "name": "gate",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T05:11:40Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-40c7c6a-scientific-computing-and-domain-science/actions/runs/35686997684/job/106623992969",
           "app": "github-actions"
         },
         {
@@ -900,6 +883,16 @@
           "completed_at": "2026-09-22T04:28:42Z",
           "duration_sec": 24,
           "url": "https://github.com/handshake-project-dynamo/dynamo-40c7c6a-scientific-computing-and-domain-science/actions/runs/35686997684/job/106615851818",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T05:11:40Z",
+          "completed_at": "2026-09-22T05:11:56Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-40c7c6a-scientific-computing-and-domain-science/actions/runs/35686997684/job/106623992298",
           "app": "github-actions"
         },
         {
@@ -1025,7 +1018,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:45:01.537403+00:00",
-      "last_change": "2026-09-22T05:11:00.924718+00:00"
+      "last_change": "2026-09-22T05:11:58.406197+00:00"
     },
     {
       "repo": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations",
