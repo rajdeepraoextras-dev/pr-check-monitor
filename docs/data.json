@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T15:57:06.006747+00:00",
+  "snapshot_time": "2026-09-22T15:57:56.807006+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1646,7 +1646,7 @@
       "title": "Rework: bound vevent signature recovery",
       "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/pull/4",
       "createdAt": "2026-09-22T02:20:51Z",
-      "updatedAt": "2026-09-22T15:49:51Z",
+      "updatedAt": "2026-09-22T15:57:36Z",
       "sha": "d909d31e3886b4912b3d7fa2f4a219f67541803b",
       "draft": false,
       "mergeable": true,
@@ -1660,17 +1660,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "ava_review",
-          "started_at": "2026-09-22T15:49:43Z"
-        },
-        {
-          "name": "deep_review",
           "started_at": "2026-09-22T15:49:43Z"
         }
       ],
@@ -1684,16 +1680,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35747113166/job/106820980111",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T15:49:43Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35747113166/job/106820980249",
           "app": "github-actions"
         },
         {
@@ -1714,6 +1700,16 @@
           "completed_at": "2026-09-22T15:26:35Z",
           "duration_sec": 92,
           "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35747113166/job/106811693642",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T15:49:43Z",
+          "completed_at": "2026-09-22T15:57:41Z",
+          "duration_sec": 478,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35747113166/job/106820980249",
           "app": "github-actions"
         },
         {
@@ -1779,7 +1775,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:32:05.410861+00:00",
-      "last_change": "2026-09-22T15:49:47.077263+00:00"
+      "last_change": "2026-09-22T15:57:56.807006+00:00"
     },
     {
       "repo": "dynamo-42bb5d9-debugging-and-repair",
