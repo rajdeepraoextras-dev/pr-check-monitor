@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T03:02:16.813176+00:00",
+  "snapshot_time": "2026-09-22T03:04:06.833591+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -769,7 +769,7 @@
       "title": "Fix issue #4: make corruption provenance observable",
       "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/pull/5",
       "createdAt": "2026-09-22T02:24:35Z",
-      "updatedAt": "2026-09-22T02:55:44Z",
+      "updatedAt": "2026-09-22T03:04:22Z",
       "sha": "ab628ac4a56afbfae8106b2db78b645bf6da5e27",
       "draft": false,
       "mergeable": true,
@@ -783,40 +783,36 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
-      "total": 10,
+      "passed": 9,
+      "total": 11,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "ava_review",
-          "started_at": "2026-09-22T02:55:37Z"
-        },
-        {
-          "name": "deep_review",
-          "started_at": "2026-09-22T02:55:37Z"
+          "name": "tier1",
+          "started_at": "2026-09-22T03:04:32Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "ava_review",
+          "name": "tier1",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T02:55:37Z",
+          "started_at": "2026-09-22T03:04:32Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35679356426/job/106598488102",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35679356426/job/106600153402",
           "app": "github-actions"
         },
         {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
           "started_at": "2026-09-22T02:55:37Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35679356426/job/106598488134",
+          "completed_at": "2026-09-22T03:04:28Z",
+          "duration_sec": 531,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35679356426/job/106598488102",
           "app": "github-actions"
         },
         {
@@ -837,6 +833,16 @@
           "completed_at": "2026-09-22T02:26:24Z",
           "duration_sec": 72,
           "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35679356426/job/106592796305",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T02:55:37Z",
+          "completed_at": "2026-09-22T03:04:27Z",
+          "duration_sec": 530,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35679356426/job/106598488134",
           "app": "github-actions"
         },
         {
@@ -902,7 +908,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:31:38.750349+00:00",
-      "last_change": "2026-09-22T03:00:18.508191+00:00"
+      "last_change": "2026-09-22T03:04:06.833591+00:00"
     },
     {
       "repo": "dynamo-5f7c3e1-data-processing-and-etl",
@@ -979,7 +985,7 @@
       "title": "Fix sound verifier finding from #5: separate finish runs",
       "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/pull/6",
       "createdAt": "2026-09-22T02:19:56Z",
-      "updatedAt": "2026-09-22T03:02:11Z",
+      "updatedAt": "2026-09-22T03:03:42Z",
       "sha": "69966e10be9830ad4f5c575ba13a35c1fbe0eab8",
       "draft": false,
       "mergeable": true,
@@ -993,26 +999,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 4,
-      "total": 5,
+      "passed": 6,
+      "total": 7,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "validation",
-          "started_at": "2026-09-22T03:02:05Z"
+          "name": "pass2",
+          "started_at": "2026-09-22T03:03:32Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "validation",
+          "name": "pass2",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T03:02:05Z",
+          "started_at": "2026-09-22T03:03:32Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106599687820",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106599966858",
           "app": "github-actions"
         },
         {
@@ -1036,6 +1042,16 @@
           "app": "github-actions"
         },
         {
+          "name": "ratelimit",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T03:03:21Z",
+          "completed_at": "2026-09-22T03:03:29Z",
+          "duration_sec": 8,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106599931677",
+          "app": "github-actions"
+        },
+        {
           "name": "review",
           "state": "passed",
           "conclusion": "success",
@@ -1054,11 +1070,21 @@
           "duration_sec": 37,
           "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106599556981",
           "app": "github-actions"
+        },
+        {
+          "name": "validation",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T03:02:05Z",
+          "completed_at": "2026-09-22T03:03:18Z",
+          "duration_sec": 73,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106599687820",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:32:14.410214+00:00",
-      "last_change": "2026-09-22T03:02:16.813176+00:00"
+      "last_change": "2026-09-22T03:04:06.833591+00:00"
     },
     {
       "repo": "dynamo-7a8b3a7-security",
