@@ -1,5 +1,47 @@
 [
  {
+  "ts": "2026-09-22T03:21:21.688161+00:00",
+  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
+  "type": "started",
+  "msg": "Check started: deep_review"
+ },
+ {
+  "ts": "2026-09-22T03:21:21.688161+00:00",
+  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
+  "type": "passed",
+  "msg": "Check passed: pass2"
+ },
+ {
+  "ts": "2026-09-22T03:21:21.688161+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "started",
+  "msg": "Check started: review"
+ },
+ {
+  "ts": "2026-09-22T03:21:21.688161+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "passed",
+  "msg": "Check passed: cosine_similarity"
+ },
+ {
+  "ts": "2026-09-22T03:22:17.681673+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-22T03:22:17.681673+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-22T03:25:02.409432+00:00",
+  "pr": "dynamo-7a8b3a7-security#7",
+  "type": "started",
+  "msg": "Check started: trials"
+ },
+ {
   "ts": "2026-09-22T03:25:02.409432+00:00",
   "pr": "dynamo-7a8b3a7-security#7",
   "type": "passed",
@@ -2268,135 +2310,93 @@
   "msg": "Check passed: validation"
  },
  {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
-  "pr": "dynamo-de09a26-data-processing-and-etl#5",
-  "type": "push",
-  "msg": "New commit pushed (ae98dbc)"
- },
- {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
-  "pr": "dynamo-de09a26-data-processing-and-etl#5",
-  "type": "running",
-  "msg": "Status failing \u2192 running"
- },
- {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
-  "pr": "dynamo-de09a26-data-processing-and-etl#5",
-  "type": "started",
-  "msg": "Check started: changes"
- },
- {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
-  "pr": "dynamo-de09a26-data-processing-and-etl#5",
-  "type": "passed",
-  "msg": "Check recovered: gate"
- },
- {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
-  "pr": "dynamo-de09a26-data-processing-and-etl#5",
-  "type": "passed",
-  "msg": "Check recovered: pass2"
- },
- {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
-  "pr": "dynamo-91b21b1-security#10",
-  "type": "push",
-  "msg": "New commit pushed (3246e1f)"
- },
- {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
-  "pr": "dynamo-91b21b1-security#10",
-  "type": "running",
-  "msg": "Status failing \u2192 running"
- },
- {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
-  "pr": "dynamo-91b21b1-security#10",
-  "type": "started",
-  "msg": "Check started: review"
- },
- {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
-  "pr": "dynamo-91b21b1-security#10",
-  "type": "passed",
-  "msg": "Check recovered: gate"
- },
- {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
-  "pr": "dynamo-91b21b1-security#10",
-  "type": "passed",
-  "msg": "Check recovered: pass2"
- },
- {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
-  "pr": "dynamo-7a8b3a7-security#7",
-  "type": "started",
-  "msg": "Check started: trials"
- },
- {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
-  "pr": "dynamo-7a8b3a7-security#7",
-  "type": "passed",
-  "msg": "Check passed: qc_eval"
- },
- {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
-  "pr": "dynamo-7a8b3a7-security#7",
-  "type": "passed",
-  "msg": "Check passed: qc_gate"
- },
- {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
-  "pr": "dynamo-69e224d-data-processing-and-etl#6",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
-  "pr": "dynamo-69e224d-data-processing-and-etl#6",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
-  "pr": "dynamo-69e224d-data-processing-and-etl#6",
-  "type": "passed",
-  "msg": "Check passed: validation"
- },
- {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
+  "ts": "2026-09-22T05:13:56.124793+00:00",
   "pr": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations#9",
   "type": "started",
   "msg": "Check started: ava_review"
  },
  {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
+  "ts": "2026-09-22T05:13:56.124793+00:00",
   "pr": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations#9",
   "type": "started",
   "msg": "Check started: deep_review"
  },
  {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
+  "ts": "2026-09-22T05:13:56.124793+00:00",
   "pr": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations#9",
   "type": "passed",
   "msg": "Check passed: pass2"
  },
  {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
-  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
-  "type": "failing",
-  "msg": "Check failed: gate"
+  "ts": "2026-09-22T05:13:56.124793+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "push",
+  "msg": "New commit pushed (ae98dbc)"
  },
  {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
-  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
-  "type": "passed",
-  "msg": "Check passed: claude-cost-report"
+  "ts": "2026-09-22T05:13:56.124793+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "running",
+  "msg": "Status failing \u2192 running"
  },
  {
-  "ts": "2026-09-22T05:14:09.918540+00:00",
-  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
+  "ts": "2026-09-22T05:13:56.124793+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
   "type": "passed",
-  "msg": "Check passed: pass2_suggestion"
+  "msg": "Check recovered: gate"
+ },
+ {
+  "ts": "2026-09-22T05:13:56.124793+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "passed",
+  "msg": "Check recovered: pass2"
+ },
+ {
+  "ts": "2026-09-22T05:13:56.124793+00:00",
+  "pr": "dynamo-7a8b3a7-security#7",
+  "type": "started",
+  "msg": "Check started: qc_gate"
+ },
+ {
+  "ts": "2026-09-22T05:13:56.124793+00:00",
+  "pr": "dynamo-7a8b3a7-security#7",
+  "type": "passed",
+  "msg": "Check passed: qc_eval"
+ },
+ {
+  "ts": "2026-09-22T05:14:51.379874+00:00",
+  "pr": "dynamo-91b21b1-security#10",
+  "type": "started",
+  "msg": "Check started: review"
+ },
+ {
+  "ts": "2026-09-22T05:14:51.379874+00:00",
+  "pr": "dynamo-91b21b1-security#10",
+  "type": "passed",
+  "msg": "Check passed: cosine_similarity"
+ },
+ {
+  "ts": "2026-09-22T05:14:51.379874+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "started",
+  "msg": "Check started: cosine_similarity"
+ },
+ {
+  "ts": "2026-09-22T05:14:51.379874+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "passed",
+  "msg": "Check passed: changes"
+ },
+ {
+  "ts": "2026-09-22T05:14:51.379874+00:00",
+  "pr": "dynamo-7a8b3a7-security#7",
+  "type": "started",
+  "msg": "Check started: trials"
+ },
+ {
+  "ts": "2026-09-22T05:14:51.379874+00:00",
+  "pr": "dynamo-7a8b3a7-security#7",
+  "type": "passed",
+  "msg": "Check passed: qc_gate"
  }
 ]
