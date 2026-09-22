@@ -1,35 +1,5 @@
 [
  {
-  "ts": "2026-09-21T03:40:05.235015+00:00",
-  "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
-  "type": "passed",
-  "msg": "Check passed: deep_review"
- },
- {
-  "ts": "2026-09-21T03:43:52.879196+00:00",
-  "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
-  "type": "started",
-  "msg": "Check started: tier1"
- },
- {
-  "ts": "2026-09-21T03:43:52.879196+00:00",
-  "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
-  "type": "passed",
-  "msg": "Check passed: ava_review"
- },
- {
-  "ts": "2026-09-21T03:44:42.640958+00:00",
-  "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
-  "type": "started",
-  "msg": "Check started: qc_eval"
- },
- {
-  "ts": "2026-09-21T03:44:42.640958+00:00",
-  "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
-  "type": "started",
-  "msg": "Check started: qc_exec"
- },
- {
   "ts": "2026-09-21T03:44:42.640958+00:00",
   "pr": "dynamo-04ff9ff-model-training-and-ml-infrastructure#7",
   "type": "passed",
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
   "type": "passed",
   "msg": "Check passed: ratelimit"
+ },
+ {
+  "ts": "2026-09-22T00:53:58.591580+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-22T00:53:58.591580+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "started",
+  "msg": "Check started: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-22T00:53:58.591580+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-22T00:53:58.591580+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-22T00:53:58.591580+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
  }
 ]
