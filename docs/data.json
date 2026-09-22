@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T04:01:18.903096+00:00",
+  "snapshot_time": "2026-09-22T04:01:48.340707+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -176,7 +176,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T03:14:55.251795+00:00",
-      "last_change": "2026-09-22T04:00:26.046856+00:00"
+      "last_change": "2026-09-22T04:01:48.340707+00:00"
     },
     {
       "repo": "dynamo-91b21b1-security",
@@ -185,7 +185,7 @@
       "title": "Rework: opaque conformance evidence for #6",
       "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/pull/10",
       "createdAt": "2026-09-22T02:46:09Z",
-      "updatedAt": "2026-09-22T04:00:42Z",
+      "updatedAt": "2026-09-22T04:01:24Z",
       "sha": "89be1ac6ca74273a5c71e413c0b8a6f0f7e18443",
       "draft": false,
       "mergeable": true,
@@ -196,35 +196,45 @@
       "head": "rework/91b21b1-probe-hardening",
       "base": "main",
       "labels": [
-        "needs-revision"
+        "in-progress"
       ],
       "overall": "running",
-      "passed": 0,
-      "total": 1,
+      "passed": 1,
+      "total": 2,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "changes",
-          "started_at": "2026-09-22T04:00:50Z"
+          "name": "cosine_similarity",
+          "started_at": "2026-09-22T04:01:33Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "changes",
+          "name": "cosine_similarity",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T04:00:50Z",
+          "started_at": "2026-09-22T04:01:33Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35685248084/job/106610704037",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T04:00:50Z",
+          "completed_at": "2026-09-22T04:01:29Z",
+          "duration_sec": 39,
           "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35685248084/job/106610566965",
           "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:55:11.789412+00:00",
-      "last_change": "2026-09-22T04:01:18.903096+00:00"
+      "last_change": "2026-09-22T04:01:48.340707+00:00"
     },
     {
       "repo": "dynamo-81dc97e-scientific-computing-and-domain-science",
@@ -550,7 +560,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:45:16.043206+00:00",
-      "last_change": "2026-09-22T04:01:18.903096+00:00"
+      "last_change": "2026-09-22T04:01:48.340707+00:00"
     },
     {
       "repo": "dynamo-40c7c6a-scientific-computing-and-domain-science",
