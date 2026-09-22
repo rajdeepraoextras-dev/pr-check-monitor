@@ -1,11 +1,147 @@
 {
-  "snapshot_time": "2026-09-22T02:36:21.032160+00:00",
+  "snapshot_time": "2026-09-22T02:36:03.592304+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations",
+      "full_repo": "handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations",
+      "num": "9",
+      "title": "Rework 5da1f4a: cover dosing boundaries and accept CRLF output",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/pull/9",
+      "createdAt": "2026-09-22T02:33:37Z",
+      "updatedAt": "2026-09-22T02:36:08Z",
+      "sha": "2a2d9b56d86e67489d51fe2a576a0f824128cc58",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 412,
+      "deletions": 77,
+      "changedFiles": 17,
+      "head": "rework/5da1f4a-dosing-boundaries",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 2,
+      "total": 3,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "review",
+          "started_at": "2026-09-22T02:35:58Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-22T02:35:58Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106594866938",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T02:33:57Z",
+          "completed_at": "2026-09-22T02:34:23Z",
+          "duration_sec": 26,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106594439641",
+          "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T02:34:30Z",
+          "completed_at": "2026-09-22T02:35:56Z",
+          "duration_sec": 86,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106594558072",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-22T02:36:56.926351+00:00",
+      "last_change": "2026-09-22T02:36:03.592304+00:00"
+    },
+    {
+      "repo": "dynamo-69e224d-data-processing-and-etl",
+      "full_repo": "handshake-project-dynamo/dynamo-69e224d-data-processing-and-etl",
+      "num": "6",
+      "title": "Rework 69e224d: Specify the codec and isolate held-out answers",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-69e224d-data-processing-and-etl/pull/6",
+      "createdAt": "2026-09-22T02:32:07Z",
+      "updatedAt": "2026-09-22T02:34:09Z",
+      "sha": "639b7fd0ce83951515e54818b8fe0251b54ec619",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 730,
+      "deletions": 5474,
+      "changedFiles": 241,
+      "head": "rework/69e224d-codec-contract",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 2,
+      "total": 3,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "review",
+          "started_at": "2026-09-22T02:34:00Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-22T02:34:00Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-69e224d-data-processing-and-etl/actions/runs/35679817059/job/106594466721",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T02:32:13Z",
+          "completed_at": "2026-09-22T02:32:38Z",
+          "duration_sec": 25,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-69e224d-data-processing-and-etl/actions/runs/35679817059/job/106594133557",
+          "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T02:32:45Z",
+          "completed_at": "2026-09-22T02:33:57Z",
+          "duration_sec": 72,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-69e224d-data-processing-and-etl/actions/runs/35679817059/job/106594214267",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-22T02:36:43.743170+00:00",
+      "last_change": "2026-09-22T02:36:03.592304+00:00"
+    },
     {
       "repo": "dynamo-306ca9b-mathematics-and-formal-reasoning",
       "full_repo": "handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning",
@@ -72,7 +208,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:32:18.588992+00:00",
-      "last_change": "2026-09-22T02:33:42.632220+00:00"
+      "last_change": "2026-09-22T02:36:03.592304+00:00"
     },
     {
       "repo": "dynamo-de09a26-data-processing-and-etl",
@@ -180,7 +316,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:31:38.750349+00:00",
-      "last_change": "2026-09-22T02:35:11.045607+00:00"
+      "last_change": "2026-09-22T02:36:03.592304+00:00"
     },
     {
       "repo": "dynamo-5f7c3e1-data-processing-and-etl",
@@ -1080,209 +1216,6 @@
       "submitted": false,
       "first_seen": "2026-09-21T02:43:58.534489+00:00",
       "last_change": "2026-09-21T04:58:17.765863+00:00"
-    },
-    {
-      "repo": "dynamo-52aba7d-software-engineering",
-      "full_repo": "handshake-project-dynamo/dynamo-52aba7d-software-engineering",
-      "num": "8",
-      "title": "Rework: close the output backpressure gap and the coalesced parse ahead divergence",
-      "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/pull/8",
-      "createdAt": "2026-09-21T02:27:40Z",
-      "updatedAt": "2026-09-21T04:02:22Z",
-      "sha": "85170336cb351e89f5553e740a03633e13c9f40c",
-      "draft": false,
-      "mergeable": true,
-      "reviewDecision": "",
-      "additions": 548,
-      "deletions": 154,
-      "changedFiles": 6,
-      "head": "rework/52aba7d-stalled-reader-and-parse-ahead",
-      "base": "main",
-      "labels": [
-        "accepted"
-      ],
-      "overall": "passed",
-      "passed": 16,
-      "total": 17,
-      "skipped": 1,
-      "failed": [],
-      "running": [],
-      "queued": [],
-      "checks": [
-        {
-          "name": "ava_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T02:57:28Z",
-          "completed_at": "2026-09-21T03:05:10Z",
-          "duration_sec": 462,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106199261865",
-          "app": "github-actions"
-        },
-        {
-          "name": "changes",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T02:27:47Z",
-          "completed_at": "2026-09-21T02:28:13Z",
-          "duration_sec": 26,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106194680786",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T04:02:16Z",
-          "completed_at": "2026-09-21T04:02:31Z",
-          "duration_sec": 15,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106209583932",
-          "app": "github-actions"
-        },
-        {
-          "name": "cosine_similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T02:28:15Z",
-          "completed_at": "2026-09-21T02:29:51Z",
-          "duration_sec": 96,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106194750347",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T02:57:27Z",
-          "completed_at": "2026-09-21T03:02:57Z",
-          "duration_sec": 330,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106199261917",
-          "app": "github-actions"
-        },
-        {
-          "name": "gate",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T04:02:16Z",
-          "completed_at": "2026-09-21T04:02:26Z",
-          "duration_sec": 10,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106209583930",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T02:42:08Z",
-          "completed_at": "2026-09-21T02:57:25Z",
-          "duration_sec": 917,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106196936276",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_eval",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T03:05:48Z",
-          "completed_at": "2026-09-21T03:24:28Z",
-          "duration_sec": 1120,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106200547394",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T03:05:48Z",
-          "completed_at": "2026-09-21T03:33:32Z",
-          "duration_sec": 1664,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106200547482",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_gate",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T03:33:34Z",
-          "completed_at": "2026-09-21T03:33:48Z",
-          "duration_sec": 14,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106205077958",
-          "app": "github-actions"
-        },
-        {
-          "name": "ratelimit",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T02:41:59Z",
-          "completed_at": "2026-09-21T02:42:06Z",
-          "duration_sec": 7,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106196912860",
-          "app": "github-actions"
-        },
-        {
-          "name": "review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T02:29:53Z",
-          "completed_at": "2026-09-21T02:35:18Z",
-          "duration_sec": 325,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106194993612",
-          "app": "github-actions"
-        },
-        {
-          "name": "similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T02:35:20Z",
-          "completed_at": "2026-09-21T02:35:47Z",
-          "duration_sec": 27,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106195856259",
-          "app": "github-actions"
-        },
-        {
-          "name": "tier1",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T03:05:13Z",
-          "completed_at": "2026-09-21T03:05:46Z",
-          "duration_sec": 33,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106200446596",
-          "app": "github-actions"
-        },
-        {
-          "name": "trials",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T03:33:50Z",
-          "completed_at": "2026-09-21T04:02:13Z",
-          "duration_sec": 1703,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106205121705",
-          "app": "github-actions"
-        },
-        {
-          "name": "validation",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T02:35:50Z",
-          "completed_at": "2026-09-21T02:41:56Z",
-          "duration_sec": 366,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106195936882",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-21T02:57:26Z",
-          "completed_at": "2026-09-21T02:57:25Z",
-          "duration_sec": -1,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-52aba7d-software-engineering/actions/runs/35554255096/job/106199262899",
-          "app": "github-actions"
-        }
-      ],
-      "submitted": false,
-      "first_seen": "2026-09-21T02:30:02.761794+00:00",
-      "last_change": "2026-09-21T04:02:33.854865+00:00"
     }
   ]
 }

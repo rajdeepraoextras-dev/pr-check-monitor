@@ -1,42 +1,6 @@
 [
  {
   "ts": "2026-09-21T04:01:09.715813+00:00",
-  "pr": "dynamo-d1d0486-debugging-and-repair#8",
-  "type": "passed",
-  "msg": "Check passed: qc_gate"
- },
- {
-  "ts": "2026-09-21T04:01:09.715813+00:00",
-  "pr": "dynamo-b27e15c-systems-infrastructure-and-operations#7",
-  "type": "started",
-  "msg": "Check started: qc_eval"
- },
- {
-  "ts": "2026-09-21T04:01:09.715813+00:00",
-  "pr": "dynamo-b27e15c-systems-infrastructure-and-operations#7",
-  "type": "started",
-  "msg": "Check started: qc_exec"
- },
- {
-  "ts": "2026-09-21T04:01:09.715813+00:00",
-  "pr": "dynamo-b27e15c-systems-infrastructure-and-operations#7",
-  "type": "passed",
-  "msg": "Check passed: tier1"
- },
- {
-  "ts": "2026-09-21T04:01:09.715813+00:00",
-  "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
-  "type": "failing",
-  "msg": "Status running \u2192 failing"
- },
- {
-  "ts": "2026-09-21T04:01:09.715813+00:00",
-  "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
-  "type": "started",
-  "msg": "Check started: pass2_suggestion"
- },
- {
-  "ts": "2026-09-21T04:01:09.715813+00:00",
   "pr": "dynamo-29ec2b8-mathematics-and-formal-reasoning#15",
   "type": "failing",
   "msg": "Check failed: gate"
@@ -2398,5 +2362,41 @@
   "pr": "dynamo-de09a26-data-processing-and-etl#5",
   "type": "passed",
   "msg": "Check passed: ratelimit"
+ },
+ {
+  "ts": "2026-09-22T02:36:03.592304+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "started",
+  "msg": "Check started: pass2"
+ },
+ {
+  "ts": "2026-09-22T02:36:03.592304+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "passed",
+  "msg": "4 checks passed"
+ },
+ {
+  "ts": "2026-09-22T02:36:03.592304+00:00",
+  "pr": "dynamo-69e224d-data-processing-and-etl#6",
+  "type": "discovered",
+  "msg": "PR discovered: Rework 69e224d: Specify the codec and isolate held-out answers"
+ },
+ {
+  "ts": "2026-09-22T02:36:03.592304+00:00",
+  "pr": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations#9",
+  "type": "discovered",
+  "msg": "PR discovered: Rework 5da1f4a: cover dosing boundaries and accept CRLF output"
+ },
+ {
+  "ts": "2026-09-22T02:36:03.592304+00:00",
+  "pr": "dynamo-306ca9b-mathematics-and-formal-reasoning#8",
+  "type": "started",
+  "msg": "Check started: review"
+ },
+ {
+  "ts": "2026-09-22T02:36:03.592304+00:00",
+  "pr": "dynamo-306ca9b-mathematics-and-formal-reasoning#8",
+  "type": "passed",
+  "msg": "Check passed: cosine_similarity"
  }
 ]
