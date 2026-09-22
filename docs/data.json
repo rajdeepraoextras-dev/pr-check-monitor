@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T17:29:36.542292+00:00",
+  "snapshot_time": "2026-09-22T17:30:20.650067+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -230,15 +230,11 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
-        {
-          "name": "qc_eval",
-          "started_at": "2026-09-22T17:28:20Z"
-        },
         {
           "name": "qc_exec",
           "started_at": "2026-09-22T17:28:20Z"
@@ -246,16 +242,6 @@
       ],
       "queued": [],
       "checks": [
-        {
-          "name": "qc_eval",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T17:28:20Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35753633008/job/106858380515",
-          "app": "github-actions"
-        },
         {
           "name": "qc_exec",
           "state": "running",
@@ -314,6 +300,16 @@
           "completed_at": "2026-09-22T17:20:24Z",
           "duration_sec": 2124,
           "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35753633008/job/106842316329",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T17:28:20Z",
+          "completed_at": "2026-09-22T17:37:04Z",
+          "duration_sec": 524,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35753633008/job/106858380515",
           "app": "github-actions"
         },
         {
@@ -379,7 +375,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:55:17.564817+00:00",
-      "last_change": "2026-09-22T17:29:36.542292+00:00"
+      "last_change": "2026-09-22T17:30:20.650067+00:00"
     },
     {
       "repo": "dynamo-0aa466f-data-querying-and-databases",
