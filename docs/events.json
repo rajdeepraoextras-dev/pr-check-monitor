@@ -1,29 +1,5 @@
 [
  {
-  "ts": "2026-09-22T04:33:55.916721+00:00",
-  "pr": "dynamo-de09a26-data-processing-and-etl#5",
-  "type": "started",
-  "msg": "Check started: cosine_similarity"
- },
- {
-  "ts": "2026-09-22T04:33:55.916721+00:00",
-  "pr": "dynamo-de09a26-data-processing-and-etl#5",
-  "type": "passed",
-  "msg": "Check passed: changes"
- },
- {
-  "ts": "2026-09-22T04:34:48.123621+00:00",
-  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
-  "type": "started",
-  "msg": "Check started: validation"
- },
- {
-  "ts": "2026-09-22T04:34:48.123621+00:00",
-  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
-  "type": "passed",
-  "msg": "Check passed: similarity"
- },
- {
   "ts": "2026-09-22T04:34:48.123621+00:00",
   "pr": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations#9",
   "type": "started",
@@ -2364,38 +2340,62 @@
   "msg": "Check passed: similarity"
  },
  {
-  "ts": "2026-09-22T06:50:55.751185+00:00",
+  "ts": "2026-09-22T06:50:50.916075+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "started",
+  "msg": "Check started: validation"
+ },
+ {
+  "ts": "2026-09-22T06:50:50.916075+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "passed",
+  "msg": "Check passed: review"
+ },
+ {
+  "ts": "2026-09-22T06:50:50.916075+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "passed",
+  "msg": "Check passed: similarity"
+ },
+ {
+  "ts": "2026-09-22T06:50:50.916075+00:00",
   "pr": "dynamo-91b21b1-security#10",
   "type": "failing",
   "msg": "Status running \u2192 failing"
  },
  {
-  "ts": "2026-09-22T06:50:55.751185+00:00",
-  "pr": "dynamo-91b21b1-security#10",
-  "type": "started",
-  "msg": "Check started: claude-cost-report"
- },
- {
-  "ts": "2026-09-22T06:50:55.751185+00:00",
+  "ts": "2026-09-22T06:50:50.916075+00:00",
   "pr": "dynamo-91b21b1-security#10",
   "type": "failing",
   "msg": "Check failed: gate"
  },
  {
-  "ts": "2026-09-22T06:50:55.751185+00:00",
+  "ts": "2026-09-22T06:50:50.916075+00:00",
   "pr": "dynamo-91b21b1-security#10",
   "type": "failing",
   "msg": "Check failed: review"
  },
  {
-  "ts": "2026-09-22T06:50:55.751185+00:00",
-  "pr": "dynamo-de09a26-data-processing-and-etl#5",
-  "type": "started",
-  "msg": "Check started: ratelimit"
+  "ts": "2026-09-22T06:50:50.916075+00:00",
+  "pr": "dynamo-91b21b1-security#10",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
  },
  {
-  "ts": "2026-09-22T06:50:55.751185+00:00",
-  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "ts": "2026-09-22T06:50:50.916075+00:00",
+  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
+  "type": "started",
+  "msg": "Check started: pass2"
+ },
+ {
+  "ts": "2026-09-22T06:50:50.916075+00:00",
+  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
+  "type": "passed",
+  "msg": "Check passed: ratelimit"
+ },
+ {
+  "ts": "2026-09-22T06:50:50.916075+00:00",
+  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
   "type": "passed",
   "msg": "Check passed: validation"
  }
