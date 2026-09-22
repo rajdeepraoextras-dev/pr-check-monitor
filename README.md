@@ -2,41 +2,45 @@
 
 Live CI status dashboard, auto-discovering every open PR you (`config.json` → `author`)
 have opened in the last `window_hours` across `config.json` → `org`. Served via GitHub
-Pages and kept up to date by two local `launchd` jobs.
+Pages. PR/check **status is fully live and independent of any local machine** — it's
+computed on request by a Vercel Edge Function straight from GitHub's API. Two local
+`launchd` jobs on the author's Mac still run, but only to drive the **activity/events log**
+(voice/sound alerts, the Activity panel) — see the breakdown below.
 
-## How it works — two speeds, so it stays close to real-time without hitting GitHub's rate limits
-- **`fetch.py`** (full discovery, ~every 2 min — the org-wide repo scan is the slow part):
-  lists every repo in `org`, finds open PRs authored by `author` created within
-  `window_hours`, plus anything pinned in `prs.json`, refreshes full metadata
-  (including `reviewDecision`), and rebuilds the tracked-PR list.
-- **`fetch.py --fast`** (~every 20s): skips discovery entirely and just re-checks the PRs
-  already in the last snapshot — pure REST calls (`gh api .../pulls/{n}` +
-  `.../check-runs`), kept out of the GraphQL budget the discovery scan uses, so it can
-  run far more often without tripping rate limits. `reviewDecision` is carried forward
-  unchanged between full runs.
-- Both write `docs/data.json` + diff against the previous snapshot to append state-change
-  events (status flips, checks starting/passing/failing, pushes, review decisions) to
-  `docs/events.json` (capped at 400) — this powers the Activity feed and the voice/sound
-  alerts.
-- `docs/index.html` (served by GitHub Pages) reads `data.json`/`events.json` from, in
-  order: **1)** `prmon-live-data` — a small Vercel Edge Function (source in `proxy/`,
-  deployed separately from this repo) that proxies GitHub's Contents API with its own
-  in-memory cache; with a `GITHUB_TOKEN` env var set on that Vercel project it caches for
-  only 3s (GitHub's authenticated budget is 5000/hr), otherwise 75s (to stay under the
-  60/hr unauthenticated limit). No GitHub CDN in this path at all, so this is the
-  freshest source. **2)** `raw.githubusercontent.com` (~5min worst case — its Fastly CDN
-  caches by path and ignores cache-busting query params entirely). **3)** the same-origin
-  Pages copy. The browser polls every 3s; each tier is only a fallback for when the
-  faster one is unreachable.
+## Data sources
+- **`docs/index.html` reads `data.json` from `prmon-live-data`** (source in `proxy/`,
+  deployed separately from this repo, **not** git-linked — see "Redeploying" below) — a
+  Vercel Edge Function that, on request, discovers every open PR by `author` in `org`
+  (scans all repos, ~83 currently) and fetches each one's check-runs **directly from
+  GitHub's API**, independent of this repo's own `docs/data.json` and independent of
+  whether the local Mac is on. Two-tier in-memory cache: which-PRs-exist is cached ~4min
+  (the expensive org-wide scan), each PR's check status refreshes every ~25s. Needs a
+  `GITHUB_TOKEN` env var (Vercel project settings) with **org-wide read access** — a
+  classic PAT with the `repo` scope (a fine-grained token scoped to just this repo is
+  NOT enough, since this reads every repo in `org`). Falls back to
+  `raw.githubusercontent.com` then the same-origin Pages copy if ever unreachable.
+  The browser polls every 3s.
+- **`docs/index.html` reads `events.json`** the old way — relayed from this repo's own
+  `docs/events.json`, produced by the Mac's `fetch.py` diffing consecutive snapshots.
+  This is inherently stateful (a diff against the *previous* run), which a
+  stateless-per-request Edge Function can't reconstruct without a real database. So:
+  **while the Mac is off, PR/check status stays fully live, but the Activity feed and
+  voice/sound/desktop alerts stop getting new entries** (old ones stay visible; nothing
+  errors) until the Mac is back and `fetch.py` resumes.
+- **`fetch.py`** (full discovery, ~every 2 min) and **`fetch.py --fast`** (~every 20s,
+  re-checks known PRs only) still run via `launchd` on the Mac and still write
+  `docs/data.json` — now used only as one of `data.json`'s fallback tiers, and as the
+  input the events-diffing depends on. See `## Managing the background jobs` below.
 
 ### Redeploying the live-data proxy
 The `prmon-live-data` Vercel project's two files (`proxy/api/data.js`,
-`proxy/api/events.js`) aren't git-linked — they were deployed directly via `vercel deploy`
-(or the Vercel dashboard) targeting production, project name `prmon-live-data`. Its
-`GITHUB_TOKEN` env var (Settings → Environment Variables) is a fine-grained PAT scoped to
-read-only Contents access on this one repo. Redeploy after editing either file by running
-a Vercel deploy from the `proxy/` directory, or pasting the updated file content into a
-new deployment the same way this one was created.
+`proxy/api/events.js`) aren't git-linked — deploy by pasting the updated file content
+into a new deployment targeting the existing project (production, name
+`prmon-live-data`), the same way the current one was created. `data.js` does the live
+GitHub discovery+fetch; `events.js` still just relays this repo's `docs/events.json`.
+Its `GITHUB_TOKEN` env var (Settings → Environment Variables) needs the `repo` scope on
+a classic PAT — **env var changes require a fresh deployment to take effect** (running
+instances keep whatever token they started with in `process.env`).
 
 ## Dashboard features
 - Stats strip (click any stat to filter), status/submitted filters, free-text search
