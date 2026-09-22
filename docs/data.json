@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T05:53:44.116348+00:00",
+  "snapshot_time": "2026-09-22T05:54:39.909386+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1309,7 +1309,7 @@
       "title": "Fix issue #4: make corruption provenance observable",
       "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/pull/5",
       "createdAt": "2026-09-22T02:24:35Z",
-      "updatedAt": "2026-09-22T05:46:04Z",
+      "updatedAt": "2026-09-22T05:54:33Z",
       "sha": "ae98dbcaa1d1a513ad4aa8bba8181b7742b4d44c",
       "draft": false,
       "mergeable": true,
@@ -1323,17 +1323,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "ava_review",
-          "started_at": "2026-09-22T05:45:57Z"
-        },
-        {
-          "name": "deep_review",
           "started_at": "2026-09-22T05:45:57Z"
         }
       ],
@@ -1347,16 +1343,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35689916462/job/106630736893",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T05:45:57Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35689916462/job/106630736960",
           "app": "github-actions"
         },
         {
@@ -1377,6 +1363,16 @@
           "completed_at": "2026-09-22T05:16:07Z",
           "duration_sec": 82,
           "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35689916462/job/106624595287",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T05:45:57Z",
+          "completed_at": "2026-09-22T05:54:39Z",
+          "duration_sec": 522,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35689916462/job/106630736960",
           "app": "github-actions"
         },
         {
@@ -1442,7 +1438,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:31:38.750349+00:00",
-      "last_change": "2026-09-22T05:46:21.866730+00:00"
+      "last_change": "2026-09-22T05:54:39.909386+00:00"
     },
     {
       "repo": "dynamo-5f7c3e1-data-processing-and-etl",
@@ -1860,7 +1856,7 @@
       "title": "Rework 7a8b3a7: align pool fixtures and strengthen search repair",
       "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/pull/7",
       "createdAt": "2026-09-22T02:09:50Z",
-      "updatedAt": "2026-09-22T05:54:07Z",
+      "updatedAt": "2026-09-22T05:54:23Z",
       "sha": "aaa339ea26d1d6cc637afd7f4afa2461f5b8acb1",
       "draft": false,
       "mergeable": true,
@@ -1871,31 +1867,16 @@
       "head": "rework/7a8b3a7-positive-capacity",
       "base": "main",
       "labels": [
-        "in-progress"
+        "accepted"
       ],
-      "overall": "running",
-      "passed": 13,
-      "total": 15,
+      "overall": "passed",
+      "passed": 16,
+      "total": 17,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "trials",
-          "started_at": "2026-09-22T05:14:28Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
-        {
-          "name": "trials",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T05:14:28Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106624552610",
-          "app": "github-actions"
-        },
         {
           "name": "ava_review",
           "state": "passed",
@@ -1917,6 +1898,16 @@
           "app": "github-actions"
         },
         {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T05:54:16Z",
+          "completed_at": "2026-09-22T05:54:33Z",
+          "duration_sec": 17,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106632383279",
+          "app": "github-actions"
+        },
+        {
           "name": "cosine_similarity",
           "state": "passed",
           "conclusion": "success",
@@ -1934,6 +1925,16 @@
           "completed_at": "2026-09-22T04:56:58Z",
           "duration_sec": 446,
           "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106619844639",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T05:54:16Z",
+          "completed_at": "2026-09-22T05:54:27Z",
+          "duration_sec": 11,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106632382809",
           "app": "github-actions"
         },
         {
@@ -2017,6 +2018,16 @@
           "app": "github-actions"
         },
         {
+          "name": "trials",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T05:14:28Z",
+          "completed_at": "2026-09-22T05:54:14Z",
+          "duration_sec": 2386,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106624552610",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -2039,7 +2050,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:16:13.804311+00:00",
-      "last_change": "2026-09-22T05:14:51.379874+00:00"
+      "last_change": "2026-09-22T05:54:39.909386+00:00"
     },
     {
       "repo": "dynamo-b2366b5-machine-learning-and-ai",
