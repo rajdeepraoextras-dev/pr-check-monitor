@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T04:20:28.298685+00:00",
+  "snapshot_time": "2026-09-22T04:21:20.444478+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -885,24 +885,26 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 12,
+      "passed": 13,
       "total": 17,
       "skipped": 2,
       "failed": [
+        "gate",
         "qc_gate"
       ],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-22T04:20:32Z"
-        },
-        {
-          "name": "gate",
-          "started_at": "2026-09-22T04:20:32Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
+        {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-22T04:20:32Z",
+          "completed_at": "2026-09-22T04:20:42Z",
+          "duration_sec": 10,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106614387452",
+          "app": "github-actions"
+        },
         {
           "name": "qc_gate",
           "state": "failed",
@@ -911,26 +913,6 @@
           "completed_at": "2026-09-22T04:20:29Z",
           "duration_sec": 14,
           "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106614327599",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T04:20:32Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106614387461",
-          "app": "github-actions"
-        },
-        {
-          "name": "gate",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T04:20:32Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106614387452",
           "app": "github-actions"
         },
         {
@@ -951,6 +933,16 @@
           "completed_at": "2026-09-22T02:34:23Z",
           "duration_sec": 26,
           "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106594439641",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T04:20:32Z",
+          "completed_at": "2026-09-22T04:20:49Z",
+          "duration_sec": 17,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35679912258/job/106614387461",
           "app": "github-actions"
         },
         {
@@ -1076,7 +1068,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:36:56.926351+00:00",
-      "last_change": "2026-09-22T04:20:28.298685+00:00"
+      "last_change": "2026-09-22T04:21:20.444478+00:00"
     },
     {
       "repo": "dynamo-69e224d-data-processing-and-etl",
@@ -1961,7 +1953,7 @@
       "title": "Rework 7a8b3a7: align pool fixtures and strengthen search repair",
       "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/pull/7",
       "createdAt": "2026-09-22T02:09:50Z",
-      "updatedAt": "2026-09-22T04:20:31Z",
+      "updatedAt": "2026-09-22T04:21:00Z",
       "sha": "aaa339ea26d1d6cc637afd7f4afa2461f5b8acb1",
       "draft": false,
       "mergeable": true,
