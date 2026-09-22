@@ -1,77 +1,5 @@
 [
  {
-  "ts": "2026-09-21T19:00:12.021387+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check passed: pass2_suggestion"
- },
- {
-  "ts": "2026-09-21T19:08:46.779271+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "push",
-  "msg": "New commit pushed (154ce48)"
- },
- {
-  "ts": "2026-09-21T19:08:46.779271+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "running",
-  "msg": "Status failing \u2192 running"
- },
- {
-  "ts": "2026-09-21T19:08:46.779271+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "started",
-  "msg": "Check started: changes"
- },
- {
-  "ts": "2026-09-21T19:08:46.779271+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check recovered: gate"
- },
- {
-  "ts": "2026-09-21T19:08:46.779271+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check recovered: pass2"
- },
- {
-  "ts": "2026-09-21T19:09:24.129476+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "started",
-  "msg": "Check started: cosine_similarity"
- },
- {
-  "ts": "2026-09-21T19:09:24.129476+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check passed: changes"
- },
- {
-  "ts": "2026-09-21T19:10:46.957954+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "started",
-  "msg": "Check started: review"
- },
- {
-  "ts": "2026-09-21T19:10:46.957954+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check passed: changes"
- },
- {
-  "ts": "2026-09-21T19:10:46.957954+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
-  "ts": "2026-09-21T19:15:19.926628+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "started",
-  "msg": "Check started: similarity"
- },
- {
   "ts": "2026-09-21T19:15:19.926628+00:00",
   "pr": "dynamo-ed760a2-debugging-and-repair#11",
   "type": "passed",
@@ -2370,33 +2298,105 @@
   "msg": "Check passed: validation"
  },
  {
-  "ts": "2026-09-22T03:05:24.244721+00:00",
+  "ts": "2026-09-22T03:05:40.416004+00:00",
+  "pr": "dynamo-ed760a2-debugging-and-repair#11",
+  "type": "started",
+  "msg": "Check started: pass2"
+ },
+ {
+  "ts": "2026-09-22T03:05:40.416004+00:00",
+  "pr": "dynamo-ed760a2-debugging-and-repair#11",
+  "type": "passed",
+  "msg": "4 checks passed"
+ },
+ {
+  "ts": "2026-09-22T03:05:40.416004+00:00",
   "pr": "dynamo-de09a26-data-processing-and-etl#5",
   "type": "started",
   "msg": "Check started: qc_eval"
  },
  {
-  "ts": "2026-09-22T03:05:24.244721+00:00",
+  "ts": "2026-09-22T03:05:40.416004+00:00",
   "pr": "dynamo-de09a26-data-processing-and-etl#5",
   "type": "started",
   "msg": "Check started: qc_exec"
  },
  {
-  "ts": "2026-09-22T03:05:24.244721+00:00",
+  "ts": "2026-09-22T03:05:40.416004+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "passed",
+  "msg": "Check passed: ava_review"
+ },
+ {
+  "ts": "2026-09-22T03:05:40.416004+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "passed",
+  "msg": "Check passed: deep_review"
+ },
+ {
+  "ts": "2026-09-22T03:05:40.416004+00:00",
   "pr": "dynamo-de09a26-data-processing-and-etl#5",
   "type": "passed",
   "msg": "Check passed: tier1"
  },
  {
-  "ts": "2026-09-22T03:05:24.244721+00:00",
-  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
-  "type": "started",
-  "msg": "Check started: similarity"
+  "ts": "2026-09-22T03:05:40.416004+00:00",
+  "pr": "dynamo-b538a3d-systems-infrastructure-and-operations#7",
+  "type": "discovered",
+  "msg": "PR discovered: Fix #4 findings: align journaled tree recovery contract and verifier"
  },
  {
-  "ts": "2026-09-22T03:05:24.244721+00:00",
+  "ts": "2026-09-22T03:05:40.416004+00:00",
+  "pr": "dynamo-81dc97e-scientific-computing-and-domain-science#7",
+  "type": "started",
+  "msg": "Check started: pass2"
+ },
+ {
+  "ts": "2026-09-22T03:05:40.416004+00:00",
+  "pr": "dynamo-81dc97e-scientific-computing-and-domain-science#7",
+  "type": "passed",
+  "msg": "Check passed: ratelimit"
+ },
+ {
+  "ts": "2026-09-22T03:05:40.416004+00:00",
+  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
+  "type": "started",
+  "msg": "Check started: validation"
+ },
+ {
+  "ts": "2026-09-22T03:05:40.416004+00:00",
   "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
   "type": "passed",
   "msg": "Check passed: review"
+ },
+ {
+  "ts": "2026-09-22T03:05:40.416004+00:00",
+  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
+  "type": "passed",
+  "msg": "Check passed: similarity"
+ },
+ {
+  "ts": "2026-09-22T03:05:40.416004+00:00",
+  "pr": "dynamo-42bb5d9-debugging-and-repair#6",
+  "type": "started",
+  "msg": "Check started: pass2"
+ },
+ {
+  "ts": "2026-09-22T03:05:40.416004+00:00",
+  "pr": "dynamo-42bb5d9-debugging-and-repair#6",
+  "type": "passed",
+  "msg": "Check passed: ratelimit"
+ },
+ {
+  "ts": "2026-09-22T03:05:40.416004+00:00",
+  "pr": "dynamo-42bb5d9-debugging-and-repair#6",
+  "type": "passed",
+  "msg": "Check passed: similarity"
+ },
+ {
+  "ts": "2026-09-22T03:05:40.416004+00:00",
+  "pr": "dynamo-42bb5d9-debugging-and-repair#6",
+  "type": "passed",
+  "msg": "Check passed: validation"
  }
 ]
