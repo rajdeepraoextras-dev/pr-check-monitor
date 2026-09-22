@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T15:16:21.574634+00:00",
+  "snapshot_time": "2026-09-22T15:17:14.530110+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1302,7 +1302,7 @@
       "title": "Fix issue #4: make corruption provenance observable",
       "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/pull/5",
       "createdAt": "2026-09-22T02:24:35Z",
-      "updatedAt": "2026-09-22T15:16:35Z",
+      "updatedAt": "2026-09-22T15:16:54Z",
       "sha": "a2f566ea299287451f66fb95fc7cf905f62c185b",
       "draft": false,
       "mergeable": true,
@@ -1316,26 +1316,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 3,
-      "total": 4,
+      "passed": 4,
+      "total": 5,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "similarity",
-          "started_at": "2026-09-22T15:16:10Z"
+          "name": "validation",
+          "started_at": "2026-09-22T15:16:48Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "similarity",
+          "name": "validation",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T15:16:10Z",
+          "started_at": "2026-09-22T15:16:48Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35745070534/job/106808099701",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35745070534/job/106808346096",
           "app": "github-actions"
         },
         {
@@ -1367,11 +1367,21 @@
           "duration_sec": 416,
           "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35745070534/job/106805284639",
           "app": "github-actions"
+        },
+        {
+          "name": "similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T15:16:10Z",
+          "completed_at": "2026-09-22T15:16:43Z",
+          "duration_sec": 33,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35745070534/job/106808099701",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:31:38.750349+00:00",
-      "last_change": "2026-09-22T15:16:21.574634+00:00"
+      "last_change": "2026-09-22T15:17:14.530110+00:00"
     },
     {
       "repo": "dynamo-5f7c3e1-data-processing-and-etl",
