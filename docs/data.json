@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T04:48:58.666225+00:00",
+  "snapshot_time": "2026-09-22T04:49:51.378236+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1225,7 +1225,7 @@
       "title": "Rework: bound vevent signature recovery",
       "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/pull/4",
       "createdAt": "2026-09-22T02:20:51Z",
-      "updatedAt": "2026-09-22T04:48:51Z",
+      "updatedAt": "2026-09-22T04:49:58Z",
       "sha": "c72f91fbd1701e49bd9083c9404408d8cc9fcdf6",
       "draft": false,
       "mergeable": true,
@@ -1239,19 +1239,14 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 7,
+      "passed": 8,
       "total": 17,
       "skipped": 7,
       "failed": [
         "gate",
         "pass2"
       ],
-      "running": [
-        {
-          "name": "pass2_suggestion",
-          "started_at": "2026-09-22T04:48:44Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -1272,16 +1267,6 @@
           "completed_at": "2026-09-22T04:48:42Z",
           "duration_sec": 677,
           "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35687021673/job/106617610944",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T04:48:44Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35687021673/job/106619703126",
           "app": "github-actions"
         },
         {
@@ -1312,6 +1297,16 @@
           "completed_at": "2026-09-22T04:30:24Z",
           "duration_sec": 78,
           "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35687021673/job/106616002246",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T04:48:44Z",
+          "completed_at": "2026-09-22T04:50:02Z",
+          "duration_sec": 78,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5f7c3e1-data-processing-and-etl/actions/runs/35687021673/job/106619703126",
           "app": "github-actions"
         },
         {
@@ -1427,7 +1422,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:32:05.410861+00:00",
-      "last_change": "2026-09-22T04:48:58.666225+00:00"
+      "last_change": "2026-09-22T04:49:51.378236+00:00"
     },
     {
       "repo": "dynamo-42bb5d9-debugging-and-repair",
@@ -1639,7 +1634,7 @@
       "title": "Rework 7a8b3a7: align pool fixtures and strengthen search repair",
       "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/pull/7",
       "createdAt": "2026-09-22T02:09:50Z",
-      "updatedAt": "2026-09-22T04:21:00Z",
+      "updatedAt": "2026-09-22T04:49:38Z",
       "sha": "aaa339ea26d1d6cc637afd7f4afa2461f5b8acb1",
       "draft": false,
       "mergeable": true,
@@ -1653,26 +1648,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-22T04:20:51Z"
+          "name": "ava_review",
+          "started_at": "2026-09-22T04:49:32Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-22T04:49:32Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "pass2",
+          "name": "ava_review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T04:20:51Z",
+          "started_at": "2026-09-22T04:49:32Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106614447938",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106619844638",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-22T04:49:32Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106619844639",
           "app": "github-actions"
         },
         {
@@ -1693,6 +1702,16 @@
           "completed_at": "2026-09-22T04:12:31Z",
           "duration_sec": 74,
           "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106612573658",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T04:20:51Z",
+          "completed_at": "2026-09-22T04:49:29Z",
+          "duration_sec": 1718,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106614447938",
           "app": "github-actions"
         },
         {
@@ -1734,11 +1753,21 @@
           "duration_sec": 68,
           "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106614184497",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-22T04:49:30Z",
+          "completed_at": "2026-09-22T04:49:29Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106619845555",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:16:13.804311+00:00",
-      "last_change": "2026-09-22T04:21:23.731192+00:00"
+      "last_change": "2026-09-22T04:49:51.378236+00:00"
     },
     {
       "repo": "dynamo-b2366b5-machine-learning-and-ai",
