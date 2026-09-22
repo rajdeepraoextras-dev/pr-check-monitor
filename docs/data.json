@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T05:46:21.866730+00:00",
+  "snapshot_time": "2026-09-22T05:47:15.496824+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -743,7 +743,7 @@
       "title": "Rework 5da1f4a: cover dosing boundaries and accept CRLF output",
       "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/pull/9",
       "createdAt": "2026-09-22T02:33:37Z",
-      "updatedAt": "2026-09-22T05:28:50Z",
+      "updatedAt": "2026-09-22T05:47:10Z",
       "sha": "4b5970ba77bf1c2b8733962e7d411cf13cb11cc1",
       "draft": false,
       "mergeable": true,
@@ -757,26 +757,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 11,
-      "total": 13,
+      "passed": 13,
+      "total": 15,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_eval",
-          "started_at": "2026-09-22T05:27:20Z"
+          "name": "trials",
+          "started_at": "2026-09-22T05:47:17Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
+          "name": "trials",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T05:27:20Z",
+          "started_at": "2026-09-22T05:47:17Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35687356640/job/106627077381",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35687356640/job/106631006165",
           "app": "github-actions"
         },
         {
@@ -830,6 +830,16 @@
           "app": "github-actions"
         },
         {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T05:27:20Z",
+          "completed_at": "2026-09-22T05:46:58Z",
+          "duration_sec": 1178,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35687356640/job/106627077381",
+          "app": "github-actions"
+        },
+        {
           "name": "qc_exec",
           "state": "passed",
           "conclusion": "success",
@@ -837,6 +847,16 @@
           "completed_at": "2026-09-22T05:37:16Z",
           "duration_sec": 596,
           "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35687356640/job/106627077403",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T05:47:01Z",
+          "completed_at": "2026-09-22T05:47:14Z",
+          "duration_sec": 13,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/actions/runs/35687356640/job/106630952735",
           "app": "github-actions"
         },
         {
@@ -902,7 +922,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:36:56.926351+00:00",
-      "last_change": "2026-09-22T05:38:08.060929+00:00"
+      "last_change": "2026-09-22T05:47:15.496824+00:00"
     },
     {
       "repo": "dynamo-69e224d-data-processing-and-etl",
