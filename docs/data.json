@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T15:14:33.712481+00:00",
+  "snapshot_time": "2026-09-22T15:14:48.789343+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1049,16 +1049,19 @@
       "total": 2,
       "skipped": 0,
       "failed": [],
-      "running": [],
-      "queued": [
-        "cosine_similarity"
+      "running": [
+        {
+          "name": "cosine_similarity",
+          "started_at": "2026-09-22T15:14:48Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
           "name": "cosine_similarity",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T15:14:45Z",
+          "started_at": "2026-09-22T15:14:48Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-69e224d-data-processing-and-etl/actions/runs/35745905275/job/106807545246",
@@ -1077,7 +1080,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:36:43.743170+00:00",
-      "last_change": "2026-09-22T15:14:33.712481+00:00"
+      "last_change": "2026-09-22T15:14:48.789343+00:00"
     },
     {
       "repo": "dynamo-306ca9b-mathematics-and-formal-reasoning",
@@ -2028,48 +2031,6 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-21T18:43:27.877345+00:00",
-      "last_change": "2026-09-22T09:51:11.676711+00:00"
-    },
-    {
-      "repo": "dynamo-91b21b1-security",
-      "full_repo": "handshake-project-dynamo/dynamo-91b21b1-security",
-      "num": "10",
-      "title": "(error fetching)",
-      "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/pull/10",
-      "overall": "error",
-      "passed": 0,
-      "total": 0,
-      "skipped": 0,
-      "failed": [
-        "`gh api repos/handshake-project-dynamo/dynamo-91b21b1-security/pulls/10 --jq '{title, url: ` failed: gh: Not Found (HTTP 404)"
-      ],
-      "running": [],
-      "queued": [],
-      "checks": [],
-      "labels": [],
-      "submitted": false,
-      "first_seen": "2026-09-22T02:55:11.789412+00:00",
-      "last_change": "2026-09-22T08:33:53.059658+00:00"
-    },
-    {
-      "repo": "dynamo-b2366b5-machine-learning-and-ai",
-      "full_repo": "handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai",
-      "num": "12",
-      "title": "(error fetching)",
-      "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/pull/12",
-      "overall": "error",
-      "passed": 0,
-      "total": 0,
-      "skipped": 0,
-      "failed": [
-        "`gh api repos/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/pulls/12 --jq` failed: gh: Not Found (HTTP 404)"
-      ],
-      "running": [],
-      "queued": [],
-      "checks": [],
-      "labels": [],
-      "submitted": false,
-      "first_seen": "2026-09-21T20:44:17.057104+00:00",
       "last_change": "2026-09-22T09:51:11.676711+00:00"
     }
   ]
