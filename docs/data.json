@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T04:56:35.595884+00:00",
+  "snapshot_time": "2026-09-22T04:56:50.162985+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -511,7 +511,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:55:17.564817+00:00",
-      "last_change": "2026-09-22T04:56:35.595884+00:00"
+      "last_change": "2026-09-22T04:56:50.162985+00:00"
     },
     {
       "repo": "dynamo-0aa466f-data-querying-and-databases",
@@ -1769,17 +1769,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "ava_review",
-          "started_at": "2026-09-22T04:49:32Z"
-        },
-        {
-          "name": "deep_review",
           "started_at": "2026-09-22T04:49:32Z"
         }
       ],
@@ -1793,16 +1789,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106619844638",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T04:49:32Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106619844639",
           "app": "github-actions"
         },
         {
@@ -1823,6 +1809,16 @@
           "completed_at": "2026-09-22T04:12:31Z",
           "duration_sec": 74,
           "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106612573658",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T04:49:32Z",
+          "completed_at": "2026-09-22T04:56:58Z",
+          "duration_sec": 446,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106619844639",
           "app": "github-actions"
         },
         {
@@ -1888,7 +1884,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:16:13.804311+00:00",
-      "last_change": "2026-09-22T04:49:51.378236+00:00"
+      "last_change": "2026-09-22T04:56:50.162985+00:00"
     },
     {
       "repo": "dynamo-b2366b5-machine-learning-and-ai",
