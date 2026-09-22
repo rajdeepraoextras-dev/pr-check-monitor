@@ -1,35 +1,5 @@
 [
  {
-  "ts": "2026-09-22T06:22:36.269009+00:00",
-  "pr": "dynamo-81dc97e-scientific-computing-and-domain-science#7",
-  "type": "started",
-  "msg": "Check started: deep_review"
- },
- {
-  "ts": "2026-09-22T06:22:36.269009+00:00",
-  "pr": "dynamo-81dc97e-scientific-computing-and-domain-science#7",
-  "type": "passed",
-  "msg": "Check passed: pass2"
- },
- {
-  "ts": "2026-09-22T06:23:19.446272+00:00",
-  "pr": "dynamo-81dc97e-scientific-computing-and-domain-science#7",
-  "type": "started",
-  "msg": "Check started: ava_review"
- },
- {
-  "ts": "2026-09-22T06:23:19.446272+00:00",
-  "pr": "dynamo-81dc97e-scientific-computing-and-domain-science#7",
-  "type": "started",
-  "msg": "Check started: deep_review"
- },
- {
-  "ts": "2026-09-22T06:23:19.446272+00:00",
-  "pr": "dynamo-81dc97e-scientific-computing-and-domain-science#7",
-  "type": "passed",
-  "msg": "Check passed: pass2"
- },
- {
   "ts": "2026-09-22T06:24:27.869731+00:00",
   "pr": "dynamo-91b21b1-security#10",
   "type": "failing",
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-69e224d-data-processing-and-etl#6",
   "type": "passed",
   "msg": "Check passed: similarity"
+ },
+ {
+  "ts": "2026-09-22T16:39:26.492651+00:00",
+  "pr": "dynamo-69e224d-data-processing-and-etl#6",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-22T16:39:26.492651+00:00",
+  "pr": "dynamo-69e224d-data-processing-and-etl#6",
+  "type": "started",
+  "msg": "Check started: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-22T16:39:26.492651+00:00",
+  "pr": "dynamo-69e224d-data-processing-and-etl#6",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-22T16:39:26.492651+00:00",
+  "pr": "dynamo-69e224d-data-processing-and-etl#6",
+  "type": "failing",
+  "msg": "Check failed: ratelimit"
+ },
+ {
+  "ts": "2026-09-22T16:39:26.492651+00:00",
+  "pr": "dynamo-69e224d-data-processing-and-etl#6",
+  "type": "passed",
+  "msg": "Check passed: validation"
  }
 ]
