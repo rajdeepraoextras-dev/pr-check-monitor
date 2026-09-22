@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T06:25:20.137354+00:00",
+  "snapshot_time": "2026-09-22T06:26:11.770573+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -230,19 +230,14 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 7,
+      "passed": 8,
       "total": 17,
       "skipped": 7,
       "failed": [
         "gate",
         "pass2"
       ],
-      "running": [
-        {
-          "name": "pass2_suggestion",
-          "started_at": "2026-09-22T06:24:25Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -263,16 +258,6 @@
           "completed_at": "2026-09-22T06:24:21Z",
           "duration_sec": 3914,
           "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35689784428/job/106625462445",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T06:24:25Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35689784428/job/106638839376",
           "app": "github-actions"
         },
         {
@@ -303,6 +288,16 @@
           "completed_at": "2026-09-22T05:14:07Z",
           "duration_sec": 75,
           "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35689784428/job/106624194515",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T06:24:25Z",
+          "completed_at": "2026-09-22T06:25:26Z",
+          "duration_sec": 61,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35689784428/job/106638839376",
           "app": "github-actions"
         },
         {
@@ -418,7 +413,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:55:11.789412+00:00",
-      "last_change": "2026-09-22T06:25:20.137354+00:00"
+      "last_change": "2026-09-22T06:26:11.770573+00:00"
     },
     {
       "repo": "dynamo-81dc97e-scientific-computing-and-domain-science",
