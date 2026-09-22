@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T06:02:06.027446+00:00",
+  "snapshot_time": "2026-09-22T06:02:57.994287+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1319,17 +1319,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "qc_eval",
-          "started_at": "2026-09-22T05:56:55Z"
-        },
-        {
-          "name": "qc_exec",
           "started_at": "2026-09-22T05:56:55Z"
         }
       ],
@@ -1343,16 +1339,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35689916462/job/106632909840",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T05:56:55Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35689916462/job/106632909800",
           "app": "github-actions"
         },
         {
@@ -1403,6 +1389,16 @@
           "completed_at": "2026-09-22T05:45:55Z",
           "duration_sec": 1453,
           "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35689916462/job/106625970128",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T05:56:55Z",
+          "completed_at": "2026-09-22T06:02:27Z",
+          "duration_sec": 332,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35689916462/job/106632909800",
           "app": "github-actions"
         },
         {
@@ -1468,7 +1464,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:31:38.750349+00:00",
-      "last_change": "2026-09-22T05:58:51.441447+00:00"
+      "last_change": "2026-09-22T06:02:57.994287+00:00"
     },
     {
       "repo": "dynamo-5f7c3e1-data-processing-and-etl",
