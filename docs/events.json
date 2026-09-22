@@ -1,5 +1,47 @@
 [
  {
+  "ts": "2026-09-21T21:28:35.316723+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "passed",
+  "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-21T21:29:49.286329+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "started",
+  "msg": "Check started: pass2"
+ },
+ {
+  "ts": "2026-09-21T21:29:49.286329+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "passed",
+  "msg": "Check passed: ratelimit"
+ },
+ {
+  "ts": "2026-09-21T21:29:49.286329+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "passed",
+  "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-21T22:05:40.106436+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-21T22:05:40.106436+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "started",
+  "msg": "Check started: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-21T22:05:40.106436+00:00",
+  "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
+  "type": "started",
+  "msg": "Check started: gate"
+ },
+ {
   "ts": "2026-09-21T22:05:40.106436+00:00",
   "pr": "dynamo-b2366b5-machine-learning-and-ai#12",
   "type": "started",
@@ -2346,57 +2388,15 @@
   "msg": "Check passed: ava_review"
  },
  {
-  "ts": "2026-09-22T04:01:48.340707+00:00",
-  "pr": "dynamo-b538a3d-systems-infrastructure-and-operations#7",
-  "type": "started",
-  "msg": "Check started: qc_eval"
- },
- {
-  "ts": "2026-09-22T04:01:48.340707+00:00",
-  "pr": "dynamo-b538a3d-systems-infrastructure-and-operations#7",
-  "type": "started",
-  "msg": "Check started: qc_exec"
- },
- {
-  "ts": "2026-09-22T04:01:48.340707+00:00",
-  "pr": "dynamo-b538a3d-systems-infrastructure-and-operations#7",
-  "type": "passed",
-  "msg": "Check passed: tier1"
- },
- {
-  "ts": "2026-09-22T04:01:48.340707+00:00",
-  "pr": "dynamo-91b21b1-security#10",
-  "type": "push",
-  "msg": "New commit pushed (89be1ac)"
- },
- {
-  "ts": "2026-09-22T04:01:48.340707+00:00",
-  "pr": "dynamo-91b21b1-security#10",
-  "type": "running",
-  "msg": "Status failing \u2192 running"
- },
- {
-  "ts": "2026-09-22T04:01:48.340707+00:00",
+  "ts": "2026-09-22T04:02:12.080159+00:00",
   "pr": "dynamo-91b21b1-security#10",
   "type": "started",
   "msg": "Check started: cosine_similarity"
  },
  {
-  "ts": "2026-09-22T04:01:48.340707+00:00",
+  "ts": "2026-09-22T04:02:12.080159+00:00",
   "pr": "dynamo-91b21b1-security#10",
   "type": "passed",
-  "msg": "Check recovered: gate"
- },
- {
-  "ts": "2026-09-22T04:01:48.340707+00:00",
-  "pr": "dynamo-91b21b1-security#10",
-  "type": "passed",
-  "msg": "Check recovered: pass2"
- },
- {
-  "ts": "2026-09-22T04:01:48.340707+00:00",
-  "pr": "dynamo-0aa466f-data-querying-and-databases#8",
-  "type": "passed",
-  "msg": "Check passed: ava_review"
+  "msg": "Check passed: changes"
  }
 ]
