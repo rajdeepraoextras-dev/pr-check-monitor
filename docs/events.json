@@ -1,35 +1,5 @@
 [
  {
-  "ts": "2026-09-21T18:58:07.923096+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "failing",
-  "msg": "Check failed: gate"
- },
- {
-  "ts": "2026-09-21T18:58:07.923096+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "failing",
-  "msg": "Check failed: pass2"
- },
- {
-  "ts": "2026-09-21T18:58:44.167968+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check passed: claude-cost-report"
- },
- {
-  "ts": "2026-09-21T18:59:21.820593+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check passed: pass2_suggestion"
- },
- {
-  "ts": "2026-09-21T19:00:12.021387+00:00",
-  "pr": "dynamo-ed760a2-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check passed: claude-cost-report"
- },
- {
   "ts": "2026-09-21T19:00:12.021387+00:00",
   "pr": "dynamo-ed760a2-debugging-and-repair#11",
   "type": "passed",
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-42bb5d9-debugging-and-repair#6",
   "type": "passed",
   "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-22T03:05:24.244721+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "started",
+  "msg": "Check started: qc_eval"
+ },
+ {
+  "ts": "2026-09-22T03:05:24.244721+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "started",
+  "msg": "Check started: qc_exec"
+ },
+ {
+  "ts": "2026-09-22T03:05:24.244721+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "passed",
+  "msg": "Check passed: tier1"
+ },
+ {
+  "ts": "2026-09-22T03:05:24.244721+00:00",
+  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
+  "type": "started",
+  "msg": "Check started: similarity"
+ },
+ {
+  "ts": "2026-09-22T03:05:24.244721+00:00",
+  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
+  "type": "passed",
+  "msg": "Check passed: review"
  }
 ]
