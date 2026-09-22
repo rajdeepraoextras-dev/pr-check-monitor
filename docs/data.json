@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T03:24:16.183962+00:00",
+  "snapshot_time": "2026-09-22T03:25:02.409432+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1431,7 +1431,7 @@
       "title": "Rework 7a8b3a7: keep graded pools within the positive-capacity contract",
       "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/pull/7",
       "createdAt": "2026-09-22T02:09:50Z",
-      "updatedAt": "2026-09-22T03:11:33Z",
+      "updatedAt": "2026-09-22T03:25:12Z",
       "sha": "72d4aa189bf7802a46e89e8b6a26fb5980ec61e9",
       "draft": false,
       "mergeable": true,
@@ -1445,26 +1445,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 11,
-      "total": 13,
+      "passed": 13,
+      "total": 15,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_eval",
-          "started_at": "2026-09-22T03:11:26Z"
+          "name": "trials",
+          "started_at": "2026-09-22T03:25:02Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
+          "name": "trials",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T03:11:26Z",
+          "started_at": "2026-09-22T03:25:02Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35678455309/job/106601445832",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35678455309/job/106604029297",
           "app": "github-actions"
         },
         {
@@ -1518,6 +1518,16 @@
           "app": "github-actions"
         },
         {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T03:11:26Z",
+          "completed_at": "2026-09-22T03:24:42Z",
+          "duration_sec": 796,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35678455309/job/106601445832",
+          "app": "github-actions"
+        },
+        {
           "name": "qc_exec",
           "state": "passed",
           "conclusion": "success",
@@ -1525,6 +1535,16 @@
           "completed_at": "2026-09-22T03:19:14Z",
           "duration_sec": 468,
           "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35678455309/job/106601445783",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T03:24:46Z",
+          "completed_at": "2026-09-22T03:24:59Z",
+          "duration_sec": 13,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35678455309/job/106603979520",
           "app": "github-actions"
         },
         {
@@ -1590,7 +1610,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:16:13.804311+00:00",
-      "last_change": "2026-09-22T03:19:30.560255+00:00"
+      "last_change": "2026-09-22T03:25:02.409432+00:00"
     },
     {
       "repo": "dynamo-b2366b5-machine-learning-and-ai",
