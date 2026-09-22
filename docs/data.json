@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T05:13:56.124793+00:00",
+  "snapshot_time": "2026-09-22T05:14:09.918540+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -216,7 +216,7 @@
       "title": "Rework: opaque conformance evidence for #6",
       "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/pull/10",
       "createdAt": "2026-09-22T02:46:09Z",
-      "updatedAt": "2026-09-22T05:12:30Z",
+      "updatedAt": "2026-09-22T05:14:19Z",
       "sha": "3246e1fdb74e529e3e9e8aed42548763f38885a5",
       "draft": false,
       "mergeable": true,
@@ -230,26 +230,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 1,
-      "total": 2,
+      "passed": 2,
+      "total": 3,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "cosine_similarity",
-          "started_at": "2026-09-22T05:12:52Z"
+          "name": "review",
+          "started_at": "2026-09-22T05:14:10Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "cosine_similarity",
+          "name": "review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T05:12:52Z",
+          "started_at": "2026-09-22T05:14:10Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35689784428/job/106624194515",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35689784428/job/106624493053",
           "app": "github-actions"
         },
         {
@@ -261,11 +261,21 @@
           "duration_sec": 25,
           "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35689784428/job/106624109078",
           "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T05:12:52Z",
+          "completed_at": "2026-09-22T05:14:07Z",
+          "duration_sec": 75,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35689784428/job/106624194515",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:55:11.789412+00:00",
-      "last_change": "2026-09-22T05:12:54.151244+00:00"
+      "last_change": "2026-09-22T05:14:09.918540+00:00"
     },
     {
       "repo": "dynamo-81dc97e-scientific-computing-and-domain-science",
@@ -865,7 +875,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:45:01.537403+00:00",
-      "last_change": "2026-09-22T05:12:54.151244+00:00"
+      "last_change": "2026-09-22T05:14:09.918540+00:00"
     },
     {
       "repo": "dynamo-5da1f4a-regulated-knowledge-work-and-business-operations",
@@ -874,7 +884,7 @@
       "title": "Rework 5da1f4a: cover dosing boundaries and accept CRLF output",
       "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/pull/9",
       "createdAt": "2026-09-22T02:33:37Z",
-      "updatedAt": "2026-09-22T05:13:50Z",
+      "updatedAt": "2026-09-22T05:14:08Z",
       "sha": "4b5970ba77bf1c2b8733962e7d411cf13cb11cc1",
       "draft": false,
       "mergeable": true,
@@ -1007,7 +1017,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:36:56.926351+00:00",
-      "last_change": "2026-09-22T05:13:56.124793+00:00"
+      "last_change": "2026-09-22T05:14:09.918540+00:00"
     },
     {
       "repo": "dynamo-69e224d-data-processing-and-etl",
@@ -1115,7 +1125,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:36:43.743170+00:00",
-      "last_change": "2026-09-22T05:12:54.151244+00:00"
+      "last_change": "2026-09-22T05:14:09.918540+00:00"
     },
     {
       "repo": "dynamo-306ca9b-mathematics-and-formal-reasoning",
@@ -1250,16 +1260,19 @@
       "total": 1,
       "skipped": 0,
       "failed": [],
-      "running": [],
-      "queued": [
-        "changes"
+      "running": [
+        {
+          "name": "changes",
+          "started_at": "2026-09-22T05:14:14Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
           "name": "changes",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T05:14:12Z",
+          "started_at": "2026-09-22T05:14:14Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-de09a26-data-processing-and-etl/actions/runs/35689916462/job/106624507067",
@@ -1268,7 +1281,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:31:38.750349+00:00",
-      "last_change": "2026-09-22T05:13:56.124793+00:00"
+      "last_change": "2026-09-22T05:14:09.918540+00:00"
     },
     {
       "repo": "dynamo-5f7c3e1-data-processing-and-etl",
@@ -1588,7 +1601,7 @@
       "title": "Rework 7a8b3a7: align pool fixtures and strengthen search repair",
       "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/pull/7",
       "createdAt": "2026-09-22T02:09:50Z",
-      "updatedAt": "2026-09-22T04:59:23Z",
+      "updatedAt": "2026-09-22T05:14:21Z",
       "sha": "aaa339ea26d1d6cc637afd7f4afa2461f5b8acb1",
       "draft": false,
       "mergeable": true,
@@ -1602,26 +1615,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 12,
-      "total": 14,
+      "passed": 13,
+      "total": 15,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_gate",
-          "started_at": "2026-09-22T05:14:13Z"
+          "name": "trials",
+          "started_at": "2026-09-22T05:14:28Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_gate",
+          "name": "trials",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T05:14:13Z",
+          "started_at": "2026-09-22T05:14:28Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106624502038",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106624552610",
           "app": "github-actions"
         },
         {
@@ -1695,6 +1708,16 @@
           "app": "github-actions"
         },
         {
+          "name": "qc_gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T05:14:13Z",
+          "completed_at": "2026-09-22T05:14:26Z",
+          "duration_sec": 13,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106624502038",
+          "app": "github-actions"
+        },
+        {
           "name": "ratelimit",
           "state": "passed",
           "conclusion": "success",
@@ -1757,7 +1780,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:16:13.804311+00:00",
-      "last_change": "2026-09-22T05:13:56.124793+00:00"
+      "last_change": "2026-09-22T05:14:09.918540+00:00"
     },
     {
       "repo": "dynamo-b2366b5-machine-learning-and-ai",
