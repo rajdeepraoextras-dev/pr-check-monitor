@@ -1,36 +1,6 @@
 [
  {
   "ts": "2026-09-22T04:36:35.939189+00:00",
-  "pr": "dynamo-69e224d-data-processing-and-etl#6",
-  "type": "started",
-  "msg": "Check started: review"
- },
- {
-  "ts": "2026-09-22T04:36:35.939189+00:00",
-  "pr": "dynamo-69e224d-data-processing-and-etl#6",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
-  "ts": "2026-09-22T04:36:35.939189+00:00",
-  "pr": "dynamo-306ca9b-mathematics-and-formal-reasoning#8",
-  "type": "started",
-  "msg": "Check started: similarity"
- },
- {
-  "ts": "2026-09-22T04:36:35.939189+00:00",
-  "pr": "dynamo-306ca9b-mathematics-and-formal-reasoning#8",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
-  "ts": "2026-09-22T04:36:35.939189+00:00",
-  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
-  "type": "started",
-  "msg": "Check started: validation"
- },
- {
-  "ts": "2026-09-22T04:36:35.939189+00:00",
   "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
   "type": "passed",
   "msg": "Check passed: similarity"
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-306ca9b-mathematics-and-formal-reasoning#8",
   "type": "passed",
   "msg": "Check passed: trials"
+ },
+ {
+  "ts": "2026-09-22T07:26:20.201777+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-22T07:26:20.201777+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-22T07:26:20.201777+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-22T07:26:20.201777+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-22T07:26:20.201777+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "passed",
+  "msg": "Check passed: pass2_suggestion"
  }
 ]
