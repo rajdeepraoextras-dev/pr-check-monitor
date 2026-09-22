@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T16:39:26.492651+00:00",
+  "snapshot_time": "2026-09-22T16:39:42.008409+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -927,19 +927,14 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 5,
+      "passed": 6,
       "total": 17,
       "skipped": 9,
       "failed": [
         "gate",
         "ratelimit"
       ],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-22T16:39:30Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -963,16 +958,6 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T16:39:30Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-69e224d-data-processing-and-etl/actions/runs/35754507132/job/106840295432",
-          "app": "github-actions"
-        },
-        {
           "name": "changes",
           "state": "passed",
           "conclusion": "success",
@@ -980,6 +965,16 @@
           "completed_at": "2026-09-22T16:31:52Z",
           "duration_sec": 26,
           "url": "https://github.com/handshake-project-dynamo/dynamo-69e224d-data-processing-and-etl/actions/runs/35754507132/job/106837278054",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T16:39:30Z",
+          "completed_at": "2026-09-22T16:39:46Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-69e224d-data-processing-and-etl/actions/runs/35754507132/job/106840295432",
           "app": "github-actions"
         },
         {
@@ -1115,7 +1110,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:36:43.743170+00:00",
-      "last_change": "2026-09-22T16:39:26.492651+00:00"
+      "last_change": "2026-09-22T16:39:42.008409+00:00"
     },
     {
       "repo": "dynamo-306ca9b-mathematics-and-formal-reasoning",
