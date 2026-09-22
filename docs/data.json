@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T02:52:59.264468+00:00",
+  "snapshot_time": "2026-09-22T02:54:37.185431+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -827,7 +827,7 @@
       "title": "Fix sound verifier finding from #5: separate finish runs",
       "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/pull/6",
       "createdAt": "2026-09-22T02:19:56Z",
-      "updatedAt": "2026-09-22T02:52:48Z",
+      "updatedAt": "2026-09-22T02:54:34Z",
       "sha": "69966e10be9830ad4f5c575ba13a35c1fbe0eab8",
       "draft": false,
       "mergeable": true,
@@ -841,26 +841,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 1,
-      "total": 2,
+      "passed": 2,
+      "total": 3,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "cosine_similarity",
-          "started_at": "2026-09-22T02:52:57Z"
+          "name": "review",
+          "started_at": "2026-09-22T02:54:25Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "cosine_similarity",
+          "name": "review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T02:52:57Z",
+          "started_at": "2026-09-22T02:54:25Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106597996953",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106598266617",
           "app": "github-actions"
         },
         {
@@ -872,11 +872,21 @@
           "duration_sec": 26,
           "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106597906090",
           "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T02:52:57Z",
+          "completed_at": "2026-09-22T02:54:23Z",
+          "duration_sec": 86,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106597996953",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:32:14.410214+00:00",
-      "last_change": "2026-09-22T02:52:59.264468+00:00"
+      "last_change": "2026-09-22T02:54:37.185431+00:00"
     },
     {
       "repo": "dynamo-7a8b3a7-security",
@@ -1199,7 +1209,7 @@
       "title": "Rework: publish the immediate priority ceiling contract and grade it directly",
       "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/pull/11",
       "createdAt": "2026-09-21T18:41:11Z",
-      "updatedAt": "2026-09-22T02:53:53Z",
+      "updatedAt": "2026-09-22T02:55:10Z",
       "sha": "df447744afbf6fb12cbc3dbaa1402b53fe273d6b",
       "draft": false,
       "mergeable": true,
@@ -1210,36 +1220,55 @@
       "head": "rework/ed760a2-ipcp-contract",
       "base": "main",
       "labels": [
-        "in-progress",
-        "needs-revision"
+        "in-progress"
       ],
       "overall": "running",
-      "passed": 0,
-      "total": 1,
+      "passed": 2,
+      "total": 3,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "changes",
-          "started_at": "2026-09-22T02:53:37Z"
+          "name": "review",
+          "started_at": "2026-09-22T02:55:19Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "changes",
+          "name": "review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T02:53:37Z",
+          "started_at": "2026-09-22T02:55:19Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35681130380/job/106598429735",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T02:53:37Z",
+          "completed_at": "2026-09-22T02:54:02Z",
+          "duration_sec": 25,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35681130380/job/106598117507",
+          "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T02:54:04Z",
+          "completed_at": "2026-09-22T02:55:16Z",
+          "duration_sec": 72,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ed760a2-debugging-and-repair/actions/runs/35681130380/job/106598203552",
           "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-21T18:43:27.877345+00:00",
-      "last_change": "2026-09-22T02:52:59.264468+00:00"
+      "last_change": "2026-09-22T02:54:37.185431+00:00"
     },
     {
       "repo": "dynamo-b27e15c-systems-infrastructure-and-operations",
