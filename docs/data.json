@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T03:59:33.615283+00:00",
+  "snapshot_time": "2026-09-22T04:00:26.046856+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Fix #4 findings: align journaled tree recovery contract and verifier",
       "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/pull/7",
       "createdAt": "2026-09-22T02:58:28Z",
-      "updatedAt": "2026-09-22T03:59:01Z",
+      "updatedAt": "2026-09-22T04:00:01Z",
       "sha": "b01f4a02813a038c29947b9d52af3f0649e4f2d0",
       "draft": false,
       "mergeable": true,
@@ -27,26 +27,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 9,
-      "total": 11,
+      "passed": 10,
+      "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "tier1",
-          "started_at": "2026-09-22T03:59:12Z"
+          "name": "qc_eval",
+          "started_at": "2026-09-22T03:59:54Z"
+        },
+        {
+          "name": "qc_exec",
+          "started_at": "2026-09-22T03:59:53Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "tier1",
+          "name": "qc_eval",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T03:59:12Z",
+          "started_at": "2026-09-22T03:59:54Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106610269258",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106610385296",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-22T03:59:53Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106610385262",
           "app": "github-actions"
         },
         {
@@ -130,6 +144,16 @@
           "app": "github-actions"
         },
         {
+          "name": "tier1",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T03:59:12Z",
+          "completed_at": "2026-09-22T03:59:49Z",
+          "duration_sec": 37,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106610269258",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -152,7 +176,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T03:14:55.251795+00:00",
-      "last_change": "2026-09-22T03:59:33.615283+00:00"
+      "last_change": "2026-09-22T04:00:26.046856+00:00"
     },
     {
       "repo": "dynamo-91b21b1-security",
@@ -885,7 +909,7 @@
       "title": "Rework 5da1f4a: cover dosing boundaries and accept CRLF output",
       "url": "https://github.com/handshake-project-dynamo/dynamo-5da1f4a-regulated-knowledge-work-and-business-operations/pull/9",
       "createdAt": "2026-09-22T02:33:37Z",
-      "updatedAt": "2026-09-22T03:57:13Z",
+      "updatedAt": "2026-09-22T03:59:53Z",
       "sha": "2a2d9b56d86e67489d51fe2a576a0f824128cc58",
       "draft": false,
       "mergeable": true,
