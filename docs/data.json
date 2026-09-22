@@ -1,11 +1,79 @@
 {
-  "snapshot_time": "2026-09-22T02:10:20.298736+00:00",
+  "snapshot_time": "2026-09-22T02:15:47.779150+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-7a8b3a7-security",
+      "full_repo": "handshake-project-dynamo/dynamo-7a8b3a7-security",
+      "num": "7",
+      "title": "Rework 7a8b3a7: keep graded pools within the positive-capacity contract",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/pull/7",
+      "createdAt": "2026-09-22T02:09:50Z",
+      "updatedAt": "2026-09-22T02:11:48Z",
+      "sha": "72d4aa189bf7802a46e89e8b6a26fb5980ec61e9",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 43,
+      "deletions": 15,
+      "changedFiles": 13,
+      "head": "rework/7a8b3a7-positive-capacity",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 2,
+      "total": 3,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "review",
+          "started_at": "2026-09-22T02:11:38Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-22T02:11:38Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35678455309/job/106590219044",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T02:09:57Z",
+          "completed_at": "2026-09-22T02:10:22Z",
+          "duration_sec": 25,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35678455309/job/106589896752",
+          "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T02:10:24Z",
+          "completed_at": "2026-09-22T02:11:36Z",
+          "duration_sec": 72,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35678455309/job/106589986641",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-22T02:16:13.804311+00:00",
+      "last_change": "2026-09-22T02:15:47.779150+00:00"
+    },
     {
       "repo": "dynamo-b2366b5-machine-learning-and-ai",
       "full_repo": "handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai",
@@ -1026,209 +1094,6 @@
       "submitted": false,
       "first_seen": "2026-09-21T02:20:45.404061+00:00",
       "last_change": "2026-09-21T07:11:52.495524+00:00"
-    },
-    {
-      "repo": "dynamo-d1d0486-debugging-and-repair",
-      "full_repo": "handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair",
-      "num": "8",
-      "title": "Fix issue #6 stage-name contract and the validation rules the verifier left ungraded",
-      "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/pull/8",
-      "createdAt": "2026-09-21T02:05:45Z",
-      "updatedAt": "2026-09-21T05:07:07Z",
-      "sha": "4c2d8332e09c5e8270d69c2ae72c684e396beb0d",
-      "draft": false,
-      "mergeable": true,
-      "reviewDecision": "",
-      "additions": 1748,
-      "deletions": 240,
-      "changedFiles": 8,
-      "head": "rework/d1d0486-scheduler-contract",
-      "base": "main",
-      "labels": [
-        "accepted"
-      ],
-      "overall": "passed",
-      "passed": 16,
-      "total": 17,
-      "skipped": 1,
-      "failed": [],
-      "running": [],
-      "queued": [],
-      "checks": [
-        {
-          "name": "ava_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T03:24:45Z",
-          "completed_at": "2026-09-21T03:37:34Z",
-          "duration_sec": 769,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106203679203",
-          "app": "github-actions"
-        },
-        {
-          "name": "changes",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T02:05:52Z",
-          "completed_at": "2026-09-21T02:06:16Z",
-          "duration_sec": 24,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106191155977",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T05:07:00Z",
-          "completed_at": "2026-09-21T05:07:16Z",
-          "duration_sec": 16,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106220360475",
-          "app": "github-actions"
-        },
-        {
-          "name": "cosine_similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T02:06:19Z",
-          "completed_at": "2026-09-21T02:07:36Z",
-          "duration_sec": 77,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106191223873",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T03:24:45Z",
-          "completed_at": "2026-09-21T03:32:33Z",
-          "duration_sec": 468,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106203679228",
-          "app": "github-actions"
-        },
-        {
-          "name": "gate",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T05:07:00Z",
-          "completed_at": "2026-09-21T05:07:11Z",
-          "duration_sec": 11,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106220360462",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T02:19:06Z",
-          "completed_at": "2026-09-21T03:24:43Z",
-          "duration_sec": 3937,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106193307557",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_eval",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T03:38:06Z",
-          "completed_at": "2026-09-21T03:58:57Z",
-          "duration_sec": 1251,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106205813739",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T03:38:06Z",
-          "completed_at": "2026-09-21T03:51:25Z",
-          "duration_sec": 799,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106205813775",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_gate",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T03:58:59Z",
-          "completed_at": "2026-09-21T03:59:13Z",
-          "duration_sec": 14,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106209060286",
-          "app": "github-actions"
-        },
-        {
-          "name": "ratelimit",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T02:18:56Z",
-          "completed_at": "2026-09-21T02:19:03Z",
-          "duration_sec": 7,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106193281155",
-          "app": "github-actions"
-        },
-        {
-          "name": "review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T02:07:39Z",
-          "completed_at": "2026-09-21T02:16:36Z",
-          "duration_sec": 537,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106191439671",
-          "app": "github-actions"
-        },
-        {
-          "name": "similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T02:16:39Z",
-          "completed_at": "2026-09-21T02:17:05Z",
-          "duration_sec": 26,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106192914276",
-          "app": "github-actions"
-        },
-        {
-          "name": "tier1",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T03:37:36Z",
-          "completed_at": "2026-09-21T03:38:04Z",
-          "duration_sec": 28,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106205730828",
-          "app": "github-actions"
-        },
-        {
-          "name": "trials",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T03:59:15Z",
-          "completed_at": "2026-09-21T05:06:57Z",
-          "duration_sec": 4062,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106209098202",
-          "app": "github-actions"
-        },
-        {
-          "name": "validation",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-21T02:17:08Z",
-          "completed_at": "2026-09-21T02:18:54Z",
-          "duration_sec": 106,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106192993650",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-21T03:24:43Z",
-          "completed_at": "2026-09-21T03:24:43Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d1d0486-debugging-and-repair/actions/runs/35553009899/job/106203679936",
-          "app": "github-actions"
-        }
-      ],
-      "submitted": false,
-      "first_seen": "2026-09-21T02:07:20.355733+00:00",
-      "last_change": "2026-09-21T05:08:07.591021+00:00"
     }
   ]
 }
