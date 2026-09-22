@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T05:17:35.721195+00:00",
+  "snapshot_time": "2026-09-22T05:18:31.223446+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -216,7 +216,7 @@
       "title": "Rework: opaque conformance evidence for #6",
       "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/pull/10",
       "createdAt": "2026-09-22T02:46:09Z",
-      "updatedAt": "2026-09-22T05:17:09Z",
+      "updatedAt": "2026-09-22T05:17:53Z",
       "sha": "3246e1fdb74e529e3e9e8aed42548763f38885a5",
       "draft": false,
       "mergeable": true,
@@ -230,26 +230,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 3,
-      "total": 4,
+      "passed": 4,
+      "total": 5,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "similarity",
-          "started_at": "2026-09-22T05:17:20Z"
+          "name": "validation",
+          "started_at": "2026-09-22T05:17:47Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "similarity",
+          "name": "validation",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T05:17:20Z",
+          "started_at": "2026-09-22T05:17:47Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35689784428/job/106625117913",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35689784428/job/106625205783",
           "app": "github-actions"
         },
         {
@@ -281,11 +281,21 @@
           "duration_sec": 187,
           "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35689784428/job/106624493053",
           "app": "github-actions"
+        },
+        {
+          "name": "similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T05:17:20Z",
+          "completed_at": "2026-09-22T05:17:44Z",
+          "duration_sec": 24,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35689784428/job/106625117913",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:55:11.789412+00:00",
-      "last_change": "2026-09-22T05:17:35.721195+00:00"
+      "last_change": "2026-09-22T05:18:31.223446+00:00"
     },
     {
       "repo": "dynamo-81dc97e-scientific-computing-and-domain-science",
@@ -294,204 +304,46 @@
       "title": "Rework 81dc97e: enforce exact nested report schemas",
       "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/pull/7",
       "createdAt": "2026-09-22T02:40:04Z",
-      "updatedAt": "2026-09-22T04:56:48Z",
-      "sha": "f6ae3aa4ff9d793dee207bb0b98594dac26327a1",
+      "updatedAt": "2026-09-22T05:18:27Z",
+      "sha": "e44bfb663b523f7d04387090b447a610462b41d6",
       "draft": false,
       "mergeable": true,
       "reviewDecision": "",
-      "additions": 40,
-      "deletions": 2,
-      "changedFiles": 2,
+      "additions": 107,
+      "deletions": 30,
+      "changedFiles": 5,
       "head": "rework/81dc97e-exact-report-schema",
       "base": "main",
       "labels": [
         "needs-revision"
       ],
-      "overall": "failing",
-      "passed": 14,
-      "total": 17,
-      "skipped": 1,
-      "failed": [
-        "gate",
-        "trials"
+      "overall": "running",
+      "passed": 0,
+      "total": 1,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "changes",
+          "started_at": "2026-09-22T05:18:33Z"
+        }
       ],
-      "running": [],
       "queued": [],
       "checks": [
         {
-          "name": "gate",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-22T04:56:41Z",
-          "completed_at": "2026-09-22T04:56:51Z",
-          "duration_sec": 10,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106621148904",
-          "app": "github-actions"
-        },
-        {
-          "name": "trials",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-22T03:50:08Z",
-          "completed_at": "2026-09-22T04:56:35Z",
-          "duration_sec": 3987,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106608639933",
-          "app": "github-actions"
-        },
-        {
-          "name": "ava_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:33:37Z",
-          "completed_at": "2026-09-22T03:41:13Z",
-          "duration_sec": 456,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106605631926",
-          "app": "github-actions"
-        },
-        {
           "name": "changes",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T02:52:58Z",
-          "completed_at": "2026-09-22T02:53:22Z",
-          "duration_sec": 24,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106598001417",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T04:56:41Z",
-          "completed_at": "2026-09-22T04:56:58Z",
-          "duration_sec": 17,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106621148847",
-          "app": "github-actions"
-        },
-        {
-          "name": "cosine_similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T02:53:25Z",
-          "completed_at": "2026-09-22T02:54:43Z",
-          "duration_sec": 78,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106598078028",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:33:37Z",
-          "completed_at": "2026-09-22T03:38:26Z",
-          "duration_sec": 289,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106605631975",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:00:56Z",
-          "completed_at": "2026-09-22T03:33:34Z",
-          "duration_sec": 1958,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106599458407",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_eval",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:41:43Z",
-          "completed_at": "2026-09-22T03:49:36Z",
-          "duration_sec": 473,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106607128121",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:41:43Z",
-          "completed_at": "2026-09-22T03:49:45Z",
-          "duration_sec": 482,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106607128102",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_gate",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:49:51Z",
-          "completed_at": "2026-09-22T03:50:05Z",
-          "duration_sec": 14,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106608580992",
-          "app": "github-actions"
-        },
-        {
-          "name": "ratelimit",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:00:45Z",
-          "completed_at": "2026-09-22T03:00:52Z",
-          "duration_sec": 7,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106599419834",
-          "app": "github-actions"
-        },
-        {
-          "name": "review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T02:54:45Z",
-          "completed_at": "2026-09-22T02:57:46Z",
-          "duration_sec": 181,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106598329526",
-          "app": "github-actions"
-        },
-        {
-          "name": "similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T02:57:50Z",
-          "completed_at": "2026-09-22T02:58:17Z",
-          "duration_sec": 27,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106598892504",
-          "app": "github-actions"
-        },
-        {
-          "name": "tier1",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:41:16Z",
-          "completed_at": "2026-09-22T03:41:40Z",
-          "duration_sec": 24,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106607046079",
-          "app": "github-actions"
-        },
-        {
-          "name": "validation",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T02:58:22Z",
-          "completed_at": "2026-09-22T03:00:41Z",
-          "duration_sec": 139,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106598978674",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-22T03:33:35Z",
-          "completed_at": "2026-09-22T03:33:34Z",
-          "duration_sec": -1,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106605632969",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-22T05:18:33Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35690195600/job/106625354208",
           "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:55:17.564817+00:00",
-      "last_change": "2026-09-22T04:57:46.462982+00:00"
+      "last_change": "2026-09-22T05:18:31.223446+00:00"
     },
     {
       "repo": "dynamo-0aa466f-data-querying-and-databases",
