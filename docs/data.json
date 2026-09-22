@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T03:58:39.735294+00:00",
+  "snapshot_time": "2026-09-22T03:59:07.090768+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Fix #4 findings: align journaled tree recovery contract and verifier",
       "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/pull/7",
       "createdAt": "2026-09-22T02:58:28Z",
-      "updatedAt": "2026-09-22T03:57:21Z",
+      "updatedAt": "2026-09-22T03:59:01Z",
       "sha": "b01f4a02813a038c29947b9d52af3f0649e4f2d0",
       "draft": false,
       "mergeable": true,
@@ -27,25 +27,35 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 9,
+      "total": 11,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "ava_review",
-          "started_at": "2026-09-22T03:49:21Z"
+          "name": "tier1",
+          "started_at": "2026-09-22T03:59:12Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "ava_review",
+          "name": "tier1",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T03:49:21Z",
+          "started_at": "2026-09-22T03:59:12Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106610269258",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T03:49:21Z",
+          "completed_at": "2026-09-22T03:59:07Z",
+          "duration_sec": 586,
           "url": "https://github.com/handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations/actions/runs/35681430418/job/106608499278",
           "app": "github-actions"
         },
@@ -142,7 +152,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T03:14:55.251795+00:00",
-      "last_change": "2026-09-22T03:57:45.702665+00:00"
+      "last_change": "2026-09-22T03:59:07.090768+00:00"
     },
     {
       "repo": "dynamo-91b21b1-security",
@@ -151,7 +161,7 @@
       "title": "Rework: opaque conformance evidence for #6",
       "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/pull/10",
       "createdAt": "2026-09-22T02:46:09Z",
-      "updatedAt": "2026-09-22T03:58:13Z",
+      "updatedAt": "2026-09-22T03:58:46Z",
       "sha": "d7739a6767a99a6af31b58d3825876e447252247",
       "draft": false,
       "mergeable": true,
@@ -165,19 +175,14 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 7,
+      "passed": 8,
       "total": 17,
       "skipped": 7,
       "failed": [
         "gate",
         "pass2"
       ],
-      "running": [
-        {
-          "name": "pass2_suggestion",
-          "started_at": "2026-09-22T03:58:05Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -198,16 +203,6 @@
           "completed_at": "2026-09-22T03:58:01Z",
           "duration_sec": 3851,
           "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35680677621/job/106598159339",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T03:58:05Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35680677621/job/106610076038",
           "app": "github-actions"
         },
         {
@@ -238,6 +233,16 @@
           "completed_at": "2026-09-22T02:48:17Z",
           "duration_sec": 84,
           "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35680677621/job/106596872849",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T03:58:05Z",
+          "completed_at": "2026-09-22T03:58:52Z",
+          "duration_sec": 47,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35680677621/job/106610076038",
           "app": "github-actions"
         },
         {
@@ -353,7 +358,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:55:11.789412+00:00",
-      "last_change": "2026-09-22T03:58:39.735294+00:00"
+      "last_change": "2026-09-22T03:59:07.090768+00:00"
     },
     {
       "repo": "dynamo-81dc97e-scientific-computing-and-domain-science",
@@ -1013,7 +1018,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:36:56.926351+00:00",
-      "last_change": "2026-09-22T03:57:45.702665+00:00"
+      "last_change": "2026-09-22T03:59:07.090768+00:00"
     },
     {
       "repo": "dynamo-69e224d-data-processing-and-etl",
@@ -1022,7 +1027,7 @@
       "title": "Rework 69e224d: Specify the codec and isolate held-out answers",
       "url": "https://github.com/handshake-project-dynamo/dynamo-69e224d-data-processing-and-etl/pull/6",
       "createdAt": "2026-09-22T02:32:07Z",
-      "updatedAt": "2026-09-22T03:58:34Z",
+      "updatedAt": "2026-09-22T03:58:52Z",
       "sha": "f2e1043b2a37f43830a1e401f3b13dbda510cf9a",
       "draft": false,
       "mergeable": true,
@@ -1081,7 +1086,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:36:43.743170+00:00",
-      "last_change": "2026-09-22T03:58:39.735294+00:00"
+      "last_change": "2026-09-22T03:59:07.090768+00:00"
     },
     {
       "repo": "dynamo-306ca9b-mathematics-and-formal-reasoning",
@@ -1291,7 +1296,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:31:38.750349+00:00",
-      "last_change": "2026-09-22T03:57:45.702665+00:00"
+      "last_change": "2026-09-22T03:59:07.090768+00:00"
     },
     {
       "repo": "dynamo-5f7c3e1-data-processing-and-etl",
@@ -1479,7 +1484,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:32:05.410861+00:00",
-      "last_change": "2026-09-22T03:57:45.702665+00:00"
+      "last_change": "2026-09-22T03:59:07.090768+00:00"
     },
     {
       "repo": "dynamo-42bb5d9-debugging-and-repair",
@@ -1488,7 +1493,7 @@
       "title": "Fix sound verifier finding from #5: separate finish runs",
       "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/pull/6",
       "createdAt": "2026-09-22T02:19:56Z",
-      "updatedAt": "2026-09-22T03:46:16Z",
+      "updatedAt": "2026-09-22T03:59:19Z",
       "sha": "69966e10be9830ad4f5c575ba13a35c1fbe0eab8",
       "draft": false,
       "mergeable": true,
@@ -1502,26 +1507,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 11,
-      "total": 13,
+      "passed": 13,
+      "total": 15,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_eval",
-          "started_at": "2026-09-22T03:46:10Z"
+          "name": "trials",
+          "started_at": "2026-09-22T03:59:27Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
+          "name": "trials",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T03:46:10Z",
+          "started_at": "2026-09-22T03:59:27Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106607933228",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106610315148",
           "app": "github-actions"
         },
         {
@@ -1575,6 +1580,16 @@
           "app": "github-actions"
         },
         {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T03:46:10Z",
+          "completed_at": "2026-09-22T03:59:06Z",
+          "duration_sec": 776,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106607933228",
+          "app": "github-actions"
+        },
+        {
           "name": "qc_exec",
           "state": "passed",
           "conclusion": "success",
@@ -1582,6 +1597,16 @@
           "completed_at": "2026-09-22T03:49:38Z",
           "duration_sec": 207,
           "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106607933247",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T03:59:10Z",
+          "completed_at": "2026-09-22T03:59:24Z",
+          "duration_sec": 14,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106610264981",
           "app": "github-actions"
         },
         {
@@ -1647,7 +1672,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:32:14.410214+00:00",
-      "last_change": "2026-09-22T03:27:59.913417+00:00"
+      "last_change": "2026-09-22T03:59:07.090768+00:00"
     },
     {
       "repo": "dynamo-7a8b3a7-security",
@@ -1853,7 +1878,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:16:13.804311+00:00",
-      "last_change": "2026-09-22T03:58:39.735294+00:00"
+      "last_change": "2026-09-22T03:59:07.090768+00:00"
     },
     {
       "repo": "dynamo-b2366b5-machine-learning-and-ai",
