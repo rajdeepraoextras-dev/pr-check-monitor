@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T00:54:30.443955+00:00",
+  "snapshot_time": "2026-09-22T00:55:10.134927+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: publish the latent partition, role evidence and causal estimator",
       "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/pull/12",
       "createdAt": "2026-09-21T20:41:21Z",
-      "updatedAt": "2026-09-22T00:53:45Z",
+      "updatedAt": "2026-09-22T00:54:46Z",
       "sha": "6266c0e068d6d97a5d5b9f4c282e55bac6260a17",
       "draft": false,
       "mergeable": true,
@@ -27,19 +27,14 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 7,
+      "passed": 8,
       "total": 17,
       "skipped": 7,
       "failed": [
         "gate",
         "pass2"
       ],
-      "running": [
-        {
-          "name": "pass2_suggestion",
-          "started_at": "2026-09-22T00:53:38Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -60,16 +55,6 @@
           "completed_at": "2026-09-22T00:53:36Z",
           "duration_sec": 1433,
           "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35671543914/job/106570887153",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-22T00:53:38Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35671543914/job/106575806425",
           "app": "github-actions"
         },
         {
@@ -100,6 +85,16 @@
           "completed_at": "2026-09-22T00:22:07Z",
           "duration_sec": 64,
           "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35671543914/job/106569001608",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T00:53:38Z",
+          "completed_at": "2026-09-22T00:54:51Z",
+          "duration_sec": 73,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/actions/runs/35671543914/job/106575806425",
           "app": "github-actions"
         },
         {
@@ -215,7 +210,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-21T20:44:17.057104+00:00",
-      "last_change": "2026-09-22T00:54:30.443955+00:00"
+      "last_change": "2026-09-22T00:55:10.134927+00:00"
     },
     {
       "repo": "dynamo-ed760a2-debugging-and-repair",
