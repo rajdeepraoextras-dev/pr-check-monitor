@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T14:51:48.116145+00:00",
+  "snapshot_time": "2026-09-22T14:52:26.490945+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -208,212 +208,6 @@
       "submitted": false,
       "first_seen": "2026-09-22T03:14:55.251795+00:00",
       "last_change": "2026-09-22T04:57:46.462982+00:00"
-    },
-    {
-      "repo": "dynamo-91b21b1-security",
-      "full_repo": "handshake-project-dynamo/dynamo-91b21b1-security",
-      "num": "10",
-      "title": "Rework: opaque conformance evidence for #6",
-      "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/pull/10",
-      "createdAt": "2026-09-22T02:46:09Z",
-      "updatedAt": "2026-09-22T08:33:00Z",
-      "sha": "3ec059c7dfa2120b1d7164073026edcc3bbdf168",
-      "draft": false,
-      "mergeable": true,
-      "reviewDecision": "",
-      "additions": 3796,
-      "deletions": 202,
-      "changedFiles": 22,
-      "head": "rework/91b21b1-probe-hardening",
-      "base": "main",
-      "labels": [
-        "needs-revision"
-      ],
-      "overall": "failing",
-      "passed": 8,
-      "total": 17,
-      "skipped": 7,
-      "failed": [
-        "gate",
-        "pass2"
-      ],
-      "running": [],
-      "queued": [],
-      "checks": [
-        {
-          "name": "gate",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-22T08:32:54Z",
-          "completed_at": "2026-09-22T08:33:05Z",
-          "duration_sec": 11,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106672960736",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-22T07:55:36Z",
-          "completed_at": "2026-09-22T08:32:46Z",
-          "duration_sec": 2230,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106662167222",
-          "app": "github-actions"
-        },
-        {
-          "name": "changes",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T07:48:46Z",
-          "completed_at": "2026-09-22T07:49:11Z",
-          "duration_sec": 25,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106660327639",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T08:32:54Z",
-          "completed_at": "2026-09-22T08:33:10Z",
-          "duration_sec": 16,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106672960668",
-          "app": "github-actions"
-        },
-        {
-          "name": "cosine_similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T07:49:15Z",
-          "completed_at": "2026-09-22T07:50:36Z",
-          "duration_sec": 81,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106660452408",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T08:32:51Z",
-          "completed_at": "2026-09-22T08:33:09Z",
-          "duration_sec": 18,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106672941321",
-          "app": "github-actions"
-        },
-        {
-          "name": "ratelimit",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T07:55:22Z",
-          "completed_at": "2026-09-22T07:55:33Z",
-          "duration_sec": 11,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106662092734",
-          "app": "github-actions"
-        },
-        {
-          "name": "review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T07:50:39Z",
-          "completed_at": "2026-09-22T07:53:33Z",
-          "duration_sec": 174,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106660830163",
-          "app": "github-actions"
-        },
-        {
-          "name": "similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T07:53:36Z",
-          "completed_at": "2026-09-22T07:54:04Z",
-          "duration_sec": 28,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106661623813",
-          "app": "github-actions"
-        },
-        {
-          "name": "validation",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T07:54:07Z",
-          "completed_at": "2026-09-22T07:55:15Z",
-          "duration_sec": 68,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106661759872",
-          "app": "github-actions"
-        },
-        {
-          "name": "ava_review",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-22T08:32:48Z",
-          "completed_at": "2026-09-22T08:32:47Z",
-          "duration_sec": -1,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106672943051",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-22T08:32:47Z",
-          "completed_at": "2026-09-22T08:32:47Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106672942187",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_eval",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-22T08:32:50Z",
-          "completed_at": "2026-09-22T08:32:49Z",
-          "duration_sec": -1,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106672953005",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-22T08:32:50Z",
-          "completed_at": "2026-09-22T08:32:49Z",
-          "duration_sec": -1,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106672952869",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_gate",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-22T08:32:50Z",
-          "completed_at": "2026-09-22T08:32:50Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106672956047",
-          "app": "github-actions"
-        },
-        {
-          "name": "tier1",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-22T08:32:48Z",
-          "completed_at": "2026-09-22T08:32:48Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106672945185",
-          "app": "github-actions"
-        },
-        {
-          "name": "trials",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-22T08:32:51Z",
-          "completed_at": "2026-09-22T08:32:50Z",
-          "duration_sec": -1,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106672958739",
-          "app": "github-actions"
-        }
-      ],
-      "submitted": false,
-      "first_seen": "2026-09-22T02:55:11.789412+00:00",
-      "last_change": "2026-09-22T08:33:53.059658+00:00"
     },
     {
       "repo": "dynamo-81dc97e-scientific-computing-and-domain-science",
@@ -2664,25 +2458,25 @@
       "last_change": "2026-09-22T09:51:11.676711+00:00"
     },
     {
-      "repo": "dynamo-b2366b5-machine-learning-and-ai",
-      "full_repo": "handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai",
-      "num": "12",
+      "repo": "dynamo-91b21b1-security",
+      "full_repo": "handshake-project-dynamo/dynamo-91b21b1-security",
+      "num": "10",
       "title": "(error fetching)",
-      "url": "https://github.com/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/pull/12",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/pull/10",
       "overall": "error",
       "passed": 0,
       "total": 0,
       "skipped": 0,
       "failed": [
-        "`gh api repos/handshake-project-dynamo/dynamo-b2366b5-machine-learning-and-ai/pulls/12 --jq` failed: gh: Not Found (HTTP 404)"
+        "`gh api repos/handshake-project-dynamo/dynamo-91b21b1-security/pulls/10 --jq '{title, url: ` failed: gh: Not Found (HTTP 404)"
       ],
       "running": [],
       "queued": [],
       "checks": [],
       "labels": [],
       "submitted": false,
-      "first_seen": "2026-09-21T20:44:17.057104+00:00",
-      "last_change": "2026-09-22T09:51:11.676711+00:00"
+      "first_seen": "2026-09-22T02:55:11.789412+00:00",
+      "last_change": "2026-09-22T08:33:53.059658+00:00"
     }
   ]
 }
