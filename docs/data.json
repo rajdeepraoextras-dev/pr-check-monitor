@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T04:55:56.732315+00:00",
+  "snapshot_time": "2026-09-22T04:56:35.595884+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -309,7 +309,7 @@
       "title": "Rework 81dc97e: enforce exact nested report schemas",
       "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/pull/7",
       "createdAt": "2026-09-22T02:40:04Z",
-      "updatedAt": "2026-09-22T03:50:19Z",
+      "updatedAt": "2026-09-22T04:56:48Z",
       "sha": "f6ae3aa4ff9d793dee207bb0b98594dac26327a1",
       "draft": false,
       "mergeable": true,
@@ -320,29 +320,52 @@
       "head": "rework/81dc97e-exact-report-schema",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
+      "overall": "failing",
       "passed": 13,
-      "total": 15,
+      "total": 17,
       "skipped": 1,
-      "failed": [],
+      "failed": [
+        "gate",
+        "trials"
+      ],
       "running": [
         {
-          "name": "trials",
-          "started_at": "2026-09-22T03:50:08Z"
+          "name": "claude-cost-report",
+          "started_at": "2026-09-22T04:56:41Z"
         }
       ],
       "queued": [],
       "checks": [
         {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-22T04:56:41Z",
+          "completed_at": "2026-09-22T04:56:51Z",
+          "duration_sec": 10,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106621148904",
+          "app": "github-actions"
+        },
+        {
           "name": "trials",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-22T03:50:08Z",
+          "completed_at": "2026-09-22T04:56:35Z",
+          "duration_sec": 3987,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106608639933",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T03:50:08Z",
+          "started_at": "2026-09-22T04:56:41Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106608639933",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-81dc97e-scientific-computing-and-domain-science/actions/runs/35681093070/job/106621148847",
           "app": "github-actions"
         },
         {
@@ -488,7 +511,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:55:17.564817+00:00",
-      "last_change": "2026-09-22T03:27:59.913417+00:00"
+      "last_change": "2026-09-22T04:56:35.595884+00:00"
     },
     {
       "repo": "dynamo-0aa466f-data-querying-and-databases",
@@ -1732,7 +1755,7 @@
       "title": "Rework 7a8b3a7: align pool fixtures and strengthen search repair",
       "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/pull/7",
       "createdAt": "2026-09-22T02:09:50Z",
-      "updatedAt": "2026-09-22T04:49:38Z",
+      "updatedAt": "2026-09-22T04:56:52Z",
       "sha": "aaa339ea26d1d6cc637afd7f4afa2461f5b8acb1",
       "draft": false,
       "mergeable": true,
