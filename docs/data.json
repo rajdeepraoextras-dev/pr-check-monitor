@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T07:49:56.994142+00:00",
+  "snapshot_time": "2026-09-22T07:50:54.819970+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -216,7 +216,7 @@
       "title": "Rework: opaque conformance evidence for #6",
       "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/pull/10",
       "createdAt": "2026-09-22T02:46:09Z",
-      "updatedAt": "2026-09-22T07:49:06Z",
+      "updatedAt": "2026-09-22T07:50:50Z",
       "sha": "3ec059c7dfa2120b1d7164073026edcc3bbdf168",
       "draft": false,
       "mergeable": true,
@@ -230,26 +230,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 1,
-      "total": 2,
+      "passed": 2,
+      "total": 3,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "cosine_similarity",
-          "started_at": "2026-09-22T07:49:15Z"
+          "name": "review",
+          "started_at": "2026-09-22T07:50:39Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "cosine_similarity",
+          "name": "review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T07:49:15Z",
+          "started_at": "2026-09-22T07:50:39Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106660452408",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106660830163",
           "app": "github-actions"
         },
         {
@@ -261,11 +261,21 @@
           "duration_sec": 25,
           "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106660327639",
           "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T07:49:15Z",
+          "completed_at": "2026-09-22T07:50:36Z",
+          "duration_sec": 81,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-91b21b1-security/actions/runs/35701486111/job/106660452408",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:55:11.789412+00:00",
-      "last_change": "2026-09-22T07:49:56.994142+00:00"
+      "last_change": "2026-09-22T07:50:54.819970+00:00"
     },
     {
       "repo": "dynamo-81dc97e-scientific-computing-and-domain-science",
