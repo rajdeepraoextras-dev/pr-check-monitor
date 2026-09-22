@@ -1,36 +1,6 @@
 [
  {
   "ts": "2026-09-22T05:01:14.701904+00:00",
-  "pr": "dynamo-69e224d-data-processing-and-etl#6",
-  "type": "passed",
-  "msg": "Check recovered: gate"
- },
- {
-  "ts": "2026-09-22T05:01:14.701904+00:00",
-  "pr": "dynamo-69e224d-data-processing-and-etl#6",
-  "type": "passed",
-  "msg": "Check recovered: pass2"
- },
- {
-  "ts": "2026-09-22T05:01:14.701904+00:00",
-  "pr": "dynamo-de09a26-data-processing-and-etl#5",
-  "type": "failing",
-  "msg": "Status running \u2192 failing"
- },
- {
-  "ts": "2026-09-22T05:01:14.701904+00:00",
-  "pr": "dynamo-de09a26-data-processing-and-etl#5",
-  "type": "started",
-  "msg": "Check started: pass2_suggestion"
- },
- {
-  "ts": "2026-09-22T05:01:14.701904+00:00",
-  "pr": "dynamo-de09a26-data-processing-and-etl#5",
-  "type": "failing",
-  "msg": "Check failed: gate"
- },
- {
-  "ts": "2026-09-22T05:01:14.701904+00:00",
   "pr": "dynamo-de09a26-data-processing-and-etl#5",
   "type": "failing",
   "msg": "Check failed: pass2"
@@ -2388,15 +2358,45 @@
   "msg": "Check passed: review"
  },
  {
-  "ts": "2026-09-22T08:02:04.312714+00:00",
+  "ts": "2026-09-22T08:01:56.583115+00:00",
   "pr": "dynamo-de09a26-data-processing-and-etl#5",
   "type": "started",
   "msg": "Check started: validation"
  },
  {
-  "ts": "2026-09-22T08:02:04.312714+00:00",
+  "ts": "2026-09-22T08:01:56.583115+00:00",
+  "pr": "dynamo-de09a26-data-processing-and-etl#5",
+  "type": "passed",
+  "msg": "Check passed: review"
+ },
+ {
+  "ts": "2026-09-22T08:01:56.583115+00:00",
   "pr": "dynamo-de09a26-data-processing-and-etl#5",
   "type": "passed",
   "msg": "Check passed: similarity"
+ },
+ {
+  "ts": "2026-09-22T08:01:56.583115+00:00",
+  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
+  "type": "started",
+  "msg": "Check started: review"
+ },
+ {
+  "ts": "2026-09-22T08:01:56.583115+00:00",
+  "pr": "dynamo-5f7c3e1-data-processing-and-etl#4",
+  "type": "passed",
+  "msg": "Check passed: cosine_similarity"
+ },
+ {
+  "ts": "2026-09-22T08:01:56.583115+00:00",
+  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
+  "type": "started",
+  "msg": "Check started: qc_gate"
+ },
+ {
+  "ts": "2026-09-22T08:01:56.583115+00:00",
+  "pr": "dynamo-40c7c6a-scientific-computing-and-domain-science#5",
+  "type": "passed",
+  "msg": "Check passed: qc_exec"
  }
 ]
