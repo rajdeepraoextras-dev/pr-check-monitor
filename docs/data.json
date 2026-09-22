@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T04:58:38.488109+00:00",
+  "snapshot_time": "2026-09-22T04:59:12.797734+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -207,7 +207,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T03:14:55.251795+00:00",
-      "last_change": "2026-09-22T04:57:46.462982+00:00"
+      "last_change": "2026-09-22T04:59:12.797734+00:00"
     },
     {
       "repo": "dynamo-91b21b1-security",
@@ -521,7 +521,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:55:17.564817+00:00",
-      "last_change": "2026-09-22T04:57:46.462982+00:00"
+      "last_change": "2026-09-22T04:59:12.797734+00:00"
     },
     {
       "repo": "dynamo-0aa466f-data-querying-and-databases",
@@ -1405,7 +1405,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:32:05.410861+00:00",
-      "last_change": "2026-09-22T04:58:38.488109+00:00"
+      "last_change": "2026-09-22T04:59:12.797734+00:00"
     },
     {
       "repo": "dynamo-42bb5d9-debugging-and-repair",
@@ -1617,7 +1617,7 @@
       "title": "Rework 7a8b3a7: align pool fixtures and strengthen search repair",
       "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/pull/7",
       "createdAt": "2026-09-22T02:09:50Z",
-      "updatedAt": "2026-09-22T04:58:35Z",
+      "updatedAt": "2026-09-22T04:59:23Z",
       "sha": "aaa339ea26d1d6cc637afd7f4afa2461f5b8acb1",
       "draft": false,
       "mergeable": true,
@@ -1631,26 +1631,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 9,
-      "total": 11,
+      "passed": 10,
+      "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "tier1",
-          "started_at": "2026-09-22T04:58:44Z"
+          "name": "qc_eval",
+          "started_at": "2026-09-22T04:59:17Z"
+        },
+        {
+          "name": "qc_exec",
+          "started_at": "2026-09-22T04:59:17Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "tier1",
+          "name": "qc_eval",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-22T04:58:44Z",
+          "started_at": "2026-09-22T04:59:17Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106621522970",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106621621555",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-22T04:59:17Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106621621504",
           "app": "github-actions"
         },
         {
@@ -1734,6 +1748,16 @@
           "app": "github-actions"
         },
         {
+          "name": "tier1",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T04:58:44Z",
+          "completed_at": "2026-09-22T04:59:15Z",
+          "duration_sec": 31,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7a8b3a7-security/actions/runs/35685894192/job/106621522970",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -1756,7 +1780,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:16:13.804311+00:00",
-      "last_change": "2026-09-22T04:58:38.488109+00:00"
+      "last_change": "2026-09-22T04:59:12.797734+00:00"
     },
     {
       "repo": "dynamo-b2366b5-machine-learning-and-ai",
