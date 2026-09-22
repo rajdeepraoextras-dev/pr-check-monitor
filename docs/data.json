@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-22T05:49:46.124128+00:00",
+  "snapshot_time": "2026-09-22T05:50:39.154595+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1039,7 +1039,7 @@
       "title": "Rework: fix variable-cardinality runtime finding",
       "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/pull/8",
       "createdAt": "2026-09-22T02:30:36Z",
-      "updatedAt": "2026-09-22T05:39:49Z",
+      "updatedAt": "2026-09-22T05:50:51Z",
       "sha": "b4c07713a406ecd6e6dad11e93f814719e2feb37",
       "draft": false,
       "mergeable": true,
@@ -1053,40 +1053,33 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
-      "total": 10,
+      "passed": 9,
+      "total": 11,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "ava_review",
-          "started_at": "2026-09-22T05:39:42Z"
-        },
-        {
-          "name": "deep_review",
-          "started_at": "2026-09-22T05:39:42Z"
-        }
+      "running": [],
+      "queued": [
+        "tier1"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "ava_review",
-          "state": "running",
+          "name": "tier1",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-22T05:39:42Z",
+          "started_at": "2026-09-22T05:50:58Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35687133605/job/106629501716",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35687133605/job/106631733979",
           "app": "github-actions"
         },
         {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
           "started_at": "2026-09-22T05:39:42Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35687133605/job/106629501711",
+          "completed_at": "2026-09-22T05:50:57Z",
+          "duration_sec": 675,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35687133605/job/106629501716",
           "app": "github-actions"
         },
         {
@@ -1107,6 +1100,16 @@
           "completed_at": "2026-09-22T04:32:04Z",
           "duration_sec": 73,
           "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35687133605/job/106616350038",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-22T05:39:42Z",
+          "completed_at": "2026-09-22T05:50:32Z",
+          "duration_sec": 650,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-306ca9b-mathematics-and-formal-reasoning/actions/runs/35687133605/job/106629501711",
           "app": "github-actions"
         },
         {
@@ -1172,7 +1175,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-22T02:32:18.588992+00:00",
-      "last_change": "2026-09-22T05:40:49.273382+00:00"
+      "last_change": "2026-09-22T05:50:39.154595+00:00"
     },
     {
       "repo": "dynamo-de09a26-data-processing-and-etl",
