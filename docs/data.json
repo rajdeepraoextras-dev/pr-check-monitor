@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T16:10:04.722537+00:00",
+  "snapshot_time": "2026-09-23T16:10:49.080800+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1663,7 +1663,7 @@
       "title": "Rework: fill chain_bytes on every format-sheet row and refuse extra files in the output directory",
       "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/pull/5",
       "createdAt": "2026-09-23T01:42:26Z",
-      "updatedAt": "2026-09-23T15:33:02Z",
+      "updatedAt": "2026-09-23T16:10:39Z",
       "sha": "e9be19b25e113268700e1605474cc4b623180797",
       "draft": false,
       "mergeable": true,
@@ -1677,26 +1677,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-23T15:32:52Z"
+          "name": "ava_review",
+          "started_at": "2026-09-23T16:10:59Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-23T16:10:59Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "pass2",
+          "name": "ava_review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T15:32:52Z",
+          "started_at": "2026-09-23T16:10:59Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35880781953/job/107253730446",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35880781953/job/107269408067",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-23T16:10:59Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35880781953/job/107269408162",
           "app": "github-actions"
         },
         {
@@ -1717,6 +1731,16 @@
           "completed_at": "2026-09-23T15:22:15Z",
           "duration_sec": 94,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35880781953/job/107248572630",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T15:32:52Z",
+          "completed_at": "2026-09-23T16:10:47Z",
+          "duration_sec": 2275,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35880781953/job/107253730446",
           "app": "github-actions"
         },
         {
@@ -1758,11 +1782,21 @@
           "duration_sec": 105,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35880781953/job/107252869888",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-23T16:10:55Z",
+          "completed_at": "2026-09-23T16:10:54Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35880781953/job/107269404539",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:36.964506+00:00",
-      "last_change": "2026-09-23T15:33:57.115566+00:00"
+      "last_change": "2026-09-23T16:10:49.080800+00:00"
     }
   ]
 }
