@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T04:36:19.608216+00:00",
+  "snapshot_time": "2026-09-23T04:37:02.710763+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -914,7 +914,7 @@
       "title": "Rework: require an exact 32-byte flag file and restore the ground-truth and determinism fixes",
       "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/pull/11",
       "createdAt": "2026-09-23T01:43:57Z",
-      "updatedAt": "2026-09-23T04:35:38Z",
+      "updatedAt": "2026-09-23T04:37:08Z",
       "sha": "7880892f0d09539ff39720daf96e6a583bbe8c77",
       "draft": false,
       "mergeable": true,
@@ -928,26 +928,23 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 1,
-      "total": 2,
+      "passed": 2,
+      "total": 3,
       "skipped": 0,
       "failed": [],
-      "running": [
-        {
-          "name": "cosine_similarity",
-          "started_at": "2026-09-23T04:35:47Z"
-        }
+      "running": [],
+      "queued": [
+        "review"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "cosine_similarity",
-          "state": "running",
+          "name": "review",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-23T04:35:47Z",
+          "started_at": "2026-09-23T04:37:14Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35818938308/job/107046518162",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35818938308/job/107046813903",
           "app": "github-actions"
         },
         {
@@ -959,11 +956,21 @@
           "duration_sec": 26,
           "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35818938308/job/107046421112",
           "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T04:35:47Z",
+          "completed_at": "2026-09-23T04:37:13Z",
+          "duration_sec": 86,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35818938308/job/107046518162",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:31.160986+00:00",
-      "last_change": "2026-09-23T04:35:36.208324+00:00"
+      "last_change": "2026-09-23T04:37:02.710763+00:00"
     },
     {
       "repo": "dynamo-e3b1da9-model-training-and-ml-infrastructure",
