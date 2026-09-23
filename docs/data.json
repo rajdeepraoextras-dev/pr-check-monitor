@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T07:21:03.719367+00:00",
+  "snapshot_time": "2026-09-23T07:21:41.109782+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1183,17 +1183,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "qc_eval",
-          "started_at": "2026-09-23T07:13:27Z"
-        },
-        {
-          "name": "qc_exec",
           "started_at": "2026-09-23T07:13:27Z"
         }
       ],
@@ -1207,16 +1203,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-6cfb94e-debugging-and-repair/actions/runs/35824592898/job/107082019710",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T07:13:27Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-6cfb94e-debugging-and-repair/actions/runs/35824592898/job/107082019662",
           "app": "github-actions"
         },
         {
@@ -1267,6 +1253,16 @@
           "completed_at": "2026-09-23T07:02:49Z",
           "duration_sec": 3268,
           "url": "https://github.com/handshake-project-dynamo/dynamo-6cfb94e-debugging-and-repair/actions/runs/35824592898/job/107065848909",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T07:13:27Z",
+          "completed_at": "2026-09-23T07:21:33Z",
+          "duration_sec": 486,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6cfb94e-debugging-and-repair/actions/runs/35824592898/job/107082019662",
           "app": "github-actions"
         },
         {
@@ -1332,7 +1328,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:05:00.900749+00:00",
-      "last_change": "2026-09-23T07:13:33.366376+00:00"
+      "last_change": "2026-09-23T07:21:41.109782+00:00"
     },
     {
       "repo": "dynamo-ef7562e-systems-infrastructure-and-operations",
@@ -1544,7 +1540,7 @@
       "title": "Rework: require an exact 32-byte flag file and restore the ground-truth and determinism fixes",
       "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/pull/11",
       "createdAt": "2026-09-23T01:43:57Z",
-      "updatedAt": "2026-09-23T07:20:56Z",
+      "updatedAt": "2026-09-23T07:21:15Z",
       "sha": "bb4baf7877a12cdf3b1339bf24cf2f5980fa58e8",
       "draft": false,
       "mergeable": true,
@@ -1562,16 +1558,19 @@
       "total": 3,
       "skipped": 0,
       "failed": [],
-      "running": [],
-      "queued": [
-        "review"
+      "running": [
+        {
+          "name": "review",
+          "started_at": "2026-09-23T07:21:06Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
           "name": "review",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T07:21:03Z",
+          "started_at": "2026-09-23T07:21:06Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35831074405/job/107084117511",
@@ -1600,7 +1599,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:31.160986+00:00",
-      "last_change": "2026-09-23T07:21:03.719367+00:00"
+      "last_change": "2026-09-23T07:21:41.109782+00:00"
     },
     {
       "repo": "dynamo-e3b1da9-model-training-and-ml-infrastructure",
