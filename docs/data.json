@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T03:21:25.735220+00:00",
+  "snapshot_time": "2026-09-23T03:22:13.619397+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: disclose the firmware rule family and derive it in the oracle",
       "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/pull/6",
       "createdAt": "2026-09-23T03:16:04Z",
-      "updatedAt": "2026-09-23T03:18:19Z",
+      "updatedAt": "2026-09-23T03:22:09Z",
       "sha": "c9f4c660eda38ca18e682ec207776f3f7ae8ad87",
       "draft": false,
       "mergeable": true,
@@ -925,7 +925,7 @@
       "title": "Rework: require an exact 32-byte flag file and restore the ground-truth and determinism fixes",
       "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/pull/11",
       "createdAt": "2026-09-23T01:43:57Z",
-      "updatedAt": "2026-09-23T03:21:31Z",
+      "updatedAt": "2026-09-23T03:22:19Z",
       "sha": "7b20e482e4dbac732f9a6f96156ceef815ba05f3",
       "draft": false,
       "mergeable": true,
@@ -939,26 +939,23 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 4,
-      "total": 5,
+      "passed": 5,
+      "total": 6,
       "skipped": 0,
       "failed": [],
-      "running": [
-        {
-          "name": "validation",
-          "started_at": "2026-09-23T03:21:25Z"
-        }
+      "running": [],
+      "queued": [
+        "ratelimit"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "validation",
-          "state": "running",
+          "name": "ratelimit",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-23T03:21:25Z",
+          "started_at": "2026-09-23T03:22:25Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35813606264/job/107031469804",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35813606264/job/107031688652",
           "app": "github-actions"
         },
         {
@@ -1000,11 +997,21 @@
           "duration_sec": 28,
           "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35813606264/job/107031368021",
           "app": "github-actions"
+        },
+        {
+          "name": "validation",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T03:21:25Z",
+          "completed_at": "2026-09-23T03:22:25Z",
+          "duration_sec": 60,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35813606264/job/107031469804",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:31.160986+00:00",
-      "last_change": "2026-09-23T03:21:25.735220+00:00"
+      "last_change": "2026-09-23T03:22:13.619397+00:00"
     },
     {
       "repo": "dynamo-e3b1da9-model-training-and-ml-infrastructure",
