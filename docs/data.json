@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T15:41:54.650890+00:00",
+  "snapshot_time": "2026-09-23T15:42:38.846940+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -527,7 +527,7 @@
       "title": "Rework: disclose the firmware rule family and derive it in the oracle",
       "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/pull/6",
       "createdAt": "2026-09-23T03:16:04Z",
-      "updatedAt": "2026-09-23T14:36:56Z",
+      "updatedAt": "2026-09-23T15:42:38Z",
       "sha": "8000a4a5d6481afbd6eed9618a5c54051c7045cb",
       "draft": false,
       "mergeable": true,
@@ -541,26 +541,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-23T14:36:46Z"
+          "name": "ava_review",
+          "started_at": "2026-09-23T15:42:31Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-23T15:42:31Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "pass2",
+          "name": "ava_review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T14:36:46Z",
+          "started_at": "2026-09-23T15:42:31Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35873371230/job/107230055876",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35873371230/job/107257716585",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-23T15:42:31Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35873371230/job/107257716727",
           "app": "github-actions"
         },
         {
@@ -581,6 +595,16 @@
           "completed_at": "2026-09-23T14:22:41Z",
           "duration_sec": 138,
           "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35873371230/job/107223141269",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T14:36:46Z",
+          "completed_at": "2026-09-23T15:42:28Z",
+          "duration_sec": 3942,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35873371230/job/107230055876",
           "app": "github-actions"
         },
         {
@@ -622,11 +646,21 @@
           "duration_sec": 446,
           "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35873371230/job/107226797983",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-23T15:42:28Z",
+          "completed_at": "2026-09-23T15:42:28Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35873371230/job/107257718451",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-23T03:17:56.978293+00:00",
-      "last_change": "2026-09-23T14:37:05.777605+00:00"
+      "last_change": "2026-09-23T15:42:38.846940+00:00"
     },
     {
       "repo": "dynamo-7d2be57-mathematics-and-formal-reasoning",
