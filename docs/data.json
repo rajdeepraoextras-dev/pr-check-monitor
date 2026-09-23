@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T09:46:43.674476+00:00",
+  "snapshot_time": "2026-09-23T09:47:28.172433+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1625,7 +1625,7 @@
       "title": "Rework: require an exact 32-byte flag file and restore the ground-truth and determinism fixes",
       "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/pull/11",
       "createdAt": "2026-09-23T01:43:57Z",
-      "updatedAt": "2026-09-23T09:42:12Z",
+      "updatedAt": "2026-09-23T09:46:58Z",
       "sha": "a681d7083ffd5ddaca39978bb44b6e53b9fd5894",
       "draft": false,
       "mergeable": true,
@@ -1638,16 +1638,14 @@
       "labels": [
         "in-progress"
       ],
-      "overall": "running",
+      "overall": "failing",
       "passed": 7,
       "total": 10,
       "skipped": 1,
-      "failed": [],
+      "failed": [
+        "ava_review"
+      ],
       "running": [
-        {
-          "name": "ava_review",
-          "started_at": "2026-09-23T09:42:04Z"
-        },
         {
           "name": "deep_review",
           "started_at": "2026-09-23T09:42:04Z"
@@ -1657,11 +1655,11 @@
       "checks": [
         {
           "name": "ava_review",
-          "state": "running",
-          "conclusion": null,
+          "state": "failed",
+          "conclusion": "failure",
           "started_at": "2026-09-23T09:42:04Z",
-          "completed_at": null,
-          "duration_sec": null,
+          "completed_at": "2026-09-23T09:47:04Z",
+          "duration_sec": 300,
           "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35838346404/job/107127167452",
           "app": "github-actions"
         },
@@ -1758,7 +1756,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:31.160986+00:00",
-      "last_change": "2026-09-23T09:44:07.986497+00:00"
+      "last_change": "2026-09-23T09:47:28.172433+00:00"
     },
     {
       "repo": "dynamo-e3b1da9-model-training-and-ml-infrastructure",
