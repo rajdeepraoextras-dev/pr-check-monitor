@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T10:23:27.371428+00:00",
+  "snapshot_time": "2026-09-23T10:24:12.940426+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1031,7 +1031,7 @@
       "title": "Rework: disclose the projective seal and prove the archive pins its key",
       "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/pull/10",
       "createdAt": "2026-09-23T02:02:45Z",
-      "updatedAt": "2026-09-23T09:39:41Z",
+      "updatedAt": "2026-09-23T10:24:16Z",
       "sha": "767851a2b28122e2001405b40fc4f27745ead8c3",
       "draft": false,
       "mergeable": true,
@@ -1044,27 +1044,47 @@
       "labels": [
         "in-progress"
       ],
-      "overall": "running",
+      "overall": "failing",
       "passed": 13,
-      "total": 15,
+      "total": 17,
       "skipped": 1,
-      "failed": [],
-      "running": [
-        {
-          "name": "trials",
-          "started_at": "2026-09-23T09:39:28Z"
-        }
+      "failed": [
+        "trials"
       ],
-      "queued": [],
+      "running": [],
+      "queued": [
+        "claude-cost-report",
+        "gate"
+      ],
       "checks": [
         {
           "name": "trials",
-          "state": "running",
-          "conclusion": null,
+          "state": "failed",
+          "conclusion": "failure",
           "started_at": "2026-09-23T09:39:28Z",
+          "completed_at": "2026-09-23T10:24:24Z",
+          "duration_sec": 2696,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35834099006/job/107126337441",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "queued",
+          "conclusion": null,
+          "started_at": "2026-09-23T10:24:24Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35834099006/job/107126337441",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35834099006/job/107140648383",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "queued",
+          "conclusion": null,
+          "started_at": "2026-09-23T10:24:24Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35834099006/job/107140648498",
           "app": "github-actions"
         },
         {
@@ -1210,7 +1230,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:04:53.465300+00:00",
-      "last_change": "2026-09-23T09:39:31.278462+00:00"
+      "last_change": "2026-09-23T10:24:12.940426+00:00"
     },
     {
       "repo": "dynamo-6cfb94e-debugging-and-repair",
