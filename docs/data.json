@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T08:35:56.216084+00:00",
+  "snapshot_time": "2026-09-23T08:36:39.642926+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -625,7 +625,7 @@
       "title": "Rework classify-families: publish the rule space, derive the rule, grade the implemented checker",
       "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/pull/9",
       "createdAt": "2026-09-23T02:19:58Z",
-      "updatedAt": "2026-09-23T08:35:47Z",
+      "updatedAt": "2026-09-23T08:36:06Z",
       "sha": "119e675d27e2c4c9754a867ef233e9a80770404d",
       "draft": false,
       "mergeable": false,
@@ -636,45 +636,16 @@
       "head": "rework/7d2be57-classify-families",
       "base": "main",
       "labels": [
-        "in-progress"
+        "accepted"
       ],
-      "overall": "running",
-      "passed": 14,
+      "overall": "passed",
+      "passed": 16,
       "total": 17,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-23T08:35:58Z"
-        },
-        {
-          "name": "gate",
-          "started_at": "2026-09-23T08:35:58Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
-        {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T08:35:58Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35821638803/job/107106093245",
-          "app": "github-actions"
-        },
-        {
-          "name": "gate",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T08:35:58Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35821638803/job/107106093237",
-          "app": "github-actions"
-        },
         {
           "name": "ava_review",
           "state": "passed",
@@ -696,6 +667,16 @@
           "app": "github-actions"
         },
         {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T08:35:58Z",
+          "completed_at": "2026-09-23T08:36:14Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35821638803/job/107106093245",
+          "app": "github-actions"
+        },
+        {
           "name": "cosine_similarity",
           "state": "passed",
           "conclusion": "success",
@@ -713,6 +694,16 @@
           "completed_at": "2026-09-23T06:37:20Z",
           "duration_sec": 340,
           "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35821638803/job/107071315159",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T08:35:58Z",
+          "completed_at": "2026-09-23T08:36:10Z",
+          "duration_sec": 12,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35821638803/job/107106093237",
           "app": "github-actions"
         },
         {
@@ -828,7 +819,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:24:58.336617+00:00",
-      "last_change": "2026-09-23T08:35:56.216084+00:00"
+      "last_change": "2026-09-23T08:36:39.642926+00:00"
     },
     {
       "repo": "dynamo-0110c27-mathematics-and-formal-reasoning",
