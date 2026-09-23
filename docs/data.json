@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T03:03:35.013545+00:00",
+  "snapshot_time": "2026-09-23T03:04:15.417441+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -623,7 +623,7 @@
       "title": "Rework: roll back a refused second commit, keep sidecars out of the desk, pin the probe seed",
       "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/pull/6",
       "createdAt": "2026-09-23T01:55:59Z",
-      "updatedAt": "2026-09-23T02:56:27Z",
+      "updatedAt": "2026-09-23T03:04:19Z",
       "sha": "714eaa86b659704326115a3e5542947baf14efc2",
       "draft": false,
       "mergeable": true,
@@ -637,17 +637,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "ava_review",
-          "started_at": "2026-09-23T02:56:20Z"
-        },
-        {
-          "name": "deep_review",
           "started_at": "2026-09-23T02:56:20Z"
         }
       ],
@@ -661,16 +657,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/actions/runs/35808331448/job/107026433034",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T02:56:20Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/actions/runs/35808331448/job/107026433029",
           "app": "github-actions"
         },
         {
@@ -691,6 +677,16 @@
           "completed_at": "2026-09-23T01:57:43Z",
           "duration_sec": 71,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/actions/runs/35808331448/job/107014087031",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T02:56:20Z",
+          "completed_at": "2026-09-23T03:03:44Z",
+          "duration_sec": 444,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/actions/runs/35808331448/job/107026433029",
           "app": "github-actions"
         },
         {
@@ -756,7 +752,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:04:42.620918+00:00",
-      "last_change": "2026-09-23T02:58:04.610123+00:00"
+      "last_change": "2026-09-23T03:04:15.417441+00:00"
     },
     {
       "repo": "dynamo-408b1b0-security",
