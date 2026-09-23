@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T05:24:29.219403+00:00",
+  "snapshot_time": "2026-09-23T05:25:13.357802+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -806,7 +806,7 @@
       "title": "Rework: order an empty occupancy's spawn before its join, and grade it",
       "url": "https://github.com/handshake-project-dynamo/dynamo-6cfb94e-debugging-and-repair/pull/11",
       "createdAt": "2026-09-23T01:57:27Z",
-      "updatedAt": "2026-09-23T05:21:31Z",
+      "updatedAt": "2026-09-23T05:25:18Z",
       "sha": "26fde011e6fac88021e3dc0d21347dea5c5741a7",
       "draft": false,
       "mergeable": true,
@@ -820,25 +820,43 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 10,
+      "total": 13,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "ava_review",
-          "started_at": "2026-09-23T05:14:35Z"
-        }
+      "running": [],
+      "queued": [
+        "qc_eval",
+        "qc_exec"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "ava_review",
-          "state": "running",
+          "name": "qc_eval",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-23T05:14:35Z",
+          "started_at": "2026-09-23T05:25:24Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6cfb94e-debugging-and-repair/actions/runs/35816861030/job/107056672667",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "queued",
+          "conclusion": null,
+          "started_at": "2026-09-23T05:25:24Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6cfb94e-debugging-and-repair/actions/runs/35816861030/job/107056672668",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T05:14:35Z",
+          "completed_at": "2026-09-23T05:24:49Z",
+          "duration_sec": 614,
           "url": "https://github.com/handshake-project-dynamo/dynamo-6cfb94e-debugging-and-repair/actions/runs/35816861030/job/107054428804",
           "app": "github-actions"
         },
@@ -913,6 +931,16 @@
           "app": "github-actions"
         },
         {
+          "name": "tier1",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T05:24:52Z",
+          "completed_at": "2026-09-23T05:25:24Z",
+          "duration_sec": 32,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6cfb94e-debugging-and-repair/actions/runs/35816861030/job/107056553101",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -935,7 +963,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:05:00.900749+00:00",
-      "last_change": "2026-09-23T05:21:31.663691+00:00"
+      "last_change": "2026-09-23T05:25:13.357802+00:00"
     },
     {
       "repo": "dynamo-ef7562e-systems-infrastructure-and-operations",
