@@ -1,11 +1,69 @@
 {
-  "snapshot_time": "2026-09-23T03:17:22.260990+00:00",
+  "snapshot_time": "2026-09-23T03:17:35.177579+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-2fbf25f-systems-infrastructure-and-operations",
+      "full_repo": "handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations",
+      "num": "6",
+      "title": "Rework: disclose the firmware rule family and derive it in the oracle",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/pull/6",
+      "createdAt": "2026-09-23T03:16:04Z",
+      "updatedAt": "2026-09-23T03:16:29Z",
+      "sha": "c9f4c660eda38ca18e682ec207776f3f7ae8ad87",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 1073,
+      "deletions": 697,
+      "changedFiles": 15,
+      "head": "rework/2fbf25f-disclosed-firmware-rule",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 1,
+      "total": 2,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "cosine_similarity",
+          "started_at": "2026-09-23T03:16:39Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "cosine_similarity",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-23T03:16:39Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35813653406/job/107030522677",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T03:16:11Z",
+          "completed_at": "2026-09-23T03:16:37Z",
+          "duration_sec": 26,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35813653406/job/107030432157",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-23T03:17:56.978293+00:00",
+      "last_change": "2026-09-23T03:17:35.177579+00:00"
+    },
     {
       "repo": "dynamo-7d2be57-mathematics-and-formal-reasoning",
       "full_repo": "handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning",
@@ -416,7 +474,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:13:04.811379+00:00",
-      "last_change": "2026-09-23T03:17:22.260990+00:00"
+      "last_change": "2026-09-23T03:17:35.177579+00:00"
     },
     {
       "repo": "dynamo-8c5f793-systems-infrastructure-and-operations",
@@ -1000,7 +1058,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:31.160986+00:00",
-      "last_change": "2026-09-23T03:17:22.260990+00:00"
+      "last_change": "2026-09-23T03:17:35.177579+00:00"
     },
     {
       "repo": "dynamo-e3b1da9-model-training-and-ml-infrastructure",
