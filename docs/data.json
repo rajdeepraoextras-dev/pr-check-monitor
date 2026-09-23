@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T13:30:03.877286+00:00",
+  "snapshot_time": "2026-09-23T13:30:47.742582+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1045,19 +1045,14 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 13,
+      "passed": 14,
       "total": 17,
       "skipped": 1,
       "failed": [
         "gate",
         "trials"
       ],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-23T13:30:03Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -1081,16 +1076,6 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T13:30:03Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35849342377/job/107202677825",
-          "app": "github-actions"
-        },
-        {
           "name": "ava_review",
           "state": "passed",
           "conclusion": "success",
@@ -1108,6 +1093,16 @@
           "completed_at": "2026-09-23T10:32:34Z",
           "duration_sec": 27,
           "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35849342377/job/107143036900",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T13:30:03Z",
+          "completed_at": "2026-09-23T13:30:20Z",
+          "duration_sec": 17,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35849342377/job/107202677825",
           "app": "github-actions"
         },
         {
@@ -1233,7 +1228,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:04:53.465300+00:00",
-      "last_change": "2026-09-23T13:30:03.877286+00:00"
+      "last_change": "2026-09-23T13:30:47.742582+00:00"
     },
     {
       "repo": "dynamo-6cfb94e-debugging-and-repair",
