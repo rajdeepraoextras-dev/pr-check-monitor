@@ -1,41 +1,5 @@
 [
  {
-  "ts": "2026-09-23T08:11:52.716026+00:00",
-  "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
-  "type": "passed",
-  "msg": "Check passed: qc_eval"
- },
- {
-  "ts": "2026-09-23T08:11:52.716026+00:00",
-  "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
-  "type": "passed",
-  "msg": "Check passed: qc_gate"
- },
- {
-  "ts": "2026-09-23T08:12:37.289541+00:00",
-  "pr": "dynamo-qkk71mj-hardware-low-level#12",
-  "type": "passed",
-  "msg": "Check passed: trials"
- },
- {
-  "ts": "2026-09-23T08:13:20.237204+00:00",
-  "pr": "dynamo-qkk71mj-hardware-low-level#12",
-  "type": "passed",
-  "msg": "Status running \u2192 passed"
- },
- {
-  "ts": "2026-09-23T08:13:20.237204+00:00",
-  "pr": "dynamo-qkk71mj-hardware-low-level#12",
-  "type": "passed",
-  "msg": "Check passed: claude-cost-report"
- },
- {
-  "ts": "2026-09-23T08:13:20.237204+00:00",
-  "pr": "dynamo-qkk71mj-hardware-low-level#12",
-  "type": "passed",
-  "msg": "Check passed: gate"
- },
- {
   "ts": "2026-09-23T08:15:11.928576+00:00",
   "pr": "dynamo-qkk71mj-hardware-low-level#12",
   "type": "passed",
@@ -2395,6 +2359,42 @@
  },
  {
   "ts": "2026-09-23T17:12:02.266640+00:00",
+  "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-23T17:13:30.150059+00:00",
+  "pr": "dynamo-d6941c7-build-dependency-and-release-management#9",
+  "type": "started",
+  "msg": "Check started: review"
+ },
+ {
+  "ts": "2026-09-23T17:13:30.150059+00:00",
+  "pr": "dynamo-d6941c7-build-dependency-and-release-management#9",
+  "type": "passed",
+  "msg": "Check passed: cosine_similarity"
+ },
+ {
+  "ts": "2026-09-23T17:13:30.150059+00:00",
+  "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-23T17:13:30.150059+00:00",
+  "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-23T17:13:30.150059+00:00",
+  "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
+  "type": "failing",
+  "msg": "Check failed: trials"
+ },
+ {
+  "ts": "2026-09-23T17:13:30.150059+00:00",
   "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
   "type": "passed",
   "msg": "Check passed: claude-cost-report"
