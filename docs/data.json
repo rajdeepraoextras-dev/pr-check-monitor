@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T17:11:10.781433+00:00",
+  "snapshot_time": "2026-09-23T17:12:02.266640+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Charge a pulled layer its size when only cached steps produced it",
       "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/pull/9",
       "createdAt": "2026-09-23T15:13:33Z",
-      "updatedAt": "2026-09-23T17:09:56Z",
+      "updatedAt": "2026-09-23T17:11:43Z",
       "sha": "f4856e050588571bcd2288e0257c8e859f47f31b",
       "draft": false,
       "mergeable": true,
@@ -27,26 +27,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 1,
-      "total": 2,
+      "passed": 2,
+      "total": 3,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "cosine_similarity",
-          "started_at": "2026-09-23T17:10:06Z"
+          "name": "review",
+          "started_at": "2026-09-23T17:11:33Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "cosine_similarity",
+          "name": "review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T17:10:06Z",
+          "started_at": "2026-09-23T17:11:33Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35893685392/job/107292372672",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35893685392/job/107292924815",
           "app": "github-actions"
         },
         {
@@ -58,11 +58,21 @@
           "duration_sec": 27,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35893685392/job/107292185354",
           "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T17:10:06Z",
+          "completed_at": "2026-09-23T17:11:31Z",
+          "duration_sec": 85,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35893685392/job/107292372672",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-23T15:15:28.703009+00:00",
-      "last_change": "2026-09-23T17:10:21.870534+00:00"
+      "last_change": "2026-09-23T17:12:02.266640+00:00"
     },
     {
       "repo": "dynamo-qkk71mj-hardware-low-level",
@@ -1477,7 +1487,7 @@
       "title": "Rework: fill chain_bytes on every format-sheet row and refuse extra files in the output directory",
       "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/pull/5",
       "createdAt": "2026-09-23T01:42:26Z",
-      "updatedAt": "2026-09-23T16:41:48Z",
+      "updatedAt": "2026-09-23T17:12:10Z",
       "sha": "e9be19b25e113268700e1605474cc4b623180797",
       "draft": false,
       "mergeable": true,
@@ -1488,28 +1498,36 @@
       "head": "rework/e3b1da9-output-scope",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
-      "passed": 13,
-      "total": 15,
+      "overall": "failing",
+      "passed": 14,
+      "total": 17,
       "skipped": 1,
-      "failed": [],
-      "running": [
-        {
-          "name": "trials",
-          "started_at": "2026-09-23T16:41:36Z"
-        }
+      "failed": [
+        "gate",
+        "trials"
       ],
+      "running": [],
       "queued": [],
       "checks": [
         {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-23T17:12:02Z",
+          "completed_at": "2026-09-23T17:12:14Z",
+          "duration_sec": 12,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35880781953/job/107293105105",
+          "app": "github-actions"
+        },
+        {
           "name": "trials",
-          "state": "running",
-          "conclusion": null,
+          "state": "failed",
+          "conclusion": "failure",
           "started_at": "2026-09-23T16:41:36Z",
-          "completed_at": null,
-          "duration_sec": null,
+          "completed_at": "2026-09-23T17:11:58Z",
+          "duration_sec": 1822,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35880781953/job/107281454203",
           "app": "github-actions"
         },
@@ -1531,6 +1549,16 @@
           "completed_at": "2026-09-23T15:20:38Z",
           "duration_sec": 25,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35880781953/job/107248364594",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T17:12:02Z",
+          "completed_at": "2026-09-23T17:12:20Z",
+          "duration_sec": 18,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35880781953/job/107293105320",
           "app": "github-actions"
         },
         {
@@ -1656,7 +1684,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:36.964506+00:00",
-      "last_change": "2026-09-23T16:41:34.272501+00:00"
+      "last_change": "2026-09-23T17:12:02.266640+00:00"
     },
     {
       "repo": "dynamo-8c5f793-systems-infrastructure-and-operations",
