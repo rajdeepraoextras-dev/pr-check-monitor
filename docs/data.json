@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T03:04:15.417441+00:00",
+  "snapshot_time": "2026-09-23T03:04:52.562799+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -623,7 +623,7 @@
       "title": "Rework: roll back a refused second commit, keep sidecars out of the desk, pin the probe seed",
       "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/pull/6",
       "createdAt": "2026-09-23T01:55:59Z",
-      "updatedAt": "2026-09-23T03:04:19Z",
+      "updatedAt": "2026-09-23T03:04:59Z",
       "sha": "714eaa86b659704326115a3e5542947baf14efc2",
       "draft": false,
       "mergeable": true,
@@ -637,25 +637,35 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 9,
+      "total": 11,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "ava_review",
-          "started_at": "2026-09-23T02:56:20Z"
+          "name": "tier1",
+          "started_at": "2026-09-23T03:04:28Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "ava_review",
+          "name": "tier1",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T02:56:20Z",
+          "started_at": "2026-09-23T03:04:28Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/actions/runs/35808331448/job/107028074877",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T02:56:20Z",
+          "completed_at": "2026-09-23T03:04:25Z",
+          "duration_sec": 485,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/actions/runs/35808331448/job/107026433034",
           "app": "github-actions"
         },
@@ -752,7 +762,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:04:42.620918+00:00",
-      "last_change": "2026-09-23T03:04:15.417441+00:00"
+      "last_change": "2026-09-23T03:04:52.562799+00:00"
     },
     {
       "repo": "dynamo-408b1b0-security",
