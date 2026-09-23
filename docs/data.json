@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T11:55:48.397446+00:00",
+  "snapshot_time": "2026-09-23T11:56:09.445725+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1031,7 +1031,7 @@
       "title": "Rework: disclose the projective seal and prove the archive pins its key",
       "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/pull/10",
       "createdAt": "2026-09-23T02:02:45Z",
-      "updatedAt": "2026-09-23T11:54:57Z",
+      "updatedAt": "2026-09-23T11:56:07Z",
       "sha": "3180bd5cbf5e53fe26c62bc5f277c6621565c53a",
       "draft": false,
       "mergeable": true,
@@ -1045,25 +1045,35 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 9,
+      "total": 11,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "ava_review",
-          "started_at": "2026-09-23T11:47:32Z"
+          "name": "tier1",
+          "started_at": "2026-09-23T11:56:17Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "ava_review",
+          "name": "tier1",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T11:47:32Z",
+          "started_at": "2026-09-23T11:56:17Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35849342377/job/107169151035",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T11:47:32Z",
+          "completed_at": "2026-09-23T11:56:14Z",
+          "duration_sec": 522,
           "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35849342377/job/107166391011",
           "app": "github-actions"
         },
@@ -1160,7 +1170,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:04:53.465300+00:00",
-      "last_change": "2026-09-23T11:55:05.639941+00:00"
+      "last_change": "2026-09-23T11:56:09.445725+00:00"
     },
     {
       "repo": "dynamo-6cfb94e-debugging-and-repair",
@@ -1983,7 +1993,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:36.964506+00:00",
-      "last_change": "2026-09-23T11:55:48.397446+00:00"
+      "last_change": "2026-09-23T11:56:09.445725+00:00"
     }
   ]
 }
