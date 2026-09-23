@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T03:53:09.077012+00:00",
+  "snapshot_time": "2026-09-23T03:53:48.982045+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: disclose the firmware rule family and derive it in the oracle",
       "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/pull/6",
       "createdAt": "2026-09-23T03:16:04Z",
-      "updatedAt": "2026-09-23T03:52:59Z",
+      "updatedAt": "2026-09-23T03:53:17Z",
       "sha": "c9f4c660eda38ca18e682ec207776f3f7ae8ad87",
       "draft": false,
       "mergeable": true,
@@ -24,22 +24,34 @@
       "head": "rework/2fbf25f-disclosed-firmware-rule",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
       "overall": "failing",
-      "passed": 6,
+      "passed": 7,
       "total": 17,
       "skipped": 7,
       "failed": [
+        "gate",
         "pass2"
       ],
-      "running": [],
-      "queued": [
-        "claude-cost-report",
-        "gate",
-        "pass2_suggestion"
+      "running": [
+        {
+          "name": "pass2_suggestion",
+          "started_at": "2026-09-23T03:53:10Z"
+        }
       ],
+      "queued": [],
       "checks": [
+        {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-23T03:53:11Z",
+          "completed_at": "2026-09-23T03:53:21Z",
+          "duration_sec": 10,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35813653406/job/107037833265",
+          "app": "github-actions"
+        },
         {
           "name": "pass2",
           "state": "failed",
@@ -51,30 +63,10 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "queued",
-          "conclusion": null,
-          "started_at": "2026-09-23T03:53:09Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35813653406/job/107037833151",
-          "app": "github-actions"
-        },
-        {
-          "name": "gate",
-          "state": "queued",
-          "conclusion": null,
-          "started_at": "2026-09-23T03:53:09Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35813653406/job/107037833265",
-          "app": "github-actions"
-        },
-        {
           "name": "pass2_suggestion",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T03:53:08Z",
+          "started_at": "2026-09-23T03:53:10Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35813653406/job/107037831525",
@@ -88,6 +80,16 @@
           "completed_at": "2026-09-23T03:16:37Z",
           "duration_sec": 26,
           "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35813653406/job/107030432157",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T03:53:11Z",
+          "completed_at": "2026-09-23T03:53:28Z",
+          "duration_sec": 17,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35813653406/job/107037833151",
           "app": "github-actions"
         },
         {
@@ -213,7 +215,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T03:17:56.978293+00:00",
-      "last_change": "2026-09-23T03:53:09.077012+00:00"
+      "last_change": "2026-09-23T03:53:48.982045+00:00"
     },
     {
       "repo": "dynamo-7d2be57-mathematics-and-formal-reasoning",
