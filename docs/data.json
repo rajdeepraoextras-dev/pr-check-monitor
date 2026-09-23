@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T05:03:44.724265+00:00",
+  "snapshot_time": "2026-09-23T05:04:37.544235+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -760,74 +760,6 @@
       "last_change": "2026-09-23T05:03:44.724265+00:00"
     },
     {
-      "repo": "dynamo-8c5f793-systems-infrastructure-and-operations",
-      "full_repo": "handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations",
-      "num": "10",
-      "title": "Rework: disclose the projective seal and prove the archive pins its key",
-      "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/pull/10",
-      "createdAt": "2026-09-23T02:02:45Z",
-      "updatedAt": "2026-09-23T05:03:36Z",
-      "sha": "f209a2c03d85b440d67d0601ec7c648f693ccc55",
-      "draft": false,
-      "mergeable": true,
-      "reviewDecision": "",
-      "additions": 2101,
-      "deletions": 408,
-      "changedFiles": 12,
-      "head": "rework/8c5f793-disclosed-seal",
-      "base": "main",
-      "labels": [
-        "in-progress"
-      ],
-      "overall": "running",
-      "passed": 2,
-      "total": 3,
-      "skipped": 0,
-      "failed": [],
-      "running": [
-        {
-          "name": "review",
-          "started_at": "2026-09-23T05:03:27Z"
-        }
-      ],
-      "queued": [],
-      "checks": [
-        {
-          "name": "review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T05:03:27Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35820708520/job/107052102352",
-          "app": "github-actions"
-        },
-        {
-          "name": "changes",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-23T05:01:40Z",
-          "completed_at": "2026-09-23T05:02:05Z",
-          "duration_sec": 25,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35820708520/job/107051739485",
-          "app": "github-actions"
-        },
-        {
-          "name": "cosine_similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-23T05:02:07Z",
-          "completed_at": "2026-09-23T05:03:24Z",
-          "duration_sec": 77,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35820708520/job/107051829676",
-          "app": "github-actions"
-        }
-      ],
-      "submitted": false,
-      "first_seen": "2026-09-23T02:04:53.465300+00:00",
-      "last_change": "2026-09-23T05:03:44.724265+00:00"
-    },
-    {
       "repo": "dynamo-6cfb94e-debugging-and-repair",
       "full_repo": "handshake-project-dynamo/dynamo-6cfb94e-debugging-and-repair",
       "num": "11",
@@ -1451,6 +1383,27 @@
       "submitted": false,
       "first_seen": "2026-09-23T01:59:36.964506+00:00",
       "last_change": "2026-09-23T04:47:06.168660+00:00"
+    },
+    {
+      "repo": "dynamo-8c5f793-systems-infrastructure-and-operations",
+      "full_repo": "handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations",
+      "num": "10",
+      "title": "(error fetching)",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/pull/10",
+      "overall": "error",
+      "passed": 0,
+      "total": 0,
+      "skipped": 0,
+      "failed": [
+        "`gh api repos/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations` failed: Get \"https://api.github.com/repos/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/pulls/10\": dial tcp 20.207.73.85:443: i/o timeout"
+      ],
+      "running": [],
+      "queued": [],
+      "checks": [],
+      "labels": [],
+      "submitted": false,
+      "first_seen": "2026-09-23T02:04:53.465300+00:00",
+      "last_change": "2026-09-23T05:03:44.724265+00:00"
     }
   ]
 }
