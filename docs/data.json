@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T06:13:46.427561+00:00",
+  "snapshot_time": "2026-09-23T06:14:13.326813+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: bound the kernel's shared memory and grade the GPU deliverable by executing it",
       "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/pull/12",
       "createdAt": "2026-09-23T05:39:41Z",
-      "updatedAt": "2026-09-23T06:07:59Z",
+      "updatedAt": "2026-09-23T06:14:08Z",
       "sha": "cece9427a9909c40bc4f40cfa9708d130621fffb",
       "draft": false,
       "mergeable": true,
@@ -786,7 +786,7 @@
       "title": "Rework: disclose the projective seal and prove the archive pins its key",
       "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/pull/10",
       "createdAt": "2026-09-23T02:02:45Z",
-      "updatedAt": "2026-09-23T06:12:12Z",
+      "updatedAt": "2026-09-23T06:14:16Z",
       "sha": "f209a2c03d85b440d67d0601ec7c648f693ccc55",
       "draft": false,
       "mergeable": true,
@@ -800,25 +800,32 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 9,
+      "total": 11,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "ava_review",
-          "started_at": "2026-09-23T06:06:31Z"
-        }
+      "running": [],
+      "queued": [
+        "tier1"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "ava_review",
-          "state": "running",
+          "name": "tier1",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-23T06:06:31Z",
+          "started_at": "2026-09-23T06:14:23Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35820708520/job/107067228437",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T06:06:31Z",
+          "completed_at": "2026-09-23T06:14:22Z",
+          "duration_sec": 471,
           "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35820708520/job/107065434141",
           "app": "github-actions"
         },
@@ -915,7 +922,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:04:53.465300+00:00",
-      "last_change": "2026-09-23T06:13:46.427561+00:00"
+      "last_change": "2026-09-23T06:14:13.326813+00:00"
     },
     {
       "repo": "dynamo-6cfb94e-debugging-and-repair",
@@ -1334,7 +1341,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:31.160986+00:00",
-      "last_change": "2026-09-23T06:13:46.427561+00:00"
+      "last_change": "2026-09-23T06:11:34.654937+00:00"
     },
     {
       "repo": "dynamo-e3b1da9-model-training-and-ml-infrastructure",
