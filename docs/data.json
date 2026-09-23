@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T03:10:15.722748+00:00",
+  "snapshot_time": "2026-09-23T03:10:59.799074+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -997,7 +997,7 @@
       "title": "Rework: fill chain_bytes on every format-sheet row and refuse extra files in the output directory",
       "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/pull/5",
       "createdAt": "2026-09-23T01:42:26Z",
-      "updatedAt": "2026-09-23T03:03:19Z",
+      "updatedAt": "2026-09-23T03:10:55Z",
       "sha": "6479b927ede42fbae228aa2216b62e4c0eca3f65",
       "draft": false,
       "mergeable": true,
@@ -1011,17 +1011,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "ava_review",
-          "started_at": "2026-09-23T03:03:12Z"
-        },
-        {
-          "name": "deep_review",
           "started_at": "2026-09-23T03:03:12Z"
         }
       ],
@@ -1035,16 +1031,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35807400991/job/107027814378",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T03:03:12Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35807400991/job/107027814512",
           "app": "github-actions"
         },
         {
@@ -1065,6 +1051,16 @@
           "completed_at": "2026-09-23T01:44:18Z",
           "duration_sec": 80,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35807400991/job/107011270579",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T03:03:12Z",
+          "completed_at": "2026-09-23T03:11:02Z",
+          "duration_sec": 470,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35807400991/job/107027814512",
           "app": "github-actions"
         },
         {
@@ -1130,7 +1126,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:36.964506+00:00",
-      "last_change": "2026-09-23T03:03:35.013545+00:00"
+      "last_change": "2026-09-23T03:10:59.799074+00:00"
     }
   ]
 }
