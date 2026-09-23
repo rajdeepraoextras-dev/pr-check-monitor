@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T07:11:32.688666+00:00",
+  "snapshot_time": "2026-09-23T07:12:15.539893+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1169,7 +1169,7 @@
       "title": "Rework: order an empty occupancy's spawn before its join, and grade it",
       "url": "https://github.com/handshake-project-dynamo/dynamo-6cfb94e-debugging-and-repair/pull/11",
       "createdAt": "2026-09-23T01:57:27Z",
-      "updatedAt": "2026-09-23T07:02:58Z",
+      "updatedAt": "2026-09-23T07:11:45Z",
       "sha": "602b79aff6012cf8fb85fe82da5f3cfa27dbdbaa",
       "draft": false,
       "mergeable": true,
@@ -1183,17 +1183,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "ava_review",
-          "started_at": "2026-09-23T07:02:52Z"
-        },
-        {
-          "name": "deep_review",
           "started_at": "2026-09-23T07:02:52Z"
         }
       ],
@@ -1207,16 +1203,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-6cfb94e-debugging-and-repair/actions/runs/35824592898/job/107079139603",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T07:02:52Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-6cfb94e-debugging-and-repair/actions/runs/35824592898/job/107079139556",
           "app": "github-actions"
         },
         {
@@ -1237,6 +1223,16 @@
           "completed_at": "2026-09-23T05:59:28Z",
           "duration_sec": 72,
           "url": "https://github.com/handshake-project-dynamo/dynamo-6cfb94e-debugging-and-repair/actions/runs/35824592898/job/107063572674",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T07:02:52Z",
+          "completed_at": "2026-09-23T07:11:52Z",
+          "duration_sec": 540,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6cfb94e-debugging-and-repair/actions/runs/35824592898/job/107079139556",
           "app": "github-actions"
         },
         {
@@ -1302,7 +1298,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:05:00.900749+00:00",
-      "last_change": "2026-09-23T07:03:51.766839+00:00"
+      "last_change": "2026-09-23T07:12:15.539893+00:00"
     },
     {
       "repo": "dynamo-ef7562e-systems-infrastructure-and-operations",
