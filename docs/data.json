@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T15:48:31.203076+00:00",
+  "snapshot_time": "2026-09-23T15:49:14.182373+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Charge a pulled layer its size when only cached steps produced it",
       "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/pull/9",
       "createdAt": "2026-09-23T15:13:33Z",
-      "updatedAt": "2026-09-23T15:21:24Z",
+      "updatedAt": "2026-09-23T15:48:57Z",
       "sha": "ec6f53f0e6c75bdc09f50ebb103406c942e037cb",
       "draft": false,
       "mergeable": true,
@@ -27,26 +27,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-23T15:21:14Z"
+          "name": "ava_review",
+          "started_at": "2026-09-23T15:48:48Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-23T15:48:48Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "pass2",
+          "name": "ava_review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T15:21:14Z",
+          "started_at": "2026-09-23T15:48:48Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107248804114",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107260372681",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-23T15:48:48Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107260372794",
           "app": "github-actions"
         },
         {
@@ -67,6 +81,16 @@
           "completed_at": "2026-09-23T15:15:42Z",
           "duration_sec": 90,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107245818193",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T15:21:14Z",
+          "completed_at": "2026-09-23T15:48:45Z",
+          "duration_sec": 1651,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107248804114",
           "app": "github-actions"
         },
         {
@@ -108,11 +132,21 @@
           "duration_sec": 67,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107248170742",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-23T15:48:46Z",
+          "completed_at": "2026-09-23T15:48:46Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107260375381",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-23T15:15:28.703009+00:00",
-      "last_change": "2026-09-23T15:23:33.661907+00:00"
+      "last_change": "2026-09-23T15:49:14.182373+00:00"
     },
     {
       "repo": "dynamo-qkk71mj-hardware-low-level",
