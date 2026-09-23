@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T07:01:27.203810+00:00",
+  "snapshot_time": "2026-09-23T07:01:28.895563+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -27,17 +27,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "qc_eval",
-          "started_at": "2026-09-23T06:54:46Z"
-        },
-        {
-          "name": "qc_exec",
           "started_at": "2026-09-23T06:54:46Z"
         }
       ],
@@ -51,16 +47,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/actions/runs/35825122186/job/107077027423",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T06:54:46Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/actions/runs/35825122186/job/107077027565",
           "app": "github-actions"
         },
         {
@@ -111,6 +97,16 @@
           "completed_at": "2026-09-23T06:45:26Z",
           "duration_sec": 1643,
           "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/actions/runs/35825122186/job/107068076245",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T06:54:46Z",
+          "completed_at": "2026-09-23T07:01:33Z",
+          "duration_sec": 407,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/actions/runs/35825122186/job/107077027565",
           "app": "github-actions"
         },
         {
@@ -176,7 +172,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T05:43:10.219029+00:00",
-      "last_change": "2026-09-23T06:54:55.924049+00:00"
+      "last_change": "2026-09-23T07:01:28.895563+00:00"
     },
     {
       "repo": "dynamo-2a4c9a8-model-training-and-ml-infrastructure",
@@ -1661,7 +1657,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:31.160986+00:00",
-      "last_change": "2026-09-23T07:01:27.203810+00:00"
+      "last_change": "2026-09-23T07:01:28.895563+00:00"
     },
     {
       "repo": "dynamo-e3b1da9-model-training-and-ml-infrastructure",
