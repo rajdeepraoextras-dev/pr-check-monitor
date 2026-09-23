@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T07:00:44.011028+00:00",
+  "snapshot_time": "2026-09-23T07:01:27.203810+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1464,7 +1464,7 @@
       "title": "Rework: require an exact 32-byte flag file and restore the ground-truth and determinism fixes",
       "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/pull/11",
       "createdAt": "2026-09-23T01:43:57Z",
-      "updatedAt": "2026-09-23T07:00:53Z",
+      "updatedAt": "2026-09-23T07:01:10Z",
       "sha": "676974ac4a1f821eb754a10670673c6bad740218",
       "draft": false,
       "mergeable": true,
@@ -1475,20 +1475,18 @@
       "head": "rework/408b1b0-proto-exploit",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
       "overall": "failing",
-      "passed": 8,
+      "passed": 9,
       "total": 17,
       "skipped": 6,
       "failed": [
-        "ava_review"
-      ],
-      "running": [],
-      "queued": [
-        "claude-cost-report",
+        "ava_review",
         "gate"
       ],
+      "running": [],
+      "queued": [],
       "checks": [
         {
           "name": "ava_review",
@@ -1501,22 +1499,12 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "queued",
-          "conclusion": null,
-          "started_at": "2026-09-23T07:01:01Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35824954892/job/107078666736",
-          "app": "github-actions"
-        },
-        {
           "name": "gate",
-          "state": "queued",
-          "conclusion": null,
-          "started_at": "2026-09-23T07:01:01Z",
-          "completed_at": null,
-          "duration_sec": null,
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-23T07:01:03Z",
+          "completed_at": "2026-09-23T07:01:13Z",
+          "duration_sec": 10,
           "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35824954892/job/107078666681",
           "app": "github-actions"
         },
@@ -1528,6 +1516,16 @@
           "completed_at": "2026-09-23T06:03:11Z",
           "duration_sec": 25,
           "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35824954892/job/107064570088",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T07:01:03Z",
+          "completed_at": "2026-09-23T07:01:20Z",
+          "duration_sec": 17,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35824954892/job/107078666736",
           "app": "github-actions"
         },
         {
@@ -1663,7 +1661,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:31.160986+00:00",
-      "last_change": "2026-09-23T07:00:44.011028+00:00"
+      "last_change": "2026-09-23T07:01:27.203810+00:00"
     },
     {
       "repo": "dynamo-e3b1da9-model-training-and-ml-infrastructure",
