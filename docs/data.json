@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T23:33:33.283471+00:00",
+  "snapshot_time": "2026-09-23T23:34:03.474305+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: grade the output partition and reject coerced output values",
       "url": "https://github.com/handshake-project-dynamo/dynamo-fa093f0-mathematics-and-formal-reasoning/pull/4",
       "createdAt": "2026-09-23T19:50:14Z",
-      "updatedAt": "2026-09-23T23:33:22Z",
+      "updatedAt": "2026-09-23T23:33:43Z",
       "sha": "a97d80dd270ace880682497353feb681617001a8",
       "draft": false,
       "mergeable": true,
@@ -24,45 +24,16 @@
       "head": "rework/fa093f0-sheaf-consistency",
       "base": "main",
       "labels": [
-        "in-progress"
+        "accepted"
       ],
-      "overall": "running",
-      "passed": 14,
+      "overall": "passed",
+      "passed": 16,
       "total": 17,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-23T23:33:33Z"
-        },
-        {
-          "name": "gate",
-          "started_at": "2026-09-23T23:33:32Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
-        {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T23:33:33Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-fa093f0-mathematics-and-formal-reasoning/actions/runs/35921284577/job/107427397599",
-          "app": "github-actions"
-        },
-        {
-          "name": "gate",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T23:33:32Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-fa093f0-mathematics-and-formal-reasoning/actions/runs/35921284577/job/107427397606",
-          "app": "github-actions"
-        },
         {
           "name": "ava_review",
           "state": "passed",
@@ -84,6 +55,16 @@
           "app": "github-actions"
         },
         {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T23:33:33Z",
+          "completed_at": "2026-09-23T23:33:49Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-fa093f0-mathematics-and-formal-reasoning/actions/runs/35921284577/job/107427397599",
+          "app": "github-actions"
+        },
+        {
           "name": "cosine_similarity",
           "state": "passed",
           "conclusion": "success",
@@ -101,6 +82,16 @@
           "completed_at": "2026-09-23T22:34:40Z",
           "duration_sec": 267,
           "url": "https://github.com/handshake-project-dynamo/dynamo-fa093f0-mathematics-and-formal-reasoning/actions/runs/35921284577/job/107409826812",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T23:33:32Z",
+          "completed_at": "2026-09-23T23:33:47Z",
+          "duration_sec": 15,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-fa093f0-mathematics-and-formal-reasoning/actions/runs/35921284577/job/107427397606",
           "app": "github-actions"
         },
         {
@@ -216,7 +207,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T19:52:18.806142+00:00",
-      "last_change": "2026-09-23T23:33:33.283471+00:00"
+      "last_change": "2026-09-23T23:34:03.474305+00:00"
     },
     {
       "repo": "dynamo-d6941c7-build-dependency-and-release-management",
@@ -1638,27 +1629,6 @@
       "submitted": false,
       "first_seen": "2026-09-23T02:04:42.620918+00:00",
       "last_change": "2026-09-23T04:36:19.608216+00:00"
-    },
-    {
-      "repo": "dynamo-e3b1da9-model-training-and-ml-infrastructure",
-      "full_repo": "handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure",
-      "num": "5",
-      "title": "(error fetching)",
-      "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/pull/5",
-      "overall": "error",
-      "passed": 0,
-      "total": 0,
-      "skipped": 0,
-      "failed": [
-        "`gh api repos/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/` failed: gh: Not Found (HTTP 404)"
-      ],
-      "running": [],
-      "queued": [],
-      "checks": [],
-      "labels": [],
-      "submitted": false,
-      "first_seen": "2026-09-23T01:59:36.964506+00:00",
-      "last_change": "2026-09-23T20:02:20.646432+00:00"
     }
   ]
 }
