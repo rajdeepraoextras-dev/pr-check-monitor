@@ -1,5 +1,35 @@
 [
  {
+  "ts": "2026-09-23T04:47:06.168660+00:00",
+  "pr": "dynamo-7d2be57-mathematics-and-formal-reasoning#9",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-23T04:47:06.168660+00:00",
+  "pr": "dynamo-7d2be57-mathematics-and-formal-reasoning#9",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-23T04:47:06.168660+00:00",
+  "pr": "dynamo-7d2be57-mathematics-and-formal-reasoning#9",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-23T04:47:06.168660+00:00",
+  "pr": "dynamo-7d2be57-mathematics-and-formal-reasoning#9",
+  "type": "passed",
+  "msg": "Check passed: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-23T04:47:06.168660+00:00",
+  "pr": "dynamo-2a4c9a8-model-training-and-ml-infrastructure#9",
+  "type": "discovered",
+  "msg": "PR discovered: Fix sound_verifier findings from #7 and #5: RFC 6901 empty reference tokens and surrogate-pair escapes"
+ },
+ {
   "ts": "2026-09-23T04:51:03.994477+00:00",
   "pr": "dynamo-7d2be57-mathematics-and-formal-reasoning#9",
   "type": "failing",
@@ -2368,35 +2398,5 @@
   "pr": "dynamo-408b1b0-security#11",
   "type": "passed",
   "msg": "Check passed: changes"
- },
- {
-  "ts": "2026-09-23T08:40:17.286811+00:00",
-  "pr": "dynamo-408b1b0-security#11",
-  "type": "push",
-  "msg": "New commit pushed (a681d70)"
- },
- {
-  "ts": "2026-09-23T08:40:17.286811+00:00",
-  "pr": "dynamo-408b1b0-security#11",
-  "type": "running",
-  "msg": "Status failing \u2192 running"
- },
- {
-  "ts": "2026-09-23T08:40:17.286811+00:00",
-  "pr": "dynamo-408b1b0-security#11",
-  "type": "started",
-  "msg": "Check started: cosine_similarity"
- },
- {
-  "ts": "2026-09-23T08:40:17.286811+00:00",
-  "pr": "dynamo-408b1b0-security#11",
-  "type": "passed",
-  "msg": "Check recovered: gate"
- },
- {
-  "ts": "2026-09-23T08:40:17.286811+00:00",
-  "pr": "dynamo-408b1b0-security#11",
-  "type": "passed",
-  "msg": "Check recovered: pass2"
  }
 ]
