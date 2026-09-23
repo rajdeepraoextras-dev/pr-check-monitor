@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T15:57:23.358831+00:00",
+  "snapshot_time": "2026-09-23T15:58:07.379651+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Charge a pulled layer its size when only cached steps produced it",
       "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/pull/9",
       "createdAt": "2026-09-23T15:13:33Z",
-      "updatedAt": "2026-09-23T15:56:13Z",
+      "updatedAt": "2026-09-23T15:57:59Z",
       "sha": "ec6f53f0e6c75bdc09f50ebb103406c942e037cb",
       "draft": false,
       "mergeable": true,
@@ -24,29 +24,52 @@
       "head": "rework/d6941c7-base-layer-cache-overlap",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
+      "overall": "failing",
       "passed": 8,
-      "total": 10,
-      "skipped": 1,
-      "failed": [],
+      "total": 17,
+      "skipped": 6,
+      "failed": [
+        "ava_review",
+        "gate"
+      ],
       "running": [
         {
-          "name": "ava_review",
-          "started_at": "2026-09-23T15:48:48Z"
+          "name": "claude-cost-report",
+          "started_at": "2026-09-23T15:57:53Z"
         }
       ],
       "queued": [],
       "checks": [
         {
           "name": "ava_review",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-23T15:48:48Z",
+          "completed_at": "2026-09-23T15:57:50Z",
+          "duration_sec": 542,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107260372681",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-23T15:57:53Z",
+          "completed_at": "2026-09-23T15:58:03Z",
+          "duration_sec": 10,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107264081659",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T15:48:48Z",
+          "started_at": "2026-09-23T15:57:53Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107260372681",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107264081793",
           "app": "github-actions"
         },
         {
@@ -138,11 +161,61 @@
           "duration_sec": 0,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107260375381",
           "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-23T15:57:51Z",
+          "completed_at": "2026-09-23T15:57:50Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107264081376",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-23T15:57:51Z",
+          "completed_at": "2026-09-23T15:57:50Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107264081240",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-23T15:57:51Z",
+          "completed_at": "2026-09-23T15:57:50Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107264083127",
+          "app": "github-actions"
+        },
+        {
+          "name": "tier1",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-23T15:57:50Z",
+          "completed_at": "2026-09-23T15:57:50Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107264080738",
+          "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-23T15:57:51Z",
+          "completed_at": "2026-09-23T15:57:50Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107264082386",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-23T15:15:28.703009+00:00",
-      "last_change": "2026-09-23T15:56:45.973318+00:00"
+      "last_change": "2026-09-23T15:58:07.379651+00:00"
     },
     {
       "repo": "dynamo-qkk71mj-hardware-low-level",
