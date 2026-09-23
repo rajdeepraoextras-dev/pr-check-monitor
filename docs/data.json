@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T03:26:16.388881+00:00",
+  "snapshot_time": "2026-09-23T03:26:56.064619+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -121,7 +121,7 @@
       "title": "Rework classify-families: publish the rule space, derive the rule from it, accept only integer labels",
       "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/pull/9",
       "createdAt": "2026-09-23T02:19:58Z",
-      "updatedAt": "2026-09-23T03:25:35Z",
+      "updatedAt": "2026-09-23T03:26:51Z",
       "sha": "947e6180088ecb25764157e1cde5e9e3875fb5ac",
       "draft": false,
       "mergeable": false,
@@ -135,26 +135,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 4,
-      "total": 5,
+      "passed": 6,
+      "total": 7,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "validation",
-          "started_at": "2026-09-23T03:25:29Z"
+          "name": "pass2",
+          "started_at": "2026-09-23T03:26:42Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "validation",
+          "name": "pass2",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T03:25:29Z",
+          "started_at": "2026-09-23T03:26:42Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35813961677/job/107032299785",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35813961677/job/107032544733",
           "app": "github-actions"
         },
         {
@@ -178,6 +178,16 @@
           "app": "github-actions"
         },
         {
+          "name": "ratelimit",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T03:26:32Z",
+          "completed_at": "2026-09-23T03:26:40Z",
+          "duration_sec": 8,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35813961677/job/107032510195",
+          "app": "github-actions"
+        },
+        {
           "name": "review",
           "state": "passed",
           "conclusion": "success",
@@ -196,11 +206,21 @@
           "duration_sec": 24,
           "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35813961677/job/107032212140",
           "app": "github-actions"
+        },
+        {
+          "name": "validation",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T03:25:29Z",
+          "completed_at": "2026-09-23T03:26:30Z",
+          "duration_sec": 61,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35813961677/job/107032299785",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:24:58.336617+00:00",
-      "last_change": "2026-09-23T03:25:35.095979+00:00"
+      "last_change": "2026-09-23T03:26:56.064619+00:00"
     },
     {
       "repo": "dynamo-0110c27-mathematics-and-formal-reasoning",
@@ -827,7 +847,7 @@
       "title": "Rework: roll back a refused second commit, keep sidecars out of the desk, pin the probe seed",
       "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/pull/6",
       "createdAt": "2026-09-23T01:55:59Z",
-      "updatedAt": "2026-09-23T03:05:13Z",
+      "updatedAt": "2026-09-23T03:26:45Z",
       "sha": "714eaa86b659704326115a3e5542947baf14efc2",
       "draft": false,
       "mergeable": true,
@@ -841,26 +861,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 12,
-      "total": 14,
+      "passed": 13,
+      "total": 15,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_gate",
-          "started_at": "2026-09-23T03:26:21Z"
+          "name": "trials",
+          "started_at": "2026-09-23T03:26:36Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_gate",
+          "name": "trials",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T03:26:21Z",
+          "started_at": "2026-09-23T03:26:36Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/actions/runs/35808331448/job/107032471121",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/actions/runs/35808331448/job/107032523732",
           "app": "github-actions"
         },
         {
@@ -934,6 +954,16 @@
           "app": "github-actions"
         },
         {
+          "name": "qc_gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T03:26:21Z",
+          "completed_at": "2026-09-23T03:26:34Z",
+          "duration_sec": 13,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/actions/runs/35808331448/job/107032471121",
+          "app": "github-actions"
+        },
+        {
           "name": "ratelimit",
           "state": "passed",
           "conclusion": "success",
@@ -996,7 +1026,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:04:42.620918+00:00",
-      "last_change": "2026-09-23T03:26:16.388881+00:00"
+      "last_change": "2026-09-23T03:26:56.064619+00:00"
     },
     {
       "repo": "dynamo-408b1b0-security",
