@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T17:51:33.811877+00:00",
+  "snapshot_time": "2026-09-23T17:52:16.788373+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -27,7 +27,7 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
@@ -35,10 +35,6 @@
         {
           "name": "qc_eval",
           "started_at": "2026-09-23T17:47:28Z"
-        },
-        {
-          "name": "qc_exec",
-          "started_at": "2026-09-23T17:47:29Z"
         }
       ],
       "queued": [],
@@ -51,16 +47,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35893685392/job/107306709432",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T17:47:29Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35893685392/job/107306709637",
           "app": "github-actions"
         },
         {
@@ -111,6 +97,16 @@
           "completed_at": "2026-09-23T17:38:29Z",
           "duration_sec": 1302,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35893685392/job/107294922541",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T17:47:29Z",
+          "completed_at": "2026-09-23T17:51:39Z",
+          "duration_sec": 250,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35893685392/job/107306709637",
           "app": "github-actions"
         },
         {
@@ -176,7 +172,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T15:15:28.703009+00:00",
-      "last_change": "2026-09-23T17:48:10.305969+00:00"
+      "last_change": "2026-09-23T17:52:16.788373+00:00"
     },
     {
       "repo": "dynamo-qkk71mj-hardware-low-level",
