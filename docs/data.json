@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T15:15:25.599758+00:00",
+  "snapshot_time": "2026-09-23T15:15:56.174778+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Charge a pulled layer its size when only cached steps produced it",
       "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/pull/9",
       "createdAt": "2026-09-23T15:13:33Z",
-      "updatedAt": "2026-09-23T15:13:59Z",
+      "updatedAt": "2026-09-23T15:15:55Z",
       "sha": "ec6f53f0e6c75bdc09f50ebb103406c942e037cb",
       "draft": false,
       "mergeable": true,
@@ -27,26 +27,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 1,
-      "total": 2,
+      "passed": 2,
+      "total": 3,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "cosine_similarity",
-          "started_at": "2026-09-23T15:14:12Z"
+          "name": "review",
+          "started_at": "2026-09-23T15:15:45Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "cosine_similarity",
+          "name": "review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T15:14:12Z",
+          "started_at": "2026-09-23T15:15:45Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107245818193",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107246463380",
           "app": "github-actions"
         },
         {
@@ -58,11 +58,21 @@
           "duration_sec": 28,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107245605504",
           "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T15:14:12Z",
+          "completed_at": "2026-09-23T15:15:42Z",
+          "duration_sec": 90,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107245818193",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-23T15:15:28.703009+00:00",
-      "last_change": "2026-09-23T15:15:25.599758+00:00"
+      "last_change": "2026-09-23T15:15:56.174778+00:00"
     },
     {
       "repo": "dynamo-qkk71mj-hardware-low-level",
@@ -1617,7 +1627,7 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 6,
+      "passed": 7,
       "total": 17,
       "skipped": 7,
       "failed": [
@@ -1625,10 +1635,6 @@
         "pass2"
       ],
       "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-23T15:15:19Z"
-        },
         {
           "name": "pass2_suggestion",
           "started_at": "2026-09-23T15:15:10Z"
@@ -1657,16 +1663,6 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T15:15:19Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35874069434/job/107246269498",
-          "app": "github-actions"
-        },
-        {
           "name": "pass2_suggestion",
           "state": "running",
           "conclusion": null,
@@ -1684,6 +1680,16 @@
           "completed_at": "2026-09-23T14:26:02Z",
           "duration_sec": 25,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35874069434/job/107225335016",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T15:15:19Z",
+          "completed_at": "2026-09-23T15:15:36Z",
+          "duration_sec": 17,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35874069434/job/107246269498",
           "app": "github-actions"
         },
         {
@@ -1809,7 +1815,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:36.964506+00:00",
-      "last_change": "2026-09-23T15:15:25.599758+00:00"
+      "last_change": "2026-09-23T15:15:56.174778+00:00"
     }
   ]
 }
