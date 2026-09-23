@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T04:09:26.911620+00:00",
+  "snapshot_time": "2026-09-23T04:10:13.878292+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -641,7 +641,7 @@
       "title": "Rework: order an empty occupancy's spawn before its join, and grade it",
       "url": "https://github.com/handshake-project-dynamo/dynamo-6cfb94e-debugging-and-repair/pull/11",
       "createdAt": "2026-09-23T01:57:27Z",
-      "updatedAt": "2026-09-23T04:06:41Z",
+      "updatedAt": "2026-09-23T04:09:57Z",
       "sha": "26fde011e6fac88021e3dc0d21347dea5c5741a7",
       "draft": false,
       "mergeable": true,
@@ -655,26 +655,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 2,
-      "total": 3,
+      "passed": 3,
+      "total": 4,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "review",
-          "started_at": "2026-09-23T04:06:32Z"
+          "name": "similarity",
+          "started_at": "2026-09-23T04:10:07Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "review",
+          "name": "similarity",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T04:06:32Z",
+          "started_at": "2026-09-23T04:10:07Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-6cfb94e-debugging-and-repair/actions/runs/35816861030/job/107040484619",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6cfb94e-debugging-and-repair/actions/runs/35816861030/job/107041220884",
           "app": "github-actions"
         },
         {
@@ -696,11 +696,21 @@
           "duration_sec": 73,
           "url": "https://github.com/handshake-project-dynamo/dynamo-6cfb94e-debugging-and-repair/actions/runs/35816861030/job/107040223117",
           "app": "github-actions"
+        },
+        {
+          "name": "review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T04:06:32Z",
+          "completed_at": "2026-09-23T04:10:04Z",
+          "duration_sec": 212,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-6cfb94e-debugging-and-repair/actions/runs/35816861030/job/107040484619",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:05:00.900749+00:00",
-      "last_change": "2026-09-23T04:06:35.301727+00:00"
+      "last_change": "2026-09-23T04:10:13.878292+00:00"
     },
     {
       "repo": "dynamo-ef7562e-systems-infrastructure-and-operations",
@@ -897,7 +907,7 @@
       "title": "Rework: require an exact 32-byte flag file and restore the ground-truth and determinism fixes",
       "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/pull/11",
       "createdAt": "2026-09-23T01:43:57Z",
-      "updatedAt": "2026-09-23T03:22:46Z",
+      "updatedAt": "2026-09-23T04:10:13Z",
       "sha": "7b20e482e4dbac732f9a6f96156ceef815ba05f3",
       "draft": false,
       "mergeable": true,
@@ -911,26 +921,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-23T03:22:37Z"
+          "name": "ava_review",
+          "started_at": "2026-09-23T04:10:05Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-23T04:10:05Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "pass2",
+          "name": "ava_review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T03:22:37Z",
+          "started_at": "2026-09-23T04:10:05Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35813606264/job/107031721844",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35813606264/job/107041216029",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-23T04:10:05Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35813606264/job/107041216041",
           "app": "github-actions"
         },
         {
@@ -951,6 +975,16 @@
           "completed_at": "2026-09-23T03:17:26Z",
           "duration_sec": 88,
           "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35813606264/job/107030385665",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T03:22:37Z",
+          "completed_at": "2026-09-23T04:10:03Z",
+          "duration_sec": 2846,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35813606264/job/107031721844",
           "app": "github-actions"
         },
         {
@@ -992,11 +1026,21 @@
           "duration_sec": 60,
           "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35813606264/job/107031469804",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-23T04:10:04Z",
+          "completed_at": "2026-09-23T04:10:03Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35813606264/job/107041217162",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:31.160986+00:00",
-      "last_change": "2026-09-23T03:23:04.625738+00:00"
+      "last_change": "2026-09-23T04:10:13.878292+00:00"
     },
     {
       "repo": "dynamo-e3b1da9-model-training-and-ml-infrastructure",
