@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T02:26:19.567378+00:00",
+  "snapshot_time": "2026-09-23T02:27:14.508512+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework classify-families: publish the rule space, derive the rule from it, accept only integer labels",
       "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/pull/9",
       "createdAt": "2026-09-23T02:19:58Z",
-      "updatedAt": "2026-09-23T02:26:16Z",
+      "updatedAt": "2026-09-23T02:26:32Z",
       "sha": "77046afb9f977fda0e198ce64c013af9b0cf7d96",
       "draft": false,
       "mergeable": false,
@@ -27,26 +27,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 3,
-      "total": 4,
+      "passed": 4,
+      "total": 5,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "similarity",
-          "started_at": "2026-09-23T02:25:54Z"
+          "name": "validation",
+          "started_at": "2026-09-23T02:26:26Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "similarity",
+          "name": "validation",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T02:25:54Z",
+          "started_at": "2026-09-23T02:26:26Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35809925726/job/107020218204",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35809925726/job/107020328436",
           "app": "github-actions"
         },
         {
@@ -78,11 +78,21 @@
           "duration_sec": 234,
           "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35809925726/job/107019388486",
           "app": "github-actions"
+        },
+        {
+          "name": "similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T02:25:54Z",
+          "completed_at": "2026-09-23T02:26:24Z",
+          "duration_sec": 30,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35809925726/job/107020218204",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:24:58.336617+00:00",
-      "last_change": "2026-09-23T02:26:19.567378+00:00"
+      "last_change": "2026-09-23T02:27:14.508512+00:00"
     },
     {
       "repo": "dynamo-0110c27-mathematics-and-formal-reasoning",
@@ -199,7 +209,7 @@
       "title": "Rework: disclose the projective seal and prove the archive pins its key",
       "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/pull/10",
       "createdAt": "2026-09-23T02:02:45Z",
-      "updatedAt": "2026-09-23T02:13:08Z",
+      "updatedAt": "2026-09-23T02:27:11Z",
       "sha": "19176b083d461483a5ef71e46fb8c1b88ba671ea",
       "draft": false,
       "mergeable": true,
@@ -213,26 +223,34 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "pass2",
-          "started_at": "2026-09-23T02:12:58Z"
-        }
+      "running": [],
+      "queued": [
+        "ava_review",
+        "deep_review"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "pass2",
-          "state": "running",
+          "name": "ava_review",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-23T02:12:58Z",
+          "started_at": "2026-09-23T02:27:19Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35808783382/job/107017502570",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35808783382/job/107020511934",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "queued",
+          "conclusion": null,
+          "started_at": "2026-09-23T02:27:19Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35808783382/job/107020511951",
           "app": "github-actions"
         },
         {
@@ -253,6 +271,16 @@
           "completed_at": "2026-09-23T02:04:53Z",
           "duration_sec": 93,
           "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35808783382/job/107015488329",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T02:12:58Z",
+          "completed_at": "2026-09-23T02:27:19Z",
+          "duration_sec": 861,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35808783382/job/107017502570",
           "app": "github-actions"
         },
         {
@@ -294,11 +322,21 @@
           "duration_sec": 69,
           "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35808783382/job/107017198828",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-23T02:27:19Z",
+          "completed_at": "2026-09-23T02:27:19Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35808783382/job/107020512898",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:04:53.465300+00:00",
-      "last_change": "2026-09-23T02:15:07.452051+00:00"
+      "last_change": "2026-09-23T02:27:14.508512+00:00"
     },
     {
       "repo": "dynamo-6cfb94e-debugging-and-repair",
