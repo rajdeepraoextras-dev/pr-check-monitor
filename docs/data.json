@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T17:03:04.211336+00:00",
+  "snapshot_time": "2026-09-23T17:03:46.857082+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -27,19 +27,14 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 12,
+      "passed": 13,
       "total": 17,
       "skipped": 2,
       "failed": [
         "gate",
         "qc_gate"
       ],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-23T17:02:55Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -63,16 +58,6 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T17:02:55Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35886781329/job/107289615722",
-          "app": "github-actions"
-        },
-        {
           "name": "ava_review",
           "state": "passed",
           "conclusion": "success",
@@ -90,6 +75,16 @@
           "completed_at": "2026-09-23T16:09:58Z",
           "duration_sec": 26,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35886781329/job/107268830973",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T17:02:55Z",
+          "completed_at": "2026-09-23T17:03:11Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35886781329/job/107289615722",
           "app": "github-actions"
         },
         {
@@ -215,7 +210,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T15:15:28.703009+00:00",
-      "last_change": "2026-09-23T17:03:04.211336+00:00"
+      "last_change": "2026-09-23T17:03:46.857082+00:00"
     },
     {
       "repo": "dynamo-qkk71mj-hardware-low-level",
