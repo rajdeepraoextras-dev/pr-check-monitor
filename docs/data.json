@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T03:30:16.008722+00:00",
+  "snapshot_time": "2026-09-23T03:30:53.731734+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1143,7 +1143,7 @@
       "title": "Rework: fill chain_bytes on every format-sheet row and refuse extra files in the output directory",
       "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/pull/5",
       "createdAt": "2026-09-23T01:42:26Z",
-      "updatedAt": "2026-09-23T03:13:15Z",
+      "updatedAt": "2026-09-23T03:31:03Z",
       "sha": "6479b927ede42fbae228aa2216b62e4c0eca3f65",
       "draft": false,
       "mergeable": true,
@@ -1157,40 +1157,38 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
-      "total": 13,
+      "passed": 12,
+      "total": 15,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_eval",
-          "started_at": "2026-09-23T03:13:08Z"
-        },
-        {
-          "name": "qc_exec",
-          "started_at": "2026-09-23T03:13:08Z"
+          "name": "qc_gate",
+          "started_at": "2026-09-23T03:30:54Z"
         }
       ],
-      "queued": [],
+      "queued": [
+        "trials"
+      ],
       "checks": [
         {
-          "name": "qc_eval",
+          "name": "qc_gate",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T03:13:08Z",
+          "started_at": "2026-09-23T03:30:54Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35807400991/job/107029817572",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35807400991/job/107033390987",
           "app": "github-actions"
         },
         {
-          "name": "qc_exec",
-          "state": "running",
+          "name": "trials",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-23T03:13:08Z",
+          "started_at": "2026-09-23T03:31:08Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35807400991/job/107029817507",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35807400991/job/107033443980",
           "app": "github-actions"
         },
         {
@@ -1241,6 +1239,26 @@
           "completed_at": "2026-09-23T03:03:10Z",
           "duration_sec": 4060,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35807400991/job/107013876851",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T03:13:08Z",
+          "completed_at": "2026-09-23T03:30:52Z",
+          "duration_sec": 1064,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35807400991/job/107029817572",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T03:13:08Z",
+          "completed_at": "2026-09-23T03:30:44Z",
+          "duration_sec": 1056,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35807400991/job/107029817507",
           "app": "github-actions"
         },
         {
@@ -1306,7 +1324,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:36.964506+00:00",
-      "last_change": "2026-09-23T03:14:32.342235+00:00"
+      "last_change": "2026-09-23T03:30:53.731734+00:00"
     }
   ]
 }
