@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T22:58:47.085664+00:00",
+  "snapshot_time": "2026-09-23T22:59:00.140469+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -27,26 +27,23 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 11,
-      "total": 13,
+      "passed": 12,
+      "total": 14,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "qc_eval",
-          "started_at": "2026-09-23T22:38:15Z"
-        }
+      "running": [],
+      "queued": [
+        "qc_gate"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
-          "state": "running",
+          "name": "qc_gate",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-23T22:38:15Z",
+          "started_at": "2026-09-23T22:59:06Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-fa093f0-mathematics-and-formal-reasoning/actions/runs/35921284577/job/107412202683",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-fa093f0-mathematics-and-formal-reasoning/actions/runs/35921284577/job/107418073991",
           "app": "github-actions"
         },
         {
@@ -97,6 +94,16 @@
           "completed_at": "2026-09-23T22:30:10Z",
           "duration_sec": 3762,
           "url": "https://github.com/handshake-project-dynamo/dynamo-fa093f0-mathematics-and-formal-reasoning/actions/runs/35921284577/job/107389770141",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T22:38:15Z",
+          "completed_at": "2026-09-23T22:59:05Z",
+          "duration_sec": 1250,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-fa093f0-mathematics-and-formal-reasoning/actions/runs/35921284577/job/107412202683",
           "app": "github-actions"
         },
         {
@@ -172,7 +179,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T19:52:18.806142+00:00",
-      "last_change": "2026-09-23T22:42:21.910990+00:00"
+      "last_change": "2026-09-23T22:59:00.140469+00:00"
     },
     {
       "repo": "dynamo-d6941c7-build-dependency-and-release-management",
