@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T18:18:07.118767+00:00",
+  "snapshot_time": "2026-09-23T18:18:04.882368+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1643,23 +1643,17 @@
       "total": 10,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "ava_review",
-          "started_at": "2026-09-23T18:18:16Z"
-        },
-        {
-          "name": "deep_review",
-          "started_at": "2026-09-23T18:18:16Z"
-        }
+      "running": [],
+      "queued": [
+        "ava_review",
+        "deep_review"
       ],
-      "queued": [],
       "checks": [
         {
           "name": "ava_review",
-          "state": "running",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-23T18:18:16Z",
+          "started_at": "2026-09-23T18:18:13Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35894927124/job/107318629608",
@@ -1667,9 +1661,9 @@
         },
         {
           "name": "deep_review",
-          "state": "running",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-23T18:18:16Z",
+          "started_at": "2026-09-23T18:18:13Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35894927124/job/107318629643",
@@ -1758,7 +1752,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:36.964506+00:00",
-      "last_change": "2026-09-23T18:18:07.118767+00:00"
+      "last_change": "2026-09-23T18:18:04.882368+00:00"
     }
   ]
 }
