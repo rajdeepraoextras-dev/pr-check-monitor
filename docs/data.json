@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T06:58:35.026989+00:00",
+  "snapshot_time": "2026-09-23T06:59:05.111117+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -753,7 +753,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:24:58.336617+00:00",
-      "last_change": "2026-09-23T06:58:35.026989+00:00"
+      "last_change": "2026-09-23T06:59:05.111117+00:00"
     },
     {
       "repo": "dynamo-0110c27-mathematics-and-formal-reasoning",
@@ -1464,7 +1464,7 @@
       "title": "Rework: require an exact 32-byte flag file and restore the ground-truth and determinism fixes",
       "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/pull/11",
       "createdAt": "2026-09-23T01:43:57Z",
-      "updatedAt": "2026-09-23T06:53:51Z",
+      "updatedAt": "2026-09-23T06:58:52Z",
       "sha": "676974ac4a1f821eb754a10670673c6bad740218",
       "draft": false,
       "mergeable": true,
@@ -1478,17 +1478,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "ava_review",
-          "started_at": "2026-09-23T06:53:44Z"
-        },
-        {
-          "name": "deep_review",
           "started_at": "2026-09-23T06:53:44Z"
         }
       ],
@@ -1502,16 +1498,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35824954892/job/107076760788",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T06:53:44Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35824954892/job/107076760792",
           "app": "github-actions"
         },
         {
@@ -1532,6 +1518,16 @@
           "completed_at": "2026-09-23T06:04:37Z",
           "duration_sec": 84,
           "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35824954892/job/107064675212",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T06:53:44Z",
+          "completed_at": "2026-09-23T06:58:58Z",
+          "duration_sec": 314,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35824954892/job/107076760792",
           "app": "github-actions"
         },
         {
@@ -1597,7 +1593,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:31.160986+00:00",
-      "last_change": "2026-09-23T06:54:17.248226+00:00"
+      "last_change": "2026-09-23T06:59:05.111117+00:00"
     },
     {
       "repo": "dynamo-e3b1da9-model-training-and-ml-infrastructure",
