@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T03:17:35.177579+00:00",
+  "snapshot_time": "2026-09-23T03:18:08.115387+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: disclose the firmware rule family and derive it in the oracle",
       "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/pull/6",
       "createdAt": "2026-09-23T03:16:04Z",
-      "updatedAt": "2026-09-23T03:16:29Z",
+      "updatedAt": "2026-09-23T03:18:00Z",
       "sha": "c9f4c660eda38ca18e682ec207776f3f7ae8ad87",
       "draft": false,
       "mergeable": true,
@@ -27,26 +27,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 1,
-      "total": 2,
+      "passed": 2,
+      "total": 3,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "cosine_similarity",
-          "started_at": "2026-09-23T03:16:39Z"
+          "name": "review",
+          "started_at": "2026-09-23T03:18:09Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "cosine_similarity",
+          "name": "review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T03:16:39Z",
+          "started_at": "2026-09-23T03:18:09Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35813653406/job/107030522677",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35813653406/job/107030823064",
           "app": "github-actions"
         },
         {
@@ -58,11 +58,21 @@
           "duration_sec": 26,
           "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35813653406/job/107030432157",
           "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T03:16:39Z",
+          "completed_at": "2026-09-23T03:18:07Z",
+          "duration_sec": 88,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35813653406/job/107030522677",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-23T03:17:56.978293+00:00",
-      "last_change": "2026-09-23T03:17:35.177579+00:00"
+      "last_change": "2026-09-23T03:18:08.115387+00:00"
     },
     {
       "repo": "dynamo-7d2be57-mathematics-and-formal-reasoning",
@@ -999,7 +1009,7 @@
       "title": "Rework: require an exact 32-byte flag file and restore the ground-truth and determinism fixes",
       "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/pull/11",
       "createdAt": "2026-09-23T01:43:57Z",
-      "updatedAt": "2026-09-23T03:17:20Z",
+      "updatedAt": "2026-09-23T03:17:38Z",
       "sha": "7b20e482e4dbac732f9a6f96156ceef815ba05f3",
       "draft": false,
       "mergeable": true,
