@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T07:44:36.155441+00:00",
+  "snapshot_time": "2026-09-23T07:45:11.961118+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1001,7 +1001,7 @@
       "title": "Rework: disclose the projective seal and prove the archive pins its key",
       "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/pull/10",
       "createdAt": "2026-09-23T02:02:45Z",
-      "updatedAt": "2026-09-23T06:34:40Z",
+      "updatedAt": "2026-09-23T07:45:19Z",
       "sha": "f209a2c03d85b440d67d0601ec7c648f693ccc55",
       "draft": false,
       "mergeable": true,
@@ -1012,29 +1012,52 @@
       "head": "rework/8c5f793-disclosed-seal",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
+      "overall": "failing",
       "passed": 13,
-      "total": 15,
+      "total": 17,
       "skipped": 1,
-      "failed": [],
+      "failed": [
+        "gate",
+        "trials"
+      ],
       "running": [
         {
-          "name": "trials",
-          "started_at": "2026-09-23T06:34:30Z"
+          "name": "claude-cost-report",
+          "started_at": "2026-09-23T07:45:13Z"
         }
       ],
       "queued": [],
       "checks": [
         {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-23T07:45:13Z",
+          "completed_at": "2026-09-23T07:45:23Z",
+          "duration_sec": 10,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35820708520/job/107090927258",
+          "app": "github-actions"
+        },
+        {
           "name": "trials",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-23T06:34:30Z",
+          "completed_at": "2026-09-23T07:45:11Z",
+          "duration_sec": 4241,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35820708520/job/107072009257",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T06:34:30Z",
+          "started_at": "2026-09-23T07:45:13Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35820708520/job/107072009257",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35820708520/job/107090927362",
           "app": "github-actions"
         },
         {
@@ -1180,7 +1203,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:04:53.465300+00:00",
-      "last_change": "2026-09-23T06:36:07.890229+00:00"
+      "last_change": "2026-09-23T07:45:11.961118+00:00"
     },
     {
       "repo": "dynamo-6cfb94e-debugging-and-repair",
