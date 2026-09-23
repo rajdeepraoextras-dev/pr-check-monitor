@@ -1,11 +1,227 @@
 {
-  "snapshot_time": "2026-09-23T01:59:31.089831+00:00",
+  "snapshot_time": "2026-09-23T01:59:27.080757+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-408b1b0-security",
+      "full_repo": "handshake-project-dynamo/dynamo-408b1b0-security",
+      "num": "11",
+      "title": "Rework: require an exact 32-byte flag file and restore the ground-truth and determinism fixes",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/pull/11",
+      "createdAt": "2026-09-23T01:43:57Z",
+      "updatedAt": "2026-09-23T01:53:00Z",
+      "sha": "0b6ef73606b7abdf562454be8e5b4cd0ce1435e7",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 986,
+      "deletions": 417,
+      "changedFiles": 13,
+      "head": "rework/408b1b0-proto-exploit",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 6,
+      "total": 7,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "pass2",
+          "started_at": "2026-09-23T01:52:51Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "pass2",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-23T01:52:51Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35807502418/job/107013325264",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T01:44:03Z",
+          "completed_at": "2026-09-23T01:44:29Z",
+          "duration_sec": 26,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35807502418/job/107011486769",
+          "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T01:44:31Z",
+          "completed_at": "2026-09-23T01:45:47Z",
+          "duration_sec": 76,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35807502418/job/107011582232",
+          "app": "github-actions"
+        },
+        {
+          "name": "ratelimit",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T01:52:40Z",
+          "completed_at": "2026-09-23T01:52:48Z",
+          "duration_sec": 8,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35807502418/job/107013289549",
+          "app": "github-actions"
+        },
+        {
+          "name": "review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T01:45:49Z",
+          "completed_at": "2026-09-23T01:51:07Z",
+          "duration_sec": 318,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35807502418/job/107011861399",
+          "app": "github-actions"
+        },
+        {
+          "name": "similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T01:51:10Z",
+          "completed_at": "2026-09-23T01:51:39Z",
+          "duration_sec": 29,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35807502418/job/107012978072",
+          "app": "github-actions"
+        },
+        {
+          "name": "validation",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T01:51:42Z",
+          "completed_at": "2026-09-23T01:52:37Z",
+          "duration_sec": 55,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35807502418/job/107013090333",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-23T01:59:31.160986+00:00",
+      "last_change": "2026-09-23T01:59:27.080757+00:00"
+    },
+    {
+      "repo": "dynamo-e3b1da9-model-training-and-ml-infrastructure",
+      "full_repo": "handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure",
+      "num": "5",
+      "title": "Rework: fill chain_bytes on every format-sheet row and refuse extra files in the output directory",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/pull/5",
+      "createdAt": "2026-09-23T01:42:26Z",
+      "updatedAt": "2026-09-23T01:55:39Z",
+      "sha": "6479b927ede42fbae228aa2216b62e4c0eca3f65",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 141,
+      "deletions": 6,
+      "changedFiles": 6,
+      "head": "rework/e3b1da9-output-scope",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 6,
+      "total": 7,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "pass2",
+          "started_at": "2026-09-23T01:55:30Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "pass2",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-23T01:55:30Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35807400991/job/107013876851",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T01:42:33Z",
+          "completed_at": "2026-09-23T01:42:56Z",
+          "duration_sec": 23,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35807400991/job/107011183189",
+          "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T01:42:58Z",
+          "completed_at": "2026-09-23T01:44:18Z",
+          "duration_sec": 80,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35807400991/job/107011270579",
+          "app": "github-actions"
+        },
+        {
+          "name": "ratelimit",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T01:55:20Z",
+          "completed_at": "2026-09-23T01:55:28Z",
+          "duration_sec": 8,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35807400991/job/107013840266",
+          "app": "github-actions"
+        },
+        {
+          "name": "review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T01:44:20Z",
+          "completed_at": "2026-09-23T01:53:02Z",
+          "duration_sec": 522,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35807400991/job/107011546032",
+          "app": "github-actions"
+        },
+        {
+          "name": "similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T01:53:05Z",
+          "completed_at": "2026-09-23T01:53:39Z",
+          "duration_sec": 34,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35807400991/job/107013374454",
+          "app": "github-actions"
+        },
+        {
+          "name": "validation",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T01:53:42Z",
+          "completed_at": "2026-09-23T01:55:17Z",
+          "duration_sec": 95,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35807400991/job/107013500820",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-23T01:59:36.964506+00:00",
+      "last_change": "2026-09-23T01:59:27.080757+00:00"
+    },
     {
       "repo": "dynamo-b538a3d-systems-infrastructure-and-operations",
       "full_repo": "handshake-project-dynamo/dynamo-b538a3d-systems-infrastructure-and-operations",
