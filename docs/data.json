@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T06:28:57.593542+00:00",
+  "snapshot_time": "2026-09-23T06:29:44.928218+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -638,7 +638,7 @@
       "title": "Rework: grade the one standing settlement and drop the fabricable write journal",
       "url": "https://github.com/handshake-project-dynamo/dynamo-0110c27-mathematics-and-formal-reasoning/pull/5",
       "createdAt": "2026-09-23T02:06:21Z",
-      "updatedAt": "2026-09-23T05:29:47Z",
+      "updatedAt": "2026-09-23T06:29:45Z",
       "sha": "1b84d27c8f1efa33aa61b85915bcd774978cefa8",
       "draft": false,
       "mergeable": true,
@@ -652,26 +652,34 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 13,
-      "total": 15,
+      "passed": 14,
+      "total": 17,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "trials",
-          "started_at": "2026-09-23T05:29:38Z"
-        }
+      "running": [],
+      "queued": [
+        "claude-cost-report",
+        "gate"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "trials",
-          "state": "running",
+          "name": "claude-cost-report",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-23T05:29:38Z",
+          "started_at": "2026-09-23T06:29:52Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-0110c27-mathematics-and-formal-reasoning/actions/runs/35815967548/job/107057534755",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0110c27-mathematics-and-formal-reasoning/actions/runs/35815967548/job/107070875827",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "queued",
+          "conclusion": null,
+          "started_at": "2026-09-23T06:29:52Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0110c27-mathematics-and-formal-reasoning/actions/runs/35815967548/job/107070875835",
           "app": "github-actions"
         },
         {
@@ -795,6 +803,16 @@
           "app": "github-actions"
         },
         {
+          "name": "trials",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T05:29:38Z",
+          "completed_at": "2026-09-23T06:29:52Z",
+          "duration_sec": 3614,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0110c27-mathematics-and-formal-reasoning/actions/runs/35815967548/job/107057534755",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -817,7 +835,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:13:04.811379+00:00",
-      "last_change": "2026-09-23T05:29:57.375020+00:00"
+      "last_change": "2026-09-23T06:29:44.928218+00:00"
     },
     {
       "repo": "dynamo-8c5f793-systems-infrastructure-and-operations",
