@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T15:51:27.678441+00:00",
+  "snapshot_time": "2026-09-23T15:51:45.928540+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -561,7 +561,7 @@
       "title": "Rework: disclose the firmware rule family and derive it in the oracle",
       "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/pull/6",
       "createdAt": "2026-09-23T03:16:04Z",
-      "updatedAt": "2026-09-23T15:51:32Z",
+      "updatedAt": "2026-09-23T15:51:49Z",
       "sha": "8000a4a5d6481afbd6eed9618a5c54051c7045cb",
       "draft": false,
       "mergeable": true,
@@ -575,26 +575,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 9,
-      "total": 11,
+      "passed": 10,
+      "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "tier1",
-          "started_at": "2026-09-23T15:50:59Z"
+          "name": "qc_eval",
+          "started_at": "2026-09-23T15:51:42Z"
+        },
+        {
+          "name": "qc_exec",
+          "started_at": "2026-09-23T15:51:41Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "tier1",
+          "name": "qc_eval",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T15:50:59Z",
+          "started_at": "2026-09-23T15:51:42Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35873371230/job/107261275312",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35873371230/job/107261565692",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-23T15:51:41Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35873371230/job/107261565596",
           "app": "github-actions"
         },
         {
@@ -678,6 +692,16 @@
           "app": "github-actions"
         },
         {
+          "name": "tier1",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T15:50:59Z",
+          "completed_at": "2026-09-23T15:51:38Z",
+          "duration_sec": 39,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35873371230/job/107261275312",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -700,7 +724,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T03:17:56.978293+00:00",
-      "last_change": "2026-09-23T15:51:27.678441+00:00"
+      "last_change": "2026-09-23T15:51:45.928540+00:00"
     },
     {
       "repo": "dynamo-7d2be57-mathematics-and-formal-reasoning",

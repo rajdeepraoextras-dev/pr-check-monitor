@@ -1,23 +1,5 @@
 [
  {
-  "ts": "2026-09-23T07:10:49.358183+00:00",
-  "pr": "dynamo-408b1b0-security#11",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
-  "ts": "2026-09-23T07:12:15.539893+00:00",
-  "pr": "dynamo-6cfb94e-debugging-and-repair#11",
-  "type": "passed",
-  "msg": "Check passed: deep_review"
- },
- {
-  "ts": "2026-09-23T07:12:58.910442+00:00",
-  "pr": "dynamo-6cfb94e-debugging-and-repair#11",
-  "type": "started",
-  "msg": "Check started: tier1"
- },
- {
   "ts": "2026-09-23T07:12:58.910442+00:00",
   "pr": "dynamo-6cfb94e-debugging-and-repair#11",
   "type": "passed",
@@ -2388,15 +2370,33 @@
   "msg": "Check passed: deep_review"
  },
  {
-  "ts": "2026-09-23T15:51:27.678441+00:00",
+  "ts": "2026-09-23T15:51:45.928540+00:00",
   "pr": "dynamo-2fbf25f-systems-infrastructure-and-operations#6",
   "type": "started",
-  "msg": "Check started: tier1"
+  "msg": "Check started: qc_eval"
  },
  {
-  "ts": "2026-09-23T15:51:27.678441+00:00",
+  "ts": "2026-09-23T15:51:45.928540+00:00",
+  "pr": "dynamo-2fbf25f-systems-infrastructure-and-operations#6",
+  "type": "started",
+  "msg": "Check started: qc_exec"
+ },
+ {
+  "ts": "2026-09-23T15:51:45.928540+00:00",
   "pr": "dynamo-2fbf25f-systems-infrastructure-and-operations#6",
   "type": "passed",
   "msg": "Check passed: ava_review"
+ },
+ {
+  "ts": "2026-09-23T15:51:45.928540+00:00",
+  "pr": "dynamo-2fbf25f-systems-infrastructure-and-operations#6",
+  "type": "passed",
+  "msg": "Check passed: deep_review"
+ },
+ {
+  "ts": "2026-09-23T15:51:45.928540+00:00",
+  "pr": "dynamo-2fbf25f-systems-infrastructure-and-operations#6",
+  "type": "passed",
+  "msg": "Check passed: tier1"
  }
 ]
