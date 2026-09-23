@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T15:50:43.059224+00:00",
+  "snapshot_time": "2026-09-23T15:51:27.678441+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -561,7 +561,7 @@
       "title": "Rework: disclose the firmware rule family and derive it in the oracle",
       "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/pull/6",
       "createdAt": "2026-09-23T03:16:04Z",
-      "updatedAt": "2026-09-23T15:50:31Z",
+      "updatedAt": "2026-09-23T15:51:32Z",
       "sha": "8000a4a5d6481afbd6eed9618a5c54051c7045cb",
       "draft": false,
       "mergeable": true,
@@ -575,25 +575,35 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 9,
+      "total": 11,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "ava_review",
-          "started_at": "2026-09-23T15:42:31Z"
+          "name": "tier1",
+          "started_at": "2026-09-23T15:50:59Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "ava_review",
+          "name": "tier1",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T15:42:31Z",
+          "started_at": "2026-09-23T15:50:59Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35873371230/job/107261275312",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T15:42:31Z",
+          "completed_at": "2026-09-23T15:50:56Z",
+          "duration_sec": 505,
           "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35873371230/job/107257716585",
           "app": "github-actions"
         },
@@ -690,7 +700,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T03:17:56.978293+00:00",
-      "last_change": "2026-09-23T15:50:43.059224+00:00"
+      "last_change": "2026-09-23T15:51:27.678441+00:00"
     },
     {
       "repo": "dynamo-7d2be57-mathematics-and-formal-reasoning",
