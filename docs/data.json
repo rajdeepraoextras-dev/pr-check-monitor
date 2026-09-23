@@ -1,11 +1,79 @@
 {
-  "snapshot_time": "2026-09-23T05:42:55.993360+00:00",
+  "snapshot_time": "2026-09-23T05:43:04.244613+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-qkk71mj-hardware-low-level",
+      "full_repo": "handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level",
+      "num": "12",
+      "title": "Rework: bound the kernel's shared memory and grade the GPU deliverable by executing it",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/pull/12",
+      "createdAt": "2026-09-23T05:39:41Z",
+      "updatedAt": "2026-09-23T05:41:56Z",
+      "sha": "126e60958748985f223a734746fb5ca285a8bbf8",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 2053,
+      "deletions": 107,
+      "changedFiles": 16,
+      "head": "rework/qkk71mj-gpu-semantics",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 2,
+      "total": 3,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "review",
+          "started_at": "2026-09-23T05:41:47Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-23T05:41:47Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/actions/runs/35823332112/job/107060097011",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T05:39:49Z",
+          "completed_at": "2026-09-23T05:40:15Z",
+          "duration_sec": 26,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/actions/runs/35823332112/job/107059676835",
+          "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T05:40:18Z",
+          "completed_at": "2026-09-23T05:41:45Z",
+          "duration_sec": 87,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/actions/runs/35823332112/job/107059781479",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-23T05:43:10.219029+00:00",
+      "last_change": "2026-09-23T05:43:04.244613+00:00"
+    },
     {
       "repo": "dynamo-2a4c9a8-model-training-and-ml-infrastructure",
       "full_repo": "handshake-project-dynamo/dynamo-2a4c9a8-model-training-and-ml-infrastructure",
@@ -1197,7 +1265,7 @@
       "title": "Rework: require an exact 32-byte flag file and restore the ground-truth and determinism fixes",
       "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/pull/11",
       "createdAt": "2026-09-23T01:43:57Z",
-      "updatedAt": "2026-09-23T05:43:07Z",
+      "updatedAt": "2026-09-23T05:42:51Z",
       "sha": "7880892f0d09539ff39720daf96e6a583bbe8c77",
       "draft": false,
       "mergeable": true,
@@ -1360,7 +1428,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:31.160986+00:00",
-      "last_change": "2026-09-23T05:42:55.993360+00:00"
+      "last_change": "2026-09-23T05:43:04.244613+00:00"
     },
     {
       "repo": "dynamo-e3b1da9-model-training-and-ml-infrastructure",
