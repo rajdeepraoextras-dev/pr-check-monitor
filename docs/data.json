@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T16:45:19.153682+00:00",
+  "snapshot_time": "2026-09-23T16:45:20.655944+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -26,26 +26,21 @@
       "labels": [
         "in-progress"
       ],
-      "overall": "running",
-      "passed": 8,
+      "overall": "passed",
+      "passed": 9,
       "total": 10,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "ava_review",
-          "started_at": "2026-09-23T16:36:32Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
           "name": "ava_review",
-          "state": "running",
-          "conclusion": null,
+          "state": "passed",
+          "conclusion": "success",
           "started_at": "2026-09-23T16:36:32Z",
-          "completed_at": null,
-          "duration_sec": null,
+          "completed_at": "2026-09-23T16:45:21Z",
+          "duration_sec": 529,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35886781329/job/107279497128",
           "app": "github-actions"
         },
@@ -142,7 +137,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T15:15:28.703009+00:00",
-      "last_change": "2026-09-23T16:43:01.101603+00:00"
+      "last_change": "2026-09-23T16:45:20.655944+00:00"
     },
     {
       "repo": "dynamo-qkk71mj-hardware-low-level",
