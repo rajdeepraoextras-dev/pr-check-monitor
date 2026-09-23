@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T18:50:56.867030+00:00",
+  "snapshot_time": "2026-09-23T18:51:38.340740+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1640,7 +1640,7 @@
       "title": "Rework: fill chain_bytes on every format-sheet row and refuse extra files in the output directory",
       "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/pull/5",
       "createdAt": "2026-09-23T01:42:26Z",
-      "updatedAt": "2026-09-23T18:32:48Z",
+      "updatedAt": "2026-09-23T18:51:42Z",
       "sha": "0c2a24344d98bb44538c164f0129b04fab212408",
       "draft": false,
       "mergeable": true,
@@ -1654,23 +1654,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 12,
-      "total": 14,
+      "passed": 13,
+      "total": 15,
       "skipped": 1,
       "failed": [],
-      "running": [],
-      "queued": [
-        "qc_gate"
+      "running": [
+        {
+          "name": "trials",
+          "started_at": "2026-09-23T18:51:30Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
-          "name": "qc_gate",
-          "state": "queued",
+          "name": "trials",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T18:51:11Z",
+          "started_at": "2026-09-23T18:51:30Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35894927124/job/107331450573",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35894927124/job/107331559278",
           "app": "github-actions"
         },
         {
@@ -1744,6 +1747,16 @@
           "app": "github-actions"
         },
         {
+          "name": "qc_gate",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T18:51:14Z",
+          "completed_at": "2026-09-23T18:51:28Z",
+          "duration_sec": 14,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35894927124/job/107331450573",
+          "app": "github-actions"
+        },
+        {
           "name": "ratelimit",
           "state": "passed",
           "conclusion": "success",
@@ -1806,7 +1819,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:36.964506+00:00",
-      "last_change": "2026-09-23T18:50:56.867030+00:00"
+      "last_change": "2026-09-23T18:51:38.340740+00:00"
     }
   ]
 }
