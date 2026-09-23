@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T04:17:33.146431+00:00",
+  "snapshot_time": "2026-09-23T04:18:14.945952+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -533,7 +533,7 @@
       "title": "Rework: disclose the projective seal and prove the archive pins its key",
       "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/pull/10",
       "createdAt": "2026-09-23T02:02:45Z",
-      "updatedAt": "2026-09-23T04:06:23Z",
+      "updatedAt": "2026-09-23T04:18:07Z",
       "sha": "b94258a71768972edad959074fd42f086f7b26f5",
       "draft": false,
       "mergeable": true,
@@ -547,26 +547,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-23T04:06:15Z"
+          "name": "ava_review",
+          "started_at": "2026-09-23T04:18:17Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-23T04:18:17Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "pass2",
+          "name": "ava_review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T04:06:15Z",
+          "started_at": "2026-09-23T04:18:17Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35816341710/job/107040426488",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35816341710/job/107042943010",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-23T04:18:17Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35816341710/job/107042943134",
           "app": "github-actions"
         },
         {
@@ -587,6 +601,16 @@
           "completed_at": "2026-09-23T03:58:41Z",
           "duration_sec": 76,
           "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35816341710/job/107038654038",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T04:06:15Z",
+          "completed_at": "2026-09-23T04:18:15Z",
+          "duration_sec": 720,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35816341710/job/107040426488",
           "app": "github-actions"
         },
         {
@@ -628,11 +652,21 @@
           "duration_sec": 60,
           "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35816341710/job/107040173936",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-23T04:18:15Z",
+          "completed_at": "2026-09-23T04:18:15Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35816341710/job/107042943864",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:04:53.465300+00:00",
-      "last_change": "2026-09-23T04:06:02.577870+00:00"
+      "last_change": "2026-09-23T04:18:14.945952+00:00"
     },
     {
       "repo": "dynamo-6cfb94e-debugging-and-repair",
