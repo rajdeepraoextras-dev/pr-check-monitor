@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T05:49:15.505321+00:00",
+  "snapshot_time": "2026-09-23T05:49:59.857646+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: bound the kernel's shared memory and grade the GPU deliverable by executing it",
       "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/pull/12",
       "createdAt": "2026-09-23T05:39:41Z",
-      "updatedAt": "2026-09-23T05:49:05Z",
+      "updatedAt": "2026-09-23T05:49:20Z",
       "sha": "126e60958748985f223a734746fb5ca285a8bbf8",
       "draft": false,
       "mergeable": true,
@@ -24,27 +24,29 @@
       "head": "rework/qkk71mj-gpu-semantics",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
       "overall": "failing",
-      "passed": 4,
+      "passed": 5,
       "total": 17,
       "skipped": 10,
       "failed": [
+        "gate",
         "validation"
       ],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-23T05:49:15Z"
-        },
-        {
-          "name": "gate",
-          "started_at": "2026-09-23T05:49:15Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
+        {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-23T05:49:15Z",
+          "completed_at": "2026-09-23T05:49:24Z",
+          "duration_sec": 9,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/actions/runs/35823332112/job/107061667322",
+          "app": "github-actions"
+        },
         {
           "name": "validation",
           "state": "failed",
@@ -56,26 +58,6 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T05:49:15Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/actions/runs/35823332112/job/107061667294",
-          "app": "github-actions"
-        },
-        {
-          "name": "gate",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T05:49:15Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/actions/runs/35823332112/job/107061667322",
-          "app": "github-actions"
-        },
-        {
           "name": "changes",
           "state": "passed",
           "conclusion": "success",
@@ -83,6 +65,16 @@
           "completed_at": "2026-09-23T05:40:15Z",
           "duration_sec": 26,
           "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/actions/runs/35823332112/job/107059676835",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T05:49:15Z",
+          "completed_at": "2026-09-23T05:49:32Z",
+          "duration_sec": 17,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/actions/runs/35823332112/job/107061667294",
           "app": "github-actions"
         },
         {
@@ -218,7 +210,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T05:43:10.219029+00:00",
-      "last_change": "2026-09-23T05:49:15.505321+00:00"
+      "last_change": "2026-09-23T05:49:59.857646+00:00"
     },
     {
       "repo": "dynamo-2a4c9a8-model-training-and-ml-infrastructure",
