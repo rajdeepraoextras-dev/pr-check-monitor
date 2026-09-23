@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T21:10:46.516355+00:00",
+  "snapshot_time": "2026-09-23T21:11:16.494229+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: grade the output partition and reject coerced output values",
       "url": "https://github.com/handshake-project-dynamo/dynamo-fa093f0-mathematics-and-formal-reasoning/pull/4",
       "createdAt": "2026-09-23T19:50:14Z",
-      "updatedAt": "2026-09-23T21:03:55Z",
+      "updatedAt": "2026-09-23T21:10:56Z",
       "sha": "ffe7016507412bbc8f2c1ed2e0f67a45d38ad622",
       "draft": false,
       "mergeable": true,
@@ -26,16 +26,14 @@
       "labels": [
         "in-progress"
       ],
-      "overall": "running",
+      "overall": "failing",
       "passed": 7,
       "total": 10,
       "skipped": 1,
-      "failed": [],
+      "failed": [
+        "ava_review"
+      ],
       "running": [
-        {
-          "name": "ava_review",
-          "started_at": "2026-09-23T21:03:48Z"
-        },
         {
           "name": "deep_review",
           "started_at": "2026-09-23T21:03:48Z"
@@ -45,11 +43,11 @@
       "checks": [
         {
           "name": "ava_review",
-          "state": "running",
-          "conclusion": null,
+          "state": "failed",
+          "conclusion": "failure",
           "started_at": "2026-09-23T21:03:48Z",
-          "completed_at": null,
-          "duration_sec": null,
+          "completed_at": "2026-09-23T21:11:03Z",
+          "duration_sec": 435,
           "url": "https://github.com/handshake-project-dynamo/dynamo-fa093f0-mathematics-and-formal-reasoning/actions/runs/35911970389/job/107381382205",
           "app": "github-actions"
         },
@@ -146,7 +144,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T19:52:18.806142+00:00",
-      "last_change": "2026-09-23T21:03:47.406867+00:00"
+      "last_change": "2026-09-23T21:11:16.494229+00:00"
     },
     {
       "repo": "dynamo-d6941c7-build-dependency-and-release-management",
