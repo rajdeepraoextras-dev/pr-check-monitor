@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T15:21:11.911844+00:00",
+  "snapshot_time": "2026-09-23T15:21:56.612364+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Charge a pulled layer its size when only cached steps produced it",
       "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/pull/9",
       "createdAt": "2026-09-23T15:13:33Z",
-      "updatedAt": "2026-09-23T15:20:54Z",
+      "updatedAt": "2026-09-23T15:21:24Z",
       "sha": "ec6f53f0e6c75bdc09f50ebb103406c942e037cb",
       "draft": false,
       "mergeable": true,
@@ -31,16 +31,19 @@
       "total": 7,
       "skipped": 0,
       "failed": [],
-      "running": [],
-      "queued": [
-        "pass2"
+      "running": [
+        {
+          "name": "pass2",
+          "started_at": "2026-09-23T15:21:14Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
           "name": "pass2",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T15:21:12Z",
+          "started_at": "2026-09-23T15:21:14Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35879973030/job/107248804114",
@@ -109,7 +112,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T15:15:28.703009+00:00",
-      "last_change": "2026-09-23T15:21:11.911844+00:00"
+      "last_change": "2026-09-23T15:21:56.612364+00:00"
     },
     {
       "repo": "dynamo-qkk71mj-hardware-low-level",
@@ -1650,7 +1653,7 @@
       "title": "Rework: fill chain_bytes on every format-sheet row and refuse extra files in the output directory",
       "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/pull/5",
       "createdAt": "2026-09-23T01:42:26Z",
-      "updatedAt": "2026-09-23T15:20:32Z",
+      "updatedAt": "2026-09-23T15:22:08Z",
       "sha": "e9be19b25e113268700e1605474cc4b623180797",
       "draft": false,
       "mergeable": true,
@@ -1664,26 +1667,23 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 1,
-      "total": 2,
+      "passed": 2,
+      "total": 3,
       "skipped": 0,
       "failed": [],
-      "running": [
-        {
-          "name": "cosine_similarity",
-          "started_at": "2026-09-23T15:20:41Z"
-        }
+      "running": [],
+      "queued": [
+        "review"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "cosine_similarity",
-          "state": "running",
+          "name": "review",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-23T15:20:41Z",
+          "started_at": "2026-09-23T15:22:15Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35880781953/job/107248572630",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35880781953/job/107249249188",
           "app": "github-actions"
         },
         {
@@ -1695,11 +1695,21 @@
           "duration_sec": 25,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35880781953/job/107248364594",
           "app": "github-actions"
+        },
+        {
+          "name": "cosine_similarity",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T15:20:41Z",
+          "completed_at": "2026-09-23T15:22:15Z",
+          "duration_sec": 94,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35880781953/job/107248572630",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:36.964506+00:00",
-      "last_change": "2026-09-23T15:20:27.683798+00:00"
+      "last_change": "2026-09-23T15:21:56.612364+00:00"
     }
   ]
 }
