@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T16:21:06.673283+00:00",
+  "snapshot_time": "2026-09-23T16:21:50.873349+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1713,7 +1713,7 @@
       "title": "Rework: fill chain_bytes on every format-sheet row and refuse extra files in the output directory",
       "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/pull/5",
       "createdAt": "2026-09-23T01:42:26Z",
-      "updatedAt": "2026-09-23T16:17:32Z",
+      "updatedAt": "2026-09-23T16:22:06Z",
       "sha": "e9be19b25e113268700e1605474cc4b623180797",
       "draft": false,
       "mergeable": true,
@@ -1727,25 +1727,35 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 9,
+      "total": 11,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "ava_review",
-          "started_at": "2026-09-23T16:10:59Z"
+          "name": "tier1",
+          "started_at": "2026-09-23T16:21:40Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "ava_review",
+          "name": "tier1",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T16:10:59Z",
+          "started_at": "2026-09-23T16:21:40Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35880781953/job/107273663957",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T16:10:59Z",
+          "completed_at": "2026-09-23T16:21:37Z",
+          "duration_sec": 638,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35880781953/job/107269408067",
           "app": "github-actions"
         },
@@ -1842,7 +1852,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:36.964506+00:00",
-      "last_change": "2026-09-23T16:18:12.604004+00:00"
+      "last_change": "2026-09-23T16:21:50.873349+00:00"
     }
   ]
 }
