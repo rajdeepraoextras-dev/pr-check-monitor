@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T03:53:48.982045+00:00",
+  "snapshot_time": "2026-09-23T03:54:28.404500+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: disclose the firmware rule family and derive it in the oracle",
       "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/pull/6",
       "createdAt": "2026-09-23T03:16:04Z",
-      "updatedAt": "2026-09-23T03:53:17Z",
+      "updatedAt": "2026-09-23T03:54:20Z",
       "sha": "c9f4c660eda38ca18e682ec207776f3f7ae8ad87",
       "draft": false,
       "mergeable": true,
@@ -27,19 +27,14 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 7,
+      "passed": 8,
       "total": 17,
       "skipped": 7,
       "failed": [
         "gate",
         "pass2"
       ],
-      "running": [
-        {
-          "name": "pass2_suggestion",
-          "started_at": "2026-09-23T03:53:10Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -60,16 +55,6 @@
           "completed_at": "2026-09-23T03:53:08Z",
           "duration_sec": 1741,
           "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35813653406/job/107032023651",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T03:53:10Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35813653406/job/107037831525",
           "app": "github-actions"
         },
         {
@@ -100,6 +85,16 @@
           "completed_at": "2026-09-23T03:18:07Z",
           "duration_sec": 88,
           "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35813653406/job/107030522677",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T03:53:10Z",
+          "completed_at": "2026-09-23T03:54:25Z",
+          "duration_sec": 75,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2fbf25f-systems-infrastructure-and-operations/actions/runs/35813653406/job/107037831525",
           "app": "github-actions"
         },
         {
@@ -215,7 +210,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T03:17:56.978293+00:00",
-      "last_change": "2026-09-23T03:53:48.982045+00:00"
+      "last_change": "2026-09-23T03:54:28.404500+00:00"
     },
     {
       "repo": "dynamo-7d2be57-mathematics-and-formal-reasoning",
