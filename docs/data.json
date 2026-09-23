@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T06:42:26.448161+00:00",
+  "snapshot_time": "2026-09-23T06:46:20.327898+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: bound the kernel's shared memory and grade the GPU deliverable by executing it",
       "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/pull/12",
       "createdAt": "2026-09-23T05:39:41Z",
-      "updatedAt": "2026-09-23T06:18:14Z",
+      "updatedAt": "2026-09-23T06:45:37Z",
       "sha": "cece9427a9909c40bc4f40cfa9708d130621fffb",
       "draft": false,
       "mergeable": true,
@@ -27,26 +27,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 6,
-      "total": 7,
-      "skipped": 0,
+      "passed": 7,
+      "total": 10,
+      "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "pass2",
-          "started_at": "2026-09-23T06:18:03Z"
+          "name": "ava_review",
+          "started_at": "2026-09-23T06:45:29Z"
+        },
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-23T06:45:29Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "pass2",
+          "name": "ava_review",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T06:18:03Z",
+          "started_at": "2026-09-23T06:45:29Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/actions/runs/35825122186/job/107068076245",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/actions/runs/35825122186/job/107074691220",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-23T06:45:29Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/actions/runs/35825122186/job/107074691248",
           "app": "github-actions"
         },
         {
@@ -67,6 +81,16 @@
           "completed_at": "2026-09-23T06:07:47Z",
           "duration_sec": 110,
           "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/actions/runs/35825122186/job/107065305939",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T06:18:03Z",
+          "completed_at": "2026-09-23T06:45:26Z",
+          "duration_sec": 1643,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/actions/runs/35825122186/job/107068076245",
           "app": "github-actions"
         },
         {
@@ -108,11 +132,21 @@
           "duration_sec": 173,
           "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/actions/runs/35825122186/job/107067322713",
           "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-23T06:45:27Z",
+          "completed_at": "2026-09-23T06:45:27Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-qkk71mj-hardware-low-level/actions/runs/35825122186/job/107074692105",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-23T05:43:10.219029+00:00",
-      "last_change": "2026-09-23T06:18:15.530304+00:00"
+      "last_change": "2026-09-23T06:46:20.327898+00:00"
     },
     {
       "repo": "dynamo-2a4c9a8-model-training-and-ml-infrastructure",
