@@ -1,30 +1,6 @@
 [
  {
   "ts": "2026-09-22T16:26:45.699124+00:00",
-  "pr": "dynamo-81dc97e-scientific-computing-and-domain-science#7",
-  "type": "passed",
-  "msg": "Check passed: changes"
- },
- {
-  "ts": "2026-09-22T16:26:45.699124+00:00",
-  "pr": "dynamo-81dc97e-scientific-computing-and-domain-science#7",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
-  "ts": "2026-09-22T16:26:45.699124+00:00",
-  "pr": "dynamo-7a8b3a7-security#7",
-  "type": "passed",
-  "msg": "Status error \u2192 passed"
- },
- {
-  "ts": "2026-09-22T16:26:45.699124+00:00",
-  "pr": "dynamo-7a8b3a7-security#7",
-  "type": "passed",
-  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-7a8b3a7-security/pulls/7 --jq '{title, url: .` failed: gh: API rate limit exceeded for user ID 231008045. If you reach out to GitHub Support for help, please include the request ID CA8A:CAF07:12492D1:1311898:6AB2AB94 and timestamp 2026-09-22 16:23:48 UTC. For more on scraping GitHub and how it may affect your rights, please review our Terms of Service ("
- },
- {
-  "ts": "2026-09-22T16:26:45.699124+00:00",
   "pr": "dynamo-7a8b3a7-security#7",
   "type": "passed",
   "msg": "16 checks passed"
@@ -2398,5 +2374,29 @@
   "pr": "dynamo-7d2be57-mathematics-and-formal-reasoning#9",
   "type": "passed",
   "msg": "4 checks passed"
+ },
+ {
+  "ts": "2026-09-23T04:28:16.005658+00:00",
+  "pr": "dynamo-408b1b0-security#11",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-23T04:28:16.005658+00:00",
+  "pr": "dynamo-408b1b0-security#11",
+  "type": "failing",
+  "msg": "Check failed: deep_review"
+ },
+ {
+  "ts": "2026-09-23T04:28:16.005658+00:00",
+  "pr": "dynamo-408b1b0-security#11",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-23T04:28:16.005658+00:00",
+  "pr": "dynamo-408b1b0-security#11",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
  }
 ]
