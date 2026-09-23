@@ -1,11 +1,69 @@
 {
-  "snapshot_time": "2026-09-23T02:20:57.881106+00:00",
+  "snapshot_time": "2026-09-23T02:21:37.135966+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-7d2be57-mathematics-and-formal-reasoning",
+      "full_repo": "handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning",
+      "num": "9",
+      "title": "Rework classify-families: publish the rule space, derive the rule from it, accept only integer labels",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/pull/9",
+      "createdAt": "2026-09-23T02:19:58Z",
+      "updatedAt": "2026-09-23T02:21:50Z",
+      "sha": "77046afb9f977fda0e198ce64c013af9b0cf7d96",
+      "draft": false,
+      "mergeable": false,
+      "reviewDecision": "",
+      "additions": 1977,
+      "deletions": 67,
+      "changedFiles": 12,
+      "head": "rework/7d2be57-classify-families",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 1,
+      "total": 2,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "cosine_similarity",
+          "started_at": "2026-09-23T02:20:32Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "cosine_similarity",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-23T02:20:32Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35809925726/job/107019090094",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T02:20:05Z",
+          "completed_at": "2026-09-23T02:20:29Z",
+          "duration_sec": 24,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35809925726/job/107018993191",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-23T02:21:53.279851+00:00",
+      "last_change": "2026-09-23T02:21:37.135966+00:00"
+    },
     {
       "repo": "dynamo-0110c27-mathematics-and-formal-reasoning",
       "full_repo": "handshake-project-dynamo/dynamo-0110c27-mathematics-and-formal-reasoning",
@@ -1668,209 +1726,6 @@
       "submitted": false,
       "first_seen": "2026-09-22T02:32:18.588992+00:00",
       "last_change": "2026-09-22T16:23:27.723908+00:00"
-    },
-    {
-      "repo": "dynamo-42bb5d9-debugging-and-repair",
-      "full_repo": "handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair",
-      "num": "6",
-      "title": "Fix sound verifier finding from #5: separate finish runs",
-      "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/pull/6",
-      "createdAt": "2026-09-22T02:19:56Z",
-      "updatedAt": "2026-09-22T04:36:41Z",
-      "sha": "69966e10be9830ad4f5c575ba13a35c1fbe0eab8",
-      "draft": false,
-      "mergeable": true,
-      "reviewDecision": "",
-      "additions": 21,
-      "deletions": 4,
-      "changedFiles": 4,
-      "head": "rework/42bb5d9-shade-block-orders",
-      "base": "main",
-      "labels": [
-        "accepted"
-      ],
-      "overall": "passed",
-      "passed": 16,
-      "total": 17,
-      "skipped": 1,
-      "failed": [],
-      "running": [],
-      "queued": [],
-      "checks": [
-        {
-          "name": "ava_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:34:45Z",
-          "completed_at": "2026-09-22T03:45:32Z",
-          "duration_sec": 647,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106605843882",
-          "app": "github-actions"
-        },
-        {
-          "name": "changes",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T02:52:28Z",
-          "completed_at": "2026-09-22T02:52:54Z",
-          "duration_sec": 26,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106597906090",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T04:36:34Z",
-          "completed_at": "2026-09-22T04:36:50Z",
-          "duration_sec": 16,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106617451777",
-          "app": "github-actions"
-        },
-        {
-          "name": "cosine_similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T02:52:57Z",
-          "completed_at": "2026-09-22T02:54:23Z",
-          "duration_sec": 86,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106597996953",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:34:44Z",
-          "completed_at": "2026-09-22T03:44:37Z",
-          "duration_sec": 593,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106605843845",
-          "app": "github-actions"
-        },
-        {
-          "name": "gate",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T04:36:34Z",
-          "completed_at": "2026-09-22T04:36:44Z",
-          "duration_sec": 10,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106617451839",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:03:32Z",
-          "completed_at": "2026-09-22T03:34:41Z",
-          "duration_sec": 1869,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106599966858",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_eval",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:46:10Z",
-          "completed_at": "2026-09-22T03:59:06Z",
-          "duration_sec": 776,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106607933228",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:46:11Z",
-          "completed_at": "2026-09-22T03:49:38Z",
-          "duration_sec": 207,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106607933247",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_gate",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:59:10Z",
-          "completed_at": "2026-09-22T03:59:24Z",
-          "duration_sec": 14,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106610264981",
-          "app": "github-actions"
-        },
-        {
-          "name": "ratelimit",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:03:21Z",
-          "completed_at": "2026-09-22T03:03:29Z",
-          "duration_sec": 8,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106599931677",
-          "app": "github-actions"
-        },
-        {
-          "name": "review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T02:54:25Z",
-          "completed_at": "2026-09-22T03:01:23Z",
-          "duration_sec": 418,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106598266617",
-          "app": "github-actions"
-        },
-        {
-          "name": "similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:01:25Z",
-          "completed_at": "2026-09-22T03:02:02Z",
-          "duration_sec": 37,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106599556981",
-          "app": "github-actions"
-        },
-        {
-          "name": "tier1",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:45:35Z",
-          "completed_at": "2026-09-22T03:46:08Z",
-          "duration_sec": 33,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106607826217",
-          "app": "github-actions"
-        },
-        {
-          "name": "trials",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:59:27Z",
-          "completed_at": "2026-09-22T04:36:32Z",
-          "duration_sec": 2225,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106610315148",
-          "app": "github-actions"
-        },
-        {
-          "name": "validation",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-22T03:02:05Z",
-          "completed_at": "2026-09-22T03:03:18Z",
-          "duration_sec": 73,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106599687820",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-22T03:34:42Z",
-          "completed_at": "2026-09-22T03:34:42Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-42bb5d9-debugging-and-repair/actions/runs/35681061366/job/106605844841",
-          "app": "github-actions"
-        }
-      ],
-      "submitted": false,
-      "first_seen": "2026-09-22T02:32:14.410214+00:00",
-      "last_change": "2026-09-22T16:26:45.699124+00:00"
     }
   ]
 }
