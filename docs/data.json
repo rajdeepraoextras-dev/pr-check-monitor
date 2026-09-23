@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T06:11:34.654937+00:00",
+  "snapshot_time": "2026-09-23T06:12:22.838187+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -786,7 +786,7 @@
       "title": "Rework: disclose the projective seal and prove the archive pins its key",
       "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/pull/10",
       "createdAt": "2026-09-23T02:02:45Z",
-      "updatedAt": "2026-09-23T06:06:38Z",
+      "updatedAt": "2026-09-23T06:12:12Z",
       "sha": "f209a2c03d85b440d67d0601ec7c648f693ccc55",
       "draft": false,
       "mergeable": true,
@@ -800,17 +800,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "ava_review",
-          "started_at": "2026-09-23T06:06:31Z"
-        },
-        {
-          "name": "deep_review",
           "started_at": "2026-09-23T06:06:31Z"
         }
       ],
@@ -824,16 +820,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35820708520/job/107065434141",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T06:06:31Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35820708520/job/107065434118",
           "app": "github-actions"
         },
         {
@@ -854,6 +840,16 @@
           "completed_at": "2026-09-23T05:03:24Z",
           "duration_sec": 77,
           "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35820708520/job/107051829676",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T06:06:31Z",
+          "completed_at": "2026-09-23T06:12:19Z",
+          "duration_sec": 348,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35820708520/job/107065434118",
           "app": "github-actions"
         },
         {
@@ -919,7 +915,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:04:53.465300+00:00",
-      "last_change": "2026-09-23T06:07:34.217711+00:00"
+      "last_change": "2026-09-23T06:12:22.838187+00:00"
     },
     {
       "repo": "dynamo-6cfb94e-debugging-and-repair",
