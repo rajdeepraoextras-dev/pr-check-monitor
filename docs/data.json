@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T06:57:51.547139+00:00",
+  "snapshot_time": "2026-09-23T06:58:35.026989+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -608,15 +608,11 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
-        {
-          "name": "qc_eval",
-          "started_at": "2026-09-23T06:39:50Z"
-        },
         {
           "name": "qc_exec",
           "started_at": "2026-09-23T06:39:50Z"
@@ -624,16 +620,6 @@
       ],
       "queued": [],
       "checks": [
-        {
-          "name": "qc_eval",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T06:39:50Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35821638803/job/107073296306",
-          "app": "github-actions"
-        },
         {
           "name": "qc_exec",
           "state": "running",
@@ -692,6 +678,16 @@
           "completed_at": "2026-09-23T06:31:37Z",
           "duration_sec": 4073,
           "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35821638803/job/107056317477",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T06:39:50Z",
+          "completed_at": "2026-09-23T06:58:24Z",
+          "duration_sec": 1114,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35821638803/job/107073296306",
           "app": "github-actions"
         },
         {
@@ -757,7 +753,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:24:58.336617+00:00",
-      "last_change": "2026-09-23T06:40:11.382161+00:00"
+      "last_change": "2026-09-23T06:58:35.026989+00:00"
     },
     {
       "repo": "dynamo-0110c27-mathematics-and-formal-reasoning",
