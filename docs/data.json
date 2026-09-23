@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T06:39:20.648917+00:00",
+  "snapshot_time": "2026-09-23T06:40:11.382161+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -530,7 +530,7 @@
       "title": "Rework classify-families: publish the rule space, derive the rule, grade the implemented checker",
       "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/pull/9",
       "createdAt": "2026-09-23T02:19:58Z",
-      "updatedAt": "2026-09-23T06:39:08Z",
+      "updatedAt": "2026-09-23T06:39:57Z",
       "sha": "119e675d27e2c4c9754a867ef233e9a80770404d",
       "draft": false,
       "mergeable": false,
@@ -544,26 +544,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 9,
-      "total": 11,
+      "passed": 10,
+      "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "tier1",
-          "started_at": "2026-09-23T06:39:18Z"
+          "name": "qc_eval",
+          "started_at": "2026-09-23T06:39:50Z"
+        },
+        {
+          "name": "qc_exec",
+          "started_at": "2026-09-23T06:39:50Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "tier1",
+          "name": "qc_eval",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T06:39:18Z",
+          "started_at": "2026-09-23T06:39:50Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35821638803/job/107073166988",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35821638803/job/107073296306",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-23T06:39:50Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35821638803/job/107073296274",
           "app": "github-actions"
         },
         {
@@ -647,6 +661,16 @@
           "app": "github-actions"
         },
         {
+          "name": "tier1",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T06:39:18Z",
+          "completed_at": "2026-09-23T06:39:48Z",
+          "duration_sec": 30,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35821638803/job/107073166988",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -669,7 +693,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:24:58.336617+00:00",
-      "last_change": "2026-09-23T06:39:20.648917+00:00"
+      "last_change": "2026-09-23T06:40:11.382161+00:00"
     },
     {
       "repo": "dynamo-0110c27-mathematics-and-formal-reasoning",
