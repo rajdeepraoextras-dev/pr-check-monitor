@@ -1,11 +1,5 @@
 [
  {
-  "ts": "2026-09-23T09:24:38.934911+00:00",
-  "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
-  "type": "passed",
-  "msg": "Check passed: claude-cost-report"
- },
- {
   "ts": "2026-09-23T09:39:31.278462+00:00",
   "pr": "dynamo-8c5f793-systems-infrastructure-and-operations#10",
   "type": "started",
@@ -2388,15 +2382,21 @@
   "msg": "Check passed: deep_review"
  },
  {
-  "ts": "2026-09-23T18:32:28.574796+00:00",
+  "ts": "2026-09-23T18:32:44.894300+00:00",
   "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
   "type": "started",
-  "msg": "Check started: tier1"
+  "msg": "Check started: qc_eval"
  },
  {
-  "ts": "2026-09-23T18:32:28.574796+00:00",
+  "ts": "2026-09-23T18:32:44.894300+00:00",
+  "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
+  "type": "started",
+  "msg": "Check started: qc_exec"
+ },
+ {
+  "ts": "2026-09-23T18:32:44.894300+00:00",
   "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
   "type": "passed",
-  "msg": "Check passed: deep_review"
+  "msg": "Check passed: tier1"
  }
 ]
