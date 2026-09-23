@@ -3,12 +3,6 @@
   "ts": "2026-09-23T07:16:05.814611+00:00",
   "pr": "dynamo-408b1b0-security#11",
   "type": "failing",
-  "msg": "Status running \u2192 failing"
- },
- {
-  "ts": "2026-09-23T07:16:05.814611+00:00",
-  "pr": "dynamo-408b1b0-security#11",
-  "type": "failing",
   "msg": "Check failed: gate"
  },
  {
@@ -2376,25 +2370,31 @@
   "msg": "Check passed: claude-cost-report"
  },
  {
-  "ts": "2026-09-23T16:04:39.635398+00:00",
+  "ts": "2026-09-23T16:04:52.026075+00:00",
   "pr": "dynamo-d6941c7-build-dependency-and-release-management#9",
   "type": "push",
   "msg": "New commit pushed (85f0c77)"
  },
  {
-  "ts": "2026-09-23T16:04:39.635398+00:00",
+  "ts": "2026-09-23T16:04:52.026075+00:00",
   "pr": "dynamo-d6941c7-build-dependency-and-release-management#9",
-  "type": "passed",
-  "msg": "Status failing \u2192 passed"
+  "type": "running",
+  "msg": "Status failing \u2192 running"
  },
  {
-  "ts": "2026-09-23T16:04:39.635398+00:00",
+  "ts": "2026-09-23T16:04:52.026075+00:00",
+  "pr": "dynamo-d6941c7-build-dependency-and-release-management#9",
+  "type": "started",
+  "msg": "Check started: changes"
+ },
+ {
+  "ts": "2026-09-23T16:04:52.026075+00:00",
   "pr": "dynamo-d6941c7-build-dependency-and-release-management#9",
   "type": "passed",
   "msg": "Check recovered: ava_review"
  },
  {
-  "ts": "2026-09-23T16:04:39.635398+00:00",
+  "ts": "2026-09-23T16:04:52.026075+00:00",
   "pr": "dynamo-d6941c7-build-dependency-and-release-management#9",
   "type": "passed",
   "msg": "Check recovered: gate"
