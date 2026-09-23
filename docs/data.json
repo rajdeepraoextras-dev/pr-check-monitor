@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T19:59:54.804394+00:00",
+  "snapshot_time": "2026-09-23T20:00:43.256584+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1556,19 +1556,14 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 13,
+      "passed": 14,
       "total": 17,
       "skipped": 1,
       "failed": [
         "gate",
         "trials"
       ],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-23T19:59:56Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -1592,16 +1587,6 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T19:59:56Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35894927124/job/107357302055",
-          "app": "github-actions"
-        },
-        {
           "name": "ava_review",
           "state": "passed",
           "conclusion": "success",
@@ -1619,6 +1604,16 @@
           "completed_at": "2026-09-23T17:20:57Z",
           "duration_sec": 24,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35894927124/job/107296367892",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T19:59:56Z",
+          "completed_at": "2026-09-23T20:00:17Z",
+          "duration_sec": 21,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35894927124/job/107357302055",
           "app": "github-actions"
         },
         {
@@ -1744,7 +1739,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:36.964506+00:00",
-      "last_change": "2026-09-23T19:59:54.804394+00:00"
+      "last_change": "2026-09-23T20:00:43.256584+00:00"
     }
   ]
 }
