@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T04:35:36.208324+00:00",
+  "snapshot_time": "2026-09-23T04:35:59.380469+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -711,7 +711,7 @@
       "title": "Rework: roll back a refused second commit, keep sidecars out of the desk, pin the probe seed",
       "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/pull/6",
       "createdAt": "2026-09-23T01:55:59Z",
-      "updatedAt": "2026-09-23T04:35:45Z",
+      "updatedAt": "2026-09-23T04:36:01Z",
       "sha": "714eaa86b659704326115a3e5542947baf14efc2",
       "draft": false,
       "mergeable": true,
@@ -722,29 +722,44 @@
       "head": "rework/ef7562e-atomic-publish-packaging",
       "base": "main",
       "labels": [
-        "in-progress"
+        "in-progress",
+        "accepted"
       ],
       "overall": "running",
-      "passed": 13,
-      "total": 15,
+      "passed": 14,
+      "total": 17,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "trials",
-          "started_at": "2026-09-23T03:26:36Z"
+          "name": "claude-cost-report",
+          "started_at": "2026-09-23T04:35:55Z"
+        },
+        {
+          "name": "gate",
+          "started_at": "2026-09-23T04:35:55Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "trials",
+          "name": "claude-cost-report",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T03:26:36Z",
+          "started_at": "2026-09-23T04:35:55Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/actions/runs/35808331448/job/107032523732",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/actions/runs/35808331448/job/107046544852",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-23T04:35:55Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/actions/runs/35808331448/job/107046544886",
           "app": "github-actions"
         },
         {
@@ -868,6 +883,16 @@
           "app": "github-actions"
         },
         {
+          "name": "trials",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T03:26:36Z",
+          "completed_at": "2026-09-23T04:35:53Z",
+          "duration_sec": 4157,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/actions/runs/35808331448/job/107032523732",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -890,7 +915,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:04:42.620918+00:00",
-      "last_change": "2026-09-23T03:27:44.498439+00:00"
+      "last_change": "2026-09-23T04:35:59.380469+00:00"
     },
     {
       "repo": "dynamo-408b1b0-security",
@@ -948,7 +973,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:31.160986+00:00",
-      "last_change": "2026-09-23T04:35:36.208324+00:00"
+      "last_change": "2026-09-23T04:35:59.380469+00:00"
     },
     {
       "repo": "dynamo-e3b1da9-model-training-and-ml-infrastructure",
