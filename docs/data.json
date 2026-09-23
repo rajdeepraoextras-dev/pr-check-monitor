@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T02:55:28.397218+00:00",
+  "snapshot_time": "2026-09-23T02:55:58.742146+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -341,26 +341,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 11,
-      "total": 13,
+      "passed": 12,
+      "total": 14,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_eval",
-          "started_at": "2026-09-23T02:35:37Z"
+          "name": "qc_gate",
+          "started_at": "2026-09-23T02:55:54Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
+          "name": "qc_gate",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T02:35:37Z",
+          "started_at": "2026-09-23T02:55:54Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35808783382/job/107022241060",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35808783382/job/107026347026",
           "app": "github-actions"
         },
         {
@@ -411,6 +411,16 @@
           "completed_at": "2026-09-23T02:27:19Z",
           "duration_sec": 861,
           "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35808783382/job/107017502570",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T02:35:37Z",
+          "completed_at": "2026-09-23T02:55:51Z",
+          "duration_sec": 1214,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-8c5f793-systems-infrastructure-and-operations/actions/runs/35808783382/job/107022241060",
           "app": "github-actions"
         },
         {
@@ -486,7 +496,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:04:53.465300+00:00",
-      "last_change": "2026-09-23T02:39:10.587275+00:00"
+      "last_change": "2026-09-23T02:55:58.742146+00:00"
     },
     {
       "repo": "dynamo-6cfb94e-debugging-and-repair",
