@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T03:25:35.095979+00:00",
+  "snapshot_time": "2026-09-23T03:26:16.388881+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -841,26 +841,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 11,
-      "total": 13,
+      "passed": 12,
+      "total": 14,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_eval",
-          "started_at": "2026-09-23T03:05:07Z"
+          "name": "qc_gate",
+          "started_at": "2026-09-23T03:26:21Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
+          "name": "qc_gate",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T03:05:07Z",
+          "started_at": "2026-09-23T03:26:21Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/actions/runs/35808331448/job/107028206465",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/actions/runs/35808331448/job/107032471121",
           "app": "github-actions"
         },
         {
@@ -911,6 +911,16 @@
           "completed_at": "2026-09-23T02:56:17Z",
           "duration_sec": 3151,
           "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/actions/runs/35808331448/job/107015576124",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T03:05:07Z",
+          "completed_at": "2026-09-23T03:26:18Z",
+          "duration_sec": 1271,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-ef7562e-systems-infrastructure-and-operations/actions/runs/35808331448/job/107028206465",
           "app": "github-actions"
         },
         {
@@ -986,7 +996,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:04:42.620918+00:00",
-      "last_change": "2026-09-23T03:10:15.722748+00:00"
+      "last_change": "2026-09-23T03:26:16.388881+00:00"
     },
     {
       "repo": "dynamo-408b1b0-security",
