@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T14:25:47.342306+00:00",
+  "snapshot_time": "2026-09-23T14:26:30.750053+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -1425,16 +1425,19 @@
       "total": 2,
       "skipped": 0,
       "failed": [],
-      "running": [],
-      "queued": [
-        "cosine_similarity"
+      "running": [
+        {
+          "name": "cosine_similarity",
+          "started_at": "2026-09-23T14:26:05Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
           "name": "cosine_similarity",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T14:26:03Z",
+          "started_at": "2026-09-23T14:26:05Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-e3b1da9-model-training-and-ml-infrastructure/actions/runs/35874069434/job/107225532170",
@@ -1453,7 +1456,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:36.964506+00:00",
-      "last_change": "2026-09-23T14:25:47.342306+00:00"
+      "last_change": "2026-09-23T14:26:30.750053+00:00"
     }
   ]
 }
