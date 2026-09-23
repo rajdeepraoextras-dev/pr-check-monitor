@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T17:45:20.264398+00:00",
+  "snapshot_time": "2026-09-23T17:45:45.496600+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Charge a pulled layer its size when only cached steps produced it",
       "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/pull/9",
       "createdAt": "2026-09-23T15:13:33Z",
-      "updatedAt": "2026-09-23T17:38:40Z",
+      "updatedAt": "2026-09-23T17:45:21Z",
       "sha": "f4856e050588571bcd2288e0257c8e859f47f31b",
       "draft": false,
       "mergeable": true,
@@ -27,17 +27,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "ava_review",
-          "started_at": "2026-09-23T17:38:32Z"
-        },
-        {
-          "name": "deep_review",
           "started_at": "2026-09-23T17:38:32Z"
         }
       ],
@@ -51,16 +47,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35893685392/job/107303284571",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-23T17:38:32Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35893685392/job/107303284570",
           "app": "github-actions"
         },
         {
@@ -81,6 +67,16 @@
           "completed_at": "2026-09-23T17:11:31Z",
           "duration_sec": 85,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35893685392/job/107292372672",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T17:38:32Z",
+          "completed_at": "2026-09-23T17:45:27Z",
+          "duration_sec": 415,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d6941c7-build-dependency-and-release-management/actions/runs/35893685392/job/107303284570",
           "app": "github-actions"
         },
         {
@@ -146,7 +142,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T15:15:28.703009+00:00",
-      "last_change": "2026-09-23T17:39:02.355189+00:00"
+      "last_change": "2026-09-23T17:45:45.496600+00:00"
     },
     {
       "repo": "dynamo-qkk71mj-hardware-low-level",
