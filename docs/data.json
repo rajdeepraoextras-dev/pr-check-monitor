@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-23T04:27:28.154509+00:00",
+  "snapshot_time": "2026-09-23T04:27:39.522624+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -219,7 +219,7 @@
       "title": "Rework classify-families: publish the rule space, derive the rule from it, accept only integer labels",
       "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/pull/9",
       "createdAt": "2026-09-23T02:19:58Z",
-      "updatedAt": "2026-09-23T04:27:17Z",
+      "updatedAt": "2026-09-23T04:27:44Z",
       "sha": "bd46003189894c54ab1c145453a51eadeaafc4a9",
       "draft": false,
       "mergeable": false,
@@ -233,26 +233,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 5,
-      "total": 6,
+      "passed": 6,
+      "total": 7,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "ratelimit",
-          "started_at": "2026-09-23T04:27:25Z"
+          "name": "pass2",
+          "started_at": "2026-09-23T04:27:35Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "ratelimit",
+          "name": "pass2",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-23T04:27:25Z",
+          "started_at": "2026-09-23T04:27:35Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35818004062/job/107044810067",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35818004062/job/107044845899",
           "app": "github-actions"
         },
         {
@@ -273,6 +273,16 @@
           "completed_at": "2026-09-23T04:23:15Z",
           "duration_sec": 75,
           "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35818004062/job/107043708124",
+          "app": "github-actions"
+        },
+        {
+          "name": "ratelimit",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-23T04:27:25Z",
+          "completed_at": "2026-09-23T04:27:33Z",
+          "duration_sec": 8,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-7d2be57-mathematics-and-formal-reasoning/actions/runs/35818004062/job/107044810067",
           "app": "github-actions"
         },
         {
@@ -308,7 +318,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:24:58.336617+00:00",
-      "last_change": "2026-09-23T04:27:28.154509+00:00"
+      "last_change": "2026-09-23T04:27:39.522624+00:00"
     },
     {
       "repo": "dynamo-0110c27-mathematics-and-formal-reasoning",
@@ -588,7 +598,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-23T02:04:53.465300+00:00",
-      "last_change": "2026-09-23T04:26:44.568082+00:00"
+      "last_change": "2026-09-23T04:27:39.522624+00:00"
     },
     {
       "repo": "dynamo-6cfb94e-debugging-and-repair",
@@ -893,7 +903,7 @@
       "title": "Rework: require an exact 32-byte flag file and restore the ground-truth and determinism fixes",
       "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/pull/11",
       "createdAt": "2026-09-23T01:43:57Z",
-      "updatedAt": "2026-09-23T04:27:41Z",
+      "updatedAt": "2026-09-23T04:16:17Z",
       "sha": "7b20e482e4dbac732f9a6f96156ceef815ba05f3",
       "draft": false,
       "mergeable": true,
@@ -906,47 +916,27 @@
       "labels": [
         "in-progress"
       ],
-      "overall": "failing",
+      "overall": "running",
       "passed": 8,
-      "total": 17,
-      "skipped": 6,
-      "failed": [
-        "deep_review"
+      "total": 10,
+      "skipped": 1,
+      "failed": [],
+      "running": [
+        {
+          "name": "deep_review",
+          "started_at": "2026-09-23T04:10:05Z"
+        }
       ],
-      "running": [],
-      "queued": [
-        "claude-cost-report",
-        "gate"
-      ],
+      "queued": [],
       "checks": [
         {
           "name": "deep_review",
-          "state": "failed",
-          "conclusion": "failure",
+          "state": "running",
+          "conclusion": null,
           "started_at": "2026-09-23T04:10:05Z",
-          "completed_at": "2026-09-23T04:27:48Z",
-          "duration_sec": 1063,
+          "completed_at": null,
+          "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35813606264/job/107041216041",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "queued",
-          "conclusion": null,
-          "started_at": "2026-09-23T04:27:48Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35813606264/job/107044897855",
-          "app": "github-actions"
-        },
-        {
-          "name": "gate",
-          "state": "queued",
-          "conclusion": null,
-          "started_at": "2026-09-23T04:27:48Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35813606264/job/107044897877",
           "app": "github-actions"
         },
         {
@@ -1038,61 +1028,11 @@
           "duration_sec": -1,
           "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35813606264/job/107041217162",
           "app": "github-actions"
-        },
-        {
-          "name": "qc_eval",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-23T04:27:49Z",
-          "completed_at": "2026-09-23T04:27:48Z",
-          "duration_sec": -1,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35813606264/job/107044898132",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-23T04:27:48Z",
-          "completed_at": "2026-09-23T04:27:48Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35813606264/job/107044897967",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_gate",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-23T04:27:48Z",
-          "completed_at": "2026-09-23T04:27:48Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35813606264/job/107044897933",
-          "app": "github-actions"
-        },
-        {
-          "name": "tier1",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-23T04:27:48Z",
-          "completed_at": "2026-09-23T04:27:48Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35813606264/job/107044897607",
-          "app": "github-actions"
-        },
-        {
-          "name": "trials",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-23T04:27:49Z",
-          "completed_at": "2026-09-23T04:27:48Z",
-          "duration_sec": -1,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-408b1b0-security/actions/runs/35813606264/job/107044898405",
-          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-23T01:59:31.160986+00:00",
-      "last_change": "2026-09-23T04:27:28.154509+00:00"
+      "last_change": "2026-09-23T04:16:58.913158+00:00"
     },
     {
       "repo": "dynamo-e3b1da9-model-training-and-ml-infrastructure",
