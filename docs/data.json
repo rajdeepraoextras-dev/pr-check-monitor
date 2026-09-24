@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-24T08:11:31.954016+00:00",
+  "snapshot_time": "2026-09-24T08:11:53.520709+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -27,15 +27,11 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 10,
+      "passed": 11,
       "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
-        {
-          "name": "qc_eval",
-          "started_at": "2026-09-24T08:08:17Z"
-        },
         {
           "name": "qc_exec",
           "started_at": "2026-09-24T08:08:17Z"
@@ -43,16 +39,6 @@
       ],
       "queued": [],
       "checks": [
-        {
-          "name": "qc_eval",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-24T08:08:17Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107548358175",
-          "app": "github-actions"
-        },
         {
           "name": "qc_exec",
           "state": "running",
@@ -111,6 +97,16 @@
           "completed_at": "2026-09-24T07:57:19Z",
           "duration_sec": 4034,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107525917136",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-24T08:08:17Z",
+          "completed_at": "2026-09-24T08:11:44Z",
+          "duration_sec": 207,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107548358175",
           "app": "github-actions"
         },
         {
@@ -176,7 +172,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-24T05:01:09.773169+00:00",
-      "last_change": "2026-09-24T08:09:12.888781+00:00"
+      "last_change": "2026-09-24T08:11:53.520709+00:00"
     },
     {
       "repo": "dynamo-75bb5b2-model-training-and-ml-infrastructure",
