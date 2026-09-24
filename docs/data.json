@@ -1,11 +1,69 @@
 {
-  "snapshot_time": "2026-09-24T16:27:35.690492+00:00",
+  "snapshot_time": "2026-09-24T16:27:32.518146+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-2ea3b19-debugging-and-repair",
+      "full_repo": "handshake-project-dynamo/dynamo-2ea3b19-debugging-and-repair",
+      "num": "8",
+      "title": "Rework: repair unbounded recurrence expansion and grade count-omitted rules",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-2ea3b19-debugging-and-repair/pull/8",
+      "createdAt": "2026-09-24T16:26:09Z",
+      "updatedAt": "2026-09-24T16:26:37Z",
+      "sha": "584a7291a01b534168b39f9c5fbd2c082648b4b2",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 3312,
+      "deletions": 2448,
+      "changedFiles": 48,
+      "head": "rework/2ea3b19-recurrence-bounds",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 1,
+      "total": 2,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "cosine_similarity",
+          "started_at": "2026-09-24T16:26:47Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "cosine_similarity",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-24T16:26:47Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2ea3b19-debugging-and-repair/actions/runs/36027348087/job/107727333671",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-24T16:26:17Z",
+          "completed_at": "2026-09-24T16:26:44Z",
+          "duration_sec": 27,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2ea3b19-debugging-and-repair/actions/runs/36027348087/job/107727135896",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-24T16:27:43.297151+00:00",
+      "last_change": "2026-09-24T16:27:32.518146+00:00"
+    },
     {
       "repo": "dynamo-a6ce627-machine-learning-and-ai",
       "full_repo": "handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai",
