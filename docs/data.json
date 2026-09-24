@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-24T08:21:34.598432+00:00",
+  "snapshot_time": "2026-09-24T08:22:07.073555+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -27,26 +27,23 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 11,
-      "total": 13,
+      "passed": 12,
+      "total": 14,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "qc_exec",
-          "started_at": "2026-09-24T08:08:17Z"
-        }
+      "running": [],
+      "queued": [
+        "qc_gate"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "qc_exec",
-          "state": "running",
+          "name": "qc_gate",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-24T08:08:17Z",
+          "started_at": "2026-09-24T08:22:08Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107548358231",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107552709389",
           "app": "github-actions"
         },
         {
@@ -107,6 +104,16 @@
           "completed_at": "2026-09-24T08:11:44Z",
           "duration_sec": 207,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107548358175",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-24T08:08:17Z",
+          "completed_at": "2026-09-24T08:22:07Z",
+          "duration_sec": 830,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107548358231",
           "app": "github-actions"
         },
         {
@@ -172,7 +179,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-24T05:01:09.773169+00:00",
-      "last_change": "2026-09-24T08:11:53.520709+00:00"
+      "last_change": "2026-09-24T08:22:07.073555+00:00"
     },
     {
       "repo": "dynamo-75bb5b2-model-training-and-ml-infrastructure",
