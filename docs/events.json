@@ -1,53 +1,5 @@
 [
  {
-  "ts": "2026-09-23T16:22:26.190417+00:00",
-  "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
-  "type": "passed",
-  "msg": "Check passed: tier1"
- },
- {
-  "ts": "2026-09-23T16:35:41.315628+00:00",
-  "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
-  "type": "passed",
-  "msg": "Check passed: qc_exec"
- },
- {
-  "ts": "2026-09-23T16:37:10.483431+00:00",
-  "pr": "dynamo-d6941c7-build-dependency-and-release-management#9",
-  "type": "started",
-  "msg": "Check started: ava_review"
- },
- {
-  "ts": "2026-09-23T16:37:10.483431+00:00",
-  "pr": "dynamo-d6941c7-build-dependency-and-release-management#9",
-  "type": "started",
-  "msg": "Check started: deep_review"
- },
- {
-  "ts": "2026-09-23T16:37:10.483431+00:00",
-  "pr": "dynamo-d6941c7-build-dependency-and-release-management#9",
-  "type": "passed",
-  "msg": "Check passed: pass2"
- },
- {
-  "ts": "2026-09-23T16:41:34.272501+00:00",
-  "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
-  "type": "started",
-  "msg": "Check started: trials"
- },
- {
-  "ts": "2026-09-23T16:41:34.272501+00:00",
-  "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
-  "type": "passed",
-  "msg": "Check passed: qc_eval"
- },
- {
-  "ts": "2026-09-23T16:41:34.272501+00:00",
-  "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
-  "type": "passed",
-  "msg": "Check passed: qc_gate"
- },
- {
   "ts": "2026-09-23T16:43:01.101603+00:00",
   "pr": "dynamo-d6941c7-build-dependency-and-release-management#9",
   "type": "passed",
@@ -2398,5 +2350,53 @@
   "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
   "type": "passed",
   "msg": "Check passed: deep_review"
+ },
+ {
+  "ts": "2026-09-24T09:57:42.639938+00:00",
+  "pr": "dynamo-d867126-security#16",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-24T09:57:42.639938+00:00",
+  "pr": "dynamo-d867126-security#16",
+  "type": "started",
+  "msg": "Check started: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-24T09:57:42.639938+00:00",
+  "pr": "dynamo-d867126-security#16",
+  "type": "started",
+  "msg": "Check started: gate"
+ },
+ {
+  "ts": "2026-09-24T09:57:42.639938+00:00",
+  "pr": "dynamo-d867126-security#16",
+  "type": "started",
+  "msg": "Check started: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-24T09:57:42.639938+00:00",
+  "pr": "dynamo-d867126-security#16",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-24T09:57:42.639938+00:00",
+  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
+  "type": "started",
+  "msg": "Check started: qc_eval"
+ },
+ {
+  "ts": "2026-09-24T09:57:42.639938+00:00",
+  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
+  "type": "started",
+  "msg": "Check started: qc_exec"
+ },
+ {
+  "ts": "2026-09-24T09:57:42.639938+00:00",
+  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
+  "type": "passed",
+  "msg": "Check passed: tier1"
  }
 ]
