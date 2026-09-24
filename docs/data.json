@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-24T17:50:25.977344+00:00",
+  "snapshot_time": "2026-09-24T17:51:02.043289+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -469,7 +469,7 @@
       "title": "Rework: repair unbounded recurrence expansion and grade count-omitted rules",
       "url": "https://github.com/handshake-project-dynamo/dynamo-2ea3b19-debugging-and-repair/pull/8",
       "createdAt": "2026-09-24T16:26:09Z",
-      "updatedAt": "2026-09-24T17:50:03Z",
+      "updatedAt": "2026-09-24T17:51:01Z",
       "sha": "584a7291a01b534168b39f9c5fbd2c082648b4b2",
       "draft": false,
       "mergeable": true,
@@ -480,29 +480,52 @@
       "head": "rework/2ea3b19-recurrence-bounds",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
+      "overall": "failing",
       "passed": 9,
-      "total": 11,
-      "skipped": 1,
-      "failed": [],
+      "total": 17,
+      "skipped": 5,
+      "failed": [
+        "gate",
+        "tier1"
+      ],
       "running": [
         {
-          "name": "tier1",
-          "started_at": "2026-09-24T17:50:11Z"
+          "name": "claude-cost-report",
+          "started_at": "2026-09-24T17:50:54Z"
         }
       ],
       "queued": [],
       "checks": [
         {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-24T17:50:54Z",
+          "completed_at": "2026-09-24T17:51:05Z",
+          "duration_sec": 11,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2ea3b19-debugging-and-repair/actions/runs/36027348087/job/107759925439",
+          "app": "github-actions"
+        },
+        {
           "name": "tier1",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-24T17:50:11Z",
+          "completed_at": "2026-09-24T17:50:51Z",
+          "duration_sec": 40,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2ea3b19-debugging-and-repair/actions/runs/36027348087/job/107759645823",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-24T17:50:11Z",
+          "started_at": "2026-09-24T17:50:54Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-2ea3b19-debugging-and-repair/actions/runs/36027348087/job/107759645823",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2ea3b19-debugging-and-repair/actions/runs/36027348087/job/107759925245",
           "app": "github-actions"
         },
         {
@@ -604,11 +627,51 @@
           "duration_sec": -1,
           "url": "https://github.com/handshake-project-dynamo/dynamo-2ea3b19-debugging-and-repair/actions/runs/36027348087/job/107755998290",
           "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-24T17:50:51Z",
+          "completed_at": "2026-09-24T17:50:51Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2ea3b19-debugging-and-repair/actions/runs/36027348087/job/107759923793",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-24T17:50:51Z",
+          "completed_at": "2026-09-24T17:50:51Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2ea3b19-debugging-and-repair/actions/runs/36027348087/job/107759924121",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-24T17:50:52Z",
+          "completed_at": "2026-09-24T17:50:51Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2ea3b19-debugging-and-repair/actions/runs/36027348087/job/107759924903",
+          "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-24T17:50:52Z",
+          "completed_at": "2026-09-24T17:50:51Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2ea3b19-debugging-and-repair/actions/runs/36027348087/job/107759927116",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-24T16:27:43.297151+00:00",
-      "last_change": "2026-09-24T17:50:25.977344+00:00"
+      "last_change": "2026-09-24T17:51:02.043289+00:00"
     },
     {
       "repo": "dynamo-a6ce627-machine-learning-and-ai",
