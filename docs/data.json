@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-24T10:13:44.966383+00:00",
+  "snapshot_time": "2026-09-24T10:14:06.243553+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -95,26 +95,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 11,
-      "total": 13,
+      "passed": 12,
+      "total": 14,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "qc_exec",
-          "started_at": "2026-09-24T09:57:35Z"
+          "name": "qc_gate",
+          "started_at": "2026-09-24T10:14:15Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_exec",
+          "name": "qc_gate",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-24T09:57:35Z",
+          "started_at": "2026-09-24T10:14:15Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107583533326",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107588823643",
           "app": "github-actions"
         },
         {
@@ -175,6 +175,16 @@
           "completed_at": "2026-09-24T10:06:20Z",
           "duration_sec": 525,
           "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107583533309",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-24T09:57:35Z",
+          "completed_at": "2026-09-24T10:14:12Z",
+          "duration_sec": 997,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107583533326",
           "app": "github-actions"
         },
         {
@@ -240,7 +250,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-24T04:41:34.503481+00:00",
-      "last_change": "2026-09-24T10:07:26.457172+00:00"
+      "last_change": "2026-09-24T10:14:06.243553+00:00"
     },
     {
       "repo": "dynamo-fa093f0-mathematics-and-formal-reasoning",
