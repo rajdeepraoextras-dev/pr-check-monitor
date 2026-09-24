@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-24T17:50:57.454967+00:00",
+  "snapshot_time": "2026-09-24T17:51:37.512613+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -327,7 +327,7 @@
       "title": "Rework: make the plan order total and grade conflicts against provided names",
       "url": "https://github.com/handshake-project-dynamo/dynamo-16ea8e1-build-dependency-and-release-management/pull/5",
       "createdAt": "2026-09-24T16:31:37Z",
-      "updatedAt": "2026-09-24T17:46:49Z",
+      "updatedAt": "2026-09-24T17:51:17Z",
       "sha": "692a3c1b1d1cebe74f430e45757cb5d68b873096",
       "draft": false,
       "mergeable": true,
@@ -341,17 +341,13 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 7,
+      "passed": 8,
       "total": 10,
       "skipped": 1,
       "failed": [],
       "running": [
         {
           "name": "ava_review",
-          "started_at": "2026-09-24T17:46:41Z"
-        },
-        {
-          "name": "deep_review",
           "started_at": "2026-09-24T17:46:41Z"
         }
       ],
@@ -365,16 +361,6 @@
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-16ea8e1-build-dependency-and-release-management/actions/runs/36027985875/job/107758313551",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-24T17:46:41Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-16ea8e1-build-dependency-and-release-management/actions/runs/36027985875/job/107758313564",
           "app": "github-actions"
         },
         {
@@ -395,6 +381,16 @@
           "completed_at": "2026-09-24T16:33:25Z",
           "duration_sec": 73,
           "url": "https://github.com/handshake-project-dynamo/dynamo-16ea8e1-build-dependency-and-release-management/actions/runs/36027985875/job/107729467685",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-24T17:46:41Z",
+          "completed_at": "2026-09-24T17:51:23Z",
+          "duration_sec": 282,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-16ea8e1-build-dependency-and-release-management/actions/runs/36027985875/job/107758313564",
           "app": "github-actions"
         },
         {
@@ -460,7 +456,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-24T16:34:10.406441+00:00",
-      "last_change": "2026-09-24T17:46:47.124616+00:00"
+      "last_change": "2026-09-24T17:51:37.512613+00:00"
     },
     {
       "repo": "dynamo-2ea3b19-debugging-and-repair",
@@ -483,19 +479,14 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 9,
+      "passed": 10,
       "total": 17,
       "skipped": 5,
       "failed": [
         "gate",
         "tier1"
       ],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-24T17:50:54Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -519,16 +510,6 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-24T17:50:54Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-2ea3b19-debugging-and-repair/actions/runs/36027348087/job/107759925245",
-          "app": "github-actions"
-        },
-        {
           "name": "ava_review",
           "state": "passed",
           "conclusion": "success",
@@ -546,6 +527,16 @@
           "completed_at": "2026-09-24T16:26:44Z",
           "duration_sec": 27,
           "url": "https://github.com/handshake-project-dynamo/dynamo-2ea3b19-debugging-and-repair/actions/runs/36027348087/job/107727135896",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-24T17:50:54Z",
+          "completed_at": "2026-09-24T17:51:10Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-2ea3b19-debugging-and-repair/actions/runs/36027348087/job/107759925245",
           "app": "github-actions"
         },
         {
@@ -671,7 +662,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-24T16:27:43.297151+00:00",
-      "last_change": "2026-09-24T17:50:57.454967+00:00"
+      "last_change": "2026-09-24T17:51:37.512613+00:00"
     },
     {
       "repo": "dynamo-a6ce627-machine-learning-and-ai",
