@@ -1,53 +1,5 @@
 [
  {
-  "ts": "2026-09-24T05:24:22.232032+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "passed",
-  "msg": "Check recovered: gate"
- },
- {
-  "ts": "2026-09-24T05:24:22.232032+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "passed",
-  "msg": "Check recovered: pass2"
- },
- {
-  "ts": "2026-09-24T05:25:28.055851+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "started",
-  "msg": "Check started: review"
- },
- {
-  "ts": "2026-09-24T05:25:28.055851+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
-  "ts": "2026-09-24T05:26:38.083885+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "started",
-  "msg": "Check started: review"
- },
- {
-  "ts": "2026-09-24T05:26:38.083885+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
-  "ts": "2026-09-24T05:29:22.795338+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
-  "ts": "2026-09-24T05:29:56.189816+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "started",
-  "msg": "Check started: validation"
- },
- {
   "ts": "2026-09-24T05:29:56.189816+00:00",
   "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
   "type": "passed",
@@ -2376,27 +2328,75 @@
   "msg": "Check passed: qc_eval"
  },
  {
-  "ts": "2026-09-24T17:48:35.990427+00:00",
+  "ts": "2026-09-24T17:48:35.447694+00:00",
+  "pr": "dynamo-d73e65f-mathematics-and-formal-reasoning#6",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-24T17:48:35.447694+00:00",
   "pr": "dynamo-d73e65f-mathematics-and-formal-reasoning#6",
   "type": "started",
   "msg": "Check started: pass2_suggestion"
  },
  {
-  "ts": "2026-09-24T17:48:35.990427+00:00",
+  "ts": "2026-09-24T17:48:35.447694+00:00",
   "pr": "dynamo-d73e65f-mathematics-and-formal-reasoning#6",
   "type": "failing",
   "msg": "Check failed: gate"
  },
  {
-  "ts": "2026-09-24T17:48:35.990427+00:00",
+  "ts": "2026-09-24T17:48:35.447694+00:00",
+  "pr": "dynamo-d73e65f-mathematics-and-formal-reasoning#6",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-24T17:48:35.447694+00:00",
   "pr": "dynamo-d73e65f-mathematics-and-formal-reasoning#6",
   "type": "passed",
   "msg": "Check passed: claude-cost-report"
  },
  {
-  "ts": "2026-09-24T17:48:35.990427+00:00",
+  "ts": "2026-09-24T17:48:35.447694+00:00",
+  "pr": "dynamo-a6ce627-machine-learning-and-ai#6",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-24T17:48:35.447694+00:00",
+  "pr": "dynamo-a6ce627-machine-learning-and-ai#6",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-24T17:48:35.447694+00:00",
+  "pr": "dynamo-a6ce627-machine-learning-and-ai#6",
+  "type": "failing",
+  "msg": "Check failed: qc_gate"
+ },
+ {
+  "ts": "2026-09-24T17:48:35.447694+00:00",
   "pr": "dynamo-a6ce627-machine-learning-and-ai#6",
   "type": "passed",
   "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-24T17:48:35.447694+00:00",
+  "pr": "dynamo-a6ce627-machine-learning-and-ai#6",
+  "type": "passed",
+  "msg": "Check passed: qc_eval"
+ },
+ {
+  "ts": "2026-09-24T17:48:35.447694+00:00",
+  "pr": "dynamo-0705184-scientific-computing-and-domain-science#7",
+  "type": "started",
+  "msg": "Check started: ratelimit"
+ },
+ {
+  "ts": "2026-09-24T17:48:35.447694+00:00",
+  "pr": "dynamo-0705184-scientific-computing-and-domain-science#7",
+  "type": "passed",
+  "msg": "Check passed: validation"
  }
 ]
