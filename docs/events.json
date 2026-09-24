@@ -1,23 +1,5 @@
 [
  {
-  "ts": "2026-09-23T11:57:20.998219+00:00",
-  "pr": "dynamo-8c5f793-systems-infrastructure-and-operations#10",
-  "type": "started",
-  "msg": "Check started: qc_exec"
- },
- {
-  "ts": "2026-09-23T11:57:20.998219+00:00",
-  "pr": "dynamo-8c5f793-systems-infrastructure-and-operations#10",
-  "type": "passed",
-  "msg": "Check passed: tier1"
- },
- {
-  "ts": "2026-09-23T11:57:20.998219+00:00",
-  "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
-  "type": "passed",
-  "msg": "Check passed: pass2_suggestion"
- },
- {
   "ts": "2026-09-23T11:58:50.362201+00:00",
   "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
   "type": "passed",
@@ -2388,13 +2370,31 @@
   "msg": "Check failed: pass2"
  },
  {
-  "ts": "2026-09-24T05:19:48.540193+00:00",
+  "ts": "2026-09-24T05:19:49.623312+00:00",
+  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-24T05:19:49.623312+00:00",
+  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
+  "type": "started",
+  "msg": "Check started: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-24T05:19:49.623312+00:00",
   "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
   "type": "failing",
   "msg": "Check failed: gate"
  },
  {
-  "ts": "2026-09-24T05:19:48.540193+00:00",
+  "ts": "2026-09-24T05:19:49.623312+00:00",
+  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-24T05:19:49.623312+00:00",
   "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
   "type": "passed",
   "msg": "Check passed: claude-cost-report"
