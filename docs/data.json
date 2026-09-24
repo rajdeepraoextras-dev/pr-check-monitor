@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-24T17:54:13.477610+00:00",
+  "snapshot_time": "2026-09-24T17:54:52.433372+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -327,7 +327,7 @@
       "title": "Rework: make the plan order total and grade conflicts against provided names",
       "url": "https://github.com/handshake-project-dynamo/dynamo-16ea8e1-build-dependency-and-release-management/pull/5",
       "createdAt": "2026-09-24T16:31:37Z",
-      "updatedAt": "2026-09-24T17:51:17Z",
+      "updatedAt": "2026-09-24T17:54:51Z",
       "sha": "692a3c1b1d1cebe74f430e45757cb5d68b873096",
       "draft": false,
       "mergeable": true,
@@ -341,25 +341,32 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 9,
+      "total": 11,
       "skipped": 1,
       "failed": [],
-      "running": [
-        {
-          "name": "ava_review",
-          "started_at": "2026-09-24T17:46:41Z"
-        }
+      "running": [],
+      "queued": [
+        "tier1"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "ava_review",
-          "state": "running",
+          "name": "tier1",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-24T17:46:41Z",
+          "started_at": "2026-09-24T17:54:58Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-16ea8e1-build-dependency-and-release-management/actions/runs/36027985875/job/107761476760",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-24T17:46:41Z",
+          "completed_at": "2026-09-24T17:54:57Z",
+          "duration_sec": 496,
           "url": "https://github.com/handshake-project-dynamo/dynamo-16ea8e1-build-dependency-and-release-management/actions/runs/36027985875/job/107758313551",
           "app": "github-actions"
         },
@@ -456,7 +463,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-24T16:34:10.406441+00:00",
-      "last_change": "2026-09-24T17:51:37.512613+00:00"
+      "last_change": "2026-09-24T17:54:52.433372+00:00"
     },
     {
       "repo": "dynamo-2ea3b19-debugging-and-repair",
