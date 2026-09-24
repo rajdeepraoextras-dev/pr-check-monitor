@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-24T08:07:34.479267+00:00",
+  "snapshot_time": "2026-09-24T08:08:06.124817+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Cover unrelated parentless roots and the ungraded contract boundaries",
       "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/pull/16",
       "createdAt": "2026-09-24T04:59:23Z",
-      "updatedAt": "2026-09-24T08:06:23Z",
+      "updatedAt": "2026-09-24T08:07:34Z",
       "sha": "f4f75053574868b674b0d387ebe0009b7df26e56",
       "draft": false,
       "mergeable": true,
@@ -27,25 +27,35 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 8,
-      "total": 10,
+      "passed": 9,
+      "total": 11,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "ava_review",
-          "started_at": "2026-09-24T07:57:22Z"
+          "name": "tier1",
+          "started_at": "2026-09-24T08:07:44Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "ava_review",
+          "name": "tier1",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-24T07:57:22Z",
+          "started_at": "2026-09-24T08:07:44Z",
           "completed_at": null,
           "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107548187273",
+          "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-24T07:57:22Z",
+          "completed_at": "2026-09-24T08:07:41Z",
+          "duration_sec": 619,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107545053933",
           "app": "github-actions"
         },
@@ -142,7 +152,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-24T05:01:09.773169+00:00",
-      "last_change": "2026-09-24T08:06:31.726975+00:00"
+      "last_change": "2026-09-24T08:08:06.124817+00:00"
     },
     {
       "repo": "dynamo-75bb5b2-model-training-and-ml-infrastructure",
