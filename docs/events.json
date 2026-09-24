@@ -1,35 +1,5 @@
 [
  {
-  "ts": "2026-09-23T13:45:41.078967+00:00",
-  "pr": "dynamo-8c5f793-systems-infrastructure-and-operations#10",
-  "type": "started",
-  "msg": "Check started: similarity"
- },
- {
-  "ts": "2026-09-23T13:45:41.078967+00:00",
-  "pr": "dynamo-8c5f793-systems-infrastructure-and-operations#10",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
-  "ts": "2026-09-23T13:46:25.368764+00:00",
-  "pr": "dynamo-8c5f793-systems-infrastructure-and-operations#10",
-  "type": "started",
-  "msg": "Check started: validation"
- },
- {
-  "ts": "2026-09-23T13:46:25.368764+00:00",
-  "pr": "dynamo-8c5f793-systems-infrastructure-and-operations#10",
-  "type": "passed",
-  "msg": "Check passed: similarity"
- },
- {
-  "ts": "2026-09-23T13:47:09.689586+00:00",
-  "pr": "dynamo-8c5f793-systems-infrastructure-and-operations#10",
-  "type": "started",
-  "msg": "Check started: ratelimit"
- },
- {
   "ts": "2026-09-23T13:47:09.689586+00:00",
   "pr": "dynamo-8c5f793-systems-infrastructure-and-operations#10",
   "type": "passed",
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
   "type": "passed",
   "msg": "Check passed: validation"
+ },
+ {
+  "ts": "2026-09-24T06:14:14.333864+00:00",
+  "pr": "dynamo-d867126-security#16",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-24T06:14:14.333864+00:00",
+  "pr": "dynamo-d867126-security#16",
+  "type": "started",
+  "msg": "Check started: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-24T06:14:14.333864+00:00",
+  "pr": "dynamo-d867126-security#16",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-24T06:14:14.333864+00:00",
+  "pr": "dynamo-d867126-security#16",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
+  "ts": "2026-09-24T06:14:14.333864+00:00",
+  "pr": "dynamo-d867126-security#16",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
  }
 ]
