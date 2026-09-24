@@ -1,11 +1,69 @@
 {
-  "snapshot_time": "2026-09-24T17:38:53.258018+00:00",
+  "snapshot_time": "2026-09-24T17:38:52.093926+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
     "window_hours": 24
   },
   "prs": [
+    {
+      "repo": "dynamo-0705184-scientific-computing-and-domain-science",
+      "full_repo": "handshake-project-dynamo/dynamo-0705184-scientific-computing-and-domain-science",
+      "num": "7",
+      "title": "Rework: close the lookup-table false accept and the zero-start-reset findings",
+      "url": "https://github.com/handshake-project-dynamo/dynamo-0705184-scientific-computing-and-domain-science/pull/7",
+      "createdAt": "2026-09-24T17:37:42Z",
+      "updatedAt": "2026-09-24T17:38:08Z",
+      "sha": "15e3c15af7206d97f32f1b4e1a0410557c12a3b4",
+      "draft": false,
+      "mergeable": true,
+      "reviewDecision": "",
+      "additions": 1735,
+      "deletions": 37,
+      "changedFiles": 31,
+      "head": "rework/0705184-exact-rk4-events-clean",
+      "base": "main",
+      "labels": [
+        "in-progress"
+      ],
+      "overall": "running",
+      "passed": 1,
+      "total": 2,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "cosine_similarity",
+          "started_at": "2026-09-24T17:38:24Z"
+        }
+      ],
+      "queued": [],
+      "checks": [
+        {
+          "name": "cosine_similarity",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-24T17:38:24Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0705184-scientific-computing-and-domain-science/actions/runs/36035634829/job/107755123623",
+          "app": "github-actions"
+        },
+        {
+          "name": "changes",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-24T17:37:50Z",
+          "completed_at": "2026-09-24T17:38:15Z",
+          "duration_sec": 25,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0705184-scientific-computing-and-domain-science/actions/runs/36035634829/job/107754909688",
+          "app": "github-actions"
+        }
+      ],
+      "submitted": false,
+      "first_seen": "2026-09-24T17:39:09.335860+00:00",
+      "last_change": "2026-09-24T17:38:52.093926+00:00"
+    },
     {
       "repo": "dynamo-d73e65f-mathematics-and-formal-reasoning",
       "full_repo": "handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning",
@@ -476,7 +534,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-24T16:13:57.643474+00:00",
-      "last_change": "2026-09-24T17:38:53.258018+00:00"
+      "last_change": "2026-09-24T17:38:52.093926+00:00"
     },
     {
       "repo": "dynamo-fa093f0-mathematics-and-formal-reasoning",
