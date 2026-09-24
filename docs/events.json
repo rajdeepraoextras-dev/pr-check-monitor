@@ -1,5 +1,35 @@
 [
  {
+  "ts": "2026-09-23T15:15:25.599758+00:00",
+  "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-23T15:15:25.599758+00:00",
+  "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
+  "type": "started",
+  "msg": "Check started: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-23T15:15:25.599758+00:00",
+  "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
+  "type": "started",
+  "msg": "Check started: pass2_suggestion"
+ },
+ {
+  "ts": "2026-09-23T15:15:25.599758+00:00",
+  "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-23T15:15:25.599758+00:00",
+  "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
+  "type": "failing",
+  "msg": "Check failed: pass2"
+ },
+ {
   "ts": "2026-09-23T15:15:56.174778+00:00",
   "pr": "dynamo-d6941c7-build-dependency-and-release-management#9",
   "type": "started",
@@ -2365,36 +2395,6 @@
  },
  {
   "ts": "2026-09-24T07:52:11.212808+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "passed",
-  "msg": "Check passed: pass2_suggestion"
- },
- {
-  "ts": "2026-09-24T07:53:39.747794+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "failing",
-  "msg": "Status running \u2192 failing"
- },
- {
-  "ts": "2026-09-24T07:53:39.747794+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "failing",
-  "msg": "Check failed: gate"
- },
- {
-  "ts": "2026-09-24T07:53:39.747794+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "failing",
-  "msg": "Check failed: pass2"
- },
- {
-  "ts": "2026-09-24T07:53:39.747794+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "passed",
-  "msg": "Check passed: claude-cost-report"
- },
- {
-  "ts": "2026-09-24T07:53:39.747794+00:00",
   "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
   "type": "passed",
   "msg": "Check passed: pass2_suggestion"
