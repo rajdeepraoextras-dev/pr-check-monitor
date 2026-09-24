@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-24T17:48:35.447694+00:00",
+  "snapshot_time": "2026-09-24T17:49:11.793394+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Rework: close the lookup-table false accept and the zero-start-reset findings",
       "url": "https://github.com/handshake-project-dynamo/dynamo-0705184-scientific-computing-and-domain-science/pull/7",
       "createdAt": "2026-09-24T17:37:42Z",
-      "updatedAt": "2026-09-24T17:48:39Z",
+      "updatedAt": "2026-09-24T17:49:07Z",
       "sha": "15e3c15af7206d97f32f1b4e1a0410557c12a3b4",
       "draft": false,
       "mergeable": true,
@@ -27,26 +27,26 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 5,
-      "total": 6,
+      "passed": 6,
+      "total": 7,
       "skipped": 0,
       "failed": [],
       "running": [
         {
-          "name": "ratelimit",
-          "started_at": "2026-09-24T17:48:48Z"
+          "name": "pass2",
+          "started_at": "2026-09-24T17:48:58Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "ratelimit",
+          "name": "pass2",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-24T17:48:48Z",
+          "started_at": "2026-09-24T17:48:58Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-0705184-scientific-computing-and-domain-science/actions/runs/36035634829/job/107759117124",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0705184-scientific-computing-and-domain-science/actions/runs/36035634829/job/107759183259",
           "app": "github-actions"
         },
         {
@@ -67,6 +67,16 @@
           "completed_at": "2026-09-24T17:39:50Z",
           "duration_sec": 86,
           "url": "https://github.com/handshake-project-dynamo/dynamo-0705184-scientific-computing-and-domain-science/actions/runs/36035634829/job/107755123623",
+          "app": "github-actions"
+        },
+        {
+          "name": "ratelimit",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-24T17:48:48Z",
+          "completed_at": "2026-09-24T17:48:56Z",
+          "duration_sec": 8,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-0705184-scientific-computing-and-domain-science/actions/runs/36035634829/job/107759117124",
           "app": "github-actions"
         },
         {
@@ -102,7 +112,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-24T17:39:09.335860+00:00",
-      "last_change": "2026-09-24T17:48:35.447694+00:00"
+      "last_change": "2026-09-24T17:49:11.793394+00:00"
     },
     {
       "repo": "dynamo-d73e65f-mathematics-and-formal-reasoning",
