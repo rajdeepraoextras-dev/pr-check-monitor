@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-24T08:41:14.778914+00:00",
+  "snapshot_time": "2026-09-24T08:42:00.983814+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,204 +13,46 @@
       "title": "Cover unrelated parentless roots and the ungraded contract boundaries",
       "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/pull/16",
       "createdAt": "2026-09-24T04:59:23Z",
-      "updatedAt": "2026-09-24T08:22:35Z",
-      "sha": "f4f75053574868b674b0d387ebe0009b7df26e56",
+      "updatedAt": "2026-09-24T08:41:54Z",
+      "sha": "9121154fb743abdb3c4388e66a69a0ae591877d6",
       "draft": false,
       "mergeable": true,
       "reviewDecision": "",
-      "additions": 224,
-      "deletions": 15,
-      "changedFiles": 4,
+      "additions": 295,
+      "deletions": 19,
+      "changedFiles": 5,
       "head": "rework/d867126-harden-git-gate",
       "base": "main",
       "labels": [
         "needs-revision"
       ],
-      "overall": "failing",
-      "passed": 13,
-      "total": 17,
-      "skipped": 2,
-      "failed": [
-        "gate",
-        "qc_gate"
+      "overall": "running",
+      "passed": 0,
+      "total": 1,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "changes",
+          "started_at": "2026-09-24T08:42:00Z"
+        }
       ],
-      "running": [],
       "queued": [],
       "checks": [
         {
-          "name": "gate",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-24T08:22:28Z",
-          "completed_at": "2026-09-24T08:22:38Z",
-          "duration_sec": 10,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107552801769",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_gate",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-24T08:22:10Z",
-          "completed_at": "2026-09-24T08:22:25Z",
-          "duration_sec": 15,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107552709389",
-          "app": "github-actions"
-        },
-        {
-          "name": "ava_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T07:57:22Z",
-          "completed_at": "2026-09-24T08:07:41Z",
-          "duration_sec": 619,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107545053933",
-          "app": "github-actions"
-        },
-        {
           "name": "changes",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T06:41:59Z",
-          "completed_at": "2026-09-24T06:42:24Z",
-          "duration_sec": 25,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107523838414",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T08:22:28Z",
-          "completed_at": "2026-09-24T08:22:44Z",
-          "duration_sec": 16,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107552801792",
-          "app": "github-actions"
-        },
-        {
-          "name": "cosine_similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T06:42:27Z",
-          "completed_at": "2026-09-24T06:43:47Z",
-          "duration_sec": 80,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107523949805",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T07:57:22Z",
-          "completed_at": "2026-09-24T08:06:28Z",
-          "duration_sec": 546,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107545053909",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T06:50:05Z",
-          "completed_at": "2026-09-24T07:57:19Z",
-          "duration_sec": 4034,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107525917136",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_eval",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T08:08:17Z",
-          "completed_at": "2026-09-24T08:11:44Z",
-          "duration_sec": 207,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107548358175",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T08:08:17Z",
-          "completed_at": "2026-09-24T08:22:07Z",
-          "duration_sec": 830,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107548358231",
-          "app": "github-actions"
-        },
-        {
-          "name": "ratelimit",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T06:49:55Z",
-          "completed_at": "2026-09-24T06:50:02Z",
-          "duration_sec": 7,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107525873647",
-          "app": "github-actions"
-        },
-        {
-          "name": "review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T06:43:50Z",
-          "completed_at": "2026-09-24T06:48:01Z",
-          "duration_sec": 251,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107524303687",
-          "app": "github-actions"
-        },
-        {
-          "name": "similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T06:48:04Z",
-          "completed_at": "2026-09-24T06:48:34Z",
-          "duration_sec": 30,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107525389247",
-          "app": "github-actions"
-        },
-        {
-          "name": "tier1",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T08:07:44Z",
-          "completed_at": "2026-09-24T08:08:14Z",
-          "duration_sec": 30,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107548187273",
-          "app": "github-actions"
-        },
-        {
-          "name": "validation",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T06:48:37Z",
-          "completed_at": "2026-09-24T06:49:52Z",
-          "duration_sec": 75,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107525530812",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-24T07:57:20Z",
-          "completed_at": "2026-09-24T07:57:20Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107545055866",
-          "app": "github-actions"
-        },
-        {
-          "name": "trials",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-24T08:22:26Z",
-          "completed_at": "2026-09-24T08:22:26Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107552802418",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-24T08:42:00Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35976766894/job/107558992017",
           "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-24T05:01:09.773169+00:00",
-      "last_change": "2026-09-24T08:23:07.500666+00:00"
+      "last_change": "2026-09-24T08:42:00.983814+00:00"
     },
     {
       "repo": "dynamo-75bb5b2-model-training-and-ml-infrastructure",
