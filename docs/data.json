@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-24T18:16:04.960763+00:00",
+  "snapshot_time": "2026-09-24T18:16:44.020534+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -365,204 +365,47 @@
       "title": "Rework: enforce the U+001F bucket separator and strict RFC3339 history timestamps",
       "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/pull/6",
       "createdAt": "2026-09-24T16:12:16Z",
-      "updatedAt": "2026-09-24T17:48:02Z",
-      "sha": "35cfb8a66f0e9e2d9a1111f51a7846bc6148d2e1",
+      "updatedAt": "2026-09-24T18:16:54Z",
+      "sha": "21941419ee3128fc4bde0cd6d1d3ee778cce465b",
       "draft": false,
       "mergeable": true,
       "reviewDecision": "",
-      "additions": 129,
-      "deletions": 26,
-      "changedFiles": 7,
+      "additions": 360,
+      "deletions": 98,
+      "changedFiles": 8,
       "head": "rework/a6ce627-replay-model-history",
       "base": "main",
       "labels": [
+        "in-progress",
         "needs-revision"
       ],
-      "overall": "failing",
-      "passed": 13,
-      "total": 17,
-      "skipped": 2,
-      "failed": [
-        "gate",
-        "qc_gate"
+      "overall": "running",
+      "passed": 0,
+      "total": 1,
+      "skipped": 0,
+      "failed": [],
+      "running": [
+        {
+          "name": "changes",
+          "started_at": "2026-09-24T18:16:36Z"
+        }
       ],
-      "running": [],
       "queued": [],
       "checks": [
         {
-          "name": "gate",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-24T17:47:56Z",
-          "completed_at": "2026-09-24T17:48:07Z",
-          "duration_sec": 11,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107758788716",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_gate",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-24T17:47:37Z",
-          "completed_at": "2026-09-24T17:47:53Z",
-          "duration_sec": 16,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107758666508",
-          "app": "github-actions"
-        },
-        {
-          "name": "ava_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T17:27:22Z",
-          "completed_at": "2026-09-24T17:38:36Z",
-          "duration_sec": 674,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107750813084",
-          "app": "github-actions"
-        },
-        {
           "name": "changes",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T16:12:24Z",
-          "completed_at": "2026-09-24T16:12:51Z",
-          "duration_sec": 27,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107721609853",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T17:47:56Z",
-          "completed_at": "2026-09-24T17:48:12Z",
-          "duration_sec": 16,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107758788575",
-          "app": "github-actions"
-        },
-        {
-          "name": "cosine_similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T16:12:54Z",
-          "completed_at": "2026-09-24T16:14:14Z",
-          "duration_sec": 80,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107721803582",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T17:27:22Z",
-          "completed_at": "2026-09-24T17:33:58Z",
-          "duration_sec": 396,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107750813270",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T16:21:47Z",
-          "completed_at": "2026-09-24T17:27:19Z",
-          "duration_sec": 3932,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107725356512",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_eval",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T17:39:14Z",
-          "completed_at": "2026-09-24T17:47:34Z",
-          "duration_sec": 500,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107755449484",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T17:39:14Z",
-          "completed_at": "2026-09-24T17:44:03Z",
-          "duration_sec": 289,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107755449497",
-          "app": "github-actions"
-        },
-        {
-          "name": "ratelimit",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T16:21:36Z",
-          "completed_at": "2026-09-24T16:21:44Z",
-          "duration_sec": 8,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107725285750",
-          "app": "github-actions"
-        },
-        {
-          "name": "review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T16:14:17Z",
-          "completed_at": "2026-09-24T16:19:53Z",
-          "duration_sec": 336,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107722354616",
-          "app": "github-actions"
-        },
-        {
-          "name": "similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T16:19:56Z",
-          "completed_at": "2026-09-24T16:20:27Z",
-          "duration_sec": 31,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107724604356",
-          "app": "github-actions"
-        },
-        {
-          "name": "tier1",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T17:38:39Z",
-          "completed_at": "2026-09-24T17:39:12Z",
-          "duration_sec": 33,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107755220303",
-          "app": "github-actions"
-        },
-        {
-          "name": "validation",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T16:20:30Z",
-          "completed_at": "2026-09-24T16:21:33Z",
-          "duration_sec": 63,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107724839630",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-24T17:27:20Z",
-          "completed_at": "2026-09-24T17:27:19Z",
-          "duration_sec": -1,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107750816164",
-          "app": "github-actions"
-        },
-        {
-          "name": "trials",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-24T17:47:54Z",
-          "completed_at": "2026-09-24T17:47:53Z",
-          "duration_sec": -1,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107758789669",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-24T18:16:36Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36040094438/job/107769822836",
           "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-24T16:13:57.643474+00:00",
-      "last_change": "2026-09-24T17:48:35.447694+00:00"
+      "last_change": "2026-09-24T18:16:44.020534+00:00"
     },
     {
       "repo": "dynamo-fa093f0-mathematics-and-formal-reasoning",
