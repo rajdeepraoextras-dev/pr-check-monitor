@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-24T10:10:01.538480+00:00",
+  "snapshot_time": "2026-09-24T10:10:33.460433+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -31,16 +31,19 @@
       "total": 2,
       "skipped": 0,
       "failed": [],
-      "running": [],
-      "queued": [
-        "cosine_similarity"
+      "running": [
+        {
+          "name": "cosine_similarity",
+          "started_at": "2026-09-24T10:10:05Z"
+        }
       ],
+      "queued": [],
       "checks": [
         {
           "name": "cosine_similarity",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-24T10:10:03Z",
+          "started_at": "2026-09-24T10:10:05Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35985590292/job/107587528266",
@@ -59,7 +62,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-24T05:01:09.773169+00:00",
-      "last_change": "2026-09-24T10:10:01.538480+00:00"
+      "last_change": "2026-09-24T10:10:33.460433+00:00"
     },
     {
       "repo": "dynamo-75bb5b2-model-training-and-ml-infrastructure",
