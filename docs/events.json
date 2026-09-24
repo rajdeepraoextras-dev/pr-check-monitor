@@ -1,18 +1,6 @@
 [
  {
   "ts": "2026-09-23T17:12:02.266640+00:00",
-  "pr": "dynamo-d6941c7-build-dependency-and-release-management#9",
-  "type": "passed",
-  "msg": "Check passed: cosine_similarity"
- },
- {
-  "ts": "2026-09-23T17:12:02.266640+00:00",
-  "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
-  "type": "failing",
-  "msg": "Status running \u2192 failing"
- },
- {
-  "ts": "2026-09-23T17:12:02.266640+00:00",
   "pr": "dynamo-e3b1da9-model-training-and-ml-infrastructure#5",
   "type": "failing",
   "msg": "Check failed: gate"
@@ -2398,5 +2386,17 @@
   "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
   "type": "passed",
   "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-24T10:19:42.780654+00:00",
+  "pr": "dynamo-d867126-security#16",
+  "type": "started",
+  "msg": "Check started: similarity"
+ },
+ {
+  "ts": "2026-09-24T10:19:42.780654+00:00",
+  "pr": "dynamo-d867126-security#16",
+  "type": "passed",
+  "msg": "Check passed: review"
  }
 ]
