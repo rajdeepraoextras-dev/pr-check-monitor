@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-24T12:48:45.036587+00:00",
+  "snapshot_time": "2026-09-24T12:49:16.503891+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -219,204 +219,30 @@
       "title": "Fix the four issue #3 findings in tinyintent-recipe-recovery, in the task they were raised against",
       "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/pull/8",
       "createdAt": "2026-09-24T04:39:44Z",
-      "updatedAt": "2026-09-24T10:14:38Z",
-      "sha": "71b4b963de74ae97bd4389e41793b014bc384628",
+      "updatedAt": "2026-09-24T12:49:18Z",
+      "sha": "a378a25a8f0743e3f8bd6a06e8cafeefa8dc7964",
       "draft": false,
-      "mergeable": true,
+      "mergeable": null,
       "reviewDecision": "",
-      "additions": 5626,
-      "deletions": 177641,
+      "additions": 5795,
+      "deletions": 177643,
       "changedFiles": 167,
       "head": "rework/75bb5b2-tinyintent-recipe-recovery",
       "base": "main",
       "labels": [
         "needs-revision"
       ],
-      "overall": "failing",
-      "passed": 13,
-      "total": 17,
-      "skipped": 2,
-      "failed": [
-        "gate",
-        "qc_gate"
-      ],
+      "overall": "passed",
+      "passed": 0,
+      "total": 0,
+      "skipped": 0,
+      "failed": [],
       "running": [],
       "queued": [],
-      "checks": [
-        {
-          "name": "gate",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-24T10:14:32Z",
-          "completed_at": "2026-09-24T10:14:42Z",
-          "duration_sec": 10,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107588912783",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_gate",
-          "state": "failed",
-          "conclusion": "failure",
-          "started_at": "2026-09-24T10:14:15Z",
-          "completed_at": "2026-09-24T10:14:30Z",
-          "duration_sec": 15,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107588823643",
-          "app": "github-actions"
-        },
-        {
-          "name": "ava_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T09:43:28Z",
-          "completed_at": "2026-09-24T09:54:07Z",
-          "duration_sec": 639,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107578966071",
-          "app": "github-actions"
-        },
-        {
-          "name": "changes",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T08:48:50Z",
-          "completed_at": "2026-09-24T08:49:16Z",
-          "duration_sec": 26,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107561150190",
-          "app": "github-actions"
-        },
-        {
-          "name": "claude-cost-report",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T10:14:33Z",
-          "completed_at": "2026-09-24T10:14:50Z",
-          "duration_sec": 17,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107588912910",
-          "app": "github-actions"
-        },
-        {
-          "name": "cosine_similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T08:49:19Z",
-          "completed_at": "2026-09-24T08:50:54Z",
-          "duration_sec": 95,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107561303213",
-          "app": "github-actions"
-        },
-        {
-          "name": "deep_review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T09:43:28Z",
-          "completed_at": "2026-09-24T09:56:57Z",
-          "duration_sec": 809,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107578966054",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T08:58:21Z",
-          "completed_at": "2026-09-24T09:43:26Z",
-          "duration_sec": 2705,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107564175107",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_eval",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T09:57:35Z",
-          "completed_at": "2026-09-24T10:06:20Z",
-          "duration_sec": 525,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107583533309",
-          "app": "github-actions"
-        },
-        {
-          "name": "qc_exec",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T09:57:35Z",
-          "completed_at": "2026-09-24T10:14:12Z",
-          "duration_sec": 997,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107583533326",
-          "app": "github-actions"
-        },
-        {
-          "name": "ratelimit",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T08:58:08Z",
-          "completed_at": "2026-09-24T08:58:18Z",
-          "duration_sec": 10,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107564108227",
-          "app": "github-actions"
-        },
-        {
-          "name": "review",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T08:50:56Z",
-          "completed_at": "2026-09-24T08:54:14Z",
-          "duration_sec": 198,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107561819413",
-          "app": "github-actions"
-        },
-        {
-          "name": "similarity",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T08:54:17Z",
-          "completed_at": "2026-09-24T08:54:48Z",
-          "duration_sec": 31,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107562874598",
-          "app": "github-actions"
-        },
-        {
-          "name": "tier1",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T09:56:59Z",
-          "completed_at": "2026-09-24T09:57:32Z",
-          "duration_sec": 33,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107583342450",
-          "app": "github-actions"
-        },
-        {
-          "name": "validation",
-          "state": "passed",
-          "conclusion": "success",
-          "started_at": "2026-09-24T08:54:51Z",
-          "completed_at": "2026-09-24T08:58:05Z",
-          "duration_sec": 194,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107563051246",
-          "app": "github-actions"
-        },
-        {
-          "name": "pass2_suggestion",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-24T09:43:26Z",
-          "completed_at": "2026-09-24T09:43:26Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107578968067",
-          "app": "github-actions"
-        },
-        {
-          "name": "trials",
-          "state": "skipped",
-          "conclusion": "skipped",
-          "started_at": "2026-09-24T10:14:30Z",
-          "completed_at": "2026-09-24T10:14:30Z",
-          "duration_sec": 0,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35977441315/job/107588914105",
-          "app": "github-actions"
-        }
-      ],
+      "checks": [],
       "submitted": false,
       "first_seen": "2026-09-24T04:41:34.503481+00:00",
-      "last_change": "2026-09-24T10:16:21.744917+00:00"
+      "last_change": "2026-09-24T12:49:16.503891+00:00"
     },
     {
       "repo": "dynamo-fa093f0-mathematics-and-formal-reasoning",
