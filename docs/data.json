@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-24T17:47:59.173739+00:00",
+  "snapshot_time": "2026-09-24T17:48:35.990427+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -101,7 +101,7 @@
       "title": "Rework: publish the normative partition_application rule for nested modular schedules",
       "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/pull/6",
       "createdAt": "2026-09-24T16:31:47Z",
-      "updatedAt": "2026-09-24T17:47:52Z",
+      "updatedAt": "2026-09-24T17:48:10Z",
       "sha": "c2eb860080c2b40b431ed854a6a062b4f032435e",
       "draft": false,
       "mergeable": true,
@@ -112,22 +112,34 @@
       "head": "rework/d73e65f-partition-semantics",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
       "overall": "failing",
-      "passed": 6,
+      "passed": 7,
       "total": 17,
       "skipped": 7,
       "failed": [
+        "gate",
         "pass2"
       ],
-      "running": [],
-      "queued": [
-        "claude-cost-report",
-        "gate",
-        "pass2_suggestion"
+      "running": [
+        {
+          "name": "pass2_suggestion",
+          "started_at": "2026-09-24T17:48:03Z"
+        }
       ],
+      "queued": [],
       "checks": [
+        {
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-24T17:48:04Z",
+          "completed_at": "2026-09-24T17:48:14Z",
+          "duration_sec": 10,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/actions/runs/36028009950/job/107758837313",
+          "app": "github-actions"
+        },
         {
           "name": "pass2",
           "state": "failed",
@@ -139,30 +151,10 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "queued",
-          "conclusion": null,
-          "started_at": "2026-09-24T17:48:02Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/actions/runs/36028009950/job/107758837289",
-          "app": "github-actions"
-        },
-        {
-          "name": "gate",
-          "state": "queued",
-          "conclusion": null,
-          "started_at": "2026-09-24T17:48:02Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/actions/runs/36028009950/job/107758837313",
-          "app": "github-actions"
-        },
-        {
           "name": "pass2_suggestion",
-          "state": "queued",
+          "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-24T17:48:01Z",
+          "started_at": "2026-09-24T17:48:03Z",
           "completed_at": null,
           "duration_sec": null,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/actions/runs/36028009950/job/107758833704",
@@ -176,6 +168,16 @@
           "completed_at": "2026-09-24T16:32:20Z",
           "duration_sec": 24,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/actions/runs/36028009950/job/107729363419",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-24T17:48:04Z",
+          "completed_at": "2026-09-24T17:48:21Z",
+          "duration_sec": 17,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/actions/runs/36028009950/job/107758837289",
           "app": "github-actions"
         },
         {
@@ -301,7 +303,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-24T16:34:01.633377+00:00",
-      "last_change": "2026-09-24T17:47:59.173739+00:00"
+      "last_change": "2026-09-24T17:48:35.990427+00:00"
     },
     {
       "repo": "dynamo-16ea8e1-build-dependency-and-release-management",
@@ -604,19 +606,14 @@
         "needs-revision"
       ],
       "overall": "failing",
-      "passed": 12,
+      "passed": 13,
       "total": 17,
       "skipped": 2,
       "failed": [
         "gate",
         "qc_gate"
       ],
-      "running": [
-        {
-          "name": "claude-cost-report",
-          "started_at": "2026-09-24T17:47:56Z"
-        }
-      ],
+      "running": [],
       "queued": [],
       "checks": [
         {
@@ -640,16 +637,6 @@
           "app": "github-actions"
         },
         {
-          "name": "claude-cost-report",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-24T17:47:56Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107758788575",
-          "app": "github-actions"
-        },
-        {
           "name": "ava_review",
           "state": "passed",
           "conclusion": "success",
@@ -667,6 +654,16 @@
           "completed_at": "2026-09-24T16:12:51Z",
           "duration_sec": 27,
           "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107721609853",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-24T17:47:56Z",
+          "completed_at": "2026-09-24T17:48:12Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107758788575",
           "app": "github-actions"
         },
         {
@@ -792,7 +789,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-24T16:13:57.643474+00:00",
-      "last_change": "2026-09-24T17:47:59.173739+00:00"
+      "last_change": "2026-09-24T17:48:35.990427+00:00"
     },
     {
       "repo": "dynamo-fa093f0-mathematics-and-formal-reasoning",
