@@ -1,23 +1,5 @@
 [
  {
-  "ts": "2026-09-24T06:28:07.131768+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "started",
-  "msg": "Check started: pass2_suggestion"
- },
- {
-  "ts": "2026-09-24T06:28:07.131768+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "failing",
-  "msg": "Check failed: pass2"
- },
- {
-  "ts": "2026-09-24T06:28:50.809142+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "failing",
-  "msg": "Check failed: gate"
- },
- {
   "ts": "2026-09-24T06:28:50.809142+00:00",
   "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
   "type": "passed",
@@ -2398,5 +2380,23 @@
   "pr": "dynamo-16ea8e1-build-dependency-and-release-management#5",
   "type": "passed",
   "msg": "Check passed: ava_review"
+ },
+ {
+  "ts": "2026-09-24T17:55:32.639356+00:00",
+  "pr": "dynamo-16ea8e1-build-dependency-and-release-management#5",
+  "type": "started",
+  "msg": "Check started: qc_eval"
+ },
+ {
+  "ts": "2026-09-24T17:55:32.639356+00:00",
+  "pr": "dynamo-16ea8e1-build-dependency-and-release-management#5",
+  "type": "started",
+  "msg": "Check started: qc_exec"
+ },
+ {
+  "ts": "2026-09-24T17:55:32.639356+00:00",
+  "pr": "dynamo-16ea8e1-build-dependency-and-release-management#5",
+  "type": "passed",
+  "msg": "Check passed: tier1"
  }
 ]
