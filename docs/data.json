@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-24T08:08:06.124817+00:00",
+  "snapshot_time": "2026-09-24T08:08:39.290594+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -13,7 +13,7 @@
       "title": "Cover unrelated parentless roots and the ungraded contract boundaries",
       "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/pull/16",
       "createdAt": "2026-09-24T04:59:23Z",
-      "updatedAt": "2026-09-24T08:07:34Z",
+      "updatedAt": "2026-09-24T08:08:23Z",
       "sha": "f4f75053574868b674b0d387ebe0009b7df26e56",
       "draft": false,
       "mergeable": true,
@@ -27,26 +27,40 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 9,
-      "total": 11,
+      "passed": 10,
+      "total": 13,
       "skipped": 1,
       "failed": [],
       "running": [
         {
-          "name": "tier1",
-          "started_at": "2026-09-24T08:07:44Z"
+          "name": "qc_eval",
+          "started_at": "2026-09-24T08:08:17Z"
+        },
+        {
+          "name": "qc_exec",
+          "started_at": "2026-09-24T08:08:17Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "tier1",
+          "name": "qc_eval",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-24T08:07:44Z",
+          "started_at": "2026-09-24T08:08:17Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107548187273",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107548358175",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-24T08:08:17Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107548358231",
           "app": "github-actions"
         },
         {
@@ -130,6 +144,16 @@
           "app": "github-actions"
         },
         {
+          "name": "tier1",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-24T08:07:44Z",
+          "completed_at": "2026-09-24T08:08:14Z",
+          "duration_sec": 30,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d867126-security/actions/runs/35965754150/job/107548187273",
+          "app": "github-actions"
+        },
+        {
           "name": "validation",
           "state": "passed",
           "conclusion": "success",
@@ -152,7 +176,7 @@
       ],
       "submitted": false,
       "first_seen": "2026-09-24T05:01:09.773169+00:00",
-      "last_change": "2026-09-24T08:08:06.124817+00:00"
+      "last_change": "2026-09-24T08:08:39.290594+00:00"
     },
     {
       "repo": "dynamo-75bb5b2-model-training-and-ml-infrastructure",
