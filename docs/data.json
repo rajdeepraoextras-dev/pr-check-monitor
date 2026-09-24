@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-24T07:02:43.061755+00:00",
+  "snapshot_time": "2026-09-24T07:03:14.059498+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -121,7 +121,7 @@
       "title": "Fix the four issue #3 findings in tinyintent-recipe-recovery, in the task they were raised against",
       "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/pull/8",
       "createdAt": "2026-09-24T04:39:44Z",
-      "updatedAt": "2026-09-24T06:58:26Z",
+      "updatedAt": "2026-09-24T07:03:10Z",
       "sha": "e6b6f4aa29fa9c6b80242c66f5e175700cbdcb12",
       "draft": false,
       "mergeable": true,
@@ -135,26 +135,23 @@
         "in-progress"
       ],
       "overall": "running",
-      "passed": 2,
-      "total": 3,
+      "passed": 3,
+      "total": 4,
       "skipped": 0,
       "failed": [],
-      "running": [
-        {
-          "name": "review",
-          "started_at": "2026-09-24T06:58:17Z"
-        }
+      "running": [],
+      "queued": [
+        "similarity"
       ],
-      "queued": [],
       "checks": [
         {
-          "name": "review",
-          "state": "running",
+          "name": "similarity",
+          "state": "queued",
           "conclusion": null,
-          "started_at": "2026-09-24T06:58:17Z",
+          "started_at": "2026-09-24T07:03:17Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35966952716/job/107528099585",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35966952716/job/107529486889",
           "app": "github-actions"
         },
         {
@@ -176,11 +173,21 @@
           "duration_sec": 86,
           "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35966952716/job/107527701247",
           "app": "github-actions"
+        },
+        {
+          "name": "review",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-24T06:58:17Z",
+          "completed_at": "2026-09-24T07:03:16Z",
+          "duration_sec": 299,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/35966952716/job/107528099585",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-24T04:41:34.503481+00:00",
-      "last_change": "2026-09-24T06:58:26.144730+00:00"
+      "last_change": "2026-09-24T07:03:14.059498+00:00"
     },
     {
       "repo": "dynamo-fa093f0-mathematics-and-formal-reasoning",
