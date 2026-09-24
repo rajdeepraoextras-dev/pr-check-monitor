@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-24T17:47:23.770521+00:00",
+  "snapshot_time": "2026-09-24T17:47:59.173739+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -101,7 +101,7 @@
       "title": "Rework: publish the normative partition_application rule for nested modular schedules",
       "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/pull/6",
       "createdAt": "2026-09-24T16:31:47Z",
-      "updatedAt": "2026-09-24T16:42:00Z",
+      "updatedAt": "2026-09-24T17:47:52Z",
       "sha": "c2eb860080c2b40b431ed854a6a062b4f032435e",
       "draft": false,
       "mergeable": true,
@@ -114,27 +114,58 @@
       "labels": [
         "in-progress"
       ],
-      "overall": "running",
+      "overall": "failing",
       "passed": 6,
-      "total": 7,
-      "skipped": 0,
-      "failed": [],
-      "running": [
-        {
-          "name": "pass2",
-          "started_at": "2026-09-24T16:41:51Z"
-        }
+      "total": 17,
+      "skipped": 7,
+      "failed": [
+        "pass2"
       ],
-      "queued": [],
+      "running": [],
+      "queued": [
+        "claude-cost-report",
+        "gate",
+        "pass2_suggestion"
+      ],
       "checks": [
         {
           "name": "pass2",
-          "state": "running",
-          "conclusion": null,
+          "state": "failed",
+          "conclusion": "failure",
           "started_at": "2026-09-24T16:41:51Z",
+          "completed_at": "2026-09-24T17:48:01Z",
+          "duration_sec": 3970,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/actions/runs/36028009950/job/107733198235",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "queued",
+          "conclusion": null,
+          "started_at": "2026-09-24T17:48:02Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/actions/runs/36028009950/job/107733198235",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/actions/runs/36028009950/job/107758837289",
+          "app": "github-actions"
+        },
+        {
+          "name": "gate",
+          "state": "queued",
+          "conclusion": null,
+          "started_at": "2026-09-24T17:48:02Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/actions/runs/36028009950/job/107758837313",
+          "app": "github-actions"
+        },
+        {
+          "name": "pass2_suggestion",
+          "state": "queued",
+          "conclusion": null,
+          "started_at": "2026-09-24T17:48:01Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/actions/runs/36028009950/job/107758833704",
           "app": "github-actions"
         },
         {
@@ -196,11 +227,81 @@
           "duration_sec": 167,
           "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/actions/runs/36028009950/job/107732025042",
           "app": "github-actions"
+        },
+        {
+          "name": "ava_review",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-24T17:48:01Z",
+          "completed_at": "2026-09-24T17:48:01Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/actions/runs/36028009950/job/107758835528",
+          "app": "github-actions"
+        },
+        {
+          "name": "deep_review",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-24T17:48:01Z",
+          "completed_at": "2026-09-24T17:48:01Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/actions/runs/36028009950/job/107758835502",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-24T17:48:02Z",
+          "completed_at": "2026-09-24T17:48:01Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/actions/runs/36028009950/job/107758837867",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_exec",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-24T17:48:01Z",
+          "completed_at": "2026-09-24T17:48:01Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/actions/runs/36028009950/job/107758836860",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-24T17:48:02Z",
+          "completed_at": "2026-09-24T17:48:01Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/actions/runs/36028009950/job/107758837883",
+          "app": "github-actions"
+        },
+        {
+          "name": "tier1",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-24T17:48:01Z",
+          "completed_at": "2026-09-24T17:48:01Z",
+          "duration_sec": 0,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/actions/runs/36028009950/job/107758836705",
+          "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-24T17:48:02Z",
+          "completed_at": "2026-09-24T17:48:01Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/actions/runs/36028009950/job/107758839147",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-24T16:34:01.633377+00:00",
-      "last_change": "2026-09-24T16:41:56.487163+00:00"
+      "last_change": "2026-09-24T17:47:59.173739+00:00"
     },
     {
       "repo": "dynamo-16ea8e1-build-dependency-and-release-management",
@@ -489,7 +590,7 @@
       "title": "Rework: enforce the U+001F bucket separator and strict RFC3339 history timestamps",
       "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/pull/6",
       "createdAt": "2026-09-24T16:12:16Z",
-      "updatedAt": "2026-09-24T17:39:21Z",
+      "updatedAt": "2026-09-24T17:48:02Z",
       "sha": "35cfb8a66f0e9e2d9a1111f51a7846bc6148d2e1",
       "draft": false,
       "mergeable": true,
@@ -500,29 +601,52 @@
       "head": "rework/a6ce627-replay-model-history",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
-      "passed": 11,
-      "total": 13,
-      "skipped": 1,
-      "failed": [],
+      "overall": "failing",
+      "passed": 12,
+      "total": 17,
+      "skipped": 2,
+      "failed": [
+        "gate",
+        "qc_gate"
+      ],
       "running": [
         {
-          "name": "qc_eval",
-          "started_at": "2026-09-24T17:39:14Z"
+          "name": "claude-cost-report",
+          "started_at": "2026-09-24T17:47:56Z"
         }
       ],
       "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-24T17:47:56Z",
+          "completed_at": "2026-09-24T17:48:07Z",
+          "duration_sec": 11,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107758788716",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-24T17:47:37Z",
+          "completed_at": "2026-09-24T17:47:53Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107758666508",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
           "state": "running",
           "conclusion": null,
-          "started_at": "2026-09-24T17:39:14Z",
+          "started_at": "2026-09-24T17:47:56Z",
           "completed_at": null,
           "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107755449484",
+          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107758788575",
           "app": "github-actions"
         },
         {
@@ -573,6 +697,16 @@
           "completed_at": "2026-09-24T17:27:19Z",
           "duration_sec": 3932,
           "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107725356512",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-24T17:39:14Z",
+          "completed_at": "2026-09-24T17:47:34Z",
+          "duration_sec": 500,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107755449484",
           "app": "github-actions"
         },
         {
@@ -644,11 +778,21 @@
           "duration_sec": -1,
           "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107750816164",
           "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-24T17:47:54Z",
+          "completed_at": "2026-09-24T17:47:53Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/actions/runs/36025717491/job/107758789669",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-24T16:13:57.643474+00:00",
-      "last_change": "2026-09-24T17:44:21.982406+00:00"
+      "last_change": "2026-09-24T17:47:59.173739+00:00"
     },
     {
       "repo": "dynamo-fa093f0-mathematics-and-formal-reasoning",
