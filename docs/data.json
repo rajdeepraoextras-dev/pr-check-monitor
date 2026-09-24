@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-24T18:11:30.603726+00:00",
+  "snapshot_time": "2026-09-24T18:12:17.984420+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -189,7 +189,7 @@
       "title": "Rework: make the plan order total and grade conflicts against provided names",
       "url": "https://github.com/handshake-project-dynamo/dynamo-16ea8e1-build-dependency-and-release-management/pull/5",
       "createdAt": "2026-09-24T16:31:37Z",
-      "updatedAt": "2026-09-24T17:55:39Z",
+      "updatedAt": "2026-09-24T18:12:10Z",
       "sha": "692a3c1b1d1cebe74f430e45757cb5d68b873096",
       "draft": false,
       "mergeable": true,
@@ -200,29 +200,37 @@
       "head": "rework/16ea8e1-total-plan-order",
       "base": "main",
       "labels": [
-        "in-progress"
+        "needs-revision"
       ],
-      "overall": "running",
-      "passed": 11,
-      "total": 13,
-      "skipped": 1,
-      "failed": [],
-      "running": [
-        {
-          "name": "qc_eval",
-          "started_at": "2026-09-24T17:55:32Z"
-        }
+      "overall": "failing",
+      "passed": 13,
+      "total": 17,
+      "skipped": 2,
+      "failed": [
+        "gate",
+        "qc_gate"
       ],
+      "running": [],
       "queued": [],
       "checks": [
         {
-          "name": "qc_eval",
-          "state": "running",
-          "conclusion": null,
-          "started_at": "2026-09-24T17:55:32Z",
-          "completed_at": null,
-          "duration_sec": null,
-          "url": "https://github.com/handshake-project-dynamo/dynamo-16ea8e1-build-dependency-and-release-management/actions/runs/36027985875/job/107761688208",
+          "name": "gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-24T18:12:03Z",
+          "completed_at": "2026-09-24T18:12:13Z",
+          "duration_sec": 10,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-16ea8e1-build-dependency-and-release-management/actions/runs/36027985875/job/107768059806",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_gate",
+          "state": "failed",
+          "conclusion": "failure",
+          "started_at": "2026-09-24T18:11:45Z",
+          "completed_at": "2026-09-24T18:12:00Z",
+          "duration_sec": 15,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-16ea8e1-build-dependency-and-release-management/actions/runs/36027985875/job/107767945082",
           "app": "github-actions"
         },
         {
@@ -243,6 +251,16 @@
           "completed_at": "2026-09-24T16:32:09Z",
           "duration_sec": 26,
           "url": "https://github.com/handshake-project-dynamo/dynamo-16ea8e1-build-dependency-and-release-management/actions/runs/36027985875/job/107729281761",
+          "app": "github-actions"
+        },
+        {
+          "name": "claude-cost-report",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-24T18:12:03Z",
+          "completed_at": "2026-09-24T18:12:19Z",
+          "duration_sec": 16,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-16ea8e1-build-dependency-and-release-management/actions/runs/36027985875/job/107768059918",
           "app": "github-actions"
         },
         {
@@ -273,6 +291,16 @@
           "completed_at": "2026-09-24T17:46:38Z",
           "duration_sec": 3993,
           "url": "https://github.com/handshake-project-dynamo/dynamo-16ea8e1-build-dependency-and-release-management/actions/runs/36027985875/job/107732514603",
+          "app": "github-actions"
+        },
+        {
+          "name": "qc_eval",
+          "state": "passed",
+          "conclusion": "success",
+          "started_at": "2026-09-24T17:55:32Z",
+          "completed_at": "2026-09-24T18:11:42Z",
+          "duration_sec": 970,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-16ea8e1-build-dependency-and-release-management/actions/runs/36027985875/job/107761688208",
           "app": "github-actions"
         },
         {
@@ -344,11 +372,21 @@
           "duration_sec": 0,
           "url": "https://github.com/handshake-project-dynamo/dynamo-16ea8e1-build-dependency-and-release-management/actions/runs/36027985875/job/107758315174",
           "app": "github-actions"
+        },
+        {
+          "name": "trials",
+          "state": "skipped",
+          "conclusion": "skipped",
+          "started_at": "2026-09-24T18:12:01Z",
+          "completed_at": "2026-09-24T18:12:00Z",
+          "duration_sec": -1,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-16ea8e1-build-dependency-and-release-management/actions/runs/36027985875/job/107768060402",
+          "app": "github-actions"
         }
       ],
       "submitted": false,
       "first_seen": "2026-09-24T16:34:10.406441+00:00",
-      "last_change": "2026-09-24T18:11:30.603726+00:00"
+      "last_change": "2026-09-24T18:12:17.984420+00:00"
     },
     {
       "repo": "dynamo-2ea3b19-debugging-and-repair",

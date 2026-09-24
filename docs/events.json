@@ -1,35 +1,5 @@
 [
  {
-  "ts": "2026-09-24T06:50:34.709004+00:00",
-  "pr": "dynamo-d867126-security#16",
-  "type": "passed",
-  "msg": "Check passed: validation"
- },
- {
-  "ts": "2026-09-24T06:56:18.704795+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "push",
-  "msg": "New commit pushed (e6b6f4a)"
- },
- {
-  "ts": "2026-09-24T06:56:18.704795+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "running",
-  "msg": "Status failing \u2192 running"
- },
- {
-  "ts": "2026-09-24T06:56:18.704795+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "started",
-  "msg": "Check started: changes"
- },
- {
-  "ts": "2026-09-24T06:56:18.704795+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "passed",
-  "msg": "Check recovered: gate"
- },
- {
   "ts": "2026-09-24T06:56:18.704795+00:00",
   "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
   "type": "passed",
@@ -2398,5 +2368,35 @@
   "pr": "dynamo-16ea8e1-build-dependency-and-release-management#5",
   "type": "passed",
   "msg": "Check passed: qc_exec"
+ },
+ {
+  "ts": "2026-09-24T18:12:17.984420+00:00",
+  "pr": "dynamo-16ea8e1-build-dependency-and-release-management#5",
+  "type": "failing",
+  "msg": "Status running \u2192 failing"
+ },
+ {
+  "ts": "2026-09-24T18:12:17.984420+00:00",
+  "pr": "dynamo-16ea8e1-build-dependency-and-release-management#5",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-24T18:12:17.984420+00:00",
+  "pr": "dynamo-16ea8e1-build-dependency-and-release-management#5",
+  "type": "failing",
+  "msg": "Check failed: qc_gate"
+ },
+ {
+  "ts": "2026-09-24T18:12:17.984420+00:00",
+  "pr": "dynamo-16ea8e1-build-dependency-and-release-management#5",
+  "type": "passed",
+  "msg": "Check passed: claude-cost-report"
+ },
+ {
+  "ts": "2026-09-24T18:12:17.984420+00:00",
+  "pr": "dynamo-16ea8e1-build-dependency-and-release-management#5",
+  "type": "passed",
+  "msg": "Check passed: qc_eval"
  }
 ]
