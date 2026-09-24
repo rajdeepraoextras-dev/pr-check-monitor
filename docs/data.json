@@ -1,5 +1,5 @@
 {
-  "snapshot_time": "2026-09-24T12:49:16.503891+00:00",
+  "snapshot_time": "2026-09-24T12:49:48.642772+00:00",
   "config": {
     "org": "handshake-project-dynamo",
     "author": "rajdeepraoextras-dev",
@@ -219,10 +219,10 @@
       "title": "Fix the four issue #3 findings in tinyintent-recipe-recovery, in the task they were raised against",
       "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/pull/8",
       "createdAt": "2026-09-24T04:39:44Z",
-      "updatedAt": "2026-09-24T12:49:18Z",
+      "updatedAt": "2026-09-24T12:49:45Z",
       "sha": "a378a25a8f0743e3f8bd6a06e8cafeefa8dc7964",
       "draft": false,
-      "mergeable": null,
+      "mergeable": true,
       "reviewDecision": "",
       "additions": 5795,
       "deletions": 177643,
@@ -230,19 +230,35 @@
       "head": "rework/75bb5b2-tinyintent-recipe-recovery",
       "base": "main",
       "labels": [
-        "needs-revision"
+        "in-progress"
       ],
-      "overall": "passed",
+      "overall": "running",
       "passed": 0,
-      "total": 0,
+      "total": 1,
       "skipped": 0,
       "failed": [],
-      "running": [],
+      "running": [
+        {
+          "name": "changes",
+          "started_at": "2026-09-24T12:49:25Z"
+        }
+      ],
       "queued": [],
-      "checks": [],
+      "checks": [
+        {
+          "name": "changes",
+          "state": "running",
+          "conclusion": null,
+          "started_at": "2026-09-24T12:49:25Z",
+          "completed_at": null,
+          "duration_sec": null,
+          "url": "https://github.com/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/actions/runs/36001510458/job/107639035307",
+          "app": "github-actions"
+        }
+      ],
       "submitted": false,
       "first_seen": "2026-09-24T04:41:34.503481+00:00",
-      "last_change": "2026-09-24T12:49:16.503891+00:00"
+      "last_change": "2026-09-24T12:49:48.642772+00:00"
     },
     {
       "repo": "dynamo-fa093f0-mathematics-and-formal-reasoning",
