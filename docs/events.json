@@ -1,131 +1,5 @@
 [
  {
-  "ts": "2026-09-24T08:54:49.530426+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "started",
-  "msg": "Check started: validation"
- },
- {
-  "ts": "2026-09-24T08:54:49.530426+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "passed",
-  "msg": "Check passed: similarity"
- },
- {
-  "ts": "2026-09-24T08:55:57.050131+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "started",
-  "msg": "Check started: validation"
- },
- {
-  "ts": "2026-09-24T08:55:57.050131+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "passed",
-  "msg": "Check passed: review"
- },
- {
-  "ts": "2026-09-24T08:55:57.050131+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "passed",
-  "msg": "Check passed: similarity"
- },
- {
-  "ts": "2026-09-24T08:58:13.948533+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-24T08:58:13.948533+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "passed",
-  "msg": "Check passed: ratelimit"
- },
- {
-  "ts": "2026-09-24T08:58:13.948533+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "passed",
-  "msg": "Check passed: validation"
- },
- {
-  "ts": "2026-09-24T09:43:56.194755+00:00",
-  "pr": "dynamo-d867126-security#16",
-  "type": "running",
-  "msg": "Status error \u2192 running"
- },
- {
-  "ts": "2026-09-24T09:43:56.194755+00:00",
-  "pr": "dynamo-d867126-security#16",
-  "type": "started",
-  "msg": "Check started: pass2"
- },
- {
-  "ts": "2026-09-24T09:43:56.194755+00:00",
-  "pr": "dynamo-d867126-security#16",
-  "type": "passed",
-  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-d867126-security/pulls/16 --jq '{title, url: ` failed: error connecting to api.github.com\ncheck your internet connection or https://githubstatus.com"
- },
- {
-  "ts": "2026-09-24T09:43:56.194755+00:00",
-  "pr": "dynamo-d867126-security#16",
-  "type": "passed",
-  "msg": "6 checks passed"
- },
- {
-  "ts": "2026-09-24T09:43:56.194755+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "running",
-  "msg": "Status error \u2192 running"
- },
- {
-  "ts": "2026-09-24T09:43:56.194755+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "started",
-  "msg": "Check started: ava_review"
- },
- {
-  "ts": "2026-09-24T09:43:56.194755+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "started",
-  "msg": "Check started: deep_review"
- },
- {
-  "ts": "2026-09-24T09:43:56.194755+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "passed",
-  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-75bb5b2-model-training-and-ml-infrastructure/` failed: error connecting to api.github.com\ncheck your internet connection or https://githubstatus.com"
- },
- {
-  "ts": "2026-09-24T09:43:56.194755+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "passed",
-  "msg": "7 checks passed"
- },
- {
-  "ts": "2026-09-24T09:43:56.194755+00:00",
-  "pr": "dynamo-fa093f0-mathematics-and-formal-reasoning#4",
-  "type": "passed",
-  "msg": "Status error \u2192 passed"
- },
- {
-  "ts": "2026-09-24T09:43:56.194755+00:00",
-  "pr": "dynamo-fa093f0-mathematics-and-formal-reasoning#4",
-  "type": "passed",
-  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-fa093f0-mathematics-and-formal-reasoning/pull` failed: error connecting to api.github.com\ncheck your internet connection or https://githubstatus.com"
- },
- {
-  "ts": "2026-09-24T09:43:56.194755+00:00",
-  "pr": "dynamo-fa093f0-mathematics-and-formal-reasoning#4",
-  "type": "passed",
-  "msg": "16 checks passed"
- },
- {
-  "ts": "2026-09-24T09:43:56.194755+00:00",
-  "pr": "dynamo-d6941c7-build-dependency-and-release-management#9",
-  "type": "passed",
-  "msg": "Status error \u2192 passed"
- },
- {
   "ts": "2026-09-24T09:43:56.194755+00:00",
   "pr": "dynamo-d6941c7-build-dependency-and-release-management#9",
   "type": "passed",
@@ -2398,5 +2272,131 @@
   "pr": "dynamo-2ea3b19-debugging-and-repair#8",
   "type": "passed",
   "msg": "10 checks passed"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-d73e65f-mathematics-and-formal-reasoning#6",
+  "type": "failing",
+  "msg": "Status error \u2192 failing"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-d73e65f-mathematics-and-formal-reasoning#6",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-d73e65f-mathematics-and-formal-reasoning#6",
+  "type": "failing",
+  "msg": "Check failed: trials"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-d73e65f-mathematics-and-formal-reasoning#6",
+  "type": "passed",
+  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-d73e65f-mathematics-and-formal-reasoning/pull` failed: error connecting to api.github.com\ncheck your internet connection or https://githubstatus.com"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-d73e65f-mathematics-and-formal-reasoning#6",
+  "type": "passed",
+  "msg": "14 checks passed"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-a6ce627-machine-learning-and-ai#6",
+  "type": "passed",
+  "msg": "Status error \u2192 passed"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-a6ce627-machine-learning-and-ai#6",
+  "type": "passed",
+  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/pulls/6 --jq ` failed: error connecting to api.github.com\ncheck your internet connection or https://githubstatus.com"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-a6ce627-machine-learning-and-ai#6",
+  "type": "passed",
+  "msg": "16 checks passed"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-2ea3b19-debugging-and-repair#8",
+  "type": "failing",
+  "msg": "Status error \u2192 failing"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-2ea3b19-debugging-and-repair#8",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-2ea3b19-debugging-and-repair#8",
+  "type": "failing",
+  "msg": "Check failed: tier1"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-2ea3b19-debugging-and-repair#8",
+  "type": "passed",
+  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-2ea3b19-debugging-and-repair/pulls/8 --jq '{t` failed: error connecting to api.github.com\ncheck your internet connection or https://githubstatus.com"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-2ea3b19-debugging-and-repair#8",
+  "type": "passed",
+  "msg": "10 checks passed"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-16ea8e1-build-dependency-and-release-management#5",
+  "type": "failing",
+  "msg": "Status error \u2192 failing"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-16ea8e1-build-dependency-and-release-management#5",
+  "type": "failing",
+  "msg": "Check failed: gate"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-16ea8e1-build-dependency-and-release-management#5",
+  "type": "failing",
+  "msg": "Check failed: tier1"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-16ea8e1-build-dependency-and-release-management#5",
+  "type": "passed",
+  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-16ea8e1-build-dependency-and-release-manageme` failed: error connecting to api.github.com\ncheck your internet connection or https://githubstatus.com"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-16ea8e1-build-dependency-and-release-management#5",
+  "type": "passed",
+  "msg": "10 checks passed"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-0705184-scientific-computing-and-domain-science#7",
+  "type": "passed",
+  "msg": "Status error \u2192 passed"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-0705184-scientific-computing-and-domain-science#7",
+  "type": "passed",
+  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-0705184-scientific-computing-and-domain-scien` failed: error connecting to api.github.com\ncheck your internet connection or https://githubstatus.com"
+ },
+ {
+  "ts": "2026-09-25T02:35:48.616828+00:00",
+  "pr": "dynamo-0705184-scientific-computing-and-domain-science#7",
+  "type": "passed",
+  "msg": "16 checks passed"
  }
 ]
