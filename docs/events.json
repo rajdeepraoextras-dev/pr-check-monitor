@@ -1,41 +1,5 @@
 [
  {
-  "ts": "2026-09-24T09:57:11.544217+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "started",
-  "msg": "Check started: tier1"
- },
- {
-  "ts": "2026-09-24T09:57:11.544217+00:00",
-  "pr": "dynamo-75bb5b2-model-training-and-ml-infrastructure#8",
-  "type": "passed",
-  "msg": "Check passed: deep_review"
- },
- {
-  "ts": "2026-09-24T09:57:42.639938+00:00",
-  "pr": "dynamo-d867126-security#16",
-  "type": "failing",
-  "msg": "Status running \u2192 failing"
- },
- {
-  "ts": "2026-09-24T09:57:42.639938+00:00",
-  "pr": "dynamo-d867126-security#16",
-  "type": "started",
-  "msg": "Check started: claude-cost-report"
- },
- {
-  "ts": "2026-09-24T09:57:42.639938+00:00",
-  "pr": "dynamo-d867126-security#16",
-  "type": "started",
-  "msg": "Check started: gate"
- },
- {
-  "ts": "2026-09-24T09:57:42.639938+00:00",
-  "pr": "dynamo-d867126-security#16",
-  "type": "started",
-  "msg": "Check started: pass2_suggestion"
- },
- {
   "ts": "2026-09-24T09:57:42.639938+00:00",
   "pr": "dynamo-d867126-security#16",
   "type": "failing",
@@ -2395,6 +2359,42 @@
  },
  {
   "ts": "2026-09-26T05:37:10.562302+00:00",
+  "pr": "dynamo-a6ce627-machine-learning-and-ai#6",
+  "type": "passed",
+  "msg": "16 checks passed"
+ },
+ {
+  "ts": "2026-09-26T10:57:45.138152+00:00",
+  "pr": "dynamo-0705184-scientific-computing-and-domain-science#7",
+  "type": "passed",
+  "msg": "Status error \u2192 passed"
+ },
+ {
+  "ts": "2026-09-26T10:57:45.138152+00:00",
+  "pr": "dynamo-0705184-scientific-computing-and-domain-science#7",
+  "type": "passed",
+  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-0705184-scientific-computing-and-domain-scien` failed: error connecting to api.github.com\ncheck your internet connection or https://githubstatus.com"
+ },
+ {
+  "ts": "2026-09-26T10:57:45.138152+00:00",
+  "pr": "dynamo-0705184-scientific-computing-and-domain-science#7",
+  "type": "passed",
+  "msg": "16 checks passed"
+ },
+ {
+  "ts": "2026-09-26T10:57:45.138152+00:00",
+  "pr": "dynamo-a6ce627-machine-learning-and-ai#6",
+  "type": "passed",
+  "msg": "Status error \u2192 passed"
+ },
+ {
+  "ts": "2026-09-26T10:57:45.138152+00:00",
+  "pr": "dynamo-a6ce627-machine-learning-and-ai#6",
+  "type": "passed",
+  "msg": "Check recovered: `gh api repos/handshake-project-dynamo/dynamo-a6ce627-machine-learning-and-ai/pulls/6 --jq ` failed: error connecting to api.github.com\ncheck your internet connection or https://githubstatus.com"
+ },
+ {
+  "ts": "2026-09-26T10:57:45.138152+00:00",
   "pr": "dynamo-a6ce627-machine-learning-and-ai#6",
   "type": "passed",
   "msg": "16 checks passed"
